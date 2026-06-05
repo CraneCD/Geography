@@ -140,7 +140,8 @@ export function buildRound({ mode, region, difficulty, count = 10 }) {
   }
 
   if (mode === "population" || mode === "area") {
-    const selected = shuffle(extraPool);
+    const enriched = extraPool.map((c) => ({ ...c, ...countriesExtra[c.code] }));
+    const selected = shuffle(enriched);
     const pairs = [];
     for (let i = 0; i + 1 < selected.length && pairs.length < count; i += 2) {
       pairs.push(buildCompareQuestion(mode, selected[i], selected[i + 1]));
