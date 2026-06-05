@@ -94,6 +94,7 @@ body {
   cursor: pointer;
 }
 .option-select:focus { outline: 3px solid var(--primary); }
+.option-group--full { width: 100%; }
 
 .option-pills { display: flex; gap: .4rem; flex-wrap: wrap; }
 .pill {

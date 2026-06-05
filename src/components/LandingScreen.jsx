@@ -2,15 +2,24 @@ import { useState } from "react";
 import ModeCard from "./ModeCard";
 import { regions } from "../data/countries";
 
-const MODES = [
+const SINGLE_MODES = [
   { id: "flags", icon: "🚩", title: "Flags", description: "See a flag — name the country." },
   { id: "capitals", icon: "🏛️", title: "Capitals", description: "Name the capital city of a country." },
-  { id: "locate", icon: "🗺️", title: "Locate the Country", description: "Click the correct country on the map." },
+  { id: "locate", icon: "🗺️", title: "Locate", description: "Click the correct country on the map." },
   { id: "shapes", icon: "🔷", title: "Shapes", description: "Identify a country from its outline." },
   { id: "languages", icon: "🗣️", title: "Languages", description: "Which country speaks this language?" },
   { id: "population", icon: "👥", title: "Population", description: "Pick the country with the larger population." },
   { id: "area", icon: "📐", title: "Area", description: "Pick the country with the larger land area." },
-  { id: "mixed", icon: "🎲", title: "Mixed", description: "Random questions from all four modes." },
+];
+
+const MIXED_TOGGLES = [
+  { id: "flags", icon: "🚩", label: "Flags" },
+  { id: "capitals", icon: "🏛️", label: "Capitals" },
+  { id: "locate", icon: "🗺️", label: "Locate" },
+  { id: "shapes", icon: "🔷", label: "Shapes" },
+  { id: "languages", icon: "🗣️", label: "Languages" },
+  { id: "population", icon: "👥", label: "Population" },
+  { id: "area", icon: "📐", label: "Area" },
 ];
 
 const DIFFICULTIES = ["easy", "medium", "hard", "expert"];
@@ -20,6 +29,18 @@ export default function LandingScreen({ onStart }) {
   const [region, setRegion] = useState("All");
   const [difficulty, setDifficulty] = useState("medium");
   const [roundSize, setRoundSize] = useState(10);
+  const [mixedModes, setMixedModes] = useState(MIXED_TOGGLES.map((t) => t.id));
+
+  function toggleMixedMode(id) {
+    setMixedModes((prev) => {
+      if (prev.includes(id)) {
+        // Keep at least 2 active
+        if (prev.length <= 2) return prev;
+        return prev.filter((m) => m !== id);
+      }
+      return [...prev, id];
+    });
+  }
 
   return (
     <main className="landing">
@@ -29,7 +50,7 @@ export default function LandingScreen({ onStart }) {
       </header>
 
       <section aria-label="Game mode selection" className="landing__modes">
-        {MODES.map((m) => (
+        {SINGLE_MODES.map((m) => (
           <ModeCard
             key={m.id}
             icon={m.icon}
@@ -38,6 +59,12 @@ export default function LandingScreen({ onStart }) {
             onClick={() => onStart({ mode: m.id, region, difficulty, count: roundSize })}
           />
         ))}
+        <ModeCard
+          icon="🎲"
+          title="Mixed"
+          description="Random questions from your chosen modes."
+          onClick={() => onStart({ mode: "mixed", region, difficulty, count: roundSize, mixedModes })}
+        />
       </section>
 
       <section className="landing__options" aria-label="Game options">
@@ -82,6 +109,22 @@ export default function LandingScreen({ onStart }) {
                 aria-pressed={roundSize === n}
               >
                 {n}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="option-group option-group--full">
+          <label className="option-label">Mixed mode includes</label>
+          <div className="option-pills" role="group" aria-label="Mixed mode includes">
+            {MIXED_TOGGLES.map((t) => (
+              <button
+                key={t.id}
+                onClick={() => toggleMixedMode(t.id)}
+                className={`pill ${mixedModes.includes(t.id) ? "pill--active" : ""}`}
+                aria-pressed={mixedModes.includes(t.id)}
+              >
+                {t.icon} {t.label}
               </button>
             ))}
           </div>
