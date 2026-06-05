@@ -1,4 +1,5 @@
 import { countries, getByRegion } from "../data/countries";
+import { countryPaths } from "../data/countryPaths";
 
 export function shuffle(arr) {
   const a = [...arr];
@@ -79,20 +80,32 @@ export function buildQuestion(type, country, pool, difficulty) {
 }
 
 export function buildRound({ mode, region, difficulty, count = 10 }) {
-  const pool = getByRegion(region);
-  const shuffled = shuffle(pool);
-  const selected = shuffled.slice(0, Math.min(count, shuffled.length));
+  const fullPool = getByRegion(region);
+  // Shapes requires a renderable outline — filter to countries in the topology
+  const shapesPool = fullPool.filter((c) => !!countryPaths[c.code]);
 
   const types = ["flags", "capitals", "locate", "shapes"];
 
+  if (mode === "shapes") {
+    const selected = shuffle(shapesPool).slice(0, Math.min(count, shapesPool.length));
+    return selected.map((country) =>
+      buildQuestion("shapes", country, shapesPool, difficulty)
+    );
+  }
+
+  const selected = shuffle(fullPool).slice(0, Math.min(count, fullPool.length));
   return selected.map((country) => {
     let type;
     if (mode === "mixed") {
-      type = types[Math.floor(Math.random() * types.length)];
+      // For mixed, only pick "shapes" if this country has a renderable outline
+      const availableTypes = countryPaths[country.code]
+        ? types
+        : types.filter((t) => t !== "shapes");
+      type = availableTypes[Math.floor(Math.random() * availableTypes.length)];
     } else {
       type = mode;
     }
-    return buildQuestion(type, country, pool, difficulty);
+    return buildQuestion(type, country, fullPool, difficulty);
   });
 }
 
