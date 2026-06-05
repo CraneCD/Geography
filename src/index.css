@@ -259,6 +259,42 @@ body {
 .option-btn--faded { opacity: .45; cursor: default; }
 .option-btn--default {}
 
+/* ---- Type Answer ---- */
+.type-answer-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  margin-top: .25rem;
+}
+
+.type-input {
+  width: 100%;
+  background: var(--surface2);
+  border: 2px solid #475569;
+  color: var(--text);
+  border-radius: 10px;
+  padding: .85rem 1rem;
+  font-size: 1.05rem;
+  transition: border-color .15s;
+  outline: none;
+}
+.type-input:focus { border-color: var(--primary); }
+.type-input--correct { border-color: var(--correct) !important; background: rgba(22,163,74,.1); }
+.type-input--wrong { border-color: var(--wrong) !important; background: rgba(220,38,38,.1); }
+.type-input:disabled { opacity: .85; cursor: default; }
+
+.type-submit { align-self: flex-end; padding: .6rem 1.5rem; }
+.type-submit:disabled { opacity: .4; cursor: not-allowed; }
+
+.type-feedback {
+  padding: .65rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.type-feedback--correct { background: rgba(22,163,74,.15); color: #4ade80; border: 1px solid #16a34a; }
+.type-feedback--wrong { background: rgba(220,38,38,.15); color: #f87171; border: 1px solid #dc2626; }
+
 /* ---- Map ---- */
 .locate-hint { text-align: center; font-size: .85rem; color: var(--text-muted); margin-bottom: .75rem; }
 .map-container {

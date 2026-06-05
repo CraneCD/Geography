@@ -9,7 +9,7 @@ const MODES = [
   { id: "mixed", icon: "🎲", title: "Mixed", description: "Random questions from all three modes." },
 ];
 
-const DIFFICULTIES = ["easy", "medium", "hard"];
+const DIFFICULTIES = ["easy", "medium", "hard", "expert"];
 const ROUND_SIZES = [5, 10, 15, 20];
 
 export default function LandingScreen({ onStart }) {

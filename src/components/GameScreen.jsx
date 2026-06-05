@@ -5,9 +5,10 @@ import Timer from "./Timer";
 import FlagsQuestion from "./FlagsQuestion";
 import CapitalsQuestion from "./CapitalsQuestion";
 import LocateQuestion from "./LocateQuestion";
+import TypeAnswer from "./TypeAnswer";
 import SummaryScreen from "./SummaryScreen";
 
-const TIMER_SECONDS = { easy: 30, medium: 20, hard: 12 };
+const TIMER_SECONDS = { easy: 30, medium: 20, hard: 12, expert: 30 };
 
 export default function GameScreen({ config, onChangeMode }) {
   const { difficulty, practice } = config;
@@ -21,7 +22,8 @@ export default function GameScreen({ config, onChangeMode }) {
   const [timerPaused, setTimerPaused] = useState(false);
   const missedRef = useRef([]);
 
-  const useTimer = difficulty !== "easy" && !practice;
+  const isExpert = difficulty === "expert";
+  const useTimer = difficulty !== "easy" && !practice && !isExpert;
   const timerDuration = TIMER_SECONDS[difficulty] ?? 20;
   const question = questions[idx];
 
@@ -101,11 +103,17 @@ export default function GameScreen({ config, onChangeMode }) {
         {question.type === "locate" && "🗺️ Locate"}
       </div>
 
-      {question.type === "flags" && (
+      {question.type === "flags" && !isExpert && (
         <FlagsQuestion key={idx} question={question} onAnswer={handleAnswer} difficulty={difficulty} />
       )}
-      {question.type === "capitals" && (
+      {question.type === "flags" && isExpert && (
+        <TypeAnswer key={idx} question={question} onAnswer={handleAnswer} />
+      )}
+      {question.type === "capitals" && !isExpert && (
         <CapitalsQuestion key={idx} question={question} onAnswer={handleAnswer} />
+      )}
+      {question.type === "capitals" && isExpert && (
+        <TypeAnswer key={idx} question={question} onAnswer={handleAnswer} />
       )}
       {question.type === "locate" && (
         <LocateQuestion key={idx} question={question} onAnswer={handleAnswer} />
