@@ -85,6 +85,13 @@ export default function GameScreen({ config, onChangeMode }) {
   return (
     <div className="game-screen">
       <div className="game-header">
+        <button
+          onClick={onChangeMode}
+          className="back-btn"
+          aria-label="Back to home"
+        >
+          ← Home
+        </button>
         <ProgressBar current={idx + 1} total={questions.length} score={score} />
         {useTimer && (
           <Timer

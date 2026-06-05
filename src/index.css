@@ -127,6 +127,21 @@ body {
   flex-wrap: wrap;
 }
 
+.back-btn {
+  background: transparent;
+  border: 1px solid #475569;
+  color: var(--text-muted);
+  border-radius: 8px;
+  padding: .35rem .75rem;
+  font-size: .85rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color .15s, border-color .15s;
+  flex-shrink: 0;
+}
+.back-btn:hover { color: var(--text); border-color: #94a3b8; }
+.back-btn:focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; }
+
 .question-type-label {
   font-size: .8rem;
   font-weight: 700;
