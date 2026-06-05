@@ -6,6 +6,7 @@ import FlagsQuestion from "./FlagsQuestion";
 import CapitalsQuestion from "./CapitalsQuestion";
 import LocateQuestion from "./LocateQuestion";
 import TypeAnswer from "./TypeAnswer";
+import ShapeQuestion from "./ShapeQuestion";
 import SummaryScreen from "./SummaryScreen";
 
 const TIMER_SECONDS = { easy: 30, medium: 20, hard: 12, expert: 30 };
@@ -108,6 +109,7 @@ export default function GameScreen({ config, onChangeMode }) {
         {question.type === "flags" && "🚩 Flags"}
         {question.type === "capitals" && "🏛️ Capitals"}
         {question.type === "locate" && "🗺️ Locate"}
+        {question.type === "shapes" && "🔷 Shapes"}
       </div>
 
       {question.type === "flags" && !isExpert && (
@@ -124,6 +126,9 @@ export default function GameScreen({ config, onChangeMode }) {
       )}
       {question.type === "locate" && (
         <LocateQuestion key={idx} question={question} onAnswer={handleAnswer} />
+      )}
+      {question.type === "shapes" && (
+        <ShapeQuestion key={idx} question={question} onAnswer={handleAnswer} isExpert={isExpert} />
       )}
     </div>
   );

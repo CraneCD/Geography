@@ -66,6 +66,15 @@ export function buildQuestion(type, country, pool, difficulty) {
     };
   }
 
+  if (type === "shapes") {
+    return {
+      type,
+      prompt: "Which country has this shape?",
+      correct: country,
+      options,
+    };
+  }
+
   return null;
 }
 
@@ -74,7 +83,7 @@ export function buildRound({ mode, region, difficulty, count = 10 }) {
   const shuffled = shuffle(pool);
   const selected = shuffled.slice(0, Math.min(count, shuffled.length));
 
-  const types = ["flags", "capitals", "locate"];
+  const types = ["flags", "capitals", "locate", "shapes"];
 
   return selected.map((country) => {
     let type;

@@ -6,7 +6,8 @@ const MODES = [
   { id: "flags", icon: "🚩", title: "Flags", description: "See a flag — name the country." },
   { id: "capitals", icon: "🏛️", title: "Capitals", description: "Name the capital city of a country." },
   { id: "locate", icon: "🗺️", title: "Locate the Country", description: "Click the correct country on the map." },
-  { id: "mixed", icon: "🎲", title: "Mixed", description: "Random questions from all three modes." },
+  { id: "shapes", icon: "🔷", title: "Shapes", description: "Identify a country from its outline." },
+  { id: "mixed", icon: "🎲", title: "Mixed", description: "Random questions from all four modes." },
 ];
 
 const DIFFICULTIES = ["easy", "medium", "hard", "expert"];
