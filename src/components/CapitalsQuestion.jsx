@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { flagUrl } from "../utils/game";
+import FlagImage from "./FlagImage";
 
 export default function CapitalsQuestion({ question, onAnswer }) {
   const [selected, setSelected] = useState(null);
-  const [imgError, setImgError] = useState(false);
 
   function choose(option) {
     if (selected) return;
@@ -21,15 +20,14 @@ export default function CapitalsQuestion({ question, onAnswer }) {
   return (
     <div className="question-card">
       <div className="capital-header">
-        {!imgError && (
-          <img
-            src={flagUrl(question.flagCode)}
-            alt={`Flag of ${question.correct.name}`}
-            className="flag-thumb"
-            onError={() => setImgError(true)}
-          />
-        )}
-        <p className="question-prompt">{question.prompt}</p>
+        <FlagImage
+          code={question.flagCode}
+          countryName={question.correct.name}
+          className="flag-thumb"
+        />
+        <p className="question-prompt" style={{ marginBottom: 0, textAlign: "left" }}>
+          {question.prompt}
+        </p>
       </div>
 
       <div className="options-grid" role="group" aria-label="Capital city options">

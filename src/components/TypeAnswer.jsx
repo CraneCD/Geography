@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { flagUrl } from "../utils/game";
+import FlagImage from "./FlagImage";
 
 // Normalize for comparison: lowercase, strip diacritics, trim punctuation/spaces
 function normalize(str) {
@@ -42,7 +42,6 @@ export default function TypeAnswer({ question, onAnswer }) {
   const [value, setValue] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [wasCorrect, setWasCorrect] = useState(null);
-  const [imgError, setImgError] = useState(false);
   const inputRef = useRef(null);
 
   useEffect(() => {
@@ -70,28 +69,20 @@ export default function TypeAnswer({ question, onAnswer }) {
         <>
           <p className="question-prompt">{question.prompt}</p>
           <div className="flag-wrap">
-            {!imgError ? (
-              <img
-                src={flagUrl(question.flagCode)}
-                alt={`Flag of ${question.correct.name}`}
-                className="flag-img"
-                onError={() => setImgError(true)}
-              />
-            ) : (
-              <div className="flag-placeholder" aria-label="Flag unavailable">🚩 Flag unavailable</div>
-            )}
+            <FlagImage
+              code={question.flagCode}
+              countryName={question.correct.name}
+              className="flag-img"
+            />
           </div>
         </>
       ) : (
         <div className="capital-header">
-          {!imgError && (
-            <img
-              src={flagUrl(question.flagCode)}
-              alt={`Flag of ${question.correct.name}`}
-              className="flag-thumb"
-              onError={() => setImgError(true)}
-            />
-          )}
+          <FlagImage
+            code={question.flagCode}
+            countryName={question.correct.name}
+            className="flag-thumb"
+          />
           <p className="question-prompt" style={{ marginBottom: 0, textAlign: "left" }}>
             {question.prompt}
           </p>

@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { flagUrl } from "../utils/game";
+import FlagImage from "./FlagImage";
 
-export default function FlagsQuestion({ question, onAnswer, difficulty }) {
+export default function FlagsQuestion({ question, onAnswer }) {
   const [selected, setSelected] = useState(null);
-  const [imgError, setImgError] = useState(false);
 
   function choose(option) {
     if (selected) return;
@@ -23,18 +22,11 @@ export default function FlagsQuestion({ question, onAnswer, difficulty }) {
       <p className="question-prompt" aria-live="polite">{question.prompt}</p>
 
       <div className="flag-wrap">
-        {!imgError ? (
-          <img
-            src={flagUrl(question.flagCode)}
-            alt={`Flag of ${question.correct.name}`}
-            className="flag-img"
-            onError={() => setImgError(true)}
-          />
-        ) : (
-          <div className="flag-placeholder" aria-label={`Flag of ${question.correct.name} (image unavailable)`}>
-            🚩 Flag unavailable
-          </div>
-        )}
+        <FlagImage
+          code={question.flagCode}
+          countryName={question.correct.name}
+          className="flag-img"
+        />
       </div>
 
       <div className="options-grid" role="group" aria-label="Answer options">

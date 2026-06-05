@@ -1,11 +1,9 @@
-import { useState } from "react";
-import { flagUrl } from "../utils/game";
+import FlagImage from "./FlagImage";
 
 export default function SummaryScreen({ results, total, onPlayAgain, onChangeMode }) {
   const correct = results.filter((r) => r.wasCorrect).length;
   const accuracy = total > 0 ? Math.round((correct / total) * 100) : 0;
   const missed = results.filter((r) => !r.wasCorrect);
-  const [imgErrors, setImgErrors] = useState({});
 
   return (
     <main className="summary" aria-label="Round summary">
@@ -30,12 +28,10 @@ export default function SummaryScreen({ results, total, onPlayAgain, onChangeMod
             {missed.map((r, i) => (
               <li key={i} className="missed-item">
                 {r.type !== "locate" && (
-                  <img
-                    src={flagUrl(r.country.code)}
-                    alt={`Flag of ${r.country.name}`}
+                  <FlagImage
+                    code={r.country.code}
+                    countryName={r.country.name}
                     className="missed-flag"
-                    onError={() => setImgErrors((e) => ({ ...e, [r.country.code]: true }))}
-                    style={imgErrors[r.country.code] ? { display: "none" } : {}}
                   />
                 )}
                 <div>
