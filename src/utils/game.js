@@ -1,5 +1,6 @@
 import { countries, getByRegion } from "../data/countries";
 import { countryPaths } from "../data/countryPaths";
+import { countriesExtra } from "../data/countriesExtra";
 
 export function shuffle(arr) {
   const a = [...arr];
@@ -76,13 +77,51 @@ export function buildQuestion(type, country, pool, difficulty) {
     };
   }
 
+  if (type === "languages") {
+    const extra = countriesExtra[country.code];
+    if (!extra) return null;
+    const correctLang = extra.language;
+    // Build language distractors from same pool
+    const otherLangs = [...new Set(
+      distractors
+        .map((c) => countriesExtra[c.code]?.language)
+        .filter((l) => l && l !== correctLang)
+    )].slice(0, 3);
+    while (otherLangs.length < 3) {
+      // fallback: pick from all countries
+      const fallbacks = ["Spanish", "French", "Arabic", "English", "Mandarin", "Portuguese", "Russian", "Hindi", "Bengali", "German"];
+      const fb = fallbacks.find((l) => l !== correctLang && !otherLangs.includes(l));
+      if (fb) otherLangs.push(fb);
+      else break;
+    }
+    const langOptions = shuffle([correctLang, ...otherLangs]);
+    return {
+      type,
+      prompt: `What is an official language of ${country.name}?`,
+      correct: { ...country, language: correctLang },
+      options: langOptions,
+    };
+  }
+
   return null;
+}
+
+export function buildCompareQuestion(type, left, right) {
+  const label = type === "population" ? "population" : "area";
+  return {
+    type,
+    prompt: `Which country has the larger ${label}?`,
+    left,
+    right,
+  };
 }
 
 export function buildRound({ mode, region, difficulty, count = 10 }) {
   const fullPool = getByRegion(region);
   // Shapes requires a renderable outline — filter to countries in the topology
   const shapesPool = fullPool.filter((c) => !!countryPaths[c.code]);
+  // Languages/compare require extra data
+  const extraPool = fullPool.filter((c) => !!countriesExtra[c.code]);
 
   const types = ["flags", "capitals", "locate", "shapes"];
 
@@ -91,6 +130,22 @@ export function buildRound({ mode, region, difficulty, count = 10 }) {
     return selected.map((country) =>
       buildQuestion("shapes", country, shapesPool, difficulty)
     );
+  }
+
+  if (mode === "languages") {
+    const selected = shuffle(extraPool).slice(0, Math.min(count, extraPool.length));
+    return selected.map((country) =>
+      buildQuestion("languages", country, extraPool, difficulty)
+    ).filter(Boolean);
+  }
+
+  if (mode === "population" || mode === "area") {
+    const selected = shuffle(extraPool);
+    const pairs = [];
+    for (let i = 0; i + 1 < selected.length && pairs.length < count; i += 2) {
+      pairs.push(buildCompareQuestion(mode, selected[i], selected[i + 1]));
+    }
+    return pairs;
   }
 
   const selected = shuffle(fullPool).slice(0, Math.min(count, fullPool.length));

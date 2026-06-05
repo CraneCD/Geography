@@ -422,6 +422,60 @@ body {
 .btn--primary { background: var(--primary); color: #fff; }
 .btn--secondary { background: transparent; border-color: #475569; color: var(--text); }
 
+/* ---- Compare (population/area) ---- */
+.compare-card-wrap .question-prompt { margin-bottom: 1rem; }
+
+.compare-grid {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.compare-vs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  min-width: 2rem;
+}
+
+.compare-card {
+  flex: 1;
+  background: var(--surface2);
+  border: 2px solid #475569;
+  border-radius: var(--radius);
+  padding: 1.25rem 1rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .6rem;
+  transition: border-color .15s, background .15s, transform .1s;
+  color: var(--text);
+  min-height: 180px;
+}
+.compare-card:hover:not(:disabled) {
+  border-color: var(--primary);
+  background: #2d3f55;
+  transform: translateY(-2px);
+}
+.compare-card:focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; }
+.compare-card:disabled { cursor: default; }
+.compare-card--correct { border-color: var(--correct) !important; background: rgba(22,163,74,.12) !important; }
+.compare-card--wrong { border-color: var(--wrong) !important; background: rgba(220,38,38,.1) !important; }
+
+.compare-flag { width: 100%; display: flex; justify-content: center; }
+.compare-flag-img { width: 100%; max-width: 140px; height: auto; border-radius: 6px; aspect-ratio: 3/2; object-fit: cover; }
+.compare-name { font-size: 1rem; font-weight: 700; text-align: center; }
+.compare-value { font-size: 1.1rem; font-weight: 800; color: var(--primary); text-align: center; }
+.compare-unknown { font-size: 2rem; color: var(--text-muted); }
+.compare-verdict { font-size: .85rem; font-weight: 700; }
+.compare-card--correct .compare-verdict { color: #4ade80; }
+.compare-card--wrong .compare-verdict { color: #f87171; }
+
 /* ---- Responsive ---- */
 @media (max-width: 480px) {
   .options-grid { grid-template-columns: 1fr; }

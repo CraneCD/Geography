@@ -7,6 +7,8 @@ import CapitalsQuestion from "./CapitalsQuestion";
 import LocateQuestion from "./LocateQuestion";
 import TypeAnswer from "./TypeAnswer";
 import ShapeQuestion from "./ShapeQuestion";
+import LanguagesQuestion from "./LanguagesQuestion";
+import CompareQuestion from "./CompareQuestion";
 import SummaryScreen from "./SummaryScreen";
 
 const TIMER_SECONDS = { easy: 30, medium: 20, hard: 12, expert: 30 };
@@ -35,7 +37,7 @@ export default function GameScreen({ config, onChangeMode }) {
       missedRef.current.push(question);
     }
 
-    const entry = { wasCorrect, type: question.type, country: question.correct };
+    const entry = { wasCorrect, type: question.type, country: question.correct ?? question.left };
     const newResults = [...results, entry];
     setResults(newResults);
     if (wasCorrect) setScore((s) => s + 1);
@@ -110,6 +112,9 @@ export default function GameScreen({ config, onChangeMode }) {
         {question.type === "capitals" && "🏛️ Capitals"}
         {question.type === "locate" && "🗺️ Locate"}
         {question.type === "shapes" && "🔷 Shapes"}
+        {question.type === "languages" && "🗣️ Languages"}
+        {question.type === "population" && "👥 Population"}
+        {question.type === "area" && "📐 Area"}
       </div>
 
       {question.type === "flags" && !isExpert && (
@@ -129,6 +134,12 @@ export default function GameScreen({ config, onChangeMode }) {
       )}
       {question.type === "shapes" && (
         <ShapeQuestion key={idx} question={question} onAnswer={handleAnswer} isExpert={isExpert} />
+      )}
+      {question.type === "languages" && (
+        <LanguagesQuestion key={idx} question={question} onAnswer={handleAnswer} />
+      )}
+      {(question.type === "population" || question.type === "area") && (
+        <CompareQuestion key={idx} question={question} onAnswer={handleAnswer} />
       )}
     </div>
   );

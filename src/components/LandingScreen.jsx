@@ -7,6 +7,9 @@ const MODES = [
   { id: "capitals", icon: "🏛️", title: "Capitals", description: "Name the capital city of a country." },
   { id: "locate", icon: "🗺️", title: "Locate the Country", description: "Click the correct country on the map." },
   { id: "shapes", icon: "🔷", title: "Shapes", description: "Identify a country from its outline." },
+  { id: "languages", icon: "🗣️", title: "Languages", description: "Which country speaks this language?" },
+  { id: "population", icon: "👥", title: "Population", description: "Pick the country with the larger population." },
+  { id: "area", icon: "📐", title: "Area", description: "Pick the country with the larger land area." },
   { id: "mixed", icon: "🎲", title: "Mixed", description: "Random questions from all four modes." },
 ];
 
