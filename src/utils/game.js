@@ -98,6 +98,7 @@ export function buildQuestion(type, country, pool, difficulty) {
     return {
       type,
       prompt: `What is an official language of ${country.name}?`,
+      flagCode: country.code,
       correct: { ...country, language: correctLang },
       options: langOptions,
     };

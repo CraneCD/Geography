@@ -135,8 +135,11 @@ export default function GameScreen({ config, onChangeMode }) {
       {question.type === "shapes" && (
         <ShapeQuestion key={idx} question={question} onAnswer={handleAnswer} isExpert={isExpert} />
       )}
-      {question.type === "languages" && (
+      {question.type === "languages" && !isExpert && (
         <LanguagesQuestion key={idx} question={question} onAnswer={handleAnswer} />
+      )}
+      {question.type === "languages" && isExpert && (
+        <TypeAnswer key={idx} question={question} onAnswer={handleAnswer} />
       )}
       {(question.type === "population" || question.type === "area") && (
         <CompareQuestion key={idx} question={question} onAnswer={handleAnswer} />

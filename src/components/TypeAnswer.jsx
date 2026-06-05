@@ -49,7 +49,9 @@ export default function TypeAnswer({ question, onAnswer }) {
   }, []);
 
   const answerText =
-    question.type === "flags" ? question.correct.name : question.correct.capital;
+    question.type === "flags" ? question.correct.name
+    : question.type === "languages" ? question.correct.language
+    : question.correct.capital;
 
   function submit() {
     if (submitted || !value.trim()) return;
@@ -97,7 +99,7 @@ export default function TypeAnswer({ question, onAnswer }) {
           onChange={(e) => setValue(e.target.value)}
           onKeyDown={handleKey}
           disabled={submitted}
-          placeholder={question.type === "flags" ? "Type the country name…" : "Type the capital city…"}
+          placeholder={question.type === "flags" ? "Type the country name…" : question.type === "languages" ? "Type the language…" : "Type the capital city…"}
           className={`type-input ${submitted ? (wasCorrect ? "type-input--correct" : "type-input--wrong") : ""}`}
           aria-label="Your answer"
           autoComplete="off"
