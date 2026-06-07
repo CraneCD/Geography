@@ -1,14 +1,10 @@
 import { useState } from "react";
 import { lazy, Suspense } from "react";
 
-// Accurate flags from flagcdn.com (Wikipedia-sourced). Falls back to bundled SVG,
-// then to emoji if both fail (e.g. in network-restricted environments).
-
 function cdnUrl(code) {
   return `https://flagcdn.com/w320/${code.toLowerCase()}.png`;
 }
 
-// Bundled SVG fallback — simplified but always available offline
 function loadBundledFlag(code) {
   return lazy(() =>
     import(`country-flag-icons/react/3x2`)
@@ -59,21 +55,38 @@ function BundledFlag({ code, countryName, className, style }) {
   );
 }
 
+// Neutral placeholder shown while the CDN image is in flight — no text, no alt visible
+function LoadingPlaceholder({ className, style }) {
+  return (
+    <div
+      className={className}
+      style={{ ...style, background: "var(--surface2)", borderRadius: 8 }}
+      aria-hidden="true"
+    />
+  );
+}
+
 export default function FlagImage({ code, countryName, className, style }) {
   const [cdnFailed, setCdnFailed] = useState(false);
+  const [loaded, setLoaded] = useState(false);
 
   if (cdnFailed) {
     return <BundledFlag code={code} countryName={countryName} className={className} style={style} />;
   }
 
   return (
-    <img
-      src={cdnUrl(code)}
-      alt={countryName ? `Flag of ${countryName}` : `Flag: ${code}`}
-      className={className}
-      style={style}
-      onError={() => setCdnFailed(true)}
-      loading="lazy"
-    />
+    <>
+      {!loaded && <LoadingPlaceholder className={className} style={style} />}
+      <img
+        src={cdnUrl(code)}
+        // Use empty alt while loading so browsers don't show the name as placeholder text.
+        // Set the real alt only once loaded so screen readers still get it.
+        alt={loaded && countryName ? `Flag of ${countryName}` : ""}
+        className={className}
+        style={{ ...style, display: loaded ? undefined : "none" }}
+        onLoad={() => setLoaded(true)}
+        onError={() => setCdnFailed(true)}
+      />
+    </>
   );
 }

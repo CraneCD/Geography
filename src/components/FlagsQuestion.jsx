@@ -24,7 +24,6 @@ export default function FlagsQuestion({ question, onAnswer }) {
       <div className="flag-wrap">
         <FlagImage
           code={question.flagCode}
-          countryName={question.correct.name}
           className="flag-img"
         />
       </div>
