@@ -1,9 +1,38 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-// Image loader that hides until loaded (same pattern as FlagImage)
+// Fetch image as blob so the browser sends no Referer header,
+// bypassing Wikimedia's hotlink protection for unknown domains.
 function HistoryImage({ url, alt, className }) {
-  const [loaded, setLoaded] = useState(false);
+  const [blobSrc, setBlobSrc] = useState(null);
   const [failed, setFailed] = useState(false);
+
+  useEffect(() => {
+    if (!url) { setFailed(true); return; }
+    let revoked = false;
+    let objectUrl = null;
+
+    // Fetch with no Referer header so hotlink-protection doesn't block us.
+    // On CORS failure (e.g. strict browser policy), fall back to a plain img src.
+    fetch(url, { referrerPolicy: "no-referrer" })
+      .then((r) => {
+        if (!r.ok) throw new Error(`${r.status}`);
+        return r.blob();
+      })
+      .then((blob) => {
+        if (revoked) return;
+        objectUrl = URL.createObjectURL(blob);
+        setBlobSrc(objectUrl);
+      })
+      .catch(() => {
+        // CORS or network failure — fall back to direct img src (may still work)
+        if (!revoked) setBlobSrc(url);
+      });
+
+    return () => {
+      revoked = true;
+      if (objectUrl) URL.revokeObjectURL(objectUrl);
+    };
+  }, [url]);
 
   if (failed) {
     return (
@@ -14,18 +43,18 @@ function HistoryImage({ url, alt, className }) {
     );
   }
 
+  if (!blobSrc) {
+    return <div className="history-img-placeholder" aria-hidden="true" style={{ width: "100%", minHeight: 200 }} />;
+  }
+
   return (
-    <>
-      {!loaded && <div className="history-img-placeholder" aria-hidden="true" style={{ width: "100%", minHeight: 200 }} />}
-      <img
-        src={url}
-        alt={loaded ? alt : ""}
-        className={className}
-        style={{ display: loaded ? undefined : "none" }}
-        onLoad={() => setLoaded(true)}
-        onError={() => setFailed(true)}
-      />
-    </>
+    <img
+      src={blobSrc}
+      alt={alt}
+      className={className}
+      referrerPolicy="no-referrer"
+      onError={() => setFailed(true)}
+    />
   );
 }
 
