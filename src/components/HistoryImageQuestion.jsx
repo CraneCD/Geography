@@ -22,8 +22,6 @@ function HistoryImage({ url, alt, className }) {
         alt={loaded ? alt : ""}
         className={className}
         style={{ display: loaded ? undefined : "none" }}
-        referrerPolicy="no-referrer"
-        crossOrigin="anonymous"
         onLoad={() => setLoaded(true)}
         onError={() => setFailed(true)}
       />
