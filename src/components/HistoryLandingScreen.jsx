@@ -1,4 +1,11 @@
 import ModeCard from "./ModeCard";
+import { strings } from "../i18n/strings.jsx";
+
+const LANGUAGES = [
+  { code: "en", label: "English" },
+  { code: "es", label: "Español" },
+  { code: "fr", label: "Français" },
+];
 
 const MODES = [
   { id: "people",        icon: "🧑‍🎨", title: { en: "Famous People",    es: "Personajes Famosos", fr: "Personnages Célèbres" }, desc: { en: "Identify historical figures from their portrait.", es: "Identifica personajes históricos por su retrato.", fr: "Identifiez des personnages historiques à partir de leur portrait." } },
@@ -26,6 +33,7 @@ const LABELS = {
 
 export default function HistoryLandingScreen({ settings, onSettingsChange, onStart, onBack }) {
   const { difficulty, roundSize, lang = "en" } = settings;
+  const s = strings[lang] ?? strings.en;
   const labels = LABELS[lang] ?? LABELS.en;
   const diffLabels = DIFF_LABELS[lang] ?? DIFF_LABELS.en;
 
@@ -55,6 +63,22 @@ export default function HistoryLandingScreen({ settings, onSettingsChange, onSta
       </section>
 
       <section className="landing__options" aria-label="Game options">
+        <div className="option-group">
+          <label className="option-label">{s.language}</label>
+          <div className="option-pills" role="group" aria-label={s.language}>
+            {LANGUAGES.map((l) => (
+              <button
+                key={l.code}
+                onClick={() => set({ lang: l.code })}
+                className={`pill ${lang === l.code ? "pill--active" : ""}`}
+                aria-pressed={lang === l.code}
+              >
+                {l.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
         <div className="option-group">
           <label className="option-label">{labels.difficulty}</label>
           <div className="option-pills" role="group">
