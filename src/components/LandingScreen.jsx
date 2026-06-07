@@ -1,4 +1,3 @@
-import { useState } from "react";
 import ModeCard from "./ModeCard";
 import { regions } from "../data/countries";
 
@@ -25,21 +24,18 @@ const MIXED_TOGGLES = [
 const DIFFICULTIES = ["easy", "medium", "hard", "expert"];
 const ROUND_SIZES = [5, 10, 15, 20];
 
-export default function LandingScreen({ onStart }) {
-  const [region, setRegion] = useState("All");
-  const [difficulty, setDifficulty] = useState("medium");
-  const [roundSize, setRoundSize] = useState(10);
-  const [mixedModes, setMixedModes] = useState(MIXED_TOGGLES.map((t) => t.id));
+export default function LandingScreen({ settings, onSettingsChange, onStart }) {
+  const { region, difficulty, roundSize, mixedModes } = settings;
+
+  function set(patch) {
+    onSettingsChange({ ...settings, ...patch });
+  }
 
   function toggleMixedMode(id) {
-    setMixedModes((prev) => {
-      if (prev.includes(id)) {
-        // Keep at least 2 active
-        if (prev.length <= 2) return prev;
-        return prev.filter((m) => m !== id);
-      }
-      return [...prev, id];
-    });
+    const next = mixedModes.includes(id)
+      ? mixedModes.length > 2 ? mixedModes.filter((m) => m !== id) : mixedModes
+      : [...mixedModes, id];
+    set({ mixedModes: next });
   }
 
   return (
@@ -56,14 +52,14 @@ export default function LandingScreen({ onStart }) {
             icon={m.icon}
             title={m.title}
             description={m.description}
-            onClick={() => onStart({ mode: m.id, region, difficulty, count: roundSize })}
+            onClick={() => onStart(m.id)}
           />
         ))}
         <ModeCard
           icon="🎲"
           title="Mixed"
           description="Random questions from your chosen modes."
-          onClick={() => onStart({ mode: "mixed", region, difficulty, count: roundSize, mixedModes })}
+          onClick={() => onStart("mixed")}
         />
       </section>
 
@@ -73,7 +69,7 @@ export default function LandingScreen({ onStart }) {
           <select
             id="region-select"
             value={region}
-            onChange={(e) => setRegion(e.target.value)}
+            onChange={(e) => set({ region: e.target.value })}
             className="option-select"
           >
             {regions.map((r) => (
@@ -88,7 +84,7 @@ export default function LandingScreen({ onStart }) {
             {DIFFICULTIES.map((d) => (
               <button
                 key={d}
-                onClick={() => setDifficulty(d)}
+                onClick={() => set({ difficulty: d })}
                 className={`pill ${difficulty === d ? "pill--active" : ""}`}
                 aria-pressed={difficulty === d}
               >
@@ -104,7 +100,7 @@ export default function LandingScreen({ onStart }) {
             {ROUND_SIZES.map((n) => (
               <button
                 key={n}
-                onClick={() => setRoundSize(n)}
+                onClick={() => set({ roundSize: n })}
                 className={`pill ${roundSize === n ? "pill--active" : ""}`}
                 aria-pressed={roundSize === n}
               >
