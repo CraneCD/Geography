@@ -86,7 +86,8 @@ function buildEventQuestion(event, difficulty) {
     prompt: event.event,
     description: event.description,
     correct: event,
-    options: yearOptions, // numbers (years)
+    options: yearOptions,
+    answerKey: "year",
     category: event.category,
   };
 }
