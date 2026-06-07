@@ -39,7 +39,7 @@ export default function LocateQuestion({ question, onAnswer }) {
       <div className="map-container" role="application" aria-label={`World map. Find ${question.correct.name}.`}>
         <ComposableMap projection="geoNaturalEarth1" style={{ width: "100%", height: "100%" }}>
           <ZoomableGroup zoom={1} minZoom={1} maxZoom={8}>
-            <Geographies geography={topology}>
+            <Geographies geography={topology} key={answered ? "answered" : "active"}>
               {({ geographies }) =>
                 geographies.map((geo) => (
                   <Geography
