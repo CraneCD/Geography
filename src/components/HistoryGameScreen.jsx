@@ -20,6 +20,7 @@ const BACK_LABELS = { en: "← Home", es: "← Inicio", fr: "← Accueil" };
 
 export default function HistoryGameScreen({ config, onChangeMode }) {
   const { difficulty = "medium", timerSeconds, lang = "en" } = config;
+  const isExpert = difficulty === "expert";
   const s = strings[lang] ?? strings.en;
 
   const [questions, setQuestions] = useState(() => buildHistoryRound(config));
@@ -111,16 +112,16 @@ export default function HistoryGameScreen({ config, onChangeMode }) {
       <div className="question-type-label">{typeLabel}</div>
 
       {question.type === "people" && (
-        <HistoryImageQuestion key={idx} question={question} onAnswer={handleAnswer} />
+        <HistoryImageQuestion key={idx} question={question} onAnswer={handleAnswer} isExpert={isExpert} />
       )}
       {question.type === "art" && (
-        <HistoryImageQuestion key={idx} question={question} onAnswer={handleAnswer} />
+        <HistoryImageQuestion key={idx} question={question} onAnswer={handleAnswer} isExpert={isExpert} />
       )}
       {question.type === "events" && (
-        <HistoryMCQQuestion key={idx} question={question} onAnswer={handleAnswer} />
+        <HistoryMCQQuestion key={idx} question={question} onAnswer={handleAnswer} isExpert={isExpert} />
       )}
       {question.type === "inventions" && (
-        <HistoryMCQQuestion key={idx} question={question} onAnswer={handleAnswer} />
+        <HistoryMCQQuestion key={idx} question={question} onAnswer={handleAnswer} isExpert={isExpert} />
       )}
       {question.type === "who-first" && (
         <ChronologyQuestion key={idx} question={question} onAnswer={handleAnswer} />

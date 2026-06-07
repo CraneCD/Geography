@@ -9,13 +9,13 @@ const MODES = [
   { id: "history-mixed", icon: "🎲", title: { en: "Mixed",              es: "Mixto",                fr: "Mixte" }, desc: { en: "Random questions from all history modes.", es: "Preguntas aleatorias de todos los modos de historia.", fr: "Questions aléatoires de tous les modes d'histoire." } },
 ];
 
-const DIFFICULTIES = ["easy", "medium", "hard"];
+const DIFFICULTIES = ["easy", "medium", "hard", "expert"];
 const ROUND_SIZES = [5, 10, 15, 20];
 
 const DIFF_LABELS = {
-  en: { easy: "Easy", medium: "Medium", hard: "Hard" },
-  es: { easy: "Fácil", medium: "Medio", hard: "Difícil" },
-  fr: { easy: "Facile", medium: "Moyen", hard: "Difficile" },
+  en: { easy: "Easy", medium: "Medium", hard: "Hard", expert: "Expert" },
+  es: { easy: "Fácil", medium: "Medio", hard: "Difícil", expert: "Experto" },
+  fr: { easy: "Facile", medium: "Moyen", hard: "Difficile", expert: "Expert" },
 };
 
 const LABELS = {
