@@ -23,9 +23,16 @@ const MIXED_TOGGLES = [
 
 const DIFFICULTIES = ["easy", "medium", "hard", "expert"];
 const ROUND_SIZES = [5, 10, 15, 20];
+const TIMER_OPTIONS = [
+  { label: "1 min", value: 60 },
+  { label: "2 min", value: 120 },
+  { label: "3 min", value: 180 },
+  { label: "5 min", value: 300 },
+  { label: "∞", value: null },
+];
 
 export default function LandingScreen({ settings, onSettingsChange, onStart }) {
-  const { region, difficulty, roundSize, mixedModes } = settings;
+  const { region, difficulty, roundSize, mixedModes, timerSeconds } = settings;
 
   function set(patch) {
     onSettingsChange({ ...settings, ...patch });
@@ -105,6 +112,23 @@ export default function LandingScreen({ settings, onSettingsChange, onStart }) {
                 aria-pressed={roundSize === n}
               >
                 {n}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="option-group">
+          <label className="option-label">Timer per question</label>
+          <p className="option-hint">Disabled on Easy &amp; Expert difficulty</p>
+          <div className="option-pills" role="group" aria-label="Timer per question">
+            {TIMER_OPTIONS.map((t) => (
+              <button
+                key={String(t.value)}
+                onClick={() => set({ timerSeconds: t.value })}
+                className={`pill ${timerSeconds === t.value ? "pill--active" : ""}`}
+                aria-pressed={timerSeconds === t.value}
+              >
+                {t.label}
               </button>
             ))}
           </div>

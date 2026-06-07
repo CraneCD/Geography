@@ -10,6 +10,7 @@ const DEFAULT_SETTINGS = {
   difficulty: "medium",
   roundSize: 10,
   mixedModes: ALL_MIXED_MODES,
+  timerSeconds: 60,
 };
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
   const [settings, setSettings] = useState(DEFAULT_SETTINGS);
 
   function handleStart(mode) {
-    setConfig({ mode, region: settings.region, difficulty: settings.difficulty, count: settings.roundSize, mixedModes: settings.mixedModes });
+    setConfig({ mode, region: settings.region, difficulty: settings.difficulty, count: settings.roundSize, mixedModes: settings.mixedModes, timerSeconds: settings.timerSeconds });
   }
 
   return (

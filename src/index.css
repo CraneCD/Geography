@@ -96,6 +96,7 @@ body {
 .option-select:focus { outline: 3px solid var(--primary); }
 .option-group--full { width: 100%; }
 
+.option-hint { font-size: .75rem; color: var(--text-muted); margin-bottom: .25rem; }
 .option-pills { display: flex; gap: .4rem; flex-wrap: wrap; }
 .pill {
   background: var(--surface2);

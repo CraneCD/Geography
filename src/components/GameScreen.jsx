@@ -11,10 +11,8 @@ import LanguagesQuestion from "./LanguagesQuestion";
 import CompareQuestion from "./CompareQuestion";
 import SummaryScreen from "./SummaryScreen";
 
-const TIMER_SECONDS = { easy: 30, medium: 20, hard: 12, expert: 30 };
-
 export default function GameScreen({ config, onChangeMode }) {
-  const { difficulty, practice } = config;
+  const { difficulty, practice, timerSeconds } = config;
 
   const [questions, setQuestions] = useState(() => buildRound(config));
   const [idx, setIdx] = useState(0);
@@ -26,8 +24,9 @@ export default function GameScreen({ config, onChangeMode }) {
   const missedRef = useRef([]);
 
   const isExpert = difficulty === "expert";
-  const useTimer = difficulty !== "easy" && !practice && !isExpert;
-  const timerDuration = TIMER_SECONDS[difficulty] ?? 20;
+  // No timer when: infinite selected, easy difficulty, expert mode, or practice
+  const useTimer = timerSeconds !== null && difficulty !== "easy" && !isExpert && !practice;
+  const timerDuration = timerSeconds ?? 60;
   const question = questions[idx];
 
   function handleAnswer(wasCorrect) {
