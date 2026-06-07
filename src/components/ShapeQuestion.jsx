@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { countryPaths } from "../data/countryPaths";
+import { strings } from "../i18n/strings.jsx";
 
 const W = 400;
 const H = 300;
@@ -82,7 +83,7 @@ function ShapeMultiChoice({ question, onAnswer }) {
 }
 
 // ── Expert / free-type variant ──────────────────────────────────────────────
-function ShapeTypeAnswer({ question, onAnswer }) {
+function ShapeTypeAnswer({ question, onAnswer, s }) {
   const [value, setValue] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [wasCorrect, setWasCorrect] = useState(null);
@@ -115,7 +116,7 @@ function ShapeTypeAnswer({ question, onAnswer }) {
           onChange={(e) => setValue(e.target.value)}
           onKeyDown={(e) => { if (e.key === "Enter") submit(); }}
           disabled={submitted}
-          placeholder="Type the country name…"
+          placeholder={s.typeShapePlaceholder}
           className={`type-input ${submitted ? (wasCorrect ? "type-input--correct" : "type-input--wrong") : ""}`}
           aria-label="Your answer"
           autoComplete="off"
@@ -124,16 +125,14 @@ function ShapeTypeAnswer({ question, onAnswer }) {
         />
         {!submitted ? (
           <button onClick={submit} className="btn btn--primary type-submit" disabled={!value.trim()}>
-            Submit
+            {s.submitBtn}
           </button>
         ) : (
           <div
             className={`type-feedback ${wasCorrect ? "type-feedback--correct" : "type-feedback--wrong"}`}
             aria-live="assertive"
           >
-            {wasCorrect
-              ? <><span aria-hidden="true">✓</span> Correct!</>
-              : <><span aria-hidden="true">✗</span> Answer: <strong>{question.correct.name}</strong></>}
+            {wasCorrect ? s.correct : s.wrongAnswer(question.correct.name)}
           </div>
         )}
       </div>
@@ -142,8 +141,9 @@ function ShapeTypeAnswer({ question, onAnswer }) {
 }
 
 // ── Public component ────────────────────────────────────────────────────────
-export default function ShapeQuestion({ question, onAnswer, isExpert }) {
+export default function ShapeQuestion({ question, onAnswer, isExpert, s: sProp }) {
+  const s = sProp ?? strings.en;
   return isExpert
-    ? <ShapeTypeAnswer question={question} onAnswer={onAnswer} />
+    ? <ShapeTypeAnswer question={question} onAnswer={onAnswer} s={s} />
     : <ShapeMultiChoice question={question} onAnswer={onAnswer} />;
 }

@@ -1,6 +1,8 @@
 import { countries, getByRegion } from "../data/countries";
 import { countryPaths } from "../data/countryPaths";
 import { countriesExtra } from "../data/countriesExtra";
+import { countryTranslations } from "../data/countryTranslations";
+import { strings } from "../i18n/strings.jsx";
 
 export function shuffle(arr) {
   const a = [...arr];
@@ -11,36 +13,44 @@ export function shuffle(arr) {
   return a;
 }
 
-/**
- * Build N plausible distractors for a correct answer.
- * Biases toward same region at Easy/Medium difficulty.
- */
+// Return a country object with its name translated to the given language
+function translate(country, lang) {
+  if (!lang || lang === "en") return country;
+  const t = countryTranslations[country.code];
+  if (!t || !t[lang]) return country;
+  return { ...country, name: t[lang] };
+}
+
+function translatePool(pool, lang) {
+  if (!lang || lang === "en") return pool;
+  return pool.map((c) => translate(c, lang));
+}
+
 export function getDistractors(correct, pool, count, difficulty) {
   const sameRegion = pool.filter((c) => c.code !== correct.code && c.region === correct.region);
   const otherRegion = pool.filter((c) => c.code !== correct.code && c.region !== correct.region);
 
   let candidates;
   if (difficulty === "easy") {
-    // Different region so flags/capitals look more distinct
     candidates = shuffle(otherRegion);
   } else if (difficulty === "medium") {
     candidates = shuffle([...sameRegion.slice(0, Math.ceil(count / 2)), ...otherRegion]);
   } else {
-    // Hard: same region distractors
     candidates = shuffle([...sameRegion, ...otherRegion]);
   }
 
   return candidates.slice(0, count);
 }
 
-export function buildQuestion(type, country, pool, difficulty) {
+export function buildQuestion(type, country, pool, difficulty, lang = "en") {
+  const s = strings[lang] ?? strings.en;
   const distractors = getDistractors(country, pool, 3, difficulty);
   const options = shuffle([country, ...distractors]);
 
   if (type === "flags") {
     return {
       type,
-      prompt: "Which country does this flag belong to?",
+      prompt: s.flagPrompt,
       flagCode: country.code,
       correct: country,
       options,
@@ -51,7 +61,7 @@ export function buildQuestion(type, country, pool, difficulty) {
   if (type === "capitals") {
     return {
       type,
-      prompt: `What is the capital of ${country.name}?`,
+      prompt: s.capitalPrompt(country.name),
       flagCode: country.code,
       correct: country,
       options,
@@ -62,7 +72,7 @@ export function buildQuestion(type, country, pool, difficulty) {
   if (type === "locate") {
     return {
       type,
-      prompt: `Find ${country.name} on the map`,
+      prompt: s.locatePrompt(country.name),
       correct: country,
       options: null,
     };
@@ -71,7 +81,7 @@ export function buildQuestion(type, country, pool, difficulty) {
   if (type === "shapes") {
     return {
       type,
-      prompt: "Which country has this shape?",
+      prompt: s.shapePrompt,
       correct: country,
       options,
     };
@@ -81,14 +91,12 @@ export function buildQuestion(type, country, pool, difficulty) {
     const extra = countriesExtra[country.code];
     if (!extra) return null;
     const correctLang = extra.language;
-    // Build language distractors from same pool
     const otherLangs = [...new Set(
       distractors
         .map((c) => countriesExtra[c.code]?.language)
         .filter((l) => l && l !== correctLang)
     )].slice(0, 3);
     while (otherLangs.length < 3) {
-      // fallback: pick from all countries
       const fallbacks = ["Spanish", "French", "Arabic", "English", "Mandarin", "Portuguese", "Russian", "Hindi", "Bengali", "German"];
       const fb = fallbacks.find((l) => l !== correctLang && !otherLangs.includes(l));
       if (fb) otherLangs.push(fb);
@@ -97,7 +105,7 @@ export function buildQuestion(type, country, pool, difficulty) {
     const langOptions = shuffle([correctLang, ...otherLangs]);
     return {
       type,
-      prompt: `What is an official language of ${country.name}?`,
+      prompt: s.languagePrompt(country.name),
       flagCode: country.code,
       correct: { ...country, language: correctLang },
       options: langOptions,
@@ -107,23 +115,23 @@ export function buildQuestion(type, country, pool, difficulty) {
   return null;
 }
 
-export function buildCompareQuestion(type, left, right) {
-  const label = type === "population" ? "population" : "area";
+export function buildCompareQuestion(type, left, right, lang = "en") {
+  const s = strings[lang] ?? strings.en;
   return {
     type,
-    prompt: `Which country has the larger ${label}?`,
+    prompt: type === "population" ? s.populationPrompt : s.areaPrompt,
     left,
     right,
   };
 }
 
-export function buildRound({ mode, region, difficulty, count = 10, mixedModes }) {
-  const fullPool = getByRegion(region);
-  // Shapes and Locate both require a topology entry (110m resolution excludes small islands)
+export function buildRound({ mode, region, difficulty, count = 10, mixedModes, lang = "en" }) {
+  const rawPool = getByRegion(region);
+  // Apply translations to country names throughout
+  const fullPool = translatePool(rawPool, lang);
   const topoPool = fullPool.filter((c) => !!countryPaths[c.code]);
   const shapesPool = topoPool;
   const locatePool = topoPool;
-  // Languages/compare require extra data
   const extraPool = fullPool.filter((c) => !!countriesExtra[c.code]);
 
   const COUNTRY_TYPES = ["flags", "capitals", "locate", "shapes", "languages"];
@@ -132,22 +140,18 @@ export function buildRound({ mode, region, difficulty, count = 10, mixedModes })
 
   if (mode === "shapes") {
     const selected = shuffle(shapesPool).slice(0, Math.min(count, shapesPool.length));
-    return selected.map((country) =>
-      buildQuestion("shapes", country, shapesPool, difficulty)
-    );
+    return selected.map((country) => buildQuestion("shapes", country, shapesPool, difficulty, lang));
   }
 
   if (mode === "locate") {
     const selected = shuffle(locatePool).slice(0, Math.min(count, locatePool.length));
-    return selected.map((country) =>
-      buildQuestion("locate", country, locatePool, difficulty)
-    );
+    return selected.map((country) => buildQuestion("locate", country, locatePool, difficulty, lang));
   }
 
   if (mode === "languages") {
     const selected = shuffle(extraPool).slice(0, Math.min(count, extraPool.length));
     return selected.map((country) =>
-      buildQuestion("languages", country, extraPool, difficulty)
+      buildQuestion("languages", country, extraPool, difficulty, lang)
     ).filter(Boolean);
   }
 
@@ -156,61 +160,48 @@ export function buildRound({ mode, region, difficulty, count = 10, mixedModes })
     const selected = shuffle(enriched);
     const pairs = [];
     for (let i = 0; i + 1 < selected.length && pairs.length < count; i += 2) {
-      pairs.push(buildCompareQuestion(mode, selected[i], selected[i + 1]));
+      pairs.push(buildCompareQuestion(mode, selected[i], selected[i + 1], lang));
     }
     return pairs;
   }
 
   if (mode === "mixed") {
-    // mixedModes defaults to all types if not specified
     const activeModes = mixedModes && mixedModes.length > 0 ? mixedModes : ALL_TYPES;
-    const activeCountryTypes = activeModes.filter((t) => COUNTRY_TYPES.includes(t));
-    const activeCompareTypes = activeModes.filter((t) => COMPARE_TYPES.includes(t));
-
-    // Assign a random type to each slot
     const slots = Array.from({ length: count }, () =>
       activeModes[Math.floor(Math.random() * activeModes.length)]
     );
-
-    // Build country-based questions
     const enrichedPool = extraPool.map((c) => ({ ...c, ...countriesExtra[c.code] }));
     const countrySlots = slots.filter((t) => COUNTRY_TYPES.includes(t));
-    const compareSlots = slots.filter((t) => COMPARE_TYPES.includes(t));
-
     const countrySelected = shuffle(fullPool).slice(0, Math.min(countrySlots.length, fullPool.length));
     const compareSelected = shuffle(enrichedPool);
-
-    let ci = 0; // country index
-    let pi = 0; // compare pair index
-
+    let ci = 0;
+    let pi = 0;
     return slots.map((type) => {
       if (COUNTRY_TYPES.includes(type)) {
         const country = countrySelected[ci % countrySelected.length];
         ci++;
-        // For types that need filtered pools, fall back to flags if country not in pool
         if ((type === "shapes" || type === "locate") && !countryPaths[country.code]) {
-          return buildQuestion("flags", country, fullPool, difficulty);
+          return buildQuestion("flags", country, fullPool, difficulty, lang);
         }
         if (type === "languages" && !countriesExtra[country.code]) {
-          return buildQuestion("flags", country, fullPool, difficulty);
+          return buildQuestion("flags", country, fullPool, difficulty, lang);
         }
         const pool = type === "shapes" ? shapesPool
           : type === "locate" ? locatePool
           : type === "languages" ? extraPool
           : fullPool;
-        return buildQuestion(type, country, pool, difficulty);
+        return buildQuestion(type, country, pool, difficulty, lang);
       } else {
-        // compare type
         const a = compareSelected[(pi * 2) % compareSelected.length];
         const b = compareSelected[(pi * 2 + 1) % compareSelected.length] ?? compareSelected[0];
         pi++;
-        return buildCompareQuestion(type, a, b);
+        return buildCompareQuestion(type, a, b, lang);
       }
     }).filter(Boolean);
   }
 
   const selected = shuffle(fullPool).slice(0, Math.min(count, fullPool.length));
-  return selected.map((country) => buildQuestion(mode, country, fullPool, difficulty));
+  return selected.map((country) => buildQuestion(mode, country, fullPool, difficulty, lang));
 }
 
 export function flagUrl(code) {

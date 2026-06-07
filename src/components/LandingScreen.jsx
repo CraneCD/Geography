@@ -1,25 +1,10 @@
 import ModeCard from "./ModeCard";
 import { regions } from "../data/countries";
+import { strings } from "../i18n/strings.jsx";
 
-const SINGLE_MODES = [
-  { id: "flags", icon: "🚩", title: "Flags", description: "See a flag — name the country." },
-  { id: "capitals", icon: "🏛️", title: "Capitals", description: "Name the capital city of a country." },
-  { id: "locate", icon: "🗺️", title: "Locate", description: "Click the correct country on the map." },
-  { id: "shapes", icon: "🔷", title: "Shapes", description: "Identify a country from its outline." },
-  { id: "languages", icon: "🗣️", title: "Languages", description: "Which country speaks this language?" },
-  { id: "population", icon: "👥", title: "Population", description: "Pick the country with the larger population." },
-  { id: "area", icon: "📐", title: "Area", description: "Pick the country with the larger land area." },
-];
+const MODE_IDS = ["flags", "capitals", "locate", "shapes", "languages", "population", "area", "mixed"];
 
-const MIXED_TOGGLES = [
-  { id: "flags", icon: "🚩", label: "Flags" },
-  { id: "capitals", icon: "🏛️", label: "Capitals" },
-  { id: "locate", icon: "🗺️", label: "Locate" },
-  { id: "shapes", icon: "🔷", label: "Shapes" },
-  { id: "languages", icon: "🗣️", label: "Languages" },
-  { id: "population", icon: "👥", label: "Population" },
-  { id: "area", icon: "📐", label: "Area" },
-];
+const MIXED_TOGGLE_IDS = ["flags", "capitals", "locate", "shapes", "languages", "population", "area"];
 
 const DIFFICULTIES = ["easy", "medium", "hard", "expert"];
 const ROUND_SIZES = [5, 10, 15, 20];
@@ -30,9 +15,15 @@ const TIMER_OPTIONS = [
   { label: "5 min", value: 300 },
   { label: "∞", value: null },
 ];
+const LANGUAGES = [
+  { code: "en", label: "English" },
+  { code: "es", label: "Español" },
+  { code: "fr", label: "Français" },
+];
 
 export default function LandingScreen({ settings, onSettingsChange, onStart }) {
-  const { region, difficulty, roundSize, mixedModes, timerSeconds } = settings;
+  const { region, difficulty, roundSize, mixedModes, timerSeconds, lang } = settings;
+  const s = strings[lang] ?? strings.en;
 
   function set(patch) {
     onSettingsChange({ ...settings, ...patch });
@@ -48,31 +39,44 @@ export default function LandingScreen({ settings, onSettingsChange, onStart }) {
   return (
     <main className="landing">
       <header className="landing__header">
-        <h1 className="landing__title">🌍 World Geography Quiz</h1>
-        <p className="landing__subtitle">Test your knowledge of flags, capitals, and country locations.</p>
+        <h1 className="landing__title">{s.appTitle}</h1>
+        <p className="landing__subtitle">{s.appSubtitle}</p>
       </header>
 
       <section aria-label="Game mode selection" className="landing__modes">
-        {SINGLE_MODES.map((m) => (
-          <ModeCard
-            key={m.id}
-            icon={m.icon}
-            title={m.title}
-            description={m.description}
-            onClick={() => onStart(m.id)}
-          />
-        ))}
-        <ModeCard
-          icon="🎲"
-          title="Mixed"
-          description="Random questions from your chosen modes."
-          onClick={() => onStart("mixed")}
-        />
+        {MODE_IDS.map((id) => {
+          const m = s.modes[id];
+          return (
+            <ModeCard
+              key={id}
+              icon={{ flags:"🚩", capitals:"🏛️", locate:"🗺️", shapes:"🔷", languages:"🗣️", population:"👥", area:"📐", mixed:"🎲" }[id]}
+              title={m.title}
+              description={m.desc}
+              onClick={() => onStart(id)}
+            />
+          );
+        })}
       </section>
 
       <section className="landing__options" aria-label="Game options">
         <div className="option-group">
-          <label htmlFor="region-select" className="option-label">Region</label>
+          <label htmlFor="lang-select" className="option-label">{s.language}</label>
+          <div className="option-pills" role="group" aria-label={s.language}>
+            {LANGUAGES.map((l) => (
+              <button
+                key={l.code}
+                onClick={() => set({ lang: l.code })}
+                className={`pill ${lang === l.code ? "pill--active" : ""}`}
+                aria-pressed={lang === l.code}
+              >
+                {l.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="option-group">
+          <label htmlFor="region-select" className="option-label">{s.region}</label>
           <select
             id="region-select"
             value={region}
@@ -86,8 +90,8 @@ export default function LandingScreen({ settings, onSettingsChange, onStart }) {
         </div>
 
         <div className="option-group">
-          <label className="option-label">Difficulty</label>
-          <div className="option-pills" role="group" aria-label="Difficulty">
+          <label className="option-label">{s.difficulty}</label>
+          <div className="option-pills" role="group" aria-label={s.difficulty}>
             {DIFFICULTIES.map((d) => (
               <button
                 key={d}
@@ -95,15 +99,15 @@ export default function LandingScreen({ settings, onSettingsChange, onStart }) {
                 className={`pill ${difficulty === d ? "pill--active" : ""}`}
                 aria-pressed={difficulty === d}
               >
-                {d.charAt(0).toUpperCase() + d.slice(1)}
+                {s.difficulties[d]}
               </button>
             ))}
           </div>
         </div>
 
         <div className="option-group">
-          <label className="option-label">Questions per round</label>
-          <div className="option-pills" role="group" aria-label="Questions per round">
+          <label className="option-label">{s.questionsPerRound}</label>
+          <div className="option-pills" role="group" aria-label={s.questionsPerRound}>
             {ROUND_SIZES.map((n) => (
               <button
                 key={n}
@@ -118,9 +122,9 @@ export default function LandingScreen({ settings, onSettingsChange, onStart }) {
         </div>
 
         <div className="option-group">
-          <label className="option-label">Timer per question</label>
-          <p className="option-hint">Disabled on Easy &amp; Expert difficulty</p>
-          <div className="option-pills" role="group" aria-label="Timer per question">
+          <label className="option-label">{s.timerPerQuestion}</label>
+          <p className="option-hint">{s.timerDisabledHint}</p>
+          <div className="option-pills" role="group" aria-label={s.timerPerQuestion}>
             {TIMER_OPTIONS.map((t) => (
               <button
                 key={String(t.value)}
@@ -128,23 +132,23 @@ export default function LandingScreen({ settings, onSettingsChange, onStart }) {
                 className={`pill ${timerSeconds === t.value ? "pill--active" : ""}`}
                 aria-pressed={timerSeconds === t.value}
               >
-                {t.label}
+                {t.value === null ? s.timerInfinite : t.label}
               </button>
             ))}
           </div>
         </div>
 
         <div className="option-group option-group--full">
-          <label className="option-label">Mixed mode includes</label>
-          <div className="option-pills" role="group" aria-label="Mixed mode includes">
-            {MIXED_TOGGLES.map((t) => (
+          <label className="option-label">{s.mixedIncludes}</label>
+          <div className="option-pills" role="group" aria-label={s.mixedIncludes}>
+            {MIXED_TOGGLE_IDS.map((id) => (
               <button
-                key={t.id}
-                onClick={() => toggleMixedMode(t.id)}
-                className={`pill ${mixedModes.includes(t.id) ? "pill--active" : ""}`}
-                aria-pressed={mixedModes.includes(t.id)}
+                key={id}
+                onClick={() => toggleMixedMode(id)}
+                className={`pill ${mixedModes.includes(id) ? "pill--active" : ""}`}
+                aria-pressed={mixedModes.includes(id)}
               >
-                {t.icon} {t.label}
+                {{"flags":"🚩","capitals":"🏛️","locate":"🗺️","shapes":"🔷","languages":"🗣️","population":"👥","area":"📐"}[id]} {s.modes[id].title}
               </button>
             ))}
           </div>

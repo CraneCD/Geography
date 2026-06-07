@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import { buildRound } from "../utils/game";
+import { strings } from "../i18n/strings.jsx";
 import ProgressBar from "./ProgressBar";
 import Timer from "./Timer";
 import FlagsQuestion from "./FlagsQuestion";
@@ -12,7 +13,8 @@ import CompareQuestion from "./CompareQuestion";
 import SummaryScreen from "./SummaryScreen";
 
 export default function GameScreen({ config, onChangeMode }) {
-  const { difficulty, practice, timerSeconds } = config;
+  const { difficulty, practice, timerSeconds, lang = "en" } = config;
+  const s = strings[lang] ?? strings.en;
 
   const [questions, setQuestions] = useState(() => buildRound(config));
   const [idx, setIdx] = useState(0);
@@ -24,23 +26,16 @@ export default function GameScreen({ config, onChangeMode }) {
   const missedRef = useRef([]);
 
   const isExpert = difficulty === "expert";
-  // No timer when: infinite selected, easy difficulty, expert mode, or practice
   const useTimer = timerSeconds !== null && difficulty !== "easy" && !isExpert && !practice;
   const timerDuration = timerSeconds ?? 60;
   const question = questions[idx];
 
   function handleAnswer(wasCorrect) {
     setTimerPaused(true);
-
-    if (!wasCorrect && practice) {
-      missedRef.current.push(question);
-    }
-
+    if (!wasCorrect && practice) missedRef.current.push(question);
     const entry = { wasCorrect, type: question.type, country: question.correct ?? question.left };
-    const newResults = [...results, entry];
-    setResults(newResults);
+    setResults((r) => [...r, entry]);
     if (wasCorrect) setScore((s) => s + 1);
-
     setTimeout(() => {
       const next = idx + 1;
       if (next < questions.length) {
@@ -78,6 +73,7 @@ export default function GameScreen({ config, onChangeMode }) {
         total={results.length}
         onPlayAgain={restart}
         onChangeMode={onChangeMode}
+        s={s}
       />
     );
   }
@@ -87,12 +83,8 @@ export default function GameScreen({ config, onChangeMode }) {
   return (
     <div className="game-screen">
       <div className="game-header">
-        <button
-          onClick={onChangeMode}
-          className="back-btn"
-          aria-label="Back to home"
-        >
-          ← Home
+        <button onClick={onChangeMode} className="back-btn" aria-label={s.backBtn}>
+          {s.backBtn}
         </button>
         <ProgressBar current={idx + 1} total={questions.length} score={score} />
         {useTimer && (
@@ -103,45 +95,39 @@ export default function GameScreen({ config, onChangeMode }) {
             paused={timerPaused}
           />
         )}
-        {practice && <span className="practice-badge">Practice Mode</span>}
+        {practice && <span className="practice-badge">{s.practiceMode}</span>}
       </div>
 
       <div className="question-type-label" aria-label={`Question type: ${question.type}`}>
-        {question.type === "flags" && "🚩 Flags"}
-        {question.type === "capitals" && "🏛️ Capitals"}
-        {question.type === "locate" && "🗺️ Locate"}
-        {question.type === "shapes" && "🔷 Shapes"}
-        {question.type === "languages" && "🗣️ Languages"}
-        {question.type === "population" && "👥 Population"}
-        {question.type === "area" && "📐 Area"}
+        {s.typeLabels[question.type]}
       </div>
 
       {question.type === "flags" && !isExpert && (
-        <FlagsQuestion key={idx} question={question} onAnswer={handleAnswer} difficulty={difficulty} />
+        <FlagsQuestion key={idx} question={question} onAnswer={handleAnswer} />
       )}
       {question.type === "flags" && isExpert && (
-        <TypeAnswer key={idx} question={question} onAnswer={handleAnswer} />
+        <TypeAnswer key={idx} question={question} onAnswer={handleAnswer} s={s} />
       )}
       {question.type === "capitals" && !isExpert && (
         <CapitalsQuestion key={idx} question={question} onAnswer={handleAnswer} />
       )}
       {question.type === "capitals" && isExpert && (
-        <TypeAnswer key={idx} question={question} onAnswer={handleAnswer} />
+        <TypeAnswer key={idx} question={question} onAnswer={handleAnswer} s={s} />
       )}
       {question.type === "locate" && (
-        <LocateQuestion key={idx} question={question} onAnswer={handleAnswer} />
+        <LocateQuestion key={idx} question={question} onAnswer={handleAnswer} s={s} />
       )}
       {question.type === "shapes" && (
-        <ShapeQuestion key={idx} question={question} onAnswer={handleAnswer} isExpert={isExpert} />
+        <ShapeQuestion key={idx} question={question} onAnswer={handleAnswer} isExpert={isExpert} s={s} />
       )}
       {question.type === "languages" && !isExpert && (
         <LanguagesQuestion key={idx} question={question} onAnswer={handleAnswer} />
       )}
       {question.type === "languages" && isExpert && (
-        <TypeAnswer key={idx} question={question} onAnswer={handleAnswer} />
+        <TypeAnswer key={idx} question={question} onAnswer={handleAnswer} s={s} />
       )}
       {(question.type === "population" || question.type === "area") && (
-        <CompareQuestion key={idx} question={question} onAnswer={handleAnswer} />
+        <CompareQuestion key={idx} question={question} onAnswer={handleAnswer} s={s} />
       )}
     </div>
   );

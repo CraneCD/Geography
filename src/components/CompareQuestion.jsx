@@ -1,5 +1,6 @@
 import { useState } from "react";
 import FlagImage from "./FlagImage";
+import { strings } from "../i18n/strings.jsx";
 
 function fmt(value, type) {
   if (type === "population") {
@@ -7,11 +8,10 @@ function fmt(value, type) {
     if (value >= 1) return `${value.toFixed(1)}M`;
     return `${Math.round(value * 1000).toLocaleString()}K`;
   }
-  // area in km²
   return `${Math.round(value).toLocaleString()} km²`;
 }
 
-function CountryCard({ country, type, revealed, isHigher, onClick, disabled }) {
+function CountryCard({ country, type, revealed, isHigher, onClick, disabled, s }) {
   const value = type === "population" ? country.population : country.area;
   return (
     <button
@@ -21,7 +21,7 @@ function CountryCard({ country, type, revealed, isHigher, onClick, disabled }) {
       aria-label={`${country.name}${revealed ? `, ${fmt(value, type)}` : ""}`}
     >
       <div className="compare-flag">
-        <FlagImage code={country.code} className="compare-flag-img" />
+        <FlagImage code={country.code} countryName={country.name} className="compare-flag-img" />
       </div>
       <div className="compare-name">{country.name}</div>
       {revealed ? (
@@ -31,14 +31,17 @@ function CountryCard({ country, type, revealed, isHigher, onClick, disabled }) {
       )}
       {revealed && (
         <div className="compare-verdict">
-          {isHigher ? <span aria-hidden="true">▲ Higher</span> : <span aria-hidden="true">▼ Lower</span>}
+          {isHigher
+            ? <span aria-hidden="true">{s.higher}</span>
+            : <span aria-hidden="true">{s.lower}</span>}
         </div>
       )}
     </button>
   );
 }
 
-export default function CompareQuestion({ question, onAnswer }) {
+export default function CompareQuestion({ question, onAnswer, s: sProp }) {
+  const s = sProp ?? strings.en;
   const [chosen, setChosen] = useState(null);
 
   const { left, right, type } = question;
@@ -56,23 +59,9 @@ export default function CompareQuestion({ question, onAnswer }) {
     <div className="question-card compare-card-wrap">
       <p className="question-prompt">{question.prompt}</p>
       <div className="compare-grid">
-        <CountryCard
-          country={left}
-          type={type}
-          revealed={!!chosen}
-          isHigher={higherSide === "left"}
-          onClick={() => choose("left")}
-          disabled={!!chosen}
-        />
+        <CountryCard country={left} type={type} revealed={!!chosen} isHigher={higherSide === "left"} onClick={() => choose("left")} disabled={!!chosen} s={s} />
         <div className="compare-vs">VS</div>
-        <CountryCard
-          country={right}
-          type={type}
-          revealed={!!chosen}
-          isHigher={higherSide === "right"}
-          onClick={() => choose("right")}
-          disabled={!!chosen}
-        />
+        <CountryCard country={right} type={type} revealed={!!chosen} isHigher={higherSide === "right"} onClick={() => choose("right")} disabled={!!chosen} s={s} />
       </div>
     </div>
   );

@@ -1,6 +1,8 @@
 import FlagImage from "./FlagImage";
+import { strings } from "../i18n/strings.jsx";
 
-export default function SummaryScreen({ results, total, onPlayAgain, onChangeMode }) {
+export default function SummaryScreen({ results, total, onPlayAgain, onChangeMode, s: sProp }) {
+  const s = sProp ?? strings.en;
   const correct = results.filter((r) => r.wasCorrect).length;
   const accuracy = total > 0 ? Math.round((correct / total) * 100) : 0;
   const missed = results.filter((r) => !r.wasCorrect);
@@ -45,8 +47,8 @@ export default function SummaryScreen({ results, total, onPlayAgain, onChangeMod
       )}
 
       <div className="summary__actions">
-        <button onClick={onPlayAgain} className="btn btn--primary">Play Again</button>
-        <button onClick={onChangeMode} className="btn btn--secondary">Change Mode</button>
+        <button onClick={onPlayAgain} className="btn btn--primary">{s.playAgain}</button>
+        <button onClick={onChangeMode} className="btn btn--secondary">{s.changeMode}</button>
       </div>
     </main>
   );

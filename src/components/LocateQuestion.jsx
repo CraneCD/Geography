@@ -1,9 +1,11 @@
 import { useState, useCallback } from "react";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { ALPHA2_TO_NUMERIC } from "../data/countryIds";
+import { strings } from "../i18n/strings.jsx";
 import topology from "world-atlas/countries-110m.json";
 
-export default function LocateQuestion({ question, onAnswer }) {
+export default function LocateQuestion({ question, onAnswer, s: sProp }) {
+  const s = sProp ?? strings.en;
   const [clicked, setClicked] = useState(null);
   const [answered, setAnswered] = useState(false);
   const [wasCorrect, setWasCorrect] = useState(null);
@@ -35,9 +37,9 @@ export default function LocateQuestion({ question, onAnswer }) {
   return (
     <div className="question-card locate-card">
       <p className="question-prompt">{question.prompt}</p>
-      <p className="locate-hint">Click the correct country. Use scroll or pinch to zoom.</p>
+      <p className="locate-hint">{s.locateHint}</p>
 
-      <div className="map-container" role="application" aria-label={`World map. Find ${question.correct.name}.`}>
+      <div className="map-container" role="application" aria-label={question.prompt}>
         <ComposableMap projection="geoNaturalEarth1" style={{ width: "100%", height: "100%" }}>
           <ZoomableGroup zoom={1} minZoom={1} maxZoom={8}>
             <Geographies geography={topology} key={answered ? "answered" : "active"}>
@@ -69,12 +71,10 @@ export default function LocateQuestion({ question, onAnswer }) {
             className={`locate-feedback ${wasCorrect ? "locate-feedback--correct" : "locate-feedback--wrong"}`}
             aria-live="assertive"
           >
-            {wasCorrect
-              ? `✓ Correct! That's ${question.correct.name}.`
-              : `✗ That was ${question.correct.name} — highlighted in green.`}
+            {wasCorrect ? s.locateCorrect(question.correct.name) : s.locateWrong(question.correct.name)}
           </div>
           <button className="btn btn--primary locate-next-btn" onClick={() => onAnswer(wasCorrect)}>
-            Next →
+            {s.locateNext}
           </button>
         </div>
       )}
