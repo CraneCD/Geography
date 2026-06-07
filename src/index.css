@@ -357,6 +357,16 @@ body {
   .map-container { height: 260px; }
 }
 
+.locate-footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: .85rem;
+  flex-wrap: wrap;
+}
+.locate-footer .locate-feedback { margin-top: 0; flex: 1; }
+.locate-next-btn { white-space: nowrap; }
+
 .locate-feedback {
   margin-top: .85rem;
   padding: .65rem 1rem;

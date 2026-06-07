@@ -6,6 +6,7 @@ import topology from "world-atlas/countries-110m.json";
 export default function LocateQuestion({ question, onAnswer }) {
   const [clicked, setClicked] = useState(null);
   const [answered, setAnswered] = useState(false);
+  const [wasCorrect, setWasCorrect] = useState(null);
 
   const correctNumeric = String(ALPHA2_TO_NUMERIC[question.correct.code]);
 
@@ -13,9 +14,9 @@ export default function LocateQuestion({ question, onAnswer }) {
     if (answered) return;
     const clickedCode = String(geo.id);
     setClicked(clickedCode);
+    setWasCorrect(clickedCode === correctNumeric);
     setAnswered(true);
-    setTimeout(() => onAnswer(clickedCode === correctNumeric), 1200);
-  }, [answered, correctNumeric, onAnswer]);
+  }, [answered, correctNumeric]);
 
   function geoFill(geo) {
     const numId = String(geo.id);
@@ -63,13 +64,18 @@ export default function LocateQuestion({ question, onAnswer }) {
       </div>
 
       {answered && (
-        <div
-          className={`locate-feedback ${clicked === correctNumeric ? "locate-feedback--correct" : "locate-feedback--wrong"}`}
-          aria-live="assertive"
-        >
-          {clicked === correctNumeric
-            ? `✓ Correct! That's ${question.correct.name}.`
-            : `✗ That was ${question.correct.name} — highlighted in green.`}
+        <div className="locate-footer">
+          <div
+            className={`locate-feedback ${wasCorrect ? "locate-feedback--correct" : "locate-feedback--wrong"}`}
+            aria-live="assertive"
+          >
+            {wasCorrect
+              ? `✓ Correct! That's ${question.correct.name}.`
+              : `✗ That was ${question.correct.name} — highlighted in green.`}
+          </div>
+          <button className="btn btn--primary locate-next-btn" onClick={() => onAnswer(wasCorrect)}>
+            Next →
+          </button>
         </div>
       )}
     </div>
