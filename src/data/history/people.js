@@ -48,7 +48,7 @@ export const people = [
     field: "Science",
     subfield: "Astronomy",
     description: "Italian astronomer and physicist who championed heliocentrism and improved the telescope; father of observational astronomy",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Galileo_Galilei_%281564-1642%29_RMG_BHC2700.tiff/lossy-page1-220px-Galileo_Galilei_%281564-1642%29_RMG_BHC2700.tiff.jpg",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Galileo_Galilei_01.jpg/220px-Galileo_Galilei_01.jpg",
   },
   {
     id: "tesla",

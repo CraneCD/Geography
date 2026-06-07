@@ -16,12 +16,14 @@ function HistoryImage({ url, alt, className }) {
 
   return (
     <>
-      {!loaded && <div className={`history-img-placeholder ${className ?? ""}`} aria-hidden="true" />}
+      {!loaded && <div className="history-img-placeholder" aria-hidden="true" style={{ width: "100%", minHeight: 200 }} />}
       <img
         src={url}
         alt={loaded ? alt : ""}
         className={className}
         style={{ display: loaded ? undefined : "none" }}
+        referrerPolicy="no-referrer"
+        crossOrigin="anonymous"
         onLoad={() => setLoaded(true)}
         onError={() => setFailed(true)}
       />
