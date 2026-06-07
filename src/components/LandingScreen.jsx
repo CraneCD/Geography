@@ -21,7 +21,7 @@ const LANGUAGES = [
   { code: "fr", label: "Français" },
 ];
 
-export default function LandingScreen({ settings, onSettingsChange, onStart }) {
+export default function LandingScreen({ settings, onSettingsChange, onStart, onBack }) {
   const { region, difficulty, roundSize, mixedModes, timerSeconds, lang } = settings;
   const s = strings[lang] ?? strings.en;
 
@@ -39,6 +39,11 @@ export default function LandingScreen({ settings, onSettingsChange, onStart }) {
   return (
     <main className="landing">
       <header className="landing__header">
+        {onBack && (
+          <button className="back-btn" onClick={onBack} style={{ marginBottom: "1rem" }}>
+            {s.backBtn ?? "← Subjects"}
+          </button>
+        )}
         <h1 className="landing__title">{s.appTitle}</h1>
         <p className="landing__subtitle">{s.appSubtitle}</p>
       </header>

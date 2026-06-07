@@ -24,7 +24,7 @@ export const strings = {
     mixedIncludes: "Mixed mode includes",
     language: "Language",
     // Game screen
-    backBtn: "← Home",
+    backBtn: "← Subjects",
     practiceMode: "Practice Mode",
     // Question prompts
     flagPrompt: "Which country does this flag belong to?",
@@ -87,7 +87,7 @@ export const strings = {
     timerInfinite: "∞",
     mixedIncludes: "El modo mixto incluye",
     language: "Idioma",
-    backBtn: "← Inicio",
+    backBtn: "← Temas",
     practiceMode: "Modo Práctica",
     flagPrompt: "¿A qué país pertenece esta bandera?",
     capitalPrompt: (country) => `¿Cuál es la capital de ${country}?`,
@@ -144,7 +144,7 @@ export const strings = {
     timerInfinite: "∞",
     mixedIncludes: "Le mode mixte comprend",
     language: "Langue",
-    backBtn: "← Accueil",
+    backBtn: "← Sujets",
     practiceMode: "Mode Entraînement",
     flagPrompt: "À quel pays appartient ce drapeau ?",
     capitalPrompt: (country) => `Quelle est la capitale de ${country} ?`,
