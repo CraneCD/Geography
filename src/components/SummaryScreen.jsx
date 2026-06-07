@@ -29,7 +29,7 @@ export default function SummaryScreen({ results, total, onPlayAgain, onChangeMod
           <ul className="missed-list">
             {missed.map((r, i) => (
               <li key={i} className="missed-item">
-                {r.type !== "locate" && (
+                {r.country.code && r.type !== "locate" && (
                   <FlagImage
                     code={r.country.code}
                     countryName={r.country.name}
@@ -38,7 +38,9 @@ export default function SummaryScreen({ results, total, onPlayAgain, onChangeMod
                 )}
                 <div>
                   <div className="missed-country">{r.country.name}</div>
-                  <div className="missed-detail">Capital: {r.country.capital} · Region: {r.country.region}</div>
+                  {r.country.capital && (
+                    <div className="missed-detail">Capital: {r.country.capital} · Region: {r.country.region}</div>
+                  )}
                 </div>
               </li>
             ))}
