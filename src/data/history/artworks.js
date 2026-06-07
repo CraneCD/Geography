@@ -6,7 +6,7 @@ export const artworks = [
     year: 1503,
     movement: "Renaissance",
     description: "Portrait of a woman with an enigmatic smile; the most famous painting in the world.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/402px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg",
+    wikiTitle: "Mona_Lisa",
     license: "Public domain",
   },
   {
@@ -16,7 +16,7 @@ export const artworks = [
     year: 1498,
     movement: "Renaissance",
     description: "Mural depicting Jesus and his apostles at the Last Supper, housed in Milan.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/%22The_Last_Supper%22_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg/640px-%22The_Last_Supper%22_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg",
+    wikiTitle: "The_Last_Supper_(Leonardo)",
     license: "Public domain",
   },
   {
@@ -26,7 +26,7 @@ export const artworks = [
     year: 1512,
     movement: "Renaissance",
     description: "Iconic fresco from the Sistine Chapel ceiling showing God giving life to Adam.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg/640px-Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg",
+    wikiTitle: "The_Creation_of_Adam",
     license: "Public domain",
   },
   {
@@ -36,7 +36,7 @@ export const artworks = [
     year: 1485,
     movement: "Renaissance",
     description: "Goddess Venus emerging from the sea as a full-grown woman, born of seafoam.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Sandro_Botticelli_046.jpg/640px-Sandro_Botticelli_046.jpg",
+    wikiTitle: "The_Birth_of_Venus",
     license: "Public domain",
   },
   {
@@ -46,7 +46,7 @@ export const artworks = [
     year: 1511,
     movement: "Renaissance",
     description: "Fresco in the Vatican depicting great philosophers and scholars of ancient Greece.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/640px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg",
+    wikiTitle: "The_School_of_Athens",
     license: "Public domain",
   },
   {
@@ -56,7 +56,7 @@ export const artworks = [
     year: 1665,
     movement: "Dutch Golden Age",
     description: "Tronie of a girl wearing an exotic dress and a large pearl earring, often called the 'Mona Lisa of the North'.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/480px-1665_Girl_with_a_Pearl_Earring.jpg",
+    wikiTitle: "Girl_with_a_Pearl_Earring",
     license: "Public domain",
   },
   {
@@ -66,7 +66,7 @@ export const artworks = [
     year: 1642,
     movement: "Dutch Golden Age",
     description: "Large group portrait of a city guard militia led by Captain Frans Banninck Cocq.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Rembrandt_van_Rijn_-_De_Nachtwacht_-_Google_Art_Project.jpg/640px-Rembrandt_van_Rijn_-_De_Nachtwacht_-_Google_Art_Project.jpg",
+    wikiTitle: "The_Night_Watch",
     license: "Public domain",
   },
   {
@@ -76,7 +76,7 @@ export const artworks = [
     year: 1659,
     movement: "Dutch Golden Age",
     description: "One of Rembrandt's many self-portraits, painted with remarkable psychological depth in his later years.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg/480px-Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg",
+    wikiTitle: "Self-Portrait_(Rembrandt,_1659)",
     license: "Public domain",
   },
   {
@@ -86,7 +86,7 @@ export const artworks = [
     year: 1889,
     movement: "Post-Impressionism",
     description: "Swirling night sky over a village, painted from the window of van Gogh's asylum room in Saint-Rémy-de-Provence.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/640px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+    wikiTitle: "The_Starry_Night",
     license: "Public domain",
   },
   {
@@ -96,7 +96,7 @@ export const artworks = [
     year: 1888,
     movement: "Post-Impressionism",
     description: "Series of paintings depicting sunflowers in a vase, created for Paul Gauguin's bedroom in the Yellow House.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vincent_van_Gogh_-_Sunflowers_-_VGM_F458.jpg/480px-Vincent_van_Gogh_-_Sunflowers_-_VGM_F458.jpg",
+    wikiTitle: "Sunflowers_(Van_Gogh_series)",
     license: "Public domain",
   },
   {
@@ -106,7 +106,7 @@ export const artworks = [
     year: 1886,
     movement: "Post-Impressionism",
     description: "Pointillist masterpiece depicting Parisians relaxing on an island in the Seine.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg/640px-A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg",
+    wikiTitle: "A_Sunday_on_La_Grande_Jatte",
     license: "Public domain",
   },
   {
@@ -116,7 +116,7 @@ export const artworks = [
     year: 1872,
     movement: "Impressionism",
     description: "The painting that gave the Impressionist movement its name, depicting the port of Le Havre at dawn.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/640px-Monet_-_Impression%2C_Sunrise.jpg",
+    wikiTitle: "Impression,_Sunrise",
     license: "Public domain",
   },
   {
@@ -126,7 +126,7 @@ export const artworks = [
     year: 1906,
     movement: "Impressionism",
     description: "One of Monet's celebrated series of approximately 250 oil paintings depicting his flower garden at Giverny.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Claude_Monet_-_Water_Lilies_-_1906%2C_Ryerson.jpg/640px-Claude_Monet_-_Water_Lilies_-_1906%2C_Ryerson.jpg",
+    wikiTitle: "Water_Lilies_(Monet_series)",
     license: "Public domain",
   },
   {
@@ -136,7 +136,7 @@ export const artworks = [
     year: 1876,
     movement: "Impressionism",
     description: "Lively outdoor scene of dancing and socializing at a popular Parisian dance hall on Montmartre.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Pierre-Auguste_Renoir_-_Dance_at_Le_Moulin_de_la_Galette_-_Mus%C3%A9e_d%27Orsay_RF_2739_%281876%29.jpg/640px-Pierre-Auguste_Renoir_-_Dance_at_Le_Moulin_de_la_Galette_-_Mus%C3%A9e_d%27Orsay_RF_2739_%281876%29.jpg",
+    wikiTitle: "Bal_du_moulin_de_la_Galette",
     license: "Public domain",
   },
   {
@@ -146,7 +146,7 @@ export const artworks = [
     year: 1882,
     movement: "Impressionism",
     description: "Final major work by Manet depicting a barmaid at the famous Paris cabaret, with a complex mirror reflection.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Edouard_Manet%2C_A_Bar_at_the_Folies-Berg%C3%A8re.jpg/640px-Edouard_Manet%2C_A_Bar_at_the_Folies-Berg%C3%A8re.jpg",
+    wikiTitle: "A_Bar_at_the_Folies-Bergère",
     license: "Public domain",
   },
   {
@@ -156,7 +156,7 @@ export const artworks = [
     year: 1893,
     movement: "Expressionism",
     description: "Anguished figure against a blood-red sky; an iconic image of existential dread and modern anxiety.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/480px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg",
+    wikiTitle: "The_Scream",
     license: "Public domain",
   },
   {
@@ -166,7 +166,7 @@ export const artworks = [
     year: 1908,
     movement: "Symbolism",
     description: "Gilded painting of an embracing couple, representing love and union through ornate gold decoration.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg/480px-The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg",
+    wikiTitle: "The_Kiss_(Klimt)",
     license: "Public domain",
   },
   {
@@ -176,7 +176,7 @@ export const artworks = [
     year: 1907,
     movement: "Symbolism",
     description: "Shimmering golden portrait of a Viennese socialite, often called the 'Austrian Mona Lisa'.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Klimt_Adele_Bloch-Bauer_I.jpg/480px-Klimt_Adele_Bloch-Bauer_I.jpg",
+    wikiTitle: "Portrait_of_Adele_Bloch-Bauer_I",
     license: "Public domain",
   },
   {
@@ -186,7 +186,7 @@ export const artworks = [
     year: 1912,
     movement: "Cubism",
     description: "Analytical Cubist portrait of Picasso by his fellow Cubist Juan Gris, showing fragmented planes and muted tones.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Juan_Gris_-_Portrait_of_Pablo_Picasso_-_Google_Art_Project.jpg/480px-Juan_Gris_-_Portrait_of_Pablo_Picasso_-_Google_Art_Project.jpg",
+    wikiTitle: "Portrait_of_Pablo_Picasso_(Juan_Gris)",
     license: "Public domain",
   },
   {
@@ -196,7 +196,7 @@ export const artworks = [
     year: 1857,
     movement: "Realism",
     description: "Three peasant women stooping to gather leftover grain after the harvest; a landmark of French Realist painting.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project.jpg/640px-Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project.jpg",
+    wikiTitle: "The_Gleaners",
     license: "Public domain",
   },
   {
@@ -206,7 +206,7 @@ export const artworks = [
     year: 1897,
     movement: "Naïve Art",
     description: "A dreamlike moonlit desert scene of a lion sniffing a sleeping wanderer; one of the most poetic images in Western art.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/La_Boh%C3%A9mienne_endormie.jpg/640px-La_Boh%C3%A9mienne_endormie.jpg",
+    wikiTitle: "The_Sleeping_Gypsy",
     license: "Public domain",
   },
   {
@@ -216,7 +216,7 @@ export const artworks = [
     year: 1930,
     movement: "Regionalism",
     description: "Iconic depiction of a farmer and his daughter standing before a Gothic Revival farmhouse.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg/480px-Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg",
+    wikiTitle: "American_Gothic",
     license: "Public domain",
   },
   {
@@ -226,7 +226,7 @@ export const artworks = [
     year: 1871,
     movement: "Realism",
     description: "Portrait of the artist's mother seated in profile, celebrated as an emblem of maternity and restraint.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Whistlers_Mother_high_res.jpg/557px-Whistlers_Mother_high_res.jpg",
+    wikiTitle: "Arrangement_in_Grey_and_Black_No._1",
     license: "Public domain",
   },
   {
@@ -236,7 +236,7 @@ export const artworks = [
     year: 1831,
     movement: "Ukiyo-e",
     description: "Woodblock print of a towering ocean wave with Mount Fuji visible in the background.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/640px-Tsunami_by_hokusai_19th_century.jpg",
+    wikiTitle: "The_Great_Wave_off_Kanagawa",
     license: "Public domain",
   },
   {
@@ -246,7 +246,7 @@ export const artworks = [
     year: 1830,
     movement: "Romanticism",
     description: "Allegorical painting of a woman personifying Liberty leading the people over a barricade during the July Revolution.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Eug%C3%A8ne_Delacroix_-_La_libert%C3%A9_guidant_le_peuple.jpg/640px-Eug%C3%A8ne_Delacroix_-_La_libert%C3%A9_guidant_le_peuple.jpg",
+    wikiTitle: "Liberty_Leading_the_People",
     license: "Public domain",
   },
   {
@@ -256,7 +256,7 @@ export const artworks = [
     year: 1801,
     movement: "Neoclassicism",
     description: "Heroic equestrian portrait of Napoleon Bonaparte on a rearing horse crossing the Great St. Bernard Pass.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/David_-_Napoleon_crossing_the_Alps_-_Malmaison2.jpg/480px-David_-_Napoleon_crossing_the_Alps_-_Malmaison2.jpg",
+    wikiTitle: "Napoleon_Crossing_the_Alps",
     license: "Public domain",
   },
   {
@@ -266,7 +266,7 @@ export const artworks = [
     year: 1823,
     movement: "Romanticism",
     description: "One of Goya's terrifying 'Black Paintings', depicting the Roman god Saturn consuming one of his children.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg/480px-Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg",
+    wikiTitle: "Saturn_Devouring_His_Son",
     license: "Public domain",
   },
   {
@@ -276,7 +276,7 @@ export const artworks = [
     year: 1819,
     movement: "Romanticism",
     description: "Harrowing depiction of the aftermath of the 1816 wreck of the French frigate Méduse and its survivors on a raft.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/JEAN_LOUIS_TH%C3%89ODORE_G%C3%89RICAULT_-_La_Balsa_de_la_Medusa_%28Museo_del_Louvre%2C_1818-19%29.jpg/640px-JEAN_LOUIS_TH%C3%89ODORE_G%C3%89RICAULT_-_La_Balsa_de_la_Medusa_%28Museo_del_Louvre%2C_1818-19%29.jpg",
+    wikiTitle: "The_Raft_of_the_Medusa",
     license: "Public domain",
   },
   {
@@ -286,7 +286,7 @@ export const artworks = [
     year: 1784,
     movement: "Neoclassicism",
     description: "Three Roman brothers swearing an oath before battle on their swords, a symbol of civic duty over personal feeling.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Jacques-Louis_David_-_Oath_of_the_Horatii_-_Google_Art_Project.jpg/640px-Jacques-Louis_David_-_Oath_of_the_Horatii_-_Google_Art_Project.jpg",
+    wikiTitle: "Oath_of_the_Horatii",
     license: "Public domain",
   },
   {
@@ -296,7 +296,7 @@ export const artworks = [
     year: 1818,
     movement: "Romanticism",
     description: "A solitary figure stands on a rocky crag gazing over a mist-shrouded landscape; icon of Romantic philosophy.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg/480px-Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg",
+    wikiTitle: "Wanderer_above_the_Sea_of_Fog",
     license: "Public domain",
   },
   {
@@ -306,7 +306,7 @@ export const artworks = [
     year: 1814,
     movement: "Romanticism",
     description: "Dramatic depiction of French soldiers executing Spanish civilians after the Peninsular War uprising in Madrid.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg/640px-El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg",
+    wikiTitle: "The_Third_of_May_1808",
     license: "Public domain",
   },
   {
@@ -316,7 +316,7 @@ export const artworks = [
     year: 1827,
     movement: "Neoclassicism",
     description: "Allegorical scene crowning Homer as the supreme poet, surrounded by figures from history and mythology.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Jean_Auguste_Dominique_Ingres_-_The_Apotheosis_of_Homer_-_Google_Art_Project.jpg/640px-Jean_Auguste_Dominique_Ingres_-_The_Apotheosis_of_Homer_-_Google_Art_Project.jpg",
+    wikiTitle: "The_Apotheosis_of_Homer_(Ingres)",
     license: "Public domain",
   },
   {
@@ -326,7 +326,7 @@ export const artworks = [
     year: 1658,
     movement: "Dutch Golden Age",
     description: "A kitchen maid carefully pouring milk, celebrated for its exquisite rendering of light and everyday domestic life.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Johannes_Vermeer_-_Het_melkmeisje_-_Google_Art_Project.jpg/480px-Johannes_Vermeer_-_Het_melkmeisje_-_Google_Art_Project.jpg",
+    wikiTitle: "The_Milkmaid",
     license: "Public domain",
   },
   {
@@ -336,7 +336,7 @@ export const artworks = [
     year: 1656,
     movement: "Baroque",
     description: "Complex group portrait of the Spanish royal court with a self-portrait of Velázquez himself at his easel.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Las_Meninas_01.jpg/540px-Las_Meninas_01.jpg",
+    wikiTitle: "Las_Meninas",
     license: "Public domain",
   },
   {
@@ -346,7 +346,7 @@ export const artworks = [
     year: 1510,
     movement: "Northern Renaissance",
     description: "Triptych altarpiece depicting Eden, an earthly paradise of fantastical hedonism, and Hell.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/The_Garden_of_earthly_delights.jpg/640px-The_Garden_of_earthly_delights.jpg",
+    wikiTitle: "The_Garden_of_Earthly_Delights",
     license: "Public domain",
   },
   {
@@ -356,7 +356,7 @@ export const artworks = [
     year: 1632,
     movement: "Dutch Golden Age",
     description: "Group portrait of Amsterdam surgeons observing a public dissection, showcasing Dutch Golden Age realism.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Rembrandt_-_The_Anatomy_Lesson_of_Dr_Nicolaes_Tulp.jpg/640px-Rembrandt_-_The_Anatomy_Lesson_of_Dr_Nicolaes_Tulp.jpg",
+    wikiTitle: "The_Anatomy_Lesson_of_Dr._Nicolaes_Tulp",
     license: "Public domain",
   },
   {
@@ -366,7 +366,7 @@ export const artworks = [
     year: 1614,
     movement: "Baroque",
     description: "Dramatic Baroque depiction of the biblical Judith beheading the Assyrian general Holofernes.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Artemisia_Gentileschi_-_Judith_Slaying_Holofernes_%28Uffizi%29.jpg/480px-Artemisia_Gentileschi_-_Judith_Slaying_Holofernes_%28Uffizi%29.jpg",
+    wikiTitle: "Judith_Slaying_Holofernes_(Artemisia_Gentileschi,_Uffizi)",
     license: "Public domain",
   },
   {
@@ -376,7 +376,7 @@ export const artworks = [
     year: 1600,
     movement: "Baroque",
     description: "Christ summons a tax collector to become his apostle, rendered with Caravaggio's signature dramatic chiaroscuro.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Caravaggio_-_The_Calling_of_Saint_Matthew.jpg/640px-Caravaggio_-_The_Calling_of_Saint_Matthew.jpg",
+    wikiTitle: "The_Calling_of_Saint_Matthew_(Caravaggio)",
     license: "Public domain",
   },
   {
@@ -386,7 +386,7 @@ export const artworks = [
     year: 1821,
     movement: "Romanticism",
     description: "Quintessential English countryside scene of a horse-drawn cart crossing a shallow river.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/John_Constable_-_The_Hay_Wain_%281821%29.jpg/640px-John_Constable_-_The_Hay_Wain_%281821%29.jpg",
+    wikiTitle: "The_Hay_Wain",
     license: "Public domain",
   },
   {
@@ -396,7 +396,7 @@ export const artworks = [
     year: 1839,
     movement: "Romanticism",
     description: "The old warship HMS Temeraire being towed to its last berth by a steam tugboat, symbolising the end of the age of sail.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg/640px-The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg",
+    wikiTitle: "The_Fighting_Temeraire",
     license: "Public domain",
   },
 ];

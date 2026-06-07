@@ -1,55 +1,57 @@
 import { useState, useEffect } from "react";
 
-// Fetch image as blob so the browser sends no Referer header,
-// bypassing Wikimedia's hotlink protection for unknown domains.
-function HistoryImage({ url, alt, className }) {
-  const [blobSrc, setBlobSrc] = useState(null);
+// Module-level cache so repeated questions don't re-fetch
+const wikiImageCache = new Map();
+
+async function fetchWikiThumbnail(wikiTitle) {
+  if (wikiImageCache.has(wikiTitle)) return wikiImageCache.get(wikiTitle);
+  const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(wikiTitle)}`;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`${res.status}`);
+  const data = await res.json();
+  // Prefer originalimage (full size) over thumbnail (often too small)
+  const imgUrl = data?.originalimage?.source ?? data?.thumbnail?.source ?? null;
+  wikiImageCache.set(wikiTitle, imgUrl);
+  return imgUrl;
+}
+
+function HistoryImage({ wikiTitle, alt, className }) {
+  const [src, setSrc] = useState(null);
   const [failed, setFailed] = useState(false);
 
   useEffect(() => {
-    if (!url) { setFailed(true); return; }
-    let revoked = false;
-    let objectUrl = null;
+    if (!wikiTitle) { setFailed(true); return; }
+    let cancelled = false;
+    setSrc(null);
+    setFailed(false);
 
-    // Fetch with no Referer header so hotlink-protection doesn't block us.
-    // On CORS failure (e.g. strict browser policy), fall back to a plain img src.
-    fetch(url, { referrerPolicy: "no-referrer" })
-      .then((r) => {
-        if (!r.ok) throw new Error(`${r.status}`);
-        return r.blob();
+    fetchWikiThumbnail(wikiTitle)
+      .then((url) => {
+        if (!cancelled) {
+          if (url) setSrc(url);
+          else setFailed(true);
+        }
       })
-      .then((blob) => {
-        if (revoked) return;
-        objectUrl = URL.createObjectURL(blob);
-        setBlobSrc(objectUrl);
-      })
-      .catch(() => {
-        // CORS or network failure — fall back to direct img src (may still work)
-        if (!revoked) setBlobSrc(url);
-      });
+      .catch(() => { if (!cancelled) setFailed(true); });
 
-    return () => {
-      revoked = true;
-      if (objectUrl) URL.revokeObjectURL(objectUrl);
-    };
-  }, [url]);
+    return () => { cancelled = true; };
+  }, [wikiTitle]);
 
   if (failed) {
     return (
       <div className={`history-img-fallback ${className ?? ""}`} aria-label={alt}>
         <span style={{ fontSize: "3rem" }}>🖼️</span>
-        <span style={{ fontSize: "0.85rem", color: "var(--text-muted)", marginTop: "0.5rem" }}>{alt}</span>
       </div>
     );
   }
 
-  if (!blobSrc) {
+  if (!src) {
     return <div className="history-img-placeholder" aria-hidden="true" style={{ width: "100%", minHeight: 200 }} />;
   }
 
   return (
     <img
-      src={blobSrc}
+      src={src}
       alt={alt}
       className={className}
       referrerPolicy="no-referrer"
@@ -94,7 +96,7 @@ export default function HistoryImageQuestion({ question, onAnswer }) {
 
       <div className="history-img-wrap">
         <HistoryImage
-          url={question.imageUrl}
+          wikiTitle={question.wikiTitle}
           alt={selected !== null ? correctAnswer : "Mystery"}
           className="history-img"
         />

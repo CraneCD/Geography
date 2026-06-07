@@ -8,7 +8,7 @@ export const people = [
     field: "Science",
     subfield: "Physics",
     description: "German-American physicist who developed the theory of relativity; Nobel Prize in Physics 1921",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/220px-Albert_Einstein_Head.jpg",
+    wikiTitle: "Albert_Einstein",
   },
   {
     id: "newton",
@@ -18,7 +18,7 @@ export const people = [
     field: "Science",
     subfield: "Physics",
     description: "English mathematician and physicist who formulated the laws of motion and universal gravitation",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/GodfreyKneller-IsaacNewton-1689.jpg/220px-GodfreyKneller-IsaacNewton-1689.jpg",
+    wikiTitle: "Isaac_Newton",
   },
   {
     id: "curie",
@@ -28,7 +28,7 @@ export const people = [
     field: "Science",
     subfield: "Chemistry",
     description: "Polish-French physicist and chemist; first woman to win a Nobel Prize, and the only person to win in two different sciences",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Marie_Curie_c1920.jpg/220px-Marie_Curie_c1920.jpg",
+    wikiTitle: "Marie_Curie",
   },
   {
     id: "darwin",
@@ -38,7 +38,7 @@ export const people = [
     field: "Science",
     subfield: "Biology",
     description: "English naturalist who proposed the theory of evolution by natural selection in 'On the Origin of Species' (1859)",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Charles_Darwin_seated_crop.jpg/220px-Charles_Darwin_seated_crop.jpg",
+    wikiTitle: "Charles_Darwin",
   },
   {
     id: "galileo",
@@ -48,7 +48,7 @@ export const people = [
     field: "Science",
     subfield: "Astronomy",
     description: "Italian astronomer and physicist who championed heliocentrism and improved the telescope; father of observational astronomy",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Galileo_Galilei_01.jpg/220px-Galileo_Galilei_01.jpg",
+    wikiTitle: "Galileo_Galilei",
   },
   {
     id: "tesla",
@@ -58,7 +58,7 @@ export const people = [
     field: "Science",
     subfield: "Electrical Engineering",
     description: "Serbian-American inventor whose work on alternating current (AC) electrical systems transformed modern power distribution",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/N.Tesla.JPG/220px-N.Tesla.JPG",
+    wikiTitle: "Nikola_Tesla",
   },
   {
     id: "turing",
@@ -68,7 +68,7 @@ export const people = [
     field: "Science",
     subfield: "Computer Science",
     description: "British mathematician and logician who pioneered computer science and artificial intelligence; broke Nazi Enigma codes in WWII",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Alan_Turing_Aged_16.jpg/220px-Alan_Turing_Aged_16.jpg",
+    wikiTitle: "Alan_Turing",
   },
   {
     id: "pasteur",
@@ -78,7 +78,7 @@ export const people = [
     field: "Science",
     subfield: "Microbiology",
     description: "French chemist and microbiologist who discovered the germ theory of disease and invented pasteurization and vaccines for rabies",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Louis_Pasteur%2C_foto_av_Félix_Nadar_Crisco_edit.jpg/220px-Louis_Pasteur%2C_foto_av_Félix_Nadar_Crisco_edit.jpg",
+    wikiTitle: "Louis_Pasteur",
   },
   {
     id: "hawking",
@@ -88,7 +88,7 @@ export const people = [
     field: "Science",
     subfield: "Cosmology",
     description: "British theoretical physicist who made landmark contributions to black hole physics and cosmology; author of 'A Brief History of Time'",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Stephen_Hawking.StarChild.jpg/220px-Stephen_Hawking.StarChild.jpg",
+    wikiTitle: "Stephen_Hawking",
   },
   {
     id: "archimedes",
@@ -98,7 +98,7 @@ export const people = [
     field: "Science",
     subfield: "Mathematics",
     description: "Ancient Greek mathematician and inventor from Syracuse; discovered principles of the lever, buoyancy, and approximated pi",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Archimedes_Thoughtful_by_Fetti_%281620%29.jpg/220px-Archimedes_Thoughtful_by_Fetti_%281620%29.jpg",
+    wikiTitle: "Archimedes",
   },
 
   // Politics / Leaders
@@ -110,7 +110,7 @@ export const people = [
     field: "Politics",
     subfield: "Roman Republic",
     description: "Roman general and statesman who transformed the Roman Republic into the foundation of the Roman Empire; assassinated on the Ides of March",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Gaius_Iulius_Caesar_%28Vatican_Museum%29.jpg/220px-Gaius_Iulius_Caesar_%28Vatican_Museum%29.jpg",
+    wikiTitle: "Julius_Caesar",
   },
   {
     id: "cleopatra",
@@ -120,7 +120,7 @@ export const people = [
     field: "Politics",
     subfield: "Ancient Egypt",
     description: "Last active ruler of the Ptolemaic Kingdom of Egypt; formed powerful alliances with Julius Caesar and Mark Antony",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Kleopatra-VII.-Altes-Museum-Berlin1.jpg/220px-Kleopatra-VII.-Altes-Museum-Berlin1.jpg",
+    wikiTitle: "Cleopatra",
   },
   {
     id: "napoleon",
@@ -130,7 +130,7 @@ export const people = [
     field: "Politics",
     subfield: "French Empire",
     description: "French military commander and emperor who conquered much of Europe; his Napoleonic Code reshaped civil law worldwide",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg/220px-Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg",
+    wikiTitle: "Napoleon",
   },
   {
     id: "lincoln",
@@ -140,7 +140,7 @@ export const people = [
     field: "Politics",
     subfield: "United States",
     description: "16th President of the United States who led the country through the Civil War and abolished slavery via the Emancipation Proclamation",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/220px-Abraham_Lincoln_O-77_matte_collodion_print.jpg",
+    wikiTitle: "Abraham_Lincoln",
   },
   {
     id: "mandela",
@@ -150,7 +150,7 @@ export const people = [
     field: "Politics",
     subfield: "South Africa",
     description: "South African anti-apartheid activist and statesman who served 27 years in prison before becoming the country's first Black president",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Nelson_Mandela_1994.jpg/220px-Nelson_Mandela_1994.jpg",
+    wikiTitle: "Nelson_Mandela",
   },
   {
     id: "churchill",
@@ -160,7 +160,7 @@ export const people = [
     field: "Politics",
     subfield: "United Kingdom",
     description: "British Prime Minister who led the Allied resistance against Nazi Germany in World War II; also a Nobel laureate in Literature",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Winston_Churchill_1941_photo_by_Yousuf_Karsh.jpg/220px-Winston_Churchill_1941_photo_by_Yousuf_Karsh.jpg",
+    wikiTitle: "Winston_Churchill",
   },
   {
     id: "washington",
@@ -170,7 +170,7 @@ export const people = [
     field: "Politics",
     subfield: "United States",
     description: "Commander of the Continental Army in the American Revolution and the first President of the United States (1789–1797)",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/220px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg",
+    wikiTitle: "George_Washington",
   },
   {
     id: "alexander",
@@ -180,7 +180,7 @@ export const people = [
     field: "Politics",
     subfield: "Macedonian Empire",
     description: "King of Macedon who created one of the largest empires in history, stretching from Greece to northwestern India, by age 30",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Alexander_the_Great_mosaic.jpg/220px-Alexander_the_Great_mosaic.jpg",
+    wikiTitle: "Alexander_the_Great",
   },
   {
     id: "genghis",
@@ -190,7 +190,7 @@ export const people = [
     field: "Politics",
     subfield: "Mongol Empire",
     description: "Founder and first Great Khan of the Mongol Empire, which became the largest contiguous empire in history after his death",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/YuanEmperorAlbumGenghisPortrait.jpg/220px-YuanEmperorAlbumGenghisPortrait.jpg",
+    wikiTitle: "Genghis_Khan",
   },
   {
     id: "elizabeth1",
@@ -200,7 +200,7 @@ export const people = [
     field: "Politics",
     subfield: "England",
     description: "Queen of England whose long reign (1558–1603) oversaw a flowering of English culture, the defeat of the Spanish Armada, and global exploration",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Elizabeth_I_in_coronation_robes.jpg/220px-Elizabeth_I_in_coronation_robes.jpg",
+    wikiTitle: "Elizabeth_I",
   },
 
   // Arts / Culture
@@ -212,7 +212,7 @@ export const people = [
     field: "Arts",
     subfield: "Painting",
     description: "Italian Renaissance polymath — painter of the Mona Lisa and The Last Supper, and visionary architect, scientist, and inventor",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Leonardo_self_portrait_zoomed.jpg/220px-Leonardo_self_portrait_zoomed.jpg",
+    wikiTitle: "Leonardo_da_Vinci",
   },
   {
     id: "shakespeare",
@@ -222,7 +222,7 @@ export const people = [
     field: "Arts",
     subfield: "Literature",
     description: "English playwright and poet widely regarded as the greatest writer in the English language; author of Hamlet, Macbeth, and Romeo and Juliet",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shakespeare.jpg/220px-Shakespeare.jpg",
+    wikiTitle: "William_Shakespeare",
   },
   {
     id: "michelangelo",
@@ -232,7 +232,7 @@ export const people = [
     field: "Arts",
     subfield: "Sculpture",
     description: "Italian Renaissance sculptor, painter, and architect; created the Sistine Chapel ceiling and the statue of David",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Miguel_%C3%81ngel%2C_por_Daniele_da_Volterra_%28detalle%29.jpg/220px-Miguel_%C3%81ngel%2C_por_Daniele_da_Volterra_%28detalle%29.jpg",
+    wikiTitle: "Michelangelo",
   },
   {
     id: "mozart",
@@ -242,7 +242,7 @@ export const people = [
     field: "Arts",
     subfield: "Music",
     description: "Austrian composer and musical prodigy who composed over 800 works including symphonies, operas, and chamber music",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Croce-Mozart-Detail.jpg/220px-Croce-Mozart-Detail.jpg",
+    wikiTitle: "Wolfgang_Amadeus_Mozart",
   },
   {
     id: "beethoven",
@@ -252,7 +252,7 @@ export const people = [
     field: "Arts",
     subfield: "Music",
     description: "German composer who composed his Ninth Symphony — including 'Ode to Joy' — after becoming completely deaf",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Beethoven.jpg/220px-Beethoven.jpg",
+    wikiTitle: "Ludwig_van_Beethoven",
   },
   {
     id: "picasso",
@@ -262,7 +262,7 @@ export const people = [
     field: "Arts",
     subfield: "Painting",
     description: "Spanish painter and co-founder of Cubism; one of the most influential artists of the 20th century",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Portrait_de_Picasso%2C_1908.jpg/220px-Portrait_de_Picasso%2C_1908.jpg",
+    wikiTitle: "Pablo_Picasso",
   },
   {
     id: "rembrandt",
@@ -272,7 +272,7 @@ export const people = [
     field: "Arts",
     subfield: "Painting",
     description: "Dutch Golden Age painter renowned for his mastery of light and shadow; created 'The Night Watch' and hundreds of self-portraits",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg/220px-Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg",
+    wikiTitle: "Rembrandt",
   },
   {
     id: "kahlo",
@@ -282,7 +282,7 @@ export const people = [
     field: "Arts",
     subfield: "Painting",
     description: "Mexican painter known for her intensely personal and symbolic self-portraits, often exploring themes of identity, pain, and Mexican culture",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg/220px-Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg",
+    wikiTitle: "Frida_Kahlo",
   },
 
   // Exploration
@@ -294,7 +294,7 @@ export const people = [
     field: "Exploration",
     subfield: "Navigation",
     description: "Italian explorer sailing for Spain whose 1492 voyage to the Americas initiated lasting contact between Europe and the New World",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Portrait_of_a_Man%2C_Said_to_be_Christopher_Columbus.jpg/220px-Portrait_of_a_Man%2C_Said_to_be_Christopher_Columbus.jpg",
+    wikiTitle: "Christopher_Columbus",
   },
   {
     id: "magellan",
@@ -304,7 +304,7 @@ export const people = [
     field: "Exploration",
     subfield: "Navigation",
     description: "Portuguese explorer who organised and led the first circumnavigation of the Earth (1519–1522), though he died before its completion",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/MagellanElcano_Exploration.jpg/220px-MagellanElcano_Exploration.jpg",
+    wikiTitle: "Ferdinand_Magellan",
   },
   {
     id: "earhart",
@@ -314,7 +314,7 @@ export const people = [
     field: "Exploration",
     subfield: "Aviation",
     description: "American aviator who was the first woman to fly solo across the Atlantic Ocean; disappeared while attempting a round-the-world flight",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Amelia_Earhart_1935.jpg/220px-Amelia_Earhart_1935.jpg",
+    wikiTitle: "Amelia_Earhart",
   },
   {
     id: "marco_polo",
@@ -324,7 +324,7 @@ export const people = [
     field: "Exploration",
     subfield: "Travel",
     description: "Venetian merchant traveller whose 24-year journey to Asia and service under Kublai Khan was recorded in 'The Travels of Marco Polo'",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Marco_Polo_portrait.jpg/220px-Marco_Polo_portrait.jpg",
+    wikiTitle: "Marco_Polo",
   },
   {
     id: "armstrong",
@@ -334,7 +334,7 @@ export const people = [
     field: "Exploration",
     subfield: "Space",
     description: "American astronaut who became the first human to walk on the Moon on July 20, 1969, during the Apollo 11 mission",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Neil_Armstrong_pose.jpg/220px-Neil_Armstrong_pose.jpg",
+    wikiTitle: "Neil_Armstrong",
   },
 
   // Philosophy
@@ -346,7 +346,7 @@ export const people = [
     field: "Philosophy",
     subfield: "Ethics",
     description: "Classical Athenian philosopher credited as a founder of Western philosophy; known through the dialogues of his student Plato",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Socrate_du_Louvre.jpg/220px-Socrate_du_Louvre.jpg",
+    wikiTitle: "Socrates",
   },
   {
     id: "plato",
@@ -356,7 +356,7 @@ export const people = [
     field: "Philosophy",
     subfield: "Metaphysics",
     description: "Ancient Greek philosopher, student of Socrates, and teacher of Aristotle; wrote the Republic and founded the Academy in Athens",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Plato_Silanion_Musei_Capitolini_MC1377.jpg/220px-Plato_Silanion_Musei_Capitolini_MC1377.jpg",
+    wikiTitle: "Plato",
   },
   {
     id: "aristotle",
@@ -366,7 +366,7 @@ export const people = [
     field: "Philosophy",
     subfield: "Logic",
     description: "Ancient Greek philosopher who studied under Plato and tutored Alexander the Great; made foundational contributions to logic, biology, and ethics",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/220px-Aristotle_Altemps_Inv8575.jpg",
+    wikiTitle: "Aristotle",
   },
   {
     id: "confucius",
@@ -376,7 +376,7 @@ export const people = [
     field: "Philosophy",
     subfield: "Ethics",
     description: "Chinese philosopher and teacher whose teachings on morality, social relationships, and governance profoundly shaped East Asian culture",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Confucius_Tang_Dynasty.jpg/220px-Confucius_Tang_Dynasty.jpg",
+    wikiTitle: "Confucius",
   },
   {
     id: "kant",
@@ -386,7 +386,7 @@ export const people = [
     field: "Philosophy",
     subfield: "Epistemology",
     description: "German philosopher who wrote the 'Critique of Pure Reason'; his categorical imperative remains central to modern moral philosophy",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Immanuel_Kant_%28painted_portrait%29.jpg/220px-Immanuel_Kant_%28painted_portrait%29.jpg",
+    wikiTitle: "Immanuel_Kant",
   },
   {
     id: "descartes",
@@ -396,7 +396,7 @@ export const people = [
     field: "Philosophy",
     subfield: "Rationalism",
     description: "French philosopher, mathematician, and scientist; known for 'I think, therefore I am' and for founding analytic geometry",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Frans_Hals_-_Portret_van_René_Descartes.jpg/220px-Frans_Hals_-_Portret_van_René_Descartes.jpg",
+    wikiTitle: "René_Descartes",
   },
 
   // Religion / Spiritual
@@ -408,7 +408,7 @@ export const people = [
     field: "Religion",
     subfield: "Christian Mysticism",
     description: "French peasant girl who, claiming divine guidance, led the French army to decisive victories in the Hundred Years' War before being burned at the stake",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Joan_of_arc_miniature_graded.jpg/220px-Joan_of_arc_miniature_graded.jpg",
+    wikiTitle: "Joan_of_Arc",
   },
   {
     id: "luther",
@@ -418,7 +418,7 @@ export const people = [
     field: "Religion",
     subfield: "Christianity",
     description: "German theologian whose Ninety-Five Theses (1517) challenged papal authority and ignited the Protestant Reformation",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Martin_Luther_by_Cranach-restoration.jpg/220px-Martin_Luther_by_Cranach-restoration.jpg",
+    wikiTitle: "Martin_Luther",
   },
   {
     id: "gandhi",
@@ -428,7 +428,7 @@ export const people = [
     field: "Religion",
     subfield: "Nonviolent Resistance",
     description: "Indian lawyer and activist who led India to independence from British rule through nonviolent civil disobedience; icon of peace worldwide",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Mahatma-Gandhi%2C_studio%2C_1931.jpg/220px-Mahatma-Gandhi%2C_studio%2C_1931.jpg",
+    wikiTitle: "Mahatma_Gandhi",
   },
 
   // Other notable figures
@@ -440,7 +440,7 @@ export const people = [
     field: "Military",
     subfield: "Abolitionism",
     description: "American abolitionist who escaped slavery and made 13 missions to rescue approximately 70 enslaved people via the Underground Railroad",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Harriet_Tubman_by_Squyer%2C_NPG%2C_c1885.jpg/220px-Harriet_Tubman_by_Squyer%2C_NPG%2C_c1885.jpg",
+    wikiTitle: "Harriet_Tubman",
   },
   {
     id: "nightingale",
@@ -450,7 +450,7 @@ export const people = [
     field: "Science",
     subfield: "Medicine",
     description: "English social reformer and statistician who founded modern nursing; transformed hospital sanitation during the Crimean War",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Florence_Nightingale_%28H_Hering_NPG_x82368%29.jpg/220px-Florence_Nightingale_%28H_Hering_NPG_x82368%29.jpg",
+    wikiTitle: "Florence_Nightingale",
   },
   {
     id: "lovelace",
@@ -460,6 +460,6 @@ export const people = [
     field: "Science",
     subfield: "Computer Science",
     description: "English mathematician who wrote what is considered the first algorithm intended for a machine; often called the first computer programmer",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ada_Lovelace_portrait.jpg/220px-Ada_Lovelace_portrait.jpg",
+    wikiTitle: "Ada_Lovelace",
   },
 ];
