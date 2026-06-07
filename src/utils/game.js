@@ -119,8 +119,10 @@ export function buildCompareQuestion(type, left, right) {
 
 export function buildRound({ mode, region, difficulty, count = 10, mixedModes }) {
   const fullPool = getByRegion(region);
-  // Shapes requires a renderable outline — filter to countries in the topology
-  const shapesPool = fullPool.filter((c) => !!countryPaths[c.code]);
+  // Shapes and Locate both require a topology entry (110m resolution excludes small islands)
+  const topoPool = fullPool.filter((c) => !!countryPaths[c.code]);
+  const shapesPool = topoPool;
+  const locatePool = topoPool;
   // Languages/compare require extra data
   const extraPool = fullPool.filter((c) => !!countriesExtra[c.code]);
 
@@ -132,6 +134,13 @@ export function buildRound({ mode, region, difficulty, count = 10, mixedModes })
     const selected = shuffle(shapesPool).slice(0, Math.min(count, shapesPool.length));
     return selected.map((country) =>
       buildQuestion("shapes", country, shapesPool, difficulty)
+    );
+  }
+
+  if (mode === "locate") {
+    const selected = shuffle(locatePool).slice(0, Math.min(count, locatePool.length));
+    return selected.map((country) =>
+      buildQuestion("locate", country, locatePool, difficulty)
     );
   }
 
@@ -178,15 +187,17 @@ export function buildRound({ mode, region, difficulty, count = 10, mixedModes })
       if (COUNTRY_TYPES.includes(type)) {
         const country = countrySelected[ci % countrySelected.length];
         ci++;
-        // For types that need filtered pools
-        if (type === "shapes" && !countryPaths[country.code]) {
-          // fall back to flags if no shape available
+        // For types that need filtered pools, fall back to flags if country not in pool
+        if ((type === "shapes" || type === "locate") && !countryPaths[country.code]) {
           return buildQuestion("flags", country, fullPool, difficulty);
         }
         if (type === "languages" && !countriesExtra[country.code]) {
           return buildQuestion("flags", country, fullPool, difficulty);
         }
-        const pool = type === "shapes" ? shapesPool : type === "languages" ? extraPool : fullPool;
+        const pool = type === "shapes" ? shapesPool
+          : type === "locate" ? locatePool
+          : type === "languages" ? extraPool
+          : fullPool;
         return buildQuestion(type, country, pool, difficulty);
       } else {
         // compare type
