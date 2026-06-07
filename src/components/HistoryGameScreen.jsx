@@ -103,28 +103,28 @@ export default function HistoryGameScreen({ config, onChangeMode }) {
 
       {confirmExit && (
         <div className="confirm-exit-banner" role="alert">
-          <span>Quit this round?</span>
-          <button className="btn btn--wrong-sm" onClick={onChangeMode}>Yes, quit</button>
-          <button className="btn btn--secondary-sm" onClick={() => setConfirmExit(false)}>Keep playing</button>
+          <span>{s.historyQuitPrompt}</span>
+          <button className="btn btn--wrong-sm" onClick={onChangeMode}>{s.historyQuitYes}</button>
+          <button className="btn btn--secondary-sm" onClick={() => setConfirmExit(false)}>{s.historyQuitNo}</button>
         </div>
       )}
 
       <div className="question-type-label">{typeLabel}</div>
 
       {question.type === "people" && (
-        <HistoryImageQuestion key={idx} question={question} onAnswer={handleAnswer} isExpert={isExpert} />
+        <HistoryImageQuestion key={idx} question={question} onAnswer={handleAnswer} isExpert={isExpert} s={s} />
       )}
       {question.type === "art" && (
-        <HistoryImageQuestion key={idx} question={question} onAnswer={handleAnswer} isExpert={isExpert} />
+        <HistoryImageQuestion key={idx} question={question} onAnswer={handleAnswer} isExpert={isExpert} s={s} />
       )}
       {question.type === "events" && (
-        <HistoryMCQQuestion key={idx} question={question} onAnswer={handleAnswer} isExpert={isExpert} />
+        <HistoryMCQQuestion key={idx} question={question} onAnswer={handleAnswer} isExpert={isExpert} s={s} />
       )}
       {question.type === "inventions" && (
-        <HistoryMCQQuestion key={idx} question={question} onAnswer={handleAnswer} isExpert={isExpert} />
+        <HistoryMCQQuestion key={idx} question={question} onAnswer={handleAnswer} isExpert={isExpert} s={s} />
       )}
       {question.type === "who-first" && (
-        <ChronologyQuestion key={idx} question={question} onAnswer={handleAnswer} />
+        <ChronologyQuestion key={idx} question={question} onAnswer={handleAnswer} s={s} />
       )}
     </div>
   );

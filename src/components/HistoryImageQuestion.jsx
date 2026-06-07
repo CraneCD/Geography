@@ -74,7 +74,7 @@ function HistoryImage({ wikiTitle, alt, className }) {
 }
 
 // Used for both "people" (portrait recognition) and "art" (painting recognition)
-export default function HistoryImageQuestion({ question, onAnswer, isExpert }) {
+export default function HistoryImageQuestion({ question, onAnswer, isExpert, s }) {
   const [selected, setSelected] = useState(null);
   const [showDescription, setShowDescription] = useState(false);
   const [value, setValue] = useState("");
@@ -121,10 +121,10 @@ export default function HistoryImageQuestion({ question, onAnswer, isExpert }) {
     : question.options;
 
   const placeholder = question.type === "people"
-    ? "Type the person's name…"
+    ? s.historyTypePersonName
     : question.answerKey === "artist"
-    ? "Type the artist's name…"
-    : "Type the art movement…";
+    ? s.historyTypeArtistName
+    : s.historyTypeMovement;
 
   return (
     <div className="question-card">
@@ -155,11 +155,11 @@ export default function HistoryImageQuestion({ question, onAnswer, isExpert }) {
           />
           {!submitted ? (
             <button onClick={submit} className="btn btn--primary type-submit" disabled={!value.trim()}>
-              Submit
+              {s.submitBtn}
             </button>
           ) : (
             <div className={`type-feedback ${wasCorrect ? "type-feedback--correct" : "type-feedback--wrong"}`} aria-live="assertive">
-              {wasCorrect ? "✓ Correct!" : <>✗ Answer: <strong>{correctAnswer}</strong></>}
+              {wasCorrect ? s.historyCorrect : s.historyWrongAnswer(correctAnswer)}
             </div>
           )}
         </div>

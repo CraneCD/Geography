@@ -6,7 +6,7 @@ function formatYear(y) {
   return String(y);
 }
 
-function ItemCard({ item, revealed, isEarlier, onClick, disabled }) {
+function ItemCard({ item, revealed, isEarlier, onClick, disabled, s }) {
   return (
     <button
       className={`compare-card${revealed ? (isEarlier ? " compare-card--correct" : " compare-card--wrong") : ""}`}
@@ -25,15 +25,15 @@ function ItemCard({ item, revealed, isEarlier, onClick, disabled }) {
       {revealed && (
         <div className="compare-verdict">
           {isEarlier
-            ? <span aria-hidden="true">◀ Earlier</span>
-            : <span aria-hidden="true">Later ▶</span>}
+            ? <span aria-hidden="true">{s.historyEarlier}</span>
+            : <span aria-hidden="true">{s.historyLater}</span>}
         </div>
       )}
     </button>
   );
 }
 
-export default function ChronologyQuestion({ question, onAnswer }) {
+export default function ChronologyQuestion({ question, onAnswer, s }) {
   const [chosen, setChosen] = useState(null);
 
   const { left, right } = question;
@@ -49,9 +49,9 @@ export default function ChronologyQuestion({ question, onAnswer }) {
     <div className="question-card compare-card-wrap">
       <p className="question-prompt">{question.prompt}</p>
       <div className="compare-grid">
-        <ItemCard item={left} revealed={!!chosen} isEarlier={earlierSide === "left"} onClick={() => choose("left")} disabled={!!chosen} />
-        <div className="compare-vs">VS</div>
-        <ItemCard item={right} revealed={!!chosen} isEarlier={earlierSide === "right"} onClick={() => choose("right")} disabled={!!chosen} />
+        <ItemCard item={left} revealed={!!chosen} isEarlier={earlierSide === "left"} onClick={() => choose("left")} disabled={!!chosen} s={s} />
+        <div className="compare-vs">{s.historyVs}</div>
+        <ItemCard item={right} revealed={!!chosen} isEarlier={earlierSide === "right"} onClick={() => choose("right")} disabled={!!chosen} s={s} />
       </div>
     </div>
   );

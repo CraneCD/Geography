@@ -26,7 +26,7 @@ function yearMatches(input, year) {
   return parseInt(s, 10) === year;
 }
 
-export default function HistoryMCQQuestion({ question, onAnswer, isExpert }) {
+export default function HistoryMCQQuestion({ question, onAnswer, isExpert, s }) {
   const [selected, setSelected] = useState(null);
   const [value, setValue] = useState("");
   const [submitted, setSubmitted] = useState(false);
@@ -65,7 +65,7 @@ export default function HistoryMCQQuestion({ question, onAnswer, isExpert }) {
     return "faded";
   }
 
-  const placeholder = isYear ? "Type the year…" : "Type the answer…";
+  const placeholder = isYear ? s.historyTypeYear : s.historyTypeAnswer;
   const correctLabel = isYear ? formatYear(correctVal) : String(correctVal);
 
   return (
@@ -89,11 +89,11 @@ export default function HistoryMCQQuestion({ question, onAnswer, isExpert }) {
           />
           {!submitted ? (
             <button onClick={submit} className="btn btn--primary type-submit" disabled={!value.trim()}>
-              Submit
+              {s.submitBtn}
             </button>
           ) : (
             <div className={`type-feedback ${wasCorrect ? "type-feedback--correct" : "type-feedback--wrong"}`} aria-live="assertive">
-              {wasCorrect ? "✓ Correct!" : <>✗ Answer: <strong>{correctLabel}</strong></>}
+              {wasCorrect ? s.historyCorrect : s.historyWrongAnswer(correctLabel)}
             </div>
           )}
         </div>

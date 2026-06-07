@@ -3,6 +3,7 @@ import { events } from "../data/history/events";
 import { inventions } from "../data/history/inventions";
 import { artworks } from "../data/history/artworks";
 import { shuffle } from "./game";
+import { strings } from "../i18n/strings";
 
 // ── Distractor helpers ──────────────────────────────────────────────────────
 
@@ -55,12 +56,12 @@ function getEventYearOptions(correct, difficulty) {
 
 // ── Question builders ───────────────────────────────────────────────────────
 
-function buildPeopleQuestion(person, difficulty) {
+function buildPeopleQuestion(person, difficulty, s) {
   const distractors = getPeopleDistractors(person, 3, difficulty);
   const options = shuffle([person, ...distractors]);
   return {
     type: "people",
-    prompt: "Who is this person?",
+    prompt: s.historyWhoIsThis,
     wikiTitle: person.wikiTitle,
     correct: person,
     options,
@@ -68,12 +69,12 @@ function buildPeopleQuestion(person, difficulty) {
   };
 }
 
-function buildWhoFirstQuestion(itemA, itemB) {
+function buildWhoFirstQuestion(itemA, itemB, s) {
   const yearA = itemA.born ?? itemA.year;
   const yearB = itemB.born ?? itemB.year;
   return {
     type: "who-first",
-    prompt: "Which came first?",
+    prompt: s.historyWhichFirst,
     left: { ...itemA, year: yearA, displayName: itemA.name ?? itemA.event },
     right: { ...itemB, year: yearB, displayName: itemB.name ?? itemB.event },
   };
@@ -92,29 +93,27 @@ function buildEventQuestion(event, difficulty) {
   };
 }
 
-function buildInventionQuestion(invention, difficulty, variant = "inventor") {
+function buildInventionQuestion(invention, difficulty, variant = "inventor", s) {
   if (variant === "inventor") {
     const distractors = getInventionDistractors(invention, 3, difficulty);
     const inventorOptions = shuffle([invention, ...distractors]).map((i) => i.inventor);
-    // Deduplicate (rare but possible)
     const unique = [...new Set(inventorOptions)].slice(0, 4);
-    while (unique.length < 4) unique.push("Unknown"); // safety
+    while (unique.length < 4) unique.push("Unknown");
     return {
       type: "inventions",
       variant: "inventor",
-      prompt: `Who invented the ${invention.invention}?`,
+      prompt: s.historyWhoInvented(invention.invention),
       description: `${invention.invention} (${invention.year}): ${invention.description}`,
       correct: invention,
       options: unique,
       answerKey: "inventor",
     };
   } else {
-    // variant: "year"
     const yearOptions = getEventYearOptions({ year: invention.year }, difficulty);
     return {
       type: "inventions",
       variant: "year",
-      prompt: `When was the ${invention.invention} invented?`,
+      prompt: s.historyWhenInvented(invention.invention),
       description: `${invention.invention}: ${invention.description} Invented by ${invention.inventor}.`,
       correct: invention,
       options: yearOptions,
@@ -123,7 +122,7 @@ function buildInventionQuestion(invention, difficulty, variant = "inventor") {
   }
 }
 
-function buildArtQuestion(artwork, difficulty, variant = "artist") {
+function buildArtQuestion(artwork, difficulty, variant = "artist", s) {
   if (variant === "artist") {
     const distractors = getArtworkDistractors(artwork, 3, difficulty);
     const artistOptions = shuffle([artwork, ...distractors]).map((a) => a.artist);
@@ -132,7 +131,7 @@ function buildArtQuestion(artwork, difficulty, variant = "artist") {
     return {
       type: "art",
       variant: "artist",
-      prompt: "Who created this artwork?",
+      prompt: s.historyWhoCreated,
       wikiTitle: artwork.wikiTitle,
       description: `"${artwork.title}" by ${artwork.artist} (${artwork.year}) — ${artwork.movement}. ${artwork.description}`,
       correct: artwork,
@@ -140,14 +139,13 @@ function buildArtQuestion(artwork, difficulty, variant = "artist") {
       answerKey: "artist",
     };
   } else {
-    // variant: "movement"
     const movements = [...new Set(artworks.map((a) => a.movement))];
     const otherMovements = shuffle(movements.filter((m) => m !== artwork.movement));
     const movementOptions = shuffle([artwork.movement, ...otherMovements.slice(0, 3)]);
     return {
       type: "art",
       variant: "movement",
-      prompt: "What artistic movement is this?",
+      prompt: s.historyWhatMovement,
       wikiTitle: artwork.wikiTitle,
       description: `"${artwork.title}" by ${artwork.artist} (${artwork.year}) — ${artwork.movement}. ${artwork.description}`,
       correct: artwork,
@@ -161,16 +159,18 @@ function buildArtQuestion(artwork, difficulty, variant = "artist") {
 
 const ALL_HISTORY_MODES = ["people", "who-first", "events", "inventions", "art"];
 
-export function buildHistoryRound({ mode, difficulty = "medium", count = 10 }) {
+export function buildHistoryRound({ mode, difficulty = "medium", count = 10, lang = "en" }) {
+  const s = strings[lang] ?? strings.en;
+
   if (mode === "people") {
-    return shuffle(people).slice(0, count).map((p) => buildPeopleQuestion(p, difficulty));
+    return shuffle(people).slice(0, count).map((p) => buildPeopleQuestion(p, difficulty, s));
   }
 
   if (mode === "who-first") {
     const pool = shuffle([...people, ...events.map((e) => ({ ...e, name: e.event }))]);
     const questions = [];
     for (let i = 0; i + 1 < pool.length && questions.length < count; i += 2) {
-      questions.push(buildWhoFirstQuestion(pool[i], pool[i + 1]));
+      questions.push(buildWhoFirstQuestion(pool[i], pool[i + 1], s));
     }
     return questions;
   }
@@ -181,13 +181,13 @@ export function buildHistoryRound({ mode, difficulty = "medium", count = 10 }) {
 
   if (mode === "inventions") {
     return shuffle(inventions).slice(0, count).map((inv, i) =>
-      buildInventionQuestion(inv, difficulty, i % 2 === 0 ? "inventor" : "year")
+      buildInventionQuestion(inv, difficulty, i % 2 === 0 ? "inventor" : "year", s)
     );
   }
 
   if (mode === "art") {
     return shuffle(artworks).slice(0, count).map((a, i) =>
-      buildArtQuestion(a, difficulty, i % 2 === 0 ? "artist" : "movement")
+      buildArtQuestion(a, difficulty, i % 2 === 0 ? "artist" : "movement", s)
     );
   }
 
@@ -201,15 +201,15 @@ export function buildHistoryRound({ mode, difficulty = "medium", count = 10 }) {
     const aPool = shuffle(artworks);
     let pi = 0, ei = 0, ii = 0, ai = 0;
     return slots.map((type) => {
-      if (type === "people") return buildPeopleQuestion(pPool[pi++ % pPool.length], difficulty);
+      if (type === "people") return buildPeopleQuestion(pPool[pi++ % pPool.length], difficulty, s);
       if (type === "who-first") {
         const a = pPool[pi++ % pPool.length];
         const b = ePool[ei++ % ePool.length];
-        return buildWhoFirstQuestion(a, { ...b, name: b.event });
+        return buildWhoFirstQuestion(a, { ...b, name: b.event }, s);
       }
       if (type === "events") return buildEventQuestion(ePool[ei++ % ePool.length], difficulty);
-      if (type === "inventions") return buildInventionQuestion(invPool[ii++ % invPool.length], difficulty, ii % 2 === 0 ? "inventor" : "year");
-      if (type === "art") return buildArtQuestion(aPool[ai++ % aPool.length], difficulty, ai % 2 === 0 ? "artist" : "movement");
+      if (type === "inventions") return buildInventionQuestion(invPool[ii++ % invPool.length], difficulty, ii % 2 === 0 ? "inventor" : "year", s);
+      if (type === "art") return buildArtQuestion(aPool[ai++ % aPool.length], difficulty, ai % 2 === 0 ? "artist" : "movement", s);
       return null;
     }).filter(Boolean);
   }
