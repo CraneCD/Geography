@@ -627,3 +627,147 @@ body {
   .capital-header { flex-direction: column; }
   .capital-header .question-prompt { text-align: center; }
 }
+
+/* ---- Logic & Numbers ---- */
+
+/* Sequence display */
+.sequence-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+.sequence-term {
+  background: var(--surface2);
+  border-radius: 8px;
+  padding: .5rem .85rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  min-width: 2.5rem;
+  text-align: center;
+}
+.sequence-term--blank {
+  background: var(--primary);
+  color: #fff;
+}
+.sequence-sep {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+/* Explanation / steps block */
+.math-explanation {
+  margin-top: 1rem;
+  padding: .75rem 1rem;
+  background: rgba(59,130,246,.1);
+  border: 1px solid rgba(59,130,246,.3);
+  border-radius: 8px;
+  font-size: .9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+.math-steps {
+  list-style: none;
+  margin-top: .5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+.math-steps li::before { content: "→ "; color: var(--primary); }
+
+/* Angle question */
+.angle-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.angle-svg-wrap {
+  background: var(--surface2);
+  border-radius: 12px;
+  padding: .5rem;
+  width: 100%;
+  max-width: 320px;
+}
+.angle-svg { width: 100%; height: auto; display: block; }
+
+.angle-input-row {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  width: 100%;
+  max-width: 320px;
+}
+.angle-slider {
+  flex: 1;
+  accent-color: var(--primary);
+  cursor: pointer;
+  height: 6px;
+}
+.angle-value-display {
+  font-size: 1.2rem;
+  font-weight: 700;
+  min-width: 3.5rem;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.angle-feedback {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: .6rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  max-width: 320px;
+}
+.angle-feedback--correct { background: rgba(22,163,74,.15); color: #4ade80; border: 1px solid #16a34a; }
+.angle-feedback--close   { background: rgba(234,179,8,.15);  color: #fbbf24; border: 1px solid #ca8a04; }
+.angle-feedback--wrong   { background: rgba(220,38,38,.15);  color: #f87171; border: 1px solid #dc2626; }
+
+/* Subject screen */
+.subject-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+.subject-card {
+  background: var(--surface);
+  border: 2px solid transparent;
+  border-radius: var(--radius);
+  padding: 2rem 1.25rem;
+  cursor: pointer;
+  text-align: center;
+  transition: border-color .15s, transform .15s, background .15s;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .6rem;
+}
+.subject-card:hover, .subject-card:focus-visible {
+  border-color: var(--primary);
+  background: var(--surface2);
+  transform: translateY(-2px);
+  outline: none;
+}
+.subject-card:focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; }
+.subject-card__icon { font-size: 3rem; }
+.subject-card__title { font-weight: 800; font-size: 1.25rem; }
+.subject-card__desc { font-size: .875rem; color: var(--text-muted); }
+
+/* Fraction display */
+.fraction-display {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.1;
+  vertical-align: middle;
+  margin: 0 .25rem;
+}
+.fraction-display__num { border-bottom: 2px solid var(--text); padding: 0 .2rem; }
+.fraction-display__den { padding: 0 .2rem; }

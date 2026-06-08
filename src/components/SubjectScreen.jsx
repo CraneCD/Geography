@@ -13,6 +13,12 @@ const SUBJECTS = [
     title: { en: "History & Culture", es: "Historia y Cultura", fr: "Histoire et Culture" },
     desc: { en: "Famous people, events, inventions, and art.", es: "Personajes famosos, eventos, inventos y arte.", fr: "Personnages célèbres, événements, inventions et art." },
   },
+  {
+    id: "logic",
+    icon: "🧮",
+    title: { en: "Logic & Numbers", es: "Lógica y Números", fr: "Logique et Nombres" },
+    desc: { en: "Arithmetic, fractions, sequences, angles, and algebra.", es: "Aritmética, fracciones, secuencias, ángulos y álgebra.", fr: "Arithmétique, fractions, suites, angles et algèbre." },
+  },
 ];
 
 export default function SubjectScreen({ lang = "en", onSelect }) {
