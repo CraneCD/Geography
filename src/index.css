@@ -771,3 +771,57 @@ body {
 }
 .fraction-display__num { border-bottom: 2px solid var(--text); padding: 0 .2rem; }
 .fraction-display__den { padding: 0 .2rem; }
+
+/* ---- Science & Nature ---- */
+
+/* Body diagram */
+.body-diagram-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 0.75rem 0;
+}
+.body-diagram-svg {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  display: block;
+  overflow: visible;
+}
+.body-region {
+  cursor: pointer;
+  transition: fill 0.15s, stroke 0.15s;
+}
+.body-region:hover { cursor: pointer; }
+
+/* Element periodic cell */
+.element-cell {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: var(--surface2);
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  margin: 0 auto 1.25rem;
+  position: relative;
+  cursor: default;
+}
+.element-cell__number {
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+}
+.element-cell__symbol {
+  font-size: 1.9rem;
+  font-weight: 800;
+  line-height: 1;
+}
+.element-cell__name {
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
