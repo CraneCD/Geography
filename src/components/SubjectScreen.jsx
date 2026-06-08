@@ -19,6 +19,12 @@ const SUBJECTS = [
     title: { en: "Logic & Numbers", es: "Lógica y Números", fr: "Logique et Nombres" },
     desc: { en: "Arithmetic, fractions, sequences, angles, and algebra.", es: "Aritmética, fracciones, secuencias, ángulos y álgebra.", fr: "Arithmétique, fractions, suites, angles et algèbre." },
   },
+  {
+    id: "science",
+    icon: "🔬",
+    title: { en: "Science & Nature", es: "Ciencia y Naturaleza", fr: "Sciences et Nature" },
+    desc: { en: "Animals, elements, human body, and space.", es: "Animales, elementos, cuerpo humano y espacio.", fr: "Animaux, éléments, corps humain et espace." },
+  },
 ];
 
 export default function SubjectScreen({ lang = "en", onSelect }) {

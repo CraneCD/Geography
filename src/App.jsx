@@ -6,6 +6,8 @@ import HistoryLandingScreen from "./components/HistoryLandingScreen";
 import HistoryGameScreen from "./components/HistoryGameScreen";
 import LogicLandingScreen from "./components/LogicLandingScreen";
 import LogicGameScreen from "./components/LogicGameScreen";
+import ScienceLandingScreen from "./components/ScienceLandingScreen";
+import ScienceGameScreen from "./components/ScienceGameScreen";
 import "./App.css";
 
 const ALL_MIXED_MODES = ["flags", "capitals", "locate", "shapes", "languages", "population", "area"];
@@ -19,7 +21,7 @@ const DEFAULT_SETTINGS = {
   lang: "en",
 };
 
-// screen: "subject" | "geo-landing" | "geo-game" | "history-landing" | "history-game" | "logic-landing" | "logic-game"
+// screen: "subject" | "geo-landing" | "geo-game" | "history-landing" | "history-game" | "logic-landing" | "logic-game" | "science-landing" | "science-game"
 function App() {
   const [screen, setScreen] = useState("subject");
   const [config, setConfig] = useState(null);
@@ -28,7 +30,8 @@ function App() {
   function handleSubjectSelect(subject) {
     if (subject === "geography") setScreen("geo-landing");
     else if (subject === "history") setScreen("history-landing");
-    else setScreen("logic-landing");
+    else if (subject === "logic") setScreen("logic-landing");
+    else setScreen("science-landing");
   }
 
   function handleGeoStart(mode) {
@@ -44,6 +47,11 @@ function App() {
   function handleLogicStart(mode) {
     setConfig({ mode, difficulty: settings.difficulty, count: settings.roundSize, lang: settings.lang });
     setScreen("logic-game");
+  }
+
+  function handleScienceStart(mode) {
+    setConfig({ mode, difficulty: settings.difficulty, count: settings.roundSize, lang: settings.lang });
+    setScreen("science-game");
   }
 
   return (
@@ -83,6 +91,17 @@ function App() {
       )}
       {screen === "logic-game" && (
         <LogicGameScreen config={config} onChangeMode={() => setScreen("logic-landing")} />
+      )}
+      {screen === "science-landing" && (
+        <ScienceLandingScreen
+          settings={settings}
+          onSettingsChange={setSettings}
+          onStart={handleScienceStart}
+          onBack={() => setScreen("subject")}
+        />
+      )}
+      {screen === "science-game" && (
+        <ScienceGameScreen config={config} onChangeMode={() => setScreen("science-landing")} />
       )}
     </div>
   );
