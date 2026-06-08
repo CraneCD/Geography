@@ -175,43 +175,52 @@ export default function AngleQuestion({ question, onAnswer, s }) {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            gap: "0.5rem",
+            gap: "0.6rem",
             margin: "0.5rem 0 1rem",
           }}
         >
-          <div
-            style={{
-              fontSize: "1.5rem",
-              fontWeight: 700,
-              color: "var(--primary)",
-              letterSpacing: "0.02em",
-              minWidth: "4rem",
-              textAlign: "center",
-            }}
-            aria-live="polite"
-            aria-label={`Current guess: ${guess} degrees`}
-          >
-            {guess}°
+          <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
+            <input
+              type="range"
+              min={0}
+              max={359}
+              step={1}
+              value={guess}
+              onChange={(e) => setGuess(Number(e.target.value))}
+              style={{ width: "200px", accentColor: "var(--primary)", cursor: "pointer" }}
+              aria-label="Angle guess slider"
+            />
+            <input
+              type="number"
+              min={0}
+              max={359}
+              value={guess}
+              onChange={(e) => {
+                const v = Math.max(0, Math.min(359, Number(e.target.value) || 0));
+                setGuess(v);
+              }}
+              onKeyDown={(e) => { if (e.key === "Enter") submit(); }}
+              style={{
+                width: "4.5rem",
+                background: "var(--surface2)",
+                border: "2px solid #475569",
+                borderRadius: "8px",
+                color: "var(--text)",
+                fontSize: "1rem",
+                fontWeight: 700,
+                padding: "0.35rem 0.5rem",
+                textAlign: "center",
+                outline: "none",
+              }}
+              aria-label="Angle guess in degrees"
+            />
+            <span style={{ color: "var(--text-muted)", fontSize: "1rem" }}>°</span>
           </div>
-          <input
-            type="range"
-            min={0}
-            max={359}
-            step={1}
-            value={guess}
-            onChange={(e) => setGuess(Number(e.target.value))}
-            style={{
-              width: "240px",
-              accentColor: "var(--primary)",
-              cursor: "pointer",
-            }}
-            aria-label="Angle guess slider"
-          />
           <div
             style={{
               display: "flex",
               justifyContent: "space-between",
-              width: "240px",
+              width: "200px",
               color: "var(--text-muted)",
               fontSize: "0.75rem",
             }}
