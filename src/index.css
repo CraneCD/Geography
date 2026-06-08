@@ -774,6 +774,40 @@ body {
 
 /* ---- Science & Nature ---- */
 
+/* Science images (single-image question) */
+.science-img {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  max-height: 240px;
+  object-fit: contain;
+  border-radius: var(--radius);
+  margin: 0.75rem auto;
+  background: var(--surface2);
+}
+.science-img-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 340px;
+  height: 180px;
+  margin: 0.75rem auto;
+  background: var(--surface2);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Compare card images */
+.compare-sci-img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 2px);
+  display: block;
+}
+
 /* Body diagram */
 .body-diagram-wrap {
   display: flex;
