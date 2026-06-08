@@ -120,9 +120,10 @@ function generateArithmetic(difficulty) {
     } else if (op === '×') {
       answer = a * b;
     } else {
-      // division: pick b, pick answer, compute a = b * answer
-      const divisor = randInt(rMin, rMax);
-      const quotient = randInt(1, Math.floor(rMax / divisor) || 1);
+      // division: pick divisor and quotient independently, ensure a ≠ b and quotient ≠ 1
+      const divisor = randInt(2, Math.max(2, rMax));
+      let quotient = randInt(2, Math.max(2, Math.floor(rMax / divisor) || 2));
+      if (quotient === divisor) quotient = quotient === 2 ? 3 : quotient - 1;
       a = divisor * quotient;
       b = divisor;
       answer = quotient;
