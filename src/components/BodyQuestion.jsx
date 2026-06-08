@@ -1,108 +1,101 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-function RegionShape({ shape, ...svgProps }) {
-  if (shape.type === "ellipse")
-    return <ellipse cx={shape.cx} cy={shape.cy} rx={shape.rx} ry={shape.ry} {...svgProps} />;
-  if (shape.type === "rect")
-    return <rect x={shape.x} y={shape.y} width={shape.w} height={shape.h} rx={shape.rx_corner ?? 4} {...svgProps} />;
-  return null;
+const WIKI_API = "https://en.wikipedia.org/api/rest_v1/page/summary/";
+const imgCache = new Map();
+
+async function fetchWikiImage(wikiTitle) {
+  if (imgCache.has(wikiTitle)) return imgCache.get(wikiTitle);
+  const res = await fetch(WIKI_API + encodeURIComponent(wikiTitle));
+  if (!res.ok) throw new Error(`${res.status}`);
+  const data = await res.json();
+  const url = data?.originalimage?.source ?? data?.thumbnail?.source ?? null;
+  imgCache.set(wikiTitle, url);
+  return url;
 }
 
-export default function BodyQuestion({ question, onAnswer }) {
-  const [chosen, setChosen] = useState(null);
-  const [wasCorrect, setWasCorrect] = useState(null);
-  const [hovered, setHovered] = useState(null);
+export default function BodyQuestion({ question, onAnswer, s }) {
+  const [imgSrc, setImgSrc] = useState(null);
+  const [imgStatus, setImgStatus] = useState("loading");
+  const [selected, setSelected] = useState(null);
 
-  const answered = chosen !== null;
+  useEffect(() => {
+    if (!question.wikiTitle) { setImgStatus("failed"); return; }
+    let cancelled = false;
+    setImgSrc(null);
+    setImgStatus("loading");
+    fetchWikiImage(question.wikiTitle)
+      .then((url) => {
+        if (cancelled) return;
+        if (url) { setImgSrc(url); setImgStatus("loaded"); }
+        else setImgStatus("failed");
+      })
+      .catch(() => { if (!cancelled) setImgStatus("failed"); });
+    return () => { cancelled = true; };
+  }, [question.wikiTitle]);
 
-  function handleClick(region) {
-    if (answered) return;
-    const correct = region.id === question.correct.id;
-    setChosen(region.id);
-    setWasCorrect(correct);
-    setTimeout(() => onAnswer(correct), 1200);
+  function choose(opt) {
+    if (selected !== null) return;
+    setSelected(opt);
+    const correct = opt === question.correct.name;
+    setTimeout(() => onAnswer(correct), 1400);
   }
 
-  function getFill(region) {
-    if (answered) {
-      if (region.id === question.correct.id) return "rgba(22,163,74,0.5)";
-      if (region.id === chosen) return "rgba(220,38,38,0.4)";
-      return "rgba(59,130,246,0.15)";
-    }
-    if (hovered === region.id) return "rgba(59,130,246,0.35)";
-    return "rgba(59,130,246,0.15)";
+  function optionClass(opt) {
+    if (selected === null) return "option-btn option-btn--default";
+    if (opt === question.correct.name) return "option-btn option-btn--correct";
+    if (opt === selected) return "option-btn option-btn--wrong";
+    return "option-btn option-btn--faded";
   }
 
-  function getStroke(region) {
-    if (answered) {
-      if (region.id === question.correct.id) return "#16a34a";
-      if (region.id === chosen) return "#dc2626";
-      return "#3b82f6";
-    }
-    if (hovered === region.id) return "#3b82f6";
-    return "#3b82f6";
-  }
-
-  function getStrokeOpacity(region) {
-    if (answered) return 1;
-    if (hovered === region.id) return 1;
-    return 0.4;
-  }
-
-  const clickedRegion = chosen ? question.allRegions.find((r) => r.id === chosen) : null;
+  const feedback = selected !== null
+    ? (selected === question.correct.name
+        ? (s?.historyCorrect ?? "Correct!")
+        : (s?.historyWrongAnswer?.(question.correct.name) ?? `The answer was ${question.correct.name}`))
+    : null;
 
   return (
     <div className="question-card">
-      <p className="question-prompt" style={{ textAlign: "center", fontWeight: 700, fontSize: "1.1rem", marginBottom: "0.5rem" }}>
-        {question.prompt}
-      </p>
+      <p className="question-prompt">{question.prompt}</p>
 
-      <div className="body-diagram-wrap">
-        <svg
-          className="body-diagram-svg"
-          viewBox="0 0 240 480"
-          aria-label={`Body diagram — click to identify ${question.correct.name}`}
-          role="img"
-        >
-          {/* Body silhouette */}
-          <g fill="#334155">
-            <circle cx="120" cy="42" r="36" />
-            <rect x="103" y="77" width="34" height="22" />
-            <rect x="58" y="98" width="124" height="143" rx="8" />
-            <rect x="20" y="98" width="36" height="118" rx="14" />
-            <rect x="184" y="98" width="36" height="118" rx="14" />
-            <rect x="58" y="238" width="124" height="40" rx="6" />
-            <rect x="63" y="275" width="48" height="195" rx="10" />
-            <rect x="129" y="275" width="48" height="195" rx="10" />
-          </g>
+      {imgStatus === "loaded" ? (
+        <img
+          src={imgSrc}
+          alt={selected !== null ? question.correct.name : "Mystery body part"}
+          referrerPolicy="no-referrer"
+          className="science-img"
+          onError={() => setImgStatus("failed")}
+        />
+      ) : (
+        <div className="science-img-placeholder">
+          {imgStatus === "failed" ? "Image unavailable" : "Loading..."}
+        </div>
+      )}
 
-          {/* Clickable regions */}
-          {question.allRegions.map((region) => (
-            <RegionShape
-              key={region.id}
-              shape={region.shape}
-              className="body-region"
-              fill={getFill(region)}
-              stroke={getStroke(region)}
-              strokeWidth="1.5"
-              strokeOpacity={getStrokeOpacity(region)}
-              style={{ cursor: answered ? "default" : "pointer" }}
-              onClick={() => handleClick(region)}
-              onMouseEnter={() => !answered && setHovered(region.id)}
-              onMouseLeave={() => setHovered(null)}
-              role="button"
-              aria-label={region.name}
-            />
-          ))}
-        </svg>
+      <div className="options-grid" role="group" aria-label="Answer options">
+        {question.choices.map((opt) => (
+          <button
+            key={opt}
+            className={optionClass(opt)}
+            onClick={() => choose(opt)}
+            aria-disabled={selected !== null}
+          >
+            {opt}
+          </button>
+        ))}
       </div>
 
-      {answered && (
-        <p className={`type-feedback--${wasCorrect ? "correct" : "wrong"}`} style={{ textAlign: "center", marginTop: "0.75rem" }}>
-          {wasCorrect
-            ? `✓ Correct! — ${question.correct.fact}`
-            : `✗ That was ${clickedRegion?.name ?? "unknown"}. ${question.correct.name}: ${question.correct.fact}`}
-        </p>
+      {feedback && (
+        <>
+          <div
+            className={`type-feedback ${selected === question.correct.name ? "type-feedback--correct" : "type-feedback--wrong"}`}
+            aria-live="assertive"
+          >
+            {feedback}
+          </div>
+          <p style={{ textAlign: "center", color: "var(--text-muted)", fontSize: "0.82rem", marginTop: "0.5rem" }}>
+            {question.correct.fact}
+          </p>
+        </>
       )}
     </div>
   );

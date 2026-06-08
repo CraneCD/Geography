@@ -1,159 +1,167 @@
+// photoName: canonical name used for MCQ choices and deduplication
+// (left/right pairs share a wikiTitle and photoName so they produce one distractor slot)
 export const BODY_REGIONS = [
   // === ORGANS ===
   {
     id: "brain",
     name: "Brain",
+    photoName: "Brain",
+    wikiTitle: "Brain",
     dataset: "organs",
-    shape: { type: "ellipse", cx: 120, cy: 42, rx: 28, ry: 22 },
-    fact: "Contains roughly 86 billion neurons and uses about 20% of the body's energy."
+    fact: "Contains roughly 86 billion neurons and uses about 20% of the body's energy.",
   },
   {
     id: "heart",
     name: "Heart",
+    photoName: "Heart",
+    wikiTitle: "Heart",
     dataset: "organs",
-    shape: { type: "ellipse", cx: 108, cy: 148, rx: 16, ry: 18 },
-    fact: "Beats about 100,000 times per day, pumping 7,500 litres of blood."
+    fact: "Beats about 100,000 times per day, pumping 7,500 litres of blood.",
   },
   {
-    id: "left_lung",
-    name: "Left Lung",
+    id: "lung",
+    name: "Lung",
+    photoName: "Lung",
+    wikiTitle: "Lung",
     dataset: "organs",
-    shape: { type: "ellipse", cx: 88, cy: 152, rx: 18, ry: 30 },
-    fact: "The left lung is slightly smaller than the right to make room for the heart."
-  },
-  {
-    id: "right_lung",
-    name: "Right Lung",
-    dataset: "organs",
-    shape: { type: "ellipse", cx: 148, cy: 152, rx: 18, ry: 30 },
-    fact: "The right lung has three lobes while the left has two."
+    fact: "The left lung is slightly smaller than the right to make room for the heart.",
   },
   {
     id: "liver",
     name: "Liver",
+    photoName: "Liver",
+    wikiTitle: "Liver",
     dataset: "organs",
-    shape: { type: "ellipse", cx: 140, cy: 195, rx: 22, ry: 18 },
-    fact: "The largest internal organ, performing over 500 functions including detoxification."
+    fact: "The largest internal organ, performing over 500 functions including detoxification.",
   },
   {
     id: "stomach",
     name: "Stomach",
+    photoName: "Stomach",
+    wikiTitle: "Stomach",
     dataset: "organs",
-    shape: { type: "ellipse", cx: 105, cy: 200, rx: 18, ry: 20 },
-    fact: "Produces hydrochloric acid strong enough to dissolve metal."
+    fact: "Produces hydrochloric acid strong enough to dissolve metal.",
   },
   {
-    id: "left_kidney",
-    name: "Left Kidney",
+    id: "kidney",
+    name: "Kidney",
+    photoName: "Kidney",
+    wikiTitle: "Kidney",
     dataset: "organs",
-    shape: { type: "ellipse", cx: 88, cy: 215, rx: 10, ry: 14 },
-    fact: "Filters about 180 litres of blood per day to produce roughly 1.5 litres of urine."
-  },
-  {
-    id: "right_kidney",
-    name: "Right Kidney",
-    dataset: "organs",
-    shape: { type: "ellipse", cx: 152, cy: 215, rx: 10, ry: 14 },
-    fact: "The right kidney sits slightly lower than the left due to the liver above it."
+    fact: "Filters about 180 litres of blood per day to produce roughly 1.5 litres of urine.",
   },
   {
     id: "large_intestine",
     name: "Large Intestine",
+    photoName: "Large Intestine",
+    wikiTitle: "Large intestine",
     dataset: "organs",
-    shape: { type: "ellipse", cx: 120, cy: 248, rx: 38, ry: 22 },
-    fact: "About 1.5 metres long and home to trillions of beneficial bacteria."
+    fact: "About 1.5 metres long and home to trillions of beneficial bacteria.",
+  },
+  {
+    id: "small_intestine",
+    name: "Small Intestine",
+    photoName: "Small Intestine",
+    wikiTitle: "Small intestine",
+    dataset: "organs",
+    fact: "At 6–7 metres long it is where most nutrients are absorbed from food.",
+  },
+  {
+    id: "pancreas",
+    name: "Pancreas",
+    photoName: "Pancreas",
+    wikiTitle: "Pancreas",
+    dataset: "organs",
+    fact: "Produces insulin to regulate blood sugar and digestive enzymes for the gut.",
+  },
+  {
+    id: "spleen",
+    name: "Spleen",
+    photoName: "Spleen",
+    wikiTitle: "Spleen",
+    dataset: "organs",
+    fact: "Filters old red blood cells and plays a key role in immune response.",
   },
 
   // === BONES ===
   {
     id: "skull",
     name: "Skull",
+    photoName: "Skull",
+    wikiTitle: "Human skull",
     dataset: "bones",
-    shape: { type: "ellipse", cx: 120, cy: 30, rx: 32, ry: 26 },
-    fact: "Made up of 22 separate bones fused together to protect the brain."
+    fact: "Made up of 22 separate bones fused together to protect the brain.",
   },
   {
-    id: "left_clavicle",
-    name: "Left Clavicle",
+    id: "clavicle",
+    name: "Clavicle",
+    photoName: "Clavicle",
+    wikiTitle: "Clavicle",
     dataset: "bones",
-    shape: { type: "rect", x: 62, y: 97, width: 46, height: 7 },
-    fact: "The clavicle is the most frequently fractured bone in the human body."
-  },
-  {
-    id: "right_clavicle",
-    name: "Right Clavicle",
-    dataset: "bones",
-    shape: { type: "rect", x: 132, y: 97, width: 46, height: 7 },
-    fact: "Acts as a strut connecting the shoulder blade to the sternum."
+    fact: "The most frequently fractured bone in the body; acts as a strut for the shoulder.",
   },
   {
     id: "sternum",
     name: "Sternum",
+    photoName: "Sternum",
+    wikiTitle: "Sternum",
     dataset: "bones",
-    shape: { type: "rect", x: 110, y: 100, width: 20, height: 80 },
-    fact: "Connects the ribs via cartilage to form the front of the ribcage."
+    fact: "Connects the ribs via cartilage to form the front of the ribcage.",
   },
   {
-    id: "left_humerus",
-    name: "Left Humerus",
+    id: "humerus",
+    name: "Humerus",
+    photoName: "Humerus",
+    wikiTitle: "Humerus",
     dataset: "bones",
-    shape: { type: "rect", x: 24, y: 104, width: 12, height: 90 },
-    fact: "The upper arm bone that articulates with the shoulder and elbow joints."
+    fact: "The upper-arm bone; articulates at both the shoulder and elbow joints.",
   },
   {
-    id: "right_humerus",
-    name: "Right Humerus",
+    id: "radius",
+    name: "Radius",
+    photoName: "Radius",
+    wikiTitle: "Radius (bone)",
     dataset: "bones",
-    shape: { type: "rect", x: 204, y: 104, width: 12, height: 90 },
-    fact: "The humerus carries the radial nerve along a groove on its posterior surface."
+    fact: "The shorter forearm bone on the thumb side; rotates to pronate and supinate.",
   },
   {
-    id: "left_radius",
-    name: "Left Radius",
+    id: "ulna",
+    name: "Ulna",
+    photoName: "Ulna",
+    wikiTitle: "Ulna",
     dataset: "bones",
-    shape: { type: "rect", x: 22, y: 200, width: 8, height: 70 },
-    fact: "The shorter of the two forearm bones, on the thumb side."
-  },
-  {
-    id: "right_radius",
-    name: "Right Radius",
-    dataset: "bones",
-    shape: { type: "rect", x: 210, y: 200, width: 8, height: 70 },
-    fact: "Rotates around the ulna to allow the forearm to pronate and supinate."
+    fact: "The longer forearm bone forming the point of the elbow (olecranon).",
   },
   {
     id: "pelvis",
     name: "Pelvis",
+    photoName: "Pelvis",
+    wikiTitle: "Pelvis",
     dataset: "bones",
-    shape: { type: "rect", x: 66, y: 240, width: 108, height: 34 },
-    fact: "The basin-shaped bony structure that supports the spine and protects abdominal organs."
+    fact: "Basin-shaped structure supporting the spine and protecting abdominal organs.",
   },
   {
-    id: "left_femur",
-    name: "Left Femur",
+    id: "femur",
+    name: "Femur",
+    photoName: "Femur",
+    wikiTitle: "Femur",
     dataset: "bones",
-    shape: { type: "rect", x: 69, y: 278, width: 16, height: 120 },
-    fact: "The longest and strongest bone in the human body."
+    fact: "The longest and strongest bone in the body; can support 30× body weight.",
   },
   {
-    id: "right_femur",
-    name: "Right Femur",
+    id: "tibia",
+    name: "Tibia",
+    photoName: "Tibia",
+    wikiTitle: "Tibia",
     dataset: "bones",
-    shape: { type: "rect", x: 155, y: 278, width: 16, height: 120 },
-    fact: "The femur can support up to 30 times a person's body weight."
+    fact: "The shin bone and second-largest bone; bears most body weight when standing.",
   },
   {
-    id: "left_tibia",
-    name: "Left Tibia",
+    id: "fibula",
+    name: "Fibula",
+    photoName: "Fibula",
+    wikiTitle: "Fibula",
     dataset: "bones",
-    shape: { type: "rect", x: 71, y: 400, width: 14, height: 65 },
-    fact: "The shin bone; the second largest bone in the body."
-  },
-  {
-    id: "right_tibia",
-    name: "Right Tibia",
-    dataset: "bones",
-    shape: { type: "rect", x: 155, y: 400, width: 14, height: 65 },
-    fact: "Bears most of the body weight when standing and walking."
+    fact: "The slender bone running alongside the tibia; mainly a muscle attachment site.",
   },
 ];

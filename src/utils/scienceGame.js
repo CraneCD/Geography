@@ -224,33 +224,33 @@ function buildElementsRound(difficulty, count) {
 // Body
 // ---------------------------------------------------------------------------
 
-function buildBodyQuestion(region, allRegions) {
+function buildBodyQuestion(region, pool) {
+  const distractors = pickRandom(
+    pool.map((r) => r.photoName ?? r.name),
+    3,
+    [region.photoName ?? region.name]
+  );
   return {
     type: "body",
-    prompt: `Click the ${region.name}`,
-    correct: { id: region.id, name: region.name, shape: region.shape, fact: region.fact },
-    allRegions,
+    wikiTitle: region.wikiTitle,
+    prompt: "What body part is shown?",
+    correct: { id: region.id, name: region.photoName ?? region.name, fact: region.fact },
+    choices: shuffleChoices(region.photoName ?? region.name, distractors),
   };
 }
 
 function buildBodyRound(difficulty, count) {
-  let dataset;
-  if (difficulty === "easy") dataset = "organs";
-  else if (difficulty === "hard") dataset = "bones";
-  // medium handled per-question below
-
   const questions = [];
   for (let i = 0; i < count; i++) {
     let ds;
-    if (difficulty === "medium") {
-      ds = i % 2 === 0 ? "organs" : "bones";
-    } else {
-      ds = dataset;
-    }
-    const filtered = BODY_REGIONS.filter((r) => r.dataset === ds);
-    if (filtered.length === 0) continue;
-    const region = pickOne(filtered);
-    questions.push(buildBodyQuestion(region, filtered));
+    if (difficulty === "easy") ds = "organs";
+    else if (difficulty === "hard") ds = "bones";
+    else ds = i % 2 === 0 ? "organs" : "bones";
+
+    const pool = BODY_REGIONS.filter((r) => r.dataset === ds);
+    if (pool.length === 0) continue;
+    const region = pickOne(pool);
+    questions.push(buildBodyQuestion(region, pool));
   }
   return questions;
 }
