@@ -2,19 +2,7 @@ import { ANIMALS } from "../data/science/animals";
 import { ELEMENTS } from "../data/science/elements";
 import { SPACE_OBJECTS } from "../data/science/space";
 import { BODY_REGIONS } from "../data/science/body";
-
-// ---------------------------------------------------------------------------
-// Utilities
-// ---------------------------------------------------------------------------
-
-function fisherYates(arr) {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
+import { shuffle as fisherYates } from "./shuffle";
 
 function pickRandom(arr, n, exclude = []) {
   const excludeSet = new Set(exclude);

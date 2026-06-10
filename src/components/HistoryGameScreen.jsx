@@ -1,5 +1,5 @@
-import { useState, useRef } from "react";
 import { buildHistoryRound } from "../utils/historyGame";
+import { useGameSession } from "../hooks/useGameSession";
 import ProgressBar from "./ProgressBar";
 import Timer from "./Timer";
 import HistoryImageQuestion from "./HistoryImageQuestion";
@@ -23,45 +23,18 @@ export default function HistoryGameScreen({ config, onChangeMode }) {
   const isExpert = difficulty === "expert";
   const s = strings[lang] ?? strings.en;
 
-  const [questions, setQuestions] = useState(() => buildHistoryRound(config));
-  const [idx, setIdx] = useState(0);
-  const [score, setScore] = useState(0);
-  const [results, setResults] = useState([]);
-  const [done, setDone] = useState(false);
-  const [timerKey, setTimerKey] = useState(0);
-  const [timerPaused, setTimerPaused] = useState(false);
-  const [confirmExit, setConfirmExit] = useState(false);
+  const {
+    questions, question, idx, score, results, done,
+    timerKey, timerPaused, confirmExit, setConfirmExit, handleAnswer, restart,
+  } = useGameSession({
+    build: () => buildHistoryRound(config),
+    getResultEntry: (q, wasCorrect) => {
+      const label = q.correct?.name ?? q.correct?.event ?? q.correct?.invention ?? q.correct?.title ?? "?";
+      return { wasCorrect, type: q.type, country: { name: label, code: null, capital: "", region: "" } };
+    },
+  });
 
-  const question = questions[idx];
   const useTimer = timerSeconds != null;
-
-  function handleAnswer(wasCorrect) {
-    setTimerPaused(true);
-    const label = question.correct?.name ?? question.correct?.event ?? question.correct?.invention ?? question.correct?.title ?? "?";
-    setResults((r) => [...r, { wasCorrect, type: question.type, country: { name: label, code: null, capital: "", region: "" } }]);
-    if (wasCorrect) setScore((s) => s + 1);
-    setTimeout(() => {
-      const next = idx + 1;
-      if (next < questions.length) {
-        setIdx(next);
-        setTimerKey((k) => k + 1);
-        setTimerPaused(false);
-      } else {
-        setDone(true);
-      }
-    }, 300);
-  }
-
-  function restart() {
-    setQuestions(buildHistoryRound(config));
-    setIdx(0);
-    setScore(0);
-    setResults([]);
-    setDone(false);
-    setTimerKey((k) => k + 1);
-    setTimerPaused(false);
-    setConfirmExit(false);
-  }
 
   function handleBackClick() {
     if (done || idx === 0) { onChangeMode(); return; }
@@ -111,16 +84,10 @@ export default function HistoryGameScreen({ config, onChangeMode }) {
 
       <div className="question-type-label">{typeLabel}</div>
 
-      {question.type === "people" && (
+      {(question.type === "people" || question.type === "art") && (
         <HistoryImageQuestion key={idx} question={question} onAnswer={handleAnswer} isExpert={isExpert} s={s} />
       )}
-      {question.type === "art" && (
-        <HistoryImageQuestion key={idx} question={question} onAnswer={handleAnswer} isExpert={isExpert} s={s} />
-      )}
-      {question.type === "events" && (
-        <HistoryMCQQuestion key={idx} question={question} onAnswer={handleAnswer} isExpert={isExpert} s={s} />
-      )}
-      {question.type === "inventions" && (
+      {(question.type === "events" || question.type === "inventions") && (
         <HistoryMCQQuestion key={idx} question={question} onAnswer={handleAnswer} isExpert={isExpert} s={s} />
       )}
       {question.type === "who-first" && (

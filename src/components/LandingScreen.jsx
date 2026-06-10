@@ -6,6 +6,17 @@ const MODE_IDS = ["flags", "capitals", "locate", "shapes", "languages", "populat
 
 const MIXED_TOGGLE_IDS = ["flags", "capitals", "locate", "shapes", "languages", "population", "area"];
 
+const MODE_ICONS = {
+  flags: "🚩",
+  capitals: "🏛️",
+  locate: "🗺️",
+  shapes: "🔷",
+  languages: "🗣️",
+  population: "👥",
+  area: "📐",
+  mixed: "🎲",
+};
+
 const DIFFICULTIES = ["easy", "medium", "hard", "expert"];
 const ROUND_SIZES = [5, 10, 15, 20];
 const TIMER_OPTIONS = [
@@ -54,7 +65,7 @@ export default function LandingScreen({ settings, onSettingsChange, onStart, onB
           return (
             <ModeCard
               key={id}
-              icon={{ flags:"🚩", capitals:"🏛️", locate:"🗺️", shapes:"🔷", languages:"🗣️", population:"👥", area:"📐", mixed:"🎲" }[id]}
+              icon={MODE_ICONS[id]}
               title={m.title}
               description={m.desc}
               onClick={() => onStart(id)}
@@ -153,7 +164,7 @@ export default function LandingScreen({ settings, onSettingsChange, onStart, onB
                 className={`pill ${mixedModes.includes(id) ? "pill--active" : ""}`}
                 aria-pressed={mixedModes.includes(id)}
               >
-                {{"flags":"🚩","capitals":"🏛️","locate":"🗺️","shapes":"🔷","languages":"🗣️","population":"👥","area":"📐"}[id]} {s.modes[id].title}
+                {MODE_ICONS[id]} {s.modes[id].title}
               </button>
             ))}
           </div>

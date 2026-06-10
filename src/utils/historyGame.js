@@ -2,7 +2,7 @@ import { people } from "../data/history/people";
 import { events } from "../data/history/events";
 import { inventions } from "../data/history/inventions";
 import { artworks } from "../data/history/artworks";
-import { shuffle } from "./game";
+import { shuffle } from "./shuffle";
 import { strings } from "../i18n/strings";
 
 // ── Distractor helpers ──────────────────────────────────────────────────────

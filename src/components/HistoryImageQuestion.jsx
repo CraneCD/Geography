@@ -1,56 +1,16 @@
 import { useState, useEffect, useRef } from "react";
-
-function normalize(str) {
-  return str
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
-    .replace(/[^a-z0-9\s]/g, "")
-    .trim();
-}
+import { useWikiImage } from "../hooks/useWikiImage";
+import { normalize } from "../utils/answerMatching";
 
 function textMatches(input, answer) {
   return normalize(input) === normalize(answer);
 }
 
-// Module-level cache so repeated questions don't re-fetch
-const wikiImageCache = new Map();
-
-async function fetchWikiThumbnail(wikiTitle) {
-  if (wikiImageCache.has(wikiTitle)) return wikiImageCache.get(wikiTitle);
-  const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(wikiTitle)}`;
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`${res.status}`);
-  const data = await res.json();
-  // Prefer originalimage (full size) over thumbnail (often too small)
-  const imgUrl = data?.originalimage?.source ?? data?.thumbnail?.source ?? null;
-  wikiImageCache.set(wikiTitle, imgUrl);
-  return imgUrl;
-}
-
 function HistoryImage({ wikiTitle, alt, className }) {
-  const [src, setSrc] = useState(null);
-  const [failed, setFailed] = useState(false);
+  const { src, status } = useWikiImage(wikiTitle);
+  const [errorSrc, setErrorSrc] = useState(null);
 
-  useEffect(() => {
-    if (!wikiTitle) { setFailed(true); return; }
-    let cancelled = false;
-    setSrc(null);
-    setFailed(false);
-
-    fetchWikiThumbnail(wikiTitle)
-      .then((url) => {
-        if (!cancelled) {
-          if (url) setSrc(url);
-          else setFailed(true);
-        }
-      })
-      .catch(() => { if (!cancelled) setFailed(true); });
-
-    return () => { cancelled = true; };
-  }, [wikiTitle]);
-
-  if (failed) {
+  if (status === "failed" || (src && errorSrc === src)) {
     return (
       <div className={`history-img-fallback ${className ?? ""}`} aria-label={alt}>
         <span style={{ fontSize: "3rem" }}>🖼️</span>
@@ -58,7 +18,7 @@ function HistoryImage({ wikiTitle, alt, className }) {
     );
   }
 
-  if (!src) {
+  if (status === "loading") {
     return <div className="history-img-placeholder" aria-hidden="true" style={{ width: "100%", minHeight: 200 }} />;
   }
 
@@ -68,7 +28,7 @@ function HistoryImage({ wikiTitle, alt, className }) {
       alt={alt}
       className={className}
       referrerPolicy="no-referrer"
-      onError={() => setFailed(true)}
+      onError={() => setErrorSrc(src)}
     />
   );
 }

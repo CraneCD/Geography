@@ -1,14 +1,18 @@
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import SubjectScreen from "./components/SubjectScreen";
-import LandingScreen from "./components/LandingScreen";
-import GameScreen from "./components/GameScreen";
-import HistoryLandingScreen from "./components/HistoryLandingScreen";
-import HistoryGameScreen from "./components/HistoryGameScreen";
-import LogicLandingScreen from "./components/LogicLandingScreen";
-import LogicGameScreen from "./components/LogicGameScreen";
-import ScienceLandingScreen from "./components/ScienceLandingScreen";
-import ScienceGameScreen from "./components/ScienceGameScreen";
 import "./App.css";
+
+// Each subject's screens are code-split so the initial bundle only contains
+// the subject picker — heavy dependencies (world-atlas topology, history
+// datasets) load on demand when a subject is chosen.
+const LandingScreen = lazy(() => import("./components/LandingScreen"));
+const GameScreen = lazy(() => import("./components/GameScreen"));
+const HistoryLandingScreen = lazy(() => import("./components/HistoryLandingScreen"));
+const HistoryGameScreen = lazy(() => import("./components/HistoryGameScreen"));
+const LogicLandingScreen = lazy(() => import("./components/LogicLandingScreen"));
+const LogicGameScreen = lazy(() => import("./components/LogicGameScreen"));
+const ScienceLandingScreen = lazy(() => import("./components/ScienceLandingScreen"));
+const ScienceGameScreen = lazy(() => import("./components/ScienceGameScreen"));
 
 const ALL_MIXED_MODES = ["flags", "capitals", "locate", "shapes", "languages", "population", "area"];
 
@@ -59,6 +63,7 @@ function App() {
       {screen === "subject" && (
         <SubjectScreen lang={settings.lang} onSelect={handleSubjectSelect} />
       )}
+      <Suspense fallback={null}>
       {screen === "geo-landing" && (
         <LandingScreen
           settings={settings}
@@ -103,6 +108,7 @@ function App() {
       {screen === "science-game" && (
         <ScienceGameScreen config={config} onChangeMode={() => setScreen("science-landing")} />
       )}
+      </Suspense>
     </div>
   );
 }

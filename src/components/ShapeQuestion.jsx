@@ -1,27 +1,10 @@
 import { useState, useRef, useEffect } from "react";
 import { countryPaths } from "../data/countryPaths";
 import { strings } from "../i18n/strings.jsx";
+import { isCorrect } from "../utils/answerMatching";
 
 const W = 400;
 const H = 300;
-
-// Normalize for comparison (mirrors TypeAnswer logic)
-function normalize(str) {
-  return str.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9\s]/g, "").trim();
-}
-const ALIASES = {
-  "united states": ["usa", "us", "america", "united states of america"],
-  "united kingdom": ["uk", "great britain", "britain"],
-  "democratic republic of the congo": ["drc", "dr congo", "congo kinshasa"],
-  "czech republic": ["czechia"],
-  "russia": ["russian federation"],
-};
-function isCorrect(input, answer) {
-  const n = normalize(input);
-  const a = normalize(answer);
-  if (n === a) return true;
-  return (ALIASES[a] || []).some((x) => normalize(x) === n);
-}
 
 function ShapeDisplay({ code, state }) {
   const path = countryPaths[code];

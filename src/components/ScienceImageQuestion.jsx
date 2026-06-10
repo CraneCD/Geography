@@ -1,52 +1,26 @@
-import { useState, useEffect } from "react";
-
-const WIKI_API = "https://en.wikipedia.org/api/rest_v1/page/summary/";
-const imgCache = new Map();
-
-async function fetchWikiImage(wikiTitle) {
-  if (imgCache.has(wikiTitle)) return imgCache.get(wikiTitle);
-  const res = await fetch(WIKI_API + encodeURIComponent(wikiTitle));
-  if (!res.ok) throw new Error(`${res.status}`);
-  const data = await res.json();
-  const url = data?.originalimage?.source ?? data?.thumbnail?.source ?? null;
-  imgCache.set(wikiTitle, url);
-  return url;
-}
+import { useState } from "react";
+import { useWikiImage } from "../hooks/useWikiImage";
 
 function WikiImage({ wikiTitle, alt }) {
-  const [imgSrc, setImgSrc] = useState(null);
-  const [status, setStatus] = useState("loading"); // loading | loaded | failed
+  const { src, status } = useWikiImage(wikiTitle);
+  const [errorSrc, setErrorSrc] = useState(null);
+  const failed = status === "failed" || (src && errorSrc === src);
 
-  useEffect(() => {
-    if (!wikiTitle) { setStatus("failed"); return; }
-    let cancelled = false;
-    setImgSrc(null);
-    setStatus("loading");
-    fetchWikiImage(wikiTitle)
-      .then((url) => {
-        if (cancelled) return;
-        if (url) { setImgSrc(url); setStatus("loaded"); }
-        else setStatus("failed");
-      })
-      .catch(() => { if (!cancelled) setStatus("failed"); });
-    return () => { cancelled = true; };
-  }, [wikiTitle]);
-
-  if (status === "loaded") {
+  if (status === "loaded" && !failed) {
     return (
       <img
-        src={imgSrc}
+        src={src}
         alt={alt}
         referrerPolicy="no-referrer"
         className="science-img"
-        onError={() => setStatus("failed")}
+        onError={() => setErrorSrc(src)}
       />
     );
   }
 
   return (
     <div className="science-img-placeholder">
-      {status === "failed" ? "Image unavailable" : "Loading..."}
+      {failed ? "Image unavailable" : "Loading..."}
     </div>
   );
 }

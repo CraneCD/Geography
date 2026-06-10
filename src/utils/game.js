@@ -1,17 +1,11 @@
-import { countries, getByRegion } from "../data/countries";
+import { getByRegion } from "../data/countries";
 import { countryPaths } from "../data/countryPaths";
 import { countriesExtra } from "../data/countriesExtra";
 import { countryTranslations } from "../data/countryTranslations";
 import { strings } from "../i18n/strings.jsx";
+import { shuffle } from "./shuffle";
 
-export function shuffle(arr) {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
+export { shuffle };
 
 // Return a country object with its name translated to the given language
 function translate(country, lang) {
@@ -26,9 +20,31 @@ function translatePool(pool, lang) {
   return pool.map((c) => translate(c, lang));
 }
 
+// Cache each pool's countries grouped by region so repeated getDistractors
+// calls within a round don't re-filter the whole pool per question.
+const regionGroupsCache = new WeakMap();
+
+function getRegionGroups(pool) {
+  let groups = regionGroupsCache.get(pool);
+  if (!groups) {
+    groups = new Map();
+    for (const c of pool) {
+      const list = groups.get(c.region);
+      if (list) list.push(c);
+      else groups.set(c.region, [c]);
+    }
+    regionGroupsCache.set(pool, groups);
+  }
+  return groups;
+}
+
 export function getDistractors(correct, pool, count, difficulty) {
-  const sameRegion = pool.filter((c) => c.code !== correct.code && c.region === correct.region);
-  const otherRegion = pool.filter((c) => c.code !== correct.code && c.region !== correct.region);
+  const groups = getRegionGroups(pool);
+  const sameRegion = (groups.get(correct.region) ?? []).filter((c) => c.code !== correct.code);
+  const otherRegion = [];
+  for (const [region, list] of groups) {
+    if (region !== correct.region) otherRegion.push(...list);
+  }
 
   let candidates;
   if (difficulty === "easy") {
@@ -170,10 +186,13 @@ export function buildRound({ mode, region, difficulty, count = 10, mixedModes, l
     const slots = Array.from({ length: count }, () =>
       activeModes[Math.floor(Math.random() * activeModes.length)]
     );
-    const enrichedPool = extraPool.map((c) => ({ ...c, ...countriesExtra[c.code] }));
     const countrySlots = slots.filter((t) => COUNTRY_TYPES.includes(t));
     const countrySelected = shuffle(fullPool).slice(0, Math.min(countrySlots.length, fullPool.length));
-    const compareSelected = shuffle(enrichedPool);
+    // Only build the enriched compare pool if the round actually drew compare slots
+    const hasCompareSlots = countrySlots.length < slots.length;
+    const compareSelected = hasCompareSlots
+      ? shuffle(extraPool.map((c) => ({ ...c, ...countriesExtra[c.code] })))
+      : [];
     let ci = 0;
     let pi = 0;
     return slots.map((type) => {

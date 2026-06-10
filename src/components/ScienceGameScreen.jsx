@@ -1,5 +1,5 @@
-import { useState } from "react";
 import { buildScienceRound } from "../utils/scienceGame";
+import { useGameSession } from "../hooks/useGameSession";
 import ProgressBar from "./ProgressBar";
 import Timer from "./Timer";
 import ScienceImageQuestion from "./ScienceImageQuestion";
@@ -19,57 +19,27 @@ const TYPE_LABELS = {
 };
 
 export default function ScienceGameScreen({ config, onChangeMode }) {
-  const { difficulty = "medium", timerSeconds, lang = "en" } = config;
+  const { timerSeconds, lang = "en" } = config;
   const s = strings[lang] ?? strings.en;
 
-  const [questions, setQuestions] = useState(() => buildScienceRound(config));
-  const [idx, setIdx] = useState(0);
-  const [score, setScore] = useState(0);
-  const [results, setResults] = useState([]);
-  const [done, setDone] = useState(false);
-  const [timerKey, setTimerKey] = useState(0);
-  const [timerPaused, setTimerPaused] = useState(false);
-  const [confirmExit, setConfirmExit] = useState(false);
-
-  const question = questions[idx];
-  const useTimer = timerSeconds != null;
-
-  function handleAnswer(wasCorrect) {
-    setTimerPaused(true);
-    const result = {
+  const {
+    questions, question, idx, score, results, done,
+    timerKey, timerPaused, confirmExit, setConfirmExit, handleAnswer, restart,
+  } = useGameSession({
+    build: () => buildScienceRound(config),
+    getResultEntry: (q, wasCorrect) => ({
       wasCorrect,
-      type: question.type,
+      type: q.type,
       country: {
-        name: question.correct?.name ?? question.prompt?.slice(0, 40) ?? question.type,
+        name: q.correct?.name ?? q.prompt?.slice(0, 40) ?? q.type,
         code: null,
         capital: "",
         region: "",
       },
-    };
-    setResults((r) => [...r, result]);
-    if (wasCorrect) setScore((sc) => sc + 1);
-    setTimeout(() => {
-      const next = idx + 1;
-      if (next < questions.length) {
-        setIdx(next);
-        setTimerKey((k) => k + 1);
-        setTimerPaused(false);
-      } else {
-        setDone(true);
-      }
-    }, 300);
-  }
+    }),
+  });
 
-  function restart() {
-    setQuestions(buildScienceRound(config));
-    setIdx(0);
-    setScore(0);
-    setResults([]);
-    setDone(false);
-    setTimerKey((k) => k + 1);
-    setTimerPaused(false);
-    setConfirmExit(false);
-  }
+  const useTimer = timerSeconds != null;
 
   function handleBackClick() {
     if (done || idx === 0) { onChangeMode(); return; }
