@@ -96,3 +96,11 @@ registered in the subject's `views` map.
   language. Everything else (UI, prompts, country, language, animal, planet, element, and body-part
   names) is translated.
 - `docs/AUDIT.md` contains the original code and functionality audit and how each finding was addressed.
+
+## Design
+
+The UI follows the **Quiz Notebook** direction: graph-paper background, navy ink, hard-shadow cards, and a
+highlighter colour per subject (yellow · orange · pink · mint, set by `data-subject` on `.app`). Type is
+Space Grotesk with IBM Plex Mono for labels and numbers, both self-hosted via `@fontsource`. Icons are
+`lucide-react` line icons (no emoji). All colours are tokens at the top of `src/index.css`, with a
+"night notebook" variant under `prefers-color-scheme: dark`.

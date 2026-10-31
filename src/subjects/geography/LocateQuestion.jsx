@@ -1,4 +1,5 @@
 import { useState, useRef, useMemo, useId, useEffect } from "react";
+import { ZoomIn, ZoomOut, RotateCcw, Earth } from "lucide-react";
 import worldMap from "../../data/generated/worldMap.json";
 import regionViews from "../../data/generated/regionViews.json";
 import { countries } from "../../data/countries.js";
@@ -192,11 +193,11 @@ export default function LocateQuestion({ question, answer, onAnswer, t }) {
         </svg>
 
         <div className="map-controls">
-          <button type="button" className="map-btn" onClick={() => zoomBy(1 / 1.5)} aria-label={t.geo.zoomIn}>+</button>
-          <button type="button" className="map-btn" onClick={() => zoomBy(1.5)} aria-label={t.geo.zoomOut}>−</button>
-          <button type="button" className="map-btn" onClick={() => setView(initial)} aria-label={t.geo.resetView}>⟲</button>
+          <button type="button" className="map-btn" onClick={() => zoomBy(1 / 1.5)} aria-label={t.geo.zoomIn}><ZoomIn size={18} aria-hidden="true" /></button>
+          <button type="button" className="map-btn" onClick={() => zoomBy(1.5)} aria-label={t.geo.zoomOut}><ZoomOut size={18} aria-hidden="true" /></button>
+          <button type="button" className="map-btn" onClick={() => setView(initial)} aria-label={t.geo.resetView}><RotateCcw size={18} aria-hidden="true" /></button>
           {initial !== FULL && (
-            <button type="button" className="map-btn" onClick={() => setView(FULL)} aria-label={t.geo.worldView}>🌐</button>
+            <button type="button" className="map-btn" onClick={() => setView(FULL)} aria-label={t.geo.worldView}><Earth size={18} aria-hidden="true" /></button>
           )}
         </div>
       </div>

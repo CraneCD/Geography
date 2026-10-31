@@ -1,35 +1,37 @@
-export function ProgressBar({ current, total, score, t }) {
-  const pct = Math.round((current / total) * 100);
+/**
+ * Notebook-style progress: one segment per question, coloured by its result
+ * (correct / wrong / current / to do).
+ */
+export function ProgressSegments({ questions, results, idx, t }) {
   return (
-    <div className="progress-bar-wrap">
-      <div className="progress-bar-meta">
-        <span>{t.questionProgress(current, total)}</span>
-        <span>{t.scoreLabel}: <strong>{score}</strong></span>
-      </div>
-      <div
-        className="progress-bar"
-        role="progressbar"
-        aria-label={t.questionProgress(current, total)}
-        aria-valuenow={current}
-        aria-valuemin={1}
-        aria-valuemax={total}
-      >
-        <div className="progress-bar__fill" style={{ width: `${pct}%` }} />
-      </div>
+    <div
+      className="segments"
+      role="progressbar"
+      aria-label={t.questionProgress(idx + 1, questions.length)}
+      aria-valuenow={idx + 1}
+      aria-valuemin={1}
+      aria-valuemax={questions.length}
+    >
+      {questions.map((q, i) => {
+        const r = results[i];
+        const state = r ? (r.correct ? "correct" : "wrong") : i === idx ? "current" : "todo";
+        return <span key={q.key + i} className={`segments__item segments__item--${state}`} />;
+      })}
     </div>
   );
 }
 
-/** Countdown ring. Screen readers are told the time only at 10 and 5 seconds, not every tick. */
-export function Timer({ left, total, t }) {
-  const pct = Math.round((left / total) * 100);
+/** Countdown chip. Screen readers are told the time only at 10 and 5 seconds, not every tick. */
+export function Timer({ left, t }) {
   const announce = left === 10 || left === 5 ? t.secondsLeft(left) : "";
+  const mm = String(Math.floor(left / 60)).padStart(2, "0");
+  const ss = String(left % 60).padStart(2, "0");
   return (
-    <div className={`timer${left <= 5 ? " timer--urgent" : ""}`}>
-      <div className="timer__ring" style={{ "--pct": pct }} role="timer" aria-label={t.secondsLeft(left)}>
-        <span aria-hidden="true">{left}s</span>
-      </div>
+    <>
+      <span className={`timer-chip${left <= 5 ? " timer-chip--urgent" : ""}`} role="timer" aria-label={t.secondsLeft(left)}>
+        <span aria-hidden="true">{mm}:{ss}</span>
+      </span>
       <span className="sr-only" aria-live="polite">{announce}</span>
-    </div>
+    </>
   );
 }

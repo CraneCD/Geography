@@ -19,7 +19,10 @@
     "build:images": "node scripts/resolve-images.mjs"
   },
   "dependencies": {
+    "@fontsource-variable/space-grotesk": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
     "country-flag-icons": "^1.6.17",
+    "lucide-react": "^1.66.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
   },

@@ -49,7 +49,10 @@ export default function Media({ media, revealed, answer, correctLabel, t }) {
       // Alt text stays empty for the "which flag is this?" question so it can't leak the answer.
       return (
         <div className="flag-wrap">
-          <Flag src={media.src} alt={revealed ? correctLabel : media.alt} className="flag-img" />
+          <div className="taped">
+            <span className="taped__tape" aria-hidden="true" />
+            <Flag src={media.src} alt={revealed ? correctLabel : media.alt} className="flag-img" />
+          </div>
         </div>
       );
     case "flagThumb":
@@ -67,7 +70,10 @@ export default function Media({ media, revealed, answer, correctLabel, t }) {
     case "image":
       return (
         <div className="quiz-img-wrap">
-          <QuizImage media={media} revealed={revealed} revealLabel={correctLabel} t={t} />
+          <div className="taped taped--photo">
+            <span className="taped__tape" aria-hidden="true" />
+            <QuizImage media={media} revealed={revealed} revealLabel={correctLabel} t={t} />
+          </div>
         </div>
       );
     case "element":
