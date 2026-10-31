@@ -209,3 +209,27 @@ Fix focus management between questions, reduce timer announcements, remove answe
 
 ### Suggested first PR
 Phase 0 plus fixes 1–4 from Phase 1. That's about a day of work. It removes the three critical issues and the timer race, and puts tests in place so they don't come back.
+
+---
+
+## ✅ Implementation status (all phases completed)
+
+| Finding | Resolution | Guarded by |
+|---|---|---|
+| §1.1 Region filter → 1–3 options | Distractors drawn from the whole world; region only limits what is *asked* | `geography/generate.test.js` (every mode × region × difficulty has 4 unique options) |
+| §1.2 Medium ≈ Easy | `pickDistractors` tiers: easy 0 / medium 1–2 / hard 3 same-region | same-region rate test (0 / 30–70% / >95%) |
+| §1.3 23 countries missing | Build-time geometry compares ids numerically; microstates are tappable map points. **163** shapes (was 143), **191/191** on the Locate map | data tests |
+| §1.4 Year answer always 3rd-lowest | Random position, no future years, no year 0 | uniformity + validity tests |
+| §1.5 Timer double-records | Single reducer-based session (`useQuizSession`) with a one-answer-per-question guard; the timer stops on answer and never fires inside a state updater | `useQuizSession.test.js` |
+| §1.6 Logic defects | Integer-safe percentages, decimal-comma input, lowest-terms check for "simplify", signed-term formatting, uniform division quotients, precedence fix, no angle wrap-around | `logic/generate.test.js` (incl. evaluating every equation) |
+| §1.7 History defects | No "Unknown" padding, tie-free who-first with difficulty gaps, "(born)" labels, summary labels for every type, surname + fuzzy typed answers | history tests, `lib.test.js` |
+| §1.8 Geography defects | Full official-language lists (never a correct distractor), summary shows the right comparison answer, Locate frames the selected region | languages test |
+| §1.9 Science defects | Sampling without replacement, Expert = typed answers, short rounds are announced, names translated | science tests |
+| §1.10 Settings plumbing | One settings model for all subjects (timer, practice, round size, difficulty), persisted and validated | — |
+| §2 Code quality | 4 game screens + 4 landings → 1 `QuizScreen` + 1 `SubjectLanding`; one text-matching module; strings in `i18n/{en,es,fr}.js`; lint clean; dead files removed; README rewritten | ESLint + 199 tests in CI |
+| §3 Performance | Per-subject code splitting (main bundle 79 kB gzip, was 221 kB); map geometry precomputed; world map loaded only for Locate; local flag SVGs; 500 px image thumbnails; next-question prefetch | CI checks generated data is current |
+| §4 Accessibility | Focus moves to each question; timer announced only at 10 s / 5 s; map has a list-based alternative and no answer-revealing labels; fieldset/legend option groups; `lang` attribute follows the UI language; reduced-motion support; number keys 1–4 answer | — |
+| §5 Resilience | Image manifest built at build time; **9 of 13 broken image titles fixed** (4 have no lead image on Wikipedia); items without an image are excluded from picture questions; no runtime Wikipedia API calls | manifest coverage test |
+| Phase 3 UX | Hash routing (`#/subject/mode`), saved settings, personal bests on mode cards, practice mode, "Review mistakes", per-question timer of 10–60 s | — |
+
+Not done (optional): PWA/offline service worker, translating long-form History/Science text.
