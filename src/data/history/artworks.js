@@ -186,7 +186,7 @@ export const artworks = [
     year: 1912,
     movement: "Cubism",
     description: "Analytical Cubist portrait of Picasso by his fellow Cubist Juan Gris, showing fragmented planes and muted tones.",
-    wikiTitle: "Portrait_of_Pablo_Picasso_(Juan_Gris)",
+    wikiTitle: "Portrait_of_Pablo_Picasso",
     license: "Public domain",
   },
   {
@@ -356,7 +356,7 @@ export const artworks = [
     year: 1614,
     movement: "Baroque",
     description: "Dramatic Baroque depiction of the biblical Judith beheading the Assyrian general Holofernes.",
-    wikiTitle: "Judith_Slaying_Holofernes_(Artemisia_Gentileschi,_Uffizi)",
+    wikiTitle: "Judith_Slaying_Holofernes_(Artemisia_Gentileschi,_Naples)",
     license: "Public domain",
   },
   {
@@ -486,7 +486,7 @@ export const artworks = [
     year: 1622,
     movement: "Baroque",
     description: "An old water seller hands a glass of water to a young boy with great solemnity, illuminated by a dramatic chiaroscuro light. It is considered one of Velázquez's earliest masterpieces, showcasing his extraordinary ability to render texture and character.",
-    wikiTitle: "The_Water-Seller_of_Seville",
+    wikiTitle: "The_Waterseller_of_Seville",
     license: "Public domain",
   },
   {
@@ -606,7 +606,7 @@ export const artworks = [
     year: 1884,
     movement: "Realism",
     description: "A portrait of the American socialite Virginie Amélie Avegno Gautreau in a black evening gown, posed with aloof hauteur. The painting caused a scandal at the 1884 Paris Salon and became one of the most celebrated portraits of the 19th century.",
-    wikiTitle: "Madame_X_(painting)",
+    wikiTitle: "Portrait_of_Madame_X",
     license: "Public domain",
   },
   {
@@ -636,7 +636,7 @@ export const artworks = [
     year: 1913,
     movement: "Expressionism",
     description: "Fashionably dressed women stride along a Berlin street in an angularly distorted, garish scene pulsing with urban tension. It is one of the key works of German Expressionism and a vivid document of pre-war metropolitan anxiety.",
-    wikiTitle: "Street,_Berlin",
+    wikiTitle: "Street,_Berlin_(Kirchner)",
     license: "Public domain",
   },
   {
@@ -666,7 +666,7 @@ export const artworks = [
     year: 1923,
     movement: "Modernism",
     description: "An explosion of geometric shapes — circles, triangles, lines, and grids — float against a light background in a dynamic abstract composition. Kandinsky created the Compositions series as his most ambitious musical-visual experiments.",
-    wikiTitle: "Composition_VIII",
+    wikiTitle: "Composition_VIII_(Kandinsky)",
     license: "Public domain",
   },
   {
@@ -686,7 +686,7 @@ export const artworks = [
     year: 1851,
     movement: "Romanticism",
     description: "Ophelia from Shakespeare's Hamlet floats in a stream strewn with flowers, her expression serene as she drowns; painted with obsessive botanical detail by the Pre-Raphaelite master.",
-    wikiTitle: "Ophelia_(Millais_painting)",
+    wikiTitle: "Ophelia_(Millais)",
     license: "Public domain",
   },
   {
@@ -706,7 +706,7 @@ export const artworks = [
     year: 1873,
     movement: "Realism",
     description: "A formal portrait of the Scottish historian Thomas Carlyle, depicted in profile in the same muted tonal arrangement as Whistler's famous portrait of his mother. Whistler titled his portraits as 'arrangements' to emphasise colour and composition over likeness.",
-    wikiTitle: "Arrangement_in_Grey_and_Black_No._2",
+    wikiTitle: "Arrangement_in_Grey_and_Black,_No._2:_Portrait_of_Thomas_Carlyle",
     license: "Public domain",
   },
   {
@@ -716,7 +716,7 @@ export const artworks = [
     year: 1907,
     movement: "Fauvism",
     description: "A reclining female nude rendered in bold blue contours with rough, expressive brushwork challenges academic conventions of the nude. The painting caused a sensation at the 1907 Salon des Indépendants and was later burned in effigy at the Chicago Armory Show.",
-    wikiTitle: "Blue_Nude_(Matisse)",
+    wikiTitle: "Blue_Nude_(Souvenir_de_Biskra)",
     license: "Public domain",
   },
   {
