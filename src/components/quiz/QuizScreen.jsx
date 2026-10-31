@@ -1,11 +1,13 @@
 import { useState, useCallback, useEffect, useRef } from "react";
+import { ArrowLeft } from "lucide-react";
 import { useQuizSession, autoAdvanceDelay } from "../../hooks/useQuizSession.js";
-import { recordBest } from "../../lib/storage.js";
+import { recordBest, recordActivity } from "../../lib/storage.js";
 import { shuffle } from "../../lib/random.js";
 import QuestionView from "./QuestionView.jsx";
 import AnswerFooter from "./AnswerFooter.jsx";
 import SummaryScreen from "./SummaryScreen.jsx";
-import { ProgressBar, Timer } from "./HeaderWidgets.jsx";
+import { ProgressSegments, Timer } from "./HeaderWidgets.jsx";
+import Icon from "../Icon.jsx";
 
 let reviewSeq = 0;
 const reviewCopy = (q) => ({
@@ -24,7 +26,10 @@ export default function QuizScreen({ subjectId, mode, settings, module, t, onExi
   const build = useCallback(() => module.buildRound({ ...settings, mode }, t), [module, settings, mode, t]);
 
   const onRoundComplete = useCallback(
-    ({ correct, total }) => (settings.practice ? false : recordBest(subjectId, mode, settings.difficulty, correct, total)),
+    ({ correct, total }) => {
+      recordActivity(total);
+      return settings.practice ? false : recordBest(subjectId, mode, settings.difficulty, correct, total);
+    },
     [subjectId, mode, settings.difficulty, settings.practice],
   );
 
@@ -63,7 +68,7 @@ export default function QuizScreen({ subjectId, mode, settings, module, t, onExi
 
   if (!question) {
     return (
-      <main className="game-screen">
+      <main className="page page--narrow">
         <p className="notice" role="alert">{t.shortRound(0)}</p>
         <button type="button" className="btn btn--secondary" onClick={onExit}>{t.backToModes}</button>
       </main>
@@ -76,21 +81,29 @@ export default function QuizScreen({ subjectId, mode, settings, module, t, onExi
   }
 
   const delay = answer ? autoAdvanceDelay(question, answer) : null;
+  const pad = (n) => String(n).padStart(2, "0");
 
   return (
-    <main className="game-screen">
-      <div className="game-header">
-        <button type="button" onClick={handleBack} className="back-btn">{t.backToModes}</button>
-        <ProgressBar current={idx + 1} total={questions.length} score={score.correct} t={t} />
-        {timeLeft != null && <Timer left={timeLeft} total={settings.timer} t={t} />}
-        {settings.practice && <span className="practice-badge">{t.practiceMode}</span>}
+    <main className="page page--narrow game">
+      <div className="topbar game__bar">
+        <button type="button" onClick={handleBack} className="back-btn">
+          <ArrowLeft size={16} aria-hidden="true" /> {t.backToModes}
+        </button>
+        <span className="game__meta" aria-hidden="true">
+          {t.questionShort(idx + 1, questions.length)} · {t.scoreLabel.toUpperCase()} {pad(score.correct)}
+        </span>
+        {timeLeft != null && <Timer left={timeLeft} t={t} />}
       </div>
 
+      <ProgressSegments questions={questions} results={results} idx={idx} t={t} />
+
       {confirmExit && (
-        <div className="confirm-exit-banner" role="alertdialog" aria-label={t.quitPrompt}>
+        <div className="confirm-exit card" role="alertdialog" aria-label={t.quitPrompt}>
           <span>{t.quitPrompt}</span>
-          <button type="button" className="btn btn--danger-sm" onClick={onExit}>{t.quitYes}</button>
-          <button type="button" className="btn btn--secondary-sm" onClick={() => setConfirmExit(false)} autoFocus>{t.quitNo}</button>
+          <div className="confirm-exit__actions">
+            <button type="button" className="btn btn--danger btn--sm" onClick={onExit}>{t.quitYes}</button>
+            <button type="button" className="btn btn--secondary btn--sm" onClick={() => setConfirmExit(false)} autoFocus>{t.quitNo}</button>
+          </div>
         </div>
       )}
 
@@ -98,12 +111,14 @@ export default function QuizScreen({ subjectId, mode, settings, module, t, onExi
         <p className="notice">{t.shortRound(firstRoundLength)}</p>
       )}
 
-      <div className="question-type-label">
-        {t.typeLabels[question.type] ?? question.type}
-        {question.isRetry && <span className="retry-badge">{t.retryBadge}</span>}
-      </div>
+      <p className="kicker game__type">
+        <Icon name={question.type} size={16} />
+        <span>{t.typeLabels[question.type] ?? question.type} · {t.difficulties[settings.difficulty]}</span>
+        {settings.practice && <span className="badge">{t.practiceMode}</span>}
+        {question.isRetry && <span className="badge">{t.retryBadge}</span>}
+      </p>
 
-      <div ref={cardRef} tabIndex={-1} className="question-focus" aria-live="off">
+      <div ref={cardRef} tabIndex={-1} className="question-focus">
         <QuestionView
           key={`${question.key}:${idx}`}
           question={question}

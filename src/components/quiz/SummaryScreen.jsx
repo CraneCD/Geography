@@ -1,11 +1,13 @@
 import { useEffect, useRef } from "react";
 import { ShapeSvg } from "./Media.jsx";
 
-function medal(pct) {
-  if (pct >= 90) return "🏆";
-  if (pct >= 70) return "🥈";
-  if (pct >= 50) return "🥉";
-  return "📚";
+/** Teacher-style grade for the rubber stamp. */
+function grade(pct) {
+  if (pct >= 95) return "A+";
+  if (pct >= 85) return "A";
+  if (pct >= 70) return "B";
+  if (pct >= 50) return "C";
+  return "D";
 }
 
 function MissedItem({ result, t }) {
@@ -13,7 +15,7 @@ function MissedItem({ result, t }) {
   const review = question.review ?? {};
   const yours = timedOut ? t.timedOut : given ?? t.noAnswer;
   return (
-    <li className="missed-item">
+    <li className="missed-item card">
       {review.flag && <img src={review.flag} alt="" className="missed-flag" />}
       {review.shape && <ShapeSvg d={review.shape} className="missed-shape" />}
       <div>
@@ -37,15 +39,17 @@ export default function SummaryScreen({ results, score, practice, newBest, onPla
   const missed = results.filter((r) => !r.correct && !r.question.isRetry);
 
   return (
-    <main className="summary">
-      <h1 className="summary__title" ref={headingRef} tabIndex={-1}>{t.roundComplete}</h1>
+    <main className="page page--narrow summary">
+      <h1 className="page__title summary__title" ref={headingRef} tabIndex={-1}>{t.roundComplete}</h1>
 
-      <div className="summary__score-ring" style={{ "--pct": pct }} role="img" aria-label={t.scoreAria(correct, total, pct)}>
-        <div className="score-ring__number" aria-hidden="true">{correct}/{total}</div>
-        <div className="score-ring__label" aria-hidden="true">{t.accuracy(pct)}</div>
+      <div className="scorecard card" role="img" aria-label={t.scoreAria(correct, total, pct)}>
+        <div className="scorecard__score" aria-hidden="true">
+          <span className="scorecard__number">{correct}<span className="scorecard__total">/{total}</span></span>
+          <span className="kicker">{t.accuracy(pct)}</span>
+        </div>
+        <span className={`stamp stamp--${grade(pct).charAt(0).toLowerCase()}`} aria-hidden="true">{grade(pct)}</span>
       </div>
-      <div className="summary__medal" aria-hidden="true">{medal(pct)}</div>
-      {newBest && <p className="summary__best" role="status">{t.newBest}</p>}
+      {newBest && <p className="summary__best" role="status"><mark className="hl">{t.newBest}</mark></p>}
       {practice && <p className="summary__note">{t.firstTryNote}</p>}
 
       {missed.length > 0 ? (

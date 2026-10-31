@@ -23,7 +23,7 @@ function useSubjectModule(subject) {
 
 function NotFound({ t, onHome }) {
   return (
-    <main className="landing">
+    <main className="page page--narrow">
       <p className="notice" role="alert">{t.notFound}</p>
       <button type="button" className="btn btn--primary" onClick={onHome}>{t.goHome}</button>
     </main>
@@ -40,7 +40,7 @@ export default function App() {
   useEffect(() => {
     document.documentElement.lang = settings.lang;
     document.title = subject
-      ? `${t.subjects[subject.id].title}${route.mode && t.modes[subject.id][route.mode] ? ` · ${t.modes[subject.id][route.mode].title}` : ""} — ${t.appTitle.replace(/^\W+/, "")}`
+      ? `${t.subjects[subject.id].title}${route.mode && t.modes[subject.id][route.mode] ? ` · ${t.modes[subject.id][route.mode].title}` : ""} — ${t.appTitle}`
       : t.docTitle;
   }, [settings.lang, subject, route.mode, t]);
 
@@ -61,7 +61,7 @@ export default function App() {
       />
     );
   } else if (!module) {
-    screen = <main className="landing"><p className="notice" role="status">{t.loading}</p></main>;
+    screen = <main className="page page--narrow"><p className="notice" role="status">{t.loading}</p></main>;
   } else {
     screen = (
       <QuizScreen
@@ -77,5 +77,6 @@ export default function App() {
     );
   }
 
-  return <div className="app">{screen}</div>;
+  // Each subject gets its own highlighter colour (see --hl in index.css).
+  return <div className="app" data-subject={subject?.id ?? "home"}>{screen}</div>;
 }

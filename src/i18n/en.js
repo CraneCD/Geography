@@ -1,6 +1,6 @@
 const en = {
   langName: "English",
-  appTitle: "🧠 Quiz",
+  appTitle: "Quiz Notebook",
   appSubtitle: "Choose a subject to get started.",
   docTitle: "Quiz — Geography, History, Logic & Science",
 
@@ -50,17 +50,28 @@ const en = {
   },
 
   typeLabels: {
-    flags: "🚩 Flags", capitals: "🏛️ Capitals", locate: "🗺️ Locate", shapes: "🔷 Shapes",
-    languages: "🗣️ Languages", population: "👥 Population", area: "📐 Area",
-    people: "🧑‍🎨 Famous People", "who-first": "⏳ Which Came First?", events: "📅 Historical Events",
-    inventions: "💡 Inventions", art: "🎨 Art",
-    arithmetic: "➕ Arithmetic", fractions: "½ Fractions & %", sequences: "🔢 Sequences",
-    angle: "📐 Angle", algebra: "🔣 Solve for x",
-    "animals-photo": "🦁 Animal ID", "animals-compare": "⚖️ Animal Compare", elements: "⚗️ Elements",
-    body: "🫀 Human Body", "space-photo": "🪐 Space: Identify", "space-compare": "🌌 Space: Compare",
+    flags: "Flags", capitals: "Capitals", locate: "Locate", shapes: "Shapes",
+    languages: "Languages", population: "Population", area: "Area",
+    people: "Famous People", "who-first": "Which Came First?", events: "Historical Events",
+    inventions: "Inventions", art: "Art",
+    arithmetic: "Arithmetic", fractions: "Fractions & %", sequences: "Sequences",
+    angle: "Angle", algebra: "Solve for x",
+    "animals-photo": "Animal ID", "animals-compare": "Animal Compare", elements: "Elements",
+    body: "Human Body", "space-photo": "Space: Identify", "space-compare": "Space: Compare",
   },
 
-  // Landing options
+  homeKicker: "QUIZ NOTEBOOK",
+  homeTitle: ["What shall we ", "study", " today?"],
+  homeSubtitle: "Pick a chapter. Your best scores are pencilled in.",
+  chapter: (n) => `Chapter ${n}`,
+  modesCount: (n) => `${n} modes`,
+  bestShort: (pct) => `best ${pct}%`,
+  streakLabel: "Streak",
+  streakDays: (n) => (n === 1 ? "1 day" : `${n} days`),
+  answeredLabel: "Answered",
+  answeredCount: (n) => `${n.toLocaleString("en")} questions`,
+  settingsTitle: "Settings",
+  questionShort: (cur, total) => `Q${String(cur).padStart(2, "0")}/${String(total).padStart(2, "0")}`,
   language: "Language",
   region: "Region",
   regions: { All: "All regions", Africa: "Africa", Americas: "Americas", Asia: "Asia", Europe: "Europe", Oceania: "Oceania" },
@@ -81,8 +92,8 @@ const en = {
   playMode: (title) => `Play ${title}`,
 
   // Navigation
-  backToSubjects: "← Subjects",
-  backToModes: "← Modes",
+  backToSubjects: "Subjects",
+  backToModes: "Modes",
   quitPrompt: "Quit this round?",
   quitYes: "Yes, quit",
   quitNo: "Keep playing",
@@ -94,12 +105,12 @@ const en = {
   questionProgress: (cur, total) => `Question ${cur} / ${total}`,
   scoreLabel: "Score",
   secondsLeft: (n) => `${n} seconds left`,
-  seeResults: "See results →",
-  next: "Next →",
+  seeResults: "See results",
+  next: "Next",
   submit: "Submit",
-  correct: "✓ Correct!",
-  answerWas: "✗ Answer:",
-  timeUp: "⏱ Time's up!",
+  correct: "Correct!",
+  answerWas: "Answer:",
+  timeUp: "Time's up!",
   shortRound: (n) => `Only ${n} questions are available with these settings.`,
   retryBadge: "Retry",
   answerOptions: "Answer options",
@@ -119,7 +130,7 @@ const en = {
   accuracy: (pct) => `${pct}% accuracy`,
   scoreAria: (c, t, pct) => `You scored ${c} out of ${t}, ${pct}% accuracy`,
   firstTryNote: "Practice mode: the score counts first attempts only.",
-  newBest: "🎉 New personal best!",
+  newBest: "New personal best!",
   missedTitle: (n) => `Missed (${n})`,
   correctAnswerLabel: "Answer",
   yourAnswerLabel: "You",
@@ -132,7 +143,7 @@ const en = {
 
   // Geography
   geo: {
-    title: "🌍 World Geography",
+    title: "World Geography",
     subtitle: "Flags, capitals, maps, shapes, languages, and more.",
     flagPrompt: "Which country does this flag belong to?",
     capitalPrompt: (c) => `What is the capital of ${c}?`,
@@ -152,8 +163,8 @@ const en = {
     locateList: "Prefer a list? Choose the country here:",
     locateListPlaceholder: "Choose a country…",
     confirm: "Confirm",
-    locateCorrect: (c) => `✓ Correct! That's ${c}.`,
-    locateWrong: (c, picked) => picked ? `✗ You picked ${picked}. ${c} is highlighted in green.` : `✗ ${c} is highlighted in green.`,
+    locateCorrect: (c) => `Correct! That's ${c}.`,
+    locateWrong: (c, picked) => picked ? `You picked ${picked}. ${c} is highlighted in green.` : `${c} is highlighted in green.`,
     capitalOf: (country) => `Capital of ${country}`,
     flagOf: (country) => `Flag of ${country}`,
     shapeOf: (country) => `Shape of ${country}`,
@@ -166,7 +177,7 @@ const en = {
 
   // History
   hist: {
-    title: "📜 History & Culture",
+    title: "History & Culture",
     subtitle: "Famous people, events, inventions, and art.",
     whoIsThis: "Who is this person?",
     whichFirst: "Which came first?",
@@ -186,7 +197,7 @@ const en = {
 
   // Logic
   logic: {
-    title: "🧮 Logic & Numbers",
+    title: "Logic & Numbers",
     subtitle: "Arithmetic, fractions, sequences, angles, and algebra.",
     compute: "Calculate:",
     percentOf: (p, b) => `What is ${p}% of ${b}?`,
@@ -217,7 +228,7 @@ const en = {
 
   // Science
   sci: {
-    title: "🔬 Science & Nature",
+    title: "Science & Nature",
     subtitle: "Animals, elements, the human body, and space.",
     animalPrompt: "What animal is this?",
     spacePrompt: "What is this celestial body?",

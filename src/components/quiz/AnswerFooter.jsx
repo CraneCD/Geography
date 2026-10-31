@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { CircleCheck, CircleX, ArrowRight, ExternalLink } from "lucide-react";
 
 /**
  * Feedback shown after every answer: verdict, correct answer, explanation /
@@ -27,15 +28,24 @@ export default function AnswerFooter({ question, answer, onNext, isLast, autoAdv
 
   return (
     <div className="answer-footer">
-      <div className={`feedback ${answer.correct ? "feedback--correct" : "feedback--wrong"}`} role="status">
-        {answer.correct ? (
-          t.correct
-        ) : (
-          <>
-            {answer.timedOut && <span className="feedback__timeout">{t.timeUp} </span>}
-            {t.answerWas} <strong>{question.correctLabel}</strong>
-          </>
-        )}
+      <div className={`feedback card ${answer.correct ? "feedback--correct" : "feedback--wrong"}`}>
+        {answer.correct
+          ? <CircleCheck size={28} strokeWidth={2} aria-hidden="true" className="feedback__icon" />
+          : <CircleX size={28} strokeWidth={2} aria-hidden="true" className="feedback__icon" />}
+        <p className="feedback__text" role="status">
+          {answer.correct ? (
+            <strong className="feedback__verdict">{t.correct}</strong>
+          ) : (
+            <>
+              {answer.timedOut && <strong className="feedback__verdict">{t.timeUp} </strong>}
+              {t.answerWas} <strong>{question.correctLabel}</strong>
+            </>
+          )}
+        </p>
+        <button ref={nextRef} type="button" className="btn btn--primary next-btn" onClick={onNext}>
+          {isLast ? t.seeResults : t.next}
+          <ArrowRight size={18} aria-hidden="true" />
+        </button>
       </div>
 
       {(question.steps || question.explanation || question.note) && (
@@ -53,16 +63,11 @@ export default function AnswerFooter({ question, answer, onNext, isLast, autoAdv
         </div>
       )}
 
-      <div className="answer-footer__actions">
-        {credit && (
-          <a className="image-credit" href={credit} target="_blank" rel="noreferrer noopener">
-            {t.imageCredit}
-          </a>
-        )}
-        <button ref={nextRef} type="button" className="btn btn--primary next-btn" onClick={onNext}>
-          {isLast ? t.seeResults : t.next}
-        </button>
-      </div>
+      {credit && (
+        <a className="image-credit" href={credit} target="_blank" rel="noreferrer noopener">
+          {t.imageCredit} <ExternalLink size={12} aria-hidden="true" />
+        </a>
+      )}
     </div>
   );
 }
