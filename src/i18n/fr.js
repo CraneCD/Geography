@@ -120,7 +120,7 @@ const fr = {
   later: "Après ▶",
   vs: "VS",
   imageUnavailable: "Image indisponible",
-  imageCredit: "Image : Wikipédia",
+  imageCredit: "Image",
   steps: "Étapes",
 
   roundComplete: "Manche terminée !",
@@ -250,6 +250,7 @@ const fr = {
       "alkali metal": "métal alcalin", "alkaline earth metal": "métal alcalino-terreux", halogen: "halogène",
       metalloid: "métalloïde", "noble gas": "gaz noble", nonmetal: "non-métal",
       "post-transition metal": "métal pauvre", "transition metal": "métal de transition",
+      lanthanide: "lanthanide", actinide: "actinide",
     },
   },
 };

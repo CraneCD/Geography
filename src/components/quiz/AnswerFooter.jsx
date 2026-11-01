@@ -24,7 +24,9 @@ export default function AnswerFooter({ question, answer, onNext, isLast, autoAdv
     return () => window.removeEventListener("keydown", onKey);
   }, [onNext]);
 
-  const credit = question.media?.page;
+  const page = question.media?.page;
+  const credit = question.media?.credit;
+  const creditText = [credit?.author, credit?.license].filter(Boolean).join(" · ");
 
   return (
     <div className="answer-footer">
@@ -63,9 +65,9 @@ export default function AnswerFooter({ question, answer, onNext, isLast, autoAdv
         </div>
       )}
 
-      {credit && (
-        <a className="image-credit" href={credit} target="_blank" rel="noreferrer noopener">
-          {t.imageCredit} <ExternalLink size={12} aria-hidden="true" />
+      {page && (
+        <a className="image-credit" href={page} target="_blank" rel="noreferrer noopener">
+          {t.imageCredit}{creditText ? `: ${creditText}` : ""} <ExternalLink size={12} aria-hidden="true" />
         </a>
       )}
     </div>

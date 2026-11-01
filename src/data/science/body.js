@@ -43,8 +43,9 @@ export const BODY_REGIONS = [
     name: "Stomach",
     photoName: "Stomach",
     wikiTitle: "Stomach",
-    // Lead image labels or gives away the answer; null = no picture until a reviewed file is chosen.
+    // No free label-free photo exists: use our own drawing (scripts/build-illustrations.mjs).
     imageFile: null,
+    illustration: "stomach",
     dataset: "organs",
     fact: "Produces hydrochloric acid strong enough to dissolve metal.",
   },
@@ -53,8 +54,9 @@ export const BODY_REGIONS = [
     name: "Kidney",
     photoName: "Kidney",
     wikiTitle: "Kidney",
-    // Lead image labels or gives away the answer; null = no picture until a reviewed file is chosen.
+    // No free label-free photo exists: use our own drawing (scripts/build-illustrations.mjs).
     imageFile: null,
+    illustration: "kidney",
     dataset: "organs",
     fact: "Filters about 180 litres of blood per day to produce roughly 1.5 litres of urine.",
   },
@@ -79,8 +81,9 @@ export const BODY_REGIONS = [
     name: "Pancreas",
     photoName: "Pancreas",
     wikiTitle: "Pancreas",
-    // Lead image labels or gives away the answer; null = no picture until a reviewed file is chosen.
+    // No free label-free photo exists: use our own drawing (scripts/build-illustrations.mjs).
     imageFile: null,
+    illustration: "pancreas",
     dataset: "organs",
     fact: "Produces insulin to regulate blood sugar and digestive enzymes for the gut.",
   },
@@ -89,8 +92,9 @@ export const BODY_REGIONS = [
     name: "Spleen",
     photoName: "Spleen",
     wikiTitle: "Spleen",
-    // Lead image labels or gives away the answer; null = no picture until a reviewed file is chosen.
+    // No free label-free photo exists: use our own drawing (scripts/build-illustrations.mjs).
     imageFile: null,
+    illustration: "spleen",
     dataset: "organs",
     fact: "Filters old red blood cells and plays a key role in immune response.",
   },

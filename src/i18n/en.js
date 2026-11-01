@@ -122,7 +122,7 @@ const en = {
   later: "Later ▶",
   vs: "VS",
   imageUnavailable: "Image unavailable",
-  imageCredit: "Image: Wikipedia",
+  imageCredit: "Image",
   steps: "Steps",
 
   // Summary
@@ -257,6 +257,7 @@ const en = {
       "alkali metal": "alkali metal", "alkaline earth metal": "alkaline earth metal", halogen: "halogen",
       metalloid: "metalloid", "noble gas": "noble gas", nonmetal: "nonmetal",
       "post-transition metal": "post-transition metal", "transition metal": "transition metal",
+      lanthanide: "lanthanide", actinide: "actinide",
     },
   },
 };

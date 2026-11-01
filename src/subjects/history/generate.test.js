@@ -48,7 +48,7 @@ describe("history rounds", () => {
             const [a, b] = q.items;
             expect(a.value).not.toBe(b.value);
           }
-          if (q.type === "people" || q.type === "art") expect(q.media?.src).toMatch(/^https:\/\//);
+          if (q.type === "people" || q.type === "art") { expect(q.media?.src).toBeTruthy(); expect(q.media.src).not.toMatch(/^https?:/); }
           expect(q.correctLabel).toBeTruthy();
         }
       });
@@ -77,14 +77,22 @@ describe("history rounds", () => {
 describe("image manifest", () => {
   // Titles Wikipedia has no lead image for (or that still need fixing). These items
   // are automatically excluded from picture questions. Keep this list short.
-  const KNOWN_MISSING = new Set([
-    "Attila", "Hypatia", "Napoleon_Crossing_the_Alps",
-    "Composition_VIII_(Kandinsky)",
-  ]);
+  // Items deliberately without a picture set `imageFile: null` in the data instead.
+  const KNOWN_MISSING = new Set([]);
 
   it("covers every image title (run `npm run build:images` after adding data)", () => {
     const missing = allImageRefs().filter((title) => !imageFor(title) && !KNOWN_MISSING.has(title));
     expect(missing).toEqual([]);
+  });
+
+  it("self-hosts every image with a free licence", async () => {
+    const manifest = (await import("../../data/generated/images.json")).default;
+    const { existsSync } = await import("node:fs");
+    for (const [ref, e] of Object.entries(manifest)) {
+      expect(existsSync(`src/assets/quiz-images/${e.file}`), ref).toBe(true);
+      expect(e.license, ref).toMatch(/public domain|cc0|cc[ -]by|gfdl|attribution|no restrictions/i);
+      expect(e.page, ref).toMatch(/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/);
+    }
   });
 
   it("never uses animated GIFs (they are huge and hard to read)", () => {
@@ -97,4 +105,20 @@ describe("image manifest", () => {
       if (img && img.width > 500) throw new Error(`${title} is ${img.width}px wide`);
     }
   });
+});
+
+describe("history data", async () => {
+  const { people } = await import("../../data/history/people.js");
+  const { events } = await import("../../data/history/events.js");
+  const { inventions } = await import("../../data/history/inventions.js");
+  const { artworks } = await import("../../data/history/artworks.js");
+  const sets = { people: [people, "name"], events: [events, "event"], inventions: [inventions, "invention"], artworks: [artworks, "title"] };
+
+  for (const [name, [items, key]] of Object.entries(sets)) {
+    it(`${name}: ids and names are unique`, () => {
+      const dupes = (vals) => vals.filter((v, i) => vals.indexOf(v) !== i);
+      expect(dupes(items.map((x) => x.id))).toEqual([]);
+      expect(dupes(items.map((x) => String(x[key]).toLowerCase()))).toEqual([]);
+    });
+  }
 });
