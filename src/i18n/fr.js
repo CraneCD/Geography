@@ -20,6 +20,8 @@ const fr = {
       languages: { title: "Langues", desc: "Nommez une langue officielle d'un pays." },
       population: { title: "Population", desc: "Choisissez le pays le plus peuplé." },
       area: { title: "Superficie", desc: "Choisissez le pays le plus grand." },
+      neighbours: { title: "Voisins", desc: "Quel pays partage une frontière terrestre ?" },
+      currencies: { title: "Monnaies", desc: "Nommez la monnaie d'un pays." },
       mixed: { title: "Mixte", desc: "Questions aléatoires des modes choisis." },
     },
     history: {
@@ -50,7 +52,7 @@ const fr = {
   },
 
   typeLabels: {
-    flags: "Drapeaux", capitals: "Capitales", locate: "Localiser", shapes: "Silhouettes",
+    neighbours: "Voisins", currencies: "Monnaies", flags: "Drapeaux", capitals: "Capitales", locate: "Localiser", shapes: "Silhouettes",
     languages: "Langues", population: "Population", area: "Superficie",
     people: "Personnages Célèbres", "who-first": "Qui est venu en premier ?", events: "Événements Historiques",
     inventions: "Inventions", art: "Art",
@@ -120,6 +122,8 @@ const fr = {
   vs: "VS",
   imageUnavailable: "Image indisponible",
   imageCredit: "Image",
+  youChose: (label) => `Vous avez choisi ${label} :`,
+  learnMore: "En savoir plus",
   steps: "Étapes",
 
   roundComplete: "Manche terminée !",
@@ -140,6 +144,20 @@ const fr = {
   geo: {
     title: "Géographie Mondiale",
     subtitle: "Drapeaux, capitales, cartes, silhouettes, langues et plus.",
+    neighbourPrompt: (c) => `Lequel de ces pays a une frontière avec : ${c} ?`,
+    currencyPrompt: (c) => `Quelle est la monnaie de : ${c} ?`,
+    typeCurrency: "Tapez la monnaie…",
+    countryCard: ({ country, capital, region, population }) => `${country} : capitale ${capital}, ${region}, population ${population}.`,
+    capitalIs: (cap, country) => `${cap} est la capitale de : ${country}.`,
+    thisIsFlagOf: (c) => `C'est le drapeau de : ${c}.`,
+    thisIsShapeOf: (c) => `C'est la silhouette de : ${c}.`,
+    languageSpokenIn: (l, list) => `${l} : langue officielle de ${list}.`,
+    bordersList: (c, list) => `${c} a des frontières terrestres avec ${list}.`,
+    doesNotBorder: (c, target, list) => `${c} n'a pas de frontière avec ${target} ; ses voisins sont ${list}.`,
+    noLandBorders: (c) => `${c} n'a aucune frontière terrestre.`,
+    currencyIs: (c, list) => `Monnaie utilisée (${c}) : ${list}.`,
+    currencyUsedIn: (cur, list) => `${cur} : utilisé en ${list}.`,
+    timesMore: (a, b, x, type) => type === "population" ? `${a} compte environ ${x} fois plus d'habitants que ${b}.` : `${a} est environ ${x} fois plus grand que ${b}.`,
     flagPrompt: "À quel pays appartient ce drapeau ?",
     capitalPrompt: (c) => `Quelle est la capitale de : ${c} ?`,
     locatePrompt: (c) => `Trouvez ce pays sur la carte : ${c}`,

@@ -20,6 +20,8 @@ const en = {
       languages: { title: "Languages", desc: "Name an official language of a country." },
       population: { title: "Population", desc: "Pick the country with the larger population." },
       area: { title: "Area", desc: "Pick the country with the larger area." },
+      neighbours: { title: "Neighbours", desc: "Which country shares a land border?" },
+      currencies: { title: "Currencies", desc: "Name the money a country uses." },
       mixed: { title: "Mixed", desc: "Random questions from your chosen modes." },
     },
     history: {
@@ -50,7 +52,7 @@ const en = {
   },
 
   typeLabels: {
-    flags: "Flags", capitals: "Capitals", locate: "Locate", shapes: "Shapes",
+    neighbours: "Neighbours", currencies: "Currencies", flags: "Flags", capitals: "Capitals", locate: "Locate", shapes: "Shapes",
     languages: "Languages", population: "Population", area: "Area",
     people: "Famous People", "who-first": "Which Came First?", events: "Historical Events",
     inventions: "Inventions", art: "Art",
@@ -122,6 +124,8 @@ const en = {
   vs: "VS",
   imageUnavailable: "Image unavailable",
   imageCredit: "Image",
+  youChose: (label) => `You chose ${label}:`,
+  learnMore: "Learn more",
   steps: "Steps",
 
   // Summary
@@ -144,6 +148,20 @@ const en = {
   geo: {
     title: "World Geography",
     subtitle: "Flags, capitals, maps, shapes, languages, and more.",
+    neighbourPrompt: (c) => `Which of these countries borders ${c}?`,
+    currencyPrompt: (c) => `What is the currency of ${c}?`,
+    typeCurrency: "Type the currency…",
+    countryCard: ({ country, capital, region, population }) => `${country} — capital ${capital}, ${region}, population ${population}.`,
+    capitalIs: (cap, country) => `${cap} is the capital of ${country}.`,
+    thisIsFlagOf: (c) => `This is the flag of ${c}.`,
+    thisIsShapeOf: (c) => `This is the outline of ${c}.`,
+    languageSpokenIn: (l, list) => `${l} is an official language of ${list}.`,
+    bordersList: (c, list) => `${c} shares land borders with ${list}.`,
+    doesNotBorder: (c, target, list) => `${c} does not border ${target}; its neighbours are ${list}.`,
+    noLandBorders: (c) => `${c} has no land borders.`,
+    currencyIs: (c, list) => `${c} uses the ${list}.`,
+    currencyUsedIn: (cur, list) => `The ${cur} is used in ${list}.`,
+    timesMore: (a, b, x, type) => type === "population" ? `${a} has about ${x}× as many people as ${b}.` : `${a} is about ${x}× the size of ${b}.`,
     flagPrompt: "Which country does this flag belong to?",
     capitalPrompt: (c) => `What is the capital of ${c}?`,
     locatePrompt: (c) => `Find ${c} on the map`,

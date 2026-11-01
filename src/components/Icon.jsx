@@ -1,13 +1,13 @@
 import {
   Earth, Landmark, Sigma, FlaskConical, Flag, Building2, MapPin, Shapes, Languages, Users, Maximize2,
   Shuffle, UserRound, Hourglass, CalendarDays, Lightbulb, Palette, Plus, Percent, ListOrdered,
-  DraftingCompass, Variable, PawPrint, Scale, Atom, HeartPulse, Orbit, Telescope, Circle,
+  DraftingCompass, Variable, PawPrint, Scale, Atom, HeartPulse, Orbit, Telescope, Circle, Fence, Coins,
 } from "lucide-react";
 
 const ICONS = {
   geography: Earth, history: Landmark, logic: Sigma, science: FlaskConical,
   flags: Flag, capitals: Building2, locate: MapPin, shapes: Shapes, languages: Languages,
-  population: Users, area: Maximize2,
+  population: Users, area: Maximize2, neighbours: Fence, currencies: Coins,
   people: UserRound, "who-first": Hourglass, events: CalendarDays, inventions: Lightbulb, art: Palette,
   arithmetic: Plus, fractions: Percent, sequences: ListOrdered, angle: DraftingCompass, algebra: Variable,
   "animals-photo": PawPrint, "animals-compare": Scale, elements: Atom, body: HeartPulse,

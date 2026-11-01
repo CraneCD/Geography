@@ -1,0 +1,1212 @@
+{
+ "Abraham_Lincoln": {
+  "qid": "Q91",
+  "es": "Abraham Lincoln",
+  "fr": "Abraham Lincoln"
+ },
+ "George_Washington": {
+  "qid": "Q23",
+  "es": "George Washington",
+  "fr": "George Washington"
+ },
+ "Socrates": {
+  "qid": "Q913",
+  "es": "Sócrates",
+  "fr": "Socrate"
+ },
+ "Isaac_Newton": {
+  "qid": "Q935",
+  "es": "Isaac Newton",
+  "fr": "Isaac Newton"
+ },
+ "Albert_Einstein": {
+  "qid": "Q937",
+  "es": "Albert Einstein",
+  "fr": "Albert Einstein"
+ },
+ "William_Shakespeare": {
+  "qid": "Q692",
+  "es": "William Shakespeare",
+  "fr": "William Shakespeare"
+ },
+ "Genghis_Khan": {
+  "qid": "Q720",
+  "es": "Gengis Kan",
+  "fr": "Gengis Khan"
+ },
+ "Leonardo_da_Vinci": {
+  "qid": "Q762",
+  "es": "Leonardo da Vinci",
+  "fr": "Léonard de Vinci"
+ },
+ "Mahatma_Gandhi": {
+  "qid": "Q1001",
+  "es": "Mahatma Gandhi",
+  "fr": "Mohandas Karamchand Gandhi"
+ },
+ "Charles_Darwin": {
+  "qid": "Q1035",
+  "es": "Charles Darwin",
+  "fr": "Charles Darwin"
+ },
+ "Julius_Caesar": {
+  "qid": "Q1048",
+  "es": "Julio César",
+  "fr": "Jules César"
+ },
+ "Ferdinand_Magellan": {
+  "qid": "Q1496",
+  "es": "Fernando de Magallanes",
+  "fr": "Fernand de Magellan"
+ },
+ "Niels_Bohr": {
+  "qid": "Q7085",
+  "es": "Niels Bohr",
+  "fr": "Niels Bohr"
+ },
+ "Neil_Armstrong": {
+  "qid": "Q1615",
+  "es": "Neil Armstrong",
+  "fr": "Neil Armstrong"
+ },
+ "Confucius": {
+  "qid": "Q4604",
+  "es": "Confucio",
+  "fr": "Confucius"
+ },
+ "Galileo_Galilei": {
+  "qid": "Q307",
+  "es": "Galileo Galilei",
+  "fr": "Galilée (savant)"
+ },
+ "Napoleon": {
+  "qid": "Q517",
+  "es": "Napoleón Bonaparte",
+  "fr": "Napoléon Ier"
+ },
+ "Louis_Pasteur": {
+  "qid": "Q529",
+  "es": "Louis Pasteur",
+  "fr": "Louis Pasteur"
+ },
+ "Cleopatra": {
+  "qid": "Q635",
+  "es": "Cleopatra",
+  "fr": "Cléopâtre VII"
+ },
+ "Marie_Curie": {
+  "qid": "Q7186",
+  "es": "Marie Curie",
+  "fr": "Marie Curie"
+ },
+ "Elizabeth_I": {
+  "qid": "Q7207",
+  "es": "Isabel I de Inglaterra",
+  "fr": "Élisabeth Ire (reine d'Angleterre)"
+ },
+ "Joan_of_Arc": {
+  "qid": "Q7226",
+  "es": "Juana de Arco",
+  "fr": "Jeanne d'Arc"
+ },
+ "Wolfgang_Amadeus_Mozart": {
+  "qid": "Q254",
+  "es": "Wolfgang Amadeus Mozart",
+  "fr": "Wolfgang Amadeus Mozart"
+ },
+ "Ludwig_van_Beethoven": {
+  "qid": "Q255",
+  "es": "Ludwig van Beethoven",
+  "fr": "Ludwig van Beethoven"
+ },
+ "Winston_Churchill": {
+  "qid": "Q8016",
+  "es": "Winston Churchill",
+  "fr": "Winston Churchill"
+ },
+ "Alexander_the_Great": {
+  "qid": "Q8409",
+  "es": "Alejandro Magno",
+  "fr": "Alexandre le Grand"
+ },
+ "Alan_Turing": {
+  "qid": "Q7251",
+  "es": "Alan Turing",
+  "fr": "Alan Turing"
+ },
+ "Ada_Lovelace": {
+  "qid": "Q7259",
+  "es": "Ada Lovelace",
+  "fr": "Ada Lovelace"
+ },
+ "Christopher_Columbus": {
+  "qid": "Q7322",
+  "es": "Cristóbal Colón",
+  "fr": "Christophe Colomb"
+ },
+ "Yuri_Gagarin": {
+  "qid": "Q7327",
+  "es": "Yuri Gagarin",
+  "fr": "Youri Gagarine"
+ },
+ "Ibn_Battuta": {
+  "qid": "Q7331",
+  "es": "Ibn Battuta",
+  "fr": "Ibn Battûta"
+ },
+ "Rosalind_Franklin": {
+  "qid": "Q7474",
+  "es": "Rosalind Franklin",
+  "fr": "Rosalind Franklin"
+ },
+ "Avicenna": {
+  "qid": "Q8011",
+  "es": "Avicena",
+  "fr": "Avicenne"
+ },
+ "René_Descartes": {
+  "qid": "Q9191",
+  "es": "René Descartes",
+  "fr": "René Descartes"
+ },
+ "Hypatia": {
+  "qid": "Q11903",
+  "es": "Hipatia",
+  "fr": "Hypatie"
+ },
+ "Stephen_Hawking": {
+  "qid": "Q17714",
+  "es": "Stephen Hawking",
+  "fr": "Stephen Hawking"
+ },
+ "Plato": {
+  "qid": "Q859",
+  "es": "Platón",
+  "fr": "Platon"
+ },
+ "Aristotle": {
+  "qid": "Q868",
+  "es": "Aristóteles",
+  "fr": "Aristote"
+ },
+ "Otto_von_Bismarck": {
+  "qid": "Q8442",
+  "es": "Otto von Bismarck",
+  "fr": "Otto von Bismarck"
+ },
+ "Suleiman_the_Magnificent": {
+  "qid": "Q8474",
+  "es": "Solimán el Magnífico",
+  "fr": "Soliman le Magnifique"
+ },
+ "Ashoka": {
+  "qid": "Q8589",
+  "es": "Aśoka",
+  "fr": "Ashoka"
+ },
+ "Akbar": {
+  "qid": "Q8597",
+  "es": "Akbar",
+  "fr": "Akbar"
+ },
+ "Simón_Bolívar": {
+  "qid": "Q8605",
+  "es": "Simón Bolívar",
+  "fr": "Simón Bolívar"
+ },
+ "Archimedes": {
+  "qid": "Q8739",
+  "es": "Arquímedes",
+  "fr": "Archimède"
+ },
+ "Michael_Faraday": {
+  "qid": "Q8750",
+  "es": "Michael Faraday",
+  "fr": "Michael Faraday"
+ },
+ "Nikola_Tesla": {
+  "qid": "Q9036",
+  "es": "Nikola Tesla",
+  "fr": "Nikola Tesla"
+ },
+ "James_Watt": {
+  "qid": "Q9041",
+  "es": "James Watt",
+  "fr": "James Watt"
+ },
+ "Dmitri_Mendeleev": {
+  "qid": "Q9106",
+  "es": "Dmitri Mendeléyev",
+  "fr": "Dmitri Mendeleïev"
+ },
+ "Michelangelo": {
+  "qid": "Q5592",
+  "es": "Miguel Ángel",
+  "fr": "Michel-Ange"
+ },
+ "Pablo_Picasso": {
+  "qid": "Q5593",
+  "es": "Pablo Picasso",
+  "fr": "Pablo Picasso"
+ },
+ "Rembrandt": {
+  "qid": "Q5598",
+  "es": "Rembrandt",
+  "fr": "Rembrandt"
+ },
+ "Marco_Polo": {
+  "qid": "Q6101",
+  "es": "Marco Polo",
+  "fr": "Marco Polo"
+ },
+ "Harriet_Tubman": {
+  "qid": "Q102870",
+  "es": "Harriet Tubman",
+  "fr": "Harriet Tubman"
+ },
+ "Maimonides": {
+  "qid": "Q127398",
+  "es": "Maimónides",
+  "fr": "Moïse Maïmonide"
+ },
+ "Imhotep": {
+  "qid": "Q131171",
+  "es": "Imhotep",
+  "fr": "Imhotep"
+ },
+ "Toussaint_Louverture": {
+  "qid": "Q205783",
+  "es": "Toussaint Louverture",
+  "fr": "Toussaint Louverture"
+ },
+ "Hannibal": {
+  "qid": "Q36456",
+  "es": "Aníbal",
+  "fr": "Hannibal Barca"
+ },
+ "Attila": {
+  "qid": "Q36724",
+  "es": "Atila",
+  "fr": "Attila"
+ },
+ "Florence_Nightingale": {
+  "qid": "Q37103",
+  "es": "Florence Nightingale",
+  "fr": "Florence Nightingale"
+ },
+ "Jawaharlal_Nehru": {
+  "qid": "Q1047",
+  "es": "Jawaharlal Nehru",
+  "fr": "Jawaharlal Nehru"
+ },
+ "Fyodor_Dostoevsky": {
+  "qid": "Q991",
+  "es": "Fiódor Dostoyevski",
+  "fr": "Fiodor Dostoïevski"
+ },
+ "Frédéric_Chopin": {
+  "qid": "Q1268",
+  "es": "Frédéric Chopin",
+  "fr": "Frédéric Chopin"
+ },
+ "Amelia_Earhart": {
+  "qid": "Q3355",
+  "es": "Amelia Earhart",
+  "fr": "Amelia Earhart"
+ },
+ "Niccolò_Machiavelli": {
+  "qid": "Q1399",
+  "es": "Nicolás Maquiavelo",
+  "fr": "Nicolas Machiavel"
+ },
+ "Frida_Kahlo": {
+  "qid": "Q5588",
+  "es": "Frida Kahlo",
+  "fr": "Frida Kahlo"
+ },
+ "Mustafa_Kemal_Atatürk": {
+  "qid": "Q5152",
+  "es": "Mustafa Kemal Atatürk",
+  "fr": "Mustafa Kemal Atatürk"
+ },
+ "Leo_Tolstoy": {
+  "qid": "Q7243",
+  "es": "León Tolstói",
+  "fr": "Léon Tolstoï"
+ },
+ "Pyotr_Ilyich_Tchaikovsky": {
+  "qid": "Q7315",
+  "es": "Piotr Ilich Chaikovski",
+  "fr": "Piotr Ilitch Tchaïkovski"
+ },
+ "Charles_Dickens": {
+  "qid": "Q5686",
+  "es": "Charles Dickens",
+  "fr": "Charles Dickens"
+ },
+ "Nelson_Mandela": {
+  "qid": "Q8023",
+  "es": "Nelson Mandela",
+  "fr": "Nelson Mandela"
+ },
+ "Voltaire": {
+  "qid": "Q9068",
+  "es": "Voltaire",
+  "fr": "Voltaire"
+ },
+ "John_Locke": {
+  "qid": "Q9353",
+  "es": "John Locke",
+  "fr": "John Locke"
+ },
+ "Adam_Smith": {
+  "qid": "Q9381",
+  "es": "Adam Smith",
+  "fr": "Adam Smith"
+ },
+ "Martin_Luther": {
+  "qid": "Q9554",
+  "es": "Martín Lutero",
+  "fr": "Martin Luther"
+ },
+ "Grace_Hopper": {
+  "qid": "Q11641",
+  "es": "Grace Murray Hopper",
+  "fr": "Grace Hopper"
+ },
+ "Alexander_Fleming": {
+  "qid": "Q37064",
+  "es": "Alexander Fleming",
+  "fr": "Alexander Fleming"
+ },
+ "Mona_Lisa": {
+  "qid": "Q12418",
+  "es": "La Gioconda",
+  "fr": "La Joconde"
+ },
+ "Thomas_Aquinas": {
+  "qid": "Q9438",
+  "es": "Tomás de Aquino",
+  "fr": "Thomas d'Aquin"
+ },
+ "Immanuel_Kant": {
+  "qid": "Q9312",
+  "es": "Immanuel Kant",
+  "fr": "Emmanuel Kant"
+ },
+ "Edward_Jenner": {
+  "qid": "Q40852",
+  "es": "Edward Jenner",
+  "fr": "Edward Jenner"
+ },
+ "The_Last_Supper_(Leonardo)": {
+  "qid": "Q128910",
+  "es": "La última cena (Leonardo da Vinci)",
+  "fr": "La Cène (Léonard de Vinci)"
+ },
+ "The_Night_Watch": {
+  "qid": "Q219831",
+  "es": "La ronda de noche",
+  "fr": "La Ronde de nuit"
+ },
+ "Liberty_Leading_the_People": {
+  "qid": "Q29530",
+  "es": "La Libertad guiando al pueblo",
+  "fr": "La Liberté guidant le peuple"
+ },
+ "Richard_Feynman": {
+  "qid": "Q39246",
+  "es": "Richard Feynman",
+  "fr": "Richard Feynman"
+ },
+ "Oath_of_the_Horatii": {
+  "qid": "Q476458",
+  "es": "Juramento de los Horacios",
+  "fr": "Le Serment des Horaces"
+ },
+ "The_Creation_of_Adam": {
+  "qid": "Q500242",
+  "es": "La creación de Adán",
+  "fr": "La Création d'Adam (Michel-Ange)"
+ },
+ "The_Starry_Night": {
+  "qid": "Q45585",
+  "es": "La noche estrellada",
+  "fr": "La Nuit étoilée (1889)"
+ },
+ "Lise_Meitner": {
+  "qid": "Q56189",
+  "es": "Lise Meitner",
+  "fr": "Lise Meitner"
+ },
+ "Napoleon_Crossing_the_Alps": {
+  "qid": "Q59201",
+  "es": "Napoleón cruzando los Alpes",
+  "fr": "Bonaparte franchissant le Grand-Saint-Bernard"
+ },
+ "The_Raft_of_the_Medusa": {
+  "qid": "Q212616",
+  "es": "La balsa de la Medusa",
+  "fr": "Le Radeau de la Méduse"
+ },
+ "Frederick_Douglass": {
+  "qid": "Q215562",
+  "es": "Frederick Douglass",
+  "fr": "Frederick Douglass"
+ },
+ "Las_Meninas": {
+  "qid": "Q208758",
+  "es": "Las meninas",
+  "fr": "Les Ménines"
+ },
+ "The_Great_Wave_off_Kanagawa": {
+  "qid": "Q252485",
+  "es": "La gran ola de Kanagawa",
+  "fr": "La Grande Vague de Kanagawa"
+ },
+ "The_Garden_of_Earthly_Delights": {
+  "qid": "Q321303",
+  "es": "El jardín de las delicias",
+  "fr": "Le Jardin des délices"
+ },
+ "The_Birth_of_Venus": {
+  "qid": "Q151047",
+  "es": "El nacimiento de Venus (Botticelli)",
+  "fr": "La Naissance de Vénus (Botticelli)"
+ },
+ "Sunflowers_(Van_Gogh_series)": {
+  "qid": "Q157541",
+  "es": "Los girasoles (Van Gogh)",
+  "fr": "Les Tournesols"
+ },
+ "Girl_with_a_Pearl_Earring": {
+  "qid": "Q185372",
+  "es": "La joven de la perla",
+  "fr": "La Jeune Fille à la perle"
+ },
+ "The_School_of_Athens": {
+  "qid": "Q186953",
+  "es": "La escuela de Atenas",
+  "fr": "L'École d'Athènes"
+ },
+ "American_Gothic": {
+  "qid": "Q464782",
+  "es": "Gótico estadounidense",
+  "fr": "American Gothic (Wood)"
+ },
+ "The_Scream": {
+  "qid": "Q471379",
+  "es": "El grito",
+  "fr": "Le Cri"
+ },
+ "Ernest_Shackleton": {
+  "qid": "Q957543",
+  "es": "Ernest Shackleton",
+  "fr": "Ernest Shackleton"
+ },
+ "A_Bar_at_the_Folies-Bergère": {
+  "qid": "Q1245354",
+  "es": "Un bar del Folies Bergère",
+  "fr": "Un bar aux Folies Bergère"
+ },
+ "The_Gleaners": {
+  "qid": "Q1368055",
+  "es": "Las espigadoras",
+  "fr": "Des glaneuses"
+ },
+ "The_Apotheosis_of_Homer_(Ingres)": {
+  "qid": "Q3202169",
+  "es": "La apoteosis de Homero",
+  "fr": "L'Apothéose d'Homère"
+ },
+ "The_Return_of_the_Prodigal_Son_(Rembrandt)": {
+  "qid": "Q512755",
+  "es": "El retorno del hijo pródigo",
+  "fr": "Le Retour du fils prodigue (Rembrandt)"
+ },
+ "The_Anatomy_Lesson_of_Dr._Nicolaes_Tulp": {
+  "qid": "Q661378",
+  "es": "Lección de anatomía del Dr. Nicolaes Tulp",
+  "fr": "La Leçon d'anatomie du docteur Tulp"
+ },
+ "Impression,_Sunrise": {
+  "qid": "Q328523",
+  "es": "Impresión, sol naciente",
+  "fr": "Impression, soleil levant"
+ },
+ "Portrait_of_Adele_Bloch-Bauer_I": {
+  "qid": "Q354396",
+  "es": "Retrato de Adele Bloch-Bauer I",
+  "fr": "Portrait d'Adele Bloch-Bauer I"
+ },
+ "The_Third_of_May_1808": {
+  "qid": "Q1091086",
+  "es": "El 3 de mayo en Madrid",
+  "fr": "El tres de mayo de 1808 en Madrid"
+ },
+ "Saturn_Devouring_His_Son": {
+  "qid": "Q1150997",
+  "es": "Saturno devorando a su hijo",
+  "fr": "Saturne dévorant un de ses fils"
+ },
+ "Water_Lilies_(Monet_series)": {
+  "qid": "Q1189907",
+  "es": "Nenúfares (Monet)",
+  "fr": "Les Nymphéas"
+ },
+ "The_Sleeping_Gypsy": {
+  "qid": "Q1219263",
+  "es": "La gitana dormida",
+  "fr": "La Bohémienne endormie"
+ },
+ "Bal_du_moulin_de_la_Galette": {
+  "qid": "Q683274",
+  "es": "Baile en el Moulin de la Galette",
+  "fr": "Bal du moulin de la Galette (Renoir)"
+ },
+ "The_Kiss_(Klimt)": {
+  "qid": "Q698487",
+  "es": "El beso (Gustav Klimt)",
+  "fr": "Le Baiser (Klimt)"
+ },
+ "Portrait_of_Pablo_Picasso": {
+  "qid": "Q20487351",
+  "es": null,
+  "fr": null
+ },
+ "Lion": {
+  "qid": "Q140",
+  "es": "Panthera leo",
+  "fr": "Lion"
+ },
+ "Red fox": {
+  "qid": "Q8332",
+  "es": "Vulpes vulpes",
+  "fr": "Renard roux"
+ },
+ "Komodo dragon": {
+  "qid": "Q4504",
+  "es": "Varanus komodoensis",
+  "fr": "Dragon de Komodo"
+ },
+ "Hippopotamus": {
+  "qid": "Q34505",
+  "es": "Hippopotamus amphibius",
+  "fr": "Hippopotamus amphibius"
+ },
+ "Koala": {
+  "qid": "Q36101",
+  "es": "Phascolarctos cinereus",
+  "fr": "Koala"
+ },
+ "African bush elephant": {
+  "qid": "Q36557",
+  "es": "Loxodonta africana",
+  "fr": "Éléphant de savane d'Afrique"
+ },
+ "Cheetah": {
+  "qid": "Q23907",
+  "es": "Acinonyx jubatus",
+  "fr": "Guépard"
+ },
+ "Tiger": {
+  "qid": "Q19939",
+  "es": "Panthera tigris",
+  "fr": "Tigre"
+ },
+ "Blue whale": {
+  "qid": "Q42196",
+  "es": "Balaenoptera musculus",
+  "fr": "Baleine bleue"
+ },
+ "The_Milkmaid_(Vermeer)": {
+  "qid": "Q167605",
+  "es": "La lechera",
+  "fr": "La Laitière"
+ },
+ "Bald eagle": {
+  "qid": "Q127216",
+  "es": "Haliaeetus leucocephalus",
+  "fr": "Pygargue à tête blanche"
+ },
+ "Plains zebra": {
+  "qid": "Q245305",
+  "es": "Equus quagga",
+  "fr": "Equus quagga"
+ },
+ "The_Potato_Eaters": {
+  "qid": "Q154469",
+  "es": "Los comedores de patatas",
+  "fr": "Les Mangeurs de pommes de terre"
+ },
+ "White rhinoceros": {
+  "qid": "Q159918",
+  "es": "Ceratotherium simum",
+  "fr": "Rhinocéros blanc"
+ },
+ "Western gorilla": {
+  "qid": "Q737838",
+  "es": "Gorilla gorilla",
+  "fr": "Gorille de l'Ouest"
+ },
+ "The_Jewish_Bride": {
+  "qid": "Q766782",
+  "es": "La novia judía",
+  "fr": "La Fiancée juive"
+ },
+ "Street,_Berlin_(Kirchner)": {
+  "qid": "Q19883652",
+  "es": null,
+  "fr": "La Rue (Kirchner)"
+ },
+ "Reclining_Nude_(Modigliani)": {
+  "qid": "Q19917658",
+  "es": null,
+  "fr": "Nu couché (Modigliani, New York)"
+ },
+ "The_Persistence_of_Memory": {
+  "qid": "Q25729",
+  "es": "La persistencia de la memoria",
+  "fr": "La Persistance de la mémoire"
+ },
+ "Grizzly bear": {
+  "qid": "Q171004",
+  "es": "Ursus arctos horribilis",
+  "fr": "Grizzly"
+ },
+ "Common bottlenose dolphin": {
+  "qid": "Q174199",
+  "es": "Tursiops truncatus",
+  "fr": "Tursiops truncatus"
+ },
+ "Saltwater crocodile": {
+  "qid": "Q182599",
+  "es": "Crocodylus porosus",
+  "fr": "Crocodile marin"
+ },
+ "The_Fighting_Temeraire": {
+  "qid": "Q257580",
+  "es": "El último viaje del «Temerario»",
+  "fr": "Le Dernier Voyage du Téméraire"
+ },
+ "A_Burial_at_Ornans": {
+  "qid": "Q540488",
+  "es": "Entierro en Ornans",
+  "fr": "Un enterrement à Ornans"
+ },
+ "Primavera_(Botticelli)": {
+  "qid": "Q549847",
+  "es": "La primavera (Botticelli)",
+  "fr": "Le Printemps (Botticelli)"
+ },
+ "The_Death_of_Marat": {
+  "qid": "Q636537",
+  "es": "La muerte de Marat",
+  "fr": "Marat assassiné"
+ },
+ "The_Tower_of_Babel_(Bruegel)": {
+  "qid": "Q699091",
+  "es": "La torre de Babel (Brueghel)",
+  "fr": "La Tour de Babel (Brueghel)"
+ },
+ "Venus_of_Urbino": {
+  "qid": "Q727875",
+  "es": "Venus de Urbino",
+  "fr": "Vénus d'Urbin"
+ },
+ "Polar bear": {
+  "qid": "Q33609",
+  "es": "Ursus maritimus",
+  "fr": "Ours blanc"
+ },
+ "Giraffe": {
+  "qid": "Q862089",
+  "es": "Giraffa",
+  "fr": "Girafe"
+ },
+ "Blue_Nude_(Souvenir_de_Biskra)": {
+  "qid": "Q882584",
+  "es": "Desnudo azul (recuerdo de Biskra)",
+  "fr": "Nu bleu (souvenir de Biskra)"
+ },
+ "Where_Do_We_Come_From?_What_Are_We?_Where_Are_We_Going?": {
+  "qid": "Q890678",
+  "es": "¿De dónde venimos? ¿Quiénes somos? ¿Adónde vamos?",
+  "fr": "D'où venons-nous ? Que sommes-nous ? Où allons-nous ?"
+ },
+ "Café_Terrace_at_Night": {
+  "qid": "Q1025704",
+  "es": "Terraza de café por la noche",
+  "fr": "Terrasse du café le soir"
+ },
+ "Ophelia_(Millais)": {
+  "qid": "Q1065493",
+  "es": "Ofelia (Millais)",
+  "fr": "Ophélie (Millais)"
+ },
+ "The_Garden_of_Love_(Rubens)": {
+  "qid": "Q1195238",
+  "es": "El jardín del amor",
+  "fr": "Le Jardin d'Amour"
+ },
+ "Women_of_Algiers": {
+  "qid": "Q1212737",
+  "es": "Mujeres de Argel en su apartamento",
+  "fr": "Femmes d'Alger dans leur appartement"
+ },
+ "The_Ambassadors_(Holbein)": {
+  "qid": "Q1212937",
+  "es": "Los embajadores",
+  "fr": "Les Ambassadeurs"
+ },
+ "Judith_Slaying_Holofernes_(Artemisia_Gentileschi,_Naples)": {
+  "qid": "Q2247406",
+  "es": "Judit decapitando a Holofernes (Gentileschi, Nápoles)",
+  "fr": "Judith décapitant Holopherne (Gentileschi, Naples)"
+ },
+ "Irises_(painting)": {
+  "qid": "Q2282256",
+  "es": "Lirios (Van Gogh)",
+  "fr": "Iris (Van Gogh)"
+ },
+ "Rain,_Steam_and_Speed_–_The_Great_Western_Railway": {
+  "qid": "Q2339059",
+  "es": "Lluvia, vapor y velocidad. El gran ferrocarril del Oeste",
+  "fr": "Pluie, Vapeur et Vitesse"
+ },
+ "Transfiguration_(Raphael)": {
+  "qid": "Q2344437",
+  "es": "La transfiguración (Rafael)",
+  "fr": "La Transfiguration (Raphaël)"
+ },
+ "The_Hay_Wain": {
+  "qid": "Q2366825",
+  "es": "La carreta de heno",
+  "fr": "La Charrette de foin"
+ },
+ "Self-Portrait_(Dürer,_Munich)": {
+  "qid": "Q2546309",
+  "es": "Autorretrato de Durero (Alte Pinakothek)",
+  "fr": "Autoportrait (Dürer, Munich)"
+ },
+ "The_Waterseller_of_Seville": {
+  "qid": "Q2627810",
+  "es": "El aguador de Sevilla",
+  "fr": "Le Porteur d'eau de Séville"
+ },
+ "Portrait_of_Madame_X": {
+  "qid": "Q2664039",
+  "es": "Retrato de Madame X",
+  "fr": "Madame X (Sargent)"
+ },
+ "Twittering_Machine": {
+  "qid": "Q3210239",
+  "es": null,
+  "fr": "La Machine à gazouiller"
+ },
+ "At_the_Moulin_Rouge": {
+  "qid": "Q3607521",
+  "es": "En el Moulin Rouge",
+  "fr": "Au Moulin-Rouge"
+ },
+ "Arrangement_in_Grey_and_Black,_No._2:_Portrait_of_Thomas_Carlyle": {
+  "qid": "Q4795850",
+  "es": null,
+  "fr": "Arrangement en gris et noir n° 2"
+ },
+ "Et_in_Arcadia_ego_(Poussin)": {
+  "qid": "Q15805858",
+  "es": null,
+  "fr": "Et in Arcadia ego (Poussin)"
+ },
+ "The_Card_Players": {
+  "qid": "Q17277950",
+  "es": "Los jugadores de cartas",
+  "fr": "Les Joueurs de cartes (Cézanne)"
+ },
+ "Dance_(Matisse)": {
+  "qid": "Q164517",
+  "es": "La danza (Matisse)",
+  "fr": null
+ },
+ "The_Third-Class_Carriage": {
+  "qid": "Q3228340",
+  "es": "El vagón de tercera clase",
+  "fr": null
+ },
+ "Snap_the_Whip": {
+  "qid": "Q18209719",
+  "es": null,
+  "fr": null
+ },
+ "Red kangaroo": {
+  "qid": "Q104831614",
+  "es": "Osphranter rufus",
+  "fr": null
+ },
+ "Mars": {
+  "qid": "Q111",
+  "es": "Marte (planeta)",
+  "fr": "Mars (planète)"
+ },
+ "Venus": {
+  "qid": "Q313",
+  "es": "Venus (planeta)",
+  "fr": "Vénus (planète)"
+ },
+ "Earth": {
+  "qid": "Q2",
+  "es": "Tierra",
+  "fr": "Terre"
+ },
+ "Heart": {
+  "qid": "Q1072",
+  "es": "Corazón",
+  "fr": "Cœur"
+ },
+ "Brain": {
+  "qid": "Q1073",
+  "es": "Cerebro",
+  "fr": "Cerveau"
+ },
+ "Titan (moon)": {
+  "qid": "Q2565",
+  "es": "Titán (satélite)",
+  "fr": "Titan (lune)"
+ },
+ "Mercury (planet)": {
+  "qid": "Q308",
+  "es": "Mercurio (planeta)",
+  "fr": "Mercure (planète)"
+ },
+ "Saturn": {
+  "qid": "Q193",
+  "es": "Saturno (planeta)",
+  "fr": "Saturne (planète)"
+ },
+ "Uranus": {
+  "qid": "Q324",
+  "es": "Urano (planeta)",
+  "fr": "Uranus (planète)"
+ },
+ "Neptune": {
+  "qid": "Q332",
+  "es": "Neptuno (planeta)",
+  "fr": "Neptune (planète)"
+ },
+ "Moon": {
+  "qid": "Q405",
+  "es": "Luna",
+  "fr": "Lune"
+ },
+ "Jupiter": {
+  "qid": "Q319",
+  "es": "Júpiter (planeta)",
+  "fr": "Jupiter (planète)"
+ },
+ "Orca": {
+  "qid": "Q26843",
+  "es": "Orcinus orca",
+  "fr": "Orque"
+ },
+ "Western honey bee": {
+  "qid": "Q30034",
+  "es": "Apis mellifera",
+  "fr": "Apis mellifera"
+ },
+ "Peregrine falcon": {
+  "qid": "Q30535",
+  "es": "Falco peregrinus",
+  "fr": "Faucon pèlerin"
+ },
+ "Platypus": {
+  "qid": "Q15343",
+  "es": "Ornithorhynchus anatinus",
+  "fr": "Ornithorynque"
+ },
+ "Common ostrich": {
+  "qid": "Q17592",
+  "es": "Struthio camelus",
+  "fr": "Autruche d'Afrique"
+ },
+ "Axolotl": {
+  "qid": "Q22718",
+  "es": "Ambystoma mexicanum",
+  "fr": "Axolotl"
+ },
+ "Snow leopard": {
+  "qid": "Q30197",
+  "es": "Panthera uncia",
+  "fr": "Panthère des neiges"
+ },
+ "Giant panda": {
+  "qid": "Q33602",
+  "es": "Ailuropoda melanoleuca",
+  "fr": "Panda géant"
+ },
+ "Moose": {
+  "qid": "Q35517",
+  "es": "Alces alces",
+  "fr": "Alces alces"
+ },
+ "Dromedary": {
+  "qid": "Q71516",
+  "es": "Camelus dromedarius",
+  "fr": "Dromadaire"
+ },
+ "Sea otter": {
+  "qid": "Q41407",
+  "es": "Enhydra lutris",
+  "fr": "Enhydra lutris"
+ },
+ "Leatherback sea turtle": {
+  "qid": "Q120043",
+  "es": "Dermochelys coriacea",
+  "fr": "Tortue luth"
+ },
+ "American bison": {
+  "qid": "Q82728",
+  "es": "Bison bison",
+  "fr": "Bison d'Amérique"
+ },
+ "Arctic fox": {
+  "qid": "Q82738",
+  "es": "Vulpes lagopus",
+  "fr": "Renard polaire"
+ },
+ "Capybara": {
+  "qid": "Q131538",
+  "es": "Hydrochoerus hydrochaeris",
+  "fr": "Hydrochoerus hydrochaeris"
+ },
+ "Green anaconda": {
+  "qid": "Q207347",
+  "es": "Eunectes murinus",
+  "fr": "Eunectes murinus"
+ },
+ "American flamingo": {
+  "qid": "Q208004",
+  "es": "Phoenicopterus ruber",
+  "fr": "Flamant des Caraïbes"
+ },
+ "Monarch butterfly": {
+  "qid": "Q212398",
+  "es": "Danaus plexippus",
+  "fr": "Monarque (papillon)"
+ },
+ "Common vampire bat": {
+  "qid": "Q300981",
+  "es": "Desmodus rotundus",
+  "fr": "Desmodus rotundus"
+ },
+ "Great white shark": {
+  "qid": "Q129026",
+  "es": "Carcharodon carcharias",
+  "fr": "Grand requin blanc"
+ },
+ "Brown-throated sloth": {
+  "qid": "Q148752",
+  "es": "Bradypus variegatus",
+  "fr": "Paresseux à gorge brune"
+ },
+ "Narwhal": {
+  "qid": "Q159426",
+  "es": "Monodon monoceros",
+  "fr": "Narval"
+ },
+ "Emperor penguin": {
+  "qid": "Q161829",
+  "es": "Aptenodytes forsteri",
+  "fr": "Manchot empereur"
+ },
+ "African wild dog": {
+  "qid": "Q173651",
+  "es": "Lycaon pictus",
+  "fr": "Lycaon (animal)"
+ },
+ "Io (moon)": {
+  "qid": "Q3123",
+  "es": "Ío (satélite)",
+  "fr": "Io (lune)"
+ },
+ "Europa (moon)": {
+  "qid": "Q3143",
+  "es": "Europa (satélite)",
+  "fr": "Europe (lune)"
+ },
+ "Ganymede (moon)": {
+  "qid": "Q3169",
+  "es": "Ganímedes (satélite)",
+  "fr": "Ganymède (lune)"
+ },
+ "Lung": {
+  "qid": "Q7886",
+  "es": "Pulmón",
+  "fr": "Poumon"
+ },
+ "Liver": {
+  "qid": "Q9368",
+  "es": "Hígado",
+  "fr": "Foie"
+ },
+ "Large intestine": {
+  "qid": "Q11083",
+  "es": "Intestino grueso",
+  "fr": "Gros intestin"
+ },
+ "Wolverine": {
+  "qid": "Q14334",
+  "es": "Gulo gulo",
+  "fr": "Gulo gulo"
+ },
+ "Giant oceanic manta ray": {
+  "qid": "Q321976",
+  "es": "Mobula birostris",
+  "fr": "Raie manta océanique"
+ },
+ "Mantis shrimp": {
+  "qid": "Q334855",
+  "es": "Stomatopoda",
+  "fr": "Stomatopoda"
+ },
+ "Clownfish": {
+  "qid": "Q472616",
+  "es": "Amphiprioninae",
+  "fr": "Poisson-clown"
+ },
+ "Bornean orangutan": {
+  "qid": "Q599672",
+  "es": "Pongo pygmaeus",
+  "fr": "Orang-outan de Bornéo"
+ },
+ "Goliath birdeater": {
+  "qid": "Q617000",
+  "es": "Theraphosa blondi",
+  "fr": "Theraphosa blondi"
+ },
+ "Ruby-throated hummingbird": {
+  "qid": "Q834843",
+  "es": "Archilochus colubris",
+  "fr": "Colibri à gorge rubis"
+ },
+ "Giant Pacific octopus": {
+  "qid": "Q912404",
+  "es": "Enteroctopus dofleini",
+  "fr": "Pieuvre géante du Pacifique"
+ },
+ "Stomach": {
+  "qid": "Q1029907",
+  "es": "Estómago",
+  "fr": "Estomac"
+ },
+ "Horseshoe crab": {
+  "qid": "Q1329239",
+  "es": "Limulidae",
+  "fr": "Limulidae"
+ },
+ "Chimpanzee": {
+  "qid": "Q4126704",
+  "es": "Pan troglodytes",
+  "fr": "Pan troglodytes"
+ },
+ "Bombardier beetle": {
+  "qid": "Q15221944",
+  "es": null,
+  "fr": "Coléoptère bombardier"
+ },
+ "Electric eel": {
+  "qid": "Q18926800",
+  "es": "Electrophorus",
+  "fr": "Electrophorus"
+ },
+ "Walrus": {
+  "qid": "Q40994",
+  "es": "Odobenus rosmarus",
+  "fr": "Morse (animal)"
+ },
+ "Golden eagle": {
+  "qid": "Q41181",
+  "es": "Aquila chrysaetos",
+  "fr": "Aigle royal"
+ },
+ "Mimic octopus": {
+  "qid": "Q132999",
+  "es": "Thaumoctopus mimicus",
+  "fr": "Pieuvre mimétique"
+ },
+ "Kidney": {
+  "qid": "Q112107043",
+  "es": null,
+  "fr": null
+ },
+ "Barn owl": {
+  "qid": "Q131528250",
+  "es": null,
+  "fr": null
+ },
+ "Spleen": {
+  "qid": "Q9371",
+  "es": "Bazo",
+  "fr": "Rate"
+ },
+ "Human skull": {
+  "qid": "Q9604",
+  "es": "Cabeza ósea",
+  "fr": "Crâne (anatomie humaine)"
+ },
+ "Pancreas": {
+  "qid": "Q9618",
+  "es": "Páncreas",
+  "fr": "Pancréas"
+ },
+ "Small intestine": {
+  "qid": "Q11090",
+  "es": "Intestino delgado",
+  "fr": "Intestin grêle"
+ },
+ "Sternum": {
+  "qid": "Q8481",
+  "es": "Esternón",
+  "fr": "Sternum"
+ },
+ "Humerus": {
+  "qid": "Q162595",
+  "es": "Húmero",
+  "fr": "Humérus"
+ },
+ "Clavicle": {
+  "qid": "Q16343",
+  "es": "Clavícula",
+  "fr": "Clavicule"
+ },
+ "Tibia": {
+  "qid": "Q178366",
+  "es": "Tibia",
+  "fr": "Tibia"
+ },
+ "Radius (bone)": {
+  "qid": "Q178492",
+  "es": "Radio (hueso)",
+  "fr": "Radius (os)"
+ },
+ "Ulna": {
+  "qid": "Q199507",
+  "es": "Cúbito",
+  "fr": "Ulna"
+ },
+ "Femur": {
+  "qid": "Q176503",
+  "es": "Fémur",
+  "fr": "Fémur"
+ },
+ "Fibula": {
+  "qid": "Q302896",
+  "es": "Peroné",
+  "fr": "Fibula"
+ },
+ "Pelvis": {
+  "qid": "Q713102",
+  "es": "Pelvis",
+  "fr": "Bassin osseux"
+ }
+}

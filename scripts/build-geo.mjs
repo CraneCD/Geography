@@ -9,7 +9,7 @@
 import { writeFileSync, mkdirSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { feature } from "topojson-client";
+import { feature, neighbors } from "topojson-client";
 import { geoPath, geoMercator, geoNaturalEarth1, geoCentroid } from "d3-geo";
 import { countries } from "../src/data/countries.js";
 import { ALPHA2_TO_NUMERIC } from "../src/data/countryIds.js";
@@ -19,12 +19,18 @@ const topology = JSON.parse(
   readFileSync(join(root, "node_modules/world-atlas/countries-110m.json"), "utf8"),
 );
 const features = feature(topology, topology.objects.countries).features;
+const load = (res) => JSON.parse(readFileSync(join(root, `node_modules/world-atlas/countries-${res}.json`), "utf8"));
+const topo50 = load("50m");
+const topo10 = load("10m");
 
 // world-atlas zero-pads ids ("032"); our table does not ("32"). Compare numerically.
-const byNumericId = new Map(features.map((f) => [Number(f.id), f]));
-const featureFor = (alpha2) => {
+const index = (feats) => new Map(feats.map((f) => [Number(f.id), f]));
+const byNumericId = index(features);
+const byId50 = index(feature(topo50, topo50.objects.countries).features);
+const byId10 = index(feature(topo10, topo10.objects.countries).features);
+const featureFor = (alpha2, map = byNumericId) => {
   const id = ALPHA2_TO_NUMERIC[alpha2];
-  return id == null ? undefined : byNumericId.get(Number(id));
+  return id == null ? undefined : map.get(Number(id));
 };
 
 const DIGITS = 1;
@@ -33,7 +39,8 @@ const DIGITS = 1;
 const SHAPE_W = 400, SHAPE_H = 300, PAD = 24;
 const shapes = {};
 for (const c of countries) {
-  const f = featureFor(c.code);
+  // Small countries are missing from the 1:110m atlas: fall back to 1:50m, then 1:10m.
+  const f = featureFor(c.code) ?? featureFor(c.code, byId50) ?? featureFor(c.code, byId10);
   if (!f) continue;
   // Rotate so the country is centred: keeps antimeridian countries (Fiji, Russia) in one piece.
   const [lng] = geoCentroid(f);
@@ -77,6 +84,19 @@ writeFileSync(
   join(outDir, "worldMap.json"),
   JSON.stringify({ width: MAP_W, height: MAP_H, countries: mapCountries, points, other }),
 );
+
+// ── Land borders (1:50m: accurate enough, includes microstates) ───────────
+const geoms50 = topo50.objects.countries.geometries;
+const codeById = Object.fromEntries(Object.entries(ALPHA2_TO_NUMERIC).map(([a2, n]) => [Number(n), a2]));
+const adjacency = neighbors(geoms50);
+const landBorders = {};
+geoms50.forEach((g, i) => {
+  const code = codeById[Number(g.id)];
+  if (!code) return;
+  landBorders[code] = [...new Set(adjacency[i].map((j) => codeById[Number(geoms50[j].id)]).filter((x) => x && x !== code))].sort();
+});
+for (const c of countries) landBorders[c.code] ??= [];
+writeFileSync(join(outDir, "landBorders.json"), JSON.stringify(landBorders));
 
 // Project a [lng, lat] box for region framing in the browser (no d3 at runtime).
 const REGION_EXTENTS = {

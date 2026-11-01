@@ -1,10 +1,10 @@
 import { describe, it, expect } from "vitest";
 import {
-  buildRound, countryDistractors, officialLanguages, hasShape, MIXABLE_MODES,
+  buildRound, countryDistractors, officialLanguages, hasShape, MIXABLE_MODES, population, area,
+  landNeighbours, currenciesOf, capitalName,
 } from "./generate.js";
 import { countries } from "../../data/countries.js";
 import { flagSrc } from "./flags.js";
-import { countriesExtra } from "../../data/countriesExtra.js";
 import worldMap from "../../data/generated/worldMap.json";
 import { DIFFICULTIES, REGIONS, t, many, assertChoice, positionShares } from "../../test/helpers.js";
 
@@ -20,9 +20,8 @@ describe("geography data", () => {
     expect(missing).toEqual([]);
   });
 
-  it("only microstates (rendered as map points) lack an outline shape", () => {
-    const noShape = countries.filter((c) => !hasShape(c.code)).map((c) => c.code).sort();
-    expect(noShape).toEqual(Object.keys(worldMap.points).sort());
+  it("every country has an outline shape (microstates from the higher-resolution atlases)", () => {
+    expect(countries.filter((c) => !hasShape(c.code)).map((c) => c.code)).toEqual([]);
     // Regression: zero-padded TopoJSON ids once dropped these countries.
     for (const code of ["AR", "AU", "BR", "AT", "BE", "BO", "AF", "DZ"]) expect(hasShape(code)).toBe(true);
   });
@@ -100,7 +99,7 @@ describe("population / area comparisons", () => {
     for (const difficulty of DIFFICULTIES) {
       it(`${type} · ${difficulty}: the larger value is the correct answer`, () => {
         for (const q of buildRound(settings({ mode: type, difficulty, roundSize: 20 }), t)) {
-          const [a, b] = q.items.map((i) => countriesExtra[i.id][type]);
+          const [a, b] = q.items.map((i) => (type === "population" ? population(i.id).value : area(i.id)));
           expect(a).not.toBe(b);
           expect(q.correctId).toBe(a > b ? q.items[0].id : q.items[1].id);
         }
@@ -115,5 +114,53 @@ describe("localisation", () => {
     const q = buildRound(settings({ mode: "capitals", lang: "es", region: "Europe", difficulty: "expert", roundSize: 50 }), getStrings("es"))
       .find((x) => x.key === "capitals:DE");
     expect(q.prompt).toContain("Alemania");
+  });
+});
+
+describe("neighbours and currencies", () => {
+  for (const difficulty of ["easy", "medium", "hard"]) {
+    it(`neighbours · ${difficulty}: exactly one option borders the country`, () => {
+      for (const q of buildRound(settings({ mode: "neighbours", difficulty, roundSize: 20 }), t)) {
+        const code = q.key.split(":")[1];
+        const borders = new Set(landNeighbours(code));
+        expect(q.options.filter((o) => borders.has(o.id)).map((o) => o.id)).toEqual([q.correctId]);
+      }
+    });
+    it(`currencies · ${difficulty}: no other option is also used by the country`, () => {
+      for (const q of buildRound(settings({ mode: "currencies", difficulty, roundSize: 20 }), t)) {
+        const own = new Set(currenciesOf(q.key.split(":")[1]));
+        expect(q.options.filter((o) => own.has(o.id)).map((o) => o.id)).toEqual([q.correctId]);
+      }
+    });
+  }
+
+  it("land borders are symmetric and never include the country itself", () => {
+    for (const c of countries) for (const n of landNeighbours(c.code)) {
+      expect(n).not.toBe(c.code);
+      expect(landNeighbours(n)).toContain(c.code);
+    }
+    expect(landNeighbours("ES")).toEqual(["AD", "FR", "PT"]);
+    expect(landNeighbours("JP")).toEqual([]);
+  });
+
+  it("every wrong option explains itself", () => {
+    for (const mode of ["flags", "capitals", "shapes", "languages", "neighbours", "currencies"]) {
+      for (const q of buildRound(settings({ mode, roundSize: 10 }), t)) {
+        expect(q.note, mode).toBeTruthy();
+        for (const o of q.options) expect(o.whyNot?.text, `${mode} ${o.id}`).toBeTruthy();
+      }
+    }
+  });
+});
+
+describe("refreshed facts", () => {
+  it("every country has a dated population, an area, a currency and capital names", () => {
+    for (const c of countries) {
+      expect(population(c.code).value, c.code).toBeGreaterThan(0);
+      expect(area(c.code), c.code).toBeGreaterThan(0);
+      expect(currenciesOf(c.code).length, c.code).toBeGreaterThan(0);
+      for (const lang of ["en", "es", "fr"]) expect(capitalName(c, lang), c.code).toBeTruthy();
+    }
+    expect(capitalName({ code: "CN", capital: "Beijing" }, "es")).toBe("Pekín");
   });
 });

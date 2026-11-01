@@ -20,6 +20,8 @@ const es = {
       languages: { title: "Idiomas", desc: "Nombra un idioma oficial de un país." },
       population: { title: "Población", desc: "Elige el país con mayor población." },
       area: { title: "Superficie", desc: "Elige el país con mayor superficie." },
+      neighbours: { title: "Vecinos", desc: "¿Qué país comparte frontera terrestre?" },
+      currencies: { title: "Monedas", desc: "Nombra la moneda que usa un país." },
       mixed: { title: "Mixto", desc: "Preguntas aleatorias de los modos elegidos." },
     },
     history: {
@@ -50,7 +52,7 @@ const es = {
   },
 
   typeLabels: {
-    flags: "Banderas", capitals: "Capitales", locate: "Ubicar", shapes: "Siluetas",
+    neighbours: "Vecinos", currencies: "Monedas", flags: "Banderas", capitals: "Capitales", locate: "Ubicar", shapes: "Siluetas",
     languages: "Idiomas", population: "Población", area: "Superficie",
     people: "Personajes Famosos", "who-first": "¿Qué fue primero?", events: "Eventos Históricos",
     inventions: "Inventos", art: "Arte",
@@ -120,6 +122,8 @@ const es = {
   vs: "VS",
   imageUnavailable: "Imagen no disponible",
   imageCredit: "Imagen",
+  youChose: (label) => `Elegiste ${label}:`,
+  learnMore: "Saber más",
   steps: "Pasos",
 
   roundComplete: "¡Ronda completada!",
@@ -140,6 +144,20 @@ const es = {
   geo: {
     title: "Geografía Mundial",
     subtitle: "Banderas, capitales, mapas, siluetas, idiomas y más.",
+    neighbourPrompt: (c) => `¿Cuál de estos países limita con ${c}?`,
+    currencyPrompt: (c) => `¿Cuál es la moneda de ${c}?`,
+    typeCurrency: "Escribe la moneda…",
+    countryCard: ({ country, capital, region, population }) => `${country}: capital ${capital}, ${region}, población ${population}.`,
+    capitalIs: (cap, country) => `${cap} es la capital de ${country}.`,
+    thisIsFlagOf: (c) => `Esta es la bandera de ${c}.`,
+    thisIsShapeOf: (c) => `Esta es la silueta de ${c}.`,
+    languageSpokenIn: (l, list) => `El ${l.toLowerCase()} es lengua oficial en ${list}.`,
+    bordersList: (c, list) => `${c} limita por tierra con ${list}.`,
+    doesNotBorder: (c, target, list) => `${c} no limita con ${target}; sus vecinos son ${list}.`,
+    noLandBorders: (c) => `${c} no tiene fronteras terrestres.`,
+    currencyIs: (c, list) => `En ${c} se usa: ${list}.`,
+    currencyUsedIn: (cur, list) => `${cur}: se usa en ${list}.`,
+    timesMore: (a, b, x, type) => type === "population" ? `${a} tiene unas ${x} veces más habitantes que ${b}.` : `${a} es unas ${x} veces más grande que ${b}.`,
     flagPrompt: "¿A qué país pertenece esta bandera?",
     capitalPrompt: (c) => `¿Cuál es la capital de ${c}?`,
     locatePrompt: (c) => `Encuentra ${c} en el mapa`,

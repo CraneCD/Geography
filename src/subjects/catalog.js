@@ -1,7 +1,7 @@
 // Lightweight subject metadata (kept in the main bundle). Each subject's
 // generators, data, and custom views are lazy-loaded via `load()`.
 
-export const MIXABLE_MODES = ["flags", "capitals", "locate", "shapes", "languages", "population", "area"];
+export const MIXABLE_MODES = ["flags", "capitals", "locate", "shapes", "languages", "neighbours", "currencies", "population", "area"];
 
 export const SUBJECTS = [
   {

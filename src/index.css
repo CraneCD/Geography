@@ -487,6 +487,13 @@ svg { flex-shrink: 0; }
 }
 .explanation__title { color: var(--ink); font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
 .explanation__steps { padding-left: 1.4rem; font-family: var(--mono); font-size: .92rem; color: var(--ink); }
+.why-not { display: flex; align-items: center; gap: .75rem; padding-bottom: .5rem; margin-bottom: .25rem; border-bottom: 1px dashed var(--line); }
+.why-not p { flex: 1; }
+.why-not strong { color: var(--wrong); }
+.why-not__flag { width: 56px; height: auto; max-height: 40px; object-fit: contain; border: 1px solid var(--ink); background: #FFFFFF; flex-shrink: 0; }
+.why-not__shape { width: 64px; height: 48px; flex-shrink: 0; }
+.answer-links { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1.25rem; }
+.learn-more { display: inline-flex; align-items: center; gap: .35rem; font-weight: 600; font-size: .9rem; }
 .image-credit { align-self: flex-start; display: inline-flex; align-items: center; gap: .25rem; font-family: var(--mono); font-size: 12px; color: var(--muted); }
 
 /* ── Locate map ─────────────────────────────────────────────────────────── */
