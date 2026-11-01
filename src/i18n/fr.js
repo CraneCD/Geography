@@ -88,7 +88,6 @@ const fr = {
   off: "Non",
   mixedIncludes: "Le mode mixte inclut",
   bestScore: (pct) => `Record ${pct} %`,
-  englishContentNote: "Remarque : les noms et descriptions de cette section sont en anglais.",
   playMode: (title) => `Jouer : ${title}`,
 
   backToSubjects: "Sujets",

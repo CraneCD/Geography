@@ -88,7 +88,6 @@ const en = {
   off: "Off",
   mixedIncludes: "Mixed mode includes",
   bestScore: (pct) => `Best ${pct}%`,
-  englishContentNote: null,
   playMode: (title) => `Play ${title}`,
 
   // Navigation

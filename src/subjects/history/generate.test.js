@@ -122,3 +122,48 @@ describe("history data", async () => {
     });
   }
 });
+
+describe("history translations", async () => {
+  const { people } = await import("../../data/history/people.js");
+  const { events } = await import("../../data/history/events.js");
+  const { inventions } = await import("../../data/history/inventions.js");
+  const { artworks } = await import("../../data/history/artworks.js");
+  const { MOVEMENTS } = await import("../../data/history/i18n/index.js");
+  const { getStrings } = await import("../../i18n/index.js");
+  const sets = { people, events, inventions, artworks };
+
+  for (const lang of ["es", "fr"]) {
+    for (const [kind, items] of Object.entries(sets)) {
+      it(`${kind}: every item has ${lang} text`, async () => {
+        const table = (await import(`../../data/history/i18n/${kind}.${lang}.js`)).default;
+        const missing = items.filter((x) => !table[x.id]?.d).map((x) => x.id);
+        expect(missing).toEqual([]);
+        expect(Object.keys(table).filter((id) => !items.some((x) => x.id === id))).toEqual([]); // no stale ids
+      });
+    }
+  }
+
+  it("every art movement is translated", () => {
+    for (const a of artworks) expect(MOVEMENTS[a.movement], a.movement).toHaveLength(2);
+  });
+
+  it("questions use the selected language", () => {
+    const es = buildRound(settings({ mode: "events", roundSize: 85, lang: "es", difficulty: "expert" }), getStrings("es"));
+    expect(es.find((q) => q.key === "events:french-revolution").prompt).toContain("Revolución francesa");
+    const fr = buildRound(settings({ mode: "art", roundSize: 80, lang: "fr" }), getStrings("fr"));
+    expect(fr.find((q) => q.key.endsWith(":mona-lisa")).note).toContain("La Joconde");
+  });
+
+  it("typed answers accept the English and the translated name", async () => {
+    const { matchesAnswer } = await import("../../lib/text.js");
+    const qs = buildRound(settings({ mode: "art", roundSize: 80, lang: "es", difficulty: "expert" }), getStrings("es"));
+    const q = qs.find((x) => x.key === "art:artist:creation-of-adam" || x.key === "art:movement:creation-of-adam");
+    if (q?.key.includes("artist")) {
+      expect(matchesAnswer("Miguel Ángel", q.accepted, q.match)).toBe(true);
+      expect(matchesAnswer("Michelangelo", q.accepted, q.match)).toBe(true);
+    } else if (q) {
+      expect(matchesAnswer("Renacimiento", q.accepted, q.match)).toBe(true);
+      expect(matchesAnswer("Renaissance", q.accepted, q.match)).toBe(true);
+    }
+  });
+});

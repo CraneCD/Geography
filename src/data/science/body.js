@@ -47,7 +47,7 @@ export const BODY_REGIONS = [
     imageFile: null,
     illustration: "stomach",
     dataset: "organs",
-    fact: "Produces hydrochloric acid strong enough to dissolve metal.",
+    fact: "Produces strong hydrochloric acid; its lining renews itself every few days to avoid being digested.",
   },
   {
     id: "kidney",
@@ -166,7 +166,7 @@ export const BODY_REGIONS = [
     photoName: "Femur",
     wikiTitle: "Femur",
     dataset: "bones",
-    fact: "The longest and strongest bone in the body; can support 30× body weight.",
+    fact: "The longest and strongest bone in the human body.",
   },
   {
     id: "tibia",

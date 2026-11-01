@@ -78,3 +78,20 @@ describe("elements", async () => {
     }
   });
 });
+
+describe("science translations", async () => {
+  const { FACTS } = await import("../../data/science/facts.js");
+  const { ANIMAL_NAMES, SPACE_NAMES, BODY_NAMES } = await import("../../data/science/names.js");
+  const { BODY_REGIONS } = await import("../../data/science/body.js");
+
+  it("every animal, space object and body part has translated names and facts", () => {
+    for (const a of ANIMALS) { expect(FACTS[a.id], a.id).toHaveLength(2); expect(ANIMAL_NAMES[a.id], a.id).toHaveLength(2); }
+    for (const o of SPACE_OBJECTS) { expect(FACTS[o.id], o.id).toHaveLength(2); expect(SPACE_NAMES[o.id], o.id).toHaveLength(2); }
+    for (const r of BODY_REGIONS) { expect(FACTS[r.id], r.id).toHaveLength(2); expect(BODY_NAMES[r.photoName ?? r.name], r.id).toHaveLength(2); }
+  });
+
+  it("facts appear in the selected language", () => {
+    const qs = buildRound(settings({ mode: "space-photo", difficulty: "medium", roundSize: 20 }), getStrings("fr"));
+    expect(qs.find((q) => q.key === "space-photo:earth").note).toContain("seule planète");
+  });
+});

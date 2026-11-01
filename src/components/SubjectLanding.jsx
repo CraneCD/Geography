@@ -77,7 +77,6 @@ export default function SubjectLanding({ subject, settings, update, t, onStart, 
           <span><mark className="hl">{t[titleKey].title}</mark></span>
         </h1>
         <p className="page__subtitle">{t[titleKey].subtitle}</p>
-        {subject.englishContent && t.englishContentNote && <p className="notice">{t.englishContentNote}</p>}
       </header>
 
       <section aria-label={t.subjects[subject.id].title} className="mode-grid">
