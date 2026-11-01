@@ -6,7 +6,7 @@ export const MIXABLE_MODES = ["flags", "capitals", "locate", "shapes", "language
 export const SUBJECTS = [
   {
     id: "geography",
-    modes: [...MIXABLE_MODES, "landmarks", "physical", "mixed"],
+    modes: [...MIXABLE_MODES, "landmarks", "physical", "us-states", "mixed"],
     options: ["region", "mixedModes"],
     load: () => import("./geography/index.jsx"),
   },

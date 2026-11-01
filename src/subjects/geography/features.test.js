@@ -70,3 +70,29 @@ describe("landmarks and physical rounds", () => {
     }
   });
 });
+
+describe("US states", () => {
+  it("has 50 states with outlines and well-formed rounds", async () => {
+    const { usStatesRound } = await import("./usStates.js");
+    const { US_STATES } = await import("../../data/geography/usStates.js");
+    const shapes = (await import("../../data/generated/usShapes.json")).default;
+    expect(US_STATES).toHaveLength(50);
+    for (const s of US_STATES) expect(shapes[s.code], s.name).toMatch(/^M/);
+    for (const lang of ["en", "es", "fr"]) {
+      const t = { ...getStrings(lang), lang };
+      for (const difficulty of DIFFICULTIES) {
+        const qs = usStatesRound({ difficulty, roundSize: 50 }, t);
+        expect(qs).toHaveLength(50);
+        for (const q of qs) {
+          expect(q.note).toBeTruthy();
+          if (q.kind === "choice") {
+            assertChoice(expect, q);
+            for (const o of q.options.filter((o) => o.id !== q.correctId)) expect(o.whyNot?.text).toBeTruthy();
+          } else {
+            expect(q.accepted.length).toBeGreaterThan(0);
+          }
+        }
+      }
+    }
+  });
+});

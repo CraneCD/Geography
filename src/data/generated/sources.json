@@ -1,18 +1,28 @@
 {
- "Abraham_Lincoln": {
-  "qid": "Q91",
-  "es": "Abraham Lincoln",
-  "fr": "Abraham Lincoln"
- },
  "George_Washington": {
   "qid": "Q23",
   "es": "George Washington",
   "fr": "George Washington"
  },
+ "Abraham_Lincoln": {
+  "qid": "Q91",
+  "es": "Abraham Lincoln",
+  "fr": "Abraham Lincoln"
+ },
+ "Napoleon": {
+  "qid": "Q517",
+  "es": "Napoleón Bonaparte",
+  "fr": "Napoléon Ier"
+ },
  "Louis_Pasteur": {
   "qid": "Q529",
   "es": "Louis Pasteur",
   "fr": "Louis Pasteur"
+ },
+ "Leonardo_da_Vinci": {
+  "qid": "Q762",
+  "es": "Leonardo da Vinci",
+  "fr": "Léonard de Vinci"
  },
  "Plato": {
   "qid": "Q859",
@@ -24,11 +34,6 @@
   "es": "Galileo Galilei",
   "fr": "Galilée (savant)"
  },
- "Napoleon": {
-  "qid": "Q517",
-  "es": "Napoleón Bonaparte",
-  "fr": "Napoléon Ier"
- },
  "Wolfgang_Amadeus_Mozart": {
   "qid": "Q254",
   "es": "Wolfgang Amadeus Mozart",
@@ -39,20 +44,15 @@
   "es": "Ludwig van Beethoven",
   "fr": "Ludwig van Beethoven"
  },
- "Aristotle": {
-  "qid": "Q868",
-  "es": "Aristóteles",
-  "fr": "Aristote"
+ "Albert_Einstein": {
+  "qid": "Q937",
+  "es": "Albert Einstein",
+  "fr": "Albert Einstein"
  },
- "Socrates": {
-  "qid": "Q913",
-  "es": "Sócrates",
-  "fr": "Socrate"
- },
- "Isaac_Newton": {
-  "qid": "Q935",
-  "es": "Isaac Newton",
-  "fr": "Isaac Newton"
+ "Mahatma_Gandhi": {
+  "qid": "Q1001",
+  "es": "Mahatma Gandhi",
+  "fr": "Mohandas Karamchand Gandhi"
  },
  "Cleopatra": {
   "qid": "Q635",
@@ -69,50 +69,30 @@
   "es": "Gengis Kan",
   "fr": "Gengis Khan"
  },
- "Leonardo_da_Vinci": {
-  "qid": "Q762",
-  "es": "Leonardo da Vinci",
-  "fr": "Léonard de Vinci"
+ "Rembrandt": {
+  "qid": "Q5598",
+  "es": "Rembrandt",
+  "fr": "Rembrandt"
  },
- "Albert_Einstein": {
-  "qid": "Q937",
-  "es": "Albert Einstein",
-  "fr": "Albert Einstein"
+ "Marco_Polo": {
+  "qid": "Q6101",
+  "es": "Marco Polo",
+  "fr": "Marco Polo"
  },
- "Mahatma_Gandhi": {
-  "qid": "Q1001",
-  "es": "Mahatma Gandhi",
-  "fr": "Mohandas Karamchand Gandhi"
- },
- "Charles_Darwin": {
-  "qid": "Q1035",
-  "es": "Charles Darwin",
-  "fr": "Charles Darwin"
- },
- "Julius_Caesar": {
-  "qid": "Q1048",
-  "es": "Julio César",
-  "fr": "Jules César"
- },
- "Ferdinand_Magellan": {
-  "qid": "Q1496",
-  "es": "Fernando de Magallanes",
-  "fr": "Fernand de Magellan"
- },
- "Neil_Armstrong": {
-  "qid": "Q1615",
-  "es": "Neil Armstrong",
-  "fr": "Neil Armstrong"
- },
- "Confucius": {
-  "qid": "Q4604",
-  "es": "Confucio",
-  "fr": "Confucius"
+ "Niels_Bohr": {
+  "qid": "Q7085",
+  "es": "Niels Bohr",
+  "fr": "Niels Bohr"
  },
  "Michelangelo": {
   "qid": "Q5592",
   "es": "Miguel Ángel",
   "fr": "Michel-Ange"
+ },
+ "Pablo_Picasso": {
+  "qid": "Q5593",
+  "es": "Pablo Picasso",
+  "fr": "Pablo Picasso"
  },
  "Yuri_Gagarin": {
   "qid": "Q7327",
@@ -129,25 +109,25 @@
   "es": "Rosalind Franklin",
   "fr": "Rosalind Franklin"
  },
- "Avicenna": {
-  "qid": "Q8011",
-  "es": "Avicena",
-  "fr": "Avicenne"
+ "Aristotle": {
+  "qid": "Q868",
+  "es": "Aristóteles",
+  "fr": "Aristote"
  },
- "Winston_Churchill": {
-  "qid": "Q8016",
-  "es": "Winston Churchill",
-  "fr": "Winston Churchill"
+ "Socrates": {
+  "qid": "Q913",
+  "es": "Sócrates",
+  "fr": "Socrate"
  },
- "Alexander_the_Great": {
-  "qid": "Q8409",
-  "es": "Alejandro Magno",
-  "fr": "Alexandre le Grand"
+ "Isaac_Newton": {
+  "qid": "Q935",
+  "es": "Isaac Newton",
+  "fr": "Isaac Newton"
  },
- "Otto_von_Bismarck": {
-  "qid": "Q8442",
-  "es": "Otto von Bismarck",
-  "fr": "Otto von Bismarck"
+ "Akbar": {
+  "qid": "Q8597",
+  "es": "Akbar",
+  "fr": "Akbar"
  },
  "Suleiman_the_Magnificent": {
   "qid": "Q8474",
@@ -159,25 +139,15 @@
   "es": "Aśoka",
   "fr": "Ashoka"
  },
- "Akbar": {
-  "qid": "Q8597",
-  "es": "Akbar",
-  "fr": "Akbar"
+ "Simón_Bolívar": {
+  "qid": "Q8605",
+  "es": "Simón Bolívar",
+  "fr": "Simón Bolívar"
  },
- "Dmitri_Mendeleev": {
-  "qid": "Q9106",
-  "es": "Dmitri Mendeléyev",
-  "fr": "Dmitri Mendeleïev"
- },
- "René_Descartes": {
-  "qid": "Q9191",
-  "es": "René Descartes",
-  "fr": "René Descartes"
- },
- "Hypatia": {
-  "qid": "Q11903",
-  "es": "Hipatia",
-  "fr": "Hypatie"
+ "Archimedes": {
+  "qid": "Q8739",
+  "es": "Arquímedes",
+  "fr": "Archimède"
  },
  "Marie_Curie": {
   "qid": "Q7186",
@@ -209,6 +179,71 @@
   "es": "Cristóbal Colón",
   "fr": "Christophe Colomb"
  },
+ "Charles_Darwin": {
+  "qid": "Q1035",
+  "es": "Charles Darwin",
+  "fr": "Charles Darwin"
+ },
+ "Julius_Caesar": {
+  "qid": "Q1048",
+  "es": "Julio César",
+  "fr": "Jules César"
+ },
+ "Ferdinand_Magellan": {
+  "qid": "Q1496",
+  "es": "Fernando de Magallanes",
+  "fr": "Fernand de Magellan"
+ },
+ "Neil_Armstrong": {
+  "qid": "Q1615",
+  "es": "Neil Armstrong",
+  "fr": "Neil Armstrong"
+ },
+ "Confucius": {
+  "qid": "Q4604",
+  "es": "Confucio",
+  "fr": "Confucius"
+ },
+ "Hypatia": {
+  "qid": "Q11903",
+  "es": "Hipatia",
+  "fr": "Hypatie"
+ },
+ "Stephen_Hawking": {
+  "qid": "Q17714",
+  "es": "Stephen Hawking",
+  "fr": "Stephen Hawking"
+ },
+ "Hannibal": {
+  "qid": "Q36456",
+  "es": "Aníbal",
+  "fr": "Hannibal Barca"
+ },
+ "Attila": {
+  "qid": "Q36724",
+  "es": "Atila",
+  "fr": "Attila"
+ },
+ "Avicenna": {
+  "qid": "Q8011",
+  "es": "Avicena",
+  "fr": "Avicenne"
+ },
+ "Winston_Churchill": {
+  "qid": "Q8016",
+  "es": "Winston Churchill",
+  "fr": "Winston Churchill"
+ },
+ "Alexander_the_Great": {
+  "qid": "Q8409",
+  "es": "Alejandro Magno",
+  "fr": "Alexandre le Grand"
+ },
+ "Otto_von_Bismarck": {
+  "qid": "Q8442",
+  "es": "Otto von Bismarck",
+  "fr": "Otto von Bismarck"
+ },
  "Harriet_Tubman": {
   "qid": "Q102870",
   "es": "Harriet Tubman",
@@ -229,55 +264,10 @@
   "es": "Toussaint Louverture",
   "fr": "Toussaint Louverture"
  },
- "Stephen_Hawking": {
-  "qid": "Q17714",
-  "es": "Stephen Hawking",
-  "fr": "Stephen Hawking"
- },
- "Hannibal": {
-  "qid": "Q36456",
-  "es": "Aníbal",
-  "fr": "Hannibal Barca"
- },
- "Attila": {
-  "qid": "Q36724",
-  "es": "Atila",
-  "fr": "Attila"
- },
  "Florence_Nightingale": {
   "qid": "Q37103",
   "es": "Florence Nightingale",
   "fr": "Florence Nightingale"
- },
- "Pablo_Picasso": {
-  "qid": "Q5593",
-  "es": "Pablo Picasso",
-  "fr": "Pablo Picasso"
- },
- "Rembrandt": {
-  "qid": "Q5598",
-  "es": "Rembrandt",
-  "fr": "Rembrandt"
- },
- "Marco_Polo": {
-  "qid": "Q6101",
-  "es": "Marco Polo",
-  "fr": "Marco Polo"
- },
- "Niels_Bohr": {
-  "qid": "Q7085",
-  "es": "Niels Bohr",
-  "fr": "Niels Bohr"
- },
- "Simón_Bolívar": {
-  "qid": "Q8605",
-  "es": "Simón Bolívar",
-  "fr": "Simón Bolívar"
- },
- "Archimedes": {
-  "qid": "Q8739",
-  "es": "Arquímedes",
-  "fr": "Archimède"
  },
  "Michael_Faraday": {
   "qid": "Q8750",
@@ -294,80 +284,35 @@
   "es": "James Watt",
   "fr": "James Watt"
  },
- "Frédéric_Chopin": {
-  "qid": "Q1268",
-  "es": "Frédéric Chopin",
-  "fr": "Frédéric Chopin"
+ "Dmitri_Mendeleev": {
+  "qid": "Q9106",
+  "es": "Dmitri Mendeléyev",
+  "fr": "Dmitri Mendeleïev"
  },
- "Fyodor_Dostoevsky": {
-  "qid": "Q991",
-  "es": "Fiódor Dostoyevski",
-  "fr": "Fiodor Dostoïevski"
+ "René_Descartes": {
+  "qid": "Q9191",
+  "es": "René Descartes",
+  "fr": "René Descartes"
  },
  "Jawaharlal_Nehru": {
   "qid": "Q1047",
   "es": "Jawaharlal Nehru",
   "fr": "Jawaharlal Nehru"
  },
- "Sun_Yat-sen": {
-  "qid": "Q8573",
-  "es": "Sun Yat-sen",
-  "fr": "Sun Yat-sen"
+ "Amelia_Earhart": {
+  "qid": "Q3355",
+  "es": "Amelia Earhart",
+  "fr": "Amelia Earhart"
  },
- "Leo_Tolstoy": {
-  "qid": "Q7243",
-  "es": "León Tolstói",
-  "fr": "Léon Tolstoï"
+ "Niccolò_Machiavelli": {
+  "qid": "Q1399",
+  "es": "Nicolás Maquiavelo",
+  "fr": "Nicolas Machiavel"
  },
- "Pyotr_Ilyich_Tchaikovsky": {
-  "qid": "Q7315",
-  "es": "Piotr Ilich Chaikovski",
-  "fr": "Piotr Ilitch Tchaïkovski"
- },
- "Zheng_He": {
-  "qid": "Q7333",
-  "es": "Zheng He",
-  "fr": "Zheng He"
- },
- "Nelson_Mandela": {
-  "qid": "Q8023",
-  "es": "Nelson Mandela",
-  "fr": "Nelson Mandela"
- },
- "Voltaire": {
-  "qid": "Q9068",
-  "es": "Voltaire",
-  "fr": "Voltaire"
- },
- "Ibn_Khaldun": {
-  "qid": "Q9294",
-  "es": "Ibn Jaldún",
-  "fr": "Ibn Khaldoun"
- },
- "Immanuel_Kant": {
-  "qid": "Q9312",
-  "es": "Immanuel Kant",
-  "fr": "Emmanuel Kant"
- },
- "John_Locke": {
-  "qid": "Q9353",
-  "es": "John Locke",
-  "fr": "John Locke"
- },
- "Adam_Smith": {
-  "qid": "Q9381",
-  "es": "Adam Smith",
-  "fr": "Adam Smith"
- },
- "Hokusai": {
-  "qid": "Q5586",
-  "es": "Katsushika Hokusai",
-  "fr": "Hokusai"
- },
- "Frida_Kahlo": {
-  "qid": "Q5588",
-  "es": "Frida Kahlo",
-  "fr": "Frida Kahlo"
+ "Mustafa_Kemal_Atatürk": {
+  "qid": "Q5152",
+  "es": "Mustafa Kemal Atatürk",
+  "fr": "Mustafa Kemal Atatürk"
  },
  "Charles_Dickens": {
   "qid": "Q5686",
@@ -379,30 +324,50 @@
   "es": "Rabindranath Tagore",
   "fr": "Rabindranath Tagore"
  },
- "Girl_with_a_Pearl_Earring": {
-  "qid": "Q185372",
-  "es": "La joven de la perla",
-  "fr": "La Jeune Fille à la perle"
+ "Leo_Tolstoy": {
+  "qid": "Q7243",
+  "es": "León Tolstói",
+  "fr": "Léon Tolstoï"
  },
- "Niccolò_Machiavelli": {
-  "qid": "Q1399",
-  "es": "Nicolás Maquiavelo",
-  "fr": "Nicolas Machiavel"
+ "Pyotr_Ilyich_Tchaikovsky": {
+  "qid": "Q7315",
+  "es": "Piotr Ilich Chaikovski",
+  "fr": "Piotr Ilitch Tchaïkovski"
  },
- "The_School_of_Athens": {
-  "qid": "Q186953",
-  "es": "La escuela de Atenas",
-  "fr": "L'École d'Athènes"
+ "Fyodor_Dostoevsky": {
+  "qid": "Q991",
+  "es": "Fiódor Dostoyevski",
+  "fr": "Fiodor Dostoïevski"
  },
- "Emmeline_Pankhurst": {
-  "qid": "Q211519",
-  "es": "Emmeline Pankhurst",
-  "fr": "Emmeline Pankhurst"
+ "Frédéric_Chopin": {
+  "qid": "Q1268",
+  "es": "Frédéric Chopin",
+  "fr": "Frédéric Chopin"
  },
- "Thomas_Aquinas": {
-  "qid": "Q9438",
-  "es": "Tomás de Aquino",
-  "fr": "Thomas d'Aquin"
+ "Ibn_Khaldun": {
+  "qid": "Q9294",
+  "es": "Ibn Jaldún",
+  "fr": "Ibn Khaldoun"
+ },
+ "Immanuel_Kant": {
+  "qid": "Q9312",
+  "es": "Immanuel Kant",
+  "fr": "Emmanuel Kant"
+ },
+ "Hokusai": {
+  "qid": "Q5586",
+  "es": "Katsushika Hokusai",
+  "fr": "Hokusai"
+ },
+ "Frida_Kahlo": {
+  "qid": "Q5588",
+  "es": "Frida Kahlo",
+  "fr": "Frida Kahlo"
+ },
+ "John_Locke": {
+  "qid": "Q9353",
+  "es": "John Locke",
+  "fr": "John Locke"
  },
  "Martin_Luther": {
   "qid": "Q9554",
@@ -424,80 +389,35 @@
   "es": "Katherine Johnson",
   "fr": "Katherine Johnson"
  },
+ "Thomas_Aquinas": {
+  "qid": "Q9438",
+  "es": "Tomás de Aquino",
+  "fr": "Thomas d'Aquin"
+ },
+ "Sun_Yat-sen": {
+  "qid": "Q8573",
+  "es": "Sun Yat-sen",
+  "fr": "Sun Yat-sen"
+ },
+ "Zheng_He": {
+  "qid": "Q7333",
+  "es": "Zheng He",
+  "fr": "Zheng He"
+ },
  "Mona_Lisa": {
   "qid": "Q12418",
   "es": "La Gioconda",
   "fr": "La Joconde"
  },
- "Mary_Anning": {
-  "qid": "Q230491",
-  "es": "Mary Anning",
-  "fr": "Mary Anning"
+ "Nelson_Mandela": {
+  "qid": "Q8023",
+  "es": "Nelson Mandela",
+  "fr": "Nelson Mandela"
  },
- "B._R._Ambedkar": {
-  "qid": "Q231690",
-  "es": "B.R. Ambedkar",
-  "fr": "Bhimrao Ramji Ambedkar"
- },
- "Menelik_II": {
-  "qid": "Q244748",
-  "es": "Menelik II",
-  "fr": "Menelik II"
- },
- "Chien-Shiung_Wu": {
-  "qid": "Q450317",
-  "es": "Chien-Shiung Wu",
-  "fr": "Chien-Shiung Wu"
- },
- "Nzinga_of_Ndongo_and_Matamba": {
-  "qid": "Q467650",
-  "es": "Ana de Sousa",
-  "fr": "Njinga du Ndongo et du Matamba"
- },
- "Yaa_Asantewaa": {
-  "qid": "Q467803",
-  "es": "Yaa Asantewaa",
-  "fr": "Yaa Asantewaa"
- },
- "The_Creation_of_Adam": {
-  "qid": "Q500242",
-  "es": "La creación de Adán",
-  "fr": "La Création d'Adam (Michel-Ange)"
- },
- "The_Return_of_the_Prodigal_Son_(Rembrandt)": {
-  "qid": "Q512755",
-  "es": "El retorno del hijo pródigo",
-  "fr": "Le Retour du fils prodigue (Rembrandt)"
- },
- "Ernest_Shackleton": {
-  "qid": "Q957543",
-  "es": "Ernest Shackleton",
-  "fr": "Ernest Shackleton"
- },
- "Mary_Seacole": {
-  "qid": "Q963703",
-  "es": "Mary Seacole",
-  "fr": "Mary Seacole"
- },
- "Amelia_Earhart": {
-  "qid": "Q3355",
-  "es": "Amelia Earhart",
-  "fr": "Amelia Earhart"
- },
- "Mustafa_Kemal_Atatürk": {
-  "qid": "Q5152",
-  "es": "Mustafa Kemal Atatürk",
-  "fr": "Mustafa Kemal Atatürk"
- },
- "Frederick_Douglass": {
-  "qid": "Q215562",
-  "es": "Frederick Douglass",
-  "fr": "Frederick Douglass"
- },
- "The_Night_Watch": {
-  "qid": "Q219831",
-  "es": "La ronda de noche",
-  "fr": "La Ronde de nuit"
+ "Voltaire": {
+  "qid": "Q9068",
+  "es": "Voltaire",
+  "fr": "Voltaire"
  },
  "Alexander_Fleming": {
   "qid": "Q37064",
@@ -509,70 +429,40 @@
   "es": "Richard Feynman",
   "fr": "Richard Feynman"
  },
- "Edward_Jenner": {
-  "qid": "Q40852",
-  "es": "Edward Jenner",
-  "fr": "Edward Jenner"
- },
  "Rosa_Parks": {
   "qid": "Q41921",
   "es": "Rosa Parks",
   "fr": "Rosa Parks"
- },
- "Rumi": {
-  "qid": "Q43347",
-  "es": "Rumi",
-  "fr": "Rûmî"
- },
- "Sitting_Bull": {
-  "qid": "Q43527",
-  "es": "Toro Sentado",
-  "fr": "Sitting Bull"
- },
- "Lise_Meitner": {
-  "qid": "Q56189",
-  "es": "Lise Meitner",
-  "fr": "Lise Meitner"
  },
  "Hildegard_of_Bingen": {
   "qid": "Q70991",
   "es": "Hildegarda de Bingen",
   "fr": "Hildegarde de Bingen"
  },
+ "José_Martí": {
+  "qid": "Q103285",
+  "es": "José Martí",
+  "fr": "José Martí"
+ },
  "Murasaki_Shikibu": {
   "qid": "Q81731",
   "es": "Murasaki Shikibu",
   "fr": "Murasaki Shikibu"
+ },
+ "Rumi": {
+  "qid": "Q43347",
+  "es": "Rumi",
+  "fr": "Rûmî"
  },
  "Srinivasa_Ramanujan": {
   "qid": "Q83163",
   "es": "Srinivasa Ramanujan",
   "fr": "Srinivasa Ramanujan"
  },
- "José_Martí": {
-  "qid": "Q103285",
-  "es": "José Martí",
-  "fr": "José Martí"
- },
- "Sojourner_Truth": {
-  "qid": "Q105180",
-  "es": "Sojourner Truth",
-  "fr": "Sojourner Truth"
- },
- "The_Last_Supper_(Leonardo)": {
-  "qid": "Q128910",
-  "es": "La última cena (Leonardo da Vinci)",
-  "fr": "La Cène (Léonard de Vinci)"
- },
  "Hatshepsut": {
   "qid": "Q129234",
   "es": "Hatshepsut",
   "fr": "Hatchepsout"
- },
- "Moctezuma_II": {
-  "qid": "Q141791",
-  "es": "Moctezuma Xocoyotzin",
-  "fr": "Moctezuma II"
  },
  "The_Birth_of_Venus": {
   "qid": "Q151047",
@@ -584,80 +474,120 @@
   "es": "Tokugawa Ieyasu",
   "fr": "Tokugawa Ieyasu"
  },
+ "Edward_Jenner": {
+  "qid": "Q40852",
+  "es": "Edward Jenner",
+  "fr": "Edward Jenner"
+ },
+ "Lise_Meitner": {
+  "qid": "Q56189",
+  "es": "Lise Meitner",
+  "fr": "Lise Meitner"
+ },
+ "Moctezuma_II": {
+  "qid": "Q141791",
+  "es": "Moctezuma Xocoyotzin",
+  "fr": "Moctezuma II"
+ },
+ "Menelik_II": {
+  "qid": "Q244748",
+  "es": "Menelik II",
+  "fr": "Menelik II"
+ },
+ "Chien-Shiung_Wu": {
+  "qid": "Q450317",
+  "es": "Chien-Shiung Wu",
+  "fr": "Chien-Shiung Wu"
+ },
+ "Sitting_Bull": {
+  "qid": "Q43527",
+  "es": "Toro Sentado",
+  "fr": "Sitting Bull"
+ },
+ "The_Creation_of_Adam": {
+  "qid": "Q500242",
+  "es": "La creación de Adán",
+  "fr": "La Création d'Adam (Michel-Ange)"
+ },
+ "The_Return_of_the_Prodigal_Son_(Rembrandt)": {
+  "qid": "Q512755",
+  "es": "El retorno del hijo pródigo",
+  "fr": "Le Retour du fils prodigue (Rembrandt)"
+ },
+ "Sojourner_Truth": {
+  "qid": "Q105180",
+  "es": "Sojourner Truth",
+  "fr": "Sojourner Truth"
+ },
+ "The_Last_Supper_(Leonardo)": {
+  "qid": "Q128910",
+  "es": "La última cena (Leonardo da Vinci)",
+  "fr": "La Cène (Léonard de Vinci)"
+ },
  "Juana_Inés_de_la_Cruz": {
   "qid": "Q183074",
   "es": "Juana Inés de la Cruz",
   "fr": "Juana Inés de la Cruz"
  },
- "The_Persistence_of_Memory": {
-  "qid": "Q25729",
-  "es": "La persistencia de la memoria",
-  "fr": "La Persistance de la mémoire"
+ "The_School_of_Athens": {
+  "qid": "Q186953",
+  "es": "La escuela de Atenas",
+  "fr": "L'École d'Athènes"
  },
- "Liberty_Leading_the_People": {
-  "qid": "Q29530",
-  "es": "La Libertad guiando al pueblo",
-  "fr": "La Liberté guidant le peuple"
+ "Emmeline_Pankhurst": {
+  "qid": "Q211519",
+  "es": "Emmeline Pankhurst",
+  "fr": "Emmeline Pankhurst"
  },
- "The_Starry_Night": {
-  "qid": "Q45585",
-  "es": "La noche estrellada",
-  "fr": "La Nuit étoilée (1889)"
+ "Frederick_Douglass": {
+  "qid": "Q215562",
+  "es": "Frederick Douglass",
+  "fr": "Frederick Douglass"
  },
- "The_Fighting_Temeraire": {
-  "qid": "Q257580",
-  "es": "El último viaje del «Temerario»",
-  "fr": "Le Dernier Voyage du Téméraire"
+ "Girl_with_a_Pearl_Earring": {
+  "qid": "Q185372",
+  "es": "La joven de la perla",
+  "fr": "La Jeune Fille à la perle"
  },
- "The_Garden_of_Earthly_Delights": {
-  "qid": "Q321303",
-  "es": "El jardín de las delicias",
-  "fr": "Le Jardin des délices"
+ "Adam_Smith": {
+  "qid": "Q9381",
+  "es": "Adam Smith",
+  "fr": "Adam Smith"
  },
- "The_Milkmaid_(Vermeer)": {
-  "qid": "Q167605",
-  "es": "La lechera",
-  "fr": "La Laitière"
+ "Mary_Anning": {
+  "qid": "Q230491",
+  "es": "Mary Anning",
+  "fr": "Mary Anning"
  },
- "Las_Meninas": {
-  "qid": "Q208758",
-  "es": "Las meninas",
-  "fr": "Les Ménines"
+ "B._R._Ambedkar": {
+  "qid": "Q231690",
+  "es": "B.R. Ambedkar",
+  "fr": "Bhimrao Ramji Ambedkar"
  },
- "American_Gothic": {
-  "qid": "Q464782",
-  "es": "Gótico estadounidense",
-  "fr": "American Gothic (Wood)"
+ "Ernest_Shackleton": {
+  "qid": "Q957543",
+  "es": "Ernest Shackleton",
+  "fr": "Ernest Shackleton"
  },
- "The_Scream": {
-  "qid": "Q471379",
-  "es": "El grito",
-  "fr": "Le Cri"
+ "Mary_Seacole": {
+  "qid": "Q963703",
+  "es": "Mary Seacole",
+  "fr": "Mary Seacole"
  },
- "Oath_of_the_Horatii": {
-  "qid": "Q476458",
-  "es": "Juramento de los Horacios",
-  "fr": "Le Serment des Horaces"
+ "The_Night_Watch": {
+  "qid": "Q219831",
+  "es": "La ronda de noche",
+  "fr": "La Ronde de nuit"
  },
- "A_Burial_at_Ornans": {
-  "qid": "Q540488",
-  "es": "Entierro en Ornans",
-  "fr": "Un enterrement à Ornans"
+ "Nzinga_of_Ndongo_and_Matamba": {
+  "qid": "Q467650",
+  "es": "Ana de Sousa",
+  "fr": "Njinga du Ndongo et du Matamba"
  },
- "Where_Do_We_Come_From?_What_Are_We?_Where_Are_We_Going?": {
-  "qid": "Q890678",
-  "es": "¿De dónde venimos? ¿Quiénes somos? ¿Adónde vamos?",
-  "fr": "D'où venons-nous ? Que sommes-nous ? Où allons-nous ?"
- },
- "The_Third_of_May_1808": {
-  "qid": "Q1091086",
-  "es": "El 3 de mayo en Madrid",
-  "fr": "El tres de mayo de 1808 en Madrid"
- },
- "Saturn_Devouring_His_Son": {
-  "qid": "Q1150997",
-  "es": "Saturno devorando a su hijo",
-  "fr": "Saturne dévorant un de ses fils"
+ "Yaa_Asantewaa": {
+  "qid": "Q467803",
+  "es": "Yaa Asantewaa",
+  "fr": "Yaa Asantewaa"
  },
  "The_Potato_Eaters": {
   "qid": "Q154469",
@@ -674,35 +604,25 @@
   "es": "Napoleón cruzando los Alpes",
   "fr": "Bonaparte franchissant le Grand-Saint-Bernard"
  },
- "Venus_of_Urbino": {
-  "qid": "Q727875",
-  "es": "Venus de Urbino",
-  "fr": "Vénus d'Urbin"
+ "The_Persistence_of_Memory": {
+  "qid": "Q25729",
+  "es": "La persistencia de la memoria",
+  "fr": "La Persistance de la mémoire"
  },
- "The_Jewish_Bride": {
-  "qid": "Q766782",
-  "es": "La novia judía",
-  "fr": "La Fiancée juive"
+ "Liberty_Leading_the_People": {
+  "qid": "Q29530",
+  "es": "La Libertad guiando al pueblo",
+  "fr": "La Liberté guidant le peuple"
  },
- "Water_Lilies_(Monet_series)": {
-  "qid": "Q1189907",
-  "es": "Nenúfares (Monet)",
-  "fr": "Les Nymphéas"
+ "The_Raft_of_the_Medusa": {
+  "qid": "Q212616",
+  "es": "La balsa de la Medusa",
+  "fr": "Le Radeau de la Méduse"
  },
- "The_Garden_of_Love_(Rubens)": {
-  "qid": "Q1195238",
-  "es": "El jardín del amor",
-  "fr": "Le Jardin d'Amour"
- },
- "Women_of_Algiers": {
-  "qid": "Q1212737",
-  "es": "Mujeres de Argel en su apartamento",
-  "fr": "Femmes d'Alger dans leur appartement"
- },
- "The_Ambassadors_(Holbein)": {
-  "qid": "Q1212937",
-  "es": "Los embajadores",
-  "fr": "Les Ambassadeurs"
+ "The_Great_Wave_off_Kanagawa": {
+  "qid": "Q252485",
+  "es": "La gran ola de Kanagawa",
+  "fr": "La Grande Vague de Kanagawa"
  },
  "Judith_Slaying_Holofernes_(Artemisia_Gentileschi,_Naples)": {
   "qid": "Q2247406",
@@ -718,21 +638,6 @@
   "qid": "Q2339059",
   "es": "Lluvia, vapor y velocidad. El gran ferrocarril del Oeste",
   "fr": "Pluie, Vapeur et Vitesse"
- },
- "Street,_Berlin_(Kirchner)": {
-  "qid": "Q19883652",
-  "es": null,
-  "fr": "La Rue (Kirchner)"
- },
- "The_Raft_of_the_Medusa": {
-  "qid": "Q212616",
-  "es": "La balsa de la Medusa",
-  "fr": "Le Radeau de la Méduse"
- },
- "The_Great_Wave_off_Kanagawa": {
-  "qid": "Q252485",
-  "es": "La gran ola de Kanagawa",
-  "fr": "La Grande Vague de Kanagawa"
  },
  "Transfiguration_(Raphael)": {
   "qid": "Q2344437",
@@ -753,31 +658,6 @@
   "qid": "Q2627810",
   "es": "El aguador de Sevilla",
   "fr": "Le Porteur d'eau de Séville"
- },
- "Impression,_Sunrise": {
-  "qid": "Q328523",
-  "es": "Impresión, sol naciente",
-  "fr": "Impression, soleil levant"
- },
- "Portrait_of_Adele_Bloch-Bauer_I": {
-  "qid": "Q354396",
-  "es": "Retrato de Adele Bloch-Bauer I",
-  "fr": "Portrait d'Adele Bloch-Bauer I"
- },
- "The_Third-Class_Carriage": {
-  "qid": "Q3228340",
-  "es": "El vagón de tercera clase",
-  "fr": null
- },
- "Snap_the_Whip": {
-  "qid": "Q18209719",
-  "es": null,
-  "fr": null
- },
- "Portrait_of_Pablo_Picasso": {
-  "qid": "Q20487351",
-  "es": null,
-  "fr": null
  },
  "Portrait_of_Madame_X": {
   "qid": "Q2664039",
@@ -809,6 +689,81 @@
   "es": "Los jugadores de cartas",
   "fr": "Les Joueurs de cartes (Cézanne)"
  },
+ "Street,_Berlin_(Kirchner)": {
+  "qid": "Q19883652",
+  "es": null,
+  "fr": "La Rue (Kirchner)"
+ },
+ "The_Milkmaid_(Vermeer)": {
+  "qid": "Q167605",
+  "es": "La lechera",
+  "fr": "La Laitière"
+ },
+ "Las_Meninas": {
+  "qid": "Q208758",
+  "es": "Las meninas",
+  "fr": "Les Ménines"
+ },
+ "The_Starry_Night": {
+  "qid": "Q45585",
+  "es": "La noche estrellada",
+  "fr": "La Nuit étoilée (1889)"
+ },
+ "The_Third-Class_Carriage": {
+  "qid": "Q3228340",
+  "es": "El vagón de tercera clase",
+  "fr": null
+ },
+ "Snap_the_Whip": {
+  "qid": "Q18209719",
+  "es": null,
+  "fr": null
+ },
+ "Portrait_of_Pablo_Picasso": {
+  "qid": "Q20487351",
+  "es": null,
+  "fr": null
+ },
+ "The_Fighting_Temeraire": {
+  "qid": "Q257580",
+  "es": "El último viaje del «Temerario»",
+  "fr": "Le Dernier Voyage du Téméraire"
+ },
+ "The_Garden_of_Earthly_Delights": {
+  "qid": "Q321303",
+  "es": "El jardín de las delicias",
+  "fr": "Le Jardin des délices"
+ },
+ "Impression,_Sunrise": {
+  "qid": "Q328523",
+  "es": "Impresión, sol naciente",
+  "fr": "Impression, soleil levant"
+ },
+ "Portrait_of_Adele_Bloch-Bauer_I": {
+  "qid": "Q354396",
+  "es": "Retrato de Adele Bloch-Bauer I",
+  "fr": "Portrait d'Adele Bloch-Bauer I"
+ },
+ "American_Gothic": {
+  "qid": "Q464782",
+  "es": "Gótico estadounidense",
+  "fr": "American Gothic (Wood)"
+ },
+ "The_Scream": {
+  "qid": "Q471379",
+  "es": "El grito",
+  "fr": "Le Cri"
+ },
+ "Oath_of_the_Horatii": {
+  "qid": "Q476458",
+  "es": "Juramento de los Horacios",
+  "fr": "Le Serment des Horaces"
+ },
+ "A_Burial_at_Ornans": {
+  "qid": "Q540488",
+  "es": "Entierro en Ornans",
+  "fr": "Un enterrement à Ornans"
+ },
  "Primavera_(Botticelli)": {
   "qid": "Q549847",
   "es": "La primavera (Botticelli)",
@@ -834,6 +789,51 @@
   "es": "El beso (Gustav Klimt)",
   "fr": "Le Baiser (Klimt)"
  },
+ "Venus_of_Urbino": {
+  "qid": "Q727875",
+  "es": "Venus de Urbino",
+  "fr": "Vénus d'Urbin"
+ },
+ "The_Jewish_Bride": {
+  "qid": "Q766782",
+  "es": "La novia judía",
+  "fr": "La Fiancée juive"
+ },
+ "Where_Do_We_Come_From?_What_Are_We?_Where_Are_We_Going?": {
+  "qid": "Q890678",
+  "es": "¿De dónde venimos? ¿Quiénes somos? ¿Adónde vamos?",
+  "fr": "D'où venons-nous ? Que sommes-nous ? Où allons-nous ?"
+ },
+ "The_Third_of_May_1808": {
+  "qid": "Q1091086",
+  "es": "El 3 de mayo en Madrid",
+  "fr": "El tres de mayo de 1808 en Madrid"
+ },
+ "Saturn_Devouring_His_Son": {
+  "qid": "Q1150997",
+  "es": "Saturno devorando a su hijo",
+  "fr": "Saturne dévorant un de ses fils"
+ },
+ "Water_Lilies_(Monet_series)": {
+  "qid": "Q1189907",
+  "es": "Nenúfares (Monet)",
+  "fr": "Les Nymphéas"
+ },
+ "The_Garden_of_Love_(Rubens)": {
+  "qid": "Q1195238",
+  "es": "El jardín del amor",
+  "fr": "Le Jardin d'Amour"
+ },
+ "Women_of_Algiers": {
+  "qid": "Q1212737",
+  "es": "Mujeres de Argel en su apartamento",
+  "fr": "Femmes d'Alger dans leur appartement"
+ },
+ "The_Ambassadors_(Holbein)": {
+  "qid": "Q1212937",
+  "es": "Los embajadores",
+  "fr": "Les Ambassadeurs"
+ },
  "The_Sleeping_Gypsy": {
   "qid": "Q1219263",
   "es": "La gitana dormida",
@@ -849,6 +849,11 @@
   "es": "Las espigadoras",
   "fr": "Des glaneuses"
  },
+ "Komodo dragon": {
+  "qid": "Q4504",
+  "es": "Varanus komodoensis",
+  "fr": "Dragon de Komodo"
+ },
  "Red fox": {
   "qid": "Q8332",
   "es": "Vulpes vulpes",
@@ -859,20 +864,10 @@
   "es": "Ornithorhynchus anatinus",
   "fr": "Ornithorynque"
  },
- "Komodo dragon": {
-  "qid": "Q4504",
-  "es": "Varanus komodoensis",
-  "fr": "Dragon de Komodo"
- },
  "Tiger": {
   "qid": "Q19939",
   "es": "Panthera tigris",
   "fr": "Tigre"
- },
- "Common ostrich": {
-  "qid": "Q17592",
-  "es": "Struthio camelus",
-  "fr": "Autruche d'Afrique"
  },
  "Cheetah": {
   "qid": "Q23907",
@@ -899,6 +894,11 @@
   "es": "Ailuropoda melanoleuca",
   "fr": "Panda géant"
  },
+ "Peregrine falcon": {
+  "qid": "Q30535",
+  "es": "Falco peregrinus",
+  "fr": "Faucon pèlerin"
+ },
  "Polar bear": {
   "qid": "Q33609",
   "es": "Ursus maritimus",
@@ -909,10 +909,40 @@
   "es": "Phascolarctos cinereus",
   "fr": "Koala"
  },
- "Peregrine falcon": {
-  "qid": "Q30535",
-  "es": "Falco peregrinus",
-  "fr": "Faucon pèlerin"
+ "Moose": {
+  "qid": "Q35517",
+  "es": "Alces alces",
+  "fr": "Alces alces"
+ },
+ "Common ostrich": {
+  "qid": "Q17592",
+  "es": "Struthio camelus",
+  "fr": "Autruche d'Afrique"
+ },
+ "Golden eagle": {
+  "qid": "Q41181",
+  "es": "Aquila chrysaetos",
+  "fr": "Aigle royal"
+ },
+ "The Horse Fair": {
+  "qid": "Q40432",
+  "es": "La feria de caballos",
+  "fr": "Le Marché aux chevaux"
+ },
+ "Walrus": {
+  "qid": "Q40994",
+  "es": "Odobenus rosmarus",
+  "fr": "Morse (animal)"
+ },
+ "Blue whale": {
+  "qid": "Q42196",
+  "es": "Balaenoptera musculus",
+  "fr": "Baleine bleue"
+ },
+ "American bison": {
+  "qid": "Q82728",
+  "es": "Bison bison",
+  "fr": "Bison d'Amérique"
  },
  "Hippopotamus": {
   "qid": "Q34505",
@@ -924,10 +954,30 @@
   "es": "Loxodonta africana",
   "fr": "Éléphant de savane d'Afrique"
  },
- "Golden eagle": {
-  "qid": "Q41181",
-  "es": "Aquila chrysaetos",
-  "fr": "Aigle royal"
+ "Bald eagle": {
+  "qid": "Q127216",
+  "es": "Haliaeetus leucocephalus",
+  "fr": "Pygargue à tête blanche"
+ },
+ "Dromedary": {
+  "qid": "Q71516",
+  "es": "Camelus dromedarius",
+  "fr": "Dromadaire"
+ },
+ "Great white shark": {
+  "qid": "Q129026",
+  "es": "Carcharodon carcharias",
+  "fr": "Grand requin blanc"
+ },
+ "White rhinoceros": {
+  "qid": "Q159918",
+  "es": "Ceratotherium simum",
+  "fr": "Rhinocéros blanc"
+ },
+ "Emperor penguin": {
+  "qid": "Q161829",
+  "es": "Aptenodytes forsteri",
+  "fr": "Manchot empereur"
  },
  "Green anaconda": {
   "qid": "Q207347",
@@ -939,10 +989,45 @@
   "es": "Phoenicopterus ruber",
   "fr": "Flamant des Caraïbes"
  },
- "Moose": {
-  "qid": "Q35517",
-  "es": "Alces alces",
-  "fr": "Alces alces"
+ "Monarch butterfly": {
+  "qid": "Q212398",
+  "es": "Danaus plexippus",
+  "fr": "Monarque (papillon)"
+ },
+ "Judith Leyster": {
+  "qid": "Q232423",
+  "es": "Judith Leyster",
+  "fr": "Judith Leyster"
+ },
+ "Sofonisba Anguissola": {
+  "qid": "Q236038",
+  "es": "Sofonisba Anguissola",
+  "fr": "Sofonisba Anguissola"
+ },
+ "Grizzly bear": {
+  "qid": "Q171004",
+  "es": "Ursus arctos horribilis",
+  "fr": "Grizzly"
+ },
+ "African wild dog": {
+  "qid": "Q173651",
+  "es": "Lycaon pictus",
+  "fr": "Lycaon (animal)"
+ },
+ "Café_Terrace_at_Night": {
+  "qid": "Q1025704",
+  "es": "Terraza de café por la noche",
+  "fr": "Terrasse du café le soir"
+ },
+ "Ophelia_(Millais)": {
+  "qid": "Q1065493",
+  "es": "Ofelia (Millais)",
+  "fr": "Ophélie (Millais)"
+ },
+ "Fan Kuan": {
+  "qid": "Q1278559",
+  "es": "Fan Kuan",
+  "fr": "Fan Kuan"
  },
  "Western gorilla": {
   "qid": "Q737838",
@@ -953,6 +1038,16 @@
   "qid": "Q862089",
   "es": "Giraffa",
   "fr": "Girafe"
+ },
+ "Blue_Nude_(Souvenir_de_Biskra)": {
+  "qid": "Q882584",
+  "es": "Desnudo azul (recuerdo de Biskra)",
+  "fr": "Nu bleu (souvenir de Biskra)"
+ },
+ "Giant Pacific octopus": {
+  "qid": "Q912404",
+  "es": "Enteroctopus dofleini",
+  "fr": "Pieuvre géante du Pacifique"
  },
  "Plains zebra": {
   "qid": "Q245305",
@@ -974,25 +1069,15 @@
   "es": "Crocodylus porosus",
   "fr": "Crocodile marin"
  },
- "The Horse Fair": {
-  "qid": "Q40432",
-  "es": "La feria de caballos",
-  "fr": "Le Marché aux chevaux"
+ "The Child's Bath": {
+  "qid": "Q3172226",
+  "es": "El baño (Mary Cassatt)",
+  "fr": "Le Bain de l'enfant"
  },
- "Walrus": {
-  "qid": "Q40994",
-  "es": "Odobenus rosmarus",
-  "fr": "Morse (animal)"
- },
- "Monarch butterfly": {
-  "qid": "Q212398",
-  "es": "Danaus plexippus",
-  "fr": "Monarque (papillon)"
- },
- "Blue whale": {
-  "qid": "Q42196",
-  "es": "Balaenoptera musculus",
-  "fr": "Baleine bleue"
+ "Fine Wind, Clear Morning": {
+  "qid": "Q3565037",
+  "es": "Fuji rojo",
+  "fr": "Vent frais par matin clair"
  },
  "Arrangement_in_Grey_and_Black,_No._2:_Portrait_of_Thomas_Carlyle": {
   "qid": "Q4795850",
@@ -1003,6 +1088,16 @@
   "qid": "Q5966403",
   "es": "La cuna",
   "fr": "Le Berceau"
+ },
+ "Sultan Muhammad": {
+  "qid": "Q7636708",
+  "es": null,
+  "fr": "Sultan Muhammad"
+ },
+ "Shōrin-zu byōbu": {
+  "qid": "Q11531476",
+  "es": "Shōrin-zu byōbu",
+  "fr": "Shōrin-zu byōbu"
  },
  "Three Beauties of the Present Day": {
   "qid": "Q18210019",
@@ -1019,36 +1114,6 @@
   "es": null,
   "fr": "Nu couché (Modigliani, New York)"
  },
- "Blue_Nude_(Souvenir_de_Biskra)": {
-  "qid": "Q882584",
-  "es": "Desnudo azul (recuerdo de Biskra)",
-  "fr": "Nu bleu (souvenir de Biskra)"
- },
- "Giant Pacific octopus": {
-  "qid": "Q912404",
-  "es": "Enteroctopus dofleini",
-  "fr": "Pieuvre géante du Pacifique"
- },
- "Café_Terrace_at_Night": {
-  "qid": "Q1025704",
-  "es": "Terraza de café por la noche",
-  "fr": "Terrasse du café le soir"
- },
- "Ophelia_(Millais)": {
-  "qid": "Q1065493",
-  "es": "Ofelia (Millais)",
-  "fr": "Ophélie (Millais)"
- },
- "The Child's Bath": {
-  "qid": "Q3172226",
-  "es": "El baño (Mary Cassatt)",
-  "fr": "Le Bain de l'enfant"
- },
- "Fine Wind, Clear Morning": {
-  "qid": "Q3565037",
-  "es": "Fuji rojo",
-  "fr": "Vent frais par matin clair"
- },
  "Dance_(Matisse)": {
   "qid": "Q164517",
   "es": "La danza (Matisse)",
@@ -1057,6 +1122,11 @@
  "Early Spring (painting)": {
   "qid": "Q5136665",
   "es": "Primavera reciente",
+  "fr": null
+ },
+ "Shakuntala (Raja Ravi Varma)": {
+  "qid": "Q7487097",
+  "es": "Shakuntala (Raja Ravi Varma)",
   "fr": null
  },
  "Jahangir Preferring a Sufi Shaikh to Kings": {
@@ -1069,100 +1139,90 @@
   "es": "Osphranter rufus",
   "fr": null
  },
- "American bison": {
-  "qid": "Q82728",
-  "es": "Bison bison",
-  "fr": "Bison d'Amérique"
- },
- "Dromedary": {
-  "qid": "Q71516",
-  "es": "Camelus dromedarius",
-  "fr": "Dromadaire"
- },
- "Great white shark": {
-  "qid": "Q129026",
-  "es": "Carcharodon carcharias",
-  "fr": "Grand requin blanc"
- },
- "Grizzly bear": {
-  "qid": "Q171004",
-  "es": "Ursus arctos horribilis",
-  "fr": "Grizzly"
- },
- "African wild dog": {
-  "qid": "Q173651",
-  "es": "Lycaon pictus",
-  "fr": "Lycaon (animal)"
- },
- "White rhinoceros": {
-  "qid": "Q159918",
-  "es": "Ceratotherium simum",
-  "fr": "Rhinocéros blanc"
- },
- "Emperor penguin": {
-  "qid": "Q161829",
-  "es": "Aptenodytes forsteri",
-  "fr": "Manchot empereur"
- },
- "Bald eagle": {
-  "qid": "Q127216",
-  "es": "Haliaeetus leucocephalus",
-  "fr": "Pygargue à tête blanche"
+ "Mars": {
+  "qid": "Q111",
+  "es": "Marte (planeta)",
+  "fr": "Mars (planète)"
  },
  "Earth": {
   "qid": "Q2",
   "es": "Tierra",
   "fr": "Terre"
  },
- "Mars": {
-  "qid": "Q111",
-  "es": "Marte (planeta)",
-  "fr": "Mars (planète)"
+ "Mercury (planet)": {
+  "qid": "Q308",
+  "es": "Mercurio (planeta)",
+  "fr": "Mercure (planète)"
  },
  "Venus": {
   "qid": "Q313",
   "es": "Venus (planeta)",
   "fr": "Vénus (planète)"
  },
- "Jupiter": {
-  "qid": "Q319",
-  "es": "Júpiter (planeta)",
-  "fr": "Jupiter (planète)"
+ "Pluto": {
+  "qid": "Q339",
+  "es": "Plutón (planeta enano)",
+  "fr": "Pluton (planète naine)"
  },
  "Moon": {
   "qid": "Q405",
   "es": "Luna",
   "fr": "Lune"
  },
- "Pluto": {
-  "qid": "Q339",
-  "es": "Plutón (planeta enano)",
-  "fr": "Pluton (planète naine)"
+ "Uranus": {
+  "qid": "Q324",
+  "es": "Urano (planeta)",
+  "fr": "Uranus (planète)"
  },
- "Haumea": {
-  "qid": "Q601",
-  "es": "Haumea (planeta enano)",
-  "fr": "(136108) Hauméa"
+ "Eris (dwarf planet)": {
+  "qid": "Q611",
+  "es": "Eris (planeta enano)",
+  "fr": "(136199) Éris"
  },
- "Makemake": {
-  "qid": "Q604",
-  "es": "Makemake (planeta enano)",
-  "fr": "(136472) Makémaké"
- },
- "Mercury (planet)": {
-  "qid": "Q308",
-  "es": "Mercurio (planeta)",
-  "fr": "Mercure (planète)"
+ "Heart": {
+  "qid": "Q1072",
+  "es": "Corazón",
+  "fr": "Cœur"
  },
  "Saturn": {
   "qid": "Q193",
   "es": "Saturno (planeta)",
   "fr": "Saturne (planète)"
  },
- "Enceladus": {
-  "qid": "Q3303",
-  "es": "Encélado (satélite)",
-  "fr": "Encelade (lune)"
+ "Titan (moon)": {
+  "qid": "Q2565",
+  "es": "Titán (satélite)",
+  "fr": "Titan (lune)"
+ },
+ "Neptune": {
+  "qid": "Q332",
+  "es": "Neptuno (planeta)",
+  "fr": "Neptune (planète)"
+ },
+ "Jupiter": {
+  "qid": "Q319",
+  "es": "Júpiter (planeta)",
+  "fr": "Jupiter (planète)"
+ },
+ "Brain": {
+  "qid": "Q1073",
+  "es": "Cerebro",
+  "fr": "Cerveau"
+ },
+ "Lung": {
+  "qid": "Q7886",
+  "es": "Pulmón",
+  "fr": "Poumon"
+ },
+ "Io (moon)": {
+  "qid": "Q3123",
+  "es": "Ío (satélite)",
+  "fr": "Io (lune)"
+ },
+ "Callisto (moon)": {
+  "qid": "Q3134",
+  "es": "Calisto (satélite)",
+  "fr": "Callisto (lune)"
  },
  "Triton (moon)": {
   "qid": "Q3359",
@@ -1174,40 +1234,55 @@
   "es": "Caronte (satélite)",
   "fr": "Charon (lune)"
  },
- "Uranus": {
-  "qid": "Q324",
-  "es": "Urano (planeta)",
-  "fr": "Uranus (planète)"
- },
- "Neptune": {
-  "qid": "Q332",
-  "es": "Neptuno (planeta)",
-  "fr": "Neptune (planète)"
- },
- "Sun": {
-  "qid": "Q525",
-  "es": "Sol",
-  "fr": "Soleil"
- },
- "Ceres (dwarf planet)": {
-  "qid": "Q596",
-  "es": "Ceres (planeta enano)",
-  "fr": "(1) Cérès"
- },
  "Phobos (moon)": {
   "qid": "Q7547",
   "es": "Fobos (satélite)",
   "fr": "Phobos (lune)"
  },
- "Lung": {
-  "qid": "Q7886",
-  "es": "Pulmón",
-  "fr": "Poumon"
+ "Wolverine": {
+  "qid": "Q14334",
+  "es": "Gulo gulo",
+  "fr": "Gulo gulo"
+ },
+ "Spleen": {
+  "qid": "Q9371",
+  "es": "Bazo",
+  "fr": "Rate"
+ },
+ "Small intestine": {
+  "qid": "Q11090",
+  "es": "Intestino delgado",
+  "fr": "Intestin grêle"
+ },
+ "Axolotl": {
+  "qid": "Q22718",
+  "es": "Ambystoma mexicanum",
+  "fr": "Axolotl"
+ },
+ "Clavicle": {
+  "qid": "Q16343",
+  "es": "Clavícula",
+  "fr": "Clavicule"
  },
  "Sternum": {
   "qid": "Q8481",
   "es": "Esternón",
   "fr": "Sternum"
+ },
+ "Ganymede (moon)": {
+  "qid": "Q3169",
+  "es": "Ganímedes (satélite)",
+  "fr": "Ganymède (lune)"
+ },
+ "Enceladus": {
+  "qid": "Q3303",
+  "es": "Encélado (satélite)",
+  "fr": "Encelade (lune)"
+ },
+ "Europa (moon)": {
+  "qid": "Q3143",
+  "es": "Europa (satélite)",
+  "fr": "Europe (lune)"
  },
  "Liver": {
   "qid": "Q9368",
@@ -1219,50 +1294,50 @@
   "es": "Intestino grueso",
   "fr": "Gros intestin"
  },
- "Small intestine": {
-  "qid": "Q11090",
-  "es": "Intestino delgado",
-  "fr": "Intestin grêle"
+ "Arctic fox": {
+  "qid": "Q82738",
+  "es": "Vulpes lagopus",
+  "fr": "Renard polaire"
  },
- "Wolverine": {
-  "qid": "Q14334",
-  "es": "Gulo gulo",
-  "fr": "Gulo gulo"
+ "Sea otter": {
+  "qid": "Q41407",
+  "es": "Enhydra lutris",
+  "fr": "Enhydra lutris"
  },
- "Clavicle": {
-  "qid": "Q16343",
-  "es": "Clavícula",
-  "fr": "Clavicule"
+ "Human skull": {
+  "qid": "Q9604",
+  "es": "Cabeza ósea",
+  "fr": "Crâne (anatomie humaine)"
  },
- "Axolotl": {
-  "qid": "Q22718",
-  "es": "Ambystoma mexicanum",
-  "fr": "Axolotl"
+ "Pancreas": {
+  "qid": "Q9618",
+  "es": "Páncreas",
+  "fr": "Pancréas"
  },
- "Snow leopard": {
-  "qid": "Q30197",
-  "es": "Panthera uncia",
-  "fr": "Panthère des neiges"
+ "Sun": {
+  "qid": "Q525",
+  "es": "Sol",
+  "fr": "Soleil"
  },
- "Ganymede (moon)": {
-  "qid": "Q3169",
-  "es": "Ganímedes (satélite)",
-  "fr": "Ganymède (lune)"
+ "Ceres (dwarf planet)": {
+  "qid": "Q596",
+  "es": "Ceres (planeta enano)",
+  "fr": "(1) Cérès"
  },
- "Humerus": {
-  "qid": "Q162595",
-  "es": "Húmero",
-  "fr": "Humérus"
+ "Haumea": {
+  "qid": "Q601",
+  "es": "Haumea (planeta enano)",
+  "fr": "(136108) Hauméa"
  },
- "Bombardier beetle": {
-  "qid": "Q15221944",
-  "es": null,
-  "fr": "Coléoptère bombardier"
+ "Makemake": {
+  "qid": "Q604",
+  "es": "Makemake (planeta enano)",
+  "fr": "(136472) Makémaké"
  },
- "Electric eel": {
-  "qid": "Q18926800",
-  "es": "Electrophorus",
-  "fr": "Electrophorus"
+ "Leatherback sea turtle": {
+  "qid": "Q120043",
+  "es": "Dermochelys coriacea",
+  "fr": "Tortue luth"
  },
  "Mantis shrimp": {
   "qid": "Q334855",
@@ -1273,6 +1348,56 @@
   "qid": "Q472616",
   "es": "Amphiprioninae",
   "fr": "Poisson-clown"
+ },
+ "Snow leopard": {
+  "qid": "Q30197",
+  "es": "Panthera uncia",
+  "fr": "Panthère des neiges"
+ },
+ "Capybara": {
+  "qid": "Q131538",
+  "es": "Hydrochoerus hydrochaeris",
+  "fr": "Hydrochoerus hydrochaeris"
+ },
+ "Common vampire bat": {
+  "qid": "Q300981",
+  "es": "Desmodus rotundus",
+  "fr": "Desmodus rotundus"
+ },
+ "Giant oceanic manta ray": {
+  "qid": "Q321976",
+  "es": "Mobula birostris",
+  "fr": "Raie manta océanique"
+ },
+ "Mimic octopus": {
+  "qid": "Q132999",
+  "es": "Thaumoctopus mimicus",
+  "fr": "Pieuvre mimétique"
+ },
+ "Brown-throated sloth": {
+  "qid": "Q148752",
+  "es": "Bradypus variegatus",
+  "fr": "Paresseux à gorge brune"
+ },
+ "Narwhal": {
+  "qid": "Q159426",
+  "es": "Monodon monoceros",
+  "fr": "Narval"
+ },
+ "Humerus": {
+  "qid": "Q162595",
+  "es": "Húmero",
+  "fr": "Humérus"
+ },
+ "Kidney": {
+  "qid": "Q112107043",
+  "es": null,
+  "fr": null
+ },
+ "Barn owl": {
+  "qid": "Q131528250",
+  "es": null,
+  "fr": null
  },
  "Bornean orangutan": {
   "qid": "Q599672",
@@ -1304,165 +1429,90 @@
   "es": "Pan troglodytes",
   "fr": "Pan troglodytes"
  },
- "Spleen": {
-  "qid": "Q9371",
-  "es": "Bazo",
-  "fr": "Rate"
- },
- "Human skull": {
-  "qid": "Q9604",
-  "es": "Cabeza ósea",
-  "fr": "Crâne (anatomie humaine)"
- },
- "Pancreas": {
-  "qid": "Q9618",
-  "es": "Páncreas",
-  "fr": "Pancréas"
- },
- "Common vampire bat": {
-  "qid": "Q300981",
-  "es": "Desmodus rotundus",
-  "fr": "Desmodus rotundus"
- },
- "Giant oceanic manta ray": {
-  "qid": "Q321976",
-  "es": "Mobula birostris",
-  "fr": "Raie manta océanique"
- },
- "Mimic octopus": {
-  "qid": "Q132999",
-  "es": "Thaumoctopus mimicus",
-  "fr": "Pieuvre mimétique"
- },
- "Brown-throated sloth": {
-  "qid": "Q148752",
-  "es": "Bradypus variegatus",
-  "fr": "Paresseux à gorge brune"
- },
- "Narwhal": {
-  "qid": "Q159426",
-  "es": "Monodon monoceros",
-  "fr": "Narval"
- },
- "Arctic fox": {
-  "qid": "Q82738",
-  "es": "Vulpes lagopus",
-  "fr": "Renard polaire"
- },
- "Leatherback sea turtle": {
-  "qid": "Q120043",
-  "es": "Dermochelys coriacea",
-  "fr": "Tortue luth"
- },
- "Capybara": {
-  "qid": "Q131538",
-  "es": "Hydrochoerus hydrochaeris",
-  "fr": "Hydrochoerus hydrochaeris"
- },
- "Sea otter": {
-  "qid": "Q41407",
-  "es": "Enhydra lutris",
-  "fr": "Enhydra lutris"
- },
- "Kidney": {
-  "qid": "Q112107043",
+ "Bombardier beetle": {
+  "qid": "Q15221944",
   "es": null,
-  "fr": null
+  "fr": "Coléoptère bombardier"
  },
- "Barn owl": {
-  "qid": "Q131528250",
-  "es": null,
-  "fr": null
- },
- "Eris (dwarf planet)": {
-  "qid": "Q611",
-  "es": "Eris (planeta enano)",
-  "fr": "(136199) Éris"
- },
- "Heart": {
-  "qid": "Q1072",
-  "es": "Corazón",
-  "fr": "Cœur"
- },
- "Brain": {
-  "qid": "Q1073",
-  "es": "Cerebro",
-  "fr": "Cerveau"
- },
- "Titan (moon)": {
-  "qid": "Q2565",
-  "es": "Titán (satélite)",
-  "fr": "Titan (lune)"
- },
- "Io (moon)": {
-  "qid": "Q3123",
-  "es": "Ío (satélite)",
-  "fr": "Io (lune)"
- },
- "Callisto (moon)": {
-  "qid": "Q3134",
-  "es": "Calisto (satélite)",
-  "fr": "Callisto (lune)"
- },
- "Europa (moon)": {
-  "qid": "Q3143",
-  "es": "Europa (satélite)",
-  "fr": "Europe (lune)"
+ "Electric eel": {
+  "qid": "Q18926800",
+  "es": "Electrophorus",
+  "fr": "Electrophorus"
  },
  "Hydrogen": {
   "qid": "Q556",
   "es": "Hidrógeno",
   "fr": "Hydrogène"
  },
- "Helium": {
-  "qid": "Q560",
-  "es": "Helio",
-  "fr": "Hélium"
+ "Beryllium": {
+  "qid": "Q569",
+  "es": "Berilio",
+  "fr": "Béryllium"
  },
- "Silicon": {
-  "qid": "Q670",
-  "es": "Silicio",
-  "fr": "Silicium"
+ "Nitrogen": {
+  "qid": "Q627",
+  "es": "Nitrógeno",
+  "fr": "Azote"
  },
  "Lithium": {
   "qid": "Q568",
   "es": "Litio",
   "fr": "Lithium"
  },
- "Potassium": {
-  "qid": "Q703",
-  "es": "Potasio",
-  "fr": "Potassium"
+ "Carbon": {
+  "qid": "Q623",
+  "es": "Carbono",
+  "fr": "Carbone"
  },
- "Fluorine": {
-  "qid": "Q650",
-  "es": "Flúor",
-  "fr": "Fluor"
+ "Oxygen": {
+  "qid": "Q629",
+  "es": "Oxígeno",
+  "fr": "Oxygène"
+ },
+ "Boron": {
+  "qid": "Q618",
+  "es": "Boro",
+  "fr": "Bore"
  },
  "Neon": {
   "qid": "Q654",
   "es": "Neón",
   "fr": "Néon"
  },
- "Sodium": {
-  "qid": "Q658",
-  "es": "Sodio",
-  "fr": "Sodium"
+ "Helium": {
+  "qid": "Q560",
+  "es": "Helio",
+  "fr": "Hélium"
  },
- "Aluminium": {
-  "qid": "Q663",
-  "es": "Aluminio",
-  "fr": "Aluminium"
+ "Fluorine": {
+  "qid": "Q650",
+  "es": "Flúor",
+  "fr": "Fluor"
  },
  "Magnesium": {
   "qid": "Q660",
   "es": "Magnesio",
   "fr": "Magnésium"
  },
+ "Aluminium": {
+  "qid": "Q663",
+  "es": "Aluminio",
+  "fr": "Aluminium"
+ },
  "Phosphorus": {
   "qid": "Q674",
   "es": "Fósforo",
   "fr": "Phosphore"
+ },
+ "Sodium": {
+  "qid": "Q658",
+  "es": "Sodio",
+  "fr": "Sodium"
+ },
+ "Silicon": {
+  "qid": "Q670",
+  "es": "Silicio",
+  "fr": "Silicium"
  },
  "Iron": {
   "qid": "Q677",
@@ -1474,190 +1524,30 @@
   "es": "Azufre",
   "fr": "Soufre"
  },
- "Chlorine": {
-  "qid": "Q688",
-  "es": "Cloro",
-  "fr": "Chlore"
- },
- "Argon": {
-  "qid": "Q696",
-  "es": "Argón",
-  "fr": "Argon"
- },
- "Beryllium": {
-  "qid": "Q569",
-  "es": "Berilio",
-  "fr": "Béryllium"
- },
- "Boron": {
-  "qid": "Q618",
-  "es": "Boro",
-  "fr": "Bore"
- },
- "Carbon": {
-  "qid": "Q623",
-  "es": "Carbono",
-  "fr": "Carbone"
- },
- "Nitrogen": {
-  "qid": "Q627",
-  "es": "Nitrógeno",
-  "fr": "Azote"
- },
- "Oxygen": {
-  "qid": "Q629",
-  "es": "Oxígeno",
-  "fr": "Oxygène"
- },
- "Yttrium": {
-  "qid": "Q941",
-  "es": "Itrio",
-  "fr": "Yttrium"
- },
- "Zirconium": {
-  "qid": "Q1038",
-  "es": "Circonio",
-  "fr": "Zirconium"
- },
- "Niobium": {
-  "qid": "Q1046",
-  "es": "Niobio",
-  "fr": "Niobium"
- },
- "Technetium": {
-  "qid": "Q1054",
-  "es": "Tecnecio",
-  "fr": "Technétium"
- },
- "Molybdenum": {
-  "qid": "Q1053",
-  "es": "Molibdeno",
-  "fr": "Molybdène"
- },
- "Ruthenium": {
-  "qid": "Q1086",
-  "es": "Rutenio",
-  "fr": "Ruthénium"
- },
- "Rhodium": {
-  "qid": "Q1087",
-  "es": "Rodio",
-  "fr": "Rhodium"
- },
- "Femur": {
-  "qid": "Q176503",
-  "es": "Fémur",
-  "fr": "Fémur"
- },
- "Tibia": {
-  "qid": "Q178366",
-  "es": "Tibia",
-  "fr": "Tibia"
- },
- "Iodine": {
-  "qid": "Q1103",
-  "es": "Yodo",
-  "fr": "Iode"
- },
- "Tellurium": {
-  "qid": "Q1100",
-  "es": "Telurio",
-  "fr": "Tellure"
- },
- "Xenon": {
-  "qid": "Q1106",
-  "es": "Xenón",
-  "fr": "Xénon"
- },
- "Radius (bone)": {
-  "qid": "Q178492",
-  "es": "Radio (hueso)",
-  "fr": "Radius (os)"
- },
- "Ulna": {
-  "qid": "Q199507",
-  "es": "Cúbito",
-  "fr": "Ulna"
- },
- "Fibula": {
-  "qid": "Q302896",
-  "es": "Peroné",
-  "fr": "Fibula"
- },
- "Pelvis": {
-  "qid": "Q713102",
-  "es": "Pelvis",
-  "fr": "Bassin osseux"
- },
- "Arsenic": {
-  "qid": "Q871",
-  "es": "Arsénico",
-  "fr": "Arsenic"
- },
- "Bromine": {
-  "qid": "Q879",
-  "es": "Bromo",
-  "fr": "Brome"
- },
- "Selenium": {
-  "qid": "Q876",
-  "es": "Selenio",
-  "fr": "Sélénium"
- },
- "Krypton": {
-  "qid": "Q888",
-  "es": "Kriptón",
-  "fr": "Krypton"
- },
- "Rubidium": {
-  "qid": "Q895",
-  "es": "Rubidio",
-  "fr": "Rubidium"
- },
- "Strontium": {
-  "qid": "Q938",
-  "es": "Estroncio",
-  "fr": "Strontium"
- },
- "Silver": {
-  "qid": "Q1090",
-  "es": "Plata",
-  "fr": "Argent"
- },
- "Cadmium": {
-  "qid": "Q1091",
-  "es": "Cadmio",
-  "fr": "Cadmium"
- },
- "Palladium": {
-  "qid": "Q1089",
-  "es": "Paladio",
-  "fr": "Palladium"
- },
- "Indium": {
-  "qid": "Q1094",
-  "es": "Indio (elemento)",
-  "fr": "Indium"
- },
- "Antimony": {
-  "qid": "Q1099",
-  "es": "Antimonio",
-  "fr": "Antimoine"
- },
- "Tin": {
-  "qid": "Q1096",
-  "es": "Estaño",
-  "fr": "Étain"
+ "Scandium": {
+  "qid": "Q713",
+  "es": "Escandio",
+  "fr": "Scandium"
  },
  "Calcium": {
   "qid": "Q706",
   "es": "Calcio",
   "fr": "Calcium"
  },
- "Scandium": {
-  "qid": "Q713",
-  "es": "Escandio",
-  "fr": "Scandium"
+ "Potassium": {
+  "qid": "Q703",
+  "es": "Potasio",
+  "fr": "Potassium"
+ },
+ "Argon": {
+  "qid": "Q696",
+  "es": "Argón",
+  "fr": "Argon"
+ },
+ "Chlorine": {
+  "qid": "Q688",
+  "es": "Cloro",
+  "fr": "Chlore"
  },
  "Titanium": {
   "qid": "Q716",
@@ -1674,65 +1564,230 @@
   "es": "Cromo",
   "fr": "Chrome"
  },
- "Manganese": {
-  "qid": "Q731",
-  "es": "Manganeso",
-  "fr": "Manganèse"
- },
  "Cobalt": {
   "qid": "Q740",
   "es": "Cobalto",
   "fr": "Cobalt"
- },
- "Nickel": {
-  "qid": "Q744",
-  "es": "Níquel",
-  "fr": "Nickel"
  },
  "Copper": {
   "qid": "Q753",
   "es": "Cobre",
   "fr": "Cuivre"
  },
+ "Nickel": {
+  "qid": "Q744",
+  "es": "Níquel",
+  "fr": "Nickel"
+ },
+ "Manganese": {
+  "qid": "Q731",
+  "es": "Manganeso",
+  "fr": "Manganèse"
+ },
  "Zinc": {
   "qid": "Q758",
   "es": "Zinc",
   "fr": "Zinc"
- },
- "Gallium": {
-  "qid": "Q861",
-  "es": "Galio",
-  "fr": "Gallium"
  },
  "Germanium": {
   "qid": "Q867",
   "es": "Germanio",
   "fr": "Germanium"
  },
- "Francium": {
-  "qid": "Q671",
-  "es": "Francio",
-  "fr": "Francium"
+ "Gallium": {
+  "qid": "Q861",
+  "es": "Galio",
+  "fr": "Gallium"
+ },
+ "Arsenic": {
+  "qid": "Q871",
+  "es": "Arsénico",
+  "fr": "Arsenic"
+ },
+ "Selenium": {
+  "qid": "Q876",
+  "es": "Selenio",
+  "fr": "Sélénium"
+ },
+ "Rubidium": {
+  "qid": "Q895",
+  "es": "Rubidio",
+  "fr": "Rubidium"
+ },
+ "Bromine": {
+  "qid": "Q879",
+  "es": "Bromo",
+  "fr": "Brome"
+ },
+ "Strontium": {
+  "qid": "Q938",
+  "es": "Estroncio",
+  "fr": "Strontium"
+ },
+ "Zirconium": {
+  "qid": "Q1038",
+  "es": "Circonio",
+  "fr": "Zirconium"
+ },
+ "Yttrium": {
+  "qid": "Q941",
+  "es": "Itrio",
+  "fr": "Yttrium"
+ },
+ "Niobium": {
+  "qid": "Q1046",
+  "es": "Niobio",
+  "fr": "Niobium"
+ },
+ "Technetium": {
+  "qid": "Q1054",
+  "es": "Tecnecio",
+  "fr": "Technétium"
+ },
+ "Ruthenium": {
+  "qid": "Q1086",
+  "es": "Rutenio",
+  "fr": "Ruthénium"
+ },
+ "Rhodium": {
+  "qid": "Q1087",
+  "es": "Rodio",
+  "fr": "Rhodium"
+ },
+ "Molybdenum": {
+  "qid": "Q1053",
+  "es": "Molibdeno",
+  "fr": "Molybdène"
+ },
+ "Palladium": {
+  "qid": "Q1089",
+  "es": "Paladio",
+  "fr": "Palladium"
+ },
+ "Silver": {
+  "qid": "Q1090",
+  "es": "Plata",
+  "fr": "Argent"
+ },
+ "Cadmium": {
+  "qid": "Q1091",
+  "es": "Cadmio",
+  "fr": "Cadmium"
+ },
+ "Tin": {
+  "qid": "Q1096",
+  "es": "Estaño",
+  "fr": "Étain"
+ },
+ "Indium": {
+  "qid": "Q1094",
+  "es": "Indio (elemento)",
+  "fr": "Indium"
+ },
+ "Krypton": {
+  "qid": "Q888",
+  "es": "Kriptón",
+  "fr": "Krypton"
+ },
+ "Tellurium": {
+  "qid": "Q1100",
+  "es": "Telurio",
+  "fr": "Tellure"
+ },
+ "Antimony": {
+  "qid": "Q1099",
+  "es": "Antimonio",
+  "fr": "Antimoine"
+ },
+ "Iodine": {
+  "qid": "Q1103",
+  "es": "Yodo",
+  "fr": "Iode"
+ },
+ "Xenon": {
+  "qid": "Q1106",
+  "es": "Xenón",
+  "fr": "Xénon"
+ },
+ "Femur": {
+  "qid": "Q176503",
+  "es": "Fémur",
+  "fr": "Fémur"
+ },
+ "Tibia": {
+  "qid": "Q178366",
+  "es": "Tibia",
+  "fr": "Tibia"
+ },
+ "Fibula": {
+  "qid": "Q302896",
+  "es": "Peroné",
+  "fr": "Fibula"
+ },
+ "Pelvis": {
+  "qid": "Q713102",
+  "es": "Pelvis",
+  "fr": "Bassin osseux"
+ },
+ "Radius (bone)": {
+  "qid": "Q178492",
+  "es": "Radio (hueso)",
+  "fr": "Radius (os)"
+ },
+ "Ulna": {
+  "qid": "Q199507",
+  "es": "Cúbito",
+  "fr": "Ulna"
  },
  "Lead": {
   "qid": "Q708",
   "es": "Plomo",
   "fr": "Plomb"
  },
+ "Francium": {
+  "qid": "Q671",
+  "es": "Francio",
+  "fr": "Francium"
+ },
  "Rhenium": {
   "qid": "Q737",
   "es": "Renio",
   "fr": "Rhénium"
  },
- "Neptunium": {
-  "qid": "Q1105",
-  "es": "Neptunio",
-  "fr": "Neptunium"
+ "Tungsten": {
+  "qid": "Q743",
+  "es": "Wolframio",
+  "fr": "Tungstène"
  },
- "Caesium": {
-  "qid": "Q1108",
-  "es": "Cesio",
-  "fr": "Césium"
+ "Iridium": {
+  "qid": "Q877",
+  "es": "Iridio",
+  "fr": "Iridium"
+ },
+ "Platinum": {
+  "qid": "Q880",
+  "es": "Platino",
+  "fr": "Platine"
+ },
+ "Osmium": {
+  "qid": "Q751",
+  "es": "Osmio",
+  "fr": "Osmium"
+ },
+ "Gold": {
+  "qid": "Q897",
+  "es": "Oro",
+  "fr": "Or"
+ },
+ "Radium": {
+  "qid": "Q1128",
+  "es": "Radio (elemento)",
+  "fr": "Radium"
+ },
+ "Mercury_(element)": {
+  "qid": "Q925",
+  "es": "Mercurio (elemento)",
+  "fr": "Mercure (chimie)"
  },
  "Thallium": {
   "qid": "Q932",
@@ -1764,6 +1819,51 @@
   "es": "Plutonio",
   "fr": "Plutonium"
  },
+ "Neptunium": {
+  "qid": "Q1105",
+  "es": "Neptunio",
+  "fr": "Neptunium"
+ },
+ "Caesium": {
+  "qid": "Q1108",
+  "es": "Cesio",
+  "fr": "Césium"
+ },
+ "Radon": {
+  "qid": "Q1133",
+  "es": "Radón",
+  "fr": "Radon"
+ },
+ "Rutherfordium": {
+  "qid": "Q1226",
+  "es": "Rutherfordio",
+  "fr": "Rutherfordium"
+ },
+ "Seaborgium": {
+  "qid": "Q1234",
+  "es": "Seaborgio",
+  "fr": "Seaborgium"
+ },
+ "Dubnium": {
+  "qid": "Q1232",
+  "es": "Dubnio",
+  "fr": "Dubnium"
+ },
+ "Bohrium": {
+  "qid": "Q1249",
+  "es": "Bohrio",
+  "fr": "Bohrium"
+ },
+ "Hassium": {
+  "qid": "Q1252",
+  "es": "Hasio",
+  "fr": "Hassium"
+ },
+ "Meitnerium": {
+  "qid": "Q1258",
+  "es": "Meitnerio",
+  "fr": "Meitnérium"
+ },
  "Protactinium": {
   "qid": "Q1109",
   "es": "Protactinio",
@@ -1793,11 +1893,6 @@
   "qid": "Q1121",
   "es": "Actinio",
   "fr": "Actinium"
- },
- "Meitnerium": {
-  "qid": "Q1258",
-  "es": "Meitnerio",
-  "fr": "Meitnérium"
  },
  "Darmstadtium": {
   "qid": "Q1266",
@@ -1834,146 +1929,6 @@
   "es": "Cerio",
   "fr": "Cérium"
  },
- "Thulium": {
-  "qid": "Q1853",
-  "es": "Tulio",
-  "fr": "Thulium"
- },
- "Radium": {
-  "qid": "Q1128",
-  "es": "Radio (elemento)",
-  "fr": "Radium"
- },
- "Radon": {
-  "qid": "Q1133",
-  "es": "Radón",
-  "fr": "Radon"
- },
- "Rutherfordium": {
-  "qid": "Q1226",
-  "es": "Rutherfordio",
-  "fr": "Rutherfordium"
- },
- "Seaborgium": {
-  "qid": "Q1234",
-  "es": "Seaborgio",
-  "fr": "Seaborgium"
- },
- "Dubnium": {
-  "qid": "Q1232",
-  "es": "Dubnio",
-  "fr": "Dubnium"
- },
- "Bohrium": {
-  "qid": "Q1249",
-  "es": "Bohrio",
-  "fr": "Bohrium"
- },
- "Hassium": {
-  "qid": "Q1252",
-  "es": "Hasio",
-  "fr": "Hassium"
- },
- "Ytterbium": {
-  "qid": "Q1855",
-  "es": "Iterbio",
-  "fr": "Ytterbium"
- },
- "Lutetium": {
-  "qid": "Q1857",
-  "es": "Lutecio",
-  "fr": "Lutécium"
- },
- "Einsteinium": {
-  "qid": "Q1892",
-  "es": "Einstenio",
-  "fr": "Einsteinium"
- },
- "Fermium": {
-  "qid": "Q1896",
-  "es": "Fermio",
-  "fr": "Fermium"
- },
- "Mendelevium": {
-  "qid": "Q1898",
-  "es": "Mendelevio",
-  "fr": "Mendélévium"
- },
- "Nobelium": {
-  "qid": "Q1901",
-  "es": "Nobelio",
-  "fr": "Nobélium"
- },
- "Lawrencium": {
-  "qid": "Q1905",
-  "es": "Lawrencio",
-  "fr": "Lawrencium"
- },
- "Tungsten": {
-  "qid": "Q743",
-  "es": "Wolframio",
-  "fr": "Tungstène"
- },
- "Osmium": {
-  "qid": "Q751",
-  "es": "Osmio",
-  "fr": "Osmium"
- },
- "Iridium": {
-  "qid": "Q877",
-  "es": "Iridio",
-  "fr": "Iridium"
- },
- "Platinum": {
-  "qid": "Q880",
-  "es": "Platino",
-  "fr": "Platine"
- },
- "Gold": {
-  "qid": "Q897",
-  "es": "Oro",
-  "fr": "Or"
- },
- "Mercury_(element)": {
-  "qid": "Q925",
-  "es": "Mercurio (elemento)",
-  "fr": "Mercure (chimie)"
- },
- "Americium": {
-  "qid": "Q1872",
-  "es": "Americio",
-  "fr": "Américium"
- },
- "Curium": {
-  "qid": "Q1876",
-  "es": "Curio",
-  "fr": "Curium"
- },
- "Berkelium": {
-  "qid": "Q1882",
-  "es": "Berkelio",
-  "fr": "Berkélium"
- },
- "Californium": {
-  "qid": "Q1888",
-  "es": "Californio",
-  "fr": "Californium"
- },
- "Dysprosium": {
-  "qid": "Q1843",
-  "es": "Disprosio",
-  "fr": "Dysprosium"
- },
- "Holmium": {
-  "qid": "Q1846",
-  "es": "Holmio",
-  "fr": "Holmium"
- },
- "Erbium": {
-  "qid": "Q1849",
-  "es": "Erbio",
-  "fr": "Erbium"
- },
  "Neodymium": {
   "qid": "Q1388",
   "es": "Neodimio",
@@ -2009,35 +1964,110 @@
   "es": "Terbio",
   "fr": "Terbium"
  },
- "Livermorium": {
-  "qid": "Q1304",
-  "es": "Livermorio",
-  "fr": "Livermorium"
+ "Dysprosium": {
+  "qid": "Q1843",
+  "es": "Disprosio",
+  "fr": "Dysprosium"
+ },
+ "Berkelium": {
+  "qid": "Q1882",
+  "es": "Berkelio",
+  "fr": "Berkélium"
+ },
+ "Californium": {
+  "qid": "Q1888",
+  "es": "Californio",
+  "fr": "Californium"
+ },
+ "Einsteinium": {
+  "qid": "Q1892",
+  "es": "Einstenio",
+  "fr": "Einsteinium"
+ },
+ "Mendelevium": {
+  "qid": "Q1898",
+  "es": "Mendelevio",
+  "fr": "Mendélévium"
+ },
+ "Fermium": {
+  "qid": "Q1896",
+  "es": "Fermio",
+  "fr": "Fermium"
+ },
+ "Nobelium": {
+  "qid": "Q1901",
+  "es": "Nobelio",
+  "fr": "Nobélium"
+ },
+ "Lawrencium": {
+  "qid": "Q1905",
+  "es": "Lawrencio",
+  "fr": "Lawrencium"
+ },
+ "Holmium": {
+  "qid": "Q1846",
+  "es": "Holmio",
+  "fr": "Holmium"
+ },
+ "Erbium": {
+  "qid": "Q1849",
+  "es": "Erbio",
+  "fr": "Erbium"
+ },
+ "Ytterbium": {
+  "qid": "Q1855",
+  "es": "Iterbio",
+  "fr": "Ytterbium"
+ },
+ "Thulium": {
+  "qid": "Q1853",
+  "es": "Tulio",
+  "fr": "Thulium"
+ },
+ "Lutetium": {
+  "qid": "Q1857",
+  "es": "Lutecio",
+  "fr": "Lutécium"
+ },
+ "Americium": {
+  "qid": "Q1872",
+  "es": "Americio",
+  "fr": "Américium"
+ },
+ "Curium": {
+  "qid": "Q1876",
+  "es": "Curio",
+  "fr": "Curium"
  },
  "Moscovium": {
   "qid": "Q1303",
   "es": "Moscovio",
   "fr": "Moscovium"
  },
- "Oganesson": {
-  "qid": "Q1307",
-  "es": "Oganesón",
-  "fr": "Oganesson"
+ "Livermorium": {
+  "qid": "Q1304",
+  "es": "Livermorio",
+  "fr": "Livermorium"
  },
  "Tennessine": {
   "qid": "Q1306",
   "es": "Teneso",
   "fr": "Tennesse"
  },
- "Hubble_Space_Telescope": {
-  "qid": "Q2513",
-  "es": "Telescopio espacial Hubble",
-  "fr": "Hubble (télescope spatial)"
+ "Oganesson": {
+  "qid": "Q1307",
+  "es": "Oganesón",
+  "fr": "Oganesson"
  },
  "Cotton": {
   "qid": "Q11457",
   "es": "Algodón",
   "fr": "Coton"
+ },
+ "Hubble_Space_Telescope": {
+  "qid": "Q2513",
+  "es": "Telescopio espacial Hubble",
+  "fr": "Hubble (télescope spatial)"
  },
  "Mangrove": {
   "qid": "Q19756",
@@ -2049,30 +2079,35 @@
   "es": "Nelumbo nucifera",
   "fr": "Nelumbo nucifera"
  },
- "Rose": {
-  "qid": "Q34687",
-  "es": "Rosa",
-  "fr": "Rosier"
+ "Voyager_1": {
+  "qid": "Q48469",
+  "es": "Voyager 1",
+  "fr": "Voyager 1"
  },
- "Theobroma cacao": {
-  "qid": "Q42385",
-  "es": "Theobroma cacao",
-  "fr": "Cacaoyer"
+ "New_Horizons": {
+  "qid": "Q48461",
+  "es": "New Horizons",
+  "fr": "New Horizons"
  },
  "Coffea arabica": {
   "qid": "Q47685",
   "es": "Coffea arabica",
   "fr": "Coffea arabica"
  },
- "Voyager_1": {
-  "qid": "Q48469",
-  "es": "Voyager 1",
-  "fr": "Voyager 1"
+ "Apollo_11": {
+  "qid": "Q43653",
+  "es": "Apolo 11",
+  "fr": "Apollo 11"
  },
- "Fern": {
-  "qid": "Q80005",
-  "es": "Filicopsida",
-  "fr": "Filicophyta"
+ "Quercus robur": {
+  "qid": "Q165145",
+  "es": "Quercus robur",
+  "fr": "Chêne pédonculé"
+ },
+ "Cassini–Huygens": {
+  "qid": "Q165585",
+  "es": "Cassini-Huygens",
+  "fr": "Cassini-Huygens"
  },
  "Curiosity_(rover)": {
   "qid": "Q48485",
@@ -2089,40 +2124,60 @@
   "es": "Rosetta (sonda espacial)",
   "fr": "Rosetta (sonde spatiale)"
  },
- "New_Horizons": {
-  "qid": "Q48461",
-  "es": "New Horizons",
-  "fr": "New Horizons"
- },
- "Apollo_11": {
-  "qid": "Q43653",
-  "es": "Apolo 11",
-  "fr": "Apollo 11"
- },
- "Aloe vera": {
-  "qid": "Q80079",
-  "es": "Aloe vera",
-  "fr": "Aloe vera"
- },
- "Sputnik_1": {
-  "qid": "Q80811",
-  "es": "Sputnik 1",
-  "fr": "Spoutnik 1"
- },
- "Abu Simbel": {
-  "qid": "Q134140",
-  "es": "Abu Simbel",
-  "fr": "Temples d'Abou Simbel"
- },
- "Sequoiadendron giganteum": {
-  "qid": "Q149851",
-  "es": "Sequoiadendron giganteum",
-  "fr": "Séquoia géant"
- },
  "Adansonia digitata": {
   "qid": "Q158742",
   "es": "Adansonia digitata",
   "fr": "Baobab africain"
+ },
+ "Maize": {
+  "qid": "Q11575",
+  "es": "Zea mays",
+  "fr": "Zea mays"
+ },
+ "Giza pyramid complex": {
+  "qid": "Q12508",
+  "es": "Pirámides de Guiza",
+  "fr": "Pyramides de Gizeh"
+ },
+ "Theobroma cacao": {
+  "qid": "Q42385",
+  "es": "Theobroma cacao",
+  "fr": "Cacaoyer"
+ },
+ "Oryza sativa": {
+  "qid": "Q161426",
+  "es": "Oryza sativa",
+  "fr": "Oryza sativa"
+ },
+ "Rafflesia arnoldii": {
+  "qid": "Q161888",
+  "es": "Rafflesia arnoldii",
+  "fr": "Rafflesia arnoldii"
+ },
+ "Victoria amazonica": {
+  "qid": "Q162070",
+  "es": "Victoria amazonica",
+  "fr": "Victoria amazonica"
+ },
+ "Mariner_4": {
+  "qid": "Q203805",
+  "es": "Mariner 4",
+  "fr": "Mariner 4"
+ },
+ "Acer saccharum": {
+  "qid": "Q214733",
+  "es": "Acer saccharum",
+  "fr": "Érable à sucre"
+ },
+ "Nepenthes": {
+  "qid": "Q217530",
+  "es": "Nepenthes",
+  "fr": "Nepenthes"
+ },
+ "James_Webb_Space_Telescope": {
+  "qid": "Q186447",
+  "es": "Telescopio espacial James Webb",
+  "fr": "James Webb (télescope spatial)"
  },
  "Saguaro": {
   "qid": "Q275573",
@@ -2134,26 +2189,6 @@
   "es": "Magallanes (misión espacial)",
   "fr": "Magellan (sonde spatiale)"
  },
- "Chang'e_4": {
-  "qid": "Q723045",
-  "es": "Chang'e 4",
-  "fr": "Chang'e 4"
- },
- "Cherry blossom": {
-  "qid": "Q871991",
-  "es": "Sakura (cerezo)",
-  "fr": "Sakura"
- },
- "Bamboo": {
-  "qid": "Q670887",
-  "es": "Bambusoideae",
-  "fr": "Bambusoideae"
- },
- "Great Mosque of Djenné": {
-  "qid": "Q683632",
-  "es": "Gran Mezquita de Djenné",
-  "fr": "Grande mosquée de Djenné"
- },
  "Hayabusa2": {
   "qid": "Q2113134",
   "es": "Hayabusa 2",
@@ -2163,6 +2198,36 @@
   "qid": "Q2156739",
   "es": "Mars Orbiter Mission",
   "fr": "Mars Orbiter Mission"
+ },
+ "Common sunflower": {
+  "qid": "Q171497",
+  "es": "Helianthus annuus",
+  "fr": "Tournesol"
+ },
+ "Rose": {
+  "qid": "Q34687",
+  "es": "Rosa",
+  "fr": "Rosier"
+ },
+ "Fern": {
+  "qid": "Q80005",
+  "es": "Filicopsida",
+  "fr": "Filicophyta"
+ },
+ "Aloe vera": {
+  "qid": "Q80079",
+  "es": "Aloe vera",
+  "fr": "Aloe vera"
+ },
+ "Sputnik_1": {
+  "qid": "Q80811",
+  "es": "Sputnik 1",
+  "fr": "Spoutnik 1"
+ },
+ "Wheat": {
+  "qid": "Q15645384",
+  "es": "Trigo",
+  "fr": "Blé"
  },
  "Coconut": {
   "qid": "Q3342808",
@@ -2179,10 +2244,15 @@
   "es": null,
   "fr": "Welwitschia"
  },
- "Wheat": {
-  "qid": "Q15645384",
-  "es": "Trigo",
-  "fr": "Blé"
+ "Vostok_1": {
+  "qid": "Q182524",
+  "es": "Vostok 1",
+  "fr": "Vostok 1"
+ },
+ "MESSENGER": {
+  "qid": "Q182539",
+  "es": "MESSENGER",
+  "fr": "MESSENGER"
  },
  "Emirates_Mars_Mission": {
   "qid": "Q21027958",
@@ -2199,21 +2269,6 @@
   "es": "Chandrayaan-3",
   "fr": "Chandrayaan-3"
  },
- "Nepenthes": {
-  "qid": "Q217530",
-  "es": "Nepenthes",
-  "fr": "Nepenthes"
- },
- "Venera_7": {
-  "qid": "Q152800",
-  "es": "Venera 7",
-  "fr": "Venera 7"
- },
- "Venus flytrap": {
-  "qid": "Q155825",
-  "es": "Dionaea muscipula",
-  "fr": "Dionée attrape-mouche"
- },
  "Tulip": {
   "qid": "Q93201",
   "es": "Tulipa",
@@ -2229,20 +2284,45 @@
   "es": "Taraxacum officinale",
   "fr": "Taraxacum officinale"
  },
- "Rafflesia arnoldii": {
-  "qid": "Q161888",
-  "es": "Rafflesia arnoldii",
-  "fr": "Rafflesia arnoldii"
+ "Abu Simbel": {
+  "qid": "Q134140",
+  "es": "Abu Simbel",
+  "fr": "Temples d'Abou Simbel"
  },
- "Victoria amazonica": {
-  "qid": "Q162070",
-  "es": "Victoria amazonica",
-  "fr": "Victoria amazonica"
+ "Sequoiadendron giganteum": {
+  "qid": "Q149851",
+  "es": "Sequoiadendron giganteum",
+  "fr": "Séquoia géant"
  },
- "Oryza sativa": {
-  "qid": "Q161426",
-  "es": "Oryza sativa",
-  "fr": "Oryza sativa"
+ "Venera_7": {
+  "qid": "Q152800",
+  "es": "Venera 7",
+  "fr": "Venera 7"
+ },
+ "Venus flytrap": {
+  "qid": "Q155825",
+  "es": "Dionaea muscipula",
+  "fr": "Dionée attrape-mouche"
+ },
+ "Bamboo": {
+  "qid": "Q670887",
+  "es": "Bambusoideae",
+  "fr": "Bambusoideae"
+ },
+ "Great Mosque of Djenné": {
+  "qid": "Q683632",
+  "es": "Gran Mezquita de Djenné",
+  "fr": "Grande mosquée de Djenné"
+ },
+ "Chang'e_4": {
+  "qid": "Q723045",
+  "es": "Chang'e 4",
+  "fr": "Chang'e 4"
+ },
+ "Cherry blossom": {
+  "qid": "Q871991",
+  "es": "Sakura (cerezo)",
+  "fr": "Sakura"
  },
  "Parker_Solar_Probe": {
   "qid": "Q899091",
@@ -2259,65 +2339,15 @@
   "es": "Aceituna",
   "fr": "Olive"
  },
- "Quercus robur": {
-  "qid": "Q165145",
-  "es": "Quercus robur",
-  "fr": "Chêne pédonculé"
- },
- "Cassini–Huygens": {
-  "qid": "Q165585",
-  "es": "Cassini-Huygens",
-  "fr": "Cassini-Huygens"
- },
- "Common sunflower": {
-  "qid": "Q171497",
-  "es": "Helianthus annuus",
-  "fr": "Tournesol"
- },
- "Vostok_1": {
-  "qid": "Q182524",
-  "es": "Vostok 1",
-  "fr": "Vostok 1"
- },
- "MESSENGER": {
-  "qid": "Q182539",
-  "es": "MESSENGER",
-  "fr": "MESSENGER"
- },
- "James_Webb_Space_Telescope": {
-  "qid": "Q186447",
-  "es": "Telescopio espacial James Webb",
-  "fr": "James Webb (télescope spatial)"
- },
- "Mariner_4": {
-  "qid": "Q203805",
-  "es": "Mariner 4",
-  "fr": "Mariner 4"
- },
- "Acer saccharum": {
-  "qid": "Q214733",
-  "es": "Acer saccharum",
-  "fr": "Érable à sucre"
- },
- "Maize": {
-  "qid": "Q11575",
-  "es": "Zea mays",
-  "fr": "Zea mays"
- },
- "Giza pyramid complex": {
-  "qid": "Q12508",
-  "es": "Pirámides de Guiza",
-  "fr": "Pyramides de Gizeh"
+ "Mississippi River": {
+  "qid": "Q1497",
+  "es": "Río Misisipi",
+  "fr": "Mississippi (fleuve)"
  },
  "Eiffel Tower": {
   "qid": "Q243",
   "es": "Torre Eiffel",
   "fr": "Tour Eiffel"
- },
- "Mississippi River": {
-  "qid": "Q1497",
-  "es": "Río Misisipi",
-  "fr": "Mississippi (fleuve)"
  },
  "Nile": {
   "qid": "Q3392",
@@ -2329,35 +2359,35 @@
   "es": "Yangtsé",
   "fr": "Yangtsé"
  },
- "Neuschwanstein Castle": {
-  "qid": "Q4152",
-  "es": "Neuschwanstein",
-  "fr": "Château de Neuschwanstein"
- },
  "Amazon River": {
   "qid": "Q3783",
   "es": "Río Amazonas",
   "fr": "Amazone (fleuve)"
- },
- "Mount Kilimanjaro": {
-  "qid": "Q7296",
-  "es": "Kilimanjaro",
-  "fr": "Kilimandjaro"
  },
  "Chichen Itza": {
   "qid": "Q5859",
   "es": "Chichén Itzá",
   "fr": "Chichén Itzá"
  },
- "Petra": {
-  "qid": "Q5788",
-  "es": "Petra",
-  "fr": "Pétra"
+ "Neuschwanstein Castle": {
+  "qid": "Q4152",
+  "es": "Neuschwanstein",
+  "fr": "Château de Neuschwanstein"
  },
  "Panama Canal": {
   "qid": "Q7350",
   "es": "Canal de Panamá",
   "fr": "Canal de Panama"
+ },
+ "Petra": {
+  "qid": "Q5788",
+  "es": "Petra",
+  "fr": "Pétra"
+ },
+ "Mount Kilimanjaro": {
+  "qid": "Q7296",
+  "es": "Kilimanjaro",
+  "fr": "Kilimandjaro"
  },
  "Yellow River": {
   "qid": "Q7355",
@@ -2369,70 +2399,65 @@
   "es": "Taj Mahal",
   "fr": "Taj Mahal"
  },
- "Statue of Liberty": {
-  "qid": "Q9202",
-  "es": "Estatua de la Libertad",
-  "fr": "Statue de la Liberté"
+ "Moai": {
+  "qid": "Q20350",
+  "es": "Moái",
+  "fr": "Moaï"
  },
  "Great Wall of China": {
   "qid": "Q12501",
   "es": "Gran Muralla china",
   "fr": "Grande Muraille"
  },
- "Burj Khalifa": {
-  "qid": "Q12495",
-  "es": "Burj Khalifa",
-  "fr": "Burj Khalifa"
+ "Colosseum": {
+  "qid": "Q10285",
+  "es": "Coliseo",
+  "fr": "Colisée"
  },
  "Hagia Sophia": {
   "qid": "Q12506",
   "es": "Santa Sofía",
   "fr": "Sainte-Sophie (Constantinople)"
  },
- "Colosseum": {
-  "qid": "Q10285",
-  "es": "Coliseo",
-  "fr": "Colisée"
- },
  "Uluru": {
   "qid": "Q33910",
   "es": "Uluru",
   "fr": "Uluru/Ayers Rock"
  },
- "Iguazu Falls": {
-  "qid": "Q36332",
-  "es": "Cataratas del Iguazú",
-  "fr": "Chutes d'Iguazú"
- },
- "Leaning Tower of Pisa": {
-  "qid": "Q39054",
-  "es": "Torre de Pisa",
-  "fr": "Tour de Pise"
- },
- "Moai": {
-  "qid": "Q20350",
-  "es": "Moái",
-  "fr": "Moaï"
+ "Burj Khalifa": {
+  "qid": "Q12495",
+  "es": "Burj Khalifa",
+  "fr": "Burj Khalifa"
  },
  "Mont-Saint-Michel": {
   "qid": "Q20892",
   "es": "Monte Saint-Michel (comuna)",
   "fr": "Le Mont-Saint-Michel"
  },
- "Hassan II Mosque": {
-  "qid": "Q41346",
-  "es": "Mezquita Hassan II",
-  "fr": "Mosquée Hassan-II"
- },
- "Stonehenge": {
-  "qid": "Q39671",
-  "es": "Stonehenge",
-  "fr": "Stonehenge"
+ "Leaning Tower of Pisa": {
+  "qid": "Q39054",
+  "es": "Torre de Pisa",
+  "fr": "Tour de Pise"
  },
  "Mount Fuji": {
   "qid": "Q39231",
   "es": "Monte Fuji",
   "fr": "Mont Fuji"
+ },
+ "Iguazu Falls": {
+  "qid": "Q36332",
+  "es": "Cataratas del Iguazú",
+  "fr": "Chutes d'Iguazú"
+ },
+ "Statue of Liberty": {
+  "qid": "Q9202",
+  "es": "Estatua de la Libertad",
+  "fr": "Statue de la Liberté"
+ },
+ "Hassan II Mosque": {
+  "qid": "Q41346",
+  "es": "Mezquita Hassan II",
+  "fr": "Mosquée Hassan-II"
  },
  "Victoria Falls": {
   "qid": "Q43278",
@@ -2449,65 +2474,30 @@
   "es": "Borobudur",
   "fr": "Temple de Borobudur"
  },
- "Golden Gate Bridge": {
-  "qid": "Q44440",
-  "es": "Puente Golden Gate",
-  "fr": "Pont du Golden Gate"
- },
- "Forbidden City": {
-  "qid": "Q80290",
-  "es": "Ciudad Prohibida",
-  "fr": "Cité interdite"
- },
  "Sydney Opera House": {
   "qid": "Q45178",
   "es": "Ópera de Sídney",
   "fr": "Opéra de Sydney"
- },
- "Grand Canyon": {
-  "qid": "Q118841",
-  "es": "Gran Cañón",
-  "fr": "Grand Canyon"
  },
  "Alhambra": {
   "qid": "Q47476",
   "es": "Alhambra",
   "fr": "Alhambra (Grenade)"
  },
- "Persepolis": {
-  "qid": "Q129072",
-  "es": "Persépolis",
-  "fr": "Persépolis"
+ "Golden Gate Bridge": {
+  "qid": "Q44440",
+  "es": "Puente Golden Gate",
+  "fr": "Pont du Golden Gate"
  },
- "CN Tower": {
-  "qid": "Q134883",
-  "es": "CN Tower",
-  "fr": "Tour CN"
+ "Stonehenge": {
+  "qid": "Q39671",
+  "es": "Stonehenge",
+  "fr": "Stonehenge"
  },
- "Sagrada Família": {
-  "qid": "Q48435",
-  "es": "Templo Expiatorio de la Sagrada Familia",
-  "fr": "Sagrada Família"
- },
- "Petronas Towers": {
-  "qid": "Q83063",
-  "es": "Torres Petronas",
-  "fr": "Tours Petronas"
- },
- "Saint Basil's Cathedral": {
-  "qid": "Q129846",
-  "es": "Catedral de San Basilio",
-  "fr": "Cathédrale Saint-Basile-le-Bienheureux de Moscou"
- },
- "Tikal": {
-  "qid": "Q181172",
-  "es": "Tikal",
-  "fr": "Tikal"
- },
- "Potala Palace": {
-  "qid": "Q71229",
-  "es": "Potala",
-  "fr": "Palais du Potala"
+ "Forbidden City": {
+  "qid": "Q80290",
+  "es": "Ciudad Prohibida",
+  "fr": "Cité interdite"
  },
  "Salar de Uyuni": {
   "qid": "Q76122",
@@ -2519,15 +2509,30 @@
   "es": "Cristo Redentor",
   "fr": "Statue du Christ Rédempteur"
  },
- "Great Zimbabwe": {
-  "qid": "Q209217",
-  "es": "Gran Zimbabue",
-  "fr": "Grand Zimbabwe"
+ "Sagrada Família": {
+  "qid": "Q48435",
+  "es": "Templo Expiatorio de la Sagrada Familia",
+  "fr": "Sagrada Família"
  },
- "Table Mountain": {
-  "qid": "Q213360",
-  "es": "Montaña de la Mesa",
-  "fr": "Montagne de la Table"
+ "CN Tower": {
+  "qid": "Q134883",
+  "es": "CN Tower",
+  "fr": "Tour CN"
+ },
+ "Milford Sound": {
+  "qid": "Q187197",
+  "es": "Milford Sound",
+  "fr": "Milford Sound"
+ },
+ "Hạ Long Bay": {
+  "qid": "Q190128",
+  "es": "Bahía de Ha-Long",
+  "fr": "Baie d'Along"
+ },
+ "Saint Basil's Cathedral": {
+  "qid": "Q129846",
+  "es": "Catedral de San Basilio",
+  "fr": "Cathédrale Saint-Basile-le-Bienheureux de Moscou"
  },
  "Acropolis of Athens": {
   "qid": "Q131013",
@@ -2539,6 +2544,26 @@
   "es": "Puente Carlos",
   "fr": "Pont Charles"
  },
+ "Petronas Towers": {
+  "qid": "Q83063",
+  "es": "Torres Petronas",
+  "fr": "Tours Petronas"
+ },
+ "Great Zimbabwe": {
+  "qid": "Q209217",
+  "es": "Gran Zimbabue",
+  "fr": "Grand Zimbabwe"
+ },
+ "Table Mountain": {
+  "qid": "Q213360",
+  "es": "Montaña de la Mesa",
+  "fr": "Montagne de la Table"
+ },
+ "Shwedagon Pagoda": {
+  "qid": "Q464535",
+  "es": "Shwedagon",
+  "fr": "Pagode Shwedagon"
+ },
  "Gyeongbokgung": {
   "qid": "Q482485",
   "es": "Gyeongbokgung",
@@ -2548,11 +2573,6 @@
   "qid": "Q676203",
   "es": "Machu Picchu",
   "fr": "Machu Picchu"
- },
- "Shwedagon Pagoda": {
-  "qid": "Q464535",
-  "es": "Shwedagon",
-  "fr": "Pagode Shwedagon"
  },
  "Teotihuacan": {
   "qid": "Q172613",
@@ -2569,15 +2589,10 @@
   "es": "Atomium",
   "fr": "Atomium"
  },
- "Milford Sound": {
-  "qid": "Q187197",
-  "es": "Milford Sound",
-  "fr": "Milford Sound"
- },
- "Hạ Long Bay": {
-  "qid": "Q190128",
-  "es": "Bahía de Ha-Long",
-  "fr": "Baie d'Along"
+ "Tikal": {
+  "qid": "Q181172",
+  "es": "Tikal",
+  "fr": "Tikal"
  },
  "Fushimi Inari-taisha": {
   "qid": "Q714828",
@@ -2604,15 +2619,30 @@
   "es": "Registán",
   "fr": "Régistan (Samarcande)"
  },
- "Mount Everest": {
-  "qid": "Q513",
-  "es": "Monte Everest",
-  "fr": "Everest"
+ "Potala Palace": {
+  "qid": "Q71229",
+  "es": "Potala",
+  "fr": "Palais du Potala"
+ },
+ "Grand Canyon": {
+  "qid": "Q118841",
+  "es": "Gran Cañón",
+  "fr": "Grand Canyon"
+ },
+ "Persepolis": {
+  "qid": "Q129072",
+  "es": "Persépolis",
+  "fr": "Persépolis"
  },
  "Mont Blanc": {
   "qid": "Q583",
   "es": "Mont Blanc",
   "fr": "Mont Blanc"
+ },
+ "Mount Everest": {
+  "qid": "Q513",
+  "es": "Monte Everest",
+  "fr": "Everest"
  },
  "Rhine": {
   "qid": "Q584",
@@ -2624,6 +2654,11 @@
   "es": "Volga",
   "fr": "Volga"
  },
+ "Matterhorn": {
+  "qid": "Q1374",
+  "es": "Cervino",
+  "fr": "Cervin"
+ },
  "Lake Superior": {
   "qid": "Q1066",
   "es": "Lago Superior",
@@ -2634,40 +2669,15 @@
   "es": "Río Sena",
   "fr": "Seine"
  },
- "Matterhorn": {
-  "qid": "Q1374",
-  "es": "Cervino",
-  "fr": "Cervin"
- },
- "Danube": {
-  "qid": "Q1653",
-  "es": "Danubio",
-  "fr": "Danube"
- },
- "Niger River": {
-  "qid": "Q3542",
-  "es": "Río Níger",
-  "fr": "Niger (fleuve)"
- },
- "Aoraki / Mount Cook": {
-  "qid": "Q5059",
-  "es": "Monte Cook",
-  "fr": "Aoraki/Mont Cook"
- },
- "Ganges": {
-  "qid": "Q5089",
-  "es": "Ganges",
-  "fr": "Gange"
- },
  "Mackenzie River": {
   "qid": "Q3411",
   "es": "Río Mackenzie",
   "fr": "Mackenzie (fleuve)"
  },
- "Congo River": {
-  "qid": "Q3503",
-  "es": "Río Congo",
-  "fr": "Congo (fleuve)"
+ "Danube": {
+  "qid": "Q1653",
+  "es": "Danubio",
+  "fr": "Danube"
  },
  "Caspian Sea": {
   "qid": "Q5484",
@@ -2679,30 +2689,40 @@
   "es": "Lago Tanganica",
   "fr": "Lac Tanganyika"
  },
- "Great Bear Lake": {
-  "qid": "Q5525",
-  "es": "Gran Lago del Oso",
-  "fr": "Grand lac de l'Ours"
+ "Lake Victoria": {
+  "qid": "Q5505",
+  "es": "Lago Victoria",
+  "fr": "Lac Victoria"
  },
  "Lake Baikal": {
   "qid": "Q5513",
   "es": "Lago Baikal",
   "fr": "Lac Baïkal"
  },
+ "Congo River": {
+  "qid": "Q3503",
+  "es": "Río Congo",
+  "fr": "Congo (fleuve)"
+ },
  "Sahara": {
   "qid": "Q6583",
   "es": "Sahara",
   "fr": "Sahara"
+ },
+ "Great Bear Lake": {
+  "qid": "Q5525",
+  "es": "Gran Lago del Oso",
+  "fr": "Grand lac de l'Ours"
  },
  "Lake Malawi": {
   "qid": "Q5532",
   "es": "Lago Malaui",
   "fr": "Lac Malawi"
  },
- "Lake Victoria": {
-  "qid": "Q5505",
-  "es": "Lago Victoria",
-  "fr": "Lac Victoria"
+ "River Thames": {
+  "qid": "Q19686",
+  "es": "Río Támesis",
+  "fr": "Tamise"
  },
  "Indus River": {
   "qid": "Q7348",
@@ -2714,40 +2734,45 @@
   "es": "Volcán Chimborazo",
   "fr": "Chimborazo (volcan)"
  },
+ "Teide": {
+  "qid": "Q38954",
+  "es": "Teide",
+  "fr": "Teide"
+ },
+ "Niger River": {
+  "qid": "Q3542",
+  "es": "Río Níger",
+  "fr": "Niger (fleuve)"
+ },
+ "Aconcagua": {
+  "qid": "Q39739",
+  "es": "Aconcagua",
+  "fr": "Aconcagua"
+ },
  "Euphrates": {
   "qid": "Q34589",
   "es": "Éufrates",
   "fr": "Euphrate"
  },
- "River Thames": {
-  "qid": "Q19686",
-  "es": "Río Támesis",
-  "fr": "Tamise"
- },
- "Lake Titicaca": {
-  "qid": "Q35342",
-  "es": "Lago Titicaca",
-  "fr": "Lac Titicaca"
- },
- "Teide": {
-  "qid": "Q38954",
-  "es": "Teide",
-  "fr": "Teide"
+ "Ganges": {
+  "qid": "Q5089",
+  "es": "Ganges",
+  "fr": "Gange"
  },
  "Mount Damavand": {
   "qid": "Q40758",
   "es": "Damavand",
   "fr": "Mont Damavand"
  },
+ "Aoraki / Mount Cook": {
+  "qid": "Q5059",
+  "es": "Monte Cook",
+  "fr": "Aoraki/Mont Cook"
+ },
  "Mekong": {
   "qid": "Q41179",
   "es": "Río Mekong",
   "fr": "Mékong"
- },
- "Aconcagua": {
-  "qid": "Q39739",
-  "es": "Aconcagua",
-  "fr": "Aconcagua"
  },
  "Gobi Desert": {
   "qid": "Q42070",
@@ -2759,135 +2784,45 @@
   "es": "K2",
   "fr": "K2"
  },
- "Kalahari Desert": {
-  "qid": "Q47700",
-  "es": "Kalahari",
-  "fr": "Désert du Kalahari"
- },
  "Zambezi": {
   "qid": "Q43106",
   "es": "Río Zambeze",
   "fr": "Zambèze"
- },
- "Mount Elbrus": {
-  "qid": "Q43105",
-  "es": "Monte Elbrús",
-  "fr": "Elbrouz"
- },
- "Atacama Desert": {
-  "qid": "Q47141",
-  "es": "Desierto de Atacama",
-  "fr": "Désert d'Atacama"
- },
- "Mount Kinabalu": {
-  "qid": "Q60967",
-  "es": "Monte Kinabalu",
-  "fr": "Mont Kinabalu"
- },
- "Taklamakan Desert": {
-  "qid": "Q132956",
-  "es": "Taklamakán",
-  "fr": "Désert du Taklamakan"
- },
- "Orinoco": {
-  "qid": "Q131792",
-  "es": "Río Orinoco",
-  "fr": "Orénoque"
- },
- "Thar Desert": {
-  "qid": "Q172691",
-  "es": "Desierto de Thar",
-  "fr": "Désert du Thar"
- },
- "Vänern": {
-  "qid": "Q173596",
-  "es": "Lago Vänern",
-  "fr": "Vänern"
- },
- "Paraná River": {
-  "qid": "Q127892",
-  "es": "Río Paraná",
-  "fr": "Rio Paraná"
- },
- "Denali": {
-  "qid": "Q130018",
-  "es": "Denali",
-  "fr": "Mont McKinley"
- },
- "Namib": {
-  "qid": "Q131377",
-  "es": "Desierto del Namib",
-  "fr": "Désert du Namib"
- },
- "Sonoran Desert": {
-  "qid": "Q189429",
-  "es": "Desierto de Sonora",
-  "fr": "Désert de Sonora"
- },
- "Huascarán": {
-  "qid": "Q200935",
-  "es": "Huascarán",
-  "fr": "Huascarán"
  },
  "Mount Ararat": {
   "qid": "Q72303",
   "es": "Monte Ararat",
   "fr": "Mont Ararat"
  },
- "Mount Olympus": {
-  "qid": "Q80344",
-  "es": "Olimpo",
-  "fr": "Mont Olympe"
+ "Lake Balkhash": {
+  "qid": "Q134485",
+  "es": "Lago Baljash",
+  "fr": "Lac Balkhach"
  },
- "Kangchenjunga": {
-  "qid": "Q82019",
-  "es": "Kanchenjunga",
-  "fr": "Kangchenjunga"
+ "Namib": {
+  "qid": "Q131377",
+  "es": "Desierto del Namib",
+  "fr": "Désert du Namib"
  },
- "Murray River": {
-  "qid": "Q183078",
-  "es": "Río Murray",
-  "fr": "Murray (fleuve)"
- },
- "Toubkal": {
-  "qid": "Q503433",
-  "es": "Monte Tubqal",
-  "fr": "Djebel Toubkal"
- },
- "Patagonian Desert": {
-  "qid": "Q1061324",
-  "es": "Ecorregión terrestre estepa patagónica",
-  "fr": "Steppe patagonienne"
- },
- "Lake Nicaragua": {
-  "qid": "Q173862",
-  "es": "Lago Cocibolca",
-  "fr": "Lac Nicaragua"
- },
- "Mount Kosciuszko": {
-  "qid": "Q178167",
-  "es": "Monte Kosciuszko",
-  "fr": "Mont Kosciuszko"
+ "Lake Titicaca": {
+  "qid": "Q35342",
+  "es": "Lago Titicaca",
+  "fr": "Lac Titicaca"
  },
  "Arabian Desert": {
   "qid": "Q208299",
   "es": "Desierto de Arabia",
   "fr": "Désert d'Arabie"
  },
- "Pico de Orizaba": {
-  "qid": "Q238147",
-  "es": "Citlaltépetl",
-  "fr": "Pic d'Orizaba"
+ "Paraná River": {
+  "qid": "Q127892",
+  "es": "Río Paraná",
+  "fr": "Rio Paraná"
  },
- "Ras Dashen": {
-  "qid": "Q275435",
-  "es": "Monte Ras Dejen",
-  "fr": "Ras Dashan"
- },
- "Lake Balkhash": {
-  "qid": "Q134485",
-  "es": "Lago Baljash",
-  "fr": "Lac Balkhach"
+ "Taklamakan Desert": {
+  "qid": "Q132956",
+  "es": "Taklamakán",
+  "fr": "Désert du Taklamakan"
  },
  "Great Victoria Desert": {
   "qid": "Q145165",
@@ -2904,10 +2839,360 @@
   "es": "Monte Kenia",
   "fr": "Mont Kenya"
  },
- "Niagara Falls": {
-  "qid": "Q34221",
-  "es": "Cataratas del Niágara",
-  "fr": "Chutes du Niagara"
+ "Mount Elbrus": {
+  "qid": "Q43105",
+  "es": "Monte Elbrús",
+  "fr": "Elbrouz"
+ },
+ "Mount Olympus": {
+  "qid": "Q80344",
+  "es": "Olimpo",
+  "fr": "Mont Olympe"
+ },
+ "Kangchenjunga": {
+  "qid": "Q82019",
+  "es": "Kanchenjunga",
+  "fr": "Kangchenjunga"
+ },
+ "Denali": {
+  "qid": "Q130018",
+  "es": "Denali",
+  "fr": "Mont McKinley"
+ },
+ "Atacama Desert": {
+  "qid": "Q47141",
+  "es": "Desierto de Atacama",
+  "fr": "Désert d'Atacama"
+ },
+ "Orinoco": {
+  "qid": "Q131792",
+  "es": "Río Orinoco",
+  "fr": "Orénoque"
+ },
+ "Kalahari Desert": {
+  "qid": "Q47700",
+  "es": "Kalahari",
+  "fr": "Désert du Kalahari"
+ },
+ "Mount Kinabalu": {
+  "qid": "Q60967",
+  "es": "Monte Kinabalu",
+  "fr": "Mont Kinabalu"
+ },
+ "Sonoran Desert": {
+  "qid": "Q189429",
+  "es": "Desierto de Sonora",
+  "fr": "Désert de Sonora"
+ },
+ "Huascarán": {
+  "qid": "Q200935",
+  "es": "Huascarán",
+  "fr": "Huascarán"
+ },
+ "Pico de Orizaba": {
+  "qid": "Q238147",
+  "es": "Citlaltépetl",
+  "fr": "Pic d'Orizaba"
+ },
+ "Ras Dashen": {
+  "qid": "Q275435",
+  "es": "Monte Ras Dejen",
+  "fr": "Ras Dashan"
+ },
+ "Toubkal": {
+  "qid": "Q503433",
+  "es": "Monte Tubqal",
+  "fr": "Djebel Toubkal"
+ },
+ "Patagonian Desert": {
+  "qid": "Q1061324",
+  "es": "Ecorregión terrestre estepa patagónica",
+  "fr": "Steppe patagonienne"
+ },
+ "Thar Desert": {
+  "qid": "Q172691",
+  "es": "Desierto de Thar",
+  "fr": "Désert du Thar"
+ },
+ "Vänern": {
+  "qid": "Q173596",
+  "es": "Lago Vänern",
+  "fr": "Vänern"
+ },
+ "Lake Nicaragua": {
+  "qid": "Q173862",
+  "es": "Lago Cocibolca",
+  "fr": "Lac Nicaragua"
+ },
+ "Mount Kosciuszko": {
+  "qid": "Q178167",
+  "es": "Monte Kosciuszko",
+  "fr": "Mont Kosciuszko"
+ },
+ "Murray River": {
+  "qid": "Q183078",
+  "es": "Río Murray",
+  "fr": "Murray (fleuve)"
+ },
+ "California": {
+  "qid": "Q99",
+  "es": "California",
+  "fr": "Californie"
+ },
+ "Alabama": {
+  "qid": "Q173",
+  "es": "Alabama",
+  "fr": "Alabama"
+ },
+ "Maine": {
+  "qid": "Q724",
+  "es": "Maine",
+  "fr": "Maine (États-Unis)"
+ },
+ "New Hampshire": {
+  "qid": "Q759",
+  "es": "Nuevo Hampshire",
+  "fr": "New Hampshire"
+ },
+ "Alaska": {
+  "qid": "Q797",
+  "es": "Alaska",
+  "fr": "Alaska"
+ },
+ "Florida": {
+  "qid": "Q812",
+  "es": "Florida",
+  "fr": "Floride"
+ },
+ "Arizona": {
+  "qid": "Q816",
+  "es": "Arizona",
+  "fr": "Arizona"
+ },
+ "Oregon": {
+  "qid": "Q824",
+  "es": "Oregón",
+  "fr": "Oregon"
+ },
+ "Michigan": {
+  "qid": "Q1166",
+  "es": "Míchigan",
+  "fr": "Michigan"
+ },
+ "Utah": {
+  "qid": "Q829",
+  "es": "Utah",
+  "fr": "Utah"
+ },
+ "Illinois": {
+  "qid": "Q1204",
+  "es": "Illinois",
+  "fr": "Illinois"
+ },
+ "Connecticut": {
+  "qid": "Q779",
+  "es": "Connecticut",
+  "fr": "Connecticut"
+ },
+ "South Dakota": {
+  "qid": "Q1211",
+  "es": "Dakota del Sur",
+  "fr": "Dakota du Sud"
+ },
+ "Massachusetts": {
+  "qid": "Q771",
+  "es": "Massachusetts",
+  "fr": "Massachusetts"
+ },
+ "Montana": {
+  "qid": "Q1212",
+  "es": "Montana",
+  "fr": "Montana"
+ },
+ "Wyoming": {
+  "qid": "Q1214",
+  "es": "Wyoming",
+  "fr": "Wyoming"
+ },
+ "North Dakota": {
+  "qid": "Q1207",
+  "es": "Dakota del Norte",
+  "fr": "Dakota du Nord"
+ },
+ "Idaho": {
+  "qid": "Q1221",
+  "es": "Idaho",
+  "fr": "Idaho"
+ },
+ "Washington (state)": {
+  "qid": "Q1223",
+  "es": "Washington (estado)",
+  "fr": "Washington (État)"
+ },
+ "Nevada": {
+  "qid": "Q1227",
+  "es": "Nevada",
+  "fr": "Nevada"
+ },
+ "Hawaii": {
+  "qid": "Q782",
+  "es": "Hawái",
+  "fr": "Hawaï"
+ },
+ "Colorado": {
+  "qid": "Q1261",
+  "es": "Colorado",
+  "fr": "Colorado"
+ },
+ "New York (state)": {
+  "qid": "Q1384",
+  "es": "Nueva York (estado)",
+  "fr": "État de New York"
+ },
+ "Pennsylvania": {
+  "qid": "Q1400",
+  "es": "Pensilvania",
+  "fr": "Pennsylvanie"
+ },
+ "Texas": {
+  "qid": "Q1439",
+  "es": "Texas",
+  "fr": "Texas"
+ },
+ "Tennessee": {
+  "qid": "Q1509",
+  "es": "Tennessee",
+  "fr": "Tennessee"
+ },
+ "New Jersey": {
+  "qid": "Q1408",
+  "es": "Nueva Jersey",
+  "fr": "New Jersey"
+ },
+ "Indiana": {
+  "qid": "Q1415",
+  "es": "Indiana",
+  "fr": "Indiana"
+ },
+ "Georgia (U.S. state)": {
+  "qid": "Q1428",
+  "es": "Georgia (Estados Unidos)",
+  "fr": "Géorgie (États-Unis)"
+ },
+ "Minnesota": {
+  "qid": "Q1527",
+  "es": "Minnesota",
+  "fr": "Minnesota"
+ },
+ "New Mexico": {
+  "qid": "Q1522",
+  "es": "Nuevo México",
+  "fr": "Nouveau-Mexique"
+ },
+ "Wisconsin": {
+  "qid": "Q1537",
+  "es": "Wisconsin",
+  "fr": "Wisconsin"
+ },
+ "Nebraska": {
+  "qid": "Q1553",
+  "es": "Nebraska",
+  "fr": "Nebraska"
+ },
+ "Kansas": {
+  "qid": "Q1558",
+  "es": "Kansas",
+  "fr": "Kansas"
+ },
+ "Missouri": {
+  "qid": "Q1581",
+  "es": "Misuri",
+  "fr": "Missouri (État)"
+ },
+ "Virginia": {
+  "qid": "Q1370",
+  "es": "Virginia",
+  "fr": "Virginie (États-Unis)"
+ },
+ "West Virginia": {
+  "qid": "Q1371",
+  "es": "Virginia Occidental",
+  "fr": "Virginie-Occidentale"
+ },
+ "North Carolina": {
+  "qid": "Q1454",
+  "es": "Carolina del Norte",
+  "fr": "Caroline du Nord"
+ },
+ "South Carolina": {
+  "qid": "Q1456",
+  "es": "Carolina del Sur",
+  "fr": "Caroline du Sud"
+ },
+ "Mississippi": {
+  "qid": "Q1494",
+  "es": "Misisipi",
+  "fr": "Mississippi (État)"
+ },
+ "Arkansas": {
+  "qid": "Q1612",
+  "es": "Arkansas",
+  "fr": "Arkansas"
+ },
+ "Oklahoma": {
+  "qid": "Q1649",
+  "es": "Oklahoma",
+  "fr": "Oklahoma"
+ },
+ "Iowa": {
+  "qid": "Q1546",
+  "es": "Iowa",
+  "fr": "Iowa"
+ },
+ "Vermont": {
+  "qid": "Q16551",
+  "es": "Vermont",
+  "fr": "Vermont"
+ },
+ "Rhode Island": {
+  "qid": "Q1387",
+  "es": "Rhode Island",
+  "fr": "Rhode Island"
+ },
+ "Maryland": {
+  "qid": "Q1391",
+  "es": "Maryland",
+  "fr": "Maryland"
+ },
+ "Delaware": {
+  "qid": "Q1393",
+  "es": "Delaware",
+  "fr": "Delaware"
+ },
+ "Ohio": {
+  "qid": "Q1397",
+  "es": "Ohio",
+  "fr": "Ohio"
+ },
+ "Louisiana": {
+  "qid": "Q1588",
+  "es": "Luisiana",
+  "fr": "Louisiane"
+ },
+ "Kentucky": {
+  "qid": "Q1603",
+  "es": "Kentucky",
+  "fr": "Kentucky"
+ },
+ "Lake Geneva": {
+  "qid": "Q6403",
+  "es": "Lago Lemán",
+  "fr": "Léman"
+ },
+ "Angel Falls": {
+  "qid": "Q80299",
+  "es": "Salto Ángel",
+  "fr": "Salto Ángel"
  },
  "Tugela Falls": {
   "qid": "Q223649",
@@ -2919,15 +3204,10 @@
   "es": "Salto Yosemite",
   "fr": "Chutes de Yosemite"
  },
- "Lake Geneva": {
-  "qid": "Q6403",
-  "es": "Lago Lemán",
-  "fr": "Léman"
- },
- "Angel Falls": {
-  "qid": "Q80299",
-  "es": "Salto Ángel",
-  "fr": "Salto Ángel"
+ "Niagara Falls": {
+  "qid": "Q34221",
+  "es": "Cataratas del Niágara",
+  "fr": "Chutes du Niagara"
  },
  "Kaieteur Falls": {
   "qid": "Q38120",

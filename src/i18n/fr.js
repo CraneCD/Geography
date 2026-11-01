@@ -24,6 +24,7 @@ const fr = {
       currencies: { title: "Monnaies", desc: "Nommez la monnaie d'un pays." },
       landmarks: { title: "Monuments", desc: "Des lieux célèbres d'après leur photo." },
       physical: { title: "Fleuves et montagnes", desc: "Fleuves, montagnes, déserts, lacs et chutes d'eau." },
+      "us-states": { title: "États des États-Unis", desc: "Trouve les 50 États et leurs capitales." },
       mixed: { title: "Mixte", desc: "Questions aléatoires des modes choisis." },
     },
     history: {
@@ -63,6 +64,7 @@ const fr = {
   },
 
   typeLabels: {
+    "us-states": "États des États-Unis",
     landmarks: "Monuments", physical: "Fleuves et montagnes", plants: "Plantes",
     "animal-traits": "Traits des animaux", "body-systems": "Systèmes du corps", "space-missions": "Missions spatiales",
     neighbours: "Voisins", currencies: "Monnaies", flags: "Drapeaux", capitals: "Capitales", locate: "Localiser", shapes: "Silhouettes",
@@ -158,6 +160,11 @@ const fr = {
   geo: {
     title: "Géographie Mondiale",
     subtitle: "Drapeaux, capitales, cartes, silhouettes, langues et plus.",
+    whichStateHighlighted: "Quel État américain est mis en évidence ?",
+    whichStateShape: "Quel État américain a cette silhouette ?",
+    typeState: "Tape le nom de l'État…",
+    stateCard: (name, capital) => `${name} : capitale ${capital}.`,
+    usMapLabel: "Carte des États-Unis",
     landmarkCountryPrompt: "Dans quel pays se trouve ce lieu ?",
     landmarkNamePrompt: "Comment s'appelle ce lieu ?",
     landmarkCard: (name, where) => `${name} : ${where}.`,

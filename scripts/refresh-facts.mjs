@@ -24,6 +24,10 @@ import { PLANTS } from "../src/data/science/plants.js";
 import { MISSIONS } from "../src/data/science/traits.js";
 import { LANDMARKS } from "../src/data/geography/landmarks.js";
 import { FEATURES } from "../src/data/geography/physical.js";
+import { US_STATES } from "../src/data/geography/usStates.js";
+
+const US_ARTICLES = { GA: "Georgia (U.S. state)", NY: "New York (state)", WA: "Washington (state)" }; // keep in sync with src/subjects/geography/usStates.js
+const usTitles = US_STATES.map((s) => ({ wikiTitle: US_ARTICLES[s.code] ?? s.name }));
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const UA = "QuizSite/1.0 (build-time fact refresh; https://github.com/cranecd/geography)";
@@ -152,7 +156,7 @@ console.log(flagged.length ? `Needs a human look:\n  ${flagged.join("\n  ")}` : 
 // ── Sources: Wikidata id + es/fr article titles ────────────────────────────
 // Keep in sync with ELEMENT_ARTICLES in src/subjects/science/generate.js.
 const elementTitles = ELEMENTS.map((e) => ({ wikiTitle: e.symbol === "Hg" ? "Mercury_(element)" : e.name }));
-const titles = [...new Set([people, artworks, ANIMALS, SPACE_OBJECTS, BODY_REGIONS, elementTitles, PLANTS, MISSIONS, LANDMARKS, FEATURES].flat().map((x) => x.wikiTitle).filter(Boolean))];
+const titles = [...new Set([people, artworks, ANIMALS, SPACE_OBJECTS, BODY_REGIONS, elementTitles, PLANTS, MISSIONS, LANDMARKS, FEATURES, usTitles].flat().map((x) => x.wikiTitle).filter(Boolean))];
 const sources = {};
 for (let i = 0; i < titles.length; i += 60) {
   const batch = titles.slice(i, i + 60);

@@ -94,6 +94,17 @@ export default function Media({ media, revealed, answer, correctLabel, t }) {
       );
     case "clock":
       return <ClockFace h={media.h} m={media.m} label={t?.logic?.clockLabel} />;
+    case "usmap":
+      return (
+        <div className="usmap-wrap">
+          <svg viewBox={`0 0 ${media.width} ${media.height}`} className="usmap" role="img" aria-label={t?.geo?.usMapLabel}>
+            {Object.entries(media.paths).map(([code, d]) => (
+              <path key={code} d={d} className={code === media.highlight ? "usmap__state usmap__state--on" : "usmap__state"} />
+            ))}
+            {media.marker && <circle cx={media.marker[0]} cy={media.marker[1]} r="18" className="usmap__marker" />}
+          </svg>
+        </div>
+      );
     case "statements":
       return (
         <ul className="statements">

@@ -405,6 +405,13 @@ svg { flex-shrink: 0; }
 }
 .sequence__term--blank { background: var(--hl); color: var(--on-hl); box-shadow: var(--shadow-sm); }
 
+/* ── US map ────────────────────────────────────────────────────────────── */
+.usmap-wrap { display: flex; justify-content: center; }
+.usmap { width: 100%; max-width: 520px; height: auto; }
+.usmap__state { fill: var(--card); stroke: var(--line); stroke-width: 1; }
+.usmap__state--on { fill: var(--hl); stroke: var(--ink); stroke-width: 1.5; }
+.usmap__marker { fill: none; stroke: var(--wrong, #C0392B); stroke-width: 3; }
+
 /* ── Clock & clue list ─────────────────────────────────────────────────── */
 .clock-wrap { display: flex; justify-content: center; }
 .clock { width: min(220px, 60vw); height: auto; }

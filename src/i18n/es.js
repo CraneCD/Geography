@@ -24,6 +24,7 @@ const es = {
       currencies: { title: "Monedas", desc: "Nombra la moneda que usa un país." },
       landmarks: { title: "Monumentos", desc: "Lugares famosos a partir de su foto." },
       physical: { title: "Ríos y montañas", desc: "Ríos, montañas, desiertos, lagos y cascadas." },
+      "us-states": { title: "Estados de EE. UU.", desc: "Ubica los 50 estados y sus capitales." },
       mixed: { title: "Mixto", desc: "Preguntas aleatorias de los modos elegidos." },
     },
     history: {
@@ -63,6 +64,7 @@ const es = {
   },
 
   typeLabels: {
+    "us-states": "Estados de EE. UU.",
     landmarks: "Monumentos", physical: "Ríos y montañas", plants: "Plantas",
     "animal-traits": "Rasgos animales", "body-systems": "Aparatos y sistemas", "space-missions": "Misiones espaciales",
     neighbours: "Vecinos", currencies: "Monedas", flags: "Banderas", capitals: "Capitales", locate: "Ubicar", shapes: "Siluetas",
@@ -158,6 +160,11 @@ const es = {
   geo: {
     title: "Geografía Mundial",
     subtitle: "Banderas, capitales, mapas, siluetas, idiomas y más.",
+    whichStateHighlighted: "¿Qué estado de EE. UU. está resaltado?",
+    whichStateShape: "¿Qué estado de EE. UU. tiene esta silueta?",
+    typeState: "Escribe el nombre del estado…",
+    stateCard: (name, capital) => `${name}: capital, ${capital}.`,
+    usMapLabel: "Mapa de Estados Unidos",
     landmarkCountryPrompt: "¿En qué país está este lugar?",
     landmarkNamePrompt: "¿Cómo se llama este lugar?",
     landmarkCard: (name, where) => `${name}: ${where}.`,

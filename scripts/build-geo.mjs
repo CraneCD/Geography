@@ -10,9 +10,10 @@ import { writeFileSync, mkdirSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { feature, neighbors } from "topojson-client";
-import { geoPath, geoMercator, geoNaturalEarth1, geoCentroid } from "d3-geo";
+import { geoPath, geoMercator, geoNaturalEarth1, geoCentroid, geoIdentity } from "d3-geo";
 import { countries } from "../src/data/countries.js";
 import { ALPHA2_TO_NUMERIC } from "../src/data/countryIds.js";
+import { US_STATES } from "../src/data/geography/usStates.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const topology = JSON.parse(
@@ -115,7 +116,28 @@ for (const [region, [w, s, e, n]] of Object.entries(REGION_EXTENTS)) {
 }
 writeFileSync(join(outDir, "regionViews.json"), JSON.stringify(regionViews));
 
+// ── US states (us-atlas, already projected to Albers USA at 975×610) ───────
+const usTopo = JSON.parse(readFileSync(join(root, "node_modules/us-atlas/states-albers-10m.json"), "utf8"));
+const usFeatures = new Map(feature(usTopo, usTopo.objects.states).features.map((f) => [f.id, f]));
+const usPath = geoPath().digits(0);
+const usMap = { width: 975, height: 610, states: {}, markers: {} };
+const usShapes = {};
+for (const st of US_STATES) {
+  const f = usFeatures.get(st.fips);
+  if (!f) throw new Error(`No outline for ${st.name}`);
+  usMap.states[st.code] = usPath(f);
+  // Small states get a ring around them when highlighted, or they would be invisible.
+  const [[x0, y0], [x1, y1]] = usPath.bounds(f);
+  if (Math.max(x1 - x0, y1 - y0) < 60) usMap.markers[st.code] = usPath.centroid(f).map(Math.round);
+  // y already points down in the projected file, so no reflection is needed.
+  const fit = geoIdentity().fitExtent([[PAD, PAD], [SHAPE_W - PAD, SHAPE_H - PAD]], f);
+  usShapes[st.code] = geoPath(fit).digits(DIGITS)(f);
+}
+writeFileSync(join(outDir, "usMap.json"), JSON.stringify(usMap));
+writeFileSync(join(outDir, "usShapes.json"), JSON.stringify(usShapes));
+
 console.log(
+  `us states: ${Object.keys(usShapes).length}; ` +
   `shapes: ${Object.keys(shapes).length}, map countries: ${Object.keys(mapCountries).length}, ` +
     `points: ${Object.keys(points).length}, other land: ${other.length}`,
 );
