@@ -18,7 +18,7 @@ export const SUBJECTS = [
   },
   {
     id: "logic",
-    modes: ["arithmetic", "fractions", "sequences", "angle", "algebra", "logic-mixed"],
+    modes: ["arithmetic", "fractions", "sequences", "angle", "algebra", "clocks", "roman", "units", "word-problems", "puzzles", "logic-mixed"],
     options: [],
     load: () => import("./logic/index.jsx"),
   },

@@ -41,3 +41,13 @@ export function roundTo(n, dp = 2) {
 export function formatNumber(n, lang = "en") {
   return Number(n).toLocaleString(lang);
 }
+
+/** Parses "12", "−3", "2.5", "2,5" (decimal comma), "3/4" → number, or NaN. */
+export function parseNumber(input) {
+  const s = String(input).trim().replace(/[−–]/g, "-").replace(/\s+/g, "").replace(",", ".");
+  if (/^-?\d+\/-?\d+$/.test(s)) {
+    const [a, b] = s.split("/").map(Number);
+    return b === 0 ? NaN : a / b;
+  }
+  return /^-?(\d+\.?\d*|\.\d+)$/.test(s) ? Number(s) : NaN;
+}

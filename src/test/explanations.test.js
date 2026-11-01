@@ -5,11 +5,13 @@ import { getStrings } from "../i18n/index.js";
 import { buildRound as geo } from "../subjects/geography/generate.js";
 import { buildRound as hist } from "../subjects/history/generate.js";
 import { buildRound as sci } from "../subjects/science/generate.js";
+import { buildRound as logic } from "../subjects/logic/generate.js";
 
 const ROUNDS = {
   geography: [geo, ["mixed"]],
   history: [hist, ["history-mixed", "who-first"]],
   science: [sci, ["science-mixed", "elements", "animals-compare", "space-compare"]],
+  logic: [logic, ["logic-mixed"]],
 };
 
 describe("explanations", () => {

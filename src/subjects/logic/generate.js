@@ -1,7 +1,10 @@
 import { randInt, shuffle, pickOne } from "../../lib/random.js";
-import { num, signedTerm, coefX, roundTo } from "../../lib/format.js";
+import { num, signedTerm, coefX, roundTo, parseNumber } from "../../lib/format.js";
+import { generateClock, generateRoman, generateUnits, generateWordProblem, generatePuzzle } from "./more.js";
 
-export const LOGIC_MODES = ["arithmetic", "fractions", "sequences", "angle", "algebra"];
+export { parseNumber };
+
+export const LOGIC_MODES = ["arithmetic", "fractions", "sequences", "angle", "algebra", "clocks", "roman", "units", "word-problems", "puzzles"];
 
 // ── Helpers ────────────────────────────────────────────────────────────────
 export function gcd(a, b) {
@@ -22,16 +25,6 @@ export function simplifyFraction(n, d) {
 function fractionString(n, d) {
   const [sn, sd] = simplifyFraction(n, d);
   return sd === 1 ? String(sn) : `${sn}/${sd}`;
-}
-
-/** Parses "12", "−3", "2.5", "2,5" (decimal comma), "3/4" → number, or NaN. */
-export function parseNumber(input) {
-  const s = String(input).trim().replace(/[−–]/g, "-").replace(/\s+/g, "").replace(",", ".");
-  if (/^-?\d+\/-?\d+$/.test(s)) {
-    const [a, b] = s.split("/").map(Number);
-    return b === 0 ? NaN : a / b;
-  }
-  return /^-?(\d+\.?\d*|\.\d+)$/.test(s) ? Number(s) : NaN;
 }
 
 const numericCheck = (answer) => (input) => {
@@ -148,7 +141,11 @@ export function generateFraction(difficulty, t, variant = pickOne(["percentage",
   return {
     key: key("fractions"), type: "fractions", variant: "compare", kind: "choice",
     prompt: t.logic.whichLarger(a, b),
-    options: [{ id: a, label: a }, { id: b, label: b }], correctId: larger, correctLabel: larger,
+    options: [{ id: a, label: a, v: n1 / d1 }, { id: b, label: b, v: n2 / d2 }].map((o, _, all) => {
+      const other = all.find((x) => x !== o);
+      return { id: o.id, label: o.label, whyNot: o.id === larger ? undefined : { text: t.logic.isSmaller(o.label, o.v.toFixed(3), other.label, other.v.toFixed(3)) } };
+    }),
+    correctId: larger, correctLabel: larger,
     explanation: t.logic.explCompare(a, (n1 / d1).toFixed(3), b, (n2 / d2).toFixed(3), larger),
   };
 }
@@ -192,7 +189,9 @@ export function generateSequence(difficulty, t) {
       .map((o) => answer + o)
       .filter((v) => v > 0)
       .slice(0, 3);
-    const opts = [answer, ...wrong].map((v) => ({ id: String(v), label: String(v) }));
+    const opts = [answer, ...wrong].map((v) => ({
+      id: String(v), label: String(v), whyNot: v === answer ? undefined : { text: t.logic.offBy(Math.abs(v - answer), v > answer) },
+    }));
     return { ...base, kind: "choice", options: shuffle(opts), correctId: String(answer), correctLabel: String(answer) };
   }
   return numericQuestion(base, answer, t);
@@ -207,7 +206,7 @@ export function generateAngle(difficulty, t) {
   const tolerance = { easy: 8, medium: 5, hard: 3, expert: 2 }[difficulty] ?? 5;
   return {
     key: key("angle"), type: "angle", kind: "angle", prompt: t.logic.anglePrompt,
-    degrees, tolerance, correctLabel: `${degrees}°`,
+    degrees, tolerance, correctLabel: `${degrees}°`, explanation: t.logic.angleKind(degrees),
   };
 }
 
@@ -290,6 +289,11 @@ const GENERATORS = {
   sequences: generateSequence,
   angle: generateAngle,
   algebra: generateAlgebra,
+  clocks: generateClock,
+  roman: generateRoman,
+  units: generateUnits,
+  "word-problems": generateWordProblem,
+  puzzles: generatePuzzle,
 };
 
 export function buildRound(settings, t) {
@@ -301,7 +305,8 @@ export function buildRound(settings, t) {
     const gen = GENERATORS[type];
     if (!gen) throw new Error(`Unknown logic mode: "${type}"`);
     const q = gen(difficulty, t);
-    const sig = `${q.prompt}|${q.expression ?? ""}|${q.degrees ?? ""}|${q.media?.terms?.join(",") ?? ""}`;
+    const m = q.media ?? {};
+    const sig = [q.prompt, q.expression, q.degrees, m.terms?.join(","), m.h != null && `${m.h}:${m.m}`, m.lines?.join("|")].join("¦");
     if (seen.has(sig)) continue; // no duplicate questions within a round
     seen.add(sig);
     out.push(q);
