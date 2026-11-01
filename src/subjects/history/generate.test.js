@@ -148,9 +148,9 @@ describe("history translations", async () => {
   });
 
   it("questions use the selected language", () => {
-    const es = buildRound(settings({ mode: "events", roundSize: 85, lang: "es", difficulty: "expert" }), getStrings("es"));
+    const es = buildRound(settings({ mode: "events", roundSize: 500, lang: "es", difficulty: "expert" }), getStrings("es"));
     expect(es.find((q) => q.key === "events:french-revolution").prompt).toContain("Revolución francesa");
-    const fr = buildRound(settings({ mode: "art", roundSize: 80, lang: "fr" }), getStrings("fr"));
+    const fr = buildRound(settings({ mode: "art", roundSize: 500, lang: "fr" }), getStrings("fr"));
     expect(fr.find((q) => q.key.endsWith(":mona-lisa")).note).toContain("La Joconde");
   });
 
