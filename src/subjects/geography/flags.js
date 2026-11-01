@@ -1,6 +1,6 @@
-// Flags are bundled locally (served as static SVG assets), so the quiz does not
-// depend on a third-party flag CDN and works offline after the first load.
-const files = import.meta.glob("/node_modules/country-flag-icons/3x2/*.svg", {
+// Accurate flags (public domain, from Wikimedia via flagcdn.com) bundled as local SVG
+// files by scripts/fetch-flags.mjs. Each flag is its own asset, fetched only when shown.
+const files = import.meta.glob("/src/assets/flags/*.svg", {
   eager: true,
   query: "?url",
   import: "default",

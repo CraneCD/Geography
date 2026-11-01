@@ -3,6 +3,7 @@ import {
   buildRound, countryDistractors, officialLanguages, hasShape, MIXABLE_MODES,
 } from "./generate.js";
 import { countries } from "../../data/countries.js";
+import { flagSrc } from "./flags.js";
 import { countriesExtra } from "../../data/countriesExtra.js";
 import worldMap from "../../data/generated/worldMap.json";
 import { DIFFICULTIES, REGIONS, t, many, assertChoice, positionShares } from "../../test/helpers.js";
@@ -10,6 +11,10 @@ import { DIFFICULTIES, REGIONS, t, many, assertChoice, positionShares } from "..
 const settings = (over) => ({ region: "All", difficulty: "medium", roundSize: 10, lang: "en", ...over });
 
 describe("geography data", () => {
+  it("every country has a bundled flag (run `npm run build:flags` after adding one)", () => {
+    expect(countries.filter((c) => !flagSrc(c.code)).map((c) => c.code)).toEqual([]);
+  });
+
   it("every country can be shown on the locate map", () => {
     const missing = countries.filter((c) => !worldMap.countries[c.code] && !worldMap.points[c.code]).map((c) => c.code);
     expect(missing).toEqual([]);

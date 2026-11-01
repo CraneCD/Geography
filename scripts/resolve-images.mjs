@@ -9,7 +9,7 @@
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { allWikiTitles } from "../src/data/wikiTitles.js";
+import { allImageRefs } from "../src/data/wikiTitles.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const outFile = join(root, "src/data/generated/images.json");
@@ -23,7 +23,33 @@ const manifest = existsSync(outFile) && !refreshAll ? JSON.parse(readFileSync(ou
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+/** A specific Commons file: ask the Commons API for a TARGET_WIDTH thumbnail. */
+async function resolveFile(ref) {
+  const url = new URL("https://commons.wikimedia.org/w/api.php");
+  url.search = new URLSearchParams({
+    action: "query", format: "json", titles: ref, prop: "imageinfo",
+    iiprop: "url|size", iiurlwidth: String(TARGET_WIDTH),
+  });
+  for (let attempt = 0; attempt < 4; attempt++) {
+    const res = await fetch(url, { headers: { "User-Agent": UA, Accept: "application/json" } });
+    if (res.status === 429) { await sleep(5000 * 2 ** attempt); continue; }
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const page = Object.values((await res.json()).query?.pages ?? {})[0];
+    const info = page?.imageinfo?.[0];
+    if (!info) return null;
+    const small = info.width <= TARGET_WIDTH;
+    return {
+      src: small ? info.url : info.thumburl,
+      width: small ? info.width : info.thumbwidth,
+      height: small ? info.height : info.thumbheight,
+      page: info.descriptionurl,
+    };
+  }
+  throw new Error("rate limited");
+}
+
 async function resolve(title) {
+  if (title.startsWith("File:")) return resolveFile(title);
   const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`;
   for (let attempt = 0; attempt < 4; attempt++) {
     const res = await fetch(url, { headers: { "User-Agent": UA, Accept: "application/json" } });
@@ -51,14 +77,16 @@ async function resolve(title) {
   throw new Error("rate limited");
 }
 
-const titles = allWikiTitles();
+const titles = allImageRefs();
 const todo = titles.filter((t) => !manifest[t]);
 console.log(`${titles.length} titles, ${todo.length} to resolve`);
 const failures = [];
 for (const title of todo) {
   try {
     const entry = await resolve(title);
-    if (entry) manifest[title] = entry;
+    // Animated GIFs are multi-megabyte and unreadable as quiz pictures: pick a still via `imageFile`.
+    if (entry && /\.gif$/i.test(entry.src)) failures.push(`${title}: animated GIF, set imageFile on the item`);
+    else if (entry) manifest[title] = entry;
     else failures.push(`${title}: no image`);
   } catch (e) {
     failures.push(`${title}: ${e.message}`);

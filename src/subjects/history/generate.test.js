@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { buildRound, yearOptions } from "./generate.js";
-import { allWikiTitles } from "../../data/wikiTitles.js";
+import { allImageRefs } from "../../data/wikiTitles.js";
 import { imageFor } from "../../data/images.js";
 import { DIFFICULTIES, t, many, assertChoice, positionShares } from "../../test/helpers.js";
 
@@ -83,12 +83,16 @@ describe("image manifest", () => {
   ]);
 
   it("covers every image title (run `npm run build:images` after adding data)", () => {
-    const missing = allWikiTitles().filter((title) => !imageFor(title) && !KNOWN_MISSING.has(title));
+    const missing = allImageRefs().filter((title) => !imageFor(title) && !KNOWN_MISSING.has(title));
     expect(missing).toEqual([]);
   });
 
+  it("never uses animated GIFs (they are huge and hard to read)", () => {
+    for (const ref of allImageRefs()) expect(imageFor(ref)?.src ?? "").not.toMatch(/\.gif$/i);
+  });
+
   it("uses sized thumbnails rather than original uploads", () => {
-    for (const title of allWikiTitles()) {
+    for (const title of allImageRefs()) {
       const img = imageFor(title);
       if (img && img.width > 500) throw new Error(`${title} is ${img.width}px wide`);
     }

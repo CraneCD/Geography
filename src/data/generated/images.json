@@ -167,12 +167,6 @@
   "height": 357,
   "page": "https://en.wikipedia.org/wiki/Bombardier_beetle"
  },
- "Brain": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Chimp_Brain_in_a_jar.jpg/500px-Chimp_Brain_in_a_jar.jpg",
-  "width": 500,
-  "height": 630,
-  "page": "https://en.wikipedia.org/wiki/Brain"
- },
  "Café_Terrace_at_Night": {
   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Van_Gogh_-_Terrace_of_a_Caf%C3%A9_at_Night_%28Place_du_Forum%29_1888.jpg/500px-Van_Gogh_-_Terrace_of_a_Caf%C3%A9_at_Night_%28Place_du_Forum%29_1888.jpg",
   "width": 500,
@@ -335,6 +329,30 @@
   "height": 500,
   "page": "https://en.wikipedia.org/wiki/Fibula"
  },
+ "File:Human_brain_NIH.png": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Human_brain_NIH.png",
+  "width": 344,
+  "height": 250,
+  "page": "https://commons.wikimedia.org/wiki/File:Human_brain_NIH.png"
+ },
+ "File:Liver_03_anterior_view.png": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Liver_03_anterior_view.png/500px-Liver_03_anterior_view.png",
+  "width": 500,
+  "height": 500,
+  "page": "https://commons.wikimedia.org/wiki/File:Liver_03_anterior_view.png"
+ },
+ "File:Pelvis (male) 01 - anterior view.png": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Pelvis_%28male%29_01_-_anterior_view.png/500px-Pelvis_%28male%29_01_-_anterior_view.png",
+  "width": 500,
+  "height": 500,
+  "page": "https://commons.wikimedia.org/wiki/File:Pelvis_(male)_01_-_anterior_view.png"
+ },
+ "File:SKULL-FRONT - NARA - 524360.jpg": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/SKULL-FRONT_-_NARA_-_524360.jpg/500px-SKULL-FRONT_-_NARA_-_524360.jpg",
+  "width": 500,
+  "height": 643,
+  "page": "https://commons.wikimedia.org/wiki/File:SKULL-FRONT_-_NARA_-_524360.jpg"
+ },
  "Florence_Nightingale": {
   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Florence_Nightingale_%28H_Hering_NPG_x82368%29.jpg/500px-Florence_Nightingale_%28H_Hering_NPG_x82368%29.jpg",
   "width": 500,
@@ -485,12 +503,6 @@
   "height": 375,
   "page": "https://en.wikipedia.org/wiki/Horseshoe_crab"
  },
- "Human skull": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/VolRenderShearWarp.gif/500px-VolRenderShearWarp.gif",
-  "width": 500,
-  "height": 507,
-  "page": "https://en.wikipedia.org/wiki/Skull"
- },
  "Humerus": {
   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Humerus_-_anterior_view.png/500px-Humerus_-_anterior_view.png",
   "width": 500,
@@ -587,12 +599,6 @@
   "height": 453,
   "page": "https://en.wikipedia.org/wiki/Jupiter"
  },
- "Kidney": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Blausen_0592_KidneyAnatomy_01.png/500px-Blausen_0592_KidneyAnatomy_01.png",
-  "width": 500,
-  "height": 375,
-  "page": "https://en.wikipedia.org/wiki/Kidney"
- },
  "Komodo dragon": {
   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/202306_Varanus_komodoensis.jpg/500px-202306_Varanus_komodoensis.jpg",
   "width": 500,
@@ -646,12 +652,6 @@
   "width": 500,
   "height": 653,
   "page": "https://en.wikipedia.org/wiki/Lise_Meitner"
- },
- "Liver": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Anatomy_Abdomen_Tiesworks.jpg/500px-Anatomy_Abdomen_Tiesworks.jpg",
-  "width": 500,
-  "height": 467,
-  "page": "https://en.wikipedia.org/wiki/Liver"
  },
  "Louis_Pasteur": {
   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Louis_Pasteur%2C_foto_av_Paul_Nadar%2C_Crisco_edit.jpg/500px-Louis_Pasteur%2C_foto_av_Paul_Nadar%2C_Crisco_edit.jpg",
@@ -845,18 +845,6 @@
   "height": 584,
   "page": "https://en.wikipedia.org/wiki/Pablo_Picasso"
  },
- "Pancreas": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Blausen_0699_PancreasAnatomy2.png/500px-Blausen_0699_PancreasAnatomy2.png",
-  "width": 500,
-  "height": 400,
-  "page": "https://en.wikipedia.org/wiki/Pancreas"
- },
- "Pelvis": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Gray241.png/500px-Gray241.png",
-  "width": 500,
-  "height": 404,
-  "page": "https://en.wikipedia.org/wiki/Pelvis"
- },
  "Peregrine falcon": {
   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg/500px-Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg",
   "width": 500,
@@ -1007,12 +995,6 @@
   "height": 667,
   "page": "https://en.wikipedia.org/wiki/Socrates"
  },
- "Spleen": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Diagram_showing_the_position_of_the_spleen_CRUK_417.svg/500px-Diagram_showing_the_position_of_the_spleen_CRUK_417.svg.png",
-  "width": 375,
-  "height": 336,
-  "page": "https://en.wikipedia.org/wiki/Spleen"
- },
  "Stephen_Hawking": {
   "src": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Stephen_Hawking.StarChild.jpg",
   "width": 250,
@@ -1024,12 +1006,6 @@
   "width": 500,
   "height": 500,
   "page": "https://en.wikipedia.org/wiki/Sternum"
- },
- "Stomach": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Gray1046.svg/500px-Gray1046.svg.png",
-  "width": 500,
-  "height": 379,
-  "page": "https://en.wikipedia.org/wiki/Stomach"
  },
  "Street,_Berlin_(Kirchner)": {
   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Kirchner_1913_Street%2C_Berlin.jpg/500px-Kirchner_1913_Street%2C_Berlin.jpg",
