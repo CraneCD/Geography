@@ -7,6 +7,8 @@ export const BODY_REGIONS = [
     name: "Brain",
     photoName: "Brain",
     wikiTitle: "Brain",
+    // Hand-picked label-free image (the article's lead image gives the answer away).
+    imageFile: "Human_brain_NIH.png",
     dataset: "organs",
     fact: "Contains roughly 86 billion neurons and uses about 20% of the body's energy.",
   },
@@ -31,6 +33,8 @@ export const BODY_REGIONS = [
     name: "Liver",
     photoName: "Liver",
     wikiTitle: "Liver",
+    // Hand-picked label-free image (the article's lead image gives the answer away).
+    imageFile: "Liver_03_anterior_view.png",
     dataset: "organs",
     fact: "The largest internal organ, performing over 500 functions including detoxification.",
   },
@@ -39,6 +43,8 @@ export const BODY_REGIONS = [
     name: "Stomach",
     photoName: "Stomach",
     wikiTitle: "Stomach",
+    // Lead image labels or gives away the answer; null = no picture until a reviewed file is chosen.
+    imageFile: null,
     dataset: "organs",
     fact: "Produces hydrochloric acid strong enough to dissolve metal.",
   },
@@ -47,6 +53,8 @@ export const BODY_REGIONS = [
     name: "Kidney",
     photoName: "Kidney",
     wikiTitle: "Kidney",
+    // Lead image labels or gives away the answer; null = no picture until a reviewed file is chosen.
+    imageFile: null,
     dataset: "organs",
     fact: "Filters about 180 litres of blood per day to produce roughly 1.5 litres of urine.",
   },
@@ -71,6 +79,8 @@ export const BODY_REGIONS = [
     name: "Pancreas",
     photoName: "Pancreas",
     wikiTitle: "Pancreas",
+    // Lead image labels or gives away the answer; null = no picture until a reviewed file is chosen.
+    imageFile: null,
     dataset: "organs",
     fact: "Produces insulin to regulate blood sugar and digestive enzymes for the gut.",
   },
@@ -79,6 +89,8 @@ export const BODY_REGIONS = [
     name: "Spleen",
     photoName: "Spleen",
     wikiTitle: "Spleen",
+    // Lead image labels or gives away the answer; null = no picture until a reviewed file is chosen.
+    imageFile: null,
     dataset: "organs",
     fact: "Filters old red blood cells and plays a key role in immune response.",
   },
@@ -89,6 +101,8 @@ export const BODY_REGIONS = [
     name: "Skull",
     photoName: "Skull",
     wikiTitle: "Human skull",
+    // Lead image labels or gives away the answer; null = no picture until a reviewed file is chosen.
+    imageFile: null,
     dataset: "bones",
     fact: "Made up of 22 separate bones fused together to protect the brain.",
   },
@@ -137,6 +151,8 @@ export const BODY_REGIONS = [
     name: "Pelvis",
     photoName: "Pelvis",
     wikiTitle: "Pelvis",
+    // Lead image labels or gives away the answer; null = no picture until a reviewed file is chosen.
+    imageFile: null,
     dataset: "bones",
     fact: "Basin-shaped structure supporting the spine and protecting abdominal organs.",
   },
