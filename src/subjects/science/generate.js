@@ -1,9 +1,10 @@
 import { ANIMALS } from "../../data/science/animals.js";
-import { ELEMENTS } from "../../data/science/elements.js";
+import { ELEMENTS, COMMON_ELEMENTS } from "../../data/science/elements.js";
 import { SPACE_OBJECTS } from "../../data/science/space.js";
 import { BODY_REGIONS } from "../../data/science/body.js";
 import { ANIMAL_NAMES, SPACE_NAMES, BODY_NAMES, ELEMENT_NAMES, localize, spellings } from "../../data/science/names.js";
 import { hasImage, imageMedia } from "../../data/images.js";
+import { factFor } from "../../data/science/facts.js";
 import { shuffle, randInt, pickOne, pickDistractors } from "../../lib/random.js";
 
 export const SCIENCE_MODES = ["animals-photo", "animals-compare", "elements", "body", "space-photo", "space-compare"];
@@ -36,7 +37,7 @@ const PHOTO = {
     accepted: (a) => spellings(ANIMAL_NAMES, a.id, a.name),
     promptKey: "animalPrompt",
     placeholderKey: "typeAnimal",
-    note: (a) => a.fact,
+    note: (a, lang) => factFor(a, lang),
   },
   "space-photo": {
     items: () => SPACE_OBJECTS.filter(hasImage),
@@ -48,7 +49,7 @@ const PHOTO = {
     accepted: (o) => spellings(SPACE_NAMES, o.id, o.name),
     promptKey: "spacePrompt",
     placeholderKey: "typeObject",
-    note: (o) => o.fact,
+    note: (o, lang) => factFor(o, lang),
   },
   body: {
     items: () => dedupeBy(BODY_REGIONS.filter(hasImage), (r) => r.photoName ?? r.name),
@@ -61,7 +62,7 @@ const PHOTO = {
     accepted: (r) => spellings(BODY_NAMES, r.photoName ?? r.name, r.photoName ?? r.name),
     promptKey: "bodyPrompt",
     placeholderKey: "typeBodyPart",
-    note: (r) => r.fact,
+    note: (r, lang) => factFor(r, lang),
     // Distractors from the same dataset (organs vs bones) keep it fair.
     sameGroup: (a, b) => a.dataset === b.dataset,
   },
@@ -83,7 +84,7 @@ function buildPhoto(mode, item, items, difficulty, t) {
   return choiceOrText({
     base: {
       key: `${mode}:${item.id}`, type: mode, prompt: t.sci[cfg.promptKey],
-      media: imageMedia(item, "?"), correctLabel: name, note: cfg.note(item),
+      media: imageMedia(item, "?"), correctLabel: name, note: cfg.note(item, lang),
       review: { title: t.sci[cfg.promptKey] },
     },
     correct: name, wrong, expert: difficulty === "expert",
@@ -172,6 +173,16 @@ const VARIANTS = {
 };
 
 const elementName = (e, lang) => localize(ELEMENT_NAMES, e.symbol, e.name, lang);
+// Alternative English spellings accepted in typed answers.
+const ELEMENT_ALIASES = { Al: ["Aluminum"], Cs: ["Cesium"], S: ["Sulphur"] };
+const elementSpellings = (e) => [...spellings(ELEMENT_NAMES, e.symbol, e.name), ...(ELEMENT_ALIASES[e.symbol] ?? [])];
+
+/** Elements asked at each difficulty: familiar ones first, the whole table on Hard. */
+export function elementPool(difficulty) {
+  if (difficulty === "easy") return ELEMENTS.filter((e) => e.atomicNumber <= 20 || COMMON_ELEMENTS.has(e.symbol));
+  if (difficulty === "medium") return ELEMENTS.filter((e) => e.atomicNumber <= 56 || COMMON_ELEMENTS.has(e.symbol));
+  return ELEMENTS;
+}
 
 export function buildElement(element, variant, difficulty, t) {
   const lang = t.lang;
@@ -187,8 +198,8 @@ export function buildElement(element, variant, difficulty, t) {
       return choiceOrText({
         base: { ...base, prompt: t.sci.symbolToName(element.symbol), media: cell({ symbol: true }), correctLabel: name, review: { title: t.sci.symbolToName(element.symbol) } },
         correct: name, wrong, expert,
-        accepted: spellings(ELEMENT_NAMES, element.symbol, element.name),
-        exclude: ELEMENTS.flatMap((e) => spellings(ELEMENT_NAMES, e.symbol, e.name)),
+        accepted: elementSpellings(element),
+        exclude: ELEMENTS.flatMap(elementSpellings),
         placeholder: t.sci.typeElement,
       });
     }
@@ -203,6 +214,8 @@ export function buildElement(element, variant, difficulty, t) {
       };
     }
     case "symbol-to-group": {
+      // Lanthanides and actinides have no group number: ask for the atomic number instead.
+      if (element.group == null) return buildElement(element, "name-to-number", difficulty, t);
       const g = element.group;
       const groups = [...new Set(ELEMENTS.map((e) => e.group).filter((x) => x != null))];
       const wrong = pickDistractors({ correctKey: g, tiers: [{ items: groups }] });
@@ -253,7 +266,7 @@ export function buildElement(element, variant, difficulty, t) {
 
 function elementsRound(difficulty, count, t) {
   const variants = VARIANTS[difficulty] ?? VARIANTS.medium;
-  return shuffle(ELEMENTS).slice(0, count).map((el, i) => buildElement(el, variants[i % variants.length], difficulty, t));
+  return shuffle(elementPool(difficulty)).slice(0, count).map((el, i) => buildElement(el, variants[i % variants.length], difficulty, t));
 }
 
 // ── Round builder ──────────────────────────────────────────────────────────

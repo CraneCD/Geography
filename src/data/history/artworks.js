@@ -97,6 +97,7 @@ export const artworks = [
     movement: "Post-Impressionism",
     description: "Series of paintings depicting sunflowers in a vase, created for Paul Gauguin's bedroom in the Yellow House.",
     wikiTitle: "Sunflowers_(Van_Gogh_series)",
+    imageEdit: { blur: [[0.33, 0.74, 0.52, 0.85]] }, // hides giveaway text
     license: "Public domain",
   },
   {
@@ -117,6 +118,7 @@ export const artworks = [
     movement: "Impressionism",
     description: "The painting that gave the Impressionist movement its name, depicting the port of Le Havre at dawn.",
     wikiTitle: "Impression,_Sunrise",
+    imageEdit: { crop: [0, 0, 0.1, 0] }, // hides giveaway text
     license: "Public domain",
   },
   {
@@ -157,6 +159,7 @@ export const artworks = [
     movement: "Expressionism",
     description: "Anguished figure against a blood-red sky; an iconic image of existential dread and modern anxiety.",
     wikiTitle: "The_Scream",
+    imageEdit: { crop: [0, 0, 0.06, 0] }, // hides giveaway text
     license: "Public domain",
   },
   {
@@ -257,6 +260,8 @@ export const artworks = [
     movement: "Neoclassicism",
     description: "Heroic equestrian portrait of Napoleon Bonaparte on a rearing horse crossing the Great St. Bernard Pass.",
     wikiTitle: "Napoleon_Crossing_the_Alps",
+    // The article has no lead image; public-domain scan on Commons.
+    imageFile: "Jacques Louis David - Bonaparte franchissant le Grand Saint-Bernard, 20 mai 1800 - Google Art Project.jpg",
     license: "Public domain",
   },
   {
@@ -427,6 +432,7 @@ export const artworks = [
     movement: "Renaissance",
     description: "Dürer depicts himself in a strikingly frontal, Christ-like pose, with his hand raised and his gaze fixed directly at the viewer. It is considered one of the most original self-portraits of the Renaissance.",
     wikiTitle: "Self-Portrait_(Dürer,_Munich)",
+    imageEdit: { crop: [0, 0.27, 0, 0], blur: [[0, 0.12, 0.26, 0.34]] }, // hides giveaway text
     license: "Public domain",
   },
   {
@@ -444,7 +450,7 @@ export const artworks = [
     title: "The Milkmaid",
     artist: "Johannes Vermeer",
     year: 1658,
-    movement: "Baroque",
+    movement: "Dutch Golden Age",
     description: "A kitchen maid carefully pours milk into a bowl, bathed in cool light streaming from a window. Vermeer's meticulous rendering of everyday domestic life makes this one of his most beloved works.",
     wikiTitle: "The_Milkmaid_(Vermeer)",
     license: "Public domain",
@@ -454,7 +460,7 @@ export const artworks = [
     title: "The Jewish Bride",
     artist: "Rembrandt van Rijn",
     year: 1667,
-    movement: "Baroque",
+    movement: "Dutch Golden Age",
     description: "Two figures, likely a married couple, share a tender moment of intimacy expressed through the placement of their hands. Van Gogh wrote that he would give ten years of his life to sit before it for a fortnight.",
     wikiTitle: "The_Jewish_Bride",
     license: "Public domain",
@@ -497,6 +503,7 @@ export const artworks = [
     movement: "Neoclassicism",
     description: "The revolutionary journalist Jean-Paul Marat lies murdered in his medicinal bath, clutching a letter from his assassin. David transforms the sordid political killing into a secular pietà of austere, neoclassical power.",
     wikiTitle: "The_Death_of_Marat",
+    imageEdit: { blur: [[0.57, 0.86, 0.82, 1]] }, // hides giveaway text
     license: "Public domain",
   },
   {
@@ -567,6 +574,7 @@ export const artworks = [
     movement: "Post-Impressionism",
     description: "A vivid close-up field of blue irises with one white bloom, painted during Van Gogh's stay at the Saint-Paul-de-Mausole asylum in Saint-Rémy. Van Gogh called painting his 'lightning conductor' against his illness.",
     wikiTitle: "Irises_(painting)",
+    imageEdit: { crop: [0, 0, 0.06, 0] }, // hides giveaway text
     license: "Public domain",
   },
   {
@@ -657,6 +665,7 @@ export const artworks = [
     movement: "Modernism",
     description: "Four bird-like creatures perch on a wire connected to a hand crank, rendered in delicate lines on a red-violet background. Klee's whimsical yet sinister machine blends mechanical and organic forms in a haunting image of modernity.",
     wikiTitle: "Twittering_Machine",
+    imageEdit: { crop: [0, 0, 0.1, 0] }, // hides giveaway text
     license: "Public domain",
   },
   {
@@ -667,6 +676,8 @@ export const artworks = [
     movement: "Modernism",
     description: "An explosion of geometric shapes — circles, triangles, lines, and grids — float against a light background in a dynamic abstract composition. Kandinsky created the Compositions series as his most ambitious musical-visual experiments.",
     wikiTitle: "Composition_VIII_(Kandinsky)",
+    // No usable Commons image found yet: no picture question.
+    imageFile: null,
     license: "Public domain",
   },
   {
@@ -677,6 +688,8 @@ export const artworks = [
     movement: "Surrealism",
     description: "Melting pocket watches drape over branches and a cliff edge in a barren Catalan landscape, challenging conventional perceptions of time. It is Dalí's most famous work and a defining image of Surrealism.",
     wikiTitle: "The_Persistence_of_Memory",
+    // Under copyright until 2059: no picture question.
+    imageFile: null,
     license: "Public domain",
   },
   {
@@ -684,7 +697,7 @@ export const artworks = [
     title: "Ophelia",
     artist: "John Everett Millais",
     year: 1851,
-    movement: "Romanticism",
+    movement: "Pre-Raphaelite",
     description: "Ophelia from Shakespeare's Hamlet floats in a stream strewn with flowers, her expression serene as she drowns; painted with obsessive botanical detail by the Pre-Raphaelite master.",
     wikiTitle: "Ophelia_(Millais)",
     license: "Public domain",
@@ -697,6 +710,7 @@ export const artworks = [
     movement: "Modernism",
     description: "A nude woman reclines across the canvas with the elongated, stylised forms characteristic of Modigliani, gazing frankly at the viewer. The painting's frank sensuality caused the exhibition at which it was displayed to be shut down by police.",
     wikiTitle: "Reclining_Nude_(Modigliani)",
+    imageEdit: { crop: [0.06, 0, 0, 0] }, // hides giveaway text
     license: "Public domain",
   },
   {
@@ -717,6 +731,7 @@ export const artworks = [
     movement: "Fauvism",
     description: "A reclining female nude rendered in bold blue contours with rough, expressive brushwork challenges academic conventions of the nude. The painting caused a sensation at the 1907 Salon des Indépendants and was later burned in effigy at the Chicago Armory Show.",
     wikiTitle: "Blue_Nude_(Souvenir_de_Biskra)",
+    imageEdit: { crop: [0, 0, 0.15, 0] }, // hides giveaway text
     license: "Public domain",
   },
   {
@@ -745,7 +760,7 @@ export const artworks = [
     artist: "Vincent van Gogh",
     year: 1888,
     movement: "Post-Impressionism",
-    description: "A Paris café terrace on the Place du Forum in Arles is illuminated by warm gaslight against a deep blue starry sky. It is the first painting in which Van Gogh used a starry background, prefiguring The Starry Night.",
+    description: "A café terrace on the Place du Forum in Arles is illuminated by warm gaslight against a deep blue starry sky. It is the first painting in which Van Gogh used a starry background, prefiguring The Starry Night.",
     wikiTitle: "Café_Terrace_at_Night",
     license: "Public domain",
   },

@@ -1,1352 +1,2592 @@
 {
  "A_Bar_at_the_Folies-Bergère": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/%22Un_Bar_aux_Folies-Berg%C3%A8re%22_by_%C3%89douard_Manet_%281882%29.jpg/500px-%22Un_Bar_aux_Folies-Berg%C3%A8re%22_by_%C3%89douard_Manet_%281882%29.jpg",
+  "file": "a-bar-at-the-folies-bergere.webp",
   "width": 500,
   "height": 367,
-  "page": "https://en.wikipedia.org/wiki/A_Bar_at_the_Folies-Berg%C3%A8re"
+  "commonsFile": "\"Un Bar aux Folies-Bergère\" by Édouard Manet (1882).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%22Un_Bar_aux_Folies-Berg%C3%A8re%22_by_%C3%89douard_Manet_(1882).jpg",
+  "author": "Édouard Manet",
+  "license": "Public domain",
+  "licenseUrl": null
  },
  "A_Burial_at_Ornans": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Gustave_Courbet_-_A_Burial_at_Ornans_-_Google_Art_Project_2.jpg/500px-Gustave_Courbet_-_A_Burial_at_Ornans_-_Google_Art_Project_2.jpg",
+  "file": "a-burial-at-ornans.webp",
   "width": 500,
   "height": 230,
-  "page": "https://en.wikipedia.org/wiki/A_Burial_at_Ornans"
+  "commonsFile": "Gustave Courbet - A Burial at Ornans - Google Art Project 2.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Gustave_Courbet_-_A_Burial_at_Ornans_-_Google_Art_Project_2.jpg",
+  "author": "Gustave Courbet",
+  "license": "Public domain",
+  "licenseUrl": null
  },
  "A_Sunday_on_La_Grande_Jatte": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg/500px-A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg",
+  "file": "a-sunday-on-la-grande-jatte.webp",
   "width": 500,
   "height": 333,
-  "page": "https://en.wikipedia.org/wiki/A_Sunday_Afternoon_on_the_Island_of_La_Grande_Jatte"
+  "commonsFile": "A Sunday on La Grande Jatte, Georges Seurat, 1884.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg",
+  "author": "Georges Seurat",
+  "license": "Public domain",
+  "licenseUrl": null
  },
  "Abraham_Lincoln": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/500px-Abraham_Lincoln_O-77_matte_collodion_print.jpg",
+  "file": "abraham-lincoln.webp",
   "width": 500,
   "height": 644,
-  "page": "https://en.wikipedia.org/wiki/Abraham_Lincoln"
+  "commonsFile": "Abraham Lincoln O-77 matte collodion print.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Abraham_Lincoln_O-77_matte_collodion_print.jpg",
+  "author": "Alexander Gardner",
+  "license": "Public domain",
+  "licenseUrl": null
  },
  "Ada_Lovelace": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Ada_Lovelace_daguerreotype_by_Antoine_Claudet_1843_-_cropped.png/500px-Ada_Lovelace_daguerreotype_by_Antoine_Claudet_1843_-_cropped.png",
+  "file": "ada-lovelace.webp",
   "width": 500,
   "height": 647,
-  "page": "https://en.wikipedia.org/wiki/Ada_Lovelace"
+  "commonsFile": "Ada Lovelace daguerreotype by Antoine Claudet 1843 - cropped.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Ada_Lovelace_daguerreotype_by_Antoine_Claudet_1843_-_cropped.png",
+  "author": "Antoine Claudet",
+  "license": "Public domain",
+  "licenseUrl": null
  },
  "Adam_Smith": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Adam_Smith_The_Muir_portrait.jpg/500px-Adam_Smith_The_Muir_portrait.jpg",
+  "file": "adam-smith.webp",
   "width": 500,
   "height": 609,
-  "page": "https://en.wikipedia.org/wiki/Adam_Smith"
+  "commonsFile": "Adam Smith The Muir portrait.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Adam_Smith_The_Muir_portrait.jpg",
+  "author": "Unknown author Unknown author",
+  "license": "Public domain",
+  "licenseUrl": null
  },
  "African bush elephant": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg/500px-178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg",
+  "file": "african-bush-elephant.webp",
   "width": 500,
   "height": 333,
-  "page": "https://en.wikipedia.org/wiki/African_bush_elephant"
+  "commonsFile": "178 Male African bush elephant in Etosha National Park Photo by Giles Laurent.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg",
+  "author": "Giles Laurent",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
  },
  "African wild dog": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/African_Wild_Dog_at_Working_with_Wildlife.jpg/500px-African_Wild_Dog_at_Working_with_Wildlife.jpg",
+  "file": "african-wild-dog.webp",
   "width": 500,
   "height": 281,
-  "page": "https://en.wikipedia.org/wiki/African_wild_dog"
+  "commonsFile": "African Wild Dog at Working with Wildlife.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:African_Wild_Dog_at_Working_with_Wildlife.jpg",
+  "author": "AfricanConservation",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
  },
  "Akbar": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Govardhan._Akbar_With_Lion_and_Calf_ca._1630%2C_Metmuseum_%28cropped%29.jpg/500px-Govardhan._Akbar_With_Lion_and_Calf_ca._1630%2C_Metmuseum_%28cropped%29.jpg",
+  "file": "akbar.webp",
   "width": 500,
   "height": 675,
-  "page": "https://en.wikipedia.org/wiki/Akbar"
+  "commonsFile": "Govardhan. Akbar With Lion and Calf ca. 1630, Metmuseum (cropped).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Govardhan._Akbar_With_Lion_and_Calf_ca._1630%2C_Metmuseum_(cropped).jpg",
+  "author": "Govardhan / Mir Ali Heravi",
+  "license": "Public domain",
+  "licenseUrl": null
  },
  "Alan_Turing": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Alan_turing_header.jpg/500px-Alan_turing_header.jpg",
+  "file": "alan-turing.webp",
   "width": 500,
   "height": 666,
-  "page": "https://en.wikipedia.org/wiki/Alan_Turing"
+  "commonsFile": "Alan turing header.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Alan_turing_header.jpg",
+  "author": "Elliott &amp; Fry",
+  "license": "Public domain",
+  "licenseUrl": null
  },
  "Albert_Einstein": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Albert_Einstein_Head_cleaned.jpg/500px-Albert_Einstein_Head_cleaned.jpg",
+  "file": "albert-einstein.webp",
   "width": 500,
   "height": 619,
-  "page": "https://en.wikipedia.org/wiki/Albert_Einstein"
+  "commonsFile": "Albert Einstein Head cleaned.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Albert_Einstein_Head_cleaned.jpg",
+  "author": "Oren Jack Turner",
+  "license": "Public domain",
+  "licenseUrl": null
  },
  "Alexander_Fleming": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Synthetic_Production_of_Penicillin_TR1468.jpg/500px-Synthetic_Production_of_Penicillin_TR1468.jpg",
+  "file": "alexander-fleming.webp",
   "width": 500,
   "height": 710,
-  "page": "https://en.wikipedia.org/wiki/Alexander_Fleming"
+  "commonsFile": "Synthetic Production of Penicillin TR1468.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Synthetic_Production_of_Penicillin_TR1468.jpg",
+  "author": "Official photographer",
+  "license": "Public domain",
+  "licenseUrl": null
  },
  "Alexander_the_Great": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Alexander_Mosaic_detail_of_Alexander_the_Great_%283x4_cropped%29.jpg/500px-Alexander_Mosaic_detail_of_Alexander_the_Great_%283x4_cropped%29.jpg",
+  "file": "alexander-the-great.webp",
   "width": 500,
   "height": 667,
-  "page": "https://en.wikipedia.org/wiki/Alexander_the_Great"
+  "commonsFile": "Alexander Mosaic detail of Alexander the Great (3x4 cropped).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Alexander_Mosaic_detail_of_Alexander_the_Great_(3x4_cropped).jpg",
+  "author": "Unknown author Unknown author",
+  "license": "Public domain",
+  "licenseUrl": null
  },
  "Amelia_Earhart": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Amelia_Earhart_standing_under_nose_of_her_Lockheed_Model_10-E_Electra%2C_small_%28cropped%29.jpg/500px-Amelia_Earhart_standing_under_nose_of_her_Lockheed_Model_10-E_Electra%2C_small_%28cropped%29.jpg",
+  "file": "amelia-earhart.webp",
   "width": 500,
   "height": 672,
-  "page": "https://en.wikipedia.org/wiki/Amelia_Earhart"
+  "commonsFile": "Amelia Earhart standing under nose of her Lockheed Model 10-E Electra, small (cropped).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Amelia_Earhart_standing_under_nose_of_her_Lockheed_Model_10-E_Electra%2C_small_(cropped).jpg",
+  "author": "Underwood &amp; Underwood (active 1880 – c. 1950) [1]",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "American bison": {
+  "file": "american-bison.webp",
+  "width": 500,
+  "height": 326,
+  "commonsFile": "American bison k5680-1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:American_bison_k5680-1.jpg",
+  "author": "Jack Dykinga",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "American flamingo": {
+  "file": "american-flamingo.webp",
+  "width": 500,
+  "height": 375,
+  "commonsFile": "American Flamingo JG.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:American_Flamingo_JG.jpg",
+  "author": "JeffreyGammon",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
  },
  "American_Gothic": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Grant_Wood_-_American_Gothic_%281930%29.jpg/500px-Grant_Wood_-_American_Gothic_%281930%29.jpg",
+  "file": "american-gothic.webp",
   "width": 500,
   "height": 604,
-  "page": "https://en.wikipedia.org/wiki/American_Gothic"
+  "commonsFile": "Grant Wood - American Gothic (1930).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Grant_Wood_-_American_Gothic_(1930).jpg",
+  "author": "Grant Wood",
+  "license": "Public domain",
+  "licenseUrl": null
  },
  "Archimedes": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Domenico-Fetti_Archimedes_1620.jpg/500px-Domenico-Fetti_Archimedes_1620.jpg",
+  "file": "archimedes.webp",
   "width": 500,
   "height": 666,
-  "page": "https://en.wikipedia.org/wiki/Archimedes"
+  "commonsFile": "Domenico-Fetti Archimedes 1620.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Domenico-Fetti_Archimedes_1620.jpg",
+  "author": "Domenico Fetti",
+  "license": "Public domain",
+  "licenseUrl": null
  },
  "Arctic fox": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Vulpes_lagopus_in_Iceland_%28cropped_3%29.jpg/500px-Vulpes_lagopus_in_Iceland_%28cropped_3%29.jpg",
+  "file": "arctic-fox.webp",
   "width": 500,
   "height": 618,
-  "page": "https://en.wikipedia.org/wiki/Arctic_fox"
+  "commonsFile": "Vulpes lagopus in Iceland (cropped 3).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Vulpes_lagopus_in_Iceland_(cropped_3).jpg",
+  "author": "Jonatan Pie ( unsplash.com/@r3dmax )",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
  },
  "Aristotle": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/500px-Aristotle_Altemps_Inv8575.jpg",
+  "file": "aristotle.webp",
   "width": 500,
   "height": 669,
-  "page": "https://en.wikipedia.org/wiki/Aristotle"
+  "commonsFile": "Aristotle Altemps Inv8575.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Aristotle_Altemps_Inv8575.jpg",
+  "author": "After Lysippos",
+  "license": "Public domain",
+  "licenseUrl": null
  },
  "Arrangement_in_Grey_and_Black,_No._2:_Portrait_of_Thomas_Carlyle": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/James_Abbott_McNeill_Whistler_-_Arrangement_in_Grey_and_Black_No2_Thomas_Carlyle_c1872_-_%28MeisterDrucke-774156%29.jpg/500px-James_Abbott_McNeill_Whistler_-_Arrangement_in_Grey_and_Black_No2_Thomas_Carlyle_c1872_-_%28MeisterDrucke-774156%29.jpg",
+  "file": "arrangement-in-grey-and-black-no-2-portrait-of-thomas-carlyle.webp",
   "width": 500,
   "height": 610,
-  "page": "https://en.wikipedia.org/wiki/Arrangement_in_Grey_and_Black%2C_No._2%3A_Portrait_of_Thomas_Carlyle"
+  "commonsFile": "James Abbott McNeill Whistler - Arrangement in Grey and Black No2 Thomas Carlyle c1872 - (MeisterDrucke-774156).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:James_Abbott_McNeill_Whistler_-_Arrangement_in_Grey_and_Black_No2_Thomas_Carlyle_c1872_-_(MeisterDrucke-774156).jpg",
+  "author": "James McNeill Whistler",
+  "license": "Public domain",
+  "licenseUrl": null
  },
  "Arrangement_in_Grey_and_Black_No._1": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Whistlers_Mother_high_res.jpg/500px-Whistlers_Mother_high_res.jpg",
+  "file": "arrangement-in-grey-and-black-no-1.webp",
   "width": 500,
   "height": 445,
-  "page": "https://en.wikipedia.org/wiki/Whistler's_Mother"
+  "commonsFile": "Whistlers Mother high res.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Whistlers_Mother_high_res.jpg",
+  "author": "James McNeill Whistler",
+  "license": "Public domain",
+  "licenseUrl": null
  },
  "Ashoka": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Ashoka%27s_visit_to_the_Ramagrama_stupa_Sanchi_Stupa_1_Southern_gateway.jpg/500px-Ashoka%27s_visit_to_the_Ramagrama_stupa_Sanchi_Stupa_1_Southern_gateway.jpg",
+  "file": "ashoka.webp",
   "width": 500,
   "height": 477,
-  "page": "https://en.wikipedia.org/wiki/Ashoka"
+  "commonsFile": "Ashoka's visit to the Ramagrama stupa Sanchi Stupa 1 Southern gateway.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Ashoka's_visit_to_the_Ramagrama_stupa_Sanchi_Stupa_1_Southern_gateway.jpg",
+  "author": "Photo Dharma from Sadao, Thailand",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
  },
  "At_the_Moulin_Rouge": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Henri_de_Toulouse-Lautrec%2C_At_the_Moulin_Rouge.jpg/500px-Henri_de_Toulouse-Lautrec%2C_At_the_Moulin_Rouge.jpg",
+  "file": "at-the-moulin-rouge.webp",
   "width": 500,
-  "height": 438,
-  "page": "https://en.wikipedia.org/wiki/At_the_Moulin_Rouge"
+  "height": 437,
+  "commonsFile": "Henri de Toulouse-Lautrec, At the Moulin Rouge.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Henri_de_Toulouse-Lautrec%2C_At_the_Moulin_Rouge.jpg",
+  "author": "Henri de Toulouse-Lautrec",
+  "license": "Public domain",
+  "licenseUrl": null
  },
  "Avicenna": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Avicenna_Bust%2C_left_profile_%28cropped%29.jpg/500px-Avicenna_Bust%2C_left_profile_%28cropped%29.jpg",
+  "file": "avicenna.webp",
   "width": 500,
   "height": 645,
-  "page": "https://en.wikipedia.org/wiki/Avicenna"
+  "commonsFile": "Avicenna Bust, left profile (cropped).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Avicenna_Bust%2C_left_profile_(cropped).jpg",
+  "author": "National Library of Medicine",
+  "license": "No restrictions",
+  "licenseUrl": "https://www.flickr.com/commons/usage/"
  },
  "Axolotl": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Axolotl_ganz.jpg/500px-Axolotl_ganz.jpg",
+  "file": "axolotl.webp",
   "width": 500,
   "height": 279,
-  "page": "https://en.wikipedia.org/wiki/Axolotl"
+  "commonsFile": "Axolotl ganz.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Axolotl_ganz.jpg",
+  "author": "LoKiLeCh",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
  },
  "Bal_du_moulin_de_la_Galette": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg/500px-Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg",
+  "file": "bal-du-moulin-de-la-galette.webp",
   "width": 500,
   "height": 372,
-  "page": "https://en.wikipedia.org/wiki/Bal_du_moulin_de_la_Galette"
- },
- "Blue whale": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg/500px-Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg",
-  "width": 500,
-  "height": 346,
-  "page": "https://en.wikipedia.org/wiki/Blue_whale"
- },
- "Blue_Nude_(Souvenir_de_Biskra)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Matisse_Souvenir_de_Biskra.jpg/500px-Matisse_Souvenir_de_Biskra.jpg",
-  "width": 500,
-  "height": 329,
-  "page": "https://en.wikipedia.org/wiki/Blue_Nude_(Souvenir_de_Biskra)"
- },
- "Bombardier beetle": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Brachinus_spPCCA20060328-2821B.jpg/500px-Brachinus_spPCCA20060328-2821B.jpg",
-  "width": 500,
-  "height": 357,
-  "page": "https://en.wikipedia.org/wiki/Bombardier_beetle"
- },
- "Café_Terrace_at_Night": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Van_Gogh_-_Terrace_of_a_Caf%C3%A9_at_Night_%28Place_du_Forum%29_1888.jpg/500px-Van_Gogh_-_Terrace_of_a_Caf%C3%A9_at_Night_%28Place_du_Forum%29_1888.jpg",
-  "width": 500,
-  "height": 624,
-  "page": "https://en.wikipedia.org/wiki/Caf%C3%A9_Terrace_at_Night"
- },
- "Capybara": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Capybaracropped.jpg/500px-Capybaracropped.jpg",
-  "width": 500,
-  "height": 334,
-  "page": "https://en.wikipedia.org/wiki/Capybara"
- },
- "Charles_Darwin": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Charles_Darwin_seated_crop.jpg/500px-Charles_Darwin_seated_crop.jpg",
-  "width": 500,
-  "height": 658,
-  "page": "https://en.wikipedia.org/wiki/Charles_Darwin"
- },
- "Charles_Dickens": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Dickens_Gurney_head.jpg/500px-Dickens_Gurney_head.jpg",
-  "width": 500,
-  "height": 731,
-  "page": "https://en.wikipedia.org/wiki/Charles_Dickens"
- },
- "Cheetah": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Male_cheetah_facing_left_in_South_Africa.jpg/500px-Male_cheetah_facing_left_in_South_Africa.jpg",
-  "width": 500,
-  "height": 333,
-  "page": "https://en.wikipedia.org/wiki/Cheetah"
- },
- "Chimpanzee": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg/500px-015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg",
-  "width": 500,
-  "height": 750,
-  "page": "https://en.wikipedia.org/wiki/Chimpanzee"
- },
- "Christopher_Columbus": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Portrait_of_a_Man%2C_Said_to_be_Christopher_Columbus.jpg/500px-Portrait_of_a_Man%2C_Said_to_be_Christopher_Columbus.jpg",
-  "width": 500,
-  "height": 605,
-  "page": "https://en.wikipedia.org/wiki/Christopher_Columbus"
- },
- "Clavicle": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Clavicle_-_anterior_view.png/500px-Clavicle_-_anterior_view.png",
-  "width": 500,
-  "height": 500,
-  "page": "https://en.wikipedia.org/wiki/Clavicle"
- },
- "Cleopatra": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Kleopatra-VII.-Altes-Museum-Berlin1.jpg/500px-Kleopatra-VII.-Altes-Museum-Berlin1.jpg",
-  "width": 500,
-  "height": 663,
-  "page": "https://en.wikipedia.org/wiki/Cleopatra"
- },
- "Clownfish": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Amphiprion_ocellaris_%28Clown_anemonefish%29_by_Nick_Hobgood.jpg/500px-Amphiprion_ocellaris_%28Clown_anemonefish%29_by_Nick_Hobgood.jpg",
-  "width": 500,
-  "height": 341,
-  "page": "https://en.wikipedia.org/wiki/Clownfish"
- },
- "Common bottlenose dolphin": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Tursiops_truncatus_01-cropped.jpg/500px-Tursiops_truncatus_01-cropped.jpg",
-  "width": 500,
-  "height": 370,
-  "page": "https://en.wikipedia.org/wiki/Common_bottlenose_dolphin"
- },
- "Common ostrich": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Struthio_camelus_-_Etosha_2014_%283%29.jpg/500px-Struthio_camelus_-_Etosha_2014_%283%29.jpg",
-  "width": 500,
-  "height": 333,
-  "page": "https://en.wikipedia.org/wiki/Common_ostrich"
- },
- "Common vampire bat": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Desmo-Flug-01.jpg/500px-Desmo-Flug-01.jpg",
-  "width": 500,
-  "height": 415,
-  "page": "https://en.wikipedia.org/wiki/Common_vampire_bat"
- },
- "Confucius": {
-  "src": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Confucius%2C_fresco_from_a_Western_Han_tomb_of_Dongping_County%2C_Shandong_province%2C_China_%28cropped%29.jpg",
-  "width": 345,
-  "height": 322,
-  "page": "https://en.wikipedia.org/wiki/Confucius"
- },
- "Dance_(Matisse)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Matissedance.jpg/500px-Matissedance.jpg",
-  "width": 500,
-  "height": 329,
-  "page": "https://en.wikipedia.org/wiki/Dance_(Matisse)"
- },
- "Dmitri_Mendeleev": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Dmitri_Mendeleev.jpg/500px-Dmitri_Mendeleev.jpg",
-  "width": 500,
-  "height": 688,
-  "page": "https://en.wikipedia.org/wiki/Dmitri_Mendeleev"
- },
- "Earth": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Meteosat-12-fci-march-equinox-2025-noon.jpg/500px-Meteosat-12-fci-march-equinox-2025-noon.jpg",
-  "width": 500,
-  "height": 500,
-  "page": "https://en.wikipedia.org/wiki/Earth"
- },
- "Edward_Jenner": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Edward_Jenner.jpg/500px-Edward_Jenner.jpg",
-  "width": 500,
-  "height": 633,
-  "page": "https://en.wikipedia.org/wiki/Edward_Jenner"
- },
- "Electric eel": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Electric-eel.jpg/500px-Electric-eel.jpg",
-  "width": 500,
-  "height": 375,
-  "page": "https://en.wikipedia.org/wiki/Electric_eel"
- },
- "Elizabeth_I": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Darnley_stage_3.jpg/500px-Darnley_stage_3.jpg",
-  "width": 500,
-  "height": 731,
-  "page": "https://en.wikipedia.org/wiki/Elizabeth_I"
- },
- "Emperor penguin": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Aptenodytes_forsteri_-Snow_Hill_Island%2C_Antarctica_-adults_and_juvenile-8.jpg/500px-Aptenodytes_forsteri_-Snow_Hill_Island%2C_Antarctica_-adults_and_juvenile-8.jpg",
-  "width": 500,
-  "height": 803,
-  "page": "https://en.wikipedia.org/wiki/Emperor_penguin"
- },
- "Ernest_Shackleton": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Ernest_Shackleton_before_1909.jpg/500px-Ernest_Shackleton_before_1909.jpg",
-  "width": 500,
-  "height": 690,
-  "page": "https://en.wikipedia.org/wiki/Ernest_Shackleton"
- },
- "Et_in_Arcadia_ego_(Poussin)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Nicolas_Poussin_-_Et_in_Arcadia_ego_%28deuxi%C3%A8me_version%29.jpg/500px-Nicolas_Poussin_-_Et_in_Arcadia_ego_%28deuxi%C3%A8me_version%29.jpg",
-  "width": 500,
-  "height": 356,
-  "page": "https://en.wikipedia.org/wiki/Et_in_Arcadia_ego_(Poussin)"
- },
- "Europa (moon)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Europa_-_Perijove_45_%28cropped%29.png/500px-Europa_-_Perijove_45_%28cropped%29.png",
-  "width": 500,
-  "height": 500,
-  "page": "https://en.wikipedia.org/wiki/Europa_(moon)"
- },
- "Femur": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Femur_-_anterior_view2.png/500px-Femur_-_anterior_view2.png",
-  "width": 500,
-  "height": 500,
-  "page": "https://en.wikipedia.org/wiki/Femur"
- },
- "Ferdinand_Magellan": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Ferdinand_Magellan.jpg/500px-Ferdinand_Magellan.jpg",
-  "width": 500,
-  "height": 617,
-  "page": "https://en.wikipedia.org/wiki/Ferdinand_Magellan"
- },
- "Fibula": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Fibula_-_anterior_view.png/500px-Fibula_-_anterior_view.png",
-  "width": 500,
-  "height": 500,
-  "page": "https://en.wikipedia.org/wiki/Fibula"
- },
- "File:Human_brain_NIH.png": {
-  "src": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Human_brain_NIH.png",
-  "width": 344,
-  "height": 250,
-  "page": "https://commons.wikimedia.org/wiki/File:Human_brain_NIH.png"
- },
- "File:Liver_03_anterior_view.png": {
-  "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Liver_03_anterior_view.png/500px-Liver_03_anterior_view.png",
-  "width": 500,
-  "height": 500,
-  "page": "https://commons.wikimedia.org/wiki/File:Liver_03_anterior_view.png"
- },
- "File:Pelvis (male) 01 - anterior view.png": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Pelvis_%28male%29_01_-_anterior_view.png/500px-Pelvis_%28male%29_01_-_anterior_view.png",
-  "width": 500,
-  "height": 500,
-  "page": "https://commons.wikimedia.org/wiki/File:Pelvis_(male)_01_-_anterior_view.png"
- },
- "File:SKULL-FRONT - NARA - 524360.jpg": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/SKULL-FRONT_-_NARA_-_524360.jpg/500px-SKULL-FRONT_-_NARA_-_524360.jpg",
-  "width": 500,
-  "height": 643,
-  "page": "https://commons.wikimedia.org/wiki/File:SKULL-FRONT_-_NARA_-_524360.jpg"
- },
- "Florence_Nightingale": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Florence_Nightingale_%28H_Hering_NPG_x82368%29.jpg/500px-Florence_Nightingale_%28H_Hering_NPG_x82368%29.jpg",
-  "width": 500,
-  "height": 695,
-  "page": "https://en.wikipedia.org/wiki/Florence_Nightingale"
- },
- "Frederick_Douglass": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Frederick_Douglass_%28circa_1879%29_%28cropped%29.jpg/500px-Frederick_Douglass_%28circa_1879%29_%28cropped%29.jpg",
-  "width": 500,
-  "height": 666,
-  "page": "https://en.wikipedia.org/wiki/Frederick_Douglass"
- },
- "Frida_Kahlo": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg/500px-Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg",
-  "width": 500,
-  "height": 750,
-  "page": "https://en.wikipedia.org/wiki/Frida_Kahlo"
- },
- "Frédéric_Chopin": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Frederic_Chopin_photo.jpeg/500px-Frederic_Chopin_photo.jpeg",
-  "width": 500,
-  "height": 705,
-  "page": "https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin"
- },
- "Fyodor_Dostoevsky": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg/500px-Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg",
-  "width": 500,
-  "height": 625,
-  "page": "https://en.wikipedia.org/wiki/Fyodor_Dostoevsky"
- },
- "Galileo_Galilei": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Galileo_Galilei_%281564-1642%29_RMG_BHC2700.tiff/lossy-page1-500px-Galileo_Galilei_%281564-1642%29_RMG_BHC2700.tiff.jpg",
-  "width": 500,
-  "height": 635,
-  "page": "https://en.wikipedia.org/wiki/Galileo_Galilei"
- },
- "Ganymede (moon)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Ganymede_-_Perijove_34_Composite.png/500px-Ganymede_-_Perijove_34_Composite.png",
-  "width": 500,
-  "height": 500,
-  "page": "https://en.wikipedia.org/wiki/Ganymede_(moon)"
- },
- "Genghis_Khan": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/YuanEmperorAlbumGenghisPortrait.jpg/500px-YuanEmperorAlbumGenghisPortrait.jpg",
-  "width": 500,
-  "height": 635,
-  "page": "https://en.wikipedia.org/wiki/Genghis_Khan"
- },
- "George_Washington": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/500px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg",
-  "width": 500,
-  "height": 607,
-  "page": "https://en.wikipedia.org/wiki/George_Washington"
- },
- "Giant Pacific octopus": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Enteroctopus_dolfeini.jpg/500px-Enteroctopus_dolfeini.jpg",
-  "width": 500,
-  "height": 375,
-  "page": "https://en.wikipedia.org/wiki/Giant_Pacific_octopus"
- },
- "Giant oceanic manta ray": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Manta_birostris-Thailand4.jpg/500px-Manta_birostris-Thailand4.jpg",
-  "width": 500,
-  "height": 375,
-  "page": "https://en.wikipedia.org/wiki/Giant_oceanic_manta_ray"
- },
- "Giant panda": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/500px-Grosser_Panda.JPG",
-  "width": 500,
-  "height": 333,
-  "page": "https://en.wikipedia.org/wiki/Giant_panda"
- },
- "Giraffe": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Giraffe_Mikumi_National_Park.jpg/500px-Giraffe_Mikumi_National_Park.jpg",
-  "width": 500,
-  "height": 632,
-  "page": "https://en.wikipedia.org/wiki/Giraffe"
- },
- "Girl_with_a_Pearl_Earring": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/500px-1665_Girl_with_a_Pearl_Earring.jpg",
-  "width": 500,
-  "height": 592,
-  "page": "https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring"
- },
- "Golden eagle": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/015_Wild_Golden_Eagle_in_flight_at_Pfyn-Finges_%28Switzerland%29_Photo_by_Giles_Laurent.jpg/500px-015_Wild_Golden_Eagle_in_flight_at_Pfyn-Finges_%28Switzerland%29_Photo_by_Giles_Laurent.jpg",
-  "width": 500,
-  "height": 625,
-  "page": "https://en.wikipedia.org/wiki/Golden_eagle"
- },
- "Goliath birdeater": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Theraphosa_blondi_MHNT.jpg/500px-Theraphosa_blondi_MHNT.jpg",
-  "width": 500,
-  "height": 730,
-  "page": "https://en.wikipedia.org/wiki/Goliath_birdeater"
- },
- "Grace_Hopper": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Commodore_Grace_M._Hopper%2C_USN_%28covered%29_head_and_shoulders_crop.jpg/500px-Commodore_Grace_M._Hopper%2C_USN_%28covered%29_head_and_shoulders_crop.jpg",
-  "width": 500,
-  "height": 665,
-  "page": "https://en.wikipedia.org/wiki/Grace_Hopper"
- },
- "Gray wolf": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Eurasian_wolf_2.jpg/500px-Eurasian_wolf_2.jpg",
-  "width": 500,
-  "height": 387,
-  "page": "https://en.wikipedia.org/wiki/Wolf"
- },
- "Great white shark": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/White_shark.jpg/500px-White_shark.jpg",
-  "width": 500,
-  "height": 348,
-  "page": "https://en.wikipedia.org/wiki/Great_white_shark"
- },
- "Green anaconda": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Sucuri_verde.jpg/500px-Sucuri_verde.jpg",
-  "width": 500,
-  "height": 375,
-  "page": "https://en.wikipedia.org/wiki/Green_anaconda"
- },
- "Grizzly bear": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/GrizzlyBearJeanBeaufort.jpg/500px-GrizzlyBearJeanBeaufort.jpg",
-  "width": 500,
-  "height": 360,
-  "page": "https://en.wikipedia.org/wiki/Grizzly_bear"
- },
- "Hannibal": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Hannibal_Barca_bust_from_Capua_photo.jpg/500px-Hannibal_Barca_bust_from_Capua_photo.jpg",
-  "width": 500,
-  "height": 605,
-  "page": "https://en.wikipedia.org/wiki/Hannibal"
- },
- "Harriet_Tubman": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Carte-de-visite_portrait_of_Harriet_Tubman_%28cropped%29.jpg/500px-Carte-de-visite_portrait_of_Harriet_Tubman_%28cropped%29.jpg",
-  "width": 500,
-  "height": 666,
-  "page": "https://en.wikipedia.org/wiki/Harriet_Tubman"
- },
- "Heart": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Heart_anterior_exterior_view.png/500px-Heart_anterior_exterior_view.png",
-  "width": 500,
-  "height": 755,
-  "page": "https://en.wikipedia.org/wiki/Heart"
- },
- "Horseshoe crab": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Tachypleus_gigas.JPG/500px-Tachypleus_gigas.JPG",
-  "width": 500,
-  "height": 375,
-  "page": "https://en.wikipedia.org/wiki/Horseshoe_crab"
- },
- "Humerus": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Humerus_-_anterior_view.png/500px-Humerus_-_anterior_view.png",
-  "width": 500,
-  "height": 500,
-  "page": "https://en.wikipedia.org/wiki/Humerus"
- },
- "Hunters_in_the_Snow": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_%28Winter%29_-_Google_Art_Project.jpg/500px-Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_%28Winter%29_-_Google_Art_Project.jpg",
-  "width": 500,
-  "height": 356,
-  "page": "https://en.wikipedia.org/wiki/The_Hunters_in_the_Snow"
- },
- "Ibn_Battuta": {
-  "src": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Handmade_oil_painting_reproduction_of_Ibn_Battuta_in_Egypt%2C_a_painting_by_Hippolyte_Leon_Benett..jpg",
-  "width": 498,
-  "height": 718,
-  "page": "https://en.wikipedia.org/wiki/Ibn_Battuta"
- },
- "Imhotep": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Imhotep%2C_donated_by_Padisu_MET_DP164134.jpg/500px-Imhotep%2C_donated_by_Padisu_MET_DP164134.jpg",
-  "width": 500,
-  "height": 673,
-  "page": "https://en.wikipedia.org/wiki/Imhotep"
- },
- "Immanuel_Kant": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Immanuel_Kant_-_Gemaelde_1.jpg/500px-Immanuel_Kant_-_Gemaelde_1.jpg",
-  "width": 500,
-  "height": 653,
-  "page": "https://en.wikipedia.org/wiki/Immanuel_Kant"
- },
- "Impression,_Sunrise": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/500px-Monet_-_Impression%2C_Sunrise.jpg",
-  "width": 500,
-  "height": 388,
-  "page": "https://en.wikipedia.org/wiki/Impression%2C_Sunrise"
- },
- "Io (moon)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Io_highest_resolution_natural_color.png/500px-Io_highest_resolution_natural_color.png",
-  "width": 500,
-  "height": 500,
-  "page": "https://en.wikipedia.org/wiki/Io_(moon)"
- },
- "Irises_(painting)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Irises-Vincent_van_Gogh.jpg/500px-Irises-Vincent_van_Gogh.jpg",
-  "width": 500,
-  "height": 382,
-  "page": "https://en.wikipedia.org/wiki/Irises_(painting)"
- },
- "Isaac_Newton": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg/500px-Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg",
-  "width": 500,
-  "height": 602,
-  "page": "https://en.wikipedia.org/wiki/Isaac_Newton"
- },
- "James_Watt": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Watt_James_von_Breda.jpg/500px-Watt_James_von_Breda.jpg",
-  "width": 500,
-  "height": 627,
-  "page": "https://en.wikipedia.org/wiki/James_Watt"
- },
- "Jawaharlal_Nehru": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Nehru_in_the_Netherlands%2C_1957.jpg/500px-Nehru_in_the_Netherlands%2C_1957.jpg",
-  "width": 500,
-  "height": 649,
-  "page": "https://en.wikipedia.org/wiki/Jawaharlal_Nehru"
- },
- "Joan_of_Arc": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Joan_of_Arc_miniature_graded.jpg/500px-Joan_of_Arc_miniature_graded.jpg",
-  "width": 500,
-  "height": 745,
-  "page": "https://en.wikipedia.org/wiki/Joan_of_Arc"
- },
- "John_Locke": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Godfrey_Kneller_-_Portrait_of_John_Locke_%28Hermitage%29.jpg/500px-Godfrey_Kneller_-_Portrait_of_John_Locke_%28Hermitage%29.jpg",
-  "width": 500,
-  "height": 610,
-  "page": "https://en.wikipedia.org/wiki/John_Locke"
- },
- "Judith_Slaying_Holofernes_(Artemisia_Gentileschi,_Naples)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Artemisia_Gentileschi_-_Judith_Beheading_Holofernes_-_WGA8563.jpg/500px-Artemisia_Gentileschi_-_Judith_Beheading_Holofernes_-_WGA8563.jpg",
-  "width": 500,
-  "height": 637,
-  "page": "https://en.wikipedia.org/wiki/Judith_Slaying_Holofernes_(Artemisia_Gentileschi%2C_Naples)"
- },
- "Julius_Caesar": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Retrato_de_Julio_C%C3%A9sar_%2826724093101%29_%28cropped%29.jpg/500px-Retrato_de_Julio_C%C3%A9sar_%2826724093101%29_%28cropped%29.jpg",
-  "width": 500,
-  "height": 679,
-  "page": "https://en.wikipedia.org/wiki/Julius_Caesar"
- },
- "Jupiter": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Jupiter_OPAL_2024.png/500px-Jupiter_OPAL_2024.png",
-  "width": 500,
-  "height": 453,
-  "page": "https://en.wikipedia.org/wiki/Jupiter"
- },
- "Komodo dragon": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/202306_Varanus_komodoensis.jpg/500px-202306_Varanus_komodoensis.jpg",
-  "width": 500,
-  "height": 357,
-  "page": "https://en.wikipedia.org/wiki/Komodo_dragon"
- },
- "Large intestine": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Tractus_intestinalis_intestinum_crassum.svg/500px-Tractus_intestinalis_intestinum_crassum.svg.png",
-  "width": 400,
-  "height": 550,
-  "page": "https://en.wikipedia.org/wiki/Large_intestine"
- },
- "Las_Meninas": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg/500px-Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg",
-  "width": 500,
-  "height": 575,
-  "page": "https://en.wikipedia.org/wiki/Las_Meninas"
- },
- "Leatherback sea turtle": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Leatherback_sea_turtle_Tinglar%2C_USVI_%285839996547%29.jpg/500px-Leatherback_sea_turtle_Tinglar%2C_USVI_%285839996547%29.jpg",
-  "width": 500,
-  "height": 291,
-  "page": "https://en.wikipedia.org/wiki/Leatherback_sea_turtle"
- },
- "Leo_Tolstoy": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Leo_Tolstoy_1908_Portrait_%283x4_cropped%29.jpg/500px-Leo_Tolstoy_1908_Portrait_%283x4_cropped%29.jpg",
-  "width": 500,
-  "height": 662,
-  "page": "https://en.wikipedia.org/wiki/Leo_Tolstoy"
- },
- "Leonardo_da_Vinci": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Francesco_Melzi_-_Portrait_of_Leonardo_%28colour_correction%29.png/500px-Francesco_Melzi_-_Portrait_of_Leonardo_%28colour_correction%29.png",
-  "width": 500,
-  "height": 716,
-  "page": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci"
- },
- "Liberty_Leading_the_People": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg/500px-La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg",
+  "commonsFile": "Renoir, Pierre-Auguste - Dance at Le Moulin de la Galette, 1876.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg",
+  "author": "Pierre-Auguste Renoir",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Bald eagle": {
+  "file": "bald-eagle.webp",
   "width": 500,
   "height": 400,
-  "page": "https://en.wikipedia.org/wiki/Liberty_Leading_the_People"
+  "commonsFile": "Bald eagle about to fly in Alaska (2016).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Bald_eagle_about_to_fly_in_Alaska_(2016).jpg",
+  "author": "Andy Morffew from Itchen Abbas, Hampshire, UK",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
  },
- "Lion": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg/500px-020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
+ "Barn owl": {
+  "file": "barn-owl.webp",
   "width": 500,
-  "height": 334,
-  "page": "https://en.wikipedia.org/wiki/Lion"
+  "height": 750,
+  "commonsFile": "American Barn Owl (Tyto furcata guatemalae), Orange Walk.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:American_Barn_Owl_(Tyto_furcata_guatemalae)%2C_Orange_Walk.jpg",
+  "author": "Charles J. Sharp",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
  },
- "Lise_Meitner": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Lise_Meitner_NatGeo.jpg/500px-Lise_Meitner_NatGeo.jpg",
+ "Blue whale": {
+  "file": "blue-whale.webp",
   "width": 500,
-  "height": 653,
-  "page": "https://en.wikipedia.org/wiki/Lise_Meitner"
+  "height": 346,
+  "commonsFile": "Anim1754 - Flickr - NOAA Photo Library.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg",
+  "author": "NOAA Photo Library",
+  "license": "Public domain",
+  "licenseUrl": null
  },
- "Louis_Pasteur": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Louis_Pasteur%2C_foto_av_Paul_Nadar%2C_Crisco_edit.jpg/500px-Louis_Pasteur%2C_foto_av_Paul_Nadar%2C_Crisco_edit.jpg",
+ "Blue_Nude_(Souvenir_de_Biskra)": {
+  "file": "blue-nude-souvenir-de-biskra.webp",
   "width": 500,
-  "height": 689,
-  "page": "https://en.wikipedia.org/wiki/Louis_Pasteur"
+  "height": 280,
+  "commonsFile": "Matisse Souvenir de Biskra.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Matisse_Souvenir_de_Biskra.jpg",
+  "author": "Henri Matisse",
+  "license": "Public domain",
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0,
+    0,
+    0.15,
+    0
+   ]
+  }
  },
- "Ludwig_van_Beethoven": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Joseph_Karl_Stieler%27s_Beethoven_mit_dem_Manuskript_der_Missa_solemnis.jpg/500px-Joseph_Karl_Stieler%27s_Beethoven_mit_dem_Manuskript_der_Missa_solemnis.jpg",
+ "Bombardier beetle": {
+  "file": "bombardier-beetle.webp",
   "width": 500,
-  "height": 622,
-  "page": "https://en.wikipedia.org/wiki/Ludwig_van_Beethoven"
+  "height": 357,
+  "commonsFile": "Brachinus spPCCA20060328-2821B.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Brachinus_spPCCA20060328-2821B.jpg",
+  "author": "Patrick Coin ( Patrick Coin )",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
  },
- "Lung": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Lungs_diagram_detailed.svg/500px-Lungs_diagram_detailed.svg.png",
+ "Bornean orangutan": {
+  "file": "bornean-orangutan.webp",
   "width": 500,
-  "height": 639,
-  "page": "https://en.wikipedia.org/wiki/Lung"
+  "height": 750,
+  "commonsFile": "Tanjung Puting30477.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Tanjung_Puting30477.jpg",
+  "author": "Nanosanchez",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
  },
- "Madonna_(Munch_painting)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Edvard_Munch_-_Madonna_-_Google_Art_Project.jpg/500px-Edvard_Munch_-_Madonna_-_Google_Art_Project.jpg",
+ "Brown-throated sloth": {
+  "file": "brown-throated-sloth.webp",
   "width": 500,
-  "height": 660,
-  "page": "https://en.wikipedia.org/wiki/Madonna_(Munch)"
+  "height": 667,
+  "commonsFile": "Bradypus.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Bradypus.jpg",
+  "author": "Stefan Laube ( Tauchgurke )",
+  "license": "Public domain",
+  "licenseUrl": null
  },
- "Mahatma_Gandhi": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Mahatma-Gandhi%2C_studio%2C_1931.jpg/500px-Mahatma-Gandhi%2C_studio%2C_1931.jpg",
+ "Café_Terrace_at_Night": {
+  "file": "cafe-terrace-at-night.webp",
   "width": 500,
   "height": 624,
-  "page": "https://en.wikipedia.org/wiki/Mahatma_Gandhi"
+  "commonsFile": "Van Gogh - Terrace of a Café at Night (Place du Forum) 1888.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Terrace_of_a_Caf%C3%A9_at_Night_(Place_du_Forum)_1888.jpg",
+  "author": "Vincent van Gogh",
+  "license": "Public domain",
+  "licenseUrl": null
  },
- "Maimonides": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Portrait_of_Moses_Maimonides_in_Thesaurus_antiquitatum_sacrarum.tif/lossy-page1-500px-Portrait_of_Moses_Maimonides_in_Thesaurus_antiquitatum_sacrarum.tif.jpg",
+ "Capybara": {
+  "file": "capybara.webp",
   "width": 500,
-  "height": 284,
-  "page": "https://en.wikipedia.org/wiki/Maimonides"
+  "height": 334,
+  "commonsFile": "Capybaracropped.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Capybaracropped.jpg",
+  "author": "Giles Laurent",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
  },
- "Mantis shrimp": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/OdontodactylusScyllarus2.jpg/500px-OdontodactylusScyllarus2.jpg",
+ "Charles_Darwin": {
+  "file": "charles-darwin.webp",
   "width": 500,
-  "height": 247,
-  "page": "https://en.wikipedia.org/wiki/Mantis_shrimp"
+  "height": 658,
+  "commonsFile": "Charles Darwin seated crop.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Charles_Darwin_seated_crop.jpg",
+  "author": "Charles_Darwin_seated.jpg : Henry Maull (1829–1914) and John Fox (1832–1907) (Ma",
+  "license": "Public domain",
+  "licenseUrl": null
  },
- "Marco_Polo": {
-  "src": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Frontispice_%C3%A9dition_de_Nuremberg_1477_%28cropped%29.png",
-  "width": 363,
-  "height": 623,
-  "page": "https://en.wikipedia.org/wiki/Marco_Polo"
- },
- "Marie_Curie": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Marie_Curie_c._1920s.jpg/500px-Marie_Curie_c._1920s.jpg",
+ "Charles_Dickens": {
+  "file": "charles-dickens.webp",
   "width": 500,
-  "height": 679,
-  "page": "https://en.wikipedia.org/wiki/Marie_Curie"
+  "height": 731,
+  "commonsFile": "Dickens Gurney head.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Dickens_Gurney_head.jpg",
+  "author": "Jeremiah Gurney",
+  "license": "Public domain",
+  "licenseUrl": null
  },
- "Mars": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Mars_-_August_30_2021_-_Flickr_-_Kevin_M._Gill.png/500px-Mars_-_August_30_2021_-_Flickr_-_Kevin_M._Gill.png",
-  "width": 500,
-  "height": 500,
-  "page": "https://en.wikipedia.org/wiki/Mars"
- },
- "Martin_Luther": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Lucas_Cranach_d.%C3%84._-_Martin_Luther%2C_1528_%28Veste_Coburg%29.jpg/500px-Lucas_Cranach_d.%C3%84._-_Martin_Luther%2C_1528_%28Veste_Coburg%29.jpg",
-  "width": 500,
-  "height": 791,
-  "page": "https://en.wikipedia.org/wiki/Martin_Luther"
- },
- "Mercury (planet)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Mercury_in_true_color.jpg/500px-Mercury_in_true_color.jpg",
-  "width": 500,
-  "height": 500,
-  "page": "https://en.wikipedia.org/wiki/Mercury_(planet)"
- },
- "Michael_Faraday": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Michael_Faraday_sitting_crop.jpg/500px-Michael_Faraday_sitting_crop.jpg",
-  "width": 500,
-  "height": 661,
-  "page": "https://en.wikipedia.org/wiki/Michael_Faraday"
- },
- "Michelangelo": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Michelangelo_Daniele_da_Volterra_%28dettaglio%29.jpg/500px-Michelangelo_Daniele_da_Volterra_%28dettaglio%29.jpg",
-  "width": 500,
-  "height": 579,
-  "page": "https://en.wikipedia.org/wiki/Michelangelo"
- },
- "Mimic octopus": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Mimic_Octopus_2.jpg/500px-Mimic_Octopus_2.jpg",
-  "width": 500,
-  "height": 625,
-  "page": "https://en.wikipedia.org/wiki/Mimic_octopus"
- },
- "Mona_Lisa": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Mona_Lisa.jpg/500px-Mona_Lisa.jpg",
-  "width": 500,
-  "height": 756,
-  "page": "https://en.wikipedia.org/wiki/Mona_Lisa"
- },
- "Monarch butterfly": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg/500px-Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg",
-  "width": 500,
-  "height": 375,
-  "page": "https://en.wikipedia.org/wiki/Monarch_butterfly"
- },
- "Moon": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/500px-FullMoon2010.jpg",
-  "width": 500,
-  "height": 475,
-  "page": "https://en.wikipedia.org/wiki/Moon"
- },
- "Muhammad_ibn_Musa_al-Khwarizmi": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Madrid_-_Ciudad_Universitaria%2C_Monumento_a_Muhammad_al-Juarismi_%28cropped%29.jpg/500px-Madrid_-_Ciudad_Universitaria%2C_Monumento_a_Muhammad_al-Juarismi_%28cropped%29.jpg",
-  "width": 500,
-  "height": 666,
-  "page": "https://en.wikipedia.org/wiki/Al-Khwarizmi"
- },
- "Mustafa_Kemal_Atatürk": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Ataturk1930s.jpg/500px-Ataturk1930s.jpg",
-  "width": 500,
-  "height": 674,
-  "page": "https://en.wikipedia.org/wiki/Mustafa_Kemal_Atat%C3%BCrk"
- },
- "Napoleon": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg/500px-Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg",
-  "width": 500,
-  "height": 834,
-  "page": "https://en.wikipedia.org/wiki/Napoleon"
- },
- "Narwhal": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/%D0%9D%D0%B0%D1%80%D0%B2%D0%B0%D0%BB_%D0%B2_%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%90%D1%80%D0%BA%D1%82%D0%B8%D0%BA%D0%B5.jpg/500px-%D0%9D%D0%B0%D1%80%D0%B2%D0%B0%D0%BB_%D0%B2_%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%90%D1%80%D0%BA%D1%82%D0%B8%D0%BA%D0%B5.jpg",
+ "Cheetah": {
+  "file": "cheetah.webp",
   "width": 500,
   "height": 333,
-  "page": "https://en.wikipedia.org/wiki/Narwhal"
+  "commonsFile": "Male cheetah facing left in South Africa.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Male_cheetah_facing_left_in_South_Africa.jpg",
+  "author": "AfricanConservation",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
  },
- "Neil_Armstrong": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Neil_Armstrong_pose.jpg/500px-Neil_Armstrong_pose.jpg",
-  "width": 500,
-  "height": 625,
-  "page": "https://en.wikipedia.org/wiki/Neil_Armstrong"
- },
- "Nelson_Mandela": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Nelson_Mandela_1994.jpg/500px-Nelson_Mandela_1994.jpg",
-  "width": 500,
-  "height": 647,
-  "page": "https://en.wikipedia.org/wiki/Nelson_Mandela"
- },
- "Neptune": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Neptune_Voyager2_color_calibrated.png/500px-Neptune_Voyager2_color_calibrated.png",
-  "width": 500,
-  "height": 500,
-  "page": "https://en.wikipedia.org/wiki/Neptune"
- },
- "Niccolò_Machiavelli": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg/500px-Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg",
-  "width": 500,
-  "height": 643,
-  "page": "https://en.wikipedia.org/wiki/Niccol%C3%B2_Machiavelli"
- },
- "Niels_Bohr": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Niels_Bohr.jpg/500px-Niels_Bohr.jpg",
-  "width": 500,
-  "height": 703,
-  "page": "https://en.wikipedia.org/wiki/Niels_Bohr"
- },
- "Nikola_Tesla": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Tesla_circa_1890.jpeg/500px-Tesla_circa_1890.jpeg",
-  "width": 500,
-  "height": 670,
-  "page": "https://en.wikipedia.org/wiki/Nikola_Tesla"
- },
- "Oath_of_the_Horatii": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Le_Serment_des_Horaces_-_Jacques-Louis_David_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3692_%3B_MR_1432.jpg/500px-Le_Serment_des_Horaces_-_Jacques-Louis_David_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3692_%3B_MR_1432.jpg",
-  "width": 500,
-  "height": 388,
-  "page": "https://en.wikipedia.org/wiki/Oath_of_the_Horatii"
- },
- "Ophelia_(Millais)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg/500px-John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg",
-  "width": 500,
-  "height": 340,
-  "page": "https://en.wikipedia.org/wiki/Ophelia_(Millais)"
- },
- "Otto_von_Bismarck": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Otto_von_Bismarck_1885_%28cropped%29.jpg/500px-Otto_von_Bismarck_1885_%28cropped%29.jpg",
-  "width": 500,
-  "height": 675,
-  "page": "https://en.wikipedia.org/wiki/Otto_von_Bismarck"
- },
- "Pablo_Picasso": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Pablo_picasso_1.jpg/500px-Pablo_picasso_1.jpg",
-  "width": 500,
-  "height": 584,
-  "page": "https://en.wikipedia.org/wiki/Pablo_Picasso"
- },
- "Peregrine falcon": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg/500px-Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg",
-  "width": 500,
-  "height": 608,
-  "page": "https://en.wikipedia.org/wiki/Peregrine_falcon"
- },
- "Plato": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Plato_Silanion_Musei_Capitolini_MC1377.png/500px-Plato_Silanion_Musei_Capitolini_MC1377.png",
+ "Chimpanzee": {
+  "file": "chimpanzee.webp",
   "width": 500,
   "height": 750,
-  "page": "https://en.wikipedia.org/wiki/Plato"
+  "commonsFile": "015 Chimpanzee at Kibale forest National Park Photo by Giles Laurent.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg",
+  "author": "Giles Laurent",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
  },
- "Platypus": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Duck-billed_platypus_%28Ornithorhynchus_anatinus%29_Scottsdale.jpg/500px-Duck-billed_platypus_%28Ornithorhynchus_anatinus%29_Scottsdale.jpg",
-  "width": 500,
-  "height": 333,
-  "page": "https://en.wikipedia.org/wiki/Platypus"
- },
- "Portrait_of_Adele_Bloch-Bauer_I": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Gustav_Klimt%2C_1907%2C_Adele_Bloch-Bauer_I%2C_Neue_Galerie_New_York.jpg/500px-Gustav_Klimt%2C_1907%2C_Adele_Bloch-Bauer_I%2C_Neue_Galerie_New_York.jpg",
-  "width": 500,
-  "height": 500,
-  "page": "https://en.wikipedia.org/wiki/Portrait_of_Adele_Bloch-Bauer_I"
- },
- "Portrait_of_Madame_X": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Madame_X_%28Madame_Pierre_Gautreau%29%2C_John_Singer_Sargent%2C_1884_%28unfree_frame_crop%29.jpg/500px-Madame_X_%28Madame_Pierre_Gautreau%29%2C_John_Singer_Sargent%2C_1884_%28unfree_frame_crop%29.jpg",
-  "width": 500,
-  "height": 971,
-  "page": "https://en.wikipedia.org/wiki/Portrait_of_Madame_X"
- },
- "Portrait_of_Pablo_Picasso": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Portrait_of_Pablo_Picasso_by_Amedeo_Modigliani_%281915%29.jpg/500px-Portrait_of_Pablo_Picasso_by_Amedeo_Modigliani_%281915%29.jpg",
-  "width": 500,
-  "height": 657,
-  "page": "https://en.wikipedia.org/wiki/Portrait_of_Pablo_Picasso"
- },
- "Primavera_(Botticelli)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Botticelli-primavera.jpg/500px-Botticelli-primavera.jpg",
-  "width": 500,
-  "height": 328,
-  "page": "https://en.wikipedia.org/wiki/Primavera_(Botticelli)"
- },
- "Pyotr_Ilyich_Tchaikovsky": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Tchaikovsky_by_Reutlinger_%28cropped%29.jpg/500px-Tchaikovsky_by_Reutlinger_%28cropped%29.jpg",
-  "width": 500,
-  "height": 698,
-  "page": "https://en.wikipedia.org/wiki/Pyotr_Ilyich_Tchaikovsky"
- },
- "Radius (bone)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Radius_-_anterior_view2.png/500px-Radius_-_anterior_view2.png",
-  "width": 500,
-  "height": 500,
-  "page": "https://en.wikipedia.org/wiki/Radius_(bone)"
- },
- "Rain,_Steam_and_Speed_–_The_Great_Western_Railway": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Rain_Steam_and_Speed_the_Great_Western_Railway.jpg/500px-Rain_Steam_and_Speed_the_Great_Western_Railway.jpg",
-  "width": 500,
-  "height": 373,
-  "page": "https://en.wikipedia.org/wiki/Rain%2C_Steam_and_Speed_%E2%80%93_The_Great_Western_Railway"
- },
- "Reclining_Nude_(Modigliani)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Amedeo_Modigliani_Reclining_Nude_The_Metropolitan_Museum_of_Art.jpg/500px-Amedeo_Modigliani_Reclining_Nude_The_Metropolitan_Museum_of_Art.jpg",
-  "width": 500,
-  "height": 322,
-  "page": "https://en.wikipedia.org/wiki/Reclining_Nude_(Modigliani)"
- },
- "Rembrandt": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg/500px-Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg",
-  "width": 500,
-  "height": 648,
-  "page": "https://en.wikipedia.org/wiki/Rembrandt"
- },
- "René_Descartes": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg/500px-Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg",
-  "width": 500,
-  "height": 612,
-  "page": "https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes"
- },
- "Richard_Feynman": {
-  "src": "https://thumb.wikimedia.org/wikipedia/en/thumb/4/42/Richard_Feynman_Nobel.jpg/500px-Richard_Feynman_Nobel.jpg",
-  "width": 500,
-  "height": 707,
-  "page": "https://en.wikipedia.org/wiki/Richard_Feynman"
- },
- "Rosalind_Franklin": {
-  "src": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Rosalind_Franklin_%28retouched%29.jpg",
-  "width": 488,
-  "height": 592,
-  "page": "https://en.wikipedia.org/wiki/Rosalind_Franklin"
- },
- "Ruby-throated hummingbird": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Archilochus_colubris_-flying_-male-8.jpg/500px-Archilochus_colubris_-flying_-male-8.jpg",
-  "width": 500,
-  "height": 548,
-  "page": "https://en.wikipedia.org/wiki/Ruby-throated_hummingbird"
- },
- "Saltwater crocodile": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/SaltwaterCrocodile%28%27Maximo%27%29.jpg/500px-SaltwaterCrocodile%28%27Maximo%27%29.jpg",
-  "width": 500,
-  "height": 375,
-  "page": "https://en.wikipedia.org/wiki/Saltwater_crocodile"
- },
- "Saturn": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Saturn_global_view_from_Cassini%2C_rings_open_Better_Colour.png/500px-Saturn_global_view_from_Cassini%2C_rings_open_Better_Colour.png",
-  "width": 500,
-  "height": 200,
-  "page": "https://en.wikipedia.org/wiki/Saturn"
- },
- "Saturn_Devouring_His_Son": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg/500px-Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg",
-  "width": 500,
-  "height": 918,
-  "page": "https://en.wikipedia.org/wiki/Saturn_Devouring_His_Son"
- },
- "Self-Portrait_(Dürer,_Munich)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/D%C3%BCrer_Alte_Pinakothek.jpg/500px-D%C3%BCrer_Alte_Pinakothek.jpg",
-  "width": 500,
-  "height": 705,
-  "page": "https://en.wikipedia.org/wiki/Self-Portrait_(D%C3%BCrer%2C_Munich)"
- },
- "Simón_Bolívar": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Sim%C3%B3n_Bol%C3%ADvar._Toro_Moreno%2C_Luis._1922%2C_Legislative_Palace%2C_La_Paz.png/500px-Sim%C3%B3n_Bol%C3%ADvar._Toro_Moreno%2C_Luis._1922%2C_Legislative_Palace%2C_La_Paz.png",
-  "width": 500,
-  "height": 750,
-  "page": "https://en.wikipedia.org/wiki/Sim%C3%B3n_Bol%C3%ADvar"
- },
- "Small intestine": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Tractus_intestinalis_intestinum_tenue.svg/500px-Tractus_intestinalis_intestinum_tenue.svg.png",
-  "width": 400,
-  "height": 563,
-  "page": "https://en.wikipedia.org/wiki/Small_intestine"
- },
- "Snap_the_Whip": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Winslow_Homer_-_Snap_the_Whip_%28Butler_Institute_of_American_Art%29.jpg/500px-Winslow_Homer_-_Snap_the_Whip_%28Butler_Institute_of_American_Art%29.jpg",
-  "width": 500,
-  "height": 299,
-  "page": "https://en.wikipedia.org/wiki/Snap_the_Whip"
- },
- "Snow leopard": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Irbis4.JPG/500px-Irbis4.JPG",
-  "width": 500,
-  "height": 375,
-  "page": "https://en.wikipedia.org/wiki/Snow_leopard"
- },
- "Socrates": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Socrates_Louvre.jpg/500px-Socrates_Louvre.jpg",
-  "width": 500,
-  "height": 667,
-  "page": "https://en.wikipedia.org/wiki/Socrates"
- },
- "Stephen_Hawking": {
-  "src": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Stephen_Hawking.StarChild.jpg",
-  "width": 250,
-  "height": 359,
-  "page": "https://en.wikipedia.org/wiki/Stephen_Hawking"
- },
- "Sternum": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Sternum_composition.png/500px-Sternum_composition.png",
-  "width": 500,
-  "height": 500,
-  "page": "https://en.wikipedia.org/wiki/Sternum"
- },
- "Street,_Berlin_(Kirchner)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Kirchner_1913_Street%2C_Berlin.jpg/500px-Kirchner_1913_Street%2C_Berlin.jpg",
-  "width": 500,
-  "height": 661,
-  "page": "https://en.wikipedia.org/wiki/Street%2C_Berlin_(Kirchner)"
- },
- "Suleiman_the_Magnificent": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/EmperorSuleiman.jpg/500px-EmperorSuleiman.jpg",
-  "width": 500,
-  "height": 585,
-  "page": "https://en.wikipedia.org/wiki/Suleiman_the_Magnificent"
- },
- "Sunflowers_(Van_Gogh_series)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Vincent_Willem_van_Gogh_127.jpg/500px-Vincent_Willem_van_Gogh_127.jpg",
-  "width": 500,
-  "height": 631,
-  "page": "https://en.wikipedia.org/wiki/Sunflowers_(Van_Gogh_series)"
- },
- "The_Ambassadors_(Holbein)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg/500px-Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg",
-  "width": 500,
-  "height": 493,
-  "page": "https://en.wikipedia.org/wiki/The_Ambassadors_(Holbein)"
- },
- "The_Anatomy_Lesson_of_Dr._Nicolaes_Tulp": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Rembrandt_-_The_Anatomy_Lesson_of_Dr_Nicolaes_Tulp.jpg/500px-Rembrandt_-_The_Anatomy_Lesson_of_Dr_Nicolaes_Tulp.jpg",
-  "width": 500,
-  "height": 377,
-  "page": "https://en.wikipedia.org/wiki/The_Anatomy_Lesson_of_Dr._Nicolaes_Tulp"
- },
- "The_Apotheosis_of_Homer_(Ingres)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Hom%C3%A8re_d%C3%A9ifi%C3%A9%2C_dit_aussi_L%27apoth%C3%A9ose_d%27Hom%C3%A8re_-_Jean-Auguste_Dominique_Ingres_-_Mus%C3%A9e_du_Louvre_Peintures_INV_5417_%3B_C_196.jpg/500px-Hom%C3%A8re_d%C3%A9ifi%C3%A9%2C_dit_aussi_L%27apoth%C3%A9ose_d%27Hom%C3%A8re_-_Jean-Auguste_Dominique_Ingres_-_Mus%C3%A9e_du_Louvre_Peintures_INV_5417_%3B_C_196.jpg",
-  "width": 500,
-  "height": 372,
-  "page": "https://en.wikipedia.org/wiki/The_Apotheosis_of_Homer_(Ingres)"
- },
- "The_Birth_of_Venus": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/500px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
-  "width": 500,
-  "height": 314,
-  "page": "https://en.wikipedia.org/wiki/The_Birth_of_Venus"
- },
- "The_Calling_of_Saint_Matthew_(Caravaggio)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Caravaggio_%E2%80%94_The_Calling_of_Saint_Matthew.jpg/500px-Caravaggio_%E2%80%94_The_Calling_of_Saint_Matthew.jpg",
-  "width": 500,
-  "height": 472,
-  "page": "https://en.wikipedia.org/wiki/The_Calling_of_Saint_Matthew"
- },
- "The_Card_Players": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Les_Joueurs_de_cartes%2C_par_Paul_C%C3%A9zanne.jpg/500px-Les_Joueurs_de_cartes%2C_par_Paul_C%C3%A9zanne.jpg",
-  "width": 500,
-  "height": 410,
-  "page": "https://en.wikipedia.org/wiki/The_Card_Players"
- },
- "The_Creation_of_Adam": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg/500px-Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg",
-  "width": 500,
-  "height": 227,
-  "page": "https://en.wikipedia.org/wiki/The_Creation_of_Adam"
- },
- "The_Dance_Class": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Edgar_Degas_-_La_Classe_de_danse.jpg/500px-Edgar_Degas_-_La_Classe_de_danse.jpg",
-  "width": 500,
-  "height": 574,
-  "page": "https://en.wikipedia.org/wiki/The_Ballet_Class_(Degas%2C_Mus%C3%A9e_d'Orsay)"
- },
- "The_Death_of_Marat": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Death_of_Marat_by_David.jpg/500px-Death_of_Marat_by_David.jpg",
-  "width": 500,
-  "height": 643,
-  "page": "https://en.wikipedia.org/wiki/The_Death_of_Marat"
- },
- "The_Fighting_Temeraire": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg/500px-The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg",
-  "width": 500,
-  "height": 371,
-  "page": "https://en.wikipedia.org/wiki/The_Fighting_Temeraire"
- },
- "The_Garden_of_Earthly_Delights": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/The_Garden_of_earthly_delights.jpg/500px-The_Garden_of_earthly_delights.jpg",
-  "width": 500,
-  "height": 285,
-  "page": "https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights"
- },
- "The_Garden_of_Love_(Rubens)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/El_Jard%C3%ADn_del_Amor_%28Rubens%29.jpg/500px-El_Jard%C3%ADn_del_Amor_%28Rubens%29.jpg",
-  "width": 500,
-  "height": 345,
-  "page": "https://en.wikipedia.org/wiki/The_Garden_of_Love_(Rubens)"
- },
- "The_Gleaners": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg/500px-Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg",
-  "width": 500,
-  "height": 374,
-  "page": "https://en.wikipedia.org/wiki/The_Gleaners"
- },
- "The_Great_Wave_off_Kanagawa": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/500px-Tsunami_by_hokusai_19th_century.jpg",
-  "width": 500,
-  "height": 336,
-  "page": "https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa"
- },
- "The_Hay_Wain": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/John_Constable_-_The_Hay_Wain_%281821%29.jpg/500px-John_Constable_-_The_Hay_Wain_%281821%29.jpg",
-  "width": 500,
-  "height": 345,
-  "page": "https://en.wikipedia.org/wiki/The_Hay_Wain"
- },
- "The_Jewish_Bride": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Rembrandt_Harmensz._van_Rijn_-_Portret_van_een_paar_als_oudtestamentische_figuren%2C_genaamd_%27Het_Joodse_bruidje%27_-_Google_Art_Project.jpg/500px-Rembrandt_Harmensz._van_Rijn_-_Portret_van_een_paar_als_oudtestamentische_figuren%2C_genaamd_%27Het_Joodse_bruidje%27_-_Google_Art_Project.jpg",
-  "width": 500,
-  "height": 365,
-  "page": "https://en.wikipedia.org/wiki/The_Jewish_Bride"
- },
- "The_Kiss_(Klimt)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg/500px-The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg",
+ "Christopher_Columbus": {
+  "file": "christopher-columbus.webp",
   "width": 500,
   "height": 502,
-  "page": "https://en.wikipedia.org/wiki/The_Kiss_(Klimt)"
+  "commonsFile": "Portrait of a Man, Said to be Christopher Columbus.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_a_Man%2C_Said_to_be_Christopher_Columbus.jpg",
+  "author": "Sebastiano del Piombo",
+  "license": "Public domain",
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0.17,
+    0,
+    0,
+    0
+   ]
+  }
  },
- "The_Last_Supper_(Leonardo)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg/500px-The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg",
+ "Clavicle": {
+  "file": "clavicle.webp",
   "width": 500,
-  "height": 250,
-  "page": "https://en.wikipedia.org/wiki/The_Last_Supper_(Leonardo)"
+  "height": 500,
+  "commonsFile": "Clavicle - anterior view.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Clavicle_-_anterior_view.png",
+  "author": "Anatomography",
+  "license": "CC BY-SA 2.1 jp",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en"
  },
- "The_Milkmaid_(Vermeer)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Johannes_Vermeer_-_Het_melkmeisje_-_Google_Art_Project.png/500px-Johannes_Vermeer_-_Het_melkmeisje_-_Google_Art_Project.png",
+ "Cleopatra": {
+  "file": "cleopatra.webp",
   "width": 500,
-  "height": 562,
-  "page": "https://en.wikipedia.org/wiki/The_Milkmaid_(Vermeer)"
+  "height": 663,
+  "commonsFile": "Kleopatra-VII.-Altes-Museum-Berlin1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Kleopatra-VII.-Altes-Museum-Berlin1.jpg",
+  "author": "Louis le Grand",
+  "license": "Public domain",
+  "licenseUrl": null
  },
- "The_Night_Watch": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg/500px-La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg",
-  "width": 500,
-  "height": 407,
-  "page": "https://en.wikipedia.org/wiki/The_Night_Watch"
- },
- "The_Persistence_of_Memory": {
-  "src": "https://upload.wikimedia.org/wikipedia/en/d/dd/The_Persistence_of_Memory.jpg",
-  "width": 371,
-  "height": 268,
-  "page": "https://en.wikipedia.org/wiki/The_Persistence_of_Memory"
- },
- "The_Potato_Eaters": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/De_aardappeleters_-_s0005V1962_-_Van_Gogh_Museum.jpg/500px-De_aardappeleters_-_s0005V1962_-_Van_Gogh_Museum.jpg",
-  "width": 500,
-  "height": 354,
-  "page": "https://en.wikipedia.org/wiki/The_Potato_Eaters"
- },
- "The_Raft_of_the_Medusa": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/JEAN_LOUIS_TH%C3%89ODORE_G%C3%89RICAULT_-_La_Balsa_de_la_Medusa_%28Museo_del_Louvre%2C_1818-19%29.jpg/500px-JEAN_LOUIS_TH%C3%89ODORE_G%C3%89RICAULT_-_La_Balsa_de_la_Medusa_%28Museo_del_Louvre%2C_1818-19%29.jpg",
+ "Clownfish": {
+  "file": "clownfish.webp",
   "width": 500,
   "height": 341,
-  "page": "https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa"
+  "commonsFile": "Amphiprion ocellaris (Clown anemonefish) by Nick Hobgood.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Amphiprion_ocellaris_(Clown_anemonefish)_by_Nick_Hobgood.jpg",
+  "author": "Nick Hobgood",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
  },
- "The_Return_of_the_Prodigal_Son_(Rembrandt)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg/500px-Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg",
+ "Common bottlenose dolphin": {
+  "file": "common-bottlenose-dolphin.webp",
   "width": 500,
-  "height": 652,
-  "page": "https://en.wikipedia.org/wiki/The_Return_of_the_Prodigal_Son_(Rembrandt)"
+  "height": 370,
+  "commonsFile": "Tursiops truncatus 01-cropped.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Tursiops_truncatus_01-cropped.jpg",
+  "author": "NASA",
+  "license": "Public domain",
+  "licenseUrl": null
  },
- "The_School_of_Athens": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/500px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg",
+ "Common ostrich": {
+  "file": "common-ostrich.webp",
   "width": 500,
-  "height": 388,
-  "page": "https://en.wikipedia.org/wiki/The_School_of_Athens"
+  "height": 333,
+  "commonsFile": "Struthio camelus - Etosha 2014 (3).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Struthio_camelus_-_Etosha_2014_(3).jpg",
+  "author": "Yathin S Krishnappa",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
  },
- "The_Scream": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/500px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg",
+ "Common vampire bat": {
+  "file": "common-vampire-bat.webp",
   "width": 500,
-  "height": 621,
-  "page": "https://en.wikipedia.org/wiki/The_Scream"
+  "height": 415,
+  "commonsFile": "Desmo-Flug-01.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Desmo-Flug-01.jpg",
+  "author": "Uwe Schmidt",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
  },
- "The_Sleeping_Gypsy": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/La_Boh%C3%A9mienne_endormie.jpg/500px-La_Boh%C3%A9mienne_endormie.jpg",
+ "Confucius": {
+  "file": "confucius.webp",
   "width": 500,
-  "height": 319,
-  "page": "https://en.wikipedia.org/wiki/The_Sleeping_Gypsy"
+  "height": 467,
+  "commonsFile": "Confucius, fresco from a Western Han tomb of Dongping County, Shandong province, China (cropped).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Confucius%2C_fresco_from_a_Western_Han_tomb_of_Dongping_County%2C_Shandong_province%2C_China_(cropped).jpg",
+  "author": "Anonymous Chinese painter of the Western Han period",
+  "license": "Public domain",
+  "licenseUrl": null
  },
- "The_Starry_Night": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/500px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+ "Dance_(Matisse)": {
+  "file": "dance-matisse.webp",
   "width": 500,
-  "height": 396,
-  "page": "https://en.wikipedia.org/wiki/The_Starry_Night"
+  "height": 329,
+  "commonsFile": "Matissedance.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Matissedance.jpg",
+  "author": "Henri Matisse",
+  "license": "Public domain",
+  "licenseUrl": null
  },
- "The_Third-Class_Carriage": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Honor%C3%A9_Daumier%2C_The_Third-Class_Carriage_-_The_Metropolitan_Museum_of_Art.jpg/500px-Honor%C3%A9_Daumier%2C_The_Third-Class_Carriage_-_The_Metropolitan_Museum_of_Art.jpg",
+ "Dmitri_Mendeleev": {
+  "file": "dmitri-mendeleev.webp",
   "width": 500,
-  "height": 362,
-  "page": "https://en.wikipedia.org/wiki/The_Third-Class_Carriage"
+  "height": 688,
+  "commonsFile": "Dmitri Mendeleev.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Dmitri_Mendeleev.jpg",
+  "author": "Original: Unknown author Unknown author Upload: Germansociety2014",
+  "license": "Public domain",
+  "licenseUrl": null
  },
- "The_Third_of_May_1808": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg/500px-El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg",
+ "Dromedary": {
+  "file": "dromedary.webp",
   "width": 500,
-  "height": 386,
-  "page": "https://en.wikipedia.org/wiki/The_Third_of_May_1808"
+  "height": 335,
+  "commonsFile": "Camelus dromedarius in Nuweiba.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Camelus_dromedarius_in_Nuweiba.jpg",
+  "author": "Florian Prischl",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
  },
- "The_Tower_of_Babel_(Bruegel)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_%28Vienna%29_-_Google_Art_Project_-_edited.jpg/500px-Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_%28Vienna%29_-_Google_Art_Project_-_edited.jpg",
-  "width": 500,
-  "height": 366,
-  "page": "https://en.wikipedia.org/wiki/The_Tower_of_Babel_(Bruegel)"
- },
- "The_Waterseller_of_Seville": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/El_aguador_de_Sevilla%2C_por_Diego_Vel%C3%A1zquez.jpg/500px-El_aguador_de_Sevilla%2C_por_Diego_Vel%C3%A1zquez.jpg",
-  "width": 500,
-  "height": 675,
-  "page": "https://en.wikipedia.org/wiki/The_Waterseller_of_Seville"
- },
- "Thomas_Aquinas": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/St-thomas-aquinasFXD.jpg/500px-St-thomas-aquinasFXD.jpg",
-  "width": 500,
-  "height": 749,
-  "page": "https://en.wikipedia.org/wiki/Thomas_Aquinas"
- },
- "Tibia": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Tibia_-_frontal_view.png/500px-Tibia_-_frontal_view.png",
-  "width": 500,
-  "height": 500,
-  "page": "https://en.wikipedia.org/wiki/Tibia"
- },
- "Titan (moon)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Titan_in_true_color_by_Kevin_M._Gill.jpg/500px-Titan_in_true_color_by_Kevin_M._Gill.jpg",
-  "width": 500,
-  "height": 500,
-  "page": "https://en.wikipedia.org/wiki/Titan_(moon)"
- },
- "Toussaint_Louverture": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Toussaint_Louverture_-_Girardin.jpg/500px-Toussaint_Louverture_-_Girardin.jpg",
-  "width": 500,
-  "height": 609,
-  "page": "https://en.wikipedia.org/wiki/Toussaint_Louverture"
- },
- "Transfiguration_(Raphael)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Transfiguration_Raphael.jpg/500px-Transfiguration_Raphael.jpg",
-  "width": 500,
-  "height": 754,
-  "page": "https://en.wikipedia.org/wiki/Transfiguration_(Raphael)"
- },
- "Twittering_Machine": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Die_Zwitscher-Maschine_%28Twittering_Machine%29%2C_1922_-_Paul_Klee.jpg/500px-Die_Zwitscher-Maschine_%28Twittering_Machine%29%2C_1922_-_Paul_Klee.jpg",
-  "width": 500,
-  "height": 679,
-  "page": "https://en.wikipedia.org/wiki/Twittering_Machine"
- },
- "Ulna": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Ulna_-_anterior_view.png/500px-Ulna_-_anterior_view.png",
+ "Earth": {
+  "file": "earth.webp",
   "width": 500,
   "height": 500,
-  "page": "https://en.wikipedia.org/wiki/Ulna"
+  "commonsFile": "Meteosat-12-fci-march-equinox-2025-noon.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Meteosat-12-fci-march-equinox-2025-noon.jpg",
+  "author": "EUMETSAT",
+  "license": "Attribution",
+  "licenseUrl": null
  },
- "Uranus": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Uranus_Voyager2_color_calibrated.png/500px-Uranus_Voyager2_color_calibrated.png",
+ "Edward_Jenner": {
+  "file": "edward-jenner.webp",
+  "width": 500,
+  "height": 633,
+  "commonsFile": "Edward Jenner.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Edward_Jenner.jpg",
+  "author": "John Raphael Smith",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Electric eel": {
+  "file": "electric-eel.webp",
+  "width": 500,
+  "height": 375,
+  "commonsFile": "Electric-eel.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Electric-eel.jpg",
+  "author": "Steven G. Johnson",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+ },
+ "Elizabeth_I": {
+  "file": "elizabeth-i.webp",
+  "width": 500,
+  "height": 731,
+  "commonsFile": "Darnley stage 3.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Darnley_stage_3.jpg",
+  "author": "Unidentified painter",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Emperor penguin": {
+  "file": "emperor-penguin.webp",
+  "width": 500,
+  "height": 803,
+  "commonsFile": "Aptenodytes forsteri -Snow Hill Island, Antarctica -adults and juvenile-8.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Aptenodytes_forsteri_-Snow_Hill_Island%2C_Antarctica_-adults_and_juvenile-8.jpg",
+  "author": "Ian Duffy from UK",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+ },
+ "Ernest_Shackleton": {
+  "file": "ernest-shackleton.webp",
+  "width": 400,
+  "height": 442,
+  "commonsFile": "Ernest Shackleton before 1909.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Ernest_Shackleton_before_1909.jpg",
+  "author": "George Charles Beresford / Adam Cuerden",
+  "license": "Public domain",
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0,
+    0.2,
+    0.36,
+    0
+   ]
+  }
+ },
+ "Et_in_Arcadia_ego_(Poussin)": {
+  "file": "et-in-arcadia-ego-poussin.webp",
+  "width": 500,
+  "height": 357,
+  "commonsFile": "Nicolas Poussin - Et in Arcadia ego (deuxième version).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Nicolas_Poussin_-_Et_in_Arcadia_ego_(deuxi%C3%A8me_version).jpg",
+  "author": "Nicolas Poussin",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Europa (moon)": {
+  "file": "europa-moon.webp",
   "width": 500,
   "height": 500,
-  "page": "https://en.wikipedia.org/wiki/Uranus"
+  "commonsFile": "Europa - Perijove 45 (cropped).png",
+  "page": "https://commons.wikimedia.org/wiki/File:Europa_-_Perijove_45_(cropped).png",
+  "author": "NASA/JPL-Caltech/SwRI/MSSS/Kevin M. Gill",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
  },
- "Venus": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Venus_from_Mariner_10.jpg/500px-Venus_from_Mariner_10.jpg",
+ "Femur": {
+  "file": "femur.webp",
   "width": 500,
   "height": 500,
-  "page": "https://en.wikipedia.org/wiki/Venus"
+  "commonsFile": "Femur - anterior view2.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Femur_-_anterior_view2.png",
+  "author": "Anatomography",
+  "license": "CC BY-SA 2.1 jp",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en"
  },
- "Venus_of_Urbino": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Tiziano_-_Venere_di_Urbino_-_Google_Art_Project.jpg/500px-Tiziano_-_Venere_di_Urbino_-_Google_Art_Project.jpg",
+ "Ferdinand_Magellan": {
+  "file": "ferdinand-magellan.webp",
   "width": 500,
-  "height": 352,
-  "page": "https://en.wikipedia.org/wiki/Venus_of_Urbino"
+  "height": 524,
+  "commonsFile": "Ferdinand Magellan.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Ferdinand_Magellan.jpg",
+  "author": "Unknown author Unknown author",
+  "license": "Public domain",
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0.15,
+    0,
+    0,
+    0
+   ]
+  }
  },
- "Voltaire": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Nicolas_de_Largilli%C3%A8re_-_Portrait_de_Voltaire_%281694-1778%29_en_1718_-_P208_-_mus%C3%A9e_Carnavalet_-_5_%28cropped%29.jpg/500px-Nicolas_de_Largilli%C3%A8re_-_Portrait_de_Voltaire_%281694-1778%29_en_1718_-_P208_-_mus%C3%A9e_Carnavalet_-_5_%28cropped%29.jpg",
+ "Fibula": {
+  "file": "fibula.webp",
+  "width": 500,
+  "height": 500,
+  "commonsFile": "Fibula - anterior view.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Fibula_-_anterior_view.png",
+  "author": "Anatomography",
+  "license": "CC BY-SA 2.1 jp",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en"
+ },
+ "File:Human_brain_NIH.png": {
+  "file": "human-brain-nih-png.webp",
+  "width": 500,
+  "height": 363,
+  "commonsFile": "Human brain NIH.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Human_brain_NIH.png",
+  "author": "National Institutes of Health",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "File:Jacques Louis David - Bonaparte franchissant le Grand Saint-Bernard, 20 mai 1800 - Google Art Project.jpg": {
+  "file": "jacques-louis-david-bonaparte-franchissant-le-grand-saint-bernard-20-mai-1800-go.webp",
+  "width": 500,
+  "height": 591,
+  "commonsFile": "Jacques Louis David - Bonaparte franchissant le Grand Saint-Bernard, 20 mai 1800 - Google Art Project.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Jacques_Louis_David_-_Bonaparte_franchissant_le_Grand_Saint-Bernard%2C_20_mai_1800_-_Google_Art_Project.jpg",
+  "author": "Jacques-Louis David / Formerly attributed to Jérôme-Martin Langlois",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "File:Liver_03_anterior_view.png": {
+  "file": "liver-03-anterior-view-png.webp",
+  "width": 500,
+  "height": 500,
+  "commonsFile": "Liver 03 anterior view.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Liver_03_anterior_view.png",
+  "author": "Polygon data is generated by Database Center for Life Science(DBCLS) [2]",
+  "license": "CC BY-SA 2.1 jp",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en"
+ },
+ "File:Pelvis (male) 01 - anterior view.png": {
+  "file": "pelvis-male-01-anterior-view-png.webp",
+  "width": 500,
+  "height": 500,
+  "commonsFile": "Pelvis (male) 01 - anterior view.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Pelvis_(male)_01_-_anterior_view.png",
+  "author": "BodyParts3D is made by DBCLS",
+  "license": "CC BY-SA 2.1 jp",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en"
+ },
+ "File:Richard Feynman 1959.png": {
+  "file": "richard-feynman-1959-png.webp",
+  "width": 500,
+  "height": 501,
+  "commonsFile": "Richard Feynman 1959.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Richard_Feynman_1959.png",
+  "author": "Unknown author Unknown author",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "File:SKULL-FRONT - NARA - 524360.jpg": {
+  "file": "skull-front-nara-524360-jpg.webp",
+  "width": 500,
+  "height": 643,
+  "commonsFile": "SKULL-FRONT - NARA - 524360.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:SKULL-FRONT_-_NARA_-_524360.jpg",
+  "author": "Timothy H. O'Sullivan",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Florence_Nightingale": {
+  "file": "florence-nightingale.webp",
+  "width": 500,
+  "height": 695,
+  "commonsFile": "Florence Nightingale (H Hering NPG x82368).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Florence_Nightingale_(H_Hering_NPG_x82368).jpg",
+  "author": "Henry Hering (1814-1893)",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Frederick_Douglass": {
+  "file": "frederick-douglass.webp",
   "width": 500,
   "height": 666,
-  "page": "https://en.wikipedia.org/wiki/Voltaire"
+  "commonsFile": "Frederick Douglass (circa 1879) (cropped).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Frederick_Douglass_(circa_1879)_(cropped).jpg",
+  "author": "George Kendall Warren",
+  "license": "Public domain",
+  "licenseUrl": null
  },
- "Wanderer_above_the_Sea_of_Fog": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg/500px-Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg",
+ "Frida_Kahlo": {
+  "file": "frida-kahlo.webp",
   "width": 500,
-  "height": 641,
-  "page": "https://en.wikipedia.org/wiki/Wanderer_Above_the_Sea_of_Fog"
+  "height": 750,
+  "commonsFile": "Frida Kahlo, by Guillermo Kahlo.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg",
+  "author": "Guillermo Kahlo",
+  "license": "Public domain",
+  "licenseUrl": null
  },
- "Wangari_Maathai": {
-  "src": "https://upload.wikimedia.org/wikipedia/commons/d/da/Wangari_Maathai_in_2001.jpg",
-  "width": 466,
-  "height": 751,
-  "page": "https://en.wikipedia.org/wiki/Wangar%C4%A9_Maathai"
- },
- "Water_Lilies_(Monet_series)": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg/500px-Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg",
+ "Frédéric_Chopin": {
+  "file": "frederic-chopin.webp",
   "width": 500,
-  "height": 286,
-  "page": "https://en.wikipedia.org/wiki/Water_Lilies_(Monet_series)"
+  "height": 705,
+  "commonsFile": "Frederic Chopin photo.jpeg",
+  "page": "https://commons.wikimedia.org/wiki/File:Frederic_Chopin_photo.jpeg",
+  "author": "Louis-Auguste Bisson",
+  "license": "Public domain",
+  "licenseUrl": null
  },
- "Western honey bee": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Apis_mellifera_Western_honey_bee.jpg/500px-Apis_mellifera_Western_honey_bee.jpg",
+ "Fyodor_Dostoevsky": {
+  "file": "fyodor-dostoevsky.webp",
   "width": 500,
-  "height": 416,
-  "page": "https://en.wikipedia.org/wiki/Western_honey_bee"
+  "height": 625,
+  "commonsFile": "Vasily Perov - Портрет Ф.М.Достоевского - Google Art Project.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg",
+  "author": "Vasily Perov",
+  "license": "Public domain",
+  "licenseUrl": null
  },
- "Where_Do_We_Come_From?_What_Are_We?_Where_Are_We_Going?": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Gauguin_-_Where_Do_We_Come_From%3F_What_Are_We%3F_Where_Are_We_Going%3F_%281897-98%29.jpg/500px-Gauguin_-_Where_Do_We_Come_From%3F_What_Are_We%3F_Where_Are_We_Going%3F_%281897-98%29.jpg",
+ "Galileo_Galilei": {
+  "file": "galileo-galilei.webp",
   "width": 500,
-  "height": 184,
-  "page": "https://en.wikipedia.org/wiki/Where_Do_We_Come_From%3F_What_Are_We%3F_Where_Are_We_Going%3F"
+  "height": 635,
+  "commonsFile": "Galileo Galilei (1564-1642) RMG BHC2700.tiff",
+  "page": "https://commons.wikimedia.org/wiki/File:Galileo_Galilei_(1564-1642)_RMG_BHC2700.tiff",
+  "author": "Justus Sustermans",
+  "license": "Public domain",
+  "licenseUrl": null
  },
- "William_Shakespeare": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/William_Shakespeare_by_John_Taylor%2C_edited.jpg/500px-William_Shakespeare_by_John_Taylor%2C_edited.jpg",
+ "Ganymede (moon)": {
+  "file": "ganymede-moon.webp",
+  "width": 500,
+  "height": 500,
+  "commonsFile": "Ganymede - Perijove 34 Composite.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Ganymede_-_Perijove_34_Composite.png",
+  "author": "NASA/JPL-Caltech/SwRI/MSSS/ Kevin M. Gill",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+ },
+ "Genghis_Khan": {
+  "file": "genghis-khan.webp",
+  "width": 500,
+  "height": 635,
+  "commonsFile": "YuanEmperorAlbumGenghisPortrait.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumGenghisPortrait.jpg",
+  "author": "Unknown author Unknown author",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "George_Washington": {
+  "file": "george-washington.webp",
+  "width": 500,
+  "height": 607,
+  "commonsFile": "Gilbert Stuart Williamstown Portrait of George Washington.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg",
+  "author": "Gilbert Stuart",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Giant Pacific octopus": {
+  "file": "giant-pacific-octopus.webp",
+  "width": 500,
+  "height": 375,
+  "commonsFile": "Enteroctopus dolfeini.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Enteroctopus_dolfeini.jpg",
+  "author": "NOAA/R. N. Lea [1]",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Giant oceanic manta ray": {
+  "file": "giant-oceanic-manta-ray.webp",
+  "width": 500,
+  "height": 375,
+  "commonsFile": "Manta birostris-Thailand4.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Manta_birostris-Thailand4.jpg",
+  "author": "jon hanson from london, UK",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+ },
+ "Giant panda": {
+  "file": "giant-panda.webp",
+  "width": 500,
+  "height": 333,
+  "commonsFile": "Grosser Panda.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Grosser_Panda.JPG",
+  "author": "J. Patrick Fischer",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ "Giraffe": {
+  "file": "giraffe.webp",
+  "width": 500,
+  "height": 632,
+  "commonsFile": "Giraffe Mikumi National Park.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Giraffe_Mikumi_National_Park.jpg",
+  "author": "Muhammad Mahdi Karim Facebook The making of this document was supported by Wikim",
+  "license": "GFDL 1.2",
+  "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html"
+ },
+ "Girl_with_a_Pearl_Earring": {
+  "file": "girl-with-a-pearl-earring.webp",
+  "width": 500,
+  "height": 592,
+  "commonsFile": "1665 Girl with a Pearl Earring.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:1665_Girl_with_a_Pearl_Earring.jpg",
+  "author": "Johannes Vermeer",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Golden eagle": {
+  "file": "golden-eagle.webp",
+  "width": 500,
+  "height": 625,
+  "commonsFile": "015 Wild Golden Eagle in flight at Pfyn-Finges (Switzerland) Photo by Giles Laurent.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:015_Wild_Golden_Eagle_in_flight_at_Pfyn-Finges_(Switzerland)_Photo_by_Giles_Laurent.jpg",
+  "author": "Giles Laurent",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Goliath birdeater": {
+  "file": "goliath-birdeater.webp",
+  "width": 500,
+  "height": 730,
+  "commonsFile": "Theraphosa blondi MHNT.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Theraphosa_blondi_MHNT.jpg",
+  "author": "Didier Descouens",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Grace_Hopper": {
+  "file": "grace-hopper.webp",
+  "width": 500,
+  "height": 465,
+  "commonsFile": "Commodore Grace M. Hopper, USN (covered) head and shoulders crop.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Commodore_Grace_M._Hopper%2C_USN_(covered)_head_and_shoulders_crop.jpg",
+  "author": "James S. Davis",
+  "license": "Public domain",
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0,
+    0,
+    0.3,
+    0
+   ]
+  }
+ },
+ "Gray wolf": {
+  "file": "gray-wolf.webp",
+  "width": 500,
+  "height": 387,
+  "commonsFile": "Eurasian wolf 2.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Eurasian_wolf_2.jpg",
+  "author": "User:Mas3cf",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Great white shark": {
+  "file": "great-white-shark.webp",
+  "width": 500,
+  "height": 348,
+  "commonsFile": "White shark.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:White_shark.jpg",
+  "author": "Pterantula (Terry Goss) at en.wikipedia",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5"
+ },
+ "Green anaconda": {
+  "file": "green-anaconda.webp",
+  "width": 500,
+  "height": 375,
+  "commonsFile": "Sucuri verde.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Sucuri_verde.jpg",
+  "author": "MKAMPIS",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Grizzly bear": {
+  "file": "grizzly-bear.webp",
+  "width": 500,
+  "height": 360,
+  "commonsFile": "GrizzlyBearJeanBeaufort.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:GrizzlyBearJeanBeaufort.jpg",
+  "author": "Jean Beaufort",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+ },
+ "Hannibal": {
+  "file": "hannibal.webp",
+  "width": 500,
+  "height": 605,
+  "commonsFile": "Hannibal Barca bust from Capua photo.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Hannibal_Barca_bust_from_Capua_photo.jpg",
+  "author": "Fratelli Alinari",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Harriet_Tubman": {
+  "file": "harriet-tubman.webp",
+  "width": 500,
+  "height": 666,
+  "commonsFile": "Carte-de-visite portrait of Harriet Tubman (cropped).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Carte-de-visite_portrait_of_Harriet_Tubman_(cropped).jpg",
+  "author": "Powelson, Benjamin F. 1823 - 1885",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Heart": {
+  "file": "heart.webp",
+  "width": 500,
+  "height": 755,
+  "commonsFile": "Heart anterior exterior view.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Heart_anterior_exterior_view.png",
+  "author": "Jerm",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5"
+ },
+ "Hippopotamus": {
+  "file": "hippopotamus.webp",
+  "width": 500,
+  "height": 333,
+  "commonsFile": "Portrait Hippopotamus in the water.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Portrait_Hippopotamus_in_the_water.jpg",
+  "author": "Muhammad Mahdi Karim",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Horseshoe crab": {
+  "file": "horseshoe-crab.webp",
+  "width": 500,
+  "height": 375,
+  "commonsFile": "Tachypleus gigas.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Tachypleus_gigas.JPG",
+  "author": "Shubham Chatterjee",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ "Humerus": {
+  "file": "humerus.webp",
+  "width": 500,
+  "height": 500,
+  "commonsFile": "Humerus - anterior view.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Humerus_-_anterior_view.png",
+  "author": "Anatomography",
+  "license": "CC BY-SA 2.1 jp",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en"
+ },
+ "Hunters_in_the_Snow": {
+  "file": "hunters-in-the-snow.webp",
+  "width": 500,
+  "height": 356,
+  "commonsFile": "Pieter Bruegel the Elder - Hunters in the Snow (Winter) - Google Art Project.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_(Winter)_-_Google_Art_Project.jpg",
+  "author": "Pieter Brueghel the Elder",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Ibn_Battuta": {
+  "file": "ibn-battuta.webp",
+  "width": 500,
+  "height": 721,
+  "commonsFile": "Handmade oil painting reproduction of Ibn Battuta in Egypt, a painting by Hippolyte Leon Benett..jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Handmade_oil_painting_reproduction_of_Ibn_Battuta_in_Egypt%2C_a_painting_by_Hippolyte_Leon_Benett..jpg",
+  "author": "Léon Benett",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Imhotep": {
+  "file": "imhotep.webp",
+  "width": 500,
+  "height": 673,
+  "commonsFile": "Imhotep, donated by Padisu MET DP164134.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Imhotep%2C_donated_by_Padisu_MET_DP164134.jpg",
+  "author": null,
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+ },
+ "Immanuel_Kant": {
+  "file": "immanuel-kant.webp",
+  "width": 500,
+  "height": 653,
+  "commonsFile": "Immanuel Kant - Gemaelde 1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Immanuel_Kant_-_Gemaelde_1.jpg",
+  "author": "Johann Gottlieb Becker (1720-1782)",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Impression,_Sunrise": {
+  "file": "impression-sunrise.webp",
+  "width": 500,
+  "height": 349,
+  "commonsFile": "Monet - Impression, Sunrise.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Monet_-_Impression%2C_Sunrise.jpg",
+  "author": "Claude Monet",
+  "license": "Public domain",
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0,
+    0,
+    0.1,
+    0
+   ]
+  }
+ },
+ "Io (moon)": {
+  "file": "io-moon.webp",
+  "width": 500,
+  "height": 500,
+  "commonsFile": "Io highest resolution natural color.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Io_highest_resolution_natural_color.png",
+  "author": "NASA",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Irises_(painting)": {
+  "file": "irises-painting.webp",
+  "width": 500,
+  "height": 359,
+  "commonsFile": "Irises-Vincent van Gogh.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Irises-Vincent_van_Gogh.jpg",
+  "author": "Vincent van Gogh",
+  "license": "Public domain",
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0,
+    0,
+    0.06,
+    0
+   ]
+  }
+ },
+ "Isaac_Newton": {
+  "file": "isaac-newton.webp",
+  "width": 500,
+  "height": 602,
+  "commonsFile": "Portrait of Sir Isaac Newton, 1689 (brightened).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_Sir_Isaac_Newton%2C_1689_(brightened).jpg",
+  "author": "Godfrey Kneller",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "James_Watt": {
+  "file": "james-watt.webp",
+  "width": 500,
+  "height": 627,
+  "commonsFile": "Watt James von Breda.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Watt_James_von_Breda.jpg",
+  "author": "Carl Frederik von Breda",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Jawaharlal_Nehru": {
+  "file": "jawaharlal-nehru.webp",
+  "width": 500,
+  "height": 649,
+  "commonsFile": "Nehru in the Netherlands, 1957.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Nehru_in_the_Netherlands%2C_1957.jpg",
+  "author": "Harry Pot",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+ },
+ "Joan_of_Arc": {
+  "file": "joan-of-arc.webp",
+  "width": 500,
+  "height": 745,
+  "commonsFile": "Joan of Arc miniature graded.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Joan_of_Arc_miniature_graded.jpg",
+  "author": null,
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "John_Locke": {
+  "file": "john-locke.webp",
+  "width": 500,
+  "height": 610,
+  "commonsFile": "Godfrey Kneller - Portrait of John Locke (Hermitage).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Godfrey_Kneller_-_Portrait_of_John_Locke_(Hermitage).jpg",
+  "author": "Godfrey Kneller",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Judith_Slaying_Holofernes_(Artemisia_Gentileschi,_Naples)": {
+  "file": "judith-slaying-holofernes-artemisia-gentileschi-naples.webp",
   "width": 500,
   "height": 637,
-  "page": "https://en.wikipedia.org/wiki/William_Shakespeare"
+  "commonsFile": "Artemisia Gentileschi - Judith Beheading Holofernes - WGA8563.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Artemisia_Gentileschi_-_Judith_Beheading_Holofernes_-_WGA8563.jpg",
+  "author": "Artemisia Gentileschi",
+  "license": "Public domain",
+  "licenseUrl": null
  },
- "Winston_Churchill": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Sir_Winston_Churchill_-_19086236948_%28restored%29.jpg/500px-Sir_Winston_Churchill_-_19086236948_%28restored%29.jpg",
+ "Julius_Caesar": {
+  "file": "julius-caesar.webp",
+  "width": 500,
+  "height": 679,
+  "commonsFile": "Retrato de Julio César (26724093101) (cropped).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Retrato_de_Julio_C%C3%A9sar_(26724093101)_(cropped).jpg",
+  "author": "Ángel M. Felicísimo from Mérida, España",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Jupiter": {
+  "file": "jupiter.webp",
+  "width": 500,
+  "height": 453,
+  "commonsFile": "Jupiter OPAL 2024.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Jupiter_OPAL_2024.png",
+  "author": "NASA/STSCI (S.T.A.R.S)",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Koala": {
+  "file": "koala.webp",
+  "width": 500,
+  "height": 492,
+  "commonsFile": "Koala climbing tree.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Koala_climbing_tree.jpg",
+  "author": "Diliff",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ "Komodo dragon": {
+  "file": "komodo-dragon.webp",
+  "width": 500,
+  "height": 357,
+  "commonsFile": "202306 Varanus komodoensis.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:202306_Varanus_komodoensis.jpg",
+  "author": "James Jolokia ( james1203 )",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+ },
+ "Large intestine": {
+  "file": "large-intestine.webp",
+  "width": 500,
+  "height": 688,
+  "commonsFile": "Tractus intestinalis intestinum crassum.svg",
+  "page": "https://commons.wikimedia.org/wiki/File:Tractus_intestinalis_intestinum_crassum.svg",
+  "author": "Olek Remesz (wiki-pl: Orem , commons: Orem )",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+ },
+ "Las_Meninas": {
+  "file": "las-meninas.webp",
+  "width": 500,
+  "height": 575,
+  "commonsFile": "Las Meninas, by Diego Velázquez, from Prado in Google Earth.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg",
+  "author": "Diego Velázquez",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Leatherback sea turtle": {
+  "file": "leatherback-sea-turtle.webp",
+  "width": 500,
+  "height": 291,
+  "commonsFile": "Leatherback sea turtle Tinglar, USVI (5839996547).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Leatherback_sea_turtle_Tinglar%2C_USVI_(5839996547).jpg",
+  "author": "U.S. Fish and Wildlife Service Southeast Region",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Leo_Tolstoy": {
+  "file": "leo-tolstoy.webp",
+  "width": 500,
+  "height": 662,
+  "commonsFile": "Leo Tolstoy 1908 Portrait (3x4 cropped).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_1908_Portrait_(3x4_cropped).jpg",
+  "author": "Sergei Prokudin-Gorskii",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Leonardo_da_Vinci": {
+  "file": "leonardo-da-vinci.webp",
+  "width": 500,
+  "height": 573,
+  "commonsFile": "Francesco Melzi - Portrait of Leonardo (colour correction).png",
+  "page": "https://commons.wikimedia.org/wiki/File:Francesco_Melzi_-_Portrait_of_Leonardo_(colour_correction).png",
+  "author": "Attributed to Francesco Melzi",
+  "license": "Public domain",
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0,
+    0,
+    0.2,
+    0
+   ]
+  }
+ },
+ "Liberty_Leading_the_People": {
+  "file": "liberty-leading-the-people.webp",
+  "width": 500,
+  "height": 400,
+  "commonsFile": "La Liberté guidant le peuple - Eugène Delacroix - Musée du Louvre Peintures RF 129 - après restauration 2024.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg",
+  "author": "Eugène Delacroix",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Lion": {
+  "file": "lion.webp",
+  "width": 500,
+  "height": 334,
+  "commonsFile": "020 The lion king Snyggve in the Serengeti National Park Photo by Giles Laurent.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
+  "author": "Giles Laurent",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Lise_Meitner": {
+  "file": "lise-meitner.webp",
+  "width": 500,
+  "height": 653,
+  "commonsFile": "Lise Meitner NatGeo.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Lise_Meitner_NatGeo.jpg",
+  "author": "Harris &amp; Ewing",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Louis_Pasteur": {
+  "file": "louis-pasteur.webp",
+  "width": 500,
+  "height": 689,
+  "commonsFile": "Louis Pasteur, foto av Paul Nadar, Crisco edit.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Louis_Pasteur%2C_foto_av_Paul_Nadar%2C_Crisco_edit.jpg",
+  "author": "Paul Nadar",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Ludwig_van_Beethoven": {
+  "file": "ludwig-van-beethoven.webp",
   "width": 500,
   "height": 622,
-  "page": "https://en.wikipedia.org/wiki/Winston_Churchill"
+  "commonsFile": "Joseph Karl Stieler's Beethoven mit dem Manuskript der Missa solemnis.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Joseph_Karl_Stieler's_Beethoven_mit_dem_Manuskript_der_Missa_solemnis.jpg",
+  "author": "Joseph Karl Stieler",
+  "license": "Public domain",
+  "licenseUrl": null
  },
- "Wolfgang_Amadeus_Mozart": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/The_Mozart_Family_-_Wolfgang_Amadeus_Mozart_headshot.jpg/500px-The_Mozart_Family_-_Wolfgang_Amadeus_Mozart_headshot.jpg",
+ "Lung": {
+  "file": "lung.webp",
+  "width": 500,
+  "height": 640,
+  "commonsFile": "Lungs diagram detailed.svg",
+  "page": "https://commons.wikimedia.org/wiki/File:Lungs_diagram_detailed.svg",
+  "author": "Patrick J. Lynch, medical illustrator",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5"
+ },
+ "Madonna_(Munch_painting)": {
+  "file": "madonna-munch-painting.webp",
+  "width": 500,
+  "height": 660,
+  "commonsFile": "Edvard Munch - Madonna - Google Art Project.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_Madonna_-_Google_Art_Project.jpg",
+  "author": "Edvard Munch",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Mahatma_Gandhi": {
+  "file": "mahatma-gandhi.webp",
+  "width": 500,
+  "height": 624,
+  "commonsFile": "Mahatma-Gandhi, studio, 1931.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Mahatma-Gandhi%2C_studio%2C_1931.jpg",
+  "author": "Elliott &amp; Fry",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Maimonides": {
+  "file": "maimonides.webp",
+  "width": 190,
+  "height": 233,
+  "commonsFile": "Portrait of Moses Maimonides in Thesaurus antiquitatum sacrarum.tif",
+  "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_Moses_Maimonides_in_Thesaurus_antiquitatum_sacrarum.tif",
+  "author": "Blaisio Ugolino",
+  "license": "Public domain",
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0.08,
+    0.3,
+    0.1,
+    0.32
+   ]
+  }
+ },
+ "Mantis shrimp": {
+  "file": "mantis-shrimp.webp",
+  "width": 500,
+  "height": 247,
+  "commonsFile": "OdontodactylusScyllarus2.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:OdontodactylusScyllarus2.jpg",
+  "author": "Roy L. Caldwell, Department of Integrative Biology, University of California, Be",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Marco_Polo": {
+  "file": "marco-polo.webp",
+  "width": 500,
+  "height": 858,
+  "commonsFile": "Frontispice édition de Nuremberg 1477 (cropped).png",
+  "page": "https://commons.wikimedia.org/wiki/File:Frontispice_%C3%A9dition_de_Nuremberg_1477_(cropped).png",
+  "author": "Unknown author Unknown author",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Marie_Curie": {
+  "file": "marie-curie.webp",
+  "width": 500,
+  "height": 679,
+  "commonsFile": "Marie Curie c. 1920s.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Marie_Curie_c._1920s.jpg",
+  "author": "Henri Manuel",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Mars": {
+  "file": "mars.webp",
+  "width": 500,
+  "height": 500,
+  "commonsFile": "Mars - August 30 2021 - Flickr - Kevin M. Gill.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Mars_-_August_30_2021_-_Flickr_-_Kevin_M._Gill.png",
+  "author": "Kevin Gill from Los Angeles, CA, United States",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+ },
+ "Martin_Luther": {
+  "file": "martin-luther.webp",
+  "width": 500,
+  "height": 791,
+  "commonsFile": "Lucas Cranach d.Ä. - Martin Luther, 1528 (Veste Coburg).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Lucas_Cranach_d.%C3%84._-_Martin_Luther%2C_1528_(Veste_Coburg).jpg",
+  "author": "Lucas Cranach the Elder",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Mercury (planet)": {
+  "file": "mercury-planet.webp",
+  "width": 500,
+  "height": 500,
+  "commonsFile": "Mercury in true color.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Mercury_in_true_color.jpg",
+  "author": "NASA/Johns Hopkins University Applied Physics Laboratory/Arizona State Universit",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Michael_Faraday": {
+  "file": "michael-faraday.webp",
+  "width": 500,
+  "height": 661,
+  "commonsFile": "Michael Faraday sitting crop.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Michael_Faraday_sitting_crop.jpg",
+  "author": "Unknown author Unknown author",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Michelangelo": {
+  "file": "michelangelo.webp",
+  "width": 500,
+  "height": 579,
+  "commonsFile": "Michelangelo Daniele da Volterra (dettaglio).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Michelangelo_Daniele_da_Volterra_(dettaglio).jpg",
+  "author": "Attributed to Daniele da Volterra",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Mimic octopus": {
+  "file": "mimic-octopus.webp",
+  "width": 500,
+  "height": 625,
+  "commonsFile": "Mimic Octopus 2.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Mimic_Octopus_2.jpg",
+  "author": "Steve Childs",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+ },
+ "Mona_Lisa": {
+  "file": "mona-lisa.webp",
+  "width": 500,
+  "height": 756,
+  "commonsFile": "Mona Lisa.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Mona_Lisa.jpg",
+  "author": "Leonardo da Vinci",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Monarch butterfly": {
+  "file": "monarch-butterfly.webp",
+  "width": 500,
+  "height": 375,
+  "commonsFile": "Monarch Butterfly Danaus plexippus Male 2664px.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg",
+  "author": "Photo by and (c)2007 Derek Ramsey ( Ram-Man )",
+  "license": "GFDL 1.2",
+  "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html"
+ },
+ "Moon": {
+  "file": "moon.webp",
+  "width": 500,
+  "height": 475,
+  "commonsFile": "FullMoon2010.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:FullMoon2010.jpg",
+  "author": "Gregory H. Revera",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ "Moose": {
+  "file": "moose.webp",
+  "width": 500,
+  "height": 333,
+  "commonsFile": "Alaska moose.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Alaska_moose.jpg",
+  "author": "Paxson Woelber",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Muhammad_ibn_Musa_al-Khwarizmi": {
+  "file": "muhammad-ibn-musa-al-khwarizmi.webp",
   "width": 500,
   "height": 666,
-  "page": "https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart"
+  "commonsFile": "Madrid - Ciudad Universitaria, Monumento a Muhammad al-Juarismi (cropped).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Madrid_-_Ciudad_Universitaria%2C_Monumento_a_Muhammad_al-Juarismi_(cropped).jpg",
+  "author": "Zarateman",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
  },
- "Wolverine": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/J%C3%A4rv1.jpg/500px-J%C3%A4rv1.jpg",
+ "Mustafa_Kemal_Atatürk": {
+  "file": "mustafa-kemal-ataturk.webp",
   "width": 500,
-  "height": 313,
-  "page": "https://en.wikipedia.org/wiki/Wolverine"
+  "height": 674,
+  "commonsFile": "Ataturk1930s.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Ataturk1930s.jpg",
+  "author": "Unknown author Unknown author",
+  "license": "Public domain",
+  "licenseUrl": null
  },
- "Women_of_Algiers": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Femmes_d%27Alger_dans_leur_appartement%2C_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3824.jpg/500px-Femmes_d%27Alger_dans_leur_appartement%2C_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3824.jpg",
+ "Napoleon": {
+  "file": "napoleon.webp",
   "width": 500,
-  "height": 389,
-  "page": "https://en.wikipedia.org/wiki/Women_of_Algiers"
+  "height": 834,
+  "commonsFile": "Jacques-Louis David - The Emperor Napoleon in His Study at the Tuileries - Google Art Project.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg",
+  "author": "Jacques-Louis David",
+  "license": "Public domain",
+  "licenseUrl": null
  },
- "Yuri_Gagarin": {
-  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Yuri_Gagarin_with_awards_%28cropped%29_2.jpg/500px-Yuri_Gagarin_with_awards_%28cropped%29_2.jpg",
+ "Narwhal": {
+  "file": "narwhal.webp",
+  "width": 500,
+  "height": 333,
+  "commonsFile": "Нарвал в российской Арктике.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B0%D1%80%D0%B2%D0%B0%D0%BB_%D0%B2_%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%90%D1%80%D0%BA%D1%82%D0%B8%D0%BA%D0%B5.jpg",
+  "author": "пресс-служба ПАО \"Газпром нефть\"",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Neil_Armstrong": {
+  "file": "neil-armstrong.webp",
+  "width": 500,
+  "height": 263,
+  "commonsFile": "Neil Armstrong pose.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Neil_Armstrong_pose.jpg",
+  "author": "Unknown author Unknown author",
+  "license": "Public domain",
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0,
+    0,
+    0.58,
+    0
+   ]
+  }
+ },
+ "Nelson_Mandela": {
+  "file": "nelson-mandela.webp",
+  "width": 500,
+  "height": 647,
+  "commonsFile": "Nelson Mandela 1994.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Nelson_Mandela_1994.jpg",
+  "author": "Kingkongphoto &amp; www.celebrity-photos.com from Laurel",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+ },
+ "Neptune": {
+  "file": "neptune.webp",
+  "width": 500,
+  "height": 500,
+  "commonsFile": "Neptune Voyager2 color calibrated.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Neptune_Voyager2_color_calibrated.png",
+  "author": "NASA / Voyager 2 / PDS / OPUS / Ardenau4",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+ },
+ "Niccolò_Machiavelli": {
+  "file": "niccolo-machiavelli.webp",
+  "width": 500,
+  "height": 643,
+  "commonsFile": "Portrait of Niccolò Machiavelli by Santi di Tito.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg",
+  "author": "Santi di Tito",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Niels_Bohr": {
+  "file": "niels-bohr.webp",
+  "width": 500,
+  "height": 703,
+  "commonsFile": "Niels Bohr.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Niels_Bohr.jpg",
+  "author": "The American Institute of Physics credits the photo [1] to AB Lagrelius &amp; We",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Nikola_Tesla": {
+  "file": "nikola-tesla.webp",
+  "width": 500,
+  "height": 670,
+  "commonsFile": "Tesla circa 1890.jpeg",
+  "page": "https://commons.wikimedia.org/wiki/File:Tesla_circa_1890.jpeg",
+  "author": "Napoleon Sarony",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Oath_of_the_Horatii": {
+  "file": "oath-of-the-horatii.webp",
+  "width": 500,
+  "height": 388,
+  "commonsFile": "Le Serment des Horaces - Jacques-Louis David - Musée du Louvre Peintures INV 3692 ; MR 1432.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Le_Serment_des_Horaces_-_Jacques-Louis_David_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3692_%3B_MR_1432.jpg",
+  "author": "Jacques-Louis David",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Ophelia_(Millais)": {
+  "file": "ophelia-millais.webp",
+  "width": 500,
+  "height": 340,
+  "commonsFile": "John Everett Millais - Ophelia - Google Art Project.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg",
+  "author": "John Everett Millais",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Orca": {
+  "file": "orca.webp",
+  "width": 500,
+  "height": 332,
+  "commonsFile": "Killerwhales jumping.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Killerwhales_jumping.jpg",
+  "author": "Robert Pittman",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Otto_von_Bismarck": {
+  "file": "otto-von-bismarck.webp",
+  "width": 500,
+  "height": 675,
+  "commonsFile": "Otto von Bismarck 1885 (cropped).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Otto_von_Bismarck_1885_(cropped).jpg",
+  "author": "Unknown author Unknown author",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Pablo_Picasso": {
+  "file": "pablo-picasso.webp",
+  "width": 500,
+  "height": 584,
+  "commonsFile": "Pablo picasso 1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Pablo_picasso_1.jpg",
+  "author": "Argentina . Revista Vea y Lea",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Peregrine falcon": {
+  "file": "peregrine-falcon.webp",
+  "width": 500,
+  "height": 608,
+  "commonsFile": "Falco peregrinus m Humber Bay Park Toronto.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg",
+  "author": "Mykola Swarnyk",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ "Plains zebra": {
+  "file": "plains-zebra.webp",
+  "width": 500,
+  "height": 333,
+  "commonsFile": "Equus quagga burchellii - Etosha, 2014.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Equus_quagga_burchellii_-_Etosha%2C_2014.jpg",
+  "author": "Yathin S Krishnappa",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ "Plato": {
+  "file": "plato.webp",
+  "width": 500,
+  "height": 750,
+  "commonsFile": "Plato Silanion Musei Capitolini MC1377.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Plato_Silanion_Musei_Capitolini_MC1377.png",
+  "author": "Marie-Lan Nguyen",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Platypus": {
+  "file": "platypus.webp",
+  "width": 500,
+  "height": 333,
+  "commonsFile": "Duck-billed platypus (Ornithorhynchus anatinus) Scottsdale.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Duck-billed_platypus_(Ornithorhynchus_anatinus)_Scottsdale.jpg",
+  "author": "Charles J. Sharp",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Polar bear": {
+  "file": "polar-bear.webp",
+  "width": 500,
+  "height": 502,
+  "commonsFile": "Polar Bear - Alaska (cropped).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Polar_Bear_-_Alaska_(cropped).jpg",
+  "author": "Alan Wilson",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ "Portrait_of_Adele_Bloch-Bauer_I": {
+  "file": "portrait-of-adele-bloch-bauer-i.webp",
+  "width": 500,
+  "height": 500,
+  "commonsFile": "Gustav Klimt, 1907, Adele Bloch-Bauer I, Neue Galerie New York.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Gustav_Klimt%2C_1907%2C_Adele_Bloch-Bauer_I%2C_Neue_Galerie_New_York.jpg",
+  "author": "Gustav Klimt",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Portrait_of_Madame_X": {
+  "file": "portrait-of-madame-x.webp",
+  "width": 500,
+  "height": 971,
+  "commonsFile": "Madame X (Madame Pierre Gautreau), John Singer Sargent, 1884 (unfree frame crop).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Madame_X_(Madame_Pierre_Gautreau)%2C_John_Singer_Sargent%2C_1884_(unfree_frame_crop).jpg",
+  "author": "John Singer Sargent (American, Florence 1856–1925 London) (1856 - 1925) – Artist",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Portrait_of_Pablo_Picasso": {
+  "file": "portrait-of-pablo-picasso.webp",
+  "width": 500,
+  "height": 657,
+  "commonsFile": "Portrait of Pablo Picasso by Amedeo Modigliani (1915).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_Pablo_Picasso_by_Amedeo_Modigliani_(1915).jpg",
+  "author": "Amedeo Modigliani",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Primavera_(Botticelli)": {
+  "file": "primavera-botticelli.webp",
+  "width": 500,
+  "height": 328,
+  "commonsFile": "Botticelli-primavera.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Botticelli-primavera.jpg",
+  "author": "Sandro Botticelli",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Pyotr_Ilyich_Tchaikovsky": {
+  "file": "pyotr-ilyich-tchaikovsky.webp",
+  "width": 500,
+  "height": 698,
+  "commonsFile": "Tchaikovsky by Reutlinger (cropped).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Tchaikovsky_by_Reutlinger_(cropped).jpg",
+  "author": "Émile Reutlinger",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Radius (bone)": {
+  "file": "radius-bone.webp",
+  "width": 500,
+  "height": 500,
+  "commonsFile": "Radius - anterior view2.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Radius_-_anterior_view2.png",
+  "author": "Anatomography",
+  "license": "CC BY-SA 2.1 jp",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en"
+ },
+ "Rain,_Steam_and_Speed_–_The_Great_Western_Railway": {
+  "file": "rain-steam-and-speed-the-great-western-railway.webp",
+  "width": 500,
+  "height": 373,
+  "commonsFile": "Rain Steam and Speed the Great Western Railway.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Rain_Steam_and_Speed_the_Great_Western_Railway.jpg",
+  "author": "J. M. W. Turner",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Reclining_Nude_(Modigliani)": {
+  "file": "reclining-nude-modigliani.webp",
+  "width": 500,
+  "height": 303,
+  "commonsFile": "Amedeo Modigliani Reclining Nude The Metropolitan Museum of Art.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Amedeo_Modigliani_Reclining_Nude_The_Metropolitan_Museum_of_Art.jpg",
+  "author": "Amedeo Modigliani",
+  "license": "Public domain",
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0.06,
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ "Red fox": {
+  "file": "red-fox.webp",
+  "width": 500,
+  "height": 331,
+  "commonsFile": "Portrait of a red fox in Rautas fjällurskog (cropped).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_a_red_fox_in_Rautas_fj%C3%A4llurskog_(cropped).jpg",
+  "author": "ClaudiaTen",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Red kangaroo": {
+  "file": "red-kangaroo.webp",
+  "width": 500,
+  "height": 333,
+  "commonsFile": "Red kangaroo - melbourne zoo.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Red_kangaroo_-_melbourne_zoo.jpg",
+  "author": "fir0002 flagstaffotos [at] gmail.com Canon 20D + Canon 70-200mm f/2.8 L",
+  "license": "GFDL 1.2",
+  "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html"
+ },
+ "Rembrandt": {
+  "file": "rembrandt.webp",
+  "width": 500,
+  "height": 648,
+  "commonsFile": "Rembrandt van Rijn - Self-Portrait - Google Art Project.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg",
+  "author": "Rembrandt",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "René_Descartes": {
+  "file": "rene-descartes.webp",
+  "width": 500,
+  "height": 612,
+  "commonsFile": "Frans Hals - Portret van René Descartes.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg",
+  "author": "After Frans Hals",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Rosalind_Franklin": {
+  "file": "rosalind-franklin.webp",
+  "width": 500,
+  "height": 607,
+  "commonsFile": "Rosalind Franklin (retouched).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Rosalind_Franklin_(retouched).jpg",
+  "author": "MRC Laboratory of Molecular Biology",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Ruby-throated hummingbird": {
+  "file": "ruby-throated-hummingbird.webp",
+  "width": 500,
+  "height": 548,
+  "commonsFile": "Archilochus colubris -flying -male-8.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Archilochus_colubris_-flying_-male-8.jpg",
+  "author": "jeffreyw",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+ },
+ "Saltwater crocodile": {
+  "file": "saltwater-crocodile.webp",
+  "width": 500,
+  "height": 375,
+  "commonsFile": "SaltwaterCrocodile('Maximo').jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:SaltwaterCrocodile('Maximo').jpg",
+  "author": "Obtained from Molly Ebersold of the St. Augustine Alligator Farm",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Saturn": {
+  "file": "saturn.webp",
+  "width": 500,
+  "height": 200,
+  "commonsFile": "Saturn global view from Cassini, rings open Better Colour.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Saturn_global_view_from_Cassini%2C_rings_open_Better_Colour.png",
+  "author": "NASA / JPL-Caltech / SSI / color composite by Gordan Ugarkovic",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Saturn_Devouring_His_Son": {
+  "file": "saturn-devouring-his-son.webp",
+  "width": 500,
+  "height": 918,
+  "commonsFile": "Francisco de Goya, Saturno devorando a su hijo (1819-1823).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_(1819-1823).jpg",
+  "author": "Francisco Goya",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Sea otter": {
+  "file": "sea-otter.webp",
+  "width": 500,
+  "height": 457,
+  "commonsFile": "Sea Otter (Enhydra lutris) (25169790524) crop.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Sea_Otter_(Enhydra_lutris)_(25169790524)_crop.jpg",
+  "author": "Marshal Hedin from San Diego",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+ },
+ "Self-Portrait_(Dürer,_Munich)": {
+  "file": "self-portrait-durer-munich.webp",
+  "width": 365,
+  "height": 705,
+  "commonsFile": "Dürer Alte Pinakothek.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:D%C3%BCrer_Alte_Pinakothek.jpg",
+  "author": "Albrecht Dürer",
+  "license": "Public domain",
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0,
+    0.27,
+    0,
+    0
+   ],
+   "blur": [
+    [
+     0,
+     0.12,
+     0.26,
+     0.34
+    ]
+   ]
+  }
+ },
+ "Simón_Bolívar": {
+  "file": "simon-bolivar.webp",
+  "width": 500,
+  "height": 750,
+  "commonsFile": "Simón Bolívar. Toro Moreno, Luis. 1922, Legislative Palace, La Paz.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Sim%C3%B3n_Bol%C3%ADvar._Toro_Moreno%2C_Luis._1922%2C_Legislative_Palace%2C_La_Paz.png",
+  "author": "Luis Enrique Toro Moreno (1897-1933)",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Small intestine": {
+  "file": "small-intestine.webp",
+  "width": 500,
+  "height": 704,
+  "commonsFile": "Tractus intestinalis intestinum tenue.svg",
+  "page": "https://commons.wikimedia.org/wiki/File:Tractus_intestinalis_intestinum_tenue.svg",
+  "author": "Olek Remesz (wiki-pl: Orem , commons: Orem )",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+ },
+ "Snap_the_Whip": {
+  "file": "snap-the-whip.webp",
+  "width": 500,
+  "height": 299,
+  "commonsFile": "Winslow Homer - Snap the Whip (Butler Institute of American Art).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Winslow_Homer_-_Snap_the_Whip_(Butler_Institute_of_American_Art).jpg",
+  "author": "Winslow Homer",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Snow leopard": {
+  "file": "snow-leopard.webp",
+  "width": 500,
+  "height": 375,
+  "commonsFile": "Irbis4.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Irbis4.JPG",
+  "author": "Irbis1983",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Socrates": {
+  "file": "socrates.webp",
   "width": 500,
   "height": 667,
-  "page": "https://en.wikipedia.org/wiki/Yuri_Gagarin"
+  "commonsFile": "Socrates Louvre.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Socrates_Louvre.jpg",
+  "author": "Copy of Lysippos (?)",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Stephen_Hawking": {
+  "file": "stephen-hawking.webp",
+  "width": 500,
+  "height": 718,
+  "commonsFile": "Stephen Hawking.StarChild.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Stephen_Hawking.StarChild.jpg",
+  "author": "NASA",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Sternum": {
+  "file": "sternum.webp",
+  "width": 500,
+  "height": 500,
+  "commonsFile": "Sternum composition.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Sternum_composition.png",
+  "author": "Anatomography",
+  "license": "CC BY-SA 2.1 jp",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en"
+ },
+ "Street,_Berlin_(Kirchner)": {
+  "file": "street-berlin-kirchner.webp",
+  "width": 500,
+  "height": 661,
+  "commonsFile": "Kirchner 1913 Street, Berlin.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Kirchner_1913_Street%2C_Berlin.jpg",
+  "author": "Ernst Ludwig Kirchner",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Suleiman_the_Magnificent": {
+  "file": "suleiman-the-magnificent.webp",
+  "width": 500,
+  "height": 585,
+  "commonsFile": "EmperorSuleiman.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:EmperorSuleiman.jpg",
+  "author": "Circle of Titian",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Sunflowers_(Van_Gogh_series)": {
+  "file": "sunflowers-van-gogh-series.webp",
+  "width": 500,
+  "height": 631,
+  "commonsFile": "Vincent Willem van Gogh 127.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Vincent_Willem_van_Gogh_127.jpg",
+  "author": "Vincent van Gogh",
+  "license": "Public domain",
+  "licenseUrl": null,
+  "edit": {
+   "blur": [
+    [
+     0.33,
+     0.74,
+     0.52,
+     0.85
+    ]
+   ]
+  }
+ },
+ "The_Ambassadors_(Holbein)": {
+  "file": "the-ambassadors-holbein.webp",
+  "width": 500,
+  "height": 493,
+  "commonsFile": "Hans Holbein the Younger - The Ambassadors - Google Art Project.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg",
+  "author": "Hans Holbein the Younger",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Anatomy_Lesson_of_Dr._Nicolaes_Tulp": {
+  "file": "the-anatomy-lesson-of-dr-nicolaes-tulp.webp",
+  "width": 500,
+  "height": 377,
+  "commonsFile": "Rembrandt - The Anatomy Lesson of Dr Nicolaes Tulp.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_The_Anatomy_Lesson_of_Dr_Nicolaes_Tulp.jpg",
+  "author": "Rembrandt",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Apotheosis_of_Homer_(Ingres)": {
+  "file": "the-apotheosis-of-homer-ingres.webp",
+  "width": 500,
+  "height": 372,
+  "commonsFile": "Homère déifié, dit aussi L'apothéose d'Homère - Jean-Auguste Dominique Ingres - Musée du Louvre Peintures INV 5417 ; C 196.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Hom%C3%A8re_d%C3%A9ifi%C3%A9%2C_dit_aussi_L'apoth%C3%A9ose_d'Hom%C3%A8re_-_Jean-Auguste_Dominique_Ingres_-_Mus%C3%A9e_du_Louvre_Peintures_INV_5417_%3B_C_196.jpg",
+  "author": "Jean-Auguste-Dominique Ingres",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Birth_of_Venus": {
+  "file": "the-birth-of-venus.webp",
+  "width": 500,
+  "height": 314,
+  "commonsFile": "Sandro Botticelli - La nascita di Venere - Google Art Project - edited.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
+  "author": "Sandro Botticelli",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Calling_of_Saint_Matthew_(Caravaggio)": {
+  "file": "the-calling-of-saint-matthew-caravaggio.webp",
+  "width": 500,
+  "height": 472,
+  "commonsFile": "Caravaggio — The Calling of Saint Matthew.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Caravaggio_%E2%80%94_The_Calling_of_Saint_Matthew.jpg",
+  "author": "Gleb Simonov",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+ },
+ "The_Card_Players": {
+  "file": "the-card-players.webp",
+  "width": 500,
+  "height": 410,
+  "commonsFile": "Les Joueurs de cartes, par Paul Cézanne.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Les_Joueurs_de_cartes%2C_par_Paul_C%C3%A9zanne.jpg",
+  "author": "Paul Cézanne",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Creation_of_Adam": {
+  "file": "the-creation-of-adam.webp",
+  "width": 500,
+  "height": 227,
+  "commonsFile": "Michelangelo - Creation of Adam (cropped).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Michelangelo_-_Creation_of_Adam_(cropped).jpg",
+  "author": "Michelangelo",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Dance_Class": {
+  "file": "the-dance-class.webp",
+  "width": 500,
+  "height": 574,
+  "commonsFile": "Edgar Degas - La Classe de danse.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Edgar_Degas_-_La_Classe_de_danse.jpg",
+  "author": "Edgar Degas",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Death_of_Marat": {
+  "file": "the-death-of-marat.webp",
+  "width": 500,
+  "height": 643,
+  "commonsFile": "Death of Marat by David.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Death_of_Marat_by_David.jpg",
+  "author": "Jacques-Louis David",
+  "license": "Public domain",
+  "licenseUrl": null,
+  "edit": {
+   "blur": [
+    [
+     0.57,
+     0.86,
+     0.82,
+     1
+    ]
+   ]
+  }
+ },
+ "The_Fighting_Temeraire": {
+  "file": "the-fighting-temeraire.webp",
+  "width": 500,
+  "height": 371,
+  "commonsFile": "The Fighting Temeraire, JMW Turner, National Gallery.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg",
+  "author": "J. M. W. Turner",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Garden_of_Earthly_Delights": {
+  "file": "the-garden-of-earthly-delights.webp",
+  "width": 500,
+  "height": 285,
+  "commonsFile": "The Garden of earthly delights.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Garden_of_earthly_delights.jpg",
+  "author": "Hieronymus Bosch",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Garden_of_Love_(Rubens)": {
+  "file": "the-garden-of-love-rubens.webp",
+  "width": 500,
+  "height": 345,
+  "commonsFile": "El Jardín del Amor (Rubens).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:El_Jard%C3%ADn_del_Amor_(Rubens).jpg",
+  "author": "Peter Paul Rubens",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Gleaners": {
+  "file": "the-gleaners.webp",
+  "width": 500,
+  "height": 374,
+  "commonsFile": "Jean-François Millet - Gleaners - Google Art Project 2.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg",
+  "author": "Jean-François Millet",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Great_Wave_off_Kanagawa": {
+  "file": "the-great-wave-off-kanagawa.webp",
+  "width": 500,
+  "height": 336,
+  "commonsFile": "Tsunami by hokusai 19th century.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Tsunami_by_hokusai_19th_century.jpg",
+  "author": "Katsushika Hokusai",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Hay_Wain": {
+  "file": "the-hay-wain.webp",
+  "width": 500,
+  "height": 345,
+  "commonsFile": "John Constable - The Hay Wain (1821).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:John_Constable_-_The_Hay_Wain_(1821).jpg",
+  "author": "John Constable",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Jewish_Bride": {
+  "file": "the-jewish-bride.webp",
+  "width": 500,
+  "height": 365,
+  "commonsFile": "Rembrandt Harmensz. van Rijn - Portret van een paar als oudtestamentische figuren, genaamd 'Het Joodse bruidje' - Google Art Project.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_-_Portret_van_een_paar_als_oudtestamentische_figuren%2C_genaamd_'Het_Joodse_bruidje'_-_Google_Art_Project.jpg",
+  "author": "Rembrandt",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Kiss_(Klimt)": {
+  "file": "the-kiss-klimt.webp",
+  "width": 500,
+  "height": 502,
+  "commonsFile": "The Kiss - Gustav Klimt - Google Cultural Institute.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg",
+  "author": "Gustav Klimt",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Last_Supper_(Leonardo)": {
+  "file": "the-last-supper-leonardo.webp",
+  "width": 500,
+  "height": 250,
+  "commonsFile": "The Last Supper - Leonardo Da Vinci - High Resolution 32x16.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg",
+  "author": "Leonardo da Vinci",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Milkmaid_(Vermeer)": {
+  "file": "the-milkmaid-vermeer.webp",
+  "width": 500,
+  "height": 562,
+  "commonsFile": "Johannes Vermeer - Het melkmeisje - Google Art Project.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Johannes_Vermeer_-_Het_melkmeisje_-_Google_Art_Project.png",
+  "author": "Johannes Vermeer",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Night_Watch": {
+  "file": "the-night-watch.webp",
+  "width": 500,
+  "height": 407,
+  "commonsFile": "La ronda de noche, por Rembrandt van Rijn.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg",
+  "author": "Rembrandt",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Potato_Eaters": {
+  "file": "the-potato-eaters.webp",
+  "width": 500,
+  "height": 354,
+  "commonsFile": "De aardappeleters - s0005V1962 - Van Gogh Museum.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:De_aardappeleters_-_s0005V1962_-_Van_Gogh_Museum.jpg",
+  "author": "Vincent van Gogh",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Raft_of_the_Medusa": {
+  "file": "the-raft-of-the-medusa.webp",
+  "width": 500,
+  "height": 341,
+  "commonsFile": "JEAN LOUIS THÉODORE GÉRICAULT - La Balsa de la Medusa (Museo del Louvre, 1818-19).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:JEAN_LOUIS_TH%C3%89ODORE_G%C3%89RICAULT_-_La_Balsa_de_la_Medusa_(Museo_del_Louvre%2C_1818-19).jpg",
+  "author": "Théodore Géricault",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Return_of_the_Prodigal_Son_(Rembrandt)": {
+  "file": "the-return-of-the-prodigal-son-rembrandt.webp",
+  "width": 500,
+  "height": 652,
+  "commonsFile": "Rembrandt Harmensz van Rijn - Return of the Prodigal Son - Google Art Project.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg",
+  "author": "Rembrandt",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_School_of_Athens": {
+  "file": "the-school-of-athens.webp",
+  "width": 500,
+  "height": 388,
+  "commonsFile": "\"The School of Athens\" by Raffaello Sanzio da Urbino.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg",
+  "author": "Raphael",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Scream": {
+  "file": "the-scream.webp",
+  "width": 500,
+  "height": 584,
+  "commonsFile": "Edvard Munch, 1893, The Scream, oil, tempera and pastel on cardboard, 91 x 73 cm, National Gallery of Norway.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg",
+  "author": "Edvard Munch",
+  "license": "Public domain",
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0,
+    0,
+    0.06,
+    0
+   ]
+  }
+ },
+ "The_Sleeping_Gypsy": {
+  "file": "the-sleeping-gypsy.webp",
+  "width": 500,
+  "height": 319,
+  "commonsFile": "La Bohémienne endormie.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:La_Boh%C3%A9mienne_endormie.jpg",
+  "author": "Henri Rousseau",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Starry_Night": {
+  "file": "the-starry-night.webp",
+  "width": 500,
+  "height": 396,
+  "commonsFile": "Van Gogh - Starry Night - Google Art Project.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+  "author": "Vincent van Gogh",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Third-Class_Carriage": {
+  "file": "the-third-class-carriage.webp",
+  "width": 500,
+  "height": 362,
+  "commonsFile": "Honoré Daumier, The Third-Class Carriage - The Metropolitan Museum of Art.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Honor%C3%A9_Daumier%2C_The_Third-Class_Carriage_-_The_Metropolitan_Museum_of_Art.jpg",
+  "author": "Honoré Daumier",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Third_of_May_1808": {
+  "file": "the-third-of-may-1808.webp",
+  "width": 500,
+  "height": 386,
+  "commonsFile": "El Tres de Mayo, by Francisco de Goya, from Prado thin black margin.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg",
+  "author": "El_Tres_de_Mayo,_by_Francisco_de_Goya,_from_Prado_in_Google_Earth.jpg : Francisc",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Tower_of_Babel_(Bruegel)": {
+  "file": "the-tower-of-babel-bruegel.webp",
+  "width": 500,
+  "height": 366,
+  "commonsFile": "Pieter Bruegel the Elder - The Tower of Babel (Vienna) - Google Art Project - edited.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_(Vienna)_-_Google_Art_Project_-_edited.jpg",
+  "author": "Pieter Brueghel the Elder",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "The_Waterseller_of_Seville": {
+  "file": "the-waterseller-of-seville.webp",
+  "width": 500,
+  "height": 675,
+  "commonsFile": "El aguador de Sevilla, por Diego Velázquez.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:El_aguador_de_Sevilla%2C_por_Diego_Vel%C3%A1zquez.jpg",
+  "author": "Diego Velázquez",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Thomas_Aquinas": {
+  "file": "thomas-aquinas.webp",
+  "width": 500,
+  "height": 749,
+  "commonsFile": "St-thomas-aquinasFXD.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:St-thomas-aquinasFXD.jpg",
+  "author": "Carlo Crivelli",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Tibia": {
+  "file": "tibia.webp",
+  "width": 500,
+  "height": 500,
+  "commonsFile": "Tibia - frontal view.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Tibia_-_frontal_view.png",
+  "author": "Anatomography",
+  "license": "CC BY-SA 2.1 jp",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en"
+ },
+ "Tiger": {
+  "file": "tiger.webp",
+  "width": 500,
+  "height": 333,
+  "commonsFile": "Bengal tiger (Panthera tigris tigris) female 3 crop.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Bengal_tiger_(Panthera_tigris_tigris)_female_3_crop.jpg",
+  "author": "Charles J. Sharp",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Titan (moon)": {
+  "file": "titan-moon.webp",
+  "width": 500,
+  "height": 500,
+  "commonsFile": "Titan in true color by Kevin M. Gill.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Titan_in_true_color_by_Kevin_M._Gill.jpg",
+  "author": "NASA/JPL-Caltech/SSI/Kevin M. Gill",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+ },
+ "Toussaint_Louverture": {
+  "file": "toussaint-louverture.webp",
+  "width": 500,
+  "height": 609,
+  "commonsFile": "Toussaint Louverture - Girardin.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Toussaint_Louverture_-_Girardin.jpg",
+  "author": "Alexandre-François-Louis, comte de Girardin",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Transfiguration_(Raphael)": {
+  "file": "transfiguration-raphael.webp",
+  "width": 500,
+  "height": 754,
+  "commonsFile": "Transfiguration Raphael.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Transfiguration_Raphael.jpg",
+  "author": "Raphael",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Twittering_Machine": {
+  "file": "twittering-machine.webp",
+  "width": 500,
+  "height": 611,
+  "commonsFile": "Die Zwitscher-Maschine (Twittering Machine), 1922 - Paul Klee.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Die_Zwitscher-Maschine_(Twittering_Machine)%2C_1922_-_Paul_Klee.jpg",
+  "author": "Paul Klee",
+  "license": "Public domain",
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0,
+    0,
+    0.1,
+    0
+   ]
+  }
+ },
+ "Ulna": {
+  "file": "ulna.webp",
+  "width": 500,
+  "height": 500,
+  "commonsFile": "Ulna - anterior view.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Ulna_-_anterior_view.png",
+  "author": "Anatomography",
+  "license": "CC BY-SA 2.1 jp",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en"
+ },
+ "Uranus": {
+  "file": "uranus.webp",
+  "width": 500,
+  "height": 500,
+  "commonsFile": "Uranus Voyager2 color calibrated.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Uranus_Voyager2_color_calibrated.png",
+  "author": "Ardenau4",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+ },
+ "Venus": {
+  "file": "venus.webp",
+  "width": 500,
+  "height": 500,
+  "commonsFile": "Venus from Mariner 10.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Venus_from_Mariner_10.jpg",
+  "author": "NASA/JPL-Caltech",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Venus_of_Urbino": {
+  "file": "venus-of-urbino.webp",
+  "width": 500,
+  "height": 352,
+  "commonsFile": "Tiziano - Venere di Urbino - Google Art Project.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Tiziano_-_Venere_di_Urbino_-_Google_Art_Project.jpg",
+  "author": "Titian",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Voltaire": {
+  "file": "voltaire.webp",
+  "width": 500,
+  "height": 666,
+  "commonsFile": "Nicolas de Largillière - Portrait de Voltaire (1694-1778) en 1718 - P208 - musée Carnavalet - 5 (cropped).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Nicolas_de_Largilli%C3%A8re_-_Portrait_de_Voltaire_(1694-1778)_en_1718_-_P208_-_mus%C3%A9e_Carnavalet_-_5_(cropped).jpg",
+  "author": "Nicolas de Largillière",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+ },
+ "Walrus": {
+  "file": "walrus.webp",
+  "width": 500,
+  "height": 333,
+  "commonsFile": "Walrus in the Russian Arctic National Park, Novaya Zemlya 2015-2.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Walrus_in_the_Russian_Arctic_National_Park%2C_Novaya_Zemlya_2015-2.jpg",
+  "author": "Nixette",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Wanderer_above_the_Sea_of_Fog": {
+  "file": "wanderer-above-the-sea-of-fog.webp",
+  "width": 500,
+  "height": 641,
+  "commonsFile": "Caspar David Friedrich - Wanderer above the Sea of Fog.jpeg",
+  "page": "https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg",
+  "author": "Caspar David Friedrich",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Wangari_Maathai": {
+  "file": "wangari-maathai.webp",
+  "width": 500,
+  "height": 806,
+  "commonsFile": "Wangari Maathai in 2001.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wangari_Maathai_in_2001.jpg",
+  "author": "Kingkongphoto &amp; www.celebrity-photos.com from Laurel Maryland, USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+ },
+ "Water_Lilies_(Monet_series)": {
+  "file": "water-lilies-monet-series.webp",
+  "width": 500,
+  "height": 286,
+  "commonsFile": "Reflections of Clouds on the Water-Lily Pond.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg",
+  "author": "Claude Monet",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Western gorilla": {
+  "file": "western-gorilla.webp",
+  "width": 500,
+  "height": 558,
+  "commonsFile": "Male gorilla in SF zoo.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Male_gorilla_in_SF_zoo.jpg",
+  "author": "Brocken Inaglory",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ "Western honey bee": {
+  "file": "western-honey-bee.webp",
+  "width": 500,
+  "height": 416,
+  "commonsFile": "Apis mellifera Western honey bee.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Apis_mellifera_Western_honey_bee.jpg",
+  "author": "Andreas Trepte",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+ },
+ "Where_Do_We_Come_From?_What_Are_We?_Where_Are_We_Going?": {
+  "file": "where-do-we-come-from-what-are-we-where-are-we-going.webp",
+  "width": 500,
+  "height": 184,
+  "commonsFile": "Gauguin - Where Do We Come From? What Are We? Where Are We Going? (1897-98).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Gauguin_-_Where_Do_We_Come_From%3F_What_Are_We%3F_Where_Are_We_Going%3F_(1897-98).jpg",
+  "author": "Paul Gauguin",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "White rhinoceros": {
+  "file": "white-rhinoceros.webp",
+  "width": 500,
+  "height": 333,
+  "commonsFile": "109 Male White rhinoceros walking in the Kalahari Desert of Namibia Photo by Giles Laurent.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg",
+  "author": "Giles Laurent",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "William_Shakespeare": {
+  "file": "william-shakespeare.webp",
+  "width": 500,
+  "height": 637,
+  "commonsFile": "William Shakespeare by John Taylor, edited.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:William_Shakespeare_by_John_Taylor%2C_edited.jpg",
+  "author": "Attributed to John Taylor",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Winston_Churchill": {
+  "file": "winston-churchill.webp",
+  "width": 500,
+  "height": 622,
+  "commonsFile": "Sir Winston Churchill - 19086236948 (restored).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Sir_Winston_Churchill_-_19086236948_(restored).jpg",
+  "author": null,
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Wolfgang_Amadeus_Mozart": {
+  "file": "wolfgang-amadeus-mozart.webp",
+  "width": 500,
+  "height": 666,
+  "commonsFile": "The Mozart Family - Wolfgang Amadeus Mozart headshot.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Mozart_Family_-_Wolfgang_Amadeus_Mozart_headshot.jpg",
+  "author": "Johann Nepomuk della Croce",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Wolverine": {
+  "file": "wolverine.webp",
+  "width": 500,
+  "height": 312,
+  "commonsFile": "Järv1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:J%C3%A4rv1.jpg",
+  "author": "Esquilo",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ "Women_of_Algiers": {
+  "file": "women-of-algiers.webp",
+  "width": 500,
+  "height": 389,
+  "commonsFile": "Femmes d'Alger dans leur appartement, Eugène Delacroix - Musée du Louvre Peintures INV 3824.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Femmes_d'Alger_dans_leur_appartement%2C_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3824.jpg",
+  "author": "Eugène Delacroix",
+  "license": "Public domain",
+  "licenseUrl": null
+ },
+ "Yuri_Gagarin": {
+  "file": "yuri-gagarin.webp",
+  "width": 500,
+  "height": 667,
+  "commonsFile": "Yuri Gagarin with awards (cropped) 2.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Yuri_Gagarin_with_awards_(cropped)_2.jpg",
+  "author": "Александр Моклецов / СовИнформБюро",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
  }
 }

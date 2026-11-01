@@ -83,18 +83,21 @@ registered in the subject's `views` map.
 - **Map geometry** (`npm run build:geo`): projects `world-atlas` TopoJSON once at build time into
   per-country outline paths, a world map, microstate points, and region frames. The browser never loads
   d3 or TopoJSON. CI fails if the committed output is stale.
-- **Images** (`npm run build:images`): resolves each `wikiTitle` in the data to a fixed 500 px Wikimedia
-  thumbnail and the article URL (shown as an image credit after answering). Picture questions only use
-  items that resolved, so a missing image can never produce an unanswerable question. The test suite
-  lists titles that still need fixing.
+- **Images** (`npm run build:images`): downloads every picture once from Wikimedia Commons, keeps only
+  freely licensed files, saves a 500 px WebP in `src/assets/quiz-images/` and records author, licence and
+  source page (shown as the credit after answering). Items can pick a specific Commons file
+  (`imageFile`), opt out (`imageFile: null`), or hide giveaway text (`imageEdit: { crop, blur }`).
+  Nothing is loaded from Wikimedia at runtime.
+- **Illustrations** (`npm run build:illustrations`): our own label-free anatomy drawings for organs with
+  no suitable free photo.
 - **Flags** are bundled from `country-flag-icons` as individual SVG files, so there is no flag CDN
   dependency.
 
 ## Content notes
 
-- History names and descriptions, science facts, and capital-city names are in English in every UI
-  language. Everything else (UI, prompts, country, language, animal, planet, element, and body-part
-  names) is translated.
+- Everything is available in English, Spanish and French: UI, prompts, country/language names, history
+  people, events, inventions and artworks (names and descriptions), and science names and facts.
+  Capital-city names are shown in their usual international form.
 - `docs/AUDIT.md` contains the original code and functionality audit and how each finding was addressed.
 
 ## Design

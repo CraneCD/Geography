@@ -64,10 +64,10 @@ function shape(obj, prefix = "") {
 }
 
 describe("translations", () => {
-  const ref = new Set(shape(en).filter((k) => !k.startsWith("englishContentNote")));
+  const ref = new Set(shape(en));
   for (const [name, table] of Object.entries({ es, fr })) {
     it(`${name} defines every English key with the same type`, () => {
-      const keys = new Set(shape(table).filter((k) => !k.startsWith("englishContentNote")));
+      const keys = new Set(shape(table));
       expect([...ref].filter((k) => !keys.has(k))).toEqual([]);
     });
   }

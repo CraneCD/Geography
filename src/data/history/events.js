@@ -7,13 +7,6 @@ export const events = [
     description: "Athenian forces defeat the Persian army at Marathon, halting the first Persian invasion of Greece and securing Athenian independence.",
   },
   {
-    id: "death-of-alexander",
-    event: "Death of Alexander the Great",
-    year: -323,
-    category: "Politics & Government",
-    description: "Alexander the Great dies in Babylon at age 32, leaving behind an empire stretching from Greece to northwestern India with no clear successor.",
-  },
-  {
     id: "great-wall-begins",
     event: "Construction of the Great Wall Begins",
     year: -214,
@@ -33,13 +26,6 @@ export const events = [
     year: 1,
     category: "Religion & Philosophy",
     description: "The birth of Jesus of Nazareth, the central figure of Christianity, an event that would shape the religious and cultural history of the world for millennia.",
-  },
-  {
-    id: "fall-of-western-rome",
-    event: "Fall of the Western Roman Empire",
-    year: 476,
-    category: "Politics & Government",
-    description: "Romulus Augustulus, the last emperor of the Western Roman Empire, is deposed by the Germanic chieftain Odoacer, marking the end of ancient Rome.",
   },
   {
     id: "birth-of-islam",
@@ -364,20 +350,6 @@ export const events = [
     description: "The Germanic chieftain Odoacer deposed Romulus Augustulus, the last emperor of the Western Roman Empire, marking the conventional end of ancient Rome. This event is widely used as the boundary between classical antiquity and the Middle Ages in European history.",
   },
   {
-    id: "battle-of-hastings",
-    event: "Battle of Hastings",
-    year: 1066,
-    category: "War & Conflict",
-    description: "William the Conqueror of Normandy defeated King Harold II of England, fundamentally transforming the political, cultural, and linguistic landscape of Britain. The Norman Conquest introduced feudalism and Old French elements that permanently shaped the English language and governance.",
-  },
-  {
-    id: "first-crusade",
-    event: "First Crusade",
-    year: 1096,
-    category: "Religion & Philosophy",
-    description: "Pope Urban II called for a holy war to recapture Jerusalem from Muslim rule, launching the First Crusade and setting in motion two centuries of conflict between Christian and Muslim powers. The Crusaders captured Jerusalem in 1099, establishing several Crusader states in the Levant.",
-  },
-  {
     id: "mongol-invasion-of-baghdad",
     event: "Mongol Sack of Baghdad",
     year: 1258,
@@ -390,13 +362,6 @@ export const events = [
     year: 1325,
     category: "Culture & Society",
     description: "The Aztec people founded Tenochtitlan on an island in Lake Texcoco, fulfilling a prophecy that guided them to a place where an eagle perched on a cactus devouring a serpent. The city grew into one of the largest in the world and became the heart of the Aztec Empire, which dominated Mesoamerica for nearly two centuries.",
-  },
-  {
-    id: "printing-press-invented",
-    event: "Gutenberg's Printing Press Invented",
-    year: 1440,
-    category: "Science & Exploration",
-    description: "Johannes Gutenberg developed movable-type printing in Europe, enabling the mass production of books and dramatically accelerating the spread of knowledge. The printing press is credited with fueling the Renaissance, the Reformation, and the Scientific Revolution by making information accessible beyond the clergy and aristocracy.",
   },
   {
     id: "vasco-da-gama-reaches-india",
@@ -441,13 +406,6 @@ export const events = [
     description: "American colonists protesting British taxation without representation dumped 342 chests of British East India Company tea into Boston Harbor. This act of defiance galvanized colonial opposition to British rule and helped set the stage for the American Revolution.",
   },
   {
-    id: "haitian-revolution",
-    event: "Haitian Revolution",
-    year: 1791,
-    category: "Politics & Government",
-    description: "The enslaved people of Saint-Domingue launched the only successful slave revolt in history, ultimately defeating French, British, and Spanish forces and declaring independence as Haiti in 1804. Haiti became the first Black republic and the first Caribbean nation to achieve independence, profoundly challenging the institution of slavery worldwide.",
-  },
-  {
     id: "battle-of-trafalgar",
     event: "Battle of Trafalgar",
     year: 1805,
@@ -474,13 +432,6 @@ export const events = [
     year: 1853,
     category: "War & Conflict",
     description: "Britain, France, and the Ottoman Empire went to war against Russia over influence in the declining Ottoman Empire, fought primarily on the Crimean Peninsula. The war became notable for the pioneering nursing work of Florence Nightingale and for demonstrating the devastating power of modern industrial warfare.",
-  },
-  {
-    id: "suez-canal-opened",
-    event: "Suez Canal Opened",
-    year: 1869,
-    category: "Economics & Trade",
-    description: "The Suez Canal connecting the Mediterranean Sea to the Red Sea was inaugurated, dramatically shortening the sea route between Europe and Asia by eliminating the need to navigate around Africa. The canal transformed global trade and became a strategic flashpoint for colonial and geopolitical rivalries for decades.",
   },
   {
     id: "franco-prussian-war",

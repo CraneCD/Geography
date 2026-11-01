@@ -88,7 +88,6 @@ const es = {
   off: "No",
   mixedIncludes: "El modo mixto incluye",
   bestScore: (pct) => `Récord ${pct}%`,
-  englishContentNote: "Nota: los nombres y descripciones de esta sección están en inglés.",
   playMode: (title) => `Jugar ${title}`,
 
   backToSubjects: "Temas",
@@ -120,7 +119,7 @@ const es = {
   later: "Después ▶",
   vs: "VS",
   imageUnavailable: "Imagen no disponible",
-  imageCredit: "Imagen: Wikipedia",
+  imageCredit: "Imagen",
   steps: "Pasos",
 
   roundComplete: "¡Ronda completada!",
@@ -250,6 +249,7 @@ const es = {
       "alkali metal": "metal alcalino", "alkaline earth metal": "metal alcalinotérreo", halogen: "halógeno",
       metalloid: "metaloide", "noble gas": "gas noble", nonmetal: "no metal",
       "post-transition metal": "metal del bloque p", "transition metal": "metal de transición",
+      lanthanide: "lantánido", actinide: "actínido",
     },
   },
 };

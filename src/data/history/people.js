@@ -143,16 +143,6 @@ export const people = [
     wikiTitle: "Abraham_Lincoln",
   },
   {
-    id: "mandela",
-    name: "Nelson Mandela",
-    born: 1918,
-    died: 2013,
-    field: "Politics",
-    subfield: "South Africa",
-    description: "South African anti-apartheid activist and statesman who served 27 years in prison before becoming the country's first Black president",
-    wikiTitle: "Nelson_Mandela",
-  },
-  {
     id: "churchill",
     name: "Winston Churchill",
     born: 1874,
@@ -213,6 +203,7 @@ export const people = [
     subfield: "Painting",
     description: "Italian Renaissance polymath — painter of the Mona Lisa and The Last Supper, and visionary architect, scientist, and inventor",
     wikiTitle: "Leonardo_da_Vinci",
+    imageEdit: { crop: [0, 0, 0.2, 0] }, // hides giveaway text
   },
   {
     id: "shakespeare",
@@ -274,16 +265,6 @@ export const people = [
     description: "Dutch Golden Age painter renowned for his mastery of light and shadow; created 'The Night Watch' and hundreds of self-portraits",
     wikiTitle: "Rembrandt",
   },
-  {
-    id: "kahlo",
-    name: "Frida Kahlo",
-    born: 1907,
-    died: 1954,
-    field: "Arts",
-    subfield: "Painting",
-    description: "Mexican painter known for her intensely personal and symbolic self-portraits, often exploring themes of identity, pain, and Mexican culture",
-    wikiTitle: "Frida_Kahlo",
-  },
 
   // Exploration
   {
@@ -295,6 +276,7 @@ export const people = [
     subfield: "Navigation",
     description: "Italian explorer sailing for Spain whose 1492 voyage to the Americas initiated lasting contact between Europe and the New World",
     wikiTitle: "Christopher_Columbus",
+    imageEdit: { crop: [0.17, 0, 0, 0] }, // hides giveaway text
   },
   {
     id: "magellan",
@@ -305,16 +287,7 @@ export const people = [
     subfield: "Navigation",
     description: "Portuguese explorer who organised and led the first circumnavigation of the Earth (1519–1522), though he died before its completion",
     wikiTitle: "Ferdinand_Magellan",
-  },
-  {
-    id: "earhart",
-    name: "Amelia Earhart",
-    born: 1897,
-    died: 1937,
-    field: "Exploration",
-    subfield: "Aviation",
-    description: "American aviator who was the first woman to fly solo across the Atlantic Ocean; disappeared while attempting a round-the-world flight",
-    wikiTitle: "Amelia_Earhart",
+    imageEdit: { crop: [0.15, 0, 0, 0] }, // hides giveaway text
   },
   {
     id: "marco_polo",
@@ -335,6 +308,7 @@ export const people = [
     subfield: "Space",
     description: "American astronaut who became the first human to walk on the Moon on July 20, 1969, during the Apollo 11 mission",
     wikiTitle: "Neil_Armstrong",
+    imageEdit: { crop: [0, 0, 0.58, 0] }, // hides giveaway text
   },
 
   // Philosophy
@@ -379,16 +353,6 @@ export const people = [
     wikiTitle: "Confucius",
   },
   {
-    id: "kant",
-    name: "Immanuel Kant",
-    born: 1724,
-    died: 1804,
-    field: "Philosophy",
-    subfield: "Epistemology",
-    description: "German philosopher who wrote the 'Critique of Pure Reason'; his categorical imperative remains central to modern moral philosophy",
-    wikiTitle: "Immanuel_Kant",
-  },
-  {
     id: "descartes",
     name: "René Descartes",
     born: 1596,
@@ -409,16 +373,6 @@ export const people = [
     subfield: "Christian Mysticism",
     description: "French peasant girl who, claiming divine guidance, led the French army to decisive victories in the Hundred Years' War before being burned at the stake",
     wikiTitle: "Joan_of_Arc",
-  },
-  {
-    id: "luther",
-    name: "Martin Luther",
-    born: 1483,
-    died: 1546,
-    field: "Religion",
-    subfield: "Christianity",
-    description: "German theologian whose Ninety-Five Theses (1517) challenged papal authority and ignited the Protestant Reformation",
-    wikiTitle: "Martin_Luther",
   },
   {
     id: "gandhi",
@@ -501,6 +455,8 @@ export const people = [
     subfield: "Mathematics & Astronomy",
     description: "Alexandrian mathematician, astronomer, and philosopher who was the first well-documented woman in mathematics. She was murdered by a Christian mob in 415 CE during a period of political turmoil in Alexandria.",
     wikiTitle: "Hypatia",
+    // No authentic portrait exists: no picture question.
+    imageFile: null,
   },
   {
     id: "avicenna",
@@ -541,6 +497,7 @@ export const people = [
     subfield: "Jewish Philosophy & Medicine",
     description: "Medieval Sephardic Jewish philosopher and physician whose Guide for the Perplexed reconciled Aristotelian philosophy with Jewish theology and whose medical works influenced generations of practitioners.",
     wikiTitle: "Maimonides",
+    imageEdit: { crop: [0.08, 0.3, 0.1, 0.32] }, // hides giveaway text
   },
   {
     id: "akbar",
@@ -601,6 +558,8 @@ export const people = [
     subfield: "Hunnic Empire",
     description: "Ruler of the Hunnic Empire who united the nomadic tribes of Central Asia and led devastating raids across the Roman Empire, earning the epithet 'Scourge of God' from his contemporaries.",
     wikiTitle: "Attila",
+    // No authentic portrait exists: no picture question.
+    imageFile: null,
   },
   {
     id: "james-watt",
@@ -681,6 +640,7 @@ export const people = [
     subfield: "Polar Exploration",
     description: "Anglo-Irish Antarctic explorer famous for his Imperial Trans-Antarctic Expedition of 1914–1917, during which his ship Endurance became trapped in ice and sank, yet he successfully led all 28 crew members to safety.",
     wikiTitle: "Ernest_Shackleton",
+    imageEdit: { crop: [0, 0.2, 0.36, 0] }, // hides giveaway text
   },
   {
     id: "frederick-douglass",
@@ -811,6 +771,7 @@ export const people = [
     subfield: "Computer Science",
     description: "American computer scientist and United States Navy rear admiral who pioneered the development of the first compiler and contributed to the creation of COBOL, one of the earliest high-level programming languages.",
     wikiTitle: "Grace_Hopper",
+    imageEdit: { crop: [0, 0, 0.3, 0] }, // hides giveaway text
   },
   {
     id: "alexander-fleming",
@@ -911,5 +872,7 @@ export const people = [
     subfield: "Theoretical Physics",
     description: "American theoretical physicist who made fundamental contributions to quantum electrodynamics, for which he shared the 1965 Nobel Prize in Physics. He was also celebrated as an exceptional teacher and communicator of science.",
     wikiTitle: "Richard_Feynman",
+    // The lead image is non-free (fair use); use a free Commons photo.
+    imageFile: "Richard Feynman 1959.png",
   },
 ];

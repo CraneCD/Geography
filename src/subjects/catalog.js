@@ -14,7 +14,6 @@ export const SUBJECTS = [
     id: "history",
     modes: ["people", "who-first", "events", "inventions", "art", "history-mixed"],
     options: [],
-    englishContent: true,
     load: () => import("./history/index.js"),
   },
   {
