@@ -151,8 +151,8 @@ export const BODY_REGIONS = [
     name: "Pelvis",
     photoName: "Pelvis",
     wikiTitle: "Pelvis",
-    // Lead image labels or gives away the answer; null = no picture until a reviewed file is chosen.
-    imageFile: null,
+    // Hand-picked label-free image (the lead image labels ilium / pubis / ischium).
+    imageFile: "Pelvis (male) 01 - anterior view.png",
     dataset: "bones",
     fact: "Basin-shaped structure supporting the spine and protecting abdominal organs.",
   },
