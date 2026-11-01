@@ -205,6 +205,12 @@ const es = {
     typeYear: "Escribe el año (p. ej. 1969 o 44 a. C.)…",
     born: (name) => `${name} (nacimiento)`,
     yearBC: (n) => `${n} a. C.`,
+    yearsOff: (n, late) => late ? `Son ${n} ${n === 1 ? "año" : "años"} de más.` : `Son ${n} ${n === 1 ? "año" : "años"} de menos.`,
+    inventedBy: (who, what, year) => `A ${who} se le conoce por: ${what} (${year}).`,
+    createdBy: (who, title, movement) => `${who} creó ${title} (${movement}).`,
+    movementExample: (title, artist) => `Por ejemplo, ${title}, de ${artist}.`,
+    cameBefore: (a, b, n) => `${a} fue ${n} ${n === 1 ? "año" : "años"} antes que ${b}.`,
+    sameYear: "Ambos en el mismo año.",
   },
 
   logic: {
@@ -251,6 +257,18 @@ const es = {
       distanceFromSun_AU: "¿Cuál está más lejos del Sol?",
     },
     units: { weight_kg: "kg", speed_kph: "km/h", lifespan_years: "años", diameter_km: "km", distanceFromSun_AU: "UA" },
+    ratioNote: {
+      weight_kg: (a, x, b) => `${a}: unas ${x} veces el peso de ${b}.`,
+      speed_kph: (a, x, b) => `${a}: unas ${x} veces la velocidad de ${b}.`,
+      lifespan_years: (a, x, b) => `${a}: vive unas ${x} veces más que ${b}.`,
+      diameter_km: (a, x, b) => `${a}: unas ${x} veces el diámetro de ${b}.`,
+      distanceFromSun_AU: (a, x, b) => `${a}: unas ${x} veces más lejos del Sol que ${b}.`,
+    },
+    elementCard: ({ name, symbol, number, category, group }) =>
+      `${name} (${symbol}) es el elemento ${number}: ${category}${group ? `, grupo ${group}` : ""}.`,
+    elementBrief: ({ name, symbol, number }) => `Ese es ${name} (${symbol}), el elemento ${number}.`,
+    groupMembers: (g, list) => `El grupo ${g} incluye ${list}.`,
+    isCategory: (name, category) => `${name}: ${category}.`,
     symbolToName: (s) => `¿Qué elemento tiene el símbolo ${s}?`,
     nameToNumber: (n) => `¿Cuál es el número atómico de: ${n}?`,
     symbolToGroup: (s) => `¿En qué grupo de la tabla periódica está ${s}?`,

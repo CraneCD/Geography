@@ -7,6 +7,7 @@
 //                                         currencies (ISO 4217)
 //   src/data/generated/sources.json       Wikidata id + es/fr Wikipedia titles for every
 //                                         wikiTitle used in the quiz (for "learn more" links)
+//   npm run build:facts -- --sources-only   (skip country facts)
 // Prints mismatches between our people's birth/death years and Wikidata.
 import { writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -18,6 +19,7 @@ import { artworks } from "../src/data/history/artworks.js";
 import { ANIMALS } from "../src/data/science/animals.js";
 import { SPACE_OBJECTS } from "../src/data/science/space.js";
 import { BODY_REGIONS } from "../src/data/science/body.js";
+import { ELEMENTS } from "../src/data/science/elements.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const UA = "QuizSite/1.0 (build-time fact refresh; https://github.com/cranecd/geography)";
@@ -39,6 +41,7 @@ const isoValues = countries.map((c) => `"${c.code}"`).join(" ");
 const country = `VALUES ?iso { ${isoValues} } ?c wdt:P297 ?iso . FILTER NOT EXISTS { ?c wdt:P31 wd:Q3024240 }`; // skip historical countries
 
 // ── Countries ──────────────────────────────────────────────────────────────
+if (!process.argv.includes("--sources-only")) {
 const facts = Object.fromEntries(countries.map((c) => [c.code, { currencies: [] }]));
 
 // Statement ranks: prefer "preferred", then "normal"; ignore "deprecated".
@@ -140,9 +143,12 @@ writeFileSync(
 const missing = Object.entries(facts).filter(([, f]) => !f.currencies.length);
 console.log(`countries: ${Object.keys(facts).length}, without currency: ${missing.map(([k]) => k).join(" ") || "none"}`);
 console.log(flagged.length ? `Needs a human look:\n  ${flagged.join("\n  ")}` : "No flagged values.");
+}
 
 // ── Sources: Wikidata id + es/fr article titles ────────────────────────────
-const titles = [...new Set([people, artworks, ANIMALS, SPACE_OBJECTS, BODY_REGIONS].flat().map((x) => x.wikiTitle).filter(Boolean))];
+// Keep in sync with ELEMENT_ARTICLES in src/subjects/science/generate.js.
+const elementTitles = ELEMENTS.map((e) => ({ wikiTitle: e.symbol === "Hg" ? "Mercury_(element)" : e.name }));
+const titles = [...new Set([people, artworks, ANIMALS, SPACE_OBJECTS, BODY_REGIONS, elementTitles].flat().map((x) => x.wikiTitle).filter(Boolean))];
 const sources = {};
 for (let i = 0; i < titles.length; i += 60) {
   const batch = titles.slice(i, i + 60);

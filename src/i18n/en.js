@@ -210,6 +210,12 @@ const en = {
     typeYear: "Type the year (e.g. 1969 or 44 BC)…",
     born: (name) => `${name} (born)`,
     yearBC: (n) => `${n} BC`,
+    yearsOff: (n, late) => late ? `That is ${n} ${n === 1 ? "year" : "years"} too late.` : `That is ${n} ${n === 1 ? "year" : "years"} too early.`,
+    inventedBy: (who, what, year) => `${who} is known for the ${what} (${year}).`,
+    createdBy: (who, title, movement) => `${who} made ${title} (${movement}).`,
+    movementExample: (title, artist) => `For example, ${title} by ${artist}.`,
+    cameBefore: (a, b, n) => `${a} came ${n} ${n === 1 ? "year" : "years"} before ${b}.`,
+    sameYear: "Both in the same year.",
   },
 
   // Logic
@@ -258,6 +264,18 @@ const en = {
       distanceFromSun_AU: "Which is farther from the Sun?",
     },
     units: { weight_kg: "kg", speed_kph: "km/h", lifespan_years: "years", diameter_km: "km", distanceFromSun_AU: "AU" },
+    ratioNote: {
+      weight_kg: (a, x, b) => `${a} is about ${x}× heavier than ${b}.`,
+      speed_kph: (a, x, b) => `${a} is about ${x}× faster than ${b}.`,
+      lifespan_years: (a, x, b) => `${a} lives about ${x}× longer than ${b}.`,
+      diameter_km: (a, x, b) => `${a} is about ${x}× wider than ${b}.`,
+      distanceFromSun_AU: (a, x, b) => `${a} is about ${x}× farther from the Sun than ${b}.`,
+    },
+    elementCard: ({ name, symbol, number, category, group }) =>
+      `${name} (${symbol}) is element ${number}, ${/^[aeiou]/i.test(category) ? "an" : "a"} ${category}${group ? ` in group ${group}` : ""}.`,
+    elementBrief: ({ name, symbol, number }) => `That is ${name} (${symbol}), element ${number}.`,
+    groupMembers: (g, list) => `Group ${g} contains ${list}.`,
+    isCategory: (name, category) => `${name} is ${/^[aeiou]/i.test(category) ? "an" : "a"} ${category}.`,
     symbolToName: (s) => `Which element has the symbol ${s}?`,
     nameToNumber: (n) => `What is the atomic number of ${n}?`,
     symbolToGroup: (s) => `Which periodic-table group is ${s} in?`,

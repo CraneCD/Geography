@@ -62,6 +62,9 @@ export default function AnswerFooter({ question, answer, onNext, isLast, autoAdv
             <div className="why-not">
               {whyNot.media?.kind === "flag" && <Flag src={whyNot.media.src} alt="" className="why-not__flag" />}
               {whyNot.media?.kind === "shape" && <ShapeSvg d={whyNot.media.d} state="wrong" className="why-not__shape" />}
+              {whyNot.media?.kind === "image" && (
+                <img src={whyNot.media.src} alt="" className="why-not__img" loading="lazy" decoding="async" />
+              )}
               <p><strong>{t.youChose(picked.label)}</strong> {whyNot.text}</p>
             </div>
           )}

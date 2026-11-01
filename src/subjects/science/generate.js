@@ -5,16 +5,18 @@ import { BODY_REGIONS } from "../../data/science/body.js";
 import { ANIMAL_NAMES, SPACE_NAMES, BODY_NAMES, ELEMENT_NAMES, localize, spellings } from "../../data/science/names.js";
 import { hasImage, imageMedia } from "../../data/images.js";
 import { factFor } from "../../data/science/facts.js";
+import { learnMoreUrl } from "../../data/sources.js";
 import { shuffle, randInt, pickOne, pickDistractors } from "../../lib/random.js";
 
 export const SCIENCE_MODES = ["animals-photo", "animals-compare", "elements", "body", "space-photo", "space-compare"];
 
 // ── Shared helpers ─────────────────────────────────────────────────────────
+/** `wrong`: labels, or { label, whyNot } explaining why that pick is wrong. */
 function choiceOrText({ base, correct, wrong, expert, accepted, exclude, placeholder }) {
   if (expert) {
     return { ...base, kind: "text", accepted, match: { exclude }, placeholder };
   }
-  const opts = [correct, ...wrong].map((label) => ({ id: label, label }));
+  const opts = [{ id: correct, label: correct }, ...wrong.map((w) => (typeof w === "string" ? { id: w, label: w } : { id: w.label, ...w }))];
   return { ...base, kind: "choice", options: shuffle(opts), correctId: correct };
 }
 
@@ -80,11 +82,12 @@ function buildPhoto(mode, item, items, difficulty, t) {
   const others = items.filter((x) => cfg.name(x, lang) !== name);
   const near = cfg.sameGroup ? others.filter((x) => cfg.sameGroup(x, item)) : others;
   const wrong = pickDistractors({ correctKey: name, tiers: [{ items: near }], fallback: others, keyOf: (x) => cfg.name(x, lang) })
-    .map((x) => cfg.name(x, lang));
+    .map((x) => ({ label: cfg.name(x, lang), whyNot: { text: cfg.note(x, lang) ?? "", media: imageMedia(x, cfg.name(x, lang)) } }));
   return choiceOrText({
     base: {
       key: `${mode}:${item.id}`, type: mode, prompt: t.sci[cfg.promptKey],
       media: imageMedia(item, "?"), correctLabel: name, note: cfg.note(item, lang),
+      source: learnMoreUrl({ wikiTitle: item.wikiTitle, name }, lang),
       review: { title: t.sci[cfg.promptKey] },
     },
     correct: name, wrong, expert: difficulty === "expert",
@@ -126,6 +129,9 @@ function buildCompare(mode, metric, a, b, t) {
   const lang = t.lang;
   const unit = t.sci.units[metric];
   const winner = a[metric] > b[metric] ? a : b;
+  const loser = winner === a ? b : a;
+  const ratio = winner[metric] / loser[metric];
+  const x = ratio.toLocaleString(lang, { maximumFractionDigits: ratio < 10 ? 1 : 0 });
   return {
     key: `${mode}:${metric}:${[a.id, b.id].sort().join("-")}`,
     type: mode, kind: "compare", prompt: t.sci.metrics[metric],
@@ -136,6 +142,7 @@ function buildCompare(mode, metric, a, b, t) {
     correctId: winner.id,
     verdicts: { correct: t.higher, other: t.lower },
     correctLabel: cfg.name(winner, lang),
+    note: t.sci.ratioNote[metric](cfg.name(winner, lang), x, cfg.name(loser, lang)),
     review: { title: `${t.sci.metrics[metric]} ${cfg.name(a, lang)} ${t.vs} ${cfg.name(b, lang)}` },
   };
 }
@@ -184,7 +191,27 @@ export function elementPool(difficulty) {
   return ELEMENTS;
 }
 
+const categoryOf = (e, t) => t.sci.categories[e.category] ?? e.category;
+const elementCard = (e, t) => t.sci.elementCard({
+  name: elementName(e, t.lang), symbol: e.symbol, number: e.atomicNumber, category: categoryOf(e, t), group: e.group,
+});
+const brief = (e, t) => ({ text: t.sci.elementBrief({ name: elementName(e, t.lang), symbol: e.symbol, number: e.atomicNumber }) });
+const bySymbol = new Map(ELEMENTS.map((e) => [e.symbol, e]));
+const byNumber = new Map(ELEMENTS.map((e) => [e.atomicNumber, e]));
+// English article titles that are not simply the element's name.
+const ELEMENT_ARTICLES = { Hg: "Mercury_(element)" };
+
+/** Every element question explains the element and links to its article. */
 export function buildElement(element, variant, difficulty, t) {
+  const q = elementQuestion(element, variant, difficulty, t);
+  return {
+    ...q,
+    note: elementCard(element, t),
+    source: learnMoreUrl({ wikiTitle: ELEMENT_ARTICLES[element.symbol] ?? element.name, name: elementName(element, t.lang) }, t.lang),
+  };
+}
+
+function elementQuestion(element, variant, difficulty, t) {
   const lang = t.lang;
   const name = elementName(element, lang);
   const expert = difficulty === "expert";
@@ -194,7 +221,8 @@ export function buildElement(element, variant, difficulty, t) {
 
   switch (variant) {
     case "symbol-to-name": {
-      const wrong = pickDistractors({ correctKey: name, tiers: [{ items: others.map((e) => elementName(e, lang)) }] });
+      const wrong = pickDistractors({ correctKey: name, tiers: [{ items: others }], keyOf: (e) => elementName(e, lang) })
+        .map((e) => ({ label: elementName(e, lang), whyNot: brief(e, t) }));
       return choiceOrText({
         base: { ...base, prompt: t.sci.symbolToName(element.symbol), media: cell({ symbol: true }), correctLabel: name, review: { title: t.sci.symbolToName(element.symbol) } },
         correct: name, wrong, expert,
@@ -209,20 +237,26 @@ export function buildElement(element, variant, difficulty, t) {
       const wrong = pickDistractors({ correctKey: n, tiers: [{ items: near }], fallback: others.map((e) => e.atomicNumber) });
       return {
         ...base, kind: "choice", prompt: t.sci.nameToNumber(name), correctLabel: String(n),
-        options: shuffle([n, ...wrong].map((x) => ({ id: String(x), label: String(x) }))), correctId: String(n),
+        options: shuffle([n, ...wrong].map((x) => ({ id: String(x), label: String(x), whyNot: x === n ? undefined : brief(byNumber.get(x), t) }))), correctId: String(n),
         review: { title: t.sci.nameToNumber(name) },
       };
     }
     case "symbol-to-group": {
       // Lanthanides and actinides have no group number: ask for the atomic number instead.
-      if (element.group == null) return buildElement(element, "name-to-number", difficulty, t);
+      if (element.group == null) return elementQuestion(element, "name-to-number", difficulty, t);
       const g = element.group;
       const groups = [...new Set(ELEMENTS.map((e) => e.group).filter((x) => x != null))];
       const wrong = pickDistractors({ correctKey: g, tiers: [{ items: groups }] });
       return {
         ...base, kind: "choice", prompt: t.sci.symbolToGroup(element.symbol), media: cell({ symbol: true, number: true }),
         correctLabel: t.sci.groupLabel(g), correctId: String(g),
-        options: shuffle([g, ...wrong].map((x) => ({ id: String(x), label: t.sci.groupLabel(x) }))),
+        options: shuffle([g, ...wrong].map((x) => ({
+          id: String(x), label: t.sci.groupLabel(x),
+          whyNot: x === g ? undefined : {
+            text: t.sci.groupMembers(x, new Intl.ListFormat(lang, { type: "conjunction" }).format(
+              ELEMENTS.filter((e) => e.group === x).slice(0, 3).map((e) => `${elementName(e, lang)} (${e.symbol})`))),
+          },
+        }))),
         review: { title: t.sci.symbolToGroup(element.symbol) },
       };
     }
@@ -242,7 +276,7 @@ export function buildElement(element, variant, difficulty, t) {
       return {
         ...base, kind: "choice", prompt, correctLabel: element.symbol, correctId: element.symbol,
         media: variant === "number-to-symbol" ? cell({ number: true }) : undefined,
-        options: shuffle([element.symbol, ...wrong].map((s) => ({ id: s, label: s }))),
+        options: shuffle([element.symbol, ...wrong].map((s) => ({ id: s, label: s, whyNot: s === element.symbol ? undefined : brief(bySymbol.get(s), t) }))),
         review: { title: prompt },
       };
     }
@@ -255,12 +289,15 @@ export function buildElement(element, variant, difficulty, t) {
       });
       return {
         ...base, kind: "choice", prompt: t.sci.categoryToElement(category), correctLabel: name, correctId: element.symbol,
-        options: shuffle([element, ...wrongEls].map((e) => ({ id: e.symbol, label: elementName(e, lang) }))),
+        options: shuffle([element, ...wrongEls].map((e) => ({
+          id: e.symbol, label: elementName(e, lang),
+          whyNot: e === element ? undefined : { text: t.sci.isCategory(elementName(e, lang), categoryOf(e, t)) },
+        }))),
         review: { title: t.sci.categoryToElement(category) },
       };
     }
     default:
-      return buildElement(element, "symbol-to-name", difficulty, t);
+      return elementQuestion(element, "symbol-to-name", difficulty, t);
   }
 }
 
