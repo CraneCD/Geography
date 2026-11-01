@@ -18,3 +18,17 @@ export function allImageRefs() {
   const refs = [people, artworks, ANIMALS, BODY_REGIONS, SPACE_OBJECTS].flat().map(imageRef).filter(Boolean);
   return [...new Set(refs)].sort();
 }
+
+/**
+ * Per-image edits that hide giveaway text (signatures, name tags, inscriptions):
+ *   imageEdit: { crop: [top, right, bottom, left], blur: [[x0, y0, x1, y1], …] }
+ * Fractions of the image; blur boxes are relative to the cropped image.
+ */
+export function imageEdits() {
+  const out = {};
+  for (const item of [people, artworks, ANIMALS, BODY_REGIONS, SPACE_OBJECTS].flat()) {
+    const ref = imageRef(item);
+    if (ref && item.imageEdit) out[ref] = item.imageEdit;
+  }
+  return out;
+}

@@ -302,12 +302,20 @@
  "Blue_Nude_(Souvenir_de_Biskra)": {
   "file": "blue-nude-souvenir-de-biskra.webp",
   "width": 500,
-  "height": 329,
+  "height": 280,
   "commonsFile": "Matisse Souvenir de Biskra.jpg",
   "page": "https://commons.wikimedia.org/wiki/File:Matisse_Souvenir_de_Biskra.jpg",
   "author": "Henri Matisse",
   "license": "Public domain",
-  "licenseUrl": null
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0,
+    0,
+    0.15,
+    0
+   ]
+  }
  },
  "Bombardier beetle": {
   "file": "bombardier-beetle.webp",
@@ -402,12 +410,20 @@
  "Christopher_Columbus": {
   "file": "christopher-columbus.webp",
   "width": 500,
-  "height": 605,
+  "height": 502,
   "commonsFile": "Portrait of a Man, Said to be Christopher Columbus.jpg",
   "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_a_Man%2C_Said_to_be_Christopher_Columbus.jpg",
   "author": "Sebastiano del Piombo",
   "license": "Public domain",
-  "licenseUrl": null
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0.17,
+    0,
+    0,
+    0
+   ]
+  }
  },
  "Clavicle": {
   "file": "clavicle.webp",
@@ -561,13 +577,21 @@
  },
  "Ernest_Shackleton": {
   "file": "ernest-shackleton.webp",
-  "width": 500,
-  "height": 690,
+  "width": 400,
+  "height": 442,
   "commonsFile": "Ernest Shackleton before 1909.jpg",
   "page": "https://commons.wikimedia.org/wiki/File:Ernest_Shackleton_before_1909.jpg",
   "author": "George Charles Beresford / Adam Cuerden",
   "license": "Public domain",
-  "licenseUrl": null
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0,
+    0.2,
+    0.36,
+    0
+   ]
+  }
  },
  "Et_in_Arcadia_ego_(Poussin)": {
   "file": "et-in-arcadia-ego-poussin.webp",
@@ -602,12 +626,20 @@
  "Ferdinand_Magellan": {
   "file": "ferdinand-magellan.webp",
   "width": 500,
-  "height": 617,
+  "height": 524,
   "commonsFile": "Ferdinand Magellan.jpg",
   "page": "https://commons.wikimedia.org/wiki/File:Ferdinand_Magellan.jpg",
   "author": "Unknown author Unknown author",
   "license": "Public domain",
-  "licenseUrl": null
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0.15,
+    0,
+    0,
+    0
+   ]
+  }
  },
  "Fibula": {
   "file": "fibula.webp",
@@ -842,12 +874,20 @@
  "Grace_Hopper": {
   "file": "grace-hopper.webp",
   "width": 500,
-  "height": 665,
+  "height": 465,
   "commonsFile": "Commodore Grace M. Hopper, USN (covered) head and shoulders crop.jpg",
   "page": "https://commons.wikimedia.org/wiki/File:Commodore_Grace_M._Hopper%2C_USN_(covered)_head_and_shoulders_crop.jpg",
   "author": "James S. Davis",
   "license": "Public domain",
-  "licenseUrl": null
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0,
+    0,
+    0.3,
+    0
+   ]
+  }
  },
  "Gray wolf": {
   "file": "gray-wolf.webp",
@@ -992,12 +1032,20 @@
  "Impression,_Sunrise": {
   "file": "impression-sunrise.webp",
   "width": 500,
-  "height": 388,
+  "height": 349,
   "commonsFile": "Monet - Impression, Sunrise.jpg",
   "page": "https://commons.wikimedia.org/wiki/File:Monet_-_Impression%2C_Sunrise.jpg",
   "author": "Claude Monet",
   "license": "Public domain",
-  "licenseUrl": null
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0,
+    0,
+    0.1,
+    0
+   ]
+  }
  },
  "Io (moon)": {
   "file": "io-moon.webp",
@@ -1012,12 +1060,20 @@
  "Irises_(painting)": {
   "file": "irises-painting.webp",
   "width": 500,
-  "height": 382,
+  "height": 359,
   "commonsFile": "Irises-Vincent van Gogh.jpg",
   "page": "https://commons.wikimedia.org/wiki/File:Irises-Vincent_van_Gogh.jpg",
   "author": "Vincent van Gogh",
   "license": "Public domain",
-  "licenseUrl": null
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0,
+    0,
+    0.06,
+    0
+   ]
+  }
  },
  "Isaac_Newton": {
   "file": "isaac-newton.webp",
@@ -1162,12 +1218,20 @@
  "Leonardo_da_Vinci": {
   "file": "leonardo-da-vinci.webp",
   "width": 500,
-  "height": 716,
+  "height": 573,
   "commonsFile": "Francesco Melzi - Portrait of Leonardo (colour correction).png",
   "page": "https://commons.wikimedia.org/wiki/File:Francesco_Melzi_-_Portrait_of_Leonardo_(colour_correction).png",
   "author": "Attributed to Francesco Melzi",
   "license": "Public domain",
-  "licenseUrl": null
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0,
+    0,
+    0.2,
+    0
+   ]
+  }
  },
  "Liberty_Leading_the_People": {
   "file": "liberty-leading-the-people.webp",
@@ -1251,13 +1315,21 @@
  },
  "Maimonides": {
   "file": "maimonides.webp",
-  "width": 500,
-  "height": 284,
+  "width": 190,
+  "height": 233,
   "commonsFile": "Portrait of Moses Maimonides in Thesaurus antiquitatum sacrarum.tif",
   "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_Moses_Maimonides_in_Thesaurus_antiquitatum_sacrarum.tif",
   "author": "Blaisio Ugolino",
   "license": "Public domain",
-  "licenseUrl": null
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0.08,
+    0.3,
+    0.1,
+    0.32
+   ]
+  }
  },
  "Mantis shrimp": {
   "file": "mantis-shrimp.webp",
@@ -1432,12 +1504,20 @@
  "Neil_Armstrong": {
   "file": "neil-armstrong.webp",
   "width": 500,
-  "height": 625,
+  "height": 263,
   "commonsFile": "Neil Armstrong pose.jpg",
   "page": "https://commons.wikimedia.org/wiki/File:Neil_Armstrong_pose.jpg",
   "author": "Unknown author Unknown author",
   "license": "Public domain",
-  "licenseUrl": null
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0,
+    0,
+    0.58,
+    0
+   ]
+  }
  },
  "Nelson_Mandela": {
   "file": "nelson-mandela.webp",
@@ -1662,12 +1742,20 @@
  "Reclining_Nude_(Modigliani)": {
   "file": "reclining-nude-modigliani.webp",
   "width": 500,
-  "height": 322,
+  "height": 303,
   "commonsFile": "Amedeo Modigliani Reclining Nude The Metropolitan Museum of Art.jpg",
   "page": "https://commons.wikimedia.org/wiki/File:Amedeo_Modigliani_Reclining_Nude_The_Metropolitan_Museum_of_Art.jpg",
   "author": "Amedeo Modigliani",
   "license": "Public domain",
-  "licenseUrl": null
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0.06,
+    0,
+    0,
+    0
+   ]
+  }
  },
  "Red fox": {
   "file": "red-fox.webp",
@@ -1771,13 +1859,29 @@
  },
  "Self-Portrait_(Dürer,_Munich)": {
   "file": "self-portrait-durer-munich.webp",
-  "width": 500,
+  "width": 365,
   "height": 705,
   "commonsFile": "Dürer Alte Pinakothek.jpg",
   "page": "https://commons.wikimedia.org/wiki/File:D%C3%BCrer_Alte_Pinakothek.jpg",
   "author": "Albrecht Dürer",
   "license": "Public domain",
-  "licenseUrl": null
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0,
+    0.27,
+    0,
+    0
+   ],
+   "blur": [
+    [
+     0,
+     0.12,
+     0.26,
+     0.34
+    ]
+   ]
+  }
  },
  "Simón_Bolívar": {
   "file": "simon-bolivar.webp",
@@ -1877,7 +1981,17 @@
   "page": "https://commons.wikimedia.org/wiki/File:Vincent_Willem_van_Gogh_127.jpg",
   "author": "Vincent van Gogh",
   "license": "Public domain",
-  "licenseUrl": null
+  "licenseUrl": null,
+  "edit": {
+   "blur": [
+    [
+     0.33,
+     0.74,
+     0.52,
+     0.85
+    ]
+   ]
+  }
  },
  "The_Ambassadors_(Holbein)": {
   "file": "the-ambassadors-holbein.webp",
@@ -1967,7 +2081,17 @@
   "page": "https://commons.wikimedia.org/wiki/File:Death_of_Marat_by_David.jpg",
   "author": "Jacques-Louis David",
   "license": "Public domain",
-  "licenseUrl": null
+  "licenseUrl": null,
+  "edit": {
+   "blur": [
+    [
+     0.57,
+     0.86,
+     0.82,
+     1
+    ]
+   ]
+  }
  },
  "The_Fighting_Temeraire": {
   "file": "the-fighting-temeraire.webp",
@@ -2122,12 +2246,20 @@
  "The_Scream": {
   "file": "the-scream.webp",
   "width": 500,
-  "height": 621,
+  "height": 584,
   "commonsFile": "Edvard Munch, 1893, The Scream, oil, tempera and pastel on cardboard, 91 x 73 cm, National Gallery of Norway.jpg",
   "page": "https://commons.wikimedia.org/wiki/File:Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg",
   "author": "Edvard Munch",
   "license": "Public domain",
-  "licenseUrl": null
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0,
+    0,
+    0.06,
+    0
+   ]
+  }
  },
  "The_Sleeping_Gypsy": {
   "file": "the-sleeping-gypsy.webp",
@@ -2252,12 +2384,20 @@
  "Twittering_Machine": {
   "file": "twittering-machine.webp",
   "width": 500,
-  "height": 679,
+  "height": 611,
   "commonsFile": "Die Zwitscher-Maschine (Twittering Machine), 1922 - Paul Klee.jpg",
   "page": "https://commons.wikimedia.org/wiki/File:Die_Zwitscher-Maschine_(Twittering_Machine)%2C_1922_-_Paul_Klee.jpg",
   "author": "Paul Klee",
   "license": "Public domain",
-  "licenseUrl": null
+  "licenseUrl": null,
+  "edit": {
+   "crop": [
+    0,
+    0,
+    0.1,
+    0
+   ]
+  }
  },
  "Ulna": {
   "file": "ulna.webp",

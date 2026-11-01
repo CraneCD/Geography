@@ -18,7 +18,7 @@ import { createHash } from "node:crypto";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
-import { allImageRefs } from "../src/data/wikiTitles.js";
+import { allImageRefs, imageEdits } from "../src/data/wikiTitles.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const outFile = join(root, "src/data/generated/images.json");
@@ -96,11 +96,30 @@ function fileNameFromUrl(url) {
 
 const slug = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^A-Za-z0-9]+/g, "-").replace(/^-|-$/g, "").toLowerCase().slice(0, 80);
 
+/** Crop margins and blur boxes (fractions) that hide giveaway text. */
+async function applyEdit(raw, edit) {
+  if (!edit) return raw;
+  let img = sharp(raw, { limitInputPixels: false }).rotate();
+  const { width: W, height: H } = await img.metadata();
+  const [t = 0, r = 0, b = 0, l = 0] = edit.crop ?? [];
+  const box = { left: Math.round(l * W), top: Math.round(t * H), width: Math.round((1 - l - r) * W), height: Math.round((1 - t - b) * H) };
+  let buf = await img.extract(box).toBuffer();
+  for (const [x0, y0, x1, y1] of edit.blur ?? []) {
+    const region = { left: Math.round(x0 * box.width), top: Math.round(y0 * box.height), width: Math.round((x1 - x0) * box.width), height: Math.round((y1 - y0) * box.height) };
+    const sigma = Math.max(6, Math.round(Math.min(region.width, region.height) / 4));
+    const patch = await sharp(buf).extract(region).blur(sigma).toBuffer();
+    buf = await sharp(buf).composite([{ input: patch, left: region.left, top: region.top }]).toBuffer();
+  }
+  return buf;
+}
+
 // ── 1 + 2. Resolve and download ───────────────────────────────────────────
 const refs = allImageRefs();
+const edits = imageEdits();
 for (const ref of refs) {
   const entry = manifest[ref];
-  if (!refreshAll && entry?.file && existsSync(join(imgDir, entry.file))) continue;
+  const editChanged = JSON.stringify(entry?.edit ?? null) !== JSON.stringify(edits[ref] ?? null);
+  if (!refreshAll && !editChanged && entry?.file && existsSync(join(imgDir, entry.file))) continue;
   let file;
   try {
     file = await commonsFileFor(ref);
@@ -120,7 +139,8 @@ for (const ref of refs) {
   if (!raw) { failures.push(`${ref}: download failed (${file})`); continue; }
   try {
     const name = `${slug(ref.replace(/^File:/, ""))}.webp`;
-    const out = await sharp(raw, { limitInputPixels: false })
+    const edited = await applyEdit(raw, edits[ref]);
+    const out = await sharp(edited, { limitInputPixels: false })
       .resize({ width: WIDTH, withoutEnlargement: true })
       .webp({ quality: 78 })
       .toBuffer({ resolveWithObject: true });
@@ -128,7 +148,8 @@ for (const ref of refs) {
     manifest[ref] = {
       file: name, width: out.info.width, height: out.info.height, commonsFile: file,
       page: `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(underscored(file))}`,
-      author: null, license: null, licenseUrl: null,
+      author: entry?.author ?? null, license: entry?.license ?? null, licenseUrl: entry?.licenseUrl ?? null,
+      ...(edits[ref] ? { edit: edits[ref] } : {}),
     };
     save();
     process.stdout.write(".");

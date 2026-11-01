@@ -97,6 +97,7 @@ export const artworks = [
     movement: "Post-Impressionism",
     description: "Series of paintings depicting sunflowers in a vase, created for Paul Gauguin's bedroom in the Yellow House.",
     wikiTitle: "Sunflowers_(Van_Gogh_series)",
+    imageEdit: { blur: [[0.33, 0.74, 0.52, 0.85]] }, // hides giveaway text
     license: "Public domain",
   },
   {
@@ -117,6 +118,7 @@ export const artworks = [
     movement: "Impressionism",
     description: "The painting that gave the Impressionist movement its name, depicting the port of Le Havre at dawn.",
     wikiTitle: "Impression,_Sunrise",
+    imageEdit: { crop: [0, 0, 0.1, 0] }, // hides giveaway text
     license: "Public domain",
   },
   {
@@ -157,6 +159,7 @@ export const artworks = [
     movement: "Expressionism",
     description: "Anguished figure against a blood-red sky; an iconic image of existential dread and modern anxiety.",
     wikiTitle: "The_Scream",
+    imageEdit: { crop: [0, 0, 0.06, 0] }, // hides giveaway text
     license: "Public domain",
   },
   {
@@ -429,6 +432,7 @@ export const artworks = [
     movement: "Renaissance",
     description: "Dürer depicts himself in a strikingly frontal, Christ-like pose, with his hand raised and his gaze fixed directly at the viewer. It is considered one of the most original self-portraits of the Renaissance.",
     wikiTitle: "Self-Portrait_(Dürer,_Munich)",
+    imageEdit: { crop: [0, 0.27, 0, 0], blur: [[0, 0.12, 0.26, 0.34]] }, // hides giveaway text
     license: "Public domain",
   },
   {
@@ -499,6 +503,7 @@ export const artworks = [
     movement: "Neoclassicism",
     description: "The revolutionary journalist Jean-Paul Marat lies murdered in his medicinal bath, clutching a letter from his assassin. David transforms the sordid political killing into a secular pietà of austere, neoclassical power.",
     wikiTitle: "The_Death_of_Marat",
+    imageEdit: { blur: [[0.57, 0.86, 0.82, 1]] }, // hides giveaway text
     license: "Public domain",
   },
   {
@@ -569,6 +574,7 @@ export const artworks = [
     movement: "Post-Impressionism",
     description: "A vivid close-up field of blue irises with one white bloom, painted during Van Gogh's stay at the Saint-Paul-de-Mausole asylum in Saint-Rémy. Van Gogh called painting his 'lightning conductor' against his illness.",
     wikiTitle: "Irises_(painting)",
+    imageEdit: { crop: [0, 0, 0.06, 0] }, // hides giveaway text
     license: "Public domain",
   },
   {
@@ -659,6 +665,7 @@ export const artworks = [
     movement: "Modernism",
     description: "Four bird-like creatures perch on a wire connected to a hand crank, rendered in delicate lines on a red-violet background. Klee's whimsical yet sinister machine blends mechanical and organic forms in a haunting image of modernity.",
     wikiTitle: "Twittering_Machine",
+    imageEdit: { crop: [0, 0, 0.1, 0] }, // hides giveaway text
     license: "Public domain",
   },
   {
@@ -703,6 +710,7 @@ export const artworks = [
     movement: "Modernism",
     description: "A nude woman reclines across the canvas with the elongated, stylised forms characteristic of Modigliani, gazing frankly at the viewer. The painting's frank sensuality caused the exhibition at which it was displayed to be shut down by police.",
     wikiTitle: "Reclining_Nude_(Modigliani)",
+    imageEdit: { crop: [0.06, 0, 0, 0] }, // hides giveaway text
     license: "Public domain",
   },
   {
@@ -723,6 +731,7 @@ export const artworks = [
     movement: "Fauvism",
     description: "A reclining female nude rendered in bold blue contours with rough, expressive brushwork challenges academic conventions of the nude. The painting caused a sensation at the 1907 Salon des Indépendants and was later burned in effigy at the Chicago Armory Show.",
     wikiTitle: "Blue_Nude_(Souvenir_de_Biskra)",
+    imageEdit: { crop: [0, 0, 0.15, 0] }, // hides giveaway text
     license: "Public domain",
   },
   {

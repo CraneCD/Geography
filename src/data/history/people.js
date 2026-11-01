@@ -203,6 +203,7 @@ export const people = [
     subfield: "Painting",
     description: "Italian Renaissance polymath — painter of the Mona Lisa and The Last Supper, and visionary architect, scientist, and inventor",
     wikiTitle: "Leonardo_da_Vinci",
+    imageEdit: { crop: [0, 0, 0.2, 0] }, // hides giveaway text
   },
   {
     id: "shakespeare",
@@ -275,6 +276,7 @@ export const people = [
     subfield: "Navigation",
     description: "Italian explorer sailing for Spain whose 1492 voyage to the Americas initiated lasting contact between Europe and the New World",
     wikiTitle: "Christopher_Columbus",
+    imageEdit: { crop: [0.17, 0, 0, 0] }, // hides giveaway text
   },
   {
     id: "magellan",
@@ -285,6 +287,7 @@ export const people = [
     subfield: "Navigation",
     description: "Portuguese explorer who organised and led the first circumnavigation of the Earth (1519–1522), though he died before its completion",
     wikiTitle: "Ferdinand_Magellan",
+    imageEdit: { crop: [0.15, 0, 0, 0] }, // hides giveaway text
   },
   {
     id: "marco_polo",
@@ -305,6 +308,7 @@ export const people = [
     subfield: "Space",
     description: "American astronaut who became the first human to walk on the Moon on July 20, 1969, during the Apollo 11 mission",
     wikiTitle: "Neil_Armstrong",
+    imageEdit: { crop: [0, 0, 0.58, 0] }, // hides giveaway text
   },
 
   // Philosophy
@@ -493,6 +497,7 @@ export const people = [
     subfield: "Jewish Philosophy & Medicine",
     description: "Medieval Sephardic Jewish philosopher and physician whose Guide for the Perplexed reconciled Aristotelian philosophy with Jewish theology and whose medical works influenced generations of practitioners.",
     wikiTitle: "Maimonides",
+    imageEdit: { crop: [0.08, 0.3, 0.1, 0.32] }, // hides giveaway text
   },
   {
     id: "akbar",
@@ -635,6 +640,7 @@ export const people = [
     subfield: "Polar Exploration",
     description: "Anglo-Irish Antarctic explorer famous for his Imperial Trans-Antarctic Expedition of 1914–1917, during which his ship Endurance became trapped in ice and sank, yet he successfully led all 28 crew members to safety.",
     wikiTitle: "Ernest_Shackleton",
+    imageEdit: { crop: [0, 0.2, 0.36, 0] }, // hides giveaway text
   },
   {
     id: "frederick-douglass",
@@ -765,6 +771,7 @@ export const people = [
     subfield: "Computer Science",
     description: "American computer scientist and United States Navy rear admiral who pioneered the development of the first compiler and contributed to the creation of COBOL, one of the earliest high-level programming languages.",
     wikiTitle: "Grace_Hopper",
+    imageEdit: { crop: [0, 0, 0.3, 0] }, // hides giveaway text
   },
   {
     id: "alexander-fleming",
