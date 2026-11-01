@@ -24,7 +24,7 @@ export const SUBJECTS = [
   },
   {
     id: "science",
-    modes: ["animals-photo", "animals-compare", "elements", "body", "space-photo", "space-compare", "science-mixed"],
+    modes: ["animals-photo", "animals-compare", "animal-traits", "elements", "body", "body-systems", "space-photo", "space-compare", "space-missions", "science-mixed"],
     options: [],
     load: () => import("./science/index.js"),
   },

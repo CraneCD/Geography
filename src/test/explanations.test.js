@@ -10,7 +10,7 @@ import { buildRound as logic } from "../subjects/logic/generate.js";
 const ROUNDS = {
   geography: [geo, ["mixed"]],
   history: [hist, ["history-mixed", "who-first"]],
-  science: [sci, ["science-mixed", "elements", "animals-compare", "space-compare"]],
+  science: [sci, ["science-mixed", "elements", "animals-compare", "space-compare", "animal-traits", "body-systems", "space-missions"]],
   logic: [logic, ["logic-mixed"]],
 };
 

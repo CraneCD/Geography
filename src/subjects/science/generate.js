@@ -6,9 +6,13 @@ import { ANIMAL_NAMES, SPACE_NAMES, BODY_NAMES, ELEMENT_NAMES, localize, spellin
 import { hasImage, imageMedia } from "../../data/images.js";
 import { factFor } from "../../data/science/facts.js";
 import { learnMoreUrl } from "../../data/sources.js";
+import { ELEMENT_STATE } from "../../data/science/traits.js";
+import { traitsRound, systemsRound, missionsRound } from "./more.js";
 import { shuffle, randInt, pickOne, pickDistractors } from "../../lib/random.js";
 
-export const SCIENCE_MODES = ["animals-photo", "animals-compare", "elements", "body", "space-photo", "space-compare"];
+export const SCIENCE_MODES = [
+  "animals-photo", "animals-compare", "animal-traits", "elements", "body", "body-systems", "space-photo", "space-compare", "space-missions",
+];
 
 // ── Shared helpers ─────────────────────────────────────────────────────────
 /** `wrong`: labels, or { label, whyNot } explaining why that pick is wrong. */
@@ -174,8 +178,8 @@ function compareRound(mode, difficulty, count, t) {
 // ── Elements ───────────────────────────────────────────────────────────────
 const VARIANTS = {
   easy: ["symbol-to-name"],
-  medium: ["name-to-number", "symbol-to-group", "symbol-to-name"],
-  hard: ["number-to-symbol", "category-to-element", "name-to-number"],
+  medium: ["name-to-number", "symbol-to-group", "symbol-to-name", "state"],
+  hard: ["number-to-symbol", "category-to-element", "name-to-number", "state"],
   expert: ["name-to-symbol", "symbol-to-name", "number-to-symbol"],
 };
 
@@ -191,6 +195,8 @@ export function elementPool(difficulty) {
   return ELEMENTS;
 }
 
+const stateOf = (e) => (ELEMENT_STATE.gas.includes(e.symbol) ? "gas" : ELEMENT_STATE.liquid.includes(e.symbol) ? "liquid" : "solid");
+const NOT_SOLID = ELEMENTS.filter((e) => stateOf(e) !== "solid");
 const categoryOf = (e, t) => t.sci.categories[e.category] ?? e.category;
 const elementCard = (e, t) => t.sci.elementCard({
   name: elementName(e, t.lang), symbol: e.symbol, number: e.atomicNumber, category: categoryOf(e, t), group: e.group,
@@ -296,6 +302,25 @@ function elementQuestion(element, variant, difficulty, t) {
         review: { title: t.sci.categoryToElement(category) },
       };
     }
+    case "state": {
+      const state = stateOf(element);
+      if (state === "solid") return elementQuestion(element, "symbol-to-name", difficulty, t);
+      const familiar = elementPool("medium");
+      // "Which is a gas?" → solids as distractors; "which is a liquid?" → solids and gases.
+      const wrongEls = pickDistractors({
+        correctKey: element.symbol, keyOf: (e) => e.symbol,
+        tiers: [{ items: familiar.filter((e) => (state === "gas" ? stateOf(e) === "solid" : stateOf(e) !== "liquid")) }],
+      });
+      const prompt = state === "gas" ? t.sci.stateGas : t.sci.stateLiquid;
+      return {
+        ...base, kind: "choice", prompt, correctLabel: name, correctId: element.symbol,
+        options: shuffle([element, ...wrongEls].map((e) => ({
+          id: e.symbol, label: elementName(e, lang),
+          whyNot: e === element ? undefined : { text: t.sci.stateIs(elementName(e, lang), t.sci.states[stateOf(e)]) },
+        }))),
+        review: { title: prompt },
+      };
+    }
     default:
       return elementQuestion(element, "symbol-to-name", difficulty, t);
   }
@@ -303,7 +328,12 @@ function elementQuestion(element, variant, difficulty, t) {
 
 function elementsRound(difficulty, count, t) {
   const variants = VARIANTS[difficulty] ?? VARIANTS.medium;
-  return shuffle(elementPool(difficulty)).slice(0, count).map((el, i) => buildElement(el, variants[i % variants.length], difficulty, t));
+  const states = shuffle(NOT_SOLID);
+  return shuffle(elementPool(difficulty)).slice(0, count).map((el, i) => {
+    const variant = variants[i % variants.length];
+    // The state question needs a gas or liquid as its answer.
+    return buildElement(variant === "state" ? states.pop() ?? el : el, variant, difficulty, t);
+  });
 }
 
 // ── Round builder ──────────────────────────────────────────────────────────
@@ -311,6 +341,9 @@ function roundFor(mode, difficulty, count, t) {
   if (PHOTO[mode]) return photoRound(mode, difficulty, count, t);
   if (COMPARE[mode]) return compareRound(mode, difficulty, count, t);
   if (mode === "elements") return elementsRound(difficulty, count, t);
+  if (mode === "animal-traits") return traitsRound(difficulty, count, t);
+  if (mode === "body-systems") return systemsRound(difficulty, count, t);
+  if (mode === "space-missions") return missionsRound(difficulty, count, t);
   return [];
 }
 

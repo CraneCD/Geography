@@ -2,7 +2,7 @@ import {
   Earth, Landmark, Sigma, FlaskConical, Flag, Building2, MapPin, Shapes, Languages, Users, Maximize2,
   Shuffle, UserRound, Hourglass, CalendarDays, Lightbulb, Palette, Plus, Percent, ListOrdered,
   DraftingCompass, Variable, PawPrint, Scale, Atom, HeartPulse, Orbit, Telescope, Circle, Fence, Coins,
-  Clock, Columns3, Ruler, MessageSquareText, Puzzle,
+  Clock, Columns3, Ruler, MessageSquareText, Puzzle, Footprints, Activity, Rocket,
 } from "lucide-react";
 
 const ICONS = {
@@ -14,6 +14,7 @@ const ICONS = {
   clocks: Clock, roman: Columns3, units: Ruler, "word-problems": MessageSquareText, puzzles: Puzzle,
   "animals-photo": PawPrint, "animals-compare": Scale, elements: Atom, body: HeartPulse,
   "space-photo": Orbit, "space-compare": Telescope,
+  "animal-traits": Footprints, "body-systems": Activity, "space-missions": Rocket,
   mixed: Shuffle, "history-mixed": Shuffle, "logic-mixed": Shuffle, "science-mixed": Shuffle,
 };
 
