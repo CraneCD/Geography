@@ -90,7 +90,7 @@ describe("image manifest", () => {
     const { existsSync } = await import("node:fs");
     for (const [ref, e] of Object.entries(manifest)) {
       expect(existsSync(`src/assets/quiz-images/${e.file}`), ref).toBe(true);
-      expect(e.license, ref).toMatch(/public domain|cc0|cc[ -]by|gfdl|attribution|no restrictions/i);
+      expect(e.license, ref).toMatch(/public domain|cc0|cc[ -]by|gfdl|\bfal\b|kogl type 1|attribution|no restrictions/i);
       expect(e.page, ref).toMatch(/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/);
     }
   });

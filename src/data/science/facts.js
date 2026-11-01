@@ -97,6 +97,18 @@ export const FACTS = {
   femur: ["El hueso más largo y más fuerte del cuerpo humano.", "L'os le plus long et le plus solide du corps humain."],
   tibia: ["El hueso de la espinilla y el segundo más grande; soporta casi todo el peso al estar de pie.", "L'os du tibia, deuxième plus grand os ; il porte l'essentiel du poids en position debout."],
   fibula: ["El hueso delgado que acompaña a la tibia; sirve sobre todo de anclaje muscular.", "L'os fin qui longe le tibia ; il sert surtout d'attache aux muscles."],
+  // More space objects
+  callisto: ["El objeto con más cráteres del sistema solar.", "L'objet le plus cratérisé du système solaire."],
+  enceladus: ["Lanza géiseres de hielo al espacio desde un océano bajo su corteza.", "Projette des geysers de glace dans l'espace depuis un océan sous sa croûte."],
+  triton: ["Gira al revés, en contra de la rotación de Neptuno: probablemente fue capturado.", "Tourne à l'envers, à contresens de Neptune : il a sans doute été capturé."],
+  phobos: ["Una luna con forma de patata que se acerca poco a poco a Marte en espiral.", "Une lune en forme de pomme de terre qui se rapproche lentement de Mars en spirale."],
+  charon: ["Mide la mitad que Plutón: ambos giran alrededor de un punto en el espacio entre ellos.", "Moitié moins large que Pluton : les deux tournent autour d'un point situé entre eux."],
+  pluto: ["Reclasificado como planeta enano en 2006; tiene una llanura de hielo de nitrógeno con forma de corazón.", "Reclassé planète naine en 2006 ; il a une plaine de glace d'azote en forme de cœur."],
+  ceres: ["El mayor objeto del cinturón de asteroides y el único planeta enano del sistema solar interior.", "Le plus gros objet de la ceinture d'astéroïdes et la seule planète naine du système solaire interne."],
+  eris: ["Su descubrimiento en 2005 obligó a definir qué es un planeta.", "Sa découverte en 2005 a poussé les astronomes à définir ce qu'est une planète."],
+  haumea: ["Gira tan rápido (una vez cada 4 horas) que tiene forma de huevo.", "Tourne si vite (une fois toutes les 4 heures) qu'il est étiré en forme d'œuf."],
+  makemake: ["Lleva el nombre del dios creador del pueblo rapanui de la Isla de Pascua.", "Porte le nom du dieu créateur du peuple rapanui de l'île de Pâques."],
+  sun: ["Contiene el 99,8 % de toda la masa del sistema solar.", "Contient 99,8 % de toute la masse du système solaire."],
 };
 
 const IDX = { es: 0, fr: 1 };

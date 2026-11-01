@@ -5,6 +5,7 @@ export const OFFICIAL_LANGUAGES = {
   AF: ["Dari", "Pashto"],
   BA: ["Bosnian", "Croatian", "Serbian"],
   BE: ["Dutch", "French", "German"],
+  MK: ["Macedonian", "Albanian"],
   BI: ["Kirundi", "French", "English"],
   BO: ["Spanish", "Quechua", "Aymara", "Guarani"],
   BW: ["English", "Tswana"],

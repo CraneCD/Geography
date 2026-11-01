@@ -35,6 +35,12 @@ export const MOVEMENTS = {
   "Naïve Art": ["Arte naíf", "Art naïf"],
   Regionalism: ["Regionalismo", "Régionalisme"],
   "Ukiyo-e": ["Ukiyo-e", "Ukiyo-e"],
+  Rococo: ["Rococó", "Rococo"],
+  "Academic art": ["Academicismo", "Art académique"],
+  "Chinese landscape painting": ["Pintura china de paisaje", "Peinture de paysage chinoise"],
+  "Japanese ink painting": ["Pintura japonesa a tinta", "Peinture japonaise à l'encre"],
+  "Mughal painting": ["Pintura mogol", "Peinture moghole"],
+  "Persian miniature": ["Miniatura persa", "Miniature persane"],
 };
 
 // Artists whose usual name differs in Spanish or French. [es, fr]

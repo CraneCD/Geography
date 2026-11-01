@@ -7,11 +7,12 @@ import { hasImage, imageMedia } from "../../data/images.js";
 import { factFor } from "../../data/science/facts.js";
 import { learnMoreUrl } from "../../data/sources.js";
 import { ELEMENT_STATE } from "../../data/science/traits.js";
+import { PLANTS } from "../../data/science/plants.js";
 import { traitsRound, systemsRound, missionsRound } from "./more.js";
 import { shuffle, randInt, pickOne, pickDistractors } from "../../lib/random.js";
 
 export const SCIENCE_MODES = [
-  "animals-photo", "animals-compare", "animal-traits", "elements", "body", "body-systems", "space-photo", "space-compare", "space-missions",
+  "animals-photo", "animals-compare", "animal-traits", "plants", "elements", "body", "body-systems", "space-photo", "space-compare", "space-missions",
 ];
 
 // ── Shared helpers ─────────────────────────────────────────────────────────
@@ -29,6 +30,8 @@ const animalName = (a, lang) => localize(ANIMAL_NAMES, a.id, a.name, lang);
 const spaceName = (o, lang) => localize(SPACE_NAMES, o.id, o.name, lang);
 const bodyName = (r, lang) => localize(BODY_NAMES, r.photoName ?? r.name, r.photoName ?? r.name, lang);
 
+const LANG_IDX = { en: 0, es: 1, fr: 2 };
+
 const PHOTO = {
   "animals-photo": {
     items: () => ANIMALS.filter(hasImage),
@@ -44,6 +47,21 @@ const PHOTO = {
     promptKey: "animalPrompt",
     placeholderKey: "typeAnimal",
     note: (a, lang) => factFor(a, lang),
+  },
+  plants: {
+    items: () => PLANTS.filter(hasImage),
+    pool(difficulty, items) {
+      // Data is ordered roughly from familiar to unusual.
+      const half = Math.ceil(items.length / 2);
+      if (difficulty === "easy") return items.slice(0, half);
+      if (difficulty === "hard") return items.slice(half - 4);
+      return items;
+    },
+    name: (p, lang) => p.name[LANG_IDX[lang] ?? 0],
+    accepted: (p) => p.name,
+    promptKey: "plantPrompt",
+    placeholderKey: "typePlant",
+    note: (p, lang) => p.fact[LANG_IDX[lang] ?? 0],
   },
   "space-photo": {
     items: () => SPACE_OBJECTS.filter(hasImage),

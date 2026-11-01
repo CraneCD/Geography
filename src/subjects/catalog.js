@@ -6,7 +6,7 @@ export const MIXABLE_MODES = ["flags", "capitals", "locate", "shapes", "language
 export const SUBJECTS = [
   {
     id: "geography",
-    modes: [...MIXABLE_MODES, "mixed"],
+    modes: [...MIXABLE_MODES, "landmarks", "physical", "mixed"],
     options: ["region", "mixedModes"],
     load: () => import("./geography/index.jsx"),
   },
@@ -24,7 +24,7 @@ export const SUBJECTS = [
   },
   {
     id: "science",
-    modes: ["animals-photo", "animals-compare", "animal-traits", "elements", "body", "body-systems", "space-photo", "space-compare", "space-missions", "science-mixed"],
+    modes: ["animals-photo", "animals-compare", "animal-traits", "plants", "elements", "body", "body-systems", "space-photo", "space-compare", "space-missions", "science-mixed"],
     options: [],
     load: () => import("./science/index.js"),
   },

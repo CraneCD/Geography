@@ -1895,6 +1895,36 @@
     "fr": "Abuja"
    }
   },
+  "KP": {
+   "currencies": [
+    "KPW"
+   ],
+   "population": {
+    "value": 26418204,
+    "year": 2023
+   },
+   "area_km2": 120540,
+   "capital": {
+    "en": "Pyongyang",
+    "es": "Pionyang",
+    "fr": "Pyongyang"
+   }
+  },
+  "MK": {
+   "currencies": [
+    "MKD"
+   ],
+   "population": {
+    "value": 1836713,
+    "year": 2021
+   },
+   "area_km2": 25713,
+   "capital": {
+    "en": "Skopje",
+    "es": "Skopie",
+    "fr": "Skopje"
+   }
+  },
   "NO": {
    "currencies": [
     "NOK"
@@ -2374,6 +2404,21 @@
     "en": "Pretoria",
     "es": "Pretoria",
     "fr": "Pretoria"
+   }
+  },
+  "KR": {
+   "currencies": [
+    "KRW"
+   ],
+   "population": {
+    "value": 51466201,
+    "year": 2017
+   },
+   "area_km2": 100295,
+   "capital": {
+    "en": "Seoul",
+    "es": "Seúl",
+    "fr": "Séoul"
    }
   },
   "SS": {

@@ -17,8 +17,8 @@ describe("science rounds", () => {
         for (const q of qs) {
           if (q.kind === "choice") assertChoice(expect, q);
           if (q.kind === "text") expect(q.accepted.length).toBeGreaterThan(0);
-          if (difficulty === "expert" && /photo|^body$/.test(mode)) expect(q.kind).toBe("text");
-          if (/photo|^body$/.test(q.type)) { expect(q.media?.src).toBeTruthy(); expect(q.media.src).not.toMatch(/^https?:/); }
+          if (difficulty === "expert" && /photo|^body$|^plants$/.test(mode)) expect(q.kind).toBe("text");
+          if (/photo|^body$|^plants$/.test(q.type)) { expect(q.media?.src).toBeTruthy(); expect(q.media.src).not.toMatch(/^https?:/); }
         }
       });
     }

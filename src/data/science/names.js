@@ -76,6 +76,17 @@ export const SPACE_NAMES = {
   europa: ["Europa", "Europe"],
   ganymede: ["Ganímedes", "Ganymède"],
   titan: ["Titán", "Titan"],
+  callisto: ["Calisto", "Callisto"],
+  enceladus: ["Encélado", "Encelade"],
+  triton: ["Tritón", "Triton"],
+  phobos: ["Fobos", "Phobos"],
+  charon: ["Caronte", "Charon"],
+  pluto: ["Plutón", "Pluton"],
+  ceres: ["Ceres", "Cérès"],
+  eris: ["Eris", "Éris"],
+  haumea: ["Haumea", "Hauméa"],
+  makemake: ["Makemake", "Makémaké"],
+  sun: ["Sol", "Soleil"],
 };
 
 export const BODY_NAMES = {

@@ -20,6 +20,10 @@ import { ANIMALS } from "../src/data/science/animals.js";
 import { SPACE_OBJECTS } from "../src/data/science/space.js";
 import { BODY_REGIONS } from "../src/data/science/body.js";
 import { ELEMENTS } from "../src/data/science/elements.js";
+import { PLANTS } from "../src/data/science/plants.js";
+import { MISSIONS } from "../src/data/science/traits.js";
+import { LANDMARKS } from "../src/data/geography/landmarks.js";
+import { FEATURES } from "../src/data/geography/physical.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const UA = "QuizSite/1.0 (build-time fact refresh; https://github.com/cranecd/geography)";
@@ -148,7 +152,7 @@ console.log(flagged.length ? `Needs a human look:\n  ${flagged.join("\n  ")}` : 
 // ── Sources: Wikidata id + es/fr article titles ────────────────────────────
 // Keep in sync with ELEMENT_ARTICLES in src/subjects/science/generate.js.
 const elementTitles = ELEMENTS.map((e) => ({ wikiTitle: e.symbol === "Hg" ? "Mercury_(element)" : e.name }));
-const titles = [...new Set([people, artworks, ANIMALS, SPACE_OBJECTS, BODY_REGIONS, elementTitles].flat().map((x) => x.wikiTitle).filter(Boolean))];
+const titles = [...new Set([people, artworks, ANIMALS, SPACE_OBJECTS, BODY_REGIONS, elementTitles, PLANTS, MISSIONS, LANDMARKS, FEATURES].flat().map((x) => x.wikiTitle).filter(Boolean))];
 const sources = {};
 for (let i = 0; i < titles.length; i += 60) {
   const batch = titles.slice(i, i + 60);

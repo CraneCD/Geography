@@ -69,7 +69,7 @@ export function currencyName(code, lang) {
   return name.charAt(0).toLocaleUpperCase(lang) + name.slice(1);
 }
 
-function countrySpellings(country) {
+export function countrySpellings(country) {
   const t = countryTranslations[country.code] ?? {};
   return [country.name, t.es, t.fr, ...(COUNTRY_ALIASES[country.code] ?? [])].filter(Boolean);
 }
@@ -97,7 +97,7 @@ export function poolFor(region) {
 }
 
 const byCode = Object.fromEntries(countries.map((c) => [c.code, c]));
-const ALL_COUNTRY_SPELLINGS = countries.flatMap(countrySpellings);
+export const ALL_COUNTRY_SPELLINGS = countries.flatMap(countrySpellings);
 const ALL_CAPITALS = countries.flatMap(capitalSpellings);
 const ALL_LANGUAGES = [...new Set(Object.values(countriesExtra).map((x) => x.language))];
 const ALL_CURRENCIES = [...new Set(countries.flatMap((c) => currenciesOf(c.code)))];

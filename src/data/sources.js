@@ -12,3 +12,14 @@ export function learnMoreUrl({ wikiTitle, name }, lang = "en") {
   if (localTitle) return wiki(lang, localTitle);
   return search(lang, name);
 }
+
+/**
+ * Name of a place or thing in the player's language: a hand-checked `names[lang]`, else the
+ * title of its Wikipedia article in that language (without "(river)"-style qualifiers), else English.
+ */
+export function localTitle({ wikiTitle, name, names }, lang = "en") {
+  if (lang === "en") return name;
+  if (names?.[lang]) return names[lang];
+  const title = wikiTitle ? sources[wikiTitle]?.[lang] : null;
+  return title ? title.replace(/\s*\([^)]*\)$/, "") : name;
+}
