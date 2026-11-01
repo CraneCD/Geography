@@ -257,6 +257,8 @@ export const artworks = [
     movement: "Neoclassicism",
     description: "Heroic equestrian portrait of Napoleon Bonaparte on a rearing horse crossing the Great St. Bernard Pass.",
     wikiTitle: "Napoleon_Crossing_the_Alps",
+    // The article has no lead image; public-domain scan on Commons.
+    imageFile: "Jacques Louis David - Bonaparte franchissant le Grand Saint-Bernard, 20 mai 1800 - Google Art Project.jpg",
     license: "Public domain",
   },
   {
@@ -444,7 +446,7 @@ export const artworks = [
     title: "The Milkmaid",
     artist: "Johannes Vermeer",
     year: 1658,
-    movement: "Baroque",
+    movement: "Dutch Golden Age",
     description: "A kitchen maid carefully pours milk into a bowl, bathed in cool light streaming from a window. Vermeer's meticulous rendering of everyday domestic life makes this one of his most beloved works.",
     wikiTitle: "The_Milkmaid_(Vermeer)",
     license: "Public domain",
@@ -454,7 +456,7 @@ export const artworks = [
     title: "The Jewish Bride",
     artist: "Rembrandt van Rijn",
     year: 1667,
-    movement: "Baroque",
+    movement: "Dutch Golden Age",
     description: "Two figures, likely a married couple, share a tender moment of intimacy expressed through the placement of their hands. Van Gogh wrote that he would give ten years of his life to sit before it for a fortnight.",
     wikiTitle: "The_Jewish_Bride",
     license: "Public domain",
@@ -667,6 +669,8 @@ export const artworks = [
     movement: "Modernism",
     description: "An explosion of geometric shapes — circles, triangles, lines, and grids — float against a light background in a dynamic abstract composition. Kandinsky created the Compositions series as his most ambitious musical-visual experiments.",
     wikiTitle: "Composition_VIII_(Kandinsky)",
+    // No usable Commons image found yet: no picture question.
+    imageFile: null,
     license: "Public domain",
   },
   {
@@ -677,6 +681,8 @@ export const artworks = [
     movement: "Surrealism",
     description: "Melting pocket watches drape over branches and a cliff edge in a barren Catalan landscape, challenging conventional perceptions of time. It is Dalí's most famous work and a defining image of Surrealism.",
     wikiTitle: "The_Persistence_of_Memory",
+    // Under copyright until 2059: no picture question.
+    imageFile: null,
     license: "Public domain",
   },
   {
@@ -684,7 +690,7 @@ export const artworks = [
     title: "Ophelia",
     artist: "John Everett Millais",
     year: 1851,
-    movement: "Romanticism",
+    movement: "Pre-Raphaelite",
     description: "Ophelia from Shakespeare's Hamlet floats in a stream strewn with flowers, her expression serene as she drowns; painted with obsessive botanical detail by the Pre-Raphaelite master.",
     wikiTitle: "Ophelia_(Millais)",
     license: "Public domain",
@@ -745,7 +751,7 @@ export const artworks = [
     artist: "Vincent van Gogh",
     year: 1888,
     movement: "Post-Impressionism",
-    description: "A Paris café terrace on the Place du Forum in Arles is illuminated by warm gaslight against a deep blue starry sky. It is the first painting in which Van Gogh used a starry background, prefiguring The Starry Night.",
+    description: "A café terrace on the Place du Forum in Arles is illuminated by warm gaslight against a deep blue starry sky. It is the first painting in which Van Gogh used a starry background, prefiguring The Starry Night.",
     wikiTitle: "Café_Terrace_at_Night",
     license: "Public domain",
   },

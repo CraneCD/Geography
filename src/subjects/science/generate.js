@@ -1,5 +1,5 @@
 import { ANIMALS } from "../../data/science/animals.js";
-import { ELEMENTS } from "../../data/science/elements.js";
+import { ELEMENTS, COMMON_ELEMENTS } from "../../data/science/elements.js";
 import { SPACE_OBJECTS } from "../../data/science/space.js";
 import { BODY_REGIONS } from "../../data/science/body.js";
 import { ANIMAL_NAMES, SPACE_NAMES, BODY_NAMES, ELEMENT_NAMES, localize, spellings } from "../../data/science/names.js";
@@ -172,6 +172,16 @@ const VARIANTS = {
 };
 
 const elementName = (e, lang) => localize(ELEMENT_NAMES, e.symbol, e.name, lang);
+// Alternative English spellings accepted in typed answers.
+const ELEMENT_ALIASES = { Al: ["Aluminum"], Cs: ["Cesium"], S: ["Sulphur"] };
+const elementSpellings = (e) => [...spellings(ELEMENT_NAMES, e.symbol, e.name), ...(ELEMENT_ALIASES[e.symbol] ?? [])];
+
+/** Elements asked at each difficulty: familiar ones first, the whole table on Hard. */
+export function elementPool(difficulty) {
+  if (difficulty === "easy") return ELEMENTS.filter((e) => e.atomicNumber <= 20 || COMMON_ELEMENTS.has(e.symbol));
+  if (difficulty === "medium") return ELEMENTS.filter((e) => e.atomicNumber <= 56 || COMMON_ELEMENTS.has(e.symbol));
+  return ELEMENTS;
+}
 
 export function buildElement(element, variant, difficulty, t) {
   const lang = t.lang;
@@ -187,8 +197,8 @@ export function buildElement(element, variant, difficulty, t) {
       return choiceOrText({
         base: { ...base, prompt: t.sci.symbolToName(element.symbol), media: cell({ symbol: true }), correctLabel: name, review: { title: t.sci.symbolToName(element.symbol) } },
         correct: name, wrong, expert,
-        accepted: spellings(ELEMENT_NAMES, element.symbol, element.name),
-        exclude: ELEMENTS.flatMap((e) => spellings(ELEMENT_NAMES, e.symbol, e.name)),
+        accepted: elementSpellings(element),
+        exclude: ELEMENTS.flatMap(elementSpellings),
         placeholder: t.sci.typeElement,
       });
     }
@@ -203,6 +213,8 @@ export function buildElement(element, variant, difficulty, t) {
       };
     }
     case "symbol-to-group": {
+      // Lanthanides and actinides have no group number: ask for the atomic number instead.
+      if (element.group == null) return buildElement(element, "name-to-number", difficulty, t);
       const g = element.group;
       const groups = [...new Set(ELEMENTS.map((e) => e.group).filter((x) => x != null))];
       const wrong = pickDistractors({ correctKey: g, tiers: [{ items: groups }] });
@@ -253,7 +265,7 @@ export function buildElement(element, variant, difficulty, t) {
 
 function elementsRound(difficulty, count, t) {
   const variants = VARIANTS[difficulty] ?? VARIANTS.medium;
-  return shuffle(ELEMENTS).slice(0, count).map((el, i) => buildElement(el, variants[i % variants.length], difficulty, t));
+  return shuffle(elementPool(difficulty)).slice(0, count).map((el, i) => buildElement(el, variants[i % variants.length], difficulty, t));
 }
 
 // ── Round builder ──────────────────────────────────────────────────────────

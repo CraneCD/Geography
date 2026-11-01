@@ -18,7 +18,7 @@ describe("science rounds", () => {
           if (q.kind === "choice") assertChoice(expect, q);
           if (q.kind === "text") expect(q.accepted.length).toBeGreaterThan(0);
           if (difficulty === "expert" && /photo|body/.test(mode)) expect(q.kind).toBe("text");
-          if (/photo|body/.test(q.type)) expect(q.media?.src).toMatch(/^https:\/\//);
+          if (/photo|body/.test(q.type)) { expect(q.media?.src).toBeTruthy(); expect(q.media.src).not.toMatch(/^https?:/); }
         }
       });
     }
@@ -47,5 +47,34 @@ describe("science rounds", () => {
     const labels = qs.flatMap((q) => q.options.map((o) => o.label));
     expect(labels).toContain("Tierra");
     expect(qs[0].prompt).toBe(getStrings("es").sci.spacePrompt);
+  });
+});
+
+describe("elements", async () => {
+  const { ELEMENTS } = await import("../../data/science/elements.js");
+  const { ELEMENT_NAMES } = await import("../../data/science/names.js");
+  const { elementPool } = await import("./generate.js");
+
+  it("covers the whole periodic table with translations", () => {
+    expect(ELEMENTS.map((e) => e.atomicNumber)).toEqual(Array.from({ length: 118 }, (_, i) => i + 1));
+    expect(new Set(ELEMENTS.map((e) => e.symbol)).size).toBe(118);
+    for (const e of ELEMENTS) expect(ELEMENT_NAMES[e.symbol]).toHaveLength(2);
+  });
+
+  it("keeps Easy to familiar elements and uses all of them on Hard", () => {
+    const easy = elementPool("easy").map((e) => e.symbol);
+    expect(easy).toEqual(expect.arrayContaining(["H", "O", "Ca", "Fe", "Au", "U"]));
+    expect(easy).not.toContain("La");
+    expect(easy).not.toContain("Og");
+    expect(easy.length).toBeLessThan(40);
+    expect(elementPool("hard")).toHaveLength(118);
+  });
+
+  it("never asks for the group of an f-block element", () => {
+    for (let i = 0; i < 30; i++) {
+      for (const q of buildRound(settings({ mode: "elements", difficulty: "medium", roundSize: 20 }), t)) {
+        expect(q.correctLabel).not.toMatch(/null|undefined/);
+      }
+    }
   });
 });

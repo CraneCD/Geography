@@ -143,16 +143,6 @@ export const people = [
     wikiTitle: "Abraham_Lincoln",
   },
   {
-    id: "mandela",
-    name: "Nelson Mandela",
-    born: 1918,
-    died: 2013,
-    field: "Politics",
-    subfield: "South Africa",
-    description: "South African anti-apartheid activist and statesman who served 27 years in prison before becoming the country's first Black president",
-    wikiTitle: "Nelson_Mandela",
-  },
-  {
     id: "churchill",
     name: "Winston Churchill",
     born: 1874,
@@ -274,16 +264,6 @@ export const people = [
     description: "Dutch Golden Age painter renowned for his mastery of light and shadow; created 'The Night Watch' and hundreds of self-portraits",
     wikiTitle: "Rembrandt",
   },
-  {
-    id: "kahlo",
-    name: "Frida Kahlo",
-    born: 1907,
-    died: 1954,
-    field: "Arts",
-    subfield: "Painting",
-    description: "Mexican painter known for her intensely personal and symbolic self-portraits, often exploring themes of identity, pain, and Mexican culture",
-    wikiTitle: "Frida_Kahlo",
-  },
 
   // Exploration
   {
@@ -305,16 +285,6 @@ export const people = [
     subfield: "Navigation",
     description: "Portuguese explorer who organised and led the first circumnavigation of the Earth (1519–1522), though he died before its completion",
     wikiTitle: "Ferdinand_Magellan",
-  },
-  {
-    id: "earhart",
-    name: "Amelia Earhart",
-    born: 1897,
-    died: 1937,
-    field: "Exploration",
-    subfield: "Aviation",
-    description: "American aviator who was the first woman to fly solo across the Atlantic Ocean; disappeared while attempting a round-the-world flight",
-    wikiTitle: "Amelia_Earhart",
   },
   {
     id: "marco_polo",
@@ -379,16 +349,6 @@ export const people = [
     wikiTitle: "Confucius",
   },
   {
-    id: "kant",
-    name: "Immanuel Kant",
-    born: 1724,
-    died: 1804,
-    field: "Philosophy",
-    subfield: "Epistemology",
-    description: "German philosopher who wrote the 'Critique of Pure Reason'; his categorical imperative remains central to modern moral philosophy",
-    wikiTitle: "Immanuel_Kant",
-  },
-  {
     id: "descartes",
     name: "René Descartes",
     born: 1596,
@@ -409,16 +369,6 @@ export const people = [
     subfield: "Christian Mysticism",
     description: "French peasant girl who, claiming divine guidance, led the French army to decisive victories in the Hundred Years' War before being burned at the stake",
     wikiTitle: "Joan_of_Arc",
-  },
-  {
-    id: "luther",
-    name: "Martin Luther",
-    born: 1483,
-    died: 1546,
-    field: "Religion",
-    subfield: "Christianity",
-    description: "German theologian whose Ninety-Five Theses (1517) challenged papal authority and ignited the Protestant Reformation",
-    wikiTitle: "Martin_Luther",
   },
   {
     id: "gandhi",
@@ -501,6 +451,8 @@ export const people = [
     subfield: "Mathematics & Astronomy",
     description: "Alexandrian mathematician, astronomer, and philosopher who was the first well-documented woman in mathematics. She was murdered by a Christian mob in 415 CE during a period of political turmoil in Alexandria.",
     wikiTitle: "Hypatia",
+    // No authentic portrait exists: no picture question.
+    imageFile: null,
   },
   {
     id: "avicenna",
@@ -601,6 +553,8 @@ export const people = [
     subfield: "Hunnic Empire",
     description: "Ruler of the Hunnic Empire who united the nomadic tribes of Central Asia and led devastating raids across the Roman Empire, earning the epithet 'Scourge of God' from his contemporaries.",
     wikiTitle: "Attila",
+    // No authentic portrait exists: no picture question.
+    imageFile: null,
   },
   {
     id: "james-watt",
@@ -911,5 +865,7 @@ export const people = [
     subfield: "Theoretical Physics",
     description: "American theoretical physicist who made fundamental contributions to quantum electrodynamics, for which he shared the 1965 Nobel Prize in Physics. He was also celebrated as an exceptional teacher and communicator of science.",
     wikiTitle: "Richard_Feynman",
+    // The lead image is non-free (fair use); use a free Commons photo.
+    imageFile: "Richard Feynman 1959.png",
   },
 ];
