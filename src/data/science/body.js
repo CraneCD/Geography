@@ -101,8 +101,8 @@ export const BODY_REGIONS = [
     name: "Skull",
     photoName: "Skull",
     wikiTitle: "Human skull",
-    // Lead image labels or gives away the answer; null = no picture until a reviewed file is chosen.
-    imageFile: null,
+    // Hand-picked public-domain photo (the lead image is a 5.8 MB animated GIF).
+    imageFile: "SKULL-FRONT - NARA - 524360.jpg",
     dataset: "bones",
     fact: "Made up of 22 separate bones fused together to protect the brain.",
   },
