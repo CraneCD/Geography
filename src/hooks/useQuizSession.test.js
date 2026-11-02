@@ -37,9 +37,12 @@ describe("quiz session reducer", () => {
     expect(scoreOf(s.results)).toEqual({ correct: 0, total: 1 });
   });
 
-  it("auto-advances only simple questions", () => {
+  it("auto-advances correct choices only; wrong answers wait so the explanation can be read", () => {
     expect(autoAdvanceDelay(q("1"), { correct: true })).toBeGreaterThan(0);
-    expect(autoAdvanceDelay(q("1", { note: "fact" }), { correct: true })).toBeNull();
+    expect(autoAdvanceDelay(q("1", { note: "fact" }), { correct: true })).toBeGreaterThan(autoAdvanceDelay(q("1"), { correct: true }));
+    expect(autoAdvanceDelay(q("1", { note: "fact" }), { correct: false })).toBeNull();
+    expect(autoAdvanceDelay(q("1"), { correct: false })).toBeNull();
+    expect(autoAdvanceDelay(q("1", { steps: ["a"] }), { correct: true })).toBeNull();
     expect(autoAdvanceDelay({ kind: "text" }, { correct: true })).toBeNull();
     expect(autoAdvanceDelay({ kind: "locate" }, { correct: true })).toBeNull();
   });

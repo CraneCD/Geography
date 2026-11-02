@@ -7,6 +7,10 @@ import { artworks } from "./history/artworks.js";
 import { ANIMALS } from "./science/animals.js";
 import { BODY_REGIONS } from "./science/body.js";
 import { SPACE_OBJECTS } from "./science/space.js";
+import { PLANTS } from "./science/plants.js";
+import { LANDMARKS } from "./geography/landmarks.js";
+
+const ALL = () => [people, artworks, ANIMALS, BODY_REGIONS, SPACE_OBJECTS, PLANTS, LANDMARKS].flat();
 
 export function imageRef(item) {
   // `imageFile: null` deliberately opts out of the lead image (it leaks the answer).
@@ -15,7 +19,7 @@ export function imageRef(item) {
 }
 
 export function allImageRefs() {
-  const refs = [people, artworks, ANIMALS, BODY_REGIONS, SPACE_OBJECTS].flat().map(imageRef).filter(Boolean);
+  const refs = ALL().map(imageRef).filter(Boolean);
   return [...new Set(refs)].sort();
 }
 
@@ -26,7 +30,7 @@ export function allImageRefs() {
  */
 export function imageEdits() {
   const out = {};
-  for (const item of [people, artworks, ANIMALS, BODY_REGIONS, SPACE_OBJECTS].flat()) {
+  for (const item of ALL()) {
     const ref = imageRef(item);
     if (ref && item.imageEdit) out[ref] = item.imageEdit;
   }

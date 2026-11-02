@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
-import { CircleCheck, CircleX, ArrowRight, ExternalLink } from "lucide-react";
+import { CircleCheck, CircleX, ArrowRight, ExternalLink, BookOpen } from "lucide-react";
+import { Flag, ShapeSvg } from "./Media.jsx";
 
 /**
  * Feedback shown after every answer: verdict, correct answer, explanation /
@@ -25,6 +26,11 @@ export default function AnswerFooter({ question, answer, onNext, isLast, autoAdv
   }, [onNext]);
 
   const page = question.media?.page;
+  // What the player actually picked, when it was wrong (e.g. "Lisbon is the capital of Portugal").
+  const picked = !answer.correct && answer.givenId != null
+    ? (question.options ?? question.items ?? []).find((o) => o.id === answer.givenId)
+    : null;
+  const whyNot = picked?.whyNot;
   const credit = question.media?.credit;
   const creditText = [credit?.author, credit?.license].filter(Boolean).join(" · ");
 
@@ -50,8 +56,18 @@ export default function AnswerFooter({ question, answer, onNext, isLast, autoAdv
         </button>
       </div>
 
-      {(question.steps || question.explanation || question.note) && (
+      {(whyNot || question.steps || question.explanation || question.note) && (
         <div className="explanation">
+          {whyNot && (
+            <div className="why-not">
+              {whyNot.media?.kind === "flag" && <Flag src={whyNot.media.src} alt="" className="why-not__flag" />}
+              {whyNot.media?.kind === "shape" && <ShapeSvg d={whyNot.media.d} state="wrong" className="why-not__shape" />}
+              {whyNot.media?.kind === "image" && (
+                <img src={whyNot.media.src} alt="" className="why-not__img" loading="lazy" decoding="async" />
+              )}
+              <p><strong>{t.youChose(picked.label)}</strong> {whyNot.text}</p>
+            </div>
+          )}
           {question.steps && (
             <>
               <strong className="explanation__title">{t.steps}</strong>
@@ -65,10 +81,19 @@ export default function AnswerFooter({ question, answer, onNext, isLast, autoAdv
         </div>
       )}
 
-      {page && (
-        <a className="image-credit" href={page} target="_blank" rel="noreferrer noopener">
-          {t.imageCredit}{creditText ? `: ${creditText}` : ""} <ExternalLink size={12} aria-hidden="true" />
-        </a>
+      {(question.source || page) && (
+        <div className="answer-links">
+          {question.source && (
+            <a className="learn-more" href={question.source} target="_blank" rel="noreferrer noopener">
+              <BookOpen size={14} aria-hidden="true" /> {t.learnMore}
+            </a>
+          )}
+          {page && (
+            <a className="image-credit" href={page} target="_blank" rel="noreferrer noopener">
+              {t.imageCredit}{creditText ? `: ${creditText}` : ""} <ExternalLink size={12} aria-hidden="true" />
+            </a>
+          )}
+        </div>
       )}
     </div>
   );

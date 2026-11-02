@@ -90,7 +90,7 @@ describe("image manifest", () => {
     const { existsSync } = await import("node:fs");
     for (const [ref, e] of Object.entries(manifest)) {
       expect(existsSync(`src/assets/quiz-images/${e.file}`), ref).toBe(true);
-      expect(e.license, ref).toMatch(/public domain|cc0|cc[ -]by|gfdl|attribution|no restrictions/i);
+      expect(e.license, ref).toMatch(/public domain|cc0|cc[ -]by|gfdl|\bfal\b|kogl type 1|attribution|no restrictions/i);
       expect(e.page, ref).toMatch(/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/);
     }
   });
@@ -148,9 +148,9 @@ describe("history translations", async () => {
   });
 
   it("questions use the selected language", () => {
-    const es = buildRound(settings({ mode: "events", roundSize: 85, lang: "es", difficulty: "expert" }), getStrings("es"));
+    const es = buildRound(settings({ mode: "events", roundSize: 500, lang: "es", difficulty: "expert" }), getStrings("es"));
     expect(es.find((q) => q.key === "events:french-revolution").prompt).toContain("Revolución francesa");
-    const fr = buildRound(settings({ mode: "art", roundSize: 80, lang: "fr" }), getStrings("fr"));
+    const fr = buildRound(settings({ mode: "art", roundSize: 500, lang: "fr" }), getStrings("fr"));
     expect(fr.find((q) => q.key.endsWith(":mona-lisa")).note).toContain("La Joconde");
   });
 

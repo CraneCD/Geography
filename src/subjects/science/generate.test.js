@@ -17,8 +17,8 @@ describe("science rounds", () => {
         for (const q of qs) {
           if (q.kind === "choice") assertChoice(expect, q);
           if (q.kind === "text") expect(q.accepted.length).toBeGreaterThan(0);
-          if (difficulty === "expert" && /photo|body/.test(mode)) expect(q.kind).toBe("text");
-          if (/photo|body/.test(q.type)) { expect(q.media?.src).toBeTruthy(); expect(q.media.src).not.toMatch(/^https?:/); }
+          if (difficulty === "expert" && /photo|^body$|^plants$/.test(mode)) expect(q.kind).toBe("text");
+          if (/photo|^body$|^plants$/.test(q.type)) { expect(q.media?.src).toBeTruthy(); expect(q.media.src).not.toMatch(/^https?:/); }
         }
       });
     }
@@ -93,5 +93,49 @@ describe("science translations", async () => {
   it("facts appear in the selected language", () => {
     const qs = buildRound(settings({ mode: "space-photo", difficulty: "medium", roundSize: 20 }), getStrings("fr"));
     expect(qs.find((q) => q.key === "space-photo:earth").note).toContain("seule planète");
+  });
+});
+
+describe("traits, systems and missions data", () => {
+  it("covers every animal and only uses known labels", async () => {
+    const { ANIMAL_TRAITS, GROUPS, DIETS, HABITATS, BODY_PARTS, SYSTEMS, MISSIONS, MISSION_TARGETS, AGENCIES } = await import("../../data/science/traits.js");
+    const { BODY_REGIONS } = await import("../../data/science/body.js");
+    for (const a of ANIMALS) {
+      const tr = ANIMAL_TRAITS[a.id];
+      expect(tr, a.id).toBeTruthy();
+      if (tr.group) expect(GROUPS).toContain(tr.group);
+      if (tr.diet) expect(DIETS).toContain(tr.diet);
+      for (const h of tr.habitats ?? []) expect(HABITATS).toContain(h);
+    }
+    for (const p of BODY_PARTS) {
+      for (const s of p.systems) expect(SYSTEMS).toContain(s);
+      if (p.region) expect(BODY_REGIONS.some((r) => r.id === p.region)).toBe(true);
+      expect(p.name).toHaveLength(3);
+    }
+    for (const m of MISSIONS) {
+      for (const x of m.targets ?? []) expect(MISSION_TARGETS).toContain(x);
+      for (const x of m.agency) expect(AGENCIES).toContain(x);
+      expect(m.d).toHaveLength(3);
+    }
+  });
+
+  it("never offers another fair answer as a wrong option", () => {
+    for (const mode of ["animal-traits", "body-systems", "space-missions"]) {
+      for (let i = 0; i < 20; i++) {
+        for (const q of buildRound(settings({ mode, difficulty: "hard", roundSize: 20 }), t)) {
+          assertChoice(expect, q);
+          expect(q.note).toBeTruthy();
+        }
+      }
+    }
+  });
+
+  it("asks which elements are gases or liquids with solid distractors", () => {
+    const qs = many(30, () => buildRound(settings({ mode: "elements", difficulty: "medium", roundSize: 20 }), t)).filter((q) => q.prompt === t.sci.stateGas);
+    expect(qs.length).toBeGreaterThan(0);
+    for (const q of qs) {
+      expect(["H", "He", "N", "O", "F", "Ne", "Cl", "Ar", "Kr", "Xe", "Rn"]).toContain(q.correctId);
+      for (const o of q.options) if (o.id !== q.correctId) expect(o.whyNot.text).toMatch(/solid/);
+    }
   });
 });

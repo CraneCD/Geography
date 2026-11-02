@@ -97,3 +97,56 @@ describe("angle", () => {
     }
   });
 });
+
+describe("everyday maths modes", () => {
+  it("Roman numerals round-trip and reject non-canonical forms", async () => {
+    const { toRoman, fromRoman } = await import("./more.js");
+    for (let n = 1; n < 4000; n++) expect(fromRoman(toRoman(n))).toBe(n);
+    expect(toRoman(1994)).toBe("MCMXCIV");
+    expect(fromRoman("IIII")).toBeNaN();
+    expect(fromRoman("mmxxvi")).toBe(2026);
+  });
+
+  it("parses clock times on a 12-hour dial", async () => {
+    const { parseClock, clockLabel } = await import("./more.js");
+    expect(parseClock("3:05")).toEqual({ h: 3, m: 5 });
+    expect(parseClock("15.05")).toEqual({ h: 3, m: 5 });
+    expect(parseClock("0:30")).toEqual({ h: 12, m: 30 });
+    expect(parseClock("3:5")).toBeNull();
+    expect(clockLabel(13, 0)).toBe("1:00");
+  });
+
+  it("every wrong option is explained and none equals the answer", () => {
+    for (const mode of ["clocks", "roman", "units", "word-problems", "puzzles"]) {
+      for (const difficulty of ["easy", "medium"]) {
+        for (const q of buildRound({ mode, difficulty, roundSize: 20 }, t)) {
+          expect(q.explanation || q.steps).toBeTruthy();
+          for (const o of q.options.filter((o) => o.id !== q.correctId)) {
+            expect(o.whyNot?.text, `${q.key} ${o.label}`).toBeTruthy();
+            expect(o.label).not.toBe(q.correctLabel);
+          }
+        }
+      }
+    }
+  });
+
+  it("puzzle answers follow from the clues alone", () => {
+    for (let i = 0; i < 300; i++) {
+      const q = buildRound({ mode: "puzzles", difficulty: "hard", roundSize: 1 }, t)[0];
+      // Rebuild the order from the clues: "A is taller/older/runs faster than B" means A before B.
+      const above = new Map();
+      for (const line of q.media.lines) {
+        const m = line.match(/^(\w+) (?:is|runs) (\w+) than (\w+)\.$/);
+        const [, a, cmp, b] = m;
+        const more = ["taller", "older", "faster"].includes(cmp);
+        const [hi, lo] = more ? [a, b] : [b, a];
+        above.set(lo, hi);
+      }
+      const names = new Set([...above.keys(), ...above.values()]);
+      const top = [...names].find((n) => !above.has(n));
+      const bottom = [...names].find((n) => ![...above.values()].includes(n));
+      const asksMost = /tallest|oldest|fastest/.test(q.prompt);
+      expect(q.correctId).toBe(asksMost ? top : bottom);
+    }
+  });
+});

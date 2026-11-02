@@ -9,22 +9,29 @@
 import { writeFileSync, mkdirSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { feature } from "topojson-client";
-import { geoPath, geoMercator, geoNaturalEarth1, geoCentroid } from "d3-geo";
+import { feature, neighbors } from "topojson-client";
+import { geoPath, geoMercator, geoNaturalEarth1, geoCentroid, geoIdentity } from "d3-geo";
 import { countries } from "../src/data/countries.js";
 import { ALPHA2_TO_NUMERIC } from "../src/data/countryIds.js";
+import { US_STATES } from "../src/data/geography/usStates.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const topology = JSON.parse(
   readFileSync(join(root, "node_modules/world-atlas/countries-110m.json"), "utf8"),
 );
 const features = feature(topology, topology.objects.countries).features;
+const load = (res) => JSON.parse(readFileSync(join(root, `node_modules/world-atlas/countries-${res}.json`), "utf8"));
+const topo50 = load("50m");
+const topo10 = load("10m");
 
 // world-atlas zero-pads ids ("032"); our table does not ("32"). Compare numerically.
-const byNumericId = new Map(features.map((f) => [Number(f.id), f]));
-const featureFor = (alpha2) => {
+const index = (feats) => new Map(feats.map((f) => [Number(f.id), f]));
+const byNumericId = index(features);
+const byId50 = index(feature(topo50, topo50.objects.countries).features);
+const byId10 = index(feature(topo10, topo10.objects.countries).features);
+const featureFor = (alpha2, map = byNumericId) => {
   const id = ALPHA2_TO_NUMERIC[alpha2];
-  return id == null ? undefined : byNumericId.get(Number(id));
+  return id == null ? undefined : map.get(Number(id));
 };
 
 const DIGITS = 1;
@@ -33,7 +40,8 @@ const DIGITS = 1;
 const SHAPE_W = 400, SHAPE_H = 300, PAD = 24;
 const shapes = {};
 for (const c of countries) {
-  const f = featureFor(c.code);
+  // Small countries are missing from the 1:110m atlas: fall back to 1:50m, then 1:10m.
+  const f = featureFor(c.code) ?? featureFor(c.code, byId50) ?? featureFor(c.code, byId10);
   if (!f) continue;
   // Rotate so the country is centred: keeps antimeridian countries (Fiji, Russia) in one piece.
   const [lng] = geoCentroid(f);
@@ -78,6 +86,19 @@ writeFileSync(
   JSON.stringify({ width: MAP_W, height: MAP_H, countries: mapCountries, points, other }),
 );
 
+// ── Land borders (1:50m: accurate enough, includes microstates) ───────────
+const geoms50 = topo50.objects.countries.geometries;
+const codeById = Object.fromEntries(Object.entries(ALPHA2_TO_NUMERIC).map(([a2, n]) => [Number(n), a2]));
+const adjacency = neighbors(geoms50);
+const landBorders = {};
+geoms50.forEach((g, i) => {
+  const code = codeById[Number(g.id)];
+  if (!code) return;
+  landBorders[code] = [...new Set(adjacency[i].map((j) => codeById[Number(geoms50[j].id)]).filter((x) => x && x !== code))].sort();
+});
+for (const c of countries) landBorders[c.code] ??= [];
+writeFileSync(join(outDir, "landBorders.json"), JSON.stringify(landBorders));
+
 // Project a [lng, lat] box for region framing in the browser (no d3 at runtime).
 const REGION_EXTENTS = {
   Africa: [-20, -36, 55, 38],
@@ -95,7 +116,28 @@ for (const [region, [w, s, e, n]] of Object.entries(REGION_EXTENTS)) {
 }
 writeFileSync(join(outDir, "regionViews.json"), JSON.stringify(regionViews));
 
+// ── US states (us-atlas, already projected to Albers USA at 975×610) ───────
+const usTopo = JSON.parse(readFileSync(join(root, "node_modules/us-atlas/states-albers-10m.json"), "utf8"));
+const usFeatures = new Map(feature(usTopo, usTopo.objects.states).features.map((f) => [f.id, f]));
+const usPath = geoPath().digits(0);
+const usMap = { width: 975, height: 610, states: {}, markers: {} };
+const usShapes = {};
+for (const st of US_STATES) {
+  const f = usFeatures.get(st.fips);
+  if (!f) throw new Error(`No outline for ${st.name}`);
+  usMap.states[st.code] = usPath(f);
+  // Small states get a ring around them when highlighted, or they would be invisible.
+  const [[x0, y0], [x1, y1]] = usPath.bounds(f);
+  if (Math.max(x1 - x0, y1 - y0) < 60) usMap.markers[st.code] = usPath.centroid(f).map(Math.round);
+  // y already points down in the projected file, so no reflection is needed.
+  const fit = geoIdentity().fitExtent([[PAD, PAD], [SHAPE_W - PAD, SHAPE_H - PAD]], f);
+  usShapes[st.code] = geoPath(fit).digits(DIGITS)(f);
+}
+writeFileSync(join(outDir, "usMap.json"), JSON.stringify(usMap));
+writeFileSync(join(outDir, "usShapes.json"), JSON.stringify(usShapes));
+
 console.log(
+  `us states: ${Object.keys(usShapes).length}; ` +
   `shapes: ${Object.keys(shapes).length}, map countries: ${Object.keys(mapCountries).length}, ` +
     `points: ${Object.keys(points).length}, other land: ${other.length}`,
 );

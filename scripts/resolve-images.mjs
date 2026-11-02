@@ -25,7 +25,8 @@ const outFile = join(root, "src/data/generated/images.json");
 const imgDir = join(root, "src/assets/quiz-images");
 const WIDTH = 500;
 const UA = "QuizSite/1.0 (build-time image fetcher; https://github.com/cranecd/geography)";
-const FREE = /^(public domain|pd\b|cc0|cc[ -]by|gfdl|attribution|no restrictions|copyrighted free use)/i;
+// FAL (Free Art License) and KOGL Type 1 are free licences that require attribution, like CC BY(-SA).
+const FREE = /^(public domain|pd\b|cc0|cc[ -]by|gfdl|fal\b|kogl type 1|attribution|no restrictions|copyrighted free use)/i;
 
 const refreshAll = process.argv.includes("--all");
 const manifest = existsSync(outFile) ? JSON.parse(readFileSync(outFile, "utf8")) : {};

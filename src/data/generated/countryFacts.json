@@ -1,0 +1,2921 @@
+{
+ "source": "Wikidata",
+ "retrieved": "2026-11-01",
+ "countries": {
+  "AF": {
+   "currencies": [
+    "AFN"
+   ],
+   "population": {
+    "value": 41454761,
+    "year": 2023
+   },
+   "area_km2": 652230,
+   "capital": {
+    "en": "Kabul",
+    "es": "Kabul",
+    "fr": "Kaboul"
+   }
+  },
+  "AL": {
+   "currencies": [
+    "ALL"
+   ],
+   "population": {
+    "value": 2811655,
+    "year": 2023
+   },
+   "area_km2": 28748,
+   "capital": {
+    "en": "Tirana",
+    "es": "Tirana",
+    "fr": "Tirana"
+   }
+  },
+  "DZ": {
+   "currencies": [
+    "DZD"
+   ],
+   "population": {
+    "value": 46164219,
+    "year": 2023
+   },
+   "area_km2": 2381741,
+   "capital": {
+    "en": "Algiers",
+    "es": "Argel",
+    "fr": "Alger"
+   }
+  },
+  "AD": {
+   "currencies": [
+    "EUR"
+   ],
+   "population": {
+    "value": 89752,
+    "year": 2026
+   },
+   "area_km2": 468,
+   "capital": {
+    "en": "Andorra la Vella",
+    "es": "Andorra la Vieja",
+    "fr": "Andorre-la-Vieille"
+   }
+  },
+  "AO": {
+   "currencies": [
+    "AOA"
+   ],
+   "population": {
+    "value": 36749906,
+    "year": 2023
+   },
+   "area_km2": 1246700,
+   "capital": {
+    "en": "Luanda",
+    "es": "Luanda",
+    "fr": "Luanda"
+   }
+  },
+  "AG": {
+   "currencies": [
+    "XCD"
+   ],
+   "population": {
+    "value": 101489,
+    "year": 2023
+   },
+   "area_km2": 440,
+   "capital": {
+    "en": "Saint John's",
+    "es": null,
+    "fr": null
+   }
+  },
+  "AR": {
+   "currencies": [
+    "ARS"
+   ],
+   "population": {
+    "value": 47327407,
+    "year": 2022
+   },
+   "area_km2": 2780400,
+   "capital": {
+    "en": "Buenos Aires",
+    "es": "Buenos Aires",
+    "fr": "Buenos Aires"
+   }
+  },
+  "AM": {
+   "currencies": [
+    "AMD"
+   ],
+   "population": {
+    "value": 2930450,
+    "year": 2017
+   },
+   "area_km2": 29743,
+   "capital": {
+    "en": "Yerevan",
+    "es": "Ereván",
+    "fr": "Erevan"
+   }
+  },
+  "AU": {
+   "currencies": [
+    "AUD"
+   ],
+   "population": {
+    "value": 27614411,
+    "year": 2025
+   },
+   "area_km2": 7692024,
+   "capital": {
+    "en": "Canberra",
+    "es": "Canberra",
+    "fr": "Canberra"
+   }
+  },
+  "AT": {
+   "currencies": [
+    "EUR"
+   ],
+   "population": {
+    "value": 8979894,
+    "year": 2022
+   },
+   "area_km2": 83879,
+   "capital": {
+    "en": "Vienna",
+    "es": "Viena",
+    "fr": "Vienne"
+   }
+  },
+  "AZ": {
+   "currencies": [
+    "AZN"
+   ],
+   "population": {
+    "value": 10180770,
+    "year": 2023
+   },
+   "area_km2": 86600,
+   "capital": {
+    "en": "Baku",
+    "es": "Bakú",
+    "fr": "Bakou"
+   }
+  },
+  "BS": {
+   "currencies": [
+    "BSD"
+   ],
+   "population": {
+    "value": 399440,
+    "year": 2023
+   },
+   "area_km2": 13878,
+   "capital": {
+    "en": "Nassau",
+    "es": "Nasáu",
+    "fr": "Nassau"
+   }
+  },
+  "BH": {
+   "currencies": [
+    "BHD"
+   ],
+   "population": {
+    "value": 1569666,
+    "year": 2023
+   },
+   "area_km2": 787,
+   "capital": {
+    "en": "Manama",
+    "es": "Manama",
+    "fr": "Manama"
+   }
+  },
+  "BD": {
+   "currencies": [
+    "BDT"
+   ],
+   "population": {
+    "value": 171466990,
+    "year": 2023
+   },
+   "area_km2": 147570,
+   "capital": {
+    "en": "Dhaka",
+    "es": "Daca",
+    "fr": "Dacca"
+   }
+  },
+  "BB": {
+   "currencies": [
+    "BBD"
+   ],
+   "population": {
+    "value": 303431,
+    "year": 2023
+   },
+   "area_km2": 439,
+   "capital": {
+    "en": "Bridgetown",
+    "es": "Bridgetown",
+    "fr": "Bridgetown"
+   }
+  },
+  "BY": {
+   "currencies": [
+    "BYN"
+   ],
+   "population": {
+    "value": 9056080,
+    "year": 2026
+   },
+   "area_km2": 207597,
+   "capital": {
+    "en": "Minsk",
+    "es": "Minsk",
+    "fr": "Minsk"
+   }
+  },
+  "BE": {
+   "currencies": [
+    "EUR"
+   ],
+   "population": {
+    "value": 11825551,
+    "year": 2025
+   },
+   "area_km2": 30688,
+   "capital": {
+    "en": "Brussels",
+    "es": "Bruselas",
+    "fr": "Bruxelles"
+   }
+  },
+  "BZ": {
+   "currencies": [
+    "BZD"
+   ],
+   "population": {
+    "value": 411106,
+    "year": 2023
+   },
+   "area_km2": 22966,
+   "capital": {
+    "en": "Belmopan",
+    "es": "Belmopán",
+    "fr": "Belmopan"
+   }
+  },
+  "BJ": {
+   "currencies": [
+    "XOF"
+   ],
+   "population": {
+    "value": 14111034,
+    "year": 2023
+   },
+   "area_km2": 114763,
+   "capital": {
+    "en": "Porto-Novo",
+    "es": "Porto Novo",
+    "fr": "Porto-Novo"
+   }
+  },
+  "BT": {
+   "currencies": [
+    "BTN"
+   ],
+   "population": {
+    "value": 787424,
+    "year": 2023
+   },
+   "area_km2": 38394,
+   "capital": {
+    "en": "Thimphu",
+    "es": "Timbu",
+    "fr": "Thimphou"
+   }
+  },
+  "BO": {
+   "currencies": [
+    "BOB"
+   ],
+   "population": {
+    "value": 12244159,
+    "year": 2023
+   },
+   "area_km2": 1098581,
+   "capital": {
+    "en": "Sucre",
+    "es": "Sucre",
+    "fr": "Sucre"
+   }
+  },
+  "BA": {
+   "currencies": [
+    "BAM"
+   ],
+   "population": {
+    "value": 3816459,
+    "year": 2022
+   },
+   "area_km2": 51187,
+   "capital": {
+    "en": "Sarajevo",
+    "es": "Sarajevo",
+    "fr": "Sarajevo"
+   }
+  },
+  "BW": {
+   "currencies": [
+    "BWP"
+   ],
+   "population": {
+    "value": 2480244,
+    "year": 2023
+   },
+   "area_km2": 581737,
+   "capital": {
+    "en": "Gaborone",
+    "es": "Gaborone",
+    "fr": "Gaborone"
+   }
+  },
+  "BR": {
+   "currencies": [
+    "BRL"
+   ],
+   "population": {
+    "value": 214211951,
+    "year": 2026
+   },
+   "area_km2": 8515767,
+   "capital": {
+    "en": "Brasília",
+    "es": "Brasilia",
+    "fr": "Brasilia"
+   }
+  },
+  "BN": {
+   "currencies": [
+    "BND"
+   ],
+   "population": {
+    "value": 458949,
+    "year": 2023
+   },
+   "area_km2": 5765,
+   "capital": {
+    "en": "Bandar Seri Begawan",
+    "es": "Bandar Seri Begawan",
+    "fr": "Bandar Seri Begawan"
+   }
+  },
+  "BG": {
+   "currencies": [
+    "EUR"
+   ],
+   "population": {
+    "value": 6423207,
+    "year": 2025
+   },
+   "area_km2": 110994,
+   "capital": {
+    "en": "Sofia",
+    "es": "Sofía",
+    "fr": "Sofia"
+   }
+  },
+  "BF": {
+   "currencies": [
+    "XOF"
+   ],
+   "population": {
+    "value": 23025776,
+    "year": 2023
+   },
+   "area_km2": 274200,
+   "capital": {
+    "en": "Ouagadougou",
+    "es": "Uagadugú",
+    "fr": "Ouagadougou"
+   }
+  },
+  "BI": {
+   "currencies": [
+    "BIF"
+   ],
+   "population": {
+    "value": 13689450,
+    "year": 2023
+   },
+   "area_km2": 27834,
+   "capital": {
+    "en": "Gitega",
+    "es": "Guitega",
+    "fr": "Gitega"
+   }
+  },
+  "CV": {
+   "currencies": [
+    "CVE"
+   ],
+   "population": {
+    "value": 555988,
+    "year": 2020
+   },
+   "area_km2": 4033,
+   "capital": {
+    "en": "Praia",
+    "es": "Praia",
+    "fr": "Praia"
+   }
+  },
+  "KH": {
+   "currencies": [
+    "KHR"
+   ],
+   "population": {
+    "value": 17423880,
+    "year": 2023
+   },
+   "area_km2": 181035,
+   "capital": {
+    "en": "Phnom Penh",
+    "es": "Nom Pen",
+    "fr": "Phnom Penh"
+   }
+  },
+  "CM": {
+   "currencies": [
+    "XAF"
+   ],
+   "population": {
+    "value": 28372687,
+    "year": 2023
+   },
+   "area_km2": 475442,
+   "capital": {
+    "en": "Yaoundé",
+    "es": "Yaundé",
+    "fr": "Yaoundé"
+   }
+  },
+  "CA": {
+   "currencies": [
+    "CAD"
+   ],
+   "population": {
+    "value": 36991981,
+    "year": 2021
+   },
+   "area_km2": 9984670,
+   "capital": {
+    "en": "Ottawa",
+    "es": "Ottawa",
+    "fr": "Ottawa"
+   }
+  },
+  "CF": {
+   "currencies": [
+    "XAF"
+   ],
+   "population": {
+    "value": 5152421,
+    "year": 2023
+   },
+   "area_km2": 622984,
+   "capital": {
+    "en": "Bangui",
+    "es": "Bangui",
+    "fr": "Bangui"
+   }
+  },
+  "TD": {
+   "currencies": [
+    "XAF"
+   ],
+   "population": {
+    "value": 19319064,
+    "year": 2023
+   },
+   "area_km2": 1284000,
+   "capital": {
+    "en": "N'Djamena",
+    "es": "Yamena",
+    "fr": "N'Djaména"
+   }
+  },
+  "CL": {
+   "currencies": [
+    "CLP"
+   ],
+   "population": {
+    "value": 19458000,
+    "year": 2021
+   },
+   "area_km2": 756102,
+   "capital": {
+    "en": "Santiago",
+    "es": "Santiago de Chile",
+    "fr": "Santiago"
+   }
+  },
+  "CN": {
+   "currencies": [
+    "CNY"
+   ],
+   "population": {
+    "value": 1404890000,
+    "year": 2025
+   },
+   "area_km2": 9596961,
+   "capital": {
+    "en": "Beijing",
+    "es": "Pekín",
+    "fr": "Pékin"
+   }
+  },
+  "CO": {
+   "currencies": [
+    "COP"
+   ],
+   "population": {
+    "value": 52321152,
+    "year": 2023
+   },
+   "area_km2": 1141748,
+   "capital": {
+    "en": "Bogotá",
+    "es": "Bogotá",
+    "fr": "Bogota"
+   }
+  },
+  "KM": {
+   "currencies": [
+    "KMF"
+   ],
+   "population": {
+    "value": 902348,
+    "year": 2022
+   },
+   "area_km2": 2034,
+   "capital": {
+    "en": "Moroni",
+    "es": "Moroni",
+    "fr": "Moroni"
+   }
+  },
+  "CG": {
+   "currencies": [
+    "XAF"
+   ],
+   "population": {
+    "value": 6142180,
+    "year": 2023
+   },
+   "area_km2": 342000,
+   "capital": {
+    "en": "Brazzaville",
+    "es": "Brazzaville",
+    "fr": "Brazzaville"
+   }
+  },
+  "CD": {
+   "currencies": [
+    "CDF"
+   ],
+   "population": {
+    "value": 105789731,
+    "year": 2023
+   },
+   "area_km2": 2344858,
+   "capital": {
+    "en": "Kinshasa",
+    "es": "Kinsasa",
+    "fr": "Kinshasa"
+   }
+  },
+  "CR": {
+   "currencies": [
+    "CRC"
+   ],
+   "population": {
+    "value": 5265575,
+    "year": 2024
+   },
+   "area_km2": 51180,
+   "capital": {
+    "en": "San José",
+    "es": "San José",
+    "fr": "San José"
+   }
+  },
+  "CI": {
+   "currencies": [
+    "XOF"
+   ],
+   "population": {
+    "value": 31165654,
+    "year": 2023
+   },
+   "area_km2": 322463,
+   "capital": {
+    "en": "Yamoussoukro",
+    "es": "Yamusukro",
+    "fr": "Yamoussoukro"
+   }
+  },
+  "HR": {
+   "currencies": [
+    "EUR"
+   ],
+   "population": {
+    "value": 3871833,
+    "year": 2021
+   },
+   "area_km2": 56594,
+   "capital": {
+    "en": "Zagreb",
+    "es": "Zagreb",
+    "fr": "Zagreb"
+   }
+  },
+  "CU": {
+   "currencies": [
+    "CUP"
+   ],
+   "population": {
+    "value": 10985974,
+    "year": 2023
+   },
+   "area_km2": 109884,
+   "capital": {
+    "en": "Havana",
+    "es": "La Habana",
+    "fr": "La Havane"
+   }
+  },
+  "CY": {
+   "currencies": [
+    "EUR"
+   ],
+   "population": {
+    "value": 1344976,
+    "year": 2023
+   },
+   "area_km2": 9242,
+   "capital": {
+    "en": "Nicosia",
+    "es": "Nicosia",
+    "fr": "Nicosie"
+   }
+  },
+  "CZ": {
+   "currencies": [
+    "CZK"
+   ],
+   "population": {
+    "value": 10909500,
+    "year": 2025
+   },
+   "area_km2": 78871,
+   "capital": {
+    "en": "Prague",
+    "es": "Praga",
+    "fr": "Prague"
+   }
+  },
+  "DK": {
+   "currencies": [
+    "DKK"
+   ],
+   "population": {
+    "value": 5822863,
+    "year": 2020
+   },
+   "area_km2": 42925,
+   "capital": {
+    "en": "Copenhagen",
+    "es": "Copenhague",
+    "fr": "Copenhague"
+   }
+  },
+  "DJ": {
+   "currencies": [
+    "DJF"
+   ],
+   "population": {
+    "value": 1152944,
+    "year": 2023
+   },
+   "area_km2": 23200,
+   "capital": {
+    "en": "Djibouti",
+    "es": "Ciudad de Yibuti",
+    "fr": "Djibouti"
+   }
+  },
+  "DM": {
+   "currencies": [
+    "XCD"
+   ],
+   "population": {
+    "value": 74656,
+    "year": 2023
+   },
+   "area_km2": 751,
+   "capital": {
+    "en": "Roseau",
+    "es": "Roseau",
+    "fr": "Roseau"
+   }
+  },
+  "DO": {
+   "currencies": [
+    "DOP"
+   ],
+   "population": {
+    "value": 10760028,
+    "year": 2022
+   },
+   "area_km2": 48671,
+   "capital": {
+    "en": "Santo Domingo",
+    "es": "Santo Domingo",
+    "fr": "Saint-Domingue"
+   }
+  },
+  "EC": {
+   "currencies": [
+    "USD"
+   ],
+   "population": {
+    "value": 16938986,
+    "year": 2022
+   },
+   "area_km2": 257204,
+   "capital": {
+    "en": "Quito",
+    "es": "Quito",
+    "fr": "Quito"
+   }
+  },
+  "EG": {
+   "currencies": [
+    "EGP"
+   ],
+   "population": {
+    "value": 114535772,
+    "year": 2023
+   },
+   "area_km2": 1010408,
+   "capital": {
+    "en": "Cairo",
+    "es": "El Cairo",
+    "fr": "Le Caire"
+   }
+  },
+  "SV": {
+   "currencies": [
+    "USD"
+   ],
+   "population": {
+    "value": 6029976,
+    "year": 2024
+   },
+   "area_km2": 21041,
+   "capital": {
+    "en": "San Salvador",
+    "es": "San Salvador",
+    "fr": "San Salvador"
+   }
+  },
+  "GQ": {
+   "currencies": [
+    "XAF"
+   ],
+   "population": {
+    "value": 1847549,
+    "year": 2023
+   },
+   "area_km2": 28051,
+   "capital": {
+    "en": "Malabo",
+    "es": null,
+    "fr": null
+   }
+  },
+  "ER": {
+   "currencies": [
+    "ERN"
+   ],
+   "population": {
+    "value": 3497000,
+    "year": 2019
+   },
+   "area_km2": 117600,
+   "capital": {
+    "en": "Asmara",
+    "es": "Asmara",
+    "fr": "Asmara"
+   }
+  },
+  "EE": {
+   "currencies": [
+    "EUR"
+   ],
+   "population": {
+    "value": 1369995,
+    "year": 2025
+   },
+   "area_km2": 45335,
+   "capital": {
+    "en": "Tallinn",
+    "es": "Tallin",
+    "fr": "Tallinn"
+   }
+  },
+  "SZ": {
+   "currencies": [
+    "SZL"
+   ],
+   "population": {
+    "value": 1230506,
+    "year": 2023
+   },
+   "area_km2": 17364,
+   "capital": {
+    "en": "Mbabane",
+    "es": "Mbabane",
+    "fr": "Mbabane"
+   }
+  },
+  "ET": {
+   "currencies": [
+    "ETB"
+   ],
+   "population": {
+    "value": 128691692,
+    "year": 2023
+   },
+   "area_km2": 1104300,
+   "capital": {
+    "en": "Addis Ababa",
+    "es": "Adís Abeba",
+    "fr": "Addis-Abeba"
+   }
+  },
+  "FJ": {
+   "currencies": [
+    "FJD"
+   ],
+   "population": {
+    "value": 926276,
+    "year": 2018
+   },
+   "area_km2": 18274,
+   "capital": {
+    "en": "Suva",
+    "es": "Suva",
+    "fr": "Suva"
+   }
+  },
+  "FI": {
+   "currencies": [
+    "EUR"
+   ],
+   "population": {
+    "value": 5652881,
+    "year": 2025
+   },
+   "area_km2": 338478,
+   "capital": {
+    "en": "Helsinki",
+    "es": "Helsinki",
+    "fr": "Helsinki"
+   }
+  },
+  "FR": {
+   "currencies": [
+    "EUR"
+   ],
+   "population": {
+    "value": 68605616,
+    "year": 2025
+   },
+   "area_km2": 643801,
+   "capital": {
+    "en": "Paris",
+    "es": "París",
+    "fr": "Paris"
+   }
+  },
+  "GA": {
+   "currencies": [
+    "XAF"
+   ],
+   "population": {
+    "value": 2025137,
+    "year": 2017
+   },
+   "area_km2": 267667,
+   "capital": {
+    "en": "Libreville",
+    "es": "Libreville",
+    "fr": "Libreville"
+   }
+  },
+  "GM": {
+   "currencies": [
+    "GMD"
+   ],
+   "population": {
+    "value": 2639916,
+    "year": 2021
+   },
+   "area_km2": 11300,
+   "capital": {
+    "en": "Banjul",
+    "es": "Banjul",
+    "fr": "Banjul"
+   }
+  },
+  "GE": {
+   "currencies": [
+    "GEL"
+   ],
+   "population": {
+    "value": 3929581,
+    "year": 2024
+   },
+   "area_km2": 69700,
+   "capital": {
+    "en": "Tbilisi",
+    "es": "Tiflis",
+    "fr": "Tbilissi"
+   }
+  },
+  "DE": {
+   "currencies": [
+    "EUR"
+   ],
+   "population": {
+    "value": 83467117,
+    "year": 2025
+   },
+   "area_km2": 357588,
+   "capital": {
+    "en": "Berlin",
+    "es": "Berlín",
+    "fr": "Berlin"
+   }
+  },
+  "GH": {
+   "currencies": [
+    "GHS"
+   ],
+   "population": {
+    "value": 32833031,
+    "year": 2021
+   },
+   "area_km2": 238535,
+   "capital": {
+    "en": "Accra",
+    "es": "Acra",
+    "fr": "Accra"
+   }
+  },
+  "GR": {
+   "currencies": [
+    "EUR"
+   ],
+   "population": {
+    "value": 10482487,
+    "year": 2021
+   },
+   "area_km2": 131957,
+   "capital": {
+    "en": "Athens",
+    "es": "Atenas",
+    "fr": "Athènes"
+   }
+  },
+  "GD": {
+   "currencies": [
+    "XCD"
+   ],
+   "population": {
+    "value": 114299,
+    "year": 2023
+   },
+   "area_km2": 349,
+   "capital": {
+    "en": "Saint George's",
+    "es": "Saint George",
+    "fr": "Saint-Georges"
+   }
+  },
+  "GT": {
+   "currencies": [
+    "GTQ"
+   ],
+   "population": {
+    "value": 17263239,
+    "year": 2018
+   },
+   "area_km2": 108889,
+   "capital": {
+    "en": "Guatemala City",
+    "es": "Ciudad de Guatemala",
+    "fr": "Guatemala"
+   }
+  },
+  "GN": {
+   "currencies": [
+    "GNF"
+   ],
+   "population": {
+    "value": 17521167,
+    "year": 2025
+   },
+   "area_km2": 245857,
+   "capital": {
+    "en": "Conakry",
+    "es": "Conakri",
+    "fr": "Conakry"
+   }
+  },
+  "GW": {
+   "currencies": [
+    "XOF"
+   ],
+   "population": {
+    "value": 1861283,
+    "year": 2017
+   },
+   "area_km2": 36125,
+   "capital": {
+    "en": "Bissau",
+    "es": "Bisáu",
+    "fr": "Bissau"
+   }
+  },
+  "GY": {
+   "currencies": [
+    "GYD"
+   ],
+   "population": {
+    "value": 878674,
+    "year": 2022
+   },
+   "area_km2": 214970,
+   "capital": {
+    "en": "Georgetown",
+    "es": "Georgetown",
+    "fr": "Georgetown"
+   }
+  },
+  "HT": {
+   "currencies": [
+    "HTG"
+   ],
+   "population": {
+    "value": 10981229,
+    "year": 2017
+   },
+   "area_km2": 27750,
+   "capital": {
+    "en": "Port-au-Prince",
+    "es": "Puerto Príncipe",
+    "fr": "Port-au-Prince"
+   }
+  },
+  "HN": {
+   "currencies": [
+    "HNL"
+   ],
+   "population": {
+    "value": 8303771,
+    "year": 2013
+   },
+   "area_km2": 112492,
+   "capital": {
+    "en": "Tegucigalpa",
+    "es": "Tegucigalpa",
+    "fr": "Tegucigalpa"
+   }
+  },
+  "HU": {
+   "currencies": [
+    "HUF"
+   ],
+   "population": {
+    "value": 9603634,
+    "year": 2022
+   },
+   "area_km2": 93011,
+   "capital": {
+    "en": "Budapest",
+    "es": "Budapest",
+    "fr": "Budapest"
+   }
+  },
+  "IS": {
+   "currencies": [
+    "ISK"
+   ],
+   "population": {
+    "value": 364260,
+    "year": 2019
+   },
+   "area_km2": 103004,
+   "capital": {
+    "en": "Reykjavik",
+    "es": "Reikiavik",
+    "fr": "Reykjavik"
+   }
+  },
+  "IN": {
+   "currencies": [
+    "INR"
+   ],
+   "population": {
+    "value": 1326093247,
+    "year": 2020
+   },
+   "area_km2": 3287263,
+   "capital": {
+    "en": "New Delhi",
+    "es": "Nueva Delhi",
+    "fr": "New Delhi"
+   }
+  },
+  "ID": {
+   "currencies": [
+    "IDR"
+   ],
+   "population": {
+    "value": 275439000,
+    "year": 2021
+   },
+   "area_km2": 1904570,
+   "capital": {
+    "en": "Jakarta",
+    "es": "Yakarta",
+    "fr": "Jakarta"
+   }
+  },
+  "IR": {
+   "currencies": [
+    "IRR"
+   ],
+   "population": {
+    "value": 92417700,
+    "year": 2025
+   },
+   "area_km2": 1648195,
+   "capital": {
+    "en": "Tehran",
+    "es": "Teherán",
+    "fr": "Téhéran"
+   }
+  },
+  "IQ": {
+   "currencies": [
+    "IQD"
+   ],
+   "population": {
+    "value": 38274618,
+    "year": 2017
+   },
+   "area_km2": 437072,
+   "capital": {
+    "en": "Baghdad",
+    "es": "Bagdad",
+    "fr": "Bagdad"
+   }
+  },
+  "IE": {
+   "currencies": [
+    "EUR"
+   ],
+   "population": {
+    "value": 5149139,
+    "year": 2022
+   },
+   "area_km2": 69797,
+   "capital": {
+    "en": "Dublin",
+    "es": "Dublín",
+    "fr": "Dublin"
+   }
+  },
+  "IL": {
+   "currencies": [
+    "ILS"
+   ],
+   "population": {
+    "value": 9840000,
+    "year": 2023
+   },
+   "area_km2": 20770,
+   "capital": {
+    "en": "Jerusalem",
+    "es": "Jerusalén",
+    "fr": "Jérusalem"
+   }
+  },
+  "IT": {
+   "currencies": [
+    "EUR"
+   ],
+   "population": {
+    "value": 58850717,
+    "year": 2023
+   },
+   "area_km2": 302068,
+   "capital": {
+    "en": "Rome",
+    "es": "Roma",
+    "fr": "Rome"
+   }
+  },
+  "JM": {
+   "currencies": [
+    "JMD"
+   ],
+   "population": {
+    "value": 2697983,
+    "year": 2011
+   },
+   "area_km2": 10992,
+   "capital": {
+    "en": "Kingston",
+    "es": "Kingston",
+    "fr": "Kingston"
+   }
+  },
+  "JP": {
+   "currencies": [
+    "JPY"
+   ],
+   "population": {
+    "value": 123802000,
+    "year": 2024
+   },
+   "area_km2": 377974,
+   "capital": {
+    "en": "Tokyo",
+    "es": "Tokio",
+    "fr": "Tokyo"
+   }
+  },
+  "JO": {
+   "currencies": [
+    "JOD"
+   ],
+   "population": {
+    "value": 10428241,
+    "year": 2019
+   },
+   "area_km2": 89341,
+   "capital": {
+    "en": "Amman",
+    "es": "Amán",
+    "fr": "Amman"
+   }
+  },
+  "KZ": {
+   "currencies": [
+    "KZT"
+   ],
+   "population": {
+    "value": 20139914,
+    "year": 2024
+   },
+   "area_km2": 2724900,
+   "capital": {
+    "en": "Astana",
+    "es": "Astaná",
+    "fr": "Astana"
+   }
+  },
+  "KE": {
+   "currencies": [
+    "KES"
+   ],
+   "population": {
+    "value": 48468138,
+    "year": 2017
+   },
+   "area_km2": 581309,
+   "capital": {
+    "en": "Nairobi",
+    "es": "Nairobi",
+    "fr": "Nairobi"
+   }
+  },
+  "KI": {
+   "currencies": [
+    "AUD"
+   ],
+   "population": {
+    "value": 134518,
+    "year": 2024
+   },
+   "area_km2": 811,
+   "capital": {
+    "en": "Tarawa",
+    "es": "Tarawa Sur",
+    "fr": "Tarawa-Sud"
+   }
+  },
+  "KW": {
+   "currencies": [
+    "KWD"
+   ],
+   "population": {
+    "value": 4464000,
+    "year": 2020
+   },
+   "area_km2": 17818,
+   "capital": {
+    "en": "Kuwait City",
+    "es": "Ciudad de Kuwait",
+    "fr": "Koweït"
+   }
+  },
+  "KG": {
+   "currencies": [
+    "KGS"
+   ],
+   "population": {
+    "value": 7281800,
+    "year": 2025
+   },
+   "area_km2": 199951,
+   "capital": {
+    "en": "Bishkek",
+    "es": "Biskek",
+    "fr": "Bichkek"
+   }
+  },
+  "LA": {
+   "currencies": [
+    "LAK"
+   ],
+   "population": {
+    "value": 6858160,
+    "year": 2017
+   },
+   "area_km2": 236800,
+   "capital": {
+    "en": "Vientiane",
+    "es": "Vientián",
+    "fr": "Vientiane"
+   }
+  },
+  "LV": {
+   "currencies": [
+    "EUR"
+   ],
+   "population": {
+    "value": 1845096,
+    "year": 2026
+   },
+   "area_km2": 64594,
+   "capital": {
+    "en": "Riga",
+    "es": "Riga",
+    "fr": "Riga"
+   }
+  },
+  "LB": {
+   "currencies": [
+    "LBP"
+   ],
+   "population": {
+    "value": 6100075,
+    "year": 2018
+   },
+   "area_km2": 10452,
+   "capital": {
+    "en": "Beirut",
+    "es": "Beirut",
+    "fr": "Beyrouth"
+   }
+  },
+  "LS": {
+   "currencies": [
+    "LSL",
+    "ZAR"
+   ],
+   "population": {
+    "value": 2007201,
+    "year": 2016
+   },
+   "area_km2": 30355,
+   "capital": {
+    "en": "Maseru",
+    "es": "Maseru",
+    "fr": "Maseru"
+   }
+  },
+  "LR": {
+   "currencies": [
+    "LRD",
+    "USD"
+   ],
+   "population": {
+    "value": 5214030,
+    "year": 2021
+   },
+   "area_km2": 111369,
+   "capital": {
+    "en": "Monrovia",
+    "es": "Monrovia",
+    "fr": "Monrovia"
+   }
+  },
+  "LY": {
+   "currencies": [
+    "LYD"
+   ],
+   "population": {
+    "value": 7381023,
+    "year": 2024
+   },
+   "area_km2": 1759541,
+   "capital": {
+    "en": "Tripoli",
+    "es": "Trípoli",
+    "fr": "Tripoli"
+   }
+  },
+  "LI": {
+   "currencies": [
+    "CHF"
+   ],
+   "population": {
+    "value": 37922,
+    "year": 2017
+   },
+   "area_km2": 160,
+   "capital": {
+    "en": "Vaduz",
+    "es": "Vaduz",
+    "fr": "Vaduz"
+   }
+  },
+  "LT": {
+   "currencies": [
+    "EUR"
+   ],
+   "population": {
+    "value": 2860002,
+    "year": 2023
+   },
+   "area_km2": 65300,
+   "capital": {
+    "en": "Vilnius",
+    "es": "Vilna",
+    "fr": "Vilnius"
+   }
+  },
+  "LU": {
+   "currencies": [
+    "EUR"
+   ],
+   "population": {
+    "value": 690959,
+    "year": 2026
+   },
+   "area_km2": 2593,
+   "capital": {
+    "en": "Luxembourg City",
+    "es": "Luxemburgo",
+    "fr": "Luxembourg"
+   }
+  },
+  "MG": {
+   "currencies": [
+    "MGA"
+   ],
+   "population": {
+    "value": 31964956,
+    "year": 2024
+   },
+   "area_km2": 587295,
+   "capital": {
+    "en": "Antananarivo",
+    "es": "Antananarivo",
+    "fr": "Antananarivo"
+   }
+  },
+  "MW": {
+   "currencies": [
+    "MWK"
+   ],
+   "population": {
+    "value": 17563749,
+    "year": 2018
+   },
+   "area_km2": 118484,
+   "capital": {
+    "en": "Lilongwe",
+    "es": "Lilongüe",
+    "fr": "Lilongwe"
+   }
+  },
+  "MY": {
+   "currencies": [
+    "MYR"
+   ],
+   "population": {
+    "value": 34231700,
+    "year": 2025
+   },
+   "area_km2": 330803,
+   "capital": {
+    "en": "Kuala Lumpur",
+    "es": "Kuala Lumpur",
+    "fr": "Kuala Lumpur"
+   }
+  },
+  "MV": {
+   "currencies": [
+    "MVR"
+   ],
+   "population": {
+    "value": 436330,
+    "year": 2017
+   },
+   "area_km2": 298,
+   "capital": {
+    "en": "Malé",
+    "es": "Malé",
+    "fr": "Malé"
+   }
+  },
+  "ML": {
+   "currencies": [
+    "XOF"
+   ],
+   "population": {
+    "value": 22395489,
+    "year": 2022
+   },
+   "area_km2": 1240192,
+   "capital": {
+    "en": "Bamako",
+    "es": "Bamako",
+    "fr": "Bamako"
+   }
+  },
+  "MT": {
+   "currencies": [
+    "EUR"
+   ],
+   "population": {
+    "value": 553214,
+    "year": 2023
+   },
+   "area_km2": 316,
+   "capital": {
+    "en": "Valletta",
+    "es": "La Valeta",
+    "fr": "La Valette"
+   }
+  },
+  "MH": {
+   "currencies": [
+    "USD"
+   ],
+   "population": {
+    "value": 53127,
+    "year": 2017
+   },
+   "area_km2": 181,
+   "capital": {
+    "en": "Majuro",
+    "es": "Majuro",
+    "fr": "Majuro"
+   }
+  },
+  "MR": {
+   "currencies": [
+    "MRU"
+   ],
+   "population": {
+    "value": 4736139,
+    "year": 2022
+   },
+   "area_km2": 1030700,
+   "capital": {
+    "en": "Nouakchott",
+    "es": "Nuakchot",
+    "fr": "Nouakchott"
+   }
+  },
+  "MU": {
+   "currencies": [
+    "MUR"
+   ],
+   "population": {
+    "value": 1264613,
+    "year": 2017
+   },
+   "area_km2": 2040,
+   "capital": {
+    "en": "Port Louis",
+    "es": "Port Louis",
+    "fr": "Port-Louis"
+   }
+  },
+  "MX": {
+   "currencies": [
+    "MXN"
+   ],
+   "population": {
+    "value": 132274416,
+    "year": 2024
+   },
+   "area_km2": 1964375,
+   "capital": {
+    "en": "Mexico City",
+    "es": "Ciudad de México",
+    "fr": "Mexico"
+   }
+  },
+  "FM": {
+   "currencies": [
+    "USD"
+   ],
+   "population": {
+    "value": 110000,
+    "year": null
+   },
+   "area_km2": 702,
+   "capital": {
+    "en": "Palikir",
+    "es": "Palikir",
+    "fr": "Palikir"
+   }
+  },
+  "MD": {
+   "currencies": [
+    "MDL"
+   ],
+   "population": {
+    "value": 2409207,
+    "year": 2024
+   },
+   "area_km2": 33844,
+   "capital": {
+    "en": "Chișinău",
+    "es": "Chisináu",
+    "fr": "Chișinău"
+   }
+  },
+  "MC": {
+   "currencies": [
+    "EUR"
+   ],
+   "population": {
+    "value": 38857,
+    "year": 2025
+   },
+   "area_km2": 2,
+   "capital": {
+    "en": "Monaco",
+    "es": "Mónaco",
+    "fr": "Monaco"
+   }
+  },
+  "MN": {
+   "currencies": [
+    "MNT"
+   ],
+   "population": {
+    "value": 3409939,
+    "year": 2021
+   },
+   "area_km2": 1564116,
+   "capital": {
+    "en": "Ulaanbaatar",
+    "es": "Ulán Bator",
+    "fr": "Oulan-Bator"
+   }
+  },
+  "ME": {
+   "currencies": [
+    "EUR"
+   ],
+   "population": {
+    "value": 617213,
+    "year": 2022
+   },
+   "area_km2": 13883,
+   "capital": {
+    "en": "Podgorica",
+    "es": "Podgorica",
+    "fr": "Podgorica"
+   }
+  },
+  "MA": {
+   "currencies": [
+    "MAD"
+   ],
+   "population": {
+    "value": 36828330,
+    "year": 2024
+   },
+   "area_km2": 446550,
+   "capital": {
+    "en": "Rabat",
+    "es": "Rabat",
+    "fr": "Rabat"
+   }
+  },
+  "MZ": {
+   "currencies": [
+    "MZN"
+   ],
+   "population": {
+    "value": 29668834,
+    "year": 2017
+   },
+   "area_km2": 801590,
+   "capital": {
+    "en": "Maputo",
+    "es": "Maputo",
+    "fr": "Maputo"
+   }
+  },
+  "MM": {
+   "currencies": [
+    "MMK"
+   ],
+   "population": {
+    "value": 53370609,
+    "year": 2017
+   },
+   "area_km2": 676577,
+   "capital": {
+    "en": "Naypyidaw",
+    "es": "Naipyidó",
+    "fr": "Naypyidaw"
+   }
+  },
+  "NA": {
+   "currencies": [
+    "NAD",
+    "ZAR"
+   ],
+   "population": {
+    "value": 2533794,
+    "year": 2017
+   },
+   "area_km2": 825615,
+   "capital": {
+    "en": "Windhoek",
+    "es": "Windhoek",
+    "fr": "Windhoek"
+   }
+  },
+  "NR": {
+   "currencies": [
+    "AUD"
+   ],
+   "population": {
+    "value": 11680,
+    "year": 2021
+   },
+   "area_km2": 21,
+   "capital": {
+    "en": "Yaren",
+    "es": "Yaren",
+    "fr": "Yaren"
+   }
+  },
+  "NP": {
+   "currencies": [
+    "NPR"
+   ],
+   "population": {
+    "value": 29164578,
+    "year": 2021
+   },
+   "area_km2": 147181,
+   "capital": {
+    "en": "Kathmandu",
+    "es": "Katmandú",
+    "fr": "Katmandou"
+   }
+  },
+  "NL": {
+   "currencies": [
+    "EUR"
+   ],
+   "population": {
+    "value": 17100715,
+    "year": 2013
+   },
+   "area_km2": 42201,
+   "capital": {
+    "en": "Amsterdam",
+    "es": "Ámsterdam",
+    "fr": "Amsterdam"
+   }
+  },
+  "NZ": {
+   "currencies": [
+    "NZD"
+   ],
+   "population": {
+    "value": 5307800,
+    "year": 2024
+   },
+   "area_km2": 268021,
+   "capital": {
+    "en": "Wellington",
+    "es": "Wellington",
+    "fr": "Wellington"
+   }
+  },
+  "NI": {
+   "currencies": [
+    "NIO"
+   ],
+   "population": {
+    "value": 5142098,
+    "year": 2005
+   },
+   "area_km2": 120340,
+   "capital": {
+    "en": "Managua",
+    "es": "Managua",
+    "fr": "Managua"
+   }
+  },
+  "NE": {
+   "currencies": [
+    "XOF"
+   ],
+   "population": {
+    "value": 21477348,
+    "year": 2017
+   },
+   "area_km2": 1267000,
+   "capital": {
+    "en": "Niamey",
+    "es": "Niamey",
+    "fr": "Niamey"
+   }
+  },
+  "NG": {
+   "currencies": [
+    "NGN"
+   ],
+   "population": {
+    "value": 211400708,
+    "year": 2021
+   },
+   "area_km2": 923768,
+   "capital": {
+    "en": "Abuja",
+    "es": "Abuya",
+    "fr": "Abuja"
+   }
+  },
+  "KP": {
+   "currencies": [
+    "KPW"
+   ],
+   "population": {
+    "value": 26418204,
+    "year": 2023
+   },
+   "area_km2": 120540,
+   "capital": {
+    "en": "Pyongyang",
+    "es": "Pionyang",
+    "fr": "Pyongyang"
+   }
+  },
+  "MK": {
+   "currencies": [
+    "MKD"
+   ],
+   "population": {
+    "value": 1836713,
+    "year": 2021
+   },
+   "area_km2": 25713,
+   "capital": {
+    "en": "Skopje",
+    "es": "Skopie",
+    "fr": "Skopje"
+   }
+  },
+  "NO": {
+   "currencies": [
+    "NOK"
+   ],
+   "population": {
+    "value": 5627400,
+    "year": 2026
+   },
+   "area_km2": 385207,
+   "capital": {
+    "en": "Oslo",
+    "es": "Oslo",
+    "fr": "Oslo"
+   }
+  },
+  "OM": {
+   "currencies": [
+    "OMR"
+   ],
+   "population": {
+    "value": 4829480,
+    "year": 2018
+   },
+   "area_km2": 309500,
+   "capital": {
+    "en": "Muscat",
+    "es": "Mascate",
+    "fr": "Mascate"
+   }
+  },
+  "PK": {
+   "currencies": [
+    "PKR"
+   ],
+   "population": {
+    "value": 223773700,
+    "year": 2021
+   },
+   "area_km2": 881913,
+   "capital": {
+    "en": "Islamabad",
+    "es": "Islamabad",
+    "fr": "Islamabad"
+   }
+  },
+  "PW": {
+   "currencies": [
+    "USD"
+   ],
+   "population": {
+    "value": 21729,
+    "year": 2017
+   },
+   "area_km2": 466,
+   "capital": {
+    "en": "Ngerulmud",
+    "es": "Ngerulmud",
+    "fr": "Ngerulmud"
+   }
+  },
+  "PA": {
+   "currencies": [
+    "PAB",
+    "USD"
+   ],
+   "population": {
+    "value": 4570133,
+    "year": 2025
+   },
+   "area_km2": 74177,
+   "capital": {
+    "en": "Panama City",
+    "es": "Ciudad de Panamá",
+    "fr": "Panama"
+   }
+  },
+  "PG": {
+   "currencies": [
+    "PGK"
+   ],
+   "population": {
+    "value": 8935000,
+    "year": 2020
+   },
+   "area_km2": 462840,
+   "capital": {
+    "en": "Port Moresby",
+    "es": "Puerto Moresby",
+    "fr": "Port Moresby"
+   }
+  },
+  "PY": {
+   "currencies": [
+    "PYG"
+   ],
+   "population": {
+    "value": 6811297,
+    "year": 2017
+   },
+   "area_km2": 406756,
+   "capital": {
+    "en": "Asunción",
+    "es": "Asunción",
+    "fr": "Asuncion"
+   }
+  },
+  "PE": {
+   "currencies": [
+    "PEN"
+   ],
+   "population": {
+    "value": 34157732,
+    "year": 2025
+   },
+   "area_km2": 1285216,
+   "capital": {
+    "en": "Lima",
+    "es": "Lima",
+    "fr": "Lima"
+   }
+  },
+  "PH": {
+   "currencies": [
+    "PHP"
+   ],
+   "population": {
+    "value": 112729484,
+    "year": 2024
+   },
+   "area_km2": 343448,
+   "capital": {
+    "en": "Manila",
+    "es": "Manila",
+    "fr": "Manille"
+   }
+  },
+  "PL": {
+   "currencies": [
+    "PLN"
+   ],
+   "population": {
+    "value": 37563071,
+    "year": 2024
+   },
+   "area_km2": 312683,
+   "capital": {
+    "en": "Warsaw",
+    "es": "Varsovia",
+    "fr": "Varsovie"
+   }
+  },
+  "PT": {
+   "currencies": [
+    "EUR"
+   ],
+   "population": {
+    "value": 10347892,
+    "year": 2021
+   },
+   "area_km2": 92225,
+   "capital": {
+    "en": "Lisbon",
+    "es": "Lisboa",
+    "fr": "Lisbonne"
+   }
+  },
+  "QA": {
+   "currencies": [
+    "QAR"
+   ],
+   "population": {
+    "value": 2639211,
+    "year": 2017
+   },
+   "area_km2": 11437,
+   "capital": {
+    "en": "Doha",
+    "es": "Doha",
+    "fr": "Doha"
+   }
+  },
+  "RO": {
+   "currencies": [
+    "RON"
+   ],
+   "population": {
+    "value": 19053815,
+    "year": 2022
+   },
+   "area_km2": 238397,
+   "capital": {
+    "en": "Bucharest",
+    "es": "Bucarest",
+    "fr": "Bucarest"
+   }
+  },
+  "RU": {
+   "currencies": [
+    "RUB"
+   ],
+   "population": {
+    "value": 146119928,
+    "year": 2025
+   },
+   "area_km2": 17075400,
+   "capital": {
+    "en": "Moscow",
+    "es": "Moscú",
+    "fr": "Moscou"
+   }
+  },
+  "RW": {
+   "currencies": [
+    "RWF"
+   ],
+   "population": {
+    "value": 14569341,
+    "year": 2025
+   },
+   "area_km2": 26338,
+   "capital": {
+    "en": "Kigali",
+    "es": "Kigali",
+    "fr": "Kigali"
+   }
+  },
+  "KN": {
+   "currencies": [
+    "XCD"
+   ],
+   "population": {
+    "value": 46922,
+    "year": 2025
+   },
+   "area_km2": 269,
+   "capital": {
+    "en": "Basseterre",
+    "es": "Basseterre",
+    "fr": "Basseterre"
+   }
+  },
+  "LC": {
+   "currencies": [
+    "XCD"
+   ],
+   "population": {
+    "value": 167591,
+    "year": 2023
+   },
+   "area_km2": 617,
+   "capital": {
+    "en": "Castries",
+    "es": "Castries",
+    "fr": "Castries"
+   }
+  },
+  "VC": {
+   "currencies": [
+    "XCD"
+   ],
+   "population": {
+    "value": 109296,
+    "year": 2023
+   },
+   "area_km2": 389,
+   "capital": {
+    "en": "Kingstown",
+    "es": "Kingstown",
+    "fr": "Kingstown"
+   }
+  },
+  "WS": {
+   "currencies": [
+    "WST"
+   ],
+   "population": {
+    "value": 200010,
+    "year": 2021
+   },
+   "area_km2": 2842,
+   "capital": {
+    "en": "Apia",
+    "es": "Apia",
+    "fr": "Apia"
+   }
+  },
+  "SM": {
+   "currencies": [
+    "EUR"
+   ],
+   "population": {
+    "value": 34167,
+    "year": 2026
+   },
+   "area_km2": 61,
+   "capital": {
+    "en": "San Marino",
+    "es": "San Marino",
+    "fr": "Saint-Marin"
+   }
+  },
+  "ST": {
+   "currencies": [
+    "STN"
+   ],
+   "population": {
+    "value": 204327,
+    "year": 2017
+   },
+   "area_km2": 1001,
+   "capital": {
+    "en": "São Tomé",
+    "es": "Santo Tomé",
+    "fr": "São Tomé"
+   }
+  },
+  "SA": {
+   "currencies": [
+    "SAR"
+   ],
+   "population": {
+    "value": 33000000,
+    "year": 2018
+   },
+   "area_km2": 2250000,
+   "capital": {
+    "en": "Riyadh",
+    "es": "Riad",
+    "fr": "Riyad"
+   }
+  },
+  "SN": {
+   "currencies": [
+    "XOF"
+   ],
+   "population": {
+    "value": 16876720,
+    "year": 2021
+   },
+   "area_km2": 196722,
+   "capital": {
+    "en": "Dakar",
+    "es": "Dakar",
+    "fr": "Dakar"
+   }
+  },
+  "RS": {
+   "currencies": [
+    "RSD"
+   ],
+   "population": {
+    "value": 6605168,
+    "year": 2024
+   },
+   "area_km2": 88499,
+   "capital": {
+    "en": "Belgrade",
+    "es": "Belgrado",
+    "fr": "Belgrade"
+   }
+  },
+  "SC": {
+   "currencies": [
+    "SCR"
+   ],
+   "population": {
+    "value": 119773,
+    "year": 2023
+   },
+   "area_km2": 459,
+   "capital": {
+    "en": "Victoria",
+    "es": "Victoria",
+    "fr": "Victoria"
+   }
+  },
+  "SL": {
+   "currencies": [
+    "SLE"
+   ],
+   "population": {
+    "value": 7557212,
+    "year": 2017
+   },
+   "area_km2": 71740,
+   "capital": {
+    "en": "Freetown",
+    "es": "Freetown",
+    "fr": "Freetown"
+   }
+  },
+  "SG": {
+   "currencies": [
+    "SGD"
+   ],
+   "population": {
+    "value": 5866139,
+    "year": 2021
+   },
+   "area_km2": 719,
+   "capital": {
+    "en": "Singapore",
+    "es": "Singapur",
+    "fr": "Singapour"
+   }
+  },
+  "SK": {
+   "currencies": [
+    "EUR"
+   ],
+   "population": {
+    "value": 5409407,
+    "year": 2025
+   },
+   "area_km2": 49034,
+   "capital": {
+    "en": "Bratislava",
+    "es": "Bratislava",
+    "fr": "Bratislava"
+   }
+  },
+  "SI": {
+   "currencies": [
+    "EUR"
+   ],
+   "population": {
+    "value": 2066880,
+    "year": 2018
+   },
+   "area_km2": 20271,
+   "capital": {
+    "en": "Ljubljana",
+    "es": "Liubliana",
+    "fr": "Ljubljana"
+   }
+  },
+  "SB": {
+   "currencies": [
+    "SBD"
+   ],
+   "population": {
+    "value": 611343,
+    "year": 2017
+   },
+   "area_km2": 28400,
+   "capital": {
+    "en": "Honiara",
+    "es": "Honiara",
+    "fr": "Honiara"
+   }
+  },
+  "SO": {
+   "currencies": [
+    "SOS"
+   ],
+   "population": {
+    "value": 18100000,
+    "year": null
+   },
+   "area_km2": 637657,
+   "capital": {
+    "en": "Mogadishu",
+    "es": "Mogadiscio",
+    "fr": "Mogadiscio"
+   }
+  },
+  "ZA": {
+   "currencies": [
+    "ZAR"
+   ],
+   "population": {
+    "value": 62027503,
+    "year": 2022
+   },
+   "area_km2": 1221037,
+   "capital": {
+    "en": "Pretoria",
+    "es": "Pretoria",
+    "fr": "Pretoria"
+   }
+  },
+  "KR": {
+   "currencies": [
+    "KRW"
+   ],
+   "population": {
+    "value": 51466201,
+    "year": 2017
+   },
+   "area_km2": 100295,
+   "capital": {
+    "en": "Seoul",
+    "es": "Seúl",
+    "fr": "Séoul"
+   }
+  },
+  "SS": {
+   "currencies": [
+    "SSP"
+   ],
+   "population": {
+    "value": 12575714,
+    "year": 2017
+   },
+   "area_km2": 644329,
+   "capital": {
+    "en": "Juba",
+    "es": "Yuba",
+    "fr": "Djouba"
+   }
+  },
+  "ES": {
+   "currencies": [
+    "EUR"
+   ],
+   "population": {
+    "value": 48592909,
+    "year": 2024
+   },
+   "area_km2": 505990,
+   "capital": {
+    "en": "Madrid",
+    "es": "Madrid",
+    "fr": "Madrid"
+   }
+  },
+  "LK": {
+   "currencies": [
+    "LKR"
+   ],
+   "population": {
+    "value": 21444000,
+    "year": 2017
+   },
+   "area_km2": 65610,
+   "capital": {
+    "en": "Sri Jayawardenepura Kotte",
+    "es": "Sri Jayawardenapura Kotte",
+    "fr": "Sri Jayawardenapura"
+   }
+  },
+  "SD": {
+   "currencies": [
+    "SDG"
+   ],
+   "population": {
+    "value": 40533330,
+    "year": 2017
+   },
+   "area_km2": 1886068,
+   "capital": {
+    "en": "Khartoum",
+    "es": "Jartum",
+    "fr": "Khartoum"
+   }
+  },
+  "SR": {
+   "currencies": [
+    "SRD"
+   ],
+   "population": {
+    "value": 563402,
+    "year": 2017
+   },
+   "area_km2": 163270,
+   "capital": {
+    "en": "Paramaribo",
+    "es": "Paramaribo",
+    "fr": "Paramaribo"
+   }
+  },
+  "SE": {
+   "currencies": [
+    "SEK"
+   ],
+   "population": {
+    "value": 10609460,
+    "year": 2025
+   },
+   "area_km2": 447425,
+   "capital": {
+    "en": "Stockholm",
+    "es": "Estocolmo",
+    "fr": "Stockholm"
+   }
+  },
+  "CH": {
+   "currencies": [
+    "CHF"
+   ],
+   "population": {
+    "value": 9104063,
+    "year": 2025
+   },
+   "area_km2": 41291,
+   "capital": {
+    "en": "Bern",
+    "es": "Berna",
+    "fr": "Berne"
+   }
+  },
+  "SY": {
+   "currencies": [
+    "SYP"
+   ],
+   "population": {
+    "value": 23865423,
+    "year": 2024
+   },
+   "area_km2": 185180,
+   "capital": {
+    "en": "Damascus",
+    "es": "Damasco",
+    "fr": "Damas"
+   }
+  },
+  "TW": {
+   "currencies": [
+    "TWD"
+   ],
+   "population": {
+    "value": 23262544,
+    "year": 2026
+   },
+   "area_km2": 36193,
+   "capital": {
+    "en": "Taipei",
+    "es": "Taipéi",
+    "fr": "Taipei"
+   }
+  },
+  "TJ": {
+   "currencies": [
+    "TJS"
+   ],
+   "population": {
+    "value": 9504000,
+    "year": 2021
+   },
+   "area_km2": 143100,
+   "capital": {
+    "en": "Dushanbe",
+    "es": "Dusambé",
+    "fr": "Douchanbé"
+   }
+  },
+  "TZ": {
+   "currencies": [
+    "TZS"
+   ],
+   "population": {
+    "value": 57310019,
+    "year": 2017
+   },
+   "area_km2": 947303,
+   "capital": {
+    "en": "Dodoma",
+    "es": "Dodoma",
+    "fr": "Dodoma"
+   }
+  },
+  "TH": {
+   "currencies": [
+    "THB"
+   ],
+   "population": {
+    "value": 66188503,
+    "year": 2017
+   },
+   "area_km2": 513120,
+   "capital": {
+    "en": "Bangkok",
+    "es": "Bangkok",
+    "fr": "Bangkok"
+   }
+  },
+  "TL": {
+   "currencies": [
+    "USD"
+   ],
+   "population": {
+    "value": 1400638,
+    "year": 2024
+   },
+   "area_km2": 14919,
+   "capital": {
+    "en": "Dili",
+    "es": "Dili",
+    "fr": "Dili"
+   }
+  },
+  "TG": {
+   "currencies": [
+    "XOF"
+   ],
+   "population": {
+    "value": 7797694,
+    "year": 2017
+   },
+   "area_km2": 56785,
+   "capital": {
+    "en": "Lomé",
+    "es": "Lomé",
+    "fr": "Lomé"
+   }
+  },
+  "TO": {
+   "currencies": [
+    "TOP"
+   ],
+   "population": {
+    "value": 108020,
+    "year": 2017
+   },
+   "area_km2": 749,
+   "capital": {
+    "en": "Nuku'alofa",
+    "es": "Nukualofa",
+    "fr": "Nukuʻalofa"
+   }
+  },
+  "TT": {
+   "currencies": [
+    "TTD"
+   ],
+   "population": {
+    "value": 1369125,
+    "year": 2017
+   },
+   "area_km2": 5128,
+   "capital": {
+    "en": "Port of Spain",
+    "es": "Puerto España",
+    "fr": "Port-d'Espagne"
+   }
+  },
+  "TN": {
+   "currencies": [
+    "TND"
+   ],
+   "population": {
+    "value": 11565204,
+    "year": 2018
+   },
+   "area_km2": 163610,
+   "capital": {
+    "en": "Tunis",
+    "es": "Túnez",
+    "fr": "Tunis"
+   }
+  },
+  "TR": {
+   "currencies": [
+    "TRY"
+   ],
+   "population": {
+    "value": 85372377,
+    "year": 2023
+   },
+   "area_km2": 783562,
+   "capital": {
+    "en": "Ankara",
+    "es": "Ankara",
+    "fr": "Ankara"
+   }
+  },
+  "TM": {
+   "currencies": [
+    "TMT"
+   ],
+   "population": {
+    "value": 6117933,
+    "year": 2021
+   },
+   "area_km2": 491210,
+   "capital": {
+    "en": "Ashgabat",
+    "es": "Asjabad",
+    "fr": "Achgabat"
+   }
+  },
+  "TV": {
+   "currencies": [
+    "AUD"
+   ],
+   "population": {
+    "value": 10643,
+    "year": 2022
+   },
+   "area_km2": 25,
+   "capital": {
+    "en": "Funafuti",
+    "es": "Funafuti",
+    "fr": "Funafuti"
+   }
+  },
+  "UG": {
+   "currencies": [
+    "UGX"
+   ],
+   "population": {
+    "value": 47123531,
+    "year": 2021
+   },
+   "area_km2": 241038,
+   "capital": {
+    "en": "Kampala",
+    "es": "Kampala",
+    "fr": "Kampala"
+   }
+  },
+  "UA": {
+   "currencies": [
+    "UAH"
+   ],
+   "population": {
+    "value": 41167335,
+    "year": 2022
+   },
+   "area_km2": 603550,
+   "capital": {
+    "en": "Kyiv",
+    "es": "Kiev",
+    "fr": "Kiev"
+   }
+  },
+  "AE": {
+   "currencies": [
+    "AED"
+   ],
+   "population": {
+    "value": 9890400,
+    "year": 2020
+   },
+   "area_km2": 83600,
+   "capital": {
+    "en": "Abu Dhabi",
+    "es": "Abu Dhabi",
+    "fr": "Abou Dabi"
+   }
+  },
+  "GB": {
+   "currencies": [
+    "GBP"
+   ],
+   "population": {
+    "value": 67326569,
+    "year": 2021
+   },
+   "area_km2": 242495,
+   "capital": {
+    "en": "London",
+    "es": "Londres",
+    "fr": "Londres"
+   }
+  },
+  "US": {
+   "currencies": [
+    "USD"
+   ],
+   "population": {
+    "value": 340110988,
+    "year": 2024
+   },
+   "area_km2": 9826675,
+   "capital": {
+    "en": "Washington, D.C.",
+    "es": "Washington D. C.",
+    "fr": "Washington"
+   }
+  },
+  "UY": {
+   "currencies": [
+    "UYU"
+   ],
+   "population": {
+    "value": 3444263,
+    "year": 2023
+   },
+   "area_km2": 176215,
+   "capital": {
+    "en": "Montevideo",
+    "es": "Montevideo",
+    "fr": "Montevideo"
+   }
+  },
+  "UZ": {
+   "currencies": [
+    "UZS"
+   ],
+   "population": {
+    "value": 34915100,
+    "year": 2021
+   },
+   "area_km2": 448978,
+   "capital": {
+    "en": "Tashkent",
+    "es": "Taskent",
+    "fr": "Tachkent"
+   }
+  },
+  "VU": {
+   "currencies": [
+    "VUV"
+   ],
+   "population": {
+    "value": 300019,
+    "year": 2020
+   },
+   "area_km2": 12190,
+   "capital": {
+    "en": "Port Vila",
+    "es": "Port Vila",
+    "fr": "Port-Vila"
+   }
+  },
+  "VE": {
+   "currencies": [
+    "VES"
+   ],
+   "population": {
+    "value": 31250306,
+    "year": 2024
+   },
+   "area_km2": 912050,
+   "capital": {
+    "en": "Caracas",
+    "es": "Caracas",
+    "fr": "Caracas"
+   }
+  },
+  "VN": {
+   "currencies": [
+    "VND"
+   ],
+   "population": {
+    "value": 96208984,
+    "year": 2019
+   },
+   "area_km2": 331690,
+   "capital": {
+    "en": "Hanoi",
+    "es": "Hanói",
+    "fr": "Hanoï"
+   }
+  },
+  "YE": {
+   "currencies": [
+    "YER"
+   ],
+   "population": {
+    "value": 28250420,
+    "year": 2017
+   },
+   "area_km2": 455503,
+   "capital": {
+    "en": "Sana'a",
+    "es": "Saná",
+    "fr": "Sanaa"
+   }
+  },
+  "ZM": {
+   "currencies": [
+    "ZMW"
+   ],
+   "population": {
+    "value": 19610769,
+    "year": 2022
+   },
+   "area_km2": 752618,
+   "capital": {
+    "en": "Lusaka",
+    "es": "Lusaka",
+    "fr": "Lusaka"
+   }
+  },
+  "ZW": {
+   "currencies": [
+    "USD",
+    "ZWG"
+   ],
+   "population": {
+    "value": 15178979,
+    "year": 2022
+   },
+   "area_km2": 390757,
+   "capital": {
+    "en": "Harare",
+    "es": "Harare",
+    "fr": "Harare"
+   }
+  }
+ }
+}

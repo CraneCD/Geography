@@ -1,17 +1,20 @@
 import { countries, regions } from "../../data/countries.js";
+import { calibrate } from "../../lib/calibration.js";
 import { countriesExtra } from "../../data/countriesExtra.js";
 import { countryTranslations } from "../../data/countryTranslations.js";
 import { OFFICIAL_LANGUAGES, languageName, languageSpellings } from "../../data/languages.js";
 import shapes from "../../data/generated/shapes.json";
+import landBorders from "../../data/generated/landBorders.json";
+import countryFacts from "../../data/generated/countryFacts.json";
+import { learnMoreUrl } from "../../data/sources.js";
 import { shuffle, randInt, pickDistractors, cycler } from "../../lib/random.js";
 import { flagSrc } from "./flags.js";
-
-export { regions };
-
 import { MIXABLE_MODES } from "../catalog.js";
 
-export { MIXABLE_MODES };
+export { regions, MIXABLE_MODES };
 export const COMPARE_MODES = ["population", "area"];
+
+const FACTS = countryFacts.countries;
 
 // Extra spellings accepted in typed answers (any UI language).
 const COUNTRY_ALIASES = {
@@ -44,34 +47,61 @@ const CAPITAL_ALIASES = {
   NL: ["The Hague"],
   ZA: ["Pretoria", "Cape Town", "Bloemfontein"],
   LK: ["Colombo", "Sri Jayawardenepura Kotte"],
-  BN: ["Bandar Seri Begawan"],
+  KI: ["South Tarawa"],
+  IS: ["Reykjavík"],
+  GQ: ["Ciudad de la Paz"],
 };
 
+// ── Localised names ────────────────────────────────────────────────────────
 export function localName(country, lang) {
   return countryTranslations[country.code]?.[lang] ?? country.name;
 }
 
-function countrySpellings(country) {
+/** Capital in the player's language (official Spanish/French names from Wikidata). */
+export function capitalName(country, lang) {
+  return FACTS[country.code]?.capital?.[lang] ?? country.capital;
+}
+
+const currencyNames = {};
+/** Localised currency name from the browser's own ICU data, e.g. EUR → "euro". */
+export function currencyName(code, lang) {
+  currencyNames[lang] ??= new Intl.DisplayNames([lang], { type: "currency" });
+  const name = currencyNames[lang].of(code) ?? code;
+  return name.charAt(0).toLocaleUpperCase(lang) + name.slice(1);
+}
+
+export function countrySpellings(country) {
   const t = countryTranslations[country.code] ?? {};
   return [country.name, t.es, t.fr, ...(COUNTRY_ALIASES[country.code] ?? [])].filter(Boolean);
 }
 
+function capitalSpellings(country) {
+  const f = FACTS[country.code]?.capital ?? {};
+  return [...new Set([country.capital, f.es, f.fr, ...(CAPITAL_ALIASES[country.code] ?? [])].filter(Boolean))];
+}
+
+// ── Data helpers ───────────────────────────────────────────────────────────
 export function officialLanguages(code) {
   const primary = countriesExtra[code]?.language;
   return [...new Set([primary, ...(OFFICIAL_LANGUAGES[code] ?? [])].filter(Boolean))];
 }
 
-export function hasShape(code) {
-  return Boolean(shapes[code]);
-}
+export const hasShape = (code) => Boolean(shapes[code]);
+export const landNeighbours = (code) => landBorders[code] ?? [];
+export const currenciesOf = (code) => FACTS[code]?.currencies ?? [];
+/** Population (people) and area (km²) from the Wikidata refresh, with the population's year. */
+export const population = (code) => FACTS[code]?.population ?? { value: countriesExtra[code].population * 1e6, year: null };
+export const area = (code) => FACTS[code]?.area_km2 ?? countriesExtra[code].area;
 
 export function poolFor(region) {
   return !region || region === "All" ? countries : countries.filter((c) => c.region === region);
 }
 
-const ALL_COUNTRY_SPELLINGS = countries.flatMap(countrySpellings);
-const ALL_CAPITALS = countries.map((c) => c.capital);
+const byCode = Object.fromEntries(countries.map((c) => [c.code, c]));
+export const ALL_COUNTRY_SPELLINGS = countries.flatMap(countrySpellings);
+const ALL_CAPITALS = countries.flatMap(capitalSpellings);
 const ALL_LANGUAGES = [...new Set(Object.values(countriesExtra).map((x) => x.language))];
+const ALL_CURRENCIES = [...new Set(countries.flatMap((c) => currenciesOf(c.code)))];
 
 /**
  * Distractor countries for `correct`, drawn from the whole world so that a
@@ -95,61 +125,87 @@ function choice(options, correctId) {
   return { kind: "choice", options: shuffle(options), correctId };
 }
 
+const listOf = (items, lang, max = 6) => {
+  const fmt = new Intl.ListFormat(lang, { style: "long", type: "conjunction" });
+  return items.length > max ? fmt.format([...items.slice(0, max), "…"]).replace(/,? (and|y|et) …$/, "…") : fmt.format(items);
+};
+
+function formatPeople(n, t, lang) {
+  const m = n / 1e6;
+  const fmt = (x, dp) => x.toLocaleString(lang, { maximumFractionDigits: dp });
+  if (m >= 1000) return t.geo.billions(fmt(m / 1000, 2));
+  if (m >= 1) return t.geo.millions(fmt(m, 1));
+  return t.geo.thousands(fmt(Math.round(n / 1000), 0));
+}
+
+/** One-line fact card used as the explanation after most country questions. */
+function countryCard(country, t, lang) {
+  const pop = population(country.code);
+  return t.geo.countryCard({
+    country: localName(country, lang),
+    capital: capitalName(country, lang),
+    region: t.regions[country.region],
+    population: formatPeople(pop.value, t, lang) + (pop.year ? ` (${pop.year})` : ""),
+  });
+}
+
+// ── Question builders ──────────────────────────────────────────────────────
 function build(type, country, settings, t) {
   const { difficulty, lang } = settings;
   const expert = difficulty === "expert";
   const name = localName(country, lang);
-  const base = { key: `${type}:${country.code}`, type, correctLabel: name };
+  const base = {
+    key: `${type}:${country.code}`, type, correctLabel: name,
+    source: learnMoreUrl({ name }, lang),
+  };
 
   if (type === "flags") {
     const media = { kind: "flag", src: flagSrc(country.code), alt: "" };
-    const review = { title: t.geo.flagOf(name), flag: media.src };
+    const common = { ...base, prompt: t.geo.flagPrompt, media, note: countryCard(country, t, lang), review: { title: t.geo.flagOf(name), flag: media.src } };
     if (expert) {
-      return {
-        ...base, kind: "text", prompt: t.geo.flagPrompt, media, review,
-        accepted: countrySpellings(country), match: { exclude: ALL_COUNTRY_SPELLINGS },
-        placeholder: t.geo.typeCountry,
-      };
+      return { ...common, kind: "text", accepted: countrySpellings(country), match: { exclude: ALL_COUNTRY_SPELLINGS }, placeholder: t.geo.typeCountry };
     }
-    const opts = [country, ...countryDistractors(country, difficulty)].map((c) => ({ id: c.code, label: localName(c, lang) }));
-    return { ...base, ...choice(opts, country.code), prompt: t.geo.flagPrompt, media, review };
+    const opts = [country, ...countryDistractors(country, difficulty)].map((c) => ({
+      id: c.code, label: localName(c, lang),
+      whyNot: { text: t.geo.thisIsFlagOf(localName(c, lang)), media: { kind: "flag", src: flagSrc(c.code) } },
+    }));
+    return { ...common, ...choice(opts, country.code) };
   }
 
   if (type === "capitals") {
+    const capital = capitalName(country, lang);
     const media = { kind: "flagThumb", src: flagSrc(country.code), alt: t.geo.flagOf(name) };
-    const review = { title: t.geo.capitalOf(name), flag: media.src };
-    const common = { ...base, correctLabel: country.capital, prompt: t.geo.capitalPrompt(name), media, review };
+    const common = {
+      ...base, correctLabel: capital, prompt: t.geo.capitalPrompt(name), media,
+      note: countryCard(country, t, lang), review: { title: t.geo.capitalOf(name), flag: media.src },
+    };
     if (expert) {
-      return {
-        ...common, kind: "text",
-        accepted: [country.capital, ...(CAPITAL_ALIASES[country.code] ?? [])],
-        match: { exclude: ALL_CAPITALS }, placeholder: t.geo.typeCapital,
-      };
+      return { ...common, kind: "text", accepted: capitalSpellings(country), match: { exclude: ALL_CAPITALS }, placeholder: t.geo.typeCapital };
     }
-    const opts = [country, ...countryDistractors(country, difficulty, { keyOf: (c) => c.capital })]
-      .map((c) => ({ id: c.code, label: c.capital }));
+    const opts = [country, ...countryDistractors(country, difficulty, { keyOf: (c) => c.capital })].map((c) => ({
+      id: c.code, label: capitalName(c, lang),
+      whyNot: { text: t.geo.capitalIs(capitalName(c, lang), localName(c, lang)) },
+    }));
     return { ...common, ...choice(opts, country.code) };
   }
 
   if (type === "shapes") {
     const media = { kind: "shape", d: shapes[country.code] };
-    const review = { title: t.geo.shapeOf(name), shape: media.d };
+    const common = { ...base, prompt: t.geo.shapePrompt, media, note: countryCard(country, t, lang), review: { title: t.geo.shapeOf(name), shape: media.d } };
     if (expert) {
-      return {
-        ...base, kind: "text", prompt: t.geo.shapePrompt, media, review,
-        accepted: countrySpellings(country), match: { exclude: ALL_COUNTRY_SPELLINGS },
-        placeholder: t.geo.typeCountry,
-      };
+      return { ...common, kind: "text", accepted: countrySpellings(country), match: { exclude: ALL_COUNTRY_SPELLINGS }, placeholder: t.geo.typeCountry };
     }
-    const opts = [country, ...countryDistractors(country, difficulty, { eligible: (c) => hasShape(c.code) })]
-      .map((c) => ({ id: c.code, label: localName(c, lang) }));
-    return { ...base, ...choice(opts, country.code), prompt: t.geo.shapePrompt, media, review };
+    const opts = [country, ...countryDistractors(country, difficulty, { eligible: (c) => hasShape(c.code) })].map((c) => ({
+      id: c.code, label: localName(c, lang),
+      whyNot: { text: t.geo.thisIsShapeOf(localName(c, lang)), media: { kind: "shape", d: shapes[c.code] } },
+    }));
+    return { ...common, ...choice(opts, country.code) };
   }
 
   if (type === "locate") {
     return {
       ...base, kind: "locate", prompt: t.geo.locatePrompt(name), code: country.code,
-      region: settings.region, review: { title: t.geo.locatePrompt(name) },
+      region: settings.region, note: countryCard(country, t, lang), review: { title: t.geo.locatePrompt(name) },
     };
   }
 
@@ -158,7 +214,7 @@ function build(type, country, settings, t) {
     if (!official.length) return null;
     const primary = official[0];
     const media = { kind: "flagThumb", src: flagSrc(country.code), alt: t.geo.flagOf(name) };
-    const note = official.length > 1 ? t.geo.officialLanguages(official.map((l) => languageName(l, lang)).join(", ")) : null;
+    const note = t.geo.officialLanguages(listOf(official.map((l) => languageName(l, lang)), lang));
     const common = {
       ...base, correctLabel: languageName(primary, lang), prompt: t.geo.languagePrompt(name), media, note,
       review: { title: t.geo.languageOf(name), flag: media.src },
@@ -178,8 +234,71 @@ function build(type, country, settings, t) {
     const anyLangs = ALL_LANGUAGES.filter(notOfficial);
     const tiers = difficulty === "easy" ? [{ items: anyLangs }] : [{ items: neighbourLangs }];
     const wrong = pickDistractors({ correctKey: primary, tiers, fallback: anyLangs });
-    const opts = [primary, ...wrong].map((l) => ({ id: l, label: languageName(l, lang) }));
+    const spokenIn = (l) => countries.filter((c) => officialLanguages(c.code).includes(l)).map((c) => localName(c, lang));
+    const opts = [primary, ...wrong].map((l) => ({
+      id: l, label: languageName(l, lang),
+      whyNot: { text: t.geo.languageSpokenIn(languageName(l, lang), listOf(spokenIn(l), lang, 4)) },
+    }));
     return { ...common, ...choice(opts, primary) };
+  }
+
+  if (type === "neighbours") {
+    const borders = landNeighbours(country.code);
+    if (!borders.length) return null;
+    const answer = byCode[shuffle(borders)[0]];
+    const bordering = new Set(borders);
+    const eligible = (c) => !bordering.has(c.code);
+    // Hard: nearby countries that still don't touch; easy: anywhere else.
+    const wrong = countryDistractors(country, difficulty === "easy" ? "easy" : "hard", { eligible }).filter((c) => c.code !== answer.code);
+    const neighbourNames = borders.map((code) => localName(byCode[code], lang));
+    const common = {
+      ...base, correctLabel: localName(answer, lang), prompt: t.geo.neighbourPrompt(name),
+      media: { kind: "flagThumb", src: flagSrc(country.code), alt: t.geo.flagOf(name) },
+      note: t.geo.bordersList(name, listOf(neighbourNames, lang, 10)),
+      review: { title: t.geo.neighbourPrompt(name), flag: flagSrc(country.code) },
+    };
+    if (expert) {
+      return {
+        ...common, kind: "text", correctLabel: listOf(neighbourNames, lang, 10),
+        accepted: borders.flatMap((code) => countrySpellings(byCode[code])), match: { exclude: ALL_COUNTRY_SPELLINGS },
+        placeholder: t.geo.typeCountry,
+      };
+    }
+    const whyNot = (c) => {
+      const theirs = landNeighbours(c.code).map((code) => localName(byCode[code], lang));
+      return { text: theirs.length ? t.geo.doesNotBorder(localName(c, lang), name, listOf(theirs, lang, 6)) : t.geo.noLandBorders(localName(c, lang)) };
+    };
+    const opts = [answer, ...wrong.slice(0, 3)].map((c) => ({ id: c.code, label: localName(c, lang), whyNot: whyNot(c) }));
+    return { ...common, ...choice(opts, answer.code) };
+  }
+
+  if (type === "currencies") {
+    const own = currenciesOf(country.code);
+    if (!own.length) return null;
+    const answer = shuffle(own)[0];
+    const usedIn = (code) => countries.filter((c) => currenciesOf(c.code).includes(code)).map((c) => localName(c, lang));
+    const common = {
+      ...base, correctLabel: currencyName(answer, lang), prompt: t.geo.currencyPrompt(name),
+      media: { kind: "flagThumb", src: flagSrc(country.code), alt: t.geo.flagOf(name) },
+      note: t.geo.currencyIs(name, listOf(own.map((c) => `${currencyName(c, lang)} (${c})`), lang)),
+      review: { title: t.geo.currencyPrompt(name), flag: flagSrc(country.code) },
+    };
+    if (expert) {
+      const spell = (code) => [code, currencyName(code, "en"), currencyName(code, "es"), currencyName(code, "fr")];
+      return {
+        ...common, kind: "text", accepted: own.flatMap(spell),
+        match: { exclude: ALL_CURRENCIES.flatMap(spell) }, placeholder: t.geo.typeCurrency,
+      };
+    }
+    const ownSet = new Set(own);
+    const regional = [...new Set(countries.filter((c) => c.region === country.region).flatMap((c) => currenciesOf(c.code)))].filter((c) => !ownSet.has(c));
+    const anywhere = ALL_CURRENCIES.filter((c) => !ownSet.has(c));
+    const wrong = pickDistractors({ correctKey: answer, tiers: [{ items: difficulty === "easy" ? anywhere : regional }], fallback: anywhere });
+    const opts = [answer, ...wrong].map((code) => ({
+      id: code, label: currencyName(code, lang),
+      whyNot: { text: t.geo.currencyUsedIn(currencyName(code, lang), listOf(usedIn(code), lang, 4)) },
+    }));
+    return { ...common, ...choice(opts, answer) };
   }
   return null;
 }
@@ -192,18 +311,16 @@ const RATIO_BANDS = {
   expert: [1.05, 1.6],
 };
 
-function formatPopulation(m, t, lang) {
-  const fmt = (n, dp) => n.toLocaleString(lang, { maximumFractionDigits: dp });
-  if (m >= 1000) return t.geo.billions(fmt(m / 1000, 2));
-  if (m >= 1) return t.geo.millions(fmt(m, 1));
-  return t.geo.thousands(fmt(Math.round(m * 1000), 0));
-}
+const metric = (type, code) => (type === "population" ? population(code).value : area(code));
 
 function buildCompare(type, a, b, settings, t) {
   const { lang } = settings;
-  const value = (c) => countriesExtra[c.code][type];
-  const label = (c) => (type === "population" ? formatPopulation(value(c), t, lang) : `${Math.round(value(c)).toLocaleString(lang)} km²`);
-  const winner = value(a) > value(b) ? a : b;
+  const label = (c) =>
+    type === "population"
+      ? formatPeople(metric(type, c.code), t, lang) + (population(c.code).year ? ` (${population(c.code).year})` : "")
+      : `${Math.round(metric(type, c.code)).toLocaleString(lang)} km²`;
+  const [winner, loser] = metric(type, a.code) > metric(type, b.code) ? [a, b] : [b, a];
+  const ratio = metric(type, winner.code) / metric(type, loser.code);
   return {
     key: `${type}:${a.code}-${b.code}`,
     type,
@@ -216,6 +333,8 @@ function buildCompare(type, a, b, settings, t) {
     correctId: winner.code,
     verdicts: { correct: t.higher, other: t.lower },
     correctLabel: localName(winner, lang),
+    note: t.geo.timesMore(localName(winner, lang), localName(loser, lang), ratio.toLocaleString(lang, { maximumFractionDigits: ratio < 10 ? 1 : 0 }), type),
+    source: type === "population" ? "https://www.wikidata.org/wiki/Property:P1082" : "https://www.wikidata.org/wiki/Property:P2046",
     review: { title: `${localName(a, lang)} ${t.vs} ${localName(b, lang)}` },
   };
 }
@@ -223,10 +342,10 @@ function buildCompare(type, a, b, settings, t) {
 /** Pick a partner for `a` whose ratio falls in the difficulty band (best effort). */
 function comparePartner(a, pool, type, difficulty, used) {
   const [lo, hi] = RATIO_BANDS[difficulty] ?? RATIO_BANDS.medium;
-  const va = countriesExtra[a.code][type];
-  const candidates = pool.filter((b) => b.code !== a.code && !used.has(b.code) && countriesExtra[b.code][type] !== va);
+  const va = metric(type, a.code);
+  const candidates = pool.filter((b) => b.code !== a.code && !used.has(b.code) && metric(type, b.code) !== va);
   const inBand = candidates.filter((b) => {
-    const vb = countriesExtra[b.code][type];
+    const vb = metric(type, b.code);
     const r = Math.max(va, vb) / Math.min(va, vb);
     return r >= lo && r <= hi;
   });
@@ -252,7 +371,9 @@ function eligibleFor(type) {
   if (type === "shapes") return (c) => hasShape(c.code);
   // Every country is on the locate map (outline or microstate point); see generate.test.js.
   if (type === "languages") return (c) => officialLanguages(c.code).length > 0;
-  if (COMPARE_MODES.includes(type)) return (c) => Boolean(countriesExtra[c.code]?.[type]);
+  if (type === "neighbours") return (c) => landNeighbours(c.code).length > 0;
+  if (type === "currencies") return (c) => currenciesOf(c.code).length > 0;
+  if (COMPARE_MODES.includes(type)) return (c) => metric(type, c.code) > 0;
   return () => true;
 }
 
@@ -265,7 +386,7 @@ export function buildRound(settings, t) {
   }
 
   if (mode !== "mixed") {
-    const eligible = pool.filter(eligibleFor(mode));
+    const eligible = calibrate(pool.filter(eligibleFor(mode)), (c) => `geography:${mode}:${c.code}`, settings.difficulty);
     return shuffle(eligible).slice(0, count).map((c) => build(mode, c, settings, t)).filter(Boolean);
   }
 

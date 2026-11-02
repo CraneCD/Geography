@@ -405,6 +405,29 @@ svg { flex-shrink: 0; }
 }
 .sequence__term--blank { background: var(--hl); color: var(--on-hl); box-shadow: var(--shadow-sm); }
 
+/* ── US map ────────────────────────────────────────────────────────────── */
+.usmap-wrap { display: flex; justify-content: center; }
+.usmap { width: 100%; max-width: 520px; height: auto; }
+.usmap__state { fill: var(--card); stroke: var(--line); stroke-width: 1; }
+.usmap__state--on { fill: var(--hl); stroke: var(--ink); stroke-width: 1.5; }
+.usmap__marker { fill: none; stroke: var(--wrong, #C0392B); stroke-width: 3; }
+
+/* ── Clock & clue list ─────────────────────────────────────────────────── */
+.clock-wrap { display: flex; justify-content: center; }
+.clock { width: min(220px, 60vw); height: auto; }
+.clock__face { fill: var(--card); stroke: var(--ink); stroke-width: 3; }
+.clock__tick { stroke: var(--ink); }
+.clock__num { fill: var(--ink); font-family: var(--mono); font-weight: 600; font-size: 15px; paint-order: stroke; stroke: var(--card); stroke-width: 5px; }
+.clock__hand { stroke: var(--ink); }
+.clock__hand--minute { stroke: var(--hl-ink, var(--ink)); opacity: .85; }
+.clock__pin { fill: var(--ink); }
+.statements {
+  list-style: none; display: grid; gap: .4rem; max-width: 30rem; margin: 0 auto;
+  background: var(--card); border: var(--border); border-radius: 6px; padding: .75rem 1rem;
+}
+.statements li { padding-left: 1.1rem; position: relative; }
+.statements li::before { content: "—"; position: absolute; left: 0; color: var(--muted); }
+
 /* Answer cards */
 .options-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; }
 .option-btn {
@@ -487,6 +510,14 @@ svg { flex-shrink: 0; }
 }
 .explanation__title { color: var(--ink); font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
 .explanation__steps { padding-left: 1.4rem; font-family: var(--mono); font-size: .92rem; color: var(--ink); }
+.why-not { display: flex; align-items: center; gap: .75rem; padding-bottom: .5rem; margin-bottom: .25rem; border-bottom: 1px dashed var(--line); }
+.why-not p { flex: 1; }
+.why-not strong { color: var(--wrong); }
+.why-not__flag { width: 56px; height: auto; max-height: 40px; object-fit: contain; border: 1px solid var(--ink); background: #FFFFFF; flex-shrink: 0; }
+.why-not__shape { width: 64px; height: 48px; flex-shrink: 0; }
+.why-not__img { width: 64px; height: 64px; object-fit: cover; flex-shrink: 0; border-radius: 4px; border: 1px solid var(--line, currentColor); }
+.answer-links { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1.25rem; }
+.learn-more { display: inline-flex; align-items: center; gap: .35rem; font-weight: 600; font-size: .9rem; }
 .image-credit { align-self: flex-start; display: inline-flex; align-items: center; gap: .25rem; font-family: var(--mono); font-size: 12px; color: var(--muted); }
 
 /* ── Locate map ─────────────────────────────────────────────────────────── */

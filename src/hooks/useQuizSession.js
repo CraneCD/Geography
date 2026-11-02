@@ -58,11 +58,15 @@ export function scoreOf(results) {
   return { correct: firstTries.filter((r) => r.correct).length, total: firstTries.length };
 }
 
-/** Auto-advance only simple questions with nothing extra to read. */
+/**
+ * Auto-advance after a correct choice/compare answer (a little longer when there is a fact
+ * to glance at). Wrong answers wait for "Next" so the explanation can be read.
+ */
 export function autoAdvanceDelay(question, answer) {
   if (!["choice", "compare"].includes(question.kind)) return null;
-  if (question.note || question.explanation || question.steps) return null;
-  return answer.correct ? 1100 : 1900;
+  if (!answer.correct) return null;
+  if (question.steps || question.explanation) return null;
+  return question.note ? 2200 : 1100;
 }
 
 export function useQuizSession({ build, timer, practice, onRoundComplete }) {

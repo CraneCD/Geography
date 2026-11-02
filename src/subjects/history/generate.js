@@ -1,14 +1,21 @@
 import { people } from "../../data/history/people.js";
+import { calibrate } from "../../lib/calibration.js";
 import { events } from "../../data/history/events.js";
 import { inventions } from "../../data/history/inventions.js";
 import { artworks } from "../../data/history/artworks.js";
 import { hasImage, imageMedia } from "../../data/images.js";
 import { shuffle, randInt, pickOne, pickDistractors, cycler } from "../../lib/random.js";
 import { formatYear, parseYear } from "../../lib/format.js";
+import { learnMoreUrl } from "../../data/sources.js";
 import { historyText, movementName, artistName, spellingsOf, ARTISTS, MOVEMENTS } from "../../data/history/i18n/index.js";
 
 export const HISTORY_MODES = ["people", "who-first", "events", "inventions", "art"];
 const CURRENT_YEAR = new Date().getFullYear();
+
+/** First clause of a description, for short "why not" notes. */
+const firstSentence = (d) => d.split(/(?<=[.;])\s/)[0].replace(/[.;]$/, "");
+const lifespan = (p, t) => `${formatYear(p.born, t.hist)}–${p.died == null ? "" : formatYear(p.died, t.hist)}`;
+const quote = (title, lang) => (lang === "fr" ? `« ${title} »` : lang === "es" ? `«${title}»` : `“${title}”`);
 
 const portraitPeople = people.filter(hasImage);
 const pictureArtworks = artworks.filter(hasImage);
@@ -48,15 +55,19 @@ function yearQuestion(base, year, difficulty, t) {
       check: (input) => parseYear(input) === year,
     };
   }
-  const opts = yearOptions(year, difficulty).map((y) => ({ id: String(y), label: formatYear(y, t.hist) }));
+  const opts = yearOptions(year, difficulty).map((y) => ({
+    id: String(y), label: formatYear(y, t.hist),
+    whyNot: y === year ? undefined : { text: t.hist.yearsOff(Math.abs(y - year), y > year) },
+  }));
   return { ...base, kind: "choice", options: shuffle(opts), correctId: String(year) };
 }
 
-function nameQuestion(base, correctLabel, distractorLabels, difficulty, placeholder, { surname = true, accepted } = {}) {
+/** `distractors`: [{ label, whyNot }] — why each wrong name is wrong. */
+function nameQuestion(base, correctLabel, distractors, difficulty, placeholder, { surname = true, accepted } = {}) {
   if (difficulty === "expert") {
     return { ...base, kind: "text", accepted: accepted ?? [correctLabel], match: { surname }, placeholder };
   }
-  const opts = [correctLabel, ...distractorLabels].map((l) => ({ id: l, label: l }));
+  const opts = [{ id: correctLabel, label: correctLabel }, ...distractors.map((d) => ({ id: d.label, label: d.label, whyNot: d.whyNot }))];
   return { ...base, kind: "choice", options: shuffle(opts), correctId: correctLabel };
 }
 
@@ -69,13 +80,16 @@ function buildPeople(person, difficulty, t) {
   const { name, d } = historyText("people", person, lang);
   const wrong = tieredDistractors(person, portraitPeople, {
     sameAs: (a, b) => a.field === b.field, keyOf: nameOf, difficulty,
-  }).map(nameOf);
-  const died = person.died ?? "";
+  }).map((p) => ({
+    label: nameOf(p),
+    whyNot: { text: `(${lifespan(p, t)}) ${firstSentence(historyText("people", p, lang).d)}.`, media: imageMedia(p, nameOf(p)) },
+  }));
   return nameQuestion(
     {
       key: `people:${person.id}`, type: "people", prompt: t.hist.whoIsThis,
       media: imageMedia(person, "?"), correctLabel: name,
-      note: `${name} (${formatYear(person.born, t.hist)}–${died === "" ? "" : formatYear(died, t.hist)}): ${d}`,
+      note: `${name} (${lifespan(person, t)}): ${d}`,
+      source: learnMoreUrl({ wikiTitle: person.wikiTitle, name }, lang),
       review: { title: t.hist.whoIsThis },
     },
     name, wrong, difficulty, t.hist.typeName, { accepted: [...new Set([name, person.name])] },
@@ -94,12 +108,16 @@ function whoFirstItem(item, t) {
 function buildWhoFirst(a, b, t) {
   const [x, y] = shuffle([whoFirstItem(a, t), whoFirstItem(b, t)]);
   const first = x.year < y.year ? x : y;
+  const second = first === x ? y : x;
+  // Across the BC/AD boundary there is no year 0.
+  const gap = second.year - first.year - (first.year < 0 && second.year > 0 ? 1 : 0);
   return {
     key: `who-first:${x.id}-${y.id}`, type: "who-first", kind: "compare", prompt: t.hist.whichFirst,
     items: [x, y].map((i) => ({ id: i.id, label: i.label, value: formatYear(i.year, t.hist) })),
     correctId: first.id,
     verdicts: { correct: t.earlier, other: t.later },
     correctLabel: first.label,
+    note: gap ? t.hist.cameBefore(first.label, second.label, gap) : t.hist.sameYear,
     review: { title: `${x.label} ${t.vs} ${y.label}` },
   };
 }
@@ -120,10 +138,11 @@ function whoFirstPair(pool, difficulty, nextItem) {
 
 function buildEvent(event, difficulty, t) {
   const { name, d } = historyText("events", event, L(t));
+  const source = learnMoreUrl({ name }, L(t));
   return yearQuestion(
     {
       key: `events:${event.id}`, type: "events", prompt: t.hist.whenHappened(name),
-      correctLabel: formatYear(event.year, t.hist), note: d,
+      correctLabel: formatYear(event.year, t.hist), note: d, source,
       review: { title: name },
     },
     event.year, difficulty, t,
@@ -133,15 +152,19 @@ function buildEvent(event, difficulty, t) {
 function buildInvention(inv, difficulty, variant, t) {
   const lang = L(t);
   const { name, d, inventor } = historyText("inventions", inv, lang);
+  const source = learnMoreUrl({ name }, lang);
   if (variant === "inventor") {
     const inventorOf = (i) => historyText("inventions", i, lang).inventor;
     const wrong = tieredDistractors(inv, inventions, {
       sameAs: (a, b) => a.field === b.field, keyOf: inventorOf, difficulty,
-    }).map(inventorOf);
+    }).map((i) => ({
+      label: inventorOf(i),
+      whyNot: { text: t.hist.inventedBy(inventorOf(i), historyText("inventions", i, lang).name, formatYear(i.year, t.hist)) },
+    }));
     return nameQuestion(
       {
         key: `inventions:inventor:${inv.id}`, type: "inventions", prompt: t.hist.whoInvented(name),
-        correctLabel: inventor, note: `${name} (${formatYear(inv.year, t.hist)}): ${d}`,
+        correctLabel: inventor, note: `${name} (${formatYear(inv.year, t.hist)}): ${d}`, source,
         review: { title: t.hist.whoInvented(name) },
       },
       inventor, wrong, difficulty, t.hist.typeInventor, { accepted: [...new Set([inventor, inv.inventor])] },
@@ -150,7 +173,7 @@ function buildInvention(inv, difficulty, variant, t) {
   return yearQuestion(
     {
       key: `inventions:year:${inv.id}`, type: "inventions", prompt: t.hist.whenInvented(name),
-      correctLabel: formatYear(inv.year, t.hist), note: `${name} — ${inventor}. ${d}`,
+      correctLabel: formatYear(inv.year, t.hist), note: `${name} — ${inventor}. ${d}`, source,
       review: { title: t.hist.whenInvented(name) },
     },
     inv.year, difficulty, t,
@@ -162,22 +185,30 @@ function buildArt(art, difficulty, variant, t) {
   const { name: title, d } = historyText("artworks", art, lang);
   const artist = artistName(art.artist, lang);
   const movement = movementName(art.movement, lang);
-  const quoted = lang === "fr" ? `« ${title} »` : lang === "es" ? `«${title}»` : `“${title}”`;
+  const quoted = quote(title, lang);
   const note = `${quoted} — ${artist} (${formatYear(art.year, t.hist)}), ${movement}. ${d}`;
   const media = imageMedia(art, "?");
+  const source = learnMoreUrl({ wikiTitle: art.wikiTitle, name: title }, lang);
+  const titleOf = (a) => quote(historyText("artworks", a, lang).name, lang);
   if (variant === "artist") {
     const wrong = tieredDistractors(art, artworks, {
       sameAs: (a, b) => a.movement === b.movement, keyOf: (a) => a.artist, difficulty,
-    }).map((a) => artistName(a.artist, lang));
+    }).map((a) => ({
+      label: artistName(a.artist, lang),
+      whyNot: { text: t.hist.createdBy(artistName(a.artist, lang), titleOf(a), movementName(a.movement, lang)) },
+    }));
     return nameQuestion(
-      { key: `art:artist:${art.id}`, type: "art", prompt: t.hist.whoCreated, media, correctLabel: artist, note, review: { title } },
+      { key: `art:artist:${art.id}`, type: "art", prompt: t.hist.whoCreated, media, correctLabel: artist, note, source, review: { title } },
       artist, wrong, difficulty, t.hist.typeArtist, { accepted: spellingsOf(ARTISTS, art.artist) },
     );
   }
   const movements = [...new Set(artworks.map((a) => a.movement))];
-  const wrong = pickDistractors({ correctKey: art.movement, tiers: [{ items: movements }] }).map((m) => movementName(m, lang));
+  const wrong = pickDistractors({ correctKey: art.movement, tiers: [{ items: movements }] }).map((m) => {
+    const example = artworks.find((a) => a.movement === m);
+    return { label: movementName(m, lang), whyNot: { text: t.hist.movementExample(titleOf(example), artistName(example.artist, lang)) } };
+  });
   return nameQuestion(
-    { key: `art:movement:${art.id}`, type: "art", prompt: t.hist.whatMovement, media, correctLabel: movement, note, review: { title } },
+    { key: `art:movement:${art.id}`, type: "art", prompt: t.hist.whatMovement, media, correctLabel: movement, note, source, review: { title } },
     movement, wrong, difficulty, t.hist.typeMovement, { surname: false, accepted: spellingsOf(MOVEMENTS, art.movement) },
   );
 }
@@ -189,8 +220,8 @@ export function buildRound(settings, t) {
 
   const whoFirstPool = [...people, ...events];
   const next = {
-    people: cycler(portraitPeople),
-    events: cycler(events),
+    people: cycler(calibrate(portraitPeople, (p) => `history:people:${p.id}`, difficulty)),
+    events: cycler(calibrate(events, (e) => `history:events:${e.id}`, difficulty)),
     inventions: cycler(inventions),
     art: cycler(pictureArtworks),
     "who-first": cycler(whoFirstPool),
