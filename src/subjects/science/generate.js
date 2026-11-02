@@ -1,4 +1,5 @@
 import { ANIMALS } from "../../data/science/animals.js";
+import { calibrate } from "../../lib/calibration.js";
 import { ELEMENTS, COMMON_ELEMENTS } from "../../data/science/elements.js";
 import { SPACE_OBJECTS } from "../../data/science/space.js";
 import { BODY_REGIONS } from "../../data/science/body.js";
@@ -121,7 +122,8 @@ function photoRound(mode, difficulty, count, t) {
   const cfg = PHOTO[mode];
   const items = cfg.items();
   // Sample without replacement: no repeats within a round.
-  return shuffle(cfg.pool(difficulty, items)).slice(0, count).map((item) => buildPhoto(mode, item, items, difficulty, t));
+  const pool = calibrate(cfg.pool(difficulty, items), (x) => `science:${mode}:${x.id}`, difficulty);
+  return shuffle(pool).slice(0, count).map((item) => buildPhoto(mode, item, items, difficulty, t));
 }
 
 // ── Comparisons (animals / space) ──────────────────────────────────────────

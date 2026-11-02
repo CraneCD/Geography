@@ -1,4 +1,5 @@
 import { people } from "../../data/history/people.js";
+import { calibrate } from "../../lib/calibration.js";
 import { events } from "../../data/history/events.js";
 import { inventions } from "../../data/history/inventions.js";
 import { artworks } from "../../data/history/artworks.js";
@@ -219,8 +220,8 @@ export function buildRound(settings, t) {
 
   const whoFirstPool = [...people, ...events];
   const next = {
-    people: cycler(portraitPeople),
-    events: cycler(events),
+    people: cycler(calibrate(portraitPeople, (p) => `history:people:${p.id}`, difficulty)),
+    events: cycler(calibrate(events, (e) => `history:events:${e.id}`, difficulty)),
     inventions: cycler(inventions),
     art: cycler(pictureArtworks),
     "who-first": cycler(whoFirstPool),

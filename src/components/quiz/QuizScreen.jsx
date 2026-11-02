@@ -1,4 +1,5 @@
 import { useState, useCallback, useEffect, useRef } from "react";
+import { recordAnswer } from "../../lib/stats.js";
 import { ArrowLeft } from "lucide-react";
 import { useQuizSession, autoAdvanceDelay } from "../../hooks/useQuizSession.js";
 import { recordBest, recordActivity } from "../../lib/storage.js";
@@ -47,6 +48,18 @@ export default function QuizScreen({ subjectId, mode, settings, module, t, onExi
   useEffect(() => {
     if (question && question.kind !== "text") cardRef.current?.focus({ preventScroll: true });
   }, [question]);
+
+  // Per-question statistics (see src/lib/stats.js): when each question was shown, and its result.
+  const shownAt = useRef(0);
+  useEffect(() => {
+    if (question) shownAt.current = performance.now();
+  }, [question]);
+  useEffect(() => {
+    if (!answer || !question) return;
+    recordAnswer({ subject: subjectId, difficulty: settings.difficulty, question, correct: answer.correct, ms: performance.now() - shownAt.current });
+    // Only when a new answer arrives; `question` is the one it belongs to.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [answer]);
 
   const requested = settings.roundSize;
   const firstRoundLength = questions.filter((q) => !q.isRetry).length;

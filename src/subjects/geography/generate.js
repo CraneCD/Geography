@@ -1,4 +1,5 @@
 import { countries, regions } from "../../data/countries.js";
+import { calibrate } from "../../lib/calibration.js";
 import { countriesExtra } from "../../data/countriesExtra.js";
 import { countryTranslations } from "../../data/countryTranslations.js";
 import { OFFICIAL_LANGUAGES, languageName, languageSpellings } from "../../data/languages.js";
@@ -385,7 +386,7 @@ export function buildRound(settings, t) {
   }
 
   if (mode !== "mixed") {
-    const eligible = pool.filter(eligibleFor(mode));
+    const eligible = calibrate(pool.filter(eligibleFor(mode)), (c) => `geography:${mode}:${c.code}`, settings.difficulty);
     return shuffle(eligible).slice(0, count).map((c) => build(mode, c, settings, t)).filter(Boolean);
   }
 

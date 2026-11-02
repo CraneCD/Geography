@@ -19,7 +19,8 @@
     "build:images": "node scripts/resolve-images.mjs",
     "build:flags": "node scripts/fetch-flags.mjs",
     "build:illustrations": "node scripts/build-illustrations.mjs",
-    "build:facts": "node scripts/refresh-facts.mjs"
+    "build:facts": "node scripts/refresh-facts.mjs",
+    "build:calibration": "node scripts/calibrate.mjs"
   },
   "dependencies": {
     "@fontsource-variable/space-grotesk": "^5.3.0",
