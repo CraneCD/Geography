@@ -110,6 +110,12 @@ export const BODY_NAMES = {
   Femur: ["Fémur", "Fémur"],
   Tibia: ["Tibia", "Tibia"],
   Fibula: ["Peroné", "Fibula"],
+  "Eye": ["Ojo", "Œil"],
+  "Ear": ["Oreja", "Oreille"],
+  "Tooth": ["Diente", "Dent"],
+  "Tongue": ["Lengua", "Langue"],
+  "Scapula": ["Escápula", "Omoplate"],
+  "Calcaneus": ["Calcáneo", "Calcanéum"],
 };
 
 export const ELEMENT_NAMES = {

@@ -97,6 +97,13 @@ export const FACTS = {
   femur: ["El hueso más largo y más fuerte del cuerpo humano.", "L'os le plus long et le plus solide du corps humain."],
   tibia: ["El hueso de la espinilla y el segundo más grande; soporta casi todo el peso al estar de pie.", "L'os du tibia, deuxième plus grand os ; il porte l'essentiel du poids en position debout."],
   fibula: ["El hueso delgado que acompaña a la tibia; sirve sobre todo de anclaje muscular.", "L'os fin qui longe le tibia ; il sert surtout d'attache aux muscles."],
+  // More body parts
+  eye: ["El músculo del iris abre o cierra la pupila para regular cuánta luz entra.", "Le muscle de l'iris ouvre ou ferme la pupille pour régler la quantité de lumière."],
+  ear: ["La oreja dirige el sonido hacia el tímpano; el oído interno también controla el equilibrio.", "L'oreille externe guide le son vers le tympan ; l'oreille interne gère aussi l'équilibre."],
+  tooth: ["El esmalte dental es la sustancia más dura del cuerpo humano.", "L'émail des dents est la substance la plus dure du corps humain."],
+  tongue: ["Formada por ocho músculos, articula los sonidos del habla y mueve la comida al masticar.", "Formée de huit muscles, elle articule les sons de la parole et déplace les aliments."],
+  scapula: ["El omóplato: un hueso plano y triangular donde se insertan 17 músculos.", "L'omoplate : un os plat et triangulaire où s'attachent 17 muscles."],
+  calcaneus: ["El hueso del talón, el más grande del pie.", "L'os du talon, le plus gros os du pied."],
   // More space objects
   callisto: ["El objeto con más cráteres del sistema solar.", "L'objet le plus cratérisé du système solaire."],
   enceladus: ["Lanza géiseres de hielo al espacio desde un océano bajo su corteza.", "Projette des geysers de glace dans l'espace depuis un océan sous sa croûte."],
